@@ -8,7 +8,7 @@ import json
 
 def get_fear_and_greed():
     url = "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
-    headers = { "User-Agent": "Mozilla/5.0", "Referer": "https://edition.cnn.com/" }
+    headers = { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)", "Referer": "https://edition.cnn.com/" }
     try:
         response = requests.get(url, headers=headers, timeout=10)
         data = response.json()
@@ -31,15 +31,10 @@ def fetch_data():
     content = ""
     for name, url in feeds.items():
         try:
-            f = feedparser.parse(url, agent='Mozilla/5.0')
-            for entry in f.entries[:50]: 
-                # 尽量获取更多真实文本，避免 AI 幻觉
-                title = entry.title
-                summary = entry.summary[:200] if 'summary' in entry else ""
-                # 清理 summary 中的 HTML 标签
-                import re
-                summary = re.sub('<[^<]+>', '', summary)
-                content += f"[{name}] {title} | 补充内容: {summary}\n"
+            # 恢复最稳定的纯标题抓取，但将单源抓取量提升至 80 条，确保数据充足
+            f = feedparser.parse(url, agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36')
+            for entry in f.entries[:80]: 
+                content += f"[{name}] {entry.title}\n"
         except: pass
     return content
 
@@ -50,29 +45,30 @@ def get_ai_analysis(raw_text):
     today_str = datetime.now(tz).strftime("%Y年%m月%d日")
     
     prompt = f"""
-    你是一个极其严谨的美股量化分析引擎。请基于（{today_str}）Reddit数据生成网页。
+    你是一个专业的美股量化分析引擎。请基于下方提供的（{today_str}）Reddit数据池，提炼真实的市场情绪网页。
     
-    【最高警戒：反幻觉与绝对真实（生死攸关）】：
-    1. 你摘录的每一句 [英文原文] 必须 100% 逐字源自下方提供的【原始数据】！
-    2. 绝对禁止为了凑数而凭空捏造、杜撰不存在的评论！绝不能使用你的历史训练数据（不准出现旧新闻如GPT-4发布等）。
-    3. 真实性高于一切数量要求！如果关于某只股票只有1条真实数据，那就只写1条；如果没有看空的真实数据，就不准捏造看空逻辑。
+    【核心原则（事实基准）】：
+    1. 你所有的分析和引用，必须 100% 来源于下方的数据池！绝对不允许利用你的历史记忆捏造旧闻（如GPT-4发布等）。
+    2. 如果数据池中没有关于某个板块的讨论，直接跳过该板块即可。
+    3. **绝对禁止输出任何“抱歉”、“未提供原始数据”等客服废话或警告语！** 直接按照要求输出 HTML 结构。
+    4. 真实的交易市场是多空互搏的，不要只挑好话，必须原汁原味展现看跌（Bearish）、做空逻辑等有褒有贬的分歧。
 
-    【个股输出强制模板（必须严格复制以下 HTML 结构填空）】：
+    【个股输出强制模板（必须严格复制以下 HTML 结构）】：
     <li>
       <div class="stock-tag">1. 代码 (公司全名)</div>
       <blockquote class="quote">
-        [100%源自原始数据的英文原文]
-        <div class="translation">翻译：[中文翻译]</div>
+        [英文原文1]
+        <div class="translation">翻译：[中文翻译1]</div>
       </blockquote>
     </li>
 
-    【网页强制四大结构】：
+    【网页强制四大结构（必须严格按顺序输出）】：
     <h2>1. 宏观与市场情绪</h2> (总结今日核心逻辑，摘录真实原文)
-    <h2>2. 热议中的个股和想法</h2> (挖掘真实提及的上市公司，有几条写几条，绝不造假)
+    <h2>2. 热议中的个股和想法</h2> (挖掘真实提及的上市公司，有几条写几条，每只保留高质量多空引用)
     <h2>3. 小众公司冒泡</h2> (挖掘0-10只冷门股，没有就不写)
-    <h2>4. AI主线讨论</h2> (使用 <div class="track-header">标题</div> 标签输出8大类：模型、算、光、存、电、板、云、AI应用。只有在原始数据中找到对应内容才写，找不到就留空)
+    <h2>4. AI主线讨论</h2> (使用 <div class="track-header">标题</div> 标签严格输出8大类：模型、算、光、存、电、板、云、AI应用)
 
-    原始数据：
+    原始数据池：
     {raw_text}
     """
     response = model.generate_content(prompt)
