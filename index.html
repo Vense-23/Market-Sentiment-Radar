@@ -15,16 +15,15 @@
             h3 { color: #38bdf8; margin-top: 25px; font-size: 1.2rem; }
             .time { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; }
             
-            /* CNN风格仪表盘容器 */
-            .dashboard-card { background: #020617; border-radius: 12px; padding: 30px 20px 10px 20px; margin-top: 20px; margin-bottom: 30px; border: 1px solid var(--border); }
-            .gauge-container { width: 100%; height: 280px; }
-            .index-title { text-align: center; color: #f8fafc; font-size: 1.5rem; font-weight: bold; margin-bottom: -20px; }
-            .index-subtitle { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px; }
+            /* 修复 CNN 风格仪表盘容器文字重叠问题 */
+            .dashboard-card { background: #020617; border-radius: 12px; padding: 25px 20px 10px 20px; margin-top: 20px; margin-bottom: 30px; border: 1px solid var(--border); }
+            .gauge-container { width: 100%; height: 260px; margin-top: 10px; }
+            .index-title { text-align: center; color: #f8fafc; font-size: 1.5rem; font-weight: bold; margin-bottom: 5px; } /* 移除了负边距 */
+            .index-subtitle { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px; position: relative; z-index: 10; }
             
-            /* 列表与引用强制隔离换行 */
             ol, ul { padding-left: 20px; margin-top: 15px; display: block; }
             ol li { margin-bottom: 40px; font-size: 1.1rem; border-bottom: 1px dashed var(--border); padding-bottom: 20px; display: block; }
-            ol li strong { color: var(--accent); font-size: 1.4rem; display: block; margin-bottom: 15px; } /* 强制名字独占一行 */
+            ol li strong { color: var(--accent); font-size: 1.4rem; display: block; margin-bottom: 15px; } 
             
             blockquote, .quote {
                 background: #020617; border-left: 4px solid #10b981; padding: 12px 15px; margin: 15px 0; color: #e2e8f0; font-size: 0.95rem; border-radius: 4px; line-height: 1.6; display: block;
@@ -35,7 +34,7 @@
     <body>
         <div class="container">
             <h1>🎯 02月21日 市场异动与情报透视</h1>
-            <p class="time">情报源头: 300+ 硬核原帖 | 最后分析时间: 2026-02-21 14:46:40 (北京时间)</p>
+            <p class="time">情报源头: 300+ 硬核原帖 | 最后分析时间: 2026-02-21 15:17:00 (北京时间)</p>
             
             <div class="dashboard-card">
                 <div class="index-title">Fear & Greed Index</div>
@@ -43,253 +42,445 @@
                 <div id="gauge" class="gauge-container"></div>
             </div>
 
-            <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股量化分析：Reddit情绪速览 (2026年02月21日)</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 960px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
-        h1, h2, h3 { color: #2c3e50; margin-top: 25px; margin-bottom: 10px; }
-        h2 { border-bottom: 2px solid #3498db; padding-bottom: 8px; }
-        h3 { border-bottom: 1px dashed #ccc; padding-bottom: 5px; margin-top: 20px; }
-        .quote {
-            background-color: #e8f4f8; /* Light blue background for quotes */
-            border-left: 5px solid #3498db; /* Blue left border */
-            margin: 15px 0;
-            padding: 10px 15px;
-            font-style: italic;
-            color: #555;
-            word-wrap: break-word; /* Ensure long words break */
-        }
-        .translation {
-            margin-top: 8px;
-            font-style: normal;
-            color: #007bff; /* Darker blue for translation */
-            font-weight: bold;
-        }
-        ul { list-style-type: disc; margin-left: 20px; }
-        ol { margin-left: 20px; }
-        li { margin-bottom: 5px; }
-        p { margin-bottom: 10px; }
-    </style>
-</head>
-<body>
-    <h1>美股量化分析：Reddit情绪速览 (2026年02月21日)</h1>
+            ## 1. 宏观与市场情绪
 
-    <h2>1. 宏观与市场情绪</h2>
-    <blockquote class="quote">
-      Supreme Court rules that Trump’s sweeping emergency tariffs are illegal
-      <div class="translation">翻译：最高法院裁定特朗普实施的广泛紧急关税非法。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Trump Announces New 10% Global Tariff
-      <div class="translation">翻译：特朗普宣布新的10%全球关税。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Supreme Court Trump tariffs ruling could put U.S. on hook for $175 billion in refunds
-      <div class="translation">翻译：最高法院对特朗普关税的裁决可能导致美国需要退还1750亿美元。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Fourth-quarter U.S. GDP up just 1.4%, badly missing estimate; inflation firms at 3%
-      <div class="translation">翻译：美国第四季度GDP增长仅为1.4%，远低于预期；通胀稳定在3%。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Stock market today: Dow, S&P 500, Nasdaq jump to post weekly gains as Supreme Court strikes down Trump tariffs
-      <div class="translation">翻译：今日股市：道琼斯、标普500、纳斯达克指数跳涨，在最高法院撤销特朗普关税后录得周涨幅。</div>
-    </blockquote>
+<blockquote class="quote">
+  Supreme Court rules that Trump’s sweeping emergency tariffs are illegal | CNN Politics
+  <div class="translation">翻译：美国最高法院裁定，特朗普实施的大范围紧急关税非法。</div>
+</blockquote>
+<blockquote class="quote">
+  Trump announces new 10% global tariff after raging over Supreme Court loss
+  <div class="translation">翻译：在最高法院裁决失利后，特朗普愤怒宣布将征收新的10%全球关税。</div>
+</blockquote>
+<blockquote class="quote">
+  Supreme Court Trump tariffs ruling could put U.S. on hook for $175 billion in refunds
+  <div class="translation">翻译：最高法院关于特朗普关税的裁决，可能导致美国面临1750亿美元的退款责任。</div>
+</blockquote>
+<blockquote class="quote">
+  Fourth-quarter U.S. GDP up just 1.4%, badly missing estimate; inflation firms at 3%
+  <div class="translation">翻译：美国第四季度GDP增长仅1.4%，远低于预期；通胀率稳定在3%。</div>
+</blockquote>
+<blockquote class="quote">
+  Stock market today: Dow, S&P 500, Nasdaq jump to post weekly gains as Supreme Court strikes down Trump tariffs
+  <div class="translation">翻译：今日股市：道指、标普500、纳斯达克指数跳涨，创下周度涨幅，因最高法院驳回了特朗普的关税。</div>
+</blockquote>
 
-    <h2>2. 热议中的个股和想法</h2>
-    1. ZIM (ZIM Integrated Shipping Services)
-    <blockquote class="quote">
-      Closed My ZIM Position
-      <div class="translation">翻译：我平掉了ZIM的仓位。</div>
-    </blockquote>
+<h2>2. 热议中的个股和想法</h2>
 
-    2. CRWD (CrowdStrike Holdings)
-    <blockquote class="quote">
-      CRWD and NET down almost 10% today because... Claude has a new code review skill
-      <div class="translation">翻译：CRWD和NET今天下跌近10%，原因在于……Claude有了一项新的代码审查技能。</div>
-    </blockquote>
+### 1. Alphabet (GOOG)
 
-    3. NET (Cloudflare)
-    <blockquote class="quote">
-      CRWD and NET down almost 10% today because... Claude has a new code review skill
-      <div class="translation">翻译：CRWD和NET今天下跌近10%，原因在于……Claude有了一项新的代码审查技能。</div>
-    </blockquote>
+<blockquote class="quote">
+  Google Is Exploring Ways to Use Its Financial Might to Take On Nvidia
+  <div class="translation">翻译：谷歌正在探索如何利用其雄厚的财力与英伟达展开竞争。</div>
+</blockquote>
+<blockquote<blockquote class="quote">
+  I heard this was the casino? GOOG 3DTE - $1,640 -> $11,589
+  <div class="translation">翻译：我听说这里是赌场？谷歌3天到期期权，从1,640美元赚到11,589美元。</div>
+</blockquote>
+<blockquote class="quote">
+  Put ideas I’m highly considering MSFT and GOOGL
+  <div class="translation">翻译：我正在认真考虑做空微软和谷歌的看跌期权。</div>
+</blockquote>
+<blockquote class="quote">
+  The hyperscalers are like the Five Families of the Godfather
+  <div class="translation">翻译：超大规模云服务提供商就像《教父》里的五大家族。</div>
+</blockquote>
 
-    4. GOOG (Alphabet Inc. Class C)
-    <blockquote class="quote">
-      I heard this was the casino? GOOG 3DTE - $1,640 -> $11,589
-      <div class="translation">翻译：我听说这里是赌场？GOOG 3天到期期权，从1,640美元到11,589美元。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Google Is Exploring Ways to Use Its Financial Might to Take On Nvidia
-      <div class="translation">翻译：谷歌正在探索利用其财政实力与英伟达竞争的方法。</div>
-    </blockquote>
+### 2. Nvidia (NVDA)
 
-    5. MSFT (Microsoft Corp.)
-    <blockquote class="quote">
-      MSFT is such crap
-      <div class="translation">翻译：微软太烂了。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Put ideas I’m highly considering MSFT and GOOGL
-      <div class="translation">翻译：我正在认真考虑做空微软和谷歌的看跌期权。</div>
-    </blockquote>
+<blockquote class="quote">
+  Google Is Exploring Ways to Use Its Financial Might to Take On Nvidia
+  <div class="translation">翻译：谷歌正在探索如何利用其雄厚的财力与英伟达展开竞争。</div>
+</blockquote>
+<blockquote class="quote">
+  Nvidia is close to finalising a $30bn investment into OpenAI
+  <div class="translation">翻译：英伟达即将敲定对OpenAI的300亿美元投资。</div>
+</blockquote>
+<blockquote class="quote">
+  Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
+  <div class="translation">翻译：五家领先的上市AI公司今年预计将在大型项目上共同投入约7000亿美元。</div>
+</blockquote>
+<blockquote class="quote">
+  The Efficiency Trap: Why AI’s Micro-Success Could Become a Macro Problem
+  <div class="translation">翻译：效率陷阱：为什么AI的微观成功可能演变为宏观问题。</div>
+</blockquote>
 
-    6. SOFI (SoFi Technologies)
-    <blockquote class="quote">
-      7k down, 3k more to go. Thank you SOFI
-      <div class="translation">翻译：已亏损7000美元，还差3000美元就回本。感谢SOFI。</div>
-    </blockquote>
+### 3. Microsoft (MSFT)
 
-    7. Klarna (Private Company, discussed due to market reaction)
-    <blockquote class="quote">
-      Klarna beats all metrics, sees 38% revenue growth, 28% new customer growth to 180 million - Stock dumps 25% in response
-      <div class="translation">翻译：Klarna各项指标均超预期，营收增长38%，新客户增长28%达到1.8亿，但股价仍下跌25%。</div>
-    </blockquote>
+<blockquote class="quote">
+  Put ideas I’m highly considering MSFT and GOOGL
+  <div class="translation">翻译：我正在认真考虑做空微软和谷歌的看跌期权。</div>
+</blockquote>
+<blockquote class="quote">
+  The hyperscalers are like the Five Families of the Godfather
+  <div class="translation">翻译：超大规模云服务提供商就像《教父》里的五大家族。</div>
+</blockquote>
+<blockquote class="quote">
+  Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
+  <div class="translation">翻译：五家领先的上市AI公司今年预计将在大型项目上共同投入约7000亿美元。</div>
+</blockquote>
 
-    8. OPEN (Opendoor Technologies)
-    <blockquote class="quote">
-      OPEN made just $4,000 per home last quarter. Every possible metric down , but the stock rallied 16%. Value investing at its best!!
-      <div class="translation">翻译：Opendoor上季度每套房屋仅盈利4,000美元。所有指标都在下降，但股价却上涨了16%。这真是价值投资的巅峰之作！！</div>
-    </blockquote>
+### 4. Constellation Software (CSU.TO, 关联加拿大但受美股投资者广泛关注)
 
-    9. TNDM (Tandem Diabetes Care)
-    <blockquote class="quote">
-      $TNDM - 5x Bagger Earnings Play
-      <div class="translation">翻译：TNDM – 5倍收益的财报行情。</div>
-    </blockquote>
+<blockquote class="quote">
+  Breaking Down RBC's Constellation Software Mega Report
+  <div class="translation">翻译：深度解读RBC关于Constellation Software的巨型报告。</div>
+</blockquote>
+<blockquote class="quote">
+  The SaaS bloodbath: opportunities and perils for investors
+  <div class="translation">翻译：SaaS行业的血洗：投资者的机遇与风险。</div>
+</blockquote>
+<blockquote class="quote">
+  SaaS Isn’t Dead, the Pricing Model Might Be
+  <div class="translation">翻译：SaaS并未消亡，但其定价模式可能需要改变。</div>
+</blockquote>
+<blockquote class="quote">
+  Some ramblings on the SaaSpocalypse
+  <div class="translation">翻译：关于SaaS末日的零散思考。</div>
+</blockquote>
+<blockquote class="quote">
+  Operating Leverage as a Source of Market Inefficiency
+  <div class="translation">翻译：经营杠杆作为市场效率低下的一种来源。</div>
+</blockquote>
 
-    10. SFM (Sprout Farmers Market)
-    <blockquote class="quote">
-      SFM deep dive: low multiple vs store-driven growth
-      <div class="translation">翻译：SFM深度分析：低估值与门店驱动增长。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Sprout Farmers' Market $SFM Earnings Trade Vol Crush Setup
-      <div class="translation">翻译：Sprout Farmers' Market $SFM 财报交易波动率挤压设置。</div>
-    </blockquote>
+### 5. Constellation Energy (CEG)
 
-    11. Walmart (Walmart Inc.)
-    <blockquote class="quote">
-      Walmart beats… and still drops
-      <div class="translation">翻译：沃尔玛业绩超预期……但股价仍在下跌。</div>
-    </blockquote>
+<blockquote class="quote">
+  Constellation Energy: The Federal Reserve of the Electron
+  <div class="translation">翻译：Constellation Energy：电子界的联邦储备。</div>
+</blockquote>
+<blockquote class="quote">
+  Nuclear energy - good investment?
+  <div class="translation">翻译：核能——是好的投资吗？</div>
+</blockquote>
+<blockquote class="quote">
+  Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
+  <div class="translation">翻译：五家领先的上市AI公司今年预计将在大型项目上共同投入约7000亿美元。</div>
+</blockquote>
 
-    12. PLTR (Palantir Technologies)
-    <blockquote class="quote">
-      PLTR "IF it does not make sense to buy the whole company, it does not make sense to buy a single share."
-      <div class="translation">翻译：Palantir：“如果买下整个公司没有意义，那么买一股股票也没有意义。”</div>
-    </blockquote>
+### 6. OpenAI (私人公司，但市场关注度极高)
 
-    13. UMAC (UMAC Air, related to XTND Robotics)
-    <blockquote class="quote">
-      Drones. Pentagon. XTND + Trump. UMAC is the missing, overlooked link.
-      <div class="translation">翻译：无人机。五角大楼。XTND + 特朗普。UMAC是缺失的、被忽视的环节。</div>
-    </blockquote>
+<blockquote class="quote">
+  Nvidia is close to finalising a $30bn investment into OpenAI
+  <div class="translation">翻译：英伟达即将敲定对OpenAI的300亿美元投资。</div>
+</blockquote>
+<blockquote class="quote">
+  How to buy Anduril, Space-x, Open AI and more pre IPO
+  <div class="translation">翻译：如何在IPO前购买Anduril、SpaceX、OpenAI等公司的股票。</div>
+</blockquote>
+<blockquote class="quote">
+  Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
+  <div class="translation">翻译：五家领先的上市AI公司今年预计将在大型项目上共同投入约7000亿美元。</div>
+</blockquote>
+<blockquote class="quote">
+  The Efficiency Trap: Why AI’s Micro-Success Could Become a Macro Problem
+  <div class="translation">翻译：效率陷阱：为什么AI的微观成功可能演变为宏观问题。</div>
+</blockquote>
 
-    14. CVNA (Carvana Co.)
-    <blockquote class="quote">
-      Most of Carvana’s (CVNA) Income is Fluff, Potentially Hiding Huge Concealed Losses Last Quarter
-      <div class="translation">翻译：Carvana（CVNA）的大部分收入都是虚假的，可能隐藏了上季度巨大的隐性亏损。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Carvana $420 Put Options Big Ups After Hours
-      <div class="translation">翻译：Carvana 420美元看跌期权盘后大幅上涨。</div>
-    </blockquote>
+### 7. 高股息期权策略ETF (如JEPI/JEPQ等)
 
-    15. LAD (Lithia Motors)
-    <blockquote class="quote">
-      Lithia Motors (LAD) Price to Revenue Brings it Into Larger Firm’s Cross Hairs
-      <div class="translation">翻译：Lithia Motors (LAD) 的市销率使其成为更大公司关注的目标。</div>
-    </blockquote>
+<blockquote class="quote">
+  ETFs selling call options like JEP..
+  <div class="translation">翻译：出售看涨期权的ETF，比如JEP…</div>
+</blockquote>
+<blockquote class="quote">
+  Wheel strategy: genuinely solid income approach, or a way to slowly get assigned into stocks you don't want?
+  <div class="translation">翻译：轮动策略：是真正可靠的收益方法，还是让你慢慢被指派持有不想要的股票？</div>
+</blockquote>
+<blockquote class="quote">
+  Long Hedging Instead of Desperation Rolling
+  <div class="translation">翻译：长期对冲而非绝望展期。</div>
+</blockquote>
+<blockquote class="quote">
+  Risk of Liquidation on "Covered Calls" with No Margin Loan? (High Volatility Portfolio)
+  <div class="translation">翻译：无保证金贷款的“备兑看涨期权”清算风险？（高波动投资组合）</div>
+</blockquote>
+<blockquote class="quote">
+  Implied Move vs Average Past Move for This Week Earnings
+  <div class="translation">翻译：本周财报的隐含波动与过去平均波动的比较。</div>
+</blockquote>
 
-    <h2>3. AI主线讨论</h2>
-    <h3>模型：模型进展是第一性原理。</h3>
-    <blockquote class="quote">
-      CRWD and NET down almost 10% today because... Claude has a new code review skill
-      <div class="translation">翻译：CRWD和NET今天下跌近10%，原因在于……Claude有了一项新的代码审查技能。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Nvidia is close to finalising a $30bn investment into OpenAI
-      <div class="translation">翻译：英伟达即将完成对OpenAI的300亿美元投资。</div>
-    </blockquote>
+### 8. S&P 500 ETF (SPY)
 
-    <h3>算：技术路线、台积电产能分配。</h3>
-    <blockquote class="quote">
-      Google Is Exploring Ways to Use Its Financial Might to Take On Nvidia
-      <div class="translation">翻译：谷歌正在探索利用其财政实力与英伟达竞争的方法。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
-      <div class="translation">翻译：五家领先的上市AI公司今年总计将投入约7000亿美元用于大型项目。</div>
-    </blockquote>
+<blockquote class="quote">
+  0dte/2dte Double Diagonals SPY
+  <div class="translation">翻译：SPY的0天/2天到期双对角套利策略。</div>
+</blockquote>
+<blockquote class="quote">
+  need some guidance on holding LONGTERM AMERICAN expiry SPY BEAR PUT spread.
+  <div class="translation">翻译：我需要关于持有长期美式到期SPY熊市看跌期权价差的一些指导。</div>
+</blockquote>
+<blockquote class="quote">
+  Stock market today: Dow, S&P 500, Nasdaq jump to post weekly gains as Supreme Court strikes down Trump tariffs
+  <div class="translation">翻译：今日股市：道指、标普500、纳斯达克指数跳涨，创下周度涨幅，因最高法院驳回了特朗普的关税。</div>
+</blockquote>
+<blockquote class="quote">
+  Historical S&P500 Sector Weights
+  <div class="translation">翻译：标普500历史行业权重。</div>
+</blockquote>
+<blockquote class="quote">
+  Should I move from snp500 to ftse all world?
+  <div class="translation">翻译：我应该从标普500转投富时全球指数吗？</div>
+</blockquote>
 
-    <h3>光：光通信格局、技术路线、边际变化；上游边际变化。</h3>
-    <blockquote class="quote">
-      Optical & Networking Supercycle at the heart of the AI Revolution
-      <div class="translation">翻译：光通信与网络超级周期是AI革命的核心。</div>
-    </blockquote>
+### 9. iShares MSCI South Korea ETF (EWY)
 
-    <h3>存：格局、边际变化。</h3>
-    <blockquote class="quote">
-      Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
-      <div class="translation">翻译：五家领先的上市AI公司今年总计将投入约7000亿美元用于大型项目。</div>
-    </blockquote>
+<blockquote class="quote">
+  EWY
+  <div class="translation">翻译：EWY（iShares MSCI韩国ETF）。</div>
+</blockquote>
+<blockquote class="quote">
+  Korean stocks - value king of 2026
+  <div class="translation">翻译：韩国股票——2026年的价值之王。</div>
+</blockquote>
+<blockquote class="quote">
+  The Ex-U.S. Trade is Working
+  <div class="translation">翻译：非美国市场交易正在奏效。</div>
+</blockquote>
 
-    <h3>电：数据中心对电力的消耗、边际变化 (如燃气轮机需求、格局、供应链等)。</h3>
-    <blockquote class="quote">
-      Constellation Energy: The Federal Reserve of the Electron
-      <div class="translation">翻译：星座能源：电子的联邦储备银行。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
-      <div class="translation">翻译：五家领先的上市AI公司今年总计将投入约7000亿美元用于大型项目。</div>
-    </blockquote>
+### 10. 核能相关公司
 
-    <h3>板：PCB格局、边际变化；上游边际变化。</h3>
-    <blockquote class="quote">
-      Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
-      <div class="translation">翻译：五家领先的上市AI公司今年总计将投入约7000亿美元用于大型项目。</div>
-    </blockquote>
+<blockquote class="quote">
+  Nuclear energy - good investment?
+  <div class="translation">翻译：核能——是好的投资吗？</div>
+</blockquote>
+<blockquote class="quote">
+  Constellation Energy: The Federal Reserve of the Electron
+  <div class="translation">翻译：Constellation Energy：电子界的联邦储备。</div>
+</blockquote>
+<blockquote class="quote">
+  Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
+  <div class="translation">翻译：五家领先的上市AI公司今年预计将在大型项目上共同投入约7000亿美元。</div>
+</blockquote>
 
-    <h3>云：中国&全球云服务边际变化。</h3>
-    <blockquote class="quote">
-      The hyperscalers are like the Five Families of the Godfather
-      <div class="translation">翻译：超大规模云服务商就像《教父》中的五大家族。</div>
-    </blockquote>
-    <blockquote class="quote">
-      SaaS Isn’t Dead, the Pricing Model Might Be
-      <div class="translation">翻译：SaaS并未消亡，但其定价模式可能需要改变。</div>
-    </blockquote>
-    <blockquote class="quote">
-      The SaaS bloodbath: opportunities and perils for investors
-      <div class="translation">翻译：SaaS行业的血洗：对投资者的机遇与风险。</div>
-    </blockquote>
+### 11. SaaS行业公司
 
-    <h3>AI应用：AI对应用产业的改造，千行百业。</h3>
-    <blockquote class="quote">
-      CRWD and NET down almost 10% today because... Claude has a new code review skill
-      <div class="translation">翻译：CRWD和NET今天下跌近10%，原因在于……Claude有了一项新的代码审查技能。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Betting on AI disruption as a hedge against AI disruption, does this logic hold?
-      <div class="translation">翻译：将对AI颠覆的押注作为对AI颠覆的对冲，这种逻辑成立吗？</div>
-    </blockquote>
-    <blockquote class="quote">
-      i’m officially "ai-ed out"... am i the only one who thinks the hype is finally hitting a wall?
-      <div class="translation">翻译：我正式对“AI”感到厌倦了……我是唯一一个认为这股炒作热潮终于达到顶峰的人吗？</div>
-    </blockquote>
-    <blockquote class="quote">
-      EU AI Act 2026: Why Big Tech Investors should watch the August deadline.
-      <div class="translation">翻译：2026年欧盟AI法案：为何大型科技投资者应关注8月截止日期。</div>
-    </blockquote>
+<blockquote class="quote">
+  Some ramblings on the SaaSpocalypse
+  <div class="translation">翻译：关于SaaS末日的零散思考。</div>
+</blockquote>
+<blockquote class="quote">
+  The SaaS bloodbath: opportunities and perils for investors
+  <div class="translation">翻译：SaaS行业的血洗：投资者的机遇与风险。</div>
+</blockquote>
+<blockquote class="quote">
+  SaaS Isn’t Dead, the Pricing Model Might Be
+  <div class="translation">翻译：SaaS并未消亡，但其定价模式可能需要改变。</div>
+</blockquote>
+<blockquote class="quote">
+  Breaking Down RBC's Constellation Software Mega Report
+  <div class="translation">翻译：深度解读RBC关于Constellation Software的巨型报告。</div>
+</blockquote>
 
-</body>
-</html>
+### 12. 超大规模云服务提供商
+
+<blockquote class="quote">
+  The hyperscalers are like the Five Families of the Godfather
+  <div class="translation">翻译：超大规模云服务提供商就像《教父》里的五大家族。</div>
+</blockquote>
+<blockquote class="quote">
+  Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
+  <div class="translation">翻译：五家领先的上市AI公司今年预计将在大型项目上共同投入约7000亿美元。</div>
+</blockquote>
+<blockquote class="quote">
+  Google Is Exploring Ways to Use Its Financial Might to Take On Nvidia
+  <div class="translation">翻译：谷歌正在探索如何利用其雄厚的财力与英伟达展开竞争。</div>
+</blockquote>
+<blockquote class="quote">
+  Optical & Networking Supercycle at the heart of the AI Revolution
+  <div class="translation">翻译：光通信和网络超周期是AI革命的核心。</div>
+</blockquote>
+<blockquote class="quote">
+  US GDP Rose at Slower-Than-Forecast Pace of 1.4% Last Quarter
+  <div class="translation">翻译：上季度美国GDP增速放缓至1.4%，低于预期。</div>
+</blockquote>
+
+### 13. 国防与无人机技术公司
+
+<blockquote class="quote">
+  Drones. Pentagon. XTND + Trump. UMAC is the missing, overlooked link.
+  <div class="translation">翻译：无人机、五角大楼、XTND与特朗普。UMAC是缺失的、被忽视的环节。</div>
+</blockquote>
+<blockquote class="quote">
+  Betting on AI disruption as a hedge against AI disruption, does this logic hold?
+  <div class="translation">翻译：以AI颠覆作为对冲AI颠覆的策略，这种逻辑是否成立？</div>
+</blockquote>
+<blockquote class="quote">
+  What stock are you buying to make some $$ off the rising tensions between Iran and the US?
+  <div class="translation">翻译：你正在购买什么股票，以从伊朗和美国之间日益紧张的局势中获利？</div>
+</blockquote>
+
+### 14. 美国房地产相关公司/REITs
+
+<blockquote class="quote">
+  Dubai Residential Real Estate: Income Asset or Cyclical Risk in a High-Rate World?
+  <div class="translation">翻译：迪拜住宅房地产：在高利率世界中是收益资产还是周期性风险？</div>
+</blockquote>
+<blockquote class="quote">
+  REITS, Private Market Discounts, and Déjà vu at $FSP
+  <div class="translation">翻译：REITs、私募市场折扣以及FSP的似曾相识。</div>
+</blockquote>
+<blockquote class="quote">
+  OPEN made just $4,000 per home last quarter. Every possible metric down , but the stock rallied 16%. Value investing at its best!!
+  <div class="translation">翻译：Opendoor上季度每套房屋仅盈利4,000美元。所有指标都在下降，但股价却上涨了16%。这正是价值投资的精髓！！</div>
+</blockquote>
+
+### 15. 美国卡车运输行业公司
+
+<blockquote class="quote">
+  US Trucking Primer I: Cycle basics
+  <div class="translation">翻译：美国卡车运输业入门I：周期基础知识。</div>
+</blockquote>
+<blockquote class="quote">
+  US Trucking Primer II : Truckload Carriers Overview
+  <div class="translation">翻译：美国卡车运输业入门II：整车运输公司概览。</div>
+</blockquote>
+<blockquote class="quote">
+  Fourth-quarter U.S. GDP up just 1.4%, badly missing estimate
+  <div class="translation">翻译：美国第四季度GDP增长仅1.4%，远低于预期。</div>
+</blockquote>
+
+<h2>3. AI主线讨论</h2>
+
+### 模型：模型进展是第一性原理。
+
+<blockquote class="quote">
+  CRWD and NET down almost 10% today because... Claude has a new code review skill
+  <div class="translation">翻译：CrowdStrike和Cloudflare今天下跌近10%，因为……Claude有了一项新的代码审查技能。</div>
+</blockquote>
+<blockquote class="quote">
+  Nvidia is close to finalising a $30bn investment into OpenAI
+  <div class="translation">翻译：英伟达即将敲定对OpenAI的300亿美元投资。</div>
+</blockquote>
+<blockquote class="quote">
+  Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
+  <div class="translation">翻译：五家领先的上市AI公司今年预计将在大型项目上共同投入约7000亿美元。</div>
+</blockquote>
+<blockquote class="quote">
+  The Efficiency Trap: Why AI’s Micro-Success Could Become a Macro Problem
+  <div class="translation">翻译：效率陷阱：为什么AI的微观成功可能演变为宏观问题。</div>
+</blockquote>
+<blockquote class="quote">
+  i’m officially "ai-ed out"... am i the only one who thinks the hype is finally hitting a wall?
+  <div class="translation">翻译：我正式“AI疲劳”了……我是不是唯一一个认为这股热潮终于撞墙的人？</div>
+</blockquote>
+
+### 算：技术路线、台积电产能分配。
+
+<blockquote class="quote">
+  Google Is Exploring Ways to Use Its Financial Might to Take On Nvidia
+  <div class="translation">翻译：谷歌正在探索如何利用其雄厚的财力与英伟达展开竞争。</div>
+</blockquote>
+<blockquote class="quote">
+  Nvidia is close to finalising a $30bn investment into OpenAI
+  <div class="translation">翻译：英伟达即将敲定对OpenAI的300亿美元投资。</div>
+</blockquote>
+<blockquote class="quote">
+  Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
+  <div class="translation">翻译：五家领先的上市AI公司今年预计将在大型项目上共同投入约7000亿美元。</div>
+</blockquote>
+<blockquote class="quote">
+  Optical & Networking Supercycle at the heart of the AI Revolution
+  <div class="translation">翻译：光通信和网络超周期是AI革命的核心。</div>
+</blockquote>
+<blockquote class="quote">
+  The hyperscalers are like the Five Families of the Godfather
+  <div class="translation">翻译：超大规模云服务提供商就像《教父》里的五大家族。</div>
+</blockquote>
+
+### 光：光通信格局、技术路线、边际变化；上游边际变化。
+
+<blockquote class="quote">
+  Optical & Networking Supercycle at the heart of the AI Revolution
+  <div class="translation">翻译：光通信和网络超周期是AI革命的核心。</div>
+</blockquote>
+<blockquote class="quote">
+  The hyperscalers are like the Five Families of the Godfather
+  <div class="translation">翻译：超大规模云服务提供商就像《教父》里的五大家族。</div>
+</blockquote>
+<blockquote class="quote">
+  Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
+  <div class="translation">翻译：五家领先的上市AI公司今年预计将在大型项目上共同投入约7000亿美元。</div>
+</blockquote>
+
+### 存：格局、边际变化。
+
+<blockquote class="quote">
+  Data Update 1 for 2026: The Push and Pull of Data
+  <div class="translation">翻译：2026年数据更新1：数据的推拉效应。</div>
+</blockquote>
+<blockquote class="quote">
+  Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
+  <div class="translation">翻译：五家领先的上市AI公司今年预计将在大型项目上共同投入约7000亿美元。</div>
+</blockquote>
+
+### 电：数据中心对电力的消耗、边际变化 (如燃气轮机需求、格局、供应链等)。
+
+<blockquote class="quote">
+  Constellation Energy: The Federal Reserve of the Electron
+  <div class="translation">翻译：Constellation Energy：电子界的联邦储备。</div>
+</blockquote>
+<blockquote class="quote">
+  Nuclear energy - good investment?
+  <div class="translation">翻译：核能——是好的投资吗？</div>
+</blockquote>
+<blockquote class="quote">
+  Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
+  <div class="translation">翻译：五家领先的上市AI公司今年预计将在大型项目上共同投入约7000亿美元。</div>
+</blockquote>
+
+### 板：PCB格局、边际变化；上游边际变化。
+
+<blockquote class="quote">
+  Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
+  <div class="translation">翻译：五家领先的上市AI公司今年预计将在大型项目上共同投入约7000亿美元。</div>
+</blockquote>
+<blockquote class="quote">
+  Optical & Networking Supercycle at the heart of the AI Revolution
+  <div class="translation">翻译：光通信和网络超周期是AI革命的核心。</div>
+</blockquote>
+<blockquote class="quote">
+  Google Is Exploring Ways to Use Its Financial Might to Take On Nvidia
+  <div class="translation">翻译：谷歌正在探索如何利用其雄厚的财力与英伟达展开竞争。</div>
+</blockquote>
+
+### 云：中国&全球云服务边际变化。
+
+<blockquote class="quote">
+  The hyperscalers are like the Five Families of the Godfather
+  <div class="translation">翻译：超大规模云服务提供商就像《教父》里的五大家族。</div>
+</blockquote>
+<blockquote class="quote">
+  SaaS Isn’t Dead, the Pricing Model Might Be
+  <div class="translation">翻译：SaaS并未消亡，但其定价模式可能需要改变。</div>
+</blockquote>
+<blockquote class="quote">
+  Some ramblings on the SaaSpocalypse
+  <div class="translation">翻译：关于SaaS末日的零散思考。</div>
+</blockquote>
+<blockquote class="quote">
+  The SaaS bloodbath: opportunities and perils for investors
+  <div class="translation">翻译：SaaS行业的血洗：投资者的机遇与风险。</div>
+</blockquote>
+
+### AI应用：AI对应用产业的改造，千行百业。
+
+<blockquote class="quote">
+  CRWD and NET down almost 10% today because... Claude has a new code review skill
+  <div class="translation">翻译：CrowdStrike和Cloudflare今天下跌近10%，因为……Claude有了一项新的代码审查技能。</div>
+</blockquote>
+<blockquote class="quote">
+  Betting on AI disruption as a hedge against AI disruption, does this logic hold?
+  <div class="translation">翻译：以AI颠覆作为对冲AI颠覆的策略，这种逻辑是否成立？</div>
+</blockquote>
+<blockquote class="quote">
+  Drones. Pentagon. XTND + Trump. UMAC is the missing, overlooked link.
+  <div class="translation">翻译：无人机、五角大楼、XTND与特朗普。UMAC是缺失的、被忽视的环节。</div>
+</blockquote>
+<blockquote class="quote">
+  The Efficiency Trap: Why AI’s Micro-Success Could Become a Macro Problem
+  <div class="translation">翻译：效率陷阱：为什么AI的微观成功可能演变为宏观问题。</div>
+</blockquote>
         </div>
 
         <script>
@@ -301,16 +492,12 @@
                     type: 'gauge',
                     startAngle: 180, endAngle: 0, min: 0, max: 100,
                     radius: '100%',
-                    center: ['50%', '75%'],
+                    center: ['50%', '65%'], /* 下调了圆心，防止文字挤在一起 */
                     axisLine: {
                         lineStyle: {
                             width: 45,
                             color: [
-                                [0.25, '#ef4444'], // Extreme Fear
-                                [0.45, '#f97316'], // Fear
-                                [0.55, '#d1d5db'], // Neutral
-                                [0.75, '#84cc16'], // Greed
-                                [1,    '#22c55e']  // Extreme Greed
+                                [0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']  
                             ]
                         }
                     },
@@ -321,11 +508,11 @@
                     },
                     axisTick: { show: false }, splitLine: { show: false }, axisLabel: { show: false },
                     detail: {
-                        fontSize: 55, fontWeight: 'bold', offsetCenter: [0, '20%'],
+                        fontSize: 45, fontWeight: 'bold', offsetCenter: [0, '20%'],
                         formatter: function (value) {
                             return value + '\n{rating|恐慌}';
                         },
-                        rich: { rating: { fontSize: 24, color: '#94a3b8', padding: [10, 0, 0, 0], fontWeight: 'normal' } },
+                        rich: { rating: { fontSize: 20, color: '#94a3b8', padding: [10, 0, 0, 0], fontWeight: 'normal' } },
                         color: '#f8fafc'
                     },
                     data: [{ value: 42 }]
