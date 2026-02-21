@@ -36,7 +36,9 @@ def fetch_data():
             for entry in f.entries[:80]: 
                 title = entry.title
                 summary = entry.summary if 'summary' in entry else ""
+                # 清除 HTML 标签
                 summary = re.sub('<[^<]+>', '', summary)
+                # 【关键修复】：将抓取长度放宽到 800 字符，保证足够容纳几个完整的句子
                 content += f"[{name}] {title} | 补充: {summary[:800]}\n"
         except: pass
     return content
@@ -52,9 +54,9 @@ def get_ai_analysis(raw_text):
     
     【核心规则（绝对服从）】：
     1. 【反幻觉】：引用必须 100% 源自数据池！
-    2. 【防截断】：如果发现补充内容在末尾被生硬截断，请只提取前面【完整的句子】。
-    3. 【质量过滤】：剔除纯情绪化的谩骂。只保留包含业务探讨、数据支撑、或做多/做空逻辑的优质内容。
-    4. 【禁止乱加标签】：输出个股标题时，格式为 `代码 (公司全名)`。
+    2. 【防截断】：在提取引言时，如果发现补充内容在末尾被生硬截断（没说完），请只提取前面【完整的句子】，把末尾的半截话或者半个单词直接删掉，保证输出的话是顺畅的。
+    3. 【质量过滤】：剔除纯情绪化的谩骂（如“微软是垃圾”）。只保留包含业务探讨、数据支撑、或做多/做空逻辑的优质内容。
+    4. 【禁止乱加标签】：输出个股标题时，格式为 `代码 (公司全名)`。绝对不要自己加戏标注“未上市公司”等未经核实的修饰词。
     5. 【纯净板块】：第二和第三部分只能是具体的“单一上市公司”。严禁混入 ETF 或泛行业板块！
     6. 【聚合深挖】：在个股板块，全面扫描数据池，如果能找到多条高质量观点，必须输出 2-4 条引用！
 
@@ -65,13 +67,13 @@ def get_ai_analysis(raw_text):
         [英文原文1]
         <div class="translation">翻译：[中文翻译1]</div>
       </blockquote>
-    </li>
+      </li>
 
     【网页强制四大结构】：
-    <h2>1. 宏观与市场情绪</h2> 
-    <h2>2. 热议中的个股和想法</h2> 
-    <h2>3. 小众公司冒泡</h2> 
-    <h2>4. AI主线讨论</h2>
+    <h2>1. 宏观与市场情绪</h2> (总结核心逻辑，摘录真实原文)
+    <h2>2. 热议中的个股和想法</h2> (挖掘真实提及的高热度上市公司，每只输出多条多空逻辑引用)
+    <h2>3. 小众公司冒泡</h2> (挖掘0-10只冷门股，没有就不写)
+    <h2>4. AI主线讨论</h2> (使用 <div class="track-header">标题</div> 标签严格输出8大类：模型、算、光、存、电、板、云、AI应用)
 
     原始数据池：
     {raw_text}
@@ -98,10 +100,22 @@ def generate_html(report, fg_score, fg_rating):
             .container { max-width: 900px; margin: auto; }
             h1 { color: var(--accent); border-bottom: 2px solid var(--border); padding-bottom: 10px; }
             h2 { color: #fbbf24; margin-top: 45px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
-            .stock-tag { display: block; width: fit-content; background: rgba(251, 191, 36, 0.15); color: #fbbf24; padding: 6px 16px; border-left: 5px solid #fbbf24; border-radius: 4px; font-size: 1.3rem; margin-bottom: 15px; font-weight: bold; }
-            .track-header { display: block; color: var(--accent); font-size: 1.25rem; margin-top: 35px; margin-bottom: 15px; padding: 8px 12px; background: linear-gradient(90deg, rgba(56, 189, 248, 0.1) 0%, transparent 100%); border-bottom: 2px solid rgba(56, 189, 248, 0.4); font-weight: bold; }
+            
+            .stock-tag { 
+                display: block; width: fit-content; background: rgba(251, 191, 36, 0.15); 
+                color: #fbbf24; padding: 6px 16px; border-left: 5px solid #fbbf24; 
+                border-radius: 4px; font-size: 1.3rem; margin-bottom: 15px; font-weight: bold;
+            }
+            
+            .track-header { 
+                display: block; color: var(--accent); font-size: 1.25rem; margin-top: 35px; margin-bottom: 15px; padding: 8px 12px;
+                background: linear-gradient(90deg, rgba(56, 189, 248, 0.1) 0%, transparent 100%);
+                border-bottom: 2px solid rgba(56, 189, 248, 0.4); font-weight: bold;
+            }
+
             .dashboard-card { background: #020617; border-radius: 12px; padding: 25px 20px; margin: 30px 0; border: 1px solid var(--border); }
             .gauge-container { width: 100%; height: 260px; }
+            
             ol { padding-left: 0; }
             ol li { margin-bottom: 50px; list-style: none; border-bottom: 1px dashed var(--border); padding-bottom: 25px; }
             blockquote { background: #1e293b; border-left: 4px solid #10b981; padding: 16px; margin: 15px 0; border-radius: 6px; color: #f8fafc; font-size: 0.95rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
@@ -133,7 +147,6 @@ def generate_html(report, fg_score, fg_rating):
     html_template = html_template.replace("{{today_str}}", today_str).replace("{{update_time}}", update_time).replace("{{report}}", report).replace("{{fg_score}}", str(fg_score)).replace("{{fg_rating}}", fg_rating)
     with open("index.html", "w", encoding="utf-8") as f: f.write(html_template)
 
-
 def send_discord_push(score, rating):
     webhook_url = os.environ.get("DISCORD_WEBHOOK_URL")
     if not webhook_url: return
@@ -148,17 +161,4 @@ def send_discord_push(score, rating):
         "avatar_url": "https://cdn-icons-png.flaticon.com/512/3254/3254107.png",
         "embeds": [{
             "title": f"🎯 {today_str} 美股情绪深度研报已出炉",
-            "description": f"**📊 CNN 恐慌与贪婪指数**：`{rating} ({score}分)`\n\n🤖 AI 已经完成 Reddit 全网数据扫描，提取了最新的个股博弈逻辑与小众黑马股。\n\n👉 **[点击此处进入浏览器阅读极客排版全文]({repo_url})**\n\n*(注：网页云端部署存在 1-2 分钟延迟，点开若为旧版请稍后刷新)*",
-            "color": color
-        }]
-    }
-    
-    try: requests.post(webhook_url, json=payload, timeout=10)
-    except: pass
-
-if __name__ == "__main__":
-    score, rating = get_fear_and_greed()
-    data = fetch_data()
-    analysis = get_ai_analysis(data)
-    generate_html(analysis, score, rating)
-    send_discord_push(score, rating)
+            "description": f"**📊 CNN 恐慌与贪婪指数**：`{rating} ({score}分)`\n\n🤖 AI 已经完成 Reddit 全网数据扫描，提取了最新的个股博弈逻辑与小众黑马股。\n\n👉 **[点击此处进入浏览器阅读极客排版全文]({
