@@ -37,222 +37,305 @@
     <body>
         <div class="container">
             <h1>🎯 02月21日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-02-21 23:24:01 (北京时间)</p>
+            <p style="color:#94a3b8">情报最后更新: 2026-02-21 23:31:17 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股市场情绪分析报告 (2026年02月21日)</title>
+    <title>Reddit 美股市场情绪概览 (2026年02月21日)</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
-        h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
         h2 { font-size: 1.8em; }
-        h3 { color: #34495e; margin-top: 20px; }
         ul { list-style: none; padding: 0; }
-        li { background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #e74c3c; font-size: 1.1em; margin-bottom: 10px; }
-        .quote { background-color: #ecf0f1; border-left: 4px solid #3498db; margin: 10px 0; padding: 12px 15px; font-style: italic; color: #555; border-radius: 4px; }
-        .translation { font-style: normal; color: #2980b9; margin-top: 8px; font-size: 0.95em; }
-        .track-header { font-weight: bold; color: #3498db; margin-top: 15px; margin-bottom: 5px; font-size: 1.1em; }
-        p { margin-bottom: 10px; }
-        .comment-summary { margin-bottom: 10px; padding: 5px 0; border-bottom: 1px dashed #e0e0e0; }
+        li { background-color: #fff; border: 1px solid #e1e1e1; margin-bottom: 15px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .stock-tag { font-size: 1.2em; font-weight: bold; color: #34495e; margin-bottom: 10px; }
+        .quote { background-color: #ecf0f1; border-left: 4px solid #3498db; padding: 10px 15px; margin: 10px 0; font-style: italic; color: #555; border-radius: 4px; }
+        .translation { font-size: 0.9em; color: #7f8c8d; margin-top: 5px; }
+        .track-header { font-weight: bold; color: #2c3e50; margin-top: 20px; margin-bottom: 5px; font-size: 1.1em; }
+        .macro-point { margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px dashed #eee; }
+        .macro-point:last-child { border-bottom: none; }
+        .macro-quote { background-color: #f5f5f5; border-left: 3px solid #f39c12; padding: 8px 12px; margin: 8px 0; font-style: italic; color: #666; border-radius: 3px; }
+        .macro-translation { font-size: 0.85em; color: #95a5a6; margin-top: 4px; }
     </style>
 </head>
 <body>
 
-    <h1>美股市场情绪分析报告 (2026年02月21日)</h1>
+    <h1>Reddit 美股市场情绪概览 (2026年02月21日)</h1>
 
     <h2>1. 宏观与市场情绪</h2>
-    <p>市场情绪在多重不确定性中摇摆。最高法院推翻了特朗普政府此前的关税政策，但总统迅速宣布将动用其他权力征收新的10%全球关税，使得关税政策前景依旧不明朗。经济数据显示，2025年第四季度美国GDP增长远低于预期，核心PCE通胀数据持平于3%并有上调风险，给美联储的利率路径带来复杂性。投资者正将目光投向海外市场，同时对AI领域的投资回报率产生质疑，并注意到消费分化现象。</p>
-    <blockquote class="quote">
-      "Today I will sign an order to impose a 10% global tariff under section 122, over and above our normal tariffs already being charged" Section 232 and section 301 tariffs remain fully in place.
-      <div class="translation">翻译：今天我将签署一项命令，根据第122条征收10%的全球关税，这将在我们已经征收的正常关税之上。第232条和第301条关税将完全保留。</div>
-    </blockquote>
-    <blockquote class="quote">
-      The US Supreme Court struck down President Donald Trump’s sweeping global tariffs, undercutting his signature economic policy and delivering his biggest legal defeat since he returned to the White House. The court said Trump exceeded his authority by invoking a federal emergency-powers law to impose his “reciprocal” tariffs across the globe as well as targeted import taxes the administration says address fentanyl trafficking.
-      <div class="translation">翻译：美国最高法院驳回了唐纳德·特朗普总统全面的全球关税，削弱了他的标志性经济政策，并带来了他重返白宫以来的最大法律挫败。法院表示，特朗普通过援引一项联邦紧急权力法案，在全球范围内征收“对等”关税以及针对芬太尼贩运的进口税，超出了其权力范围。</div>
-    </blockquote>
-    <blockquote class="quote">
-      The U.S. government could owe more than $175 billion in refunds to importers after the Supreme Court ruled Friday in a 6-3 decision that tariffs unilaterally imposed by President Donald Trump are illegal, a new estimate says.
-      <div class="translation">翻译：一项新的估计显示，在美国最高法院周五以6比3的裁决，认定唐纳德·特朗普总统单方面征收的关税非法后，美国政府可能需要向进口商退还超过1750亿美元。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Q4 GDP 1.4% in Q4 is not great. Overall 2025 came in at 2.2% compared to 2.8% in 2024. Consumer spending was still positive but came in at less than 2%, so it's not even just from the government drag that results are poor.
-      <div class="translation">翻译：2025年第四季度GDP增长1.4%并不理想。2025年全年增长2.2%，低于2024年的2.8%。消费者支出仍为正，但低于2%，因此结果不佳并不仅仅是政府拖累造成的。</div>
-    </blockquote>
-    <blockquote class="quote">
-      So core PCE, the Fed's main indicator, jumped to 3% YoY, way above expectations with a hot 0.4% added in December. What most however don't realize is that this 3% YoY does NOT yet include any upward revisions for October and November which were artificially low because of the shutdown.
-      <div class="translation">翻译：核心PCE（美联储主要指标）同比上涨至3%，远高于预期，12月新增了0.4%的热度。然而，大多数人没有意识到，这3%的同比数据尚未包含对10月和11月的人为低值进行的任何上调修正，因为这些修正受到了停摆的影响。</div>
-    </blockquote>
-    <blockquote class="quote">
-      U.S. investors are pulling money out of their own stock market at the fastest pace in at least 16 years as Big Tech returns fade and better-performing overseas markets look more attractive.
-      <div class="translation">翻译：随着大型科技股回报率的下降以及表现更好的海外市场更具吸引力，美国投资者正以至少16年来最快的速度从本国股市撤资。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Management commentary pointed to higher-income consumers holding up well, while lower-income shoppers remain pressured. That’s not noise. That’s confirmation of a K-shaped economy.
-      <div class="translation">翻译：管理层的评论指出，高收入消费者表现良好，而低收入消费者仍面临压力。这不是无关紧要的，这是对K型经济的确认。</div>
-    </blockquote>
-    <blockquote class="quote">
-      im tired of every company adding 'ai' to their press release just to pump their stock lol. i was looking at some software firms today and half of them are trading at 50x earnings but their actual revenue growth is mid at best. it feels like we’re moving from the 'hype' phase to the 'show me the money' phase and a lot of these companies are gonna have a rough 2026 when they can't prove ai is actually making them cash.
-      <div class="translation">翻译：我厌倦了每家公司都把“AI”加到新闻稿里来拉高股价。我今天看了几家软件公司，其中一半的市盈率达到了50倍，但它们的实际营收增长充其量也只是中等水平。感觉我们正在从“炒作”阶段转向“拿出真金白银”阶段，很多公司在2026年如果无法证明AI确实能为它们带来现金，将会举步维艰。</div>
-    </blockquote>
+    <div class="macro-point">
+        <strong>关税政策反复，市场反应复杂：</strong>
+        <div class="macro-quote">
+            Supreme Court rules that Trump’s sweeping emergency tariffs are illegal.
+            <div class="macro-translation">翻译：最高法院裁定特朗普的全面紧急关税非法。</div>
+        </div>
+        <div class="macro-quote">
+            Trump Announces New 10% Global Tariff.
+            <div class="macro-translation">翻译：特朗普宣布新的10%全球关税。</div>
+        </div>
+        <div class="macro-quote">
+            The U.S. government could owe more than $175 billion in refunds to importers after the Supreme Court ruled Friday in a 6-3 decision that tariffs unilaterally imposed by President Donald Trump are illegal.
+            <div class="macro-translation">翻译：美国最高法院周五以6比3的裁决，判定特朗普总统单方面征收的关税非法，此后美国政府可能需要向进口商退还超过1750亿美元。</div>
+        </div>
+        <div class="macro-quote">
+            Institutional Traders and Investors already expected trump would enact different alternatives.
+            <div class="macro-translation">翻译：机构交易员和投资者早已预料到特朗普会采取不同的替代方案。</div>
+        </div>
+        <div class="macro-quote">
+            SCOTUS ruled Trump’s tariffs were illegal, but the market didn't move as, let's say, enthusiastically as it had when the tariffs were being implemented or even when it was announced some weeks ago that SCOTUS was keen on shooting them down.
+            <div class="macro-translation">翻译：最高法院裁定特朗普的关税非法，但市场的反应不如关税实施时甚至几周前最高法院宣布可能否决关税时那样热情。</div>
+        </div>
+    </div>
+    <div class="macro-point">
+        <strong>GDP不及预期，通胀担忧持续：</strong>
+        <div class="macro-quote">
+            Fourth-quarter U.S. GDP up just 1.4%, badly missing estimate.
+            <div class="macro-translation">翻译：美国第四季度GDP仅增长1.4%，远低于预期。</div>
+        </div>
+        <div class="macro-quote">
+            Economic growth cooled near the end of 2025 while inflation held firm, according to data released Friday that could complicate the Federal Reserve’s interest rate path.
+            <div class="macro-translation">翻译：周五发布的数据显示，2025年末经济增长放缓，而通胀保持坚挺，这可能使美联储的利率路径复杂化。</div>
+        </div>
+        <div class="macro-quote">
+            Core PCE jumps to 3% and could go higher with future revisions.
+            <div class="macro-translation">翻译：核心PCE跃升至3%，未来可能因修正数据而进一步上升。</div>
+        </div>
+    </div>
+    <div class="macro-point">
+        <strong>K型经济下的消费分化：</strong>
+        <div class="macro-quote">
+            Management commentary pointed to higher-income consumers holding up well, while lower-income shoppers remain pressured. That’s not noise. That’s confirmation of a K-shaped economy.
+            <div class="macro-translation">翻译：管理层评论指出高收入消费者表现良好，而低收入购物者仍面临压力。这不是噪音，而是K型经济的确认。</div>
+        </div>
+    </div>
+    <div class="macro-point">
+        <strong>AI投资狂潮与“秀出真金白银”的呼声：</strong>
+        <div class="macro-quote">
+            Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects.
+            <div class="macro-translation">翻译：五家领先的上市AI公司今年总计将投入约7000亿美元用于大型项目。</div>
+        </div>
+        <div class="macro-quote">
+            JPMorgan calculated last fall that the tech industry must collect an extra $650 billion in revenue every year (three times the annual revenue of AI chip giant Nvidia) to earn a reasonable investment return.
+            <div class="macro-translation">翻译：摩根大通去年秋季测算，科技行业每年必须额外创造6500亿美元的收入（是AI芯片巨头英伟达年收入的三倍），才能获得合理的投资回报。</div>
+        </div>
+        <div class="macro-quote">
+            I’m officially "ai-ed out"... it feels like we’re moving from the 'hype' phase to the 'show me the money' phase and a lot of these companies are gonna have a rough 2026 when they can't prove ai is actually making them cash.
+            <div class="macro-translation">翻译：我正式“被AI搞烦了”……感觉我们正从“炒作”阶段转向“秀出真金白银”阶段，许多公司在2026年如果无法证明AI确实能带来现金，将会举步维艰。</div>
+        </div>
+    </div>
+    <div class="macro-point">
+        <strong>海外市场吸引力上升：</strong>
+        <div class="macro-quote">
+            U.S. investors are pulling money out of their own stock market at the fastest pace in at least 16 years as Big Tech returns fade and better-performing overseas markets look more attractive.
+            <div class="macro-translation">翻译：随着大型科技股回报率下降以及表现更好的海外市场更具吸引力，美国投资者正以至少16年来最快的速度从本国股市撤资。</div>
+        </div>
+        <div class="macro-quote">
+            International stocks have underperformed for so long it makes sense many investors assumed the turnaround last year was a blip. Maybe it will be in the grand scheme of things but the ex-U.S. trade is gaining steam. This is the best start to the year since 1995 in terms of foreign outperformance over U.S. stocks.
+            <div class="macro-translation">翻译：国际股票长期表现不佳，许多投资者认为去年的好转只是昙花一现。也许从大局来看确实如此，但美国以外的市场交易正在升温。就海外市场跑赢美国股市而言，这是自1995年以来表现最好的一年开局。</div>
+        </div>
+        <div class="macro-quote">
+            After 2 years of bull run, Korean semiconductor stocks remain significantly undervalued and have yet to reach the market position they deserve. When looking at their PE compare to global peers, and upward correction is clearly coming!
+            <div class="macro-translation">翻译：经过两年的牛市，韩国半导体股票仍被严重低估，尚未达到其应有的市场地位。与全球同行相比，它们的市盈率显然预示着即将到来的向上修正！</div>
+        </div>
+    </div>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
-      <li>
-        <div class="stock-tag">1. CRWD (CrowdStrike Holdings, Inc.)</div>
-        <blockquote class="quote">
-          One of the most misguided dumps I've seen in a long time just happened. Anthropic released a new code review skill for Claude which will help find and fix vulnerabilities in software and the algos are selling security stocks like crazy.
-          <div class="translation">翻译：我很久没见过如此被误导的抛售了。Anthropic 发布了 Claude 的一项新代码审查技能，这将有助于发现和修复软件漏洞，而算法却疯狂抛售安全股票。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Take it from someone in the biz: Cloudflare and CrowdStrike do not make application security products that help with code review. They have little to no exposure to this product release.
-          <div class="translation">翻译：听业内人士说：Cloudflare 和 CrowdStrike 并不生产有助于代码审查的应用程序安全产品。它们几乎不受此次产品发布的影响。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">2. NET (Cloudflare, Inc.)</div>
-        <blockquote class="quote">
-          One of the most misguided dumps I've seen in a long time just happened. Anthropic released a new code review skill for Claude which will help find and fix vulnerabilities in software and the algos are selling security stocks like crazy.
-          <div class="translation">翻译：我很久没见过如此被误导的抛售了。Anthropic 发布了 Claude 的一项新代码审查技能，这将有助于发现和修复软件漏洞，而算法却疯狂抛售安全股票。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Take it from someone in the biz: Cloudflare and CrowdStrike do not make application security products that help with code review. They have little to no exposure to this product release. Even if Claude does fix all of the worlds' software bugs, no one is going to stop buying Falcon and putting their servers behind Cloudflare's infrastructure because of it.
-          <div class="translation">翻译：听业内人士说：Cloudflare 和 CrowdStrike 并不生产有助于代码审查的应用程序安全产品。它们几乎不受此次产品发布的影响。即使 Claude 真的修复了世界上所有的软件漏洞，也没有人会因此停止购买 Falcon 并将其服务器置于 Cloudflare 的基础设施之后。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">3. GOOGL (Alphabet Inc.)</div>
-        <blockquote class="quote">
-          I heard this was the casino? GOOG 3DTE - $1,640 -> $11,589
-          <div class="translation">翻译：我听说这里是赌场？GOOG 3DTE — $1,640 变成了 $11,589。</div>
-        </blockquote>
-        <blockquote class="quote">
-          I use youtube but do not have a member account. Their ads became extremely annoying so I added Ublock Origin to my SR Ware browser. Recently, youtube played ads before the video, now that has escalated to refusing to play videos or ads. Their policies are allowing content creators products to be stolen by AI which hurts the creators. I question how these will effect revenues and how quickly.
-          <div class="translation">翻译：我使用 YouTube 但没有会员账户。他们的广告变得极其烦人，所以我给我的 SR Ware 浏览器添加了 Ublock Origin。最近，YouTube 在视频播放前播放广告，现在已经升级到拒绝播放视频或广告。他们的政策允许内容创作者的作品被AI窃取，这损害了创作者。我质疑这些将如何以及多快影响营收。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Leaning towards selling puts on Google and Microsoft, I think big money might still see them as overvalued based on P/E ratios, which versus historical, some could say they are overvalued by 10-15%.
-          <div class="translation">翻译：我倾向于卖出 Google 和 Microsoft 的看跌期权，我认为大资金可能仍认为它们估值过高，基于市盈率，与历史数据相比，一些人可能会说它们被高估了10-15%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">4. MSFT (Microsoft Corporation)</div>
-        <blockquote class="quote">
-          AI is supposed to replace white collar workers so SaaS total # of subscriptions will likely go down from existing subscribers. In this economy where everything is getting more expensive.. for a family at home wanting home office software, or a student or even a new business.. are you really going to pay MSFT when you can get Google Docs for free?
-          <div class="translation">翻译：AI 应该会取代白领工人，因此 SaaS 的总订阅量可能会从现有用户那里下降。在这种物价上涨的经济中，一个家庭想要家庭办公软件，或者一个学生甚至一个新的企业，你真的会为微软付费，而谷歌文档却是免费的吗？</div>
-        </blockquote>
-        <blockquote class="quote">
-          Leaning towards selling puts on Google and Microsoft, I think big money might still see them as overvalued based on P/E ratios, which versus historical, some could say they are overvalued by 10-15%.
-          <div class="translation">翻译：我倾向于卖出 Google 和 Microsoft 的看跌期权，我认为大资金可能仍认为它们估值过高，基于市盈率，与历史数据相比，一些人可能会说它们被高估了10-15%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">5. WRD (WeRide Inc.)</div>
-        <blockquote class="quote">
-          I'm spending time looking into the latest 13F cycle and the gap between retail sentiment are doing with WeRide is becoming a canyon. The top holder is China and UAE Investment Cooperation Fund, holding over 7.7M shares. WeRide right now is rolling out 1200 vehicles in Abu Dhabi and Dubai and they have these owners as their lead investor is a regulatory moat that no one else has. Morgan Stanley: top 5 holder, holding 4.4M shares BlackRock: holding nearly 3M shares, treating this as the index standard.
-          <div class="translation">翻译：我花时间研究了最新的13F周期，发现散户情绪与文远知行（WeRide）之间的差距正在变得巨大。最大的持有人是中国和阿联酋投资合作基金，持有超过770万股。文远知行目前正在阿布扎比和迪拜推出1200辆汽车，而这些股东作为其主要投资者，构成了其他公司所不具备的监管护城河。摩根士丹利是前五大持有人，持有440万股；贝莱德持有近300万股，将其视为指数标准。</div>
-        </blockquote>
-        <blockquote class="quote">
-          December 31 filings, China and UAE Invest Cooperation Fund is still the anchor here, a $10B fund split between Mubadala and Chinese govt. Having the owners of Abu Dhabi and Riyadh that you're building robotaxi system is the biggest moat than any chip maker endorsement. Most importantly, seeing Morgan Stanley and BlackRock in top 5 tells me that institutional names are a lot higher than the current price suggests. They're also securing the world first city level driverless permit in Abu Dhabi and scaling the operation with Uber. At this level, I believe this as an infrastructure play disguised as a tech stock.
-          <div class="translation">翻译：12月31日的备案显示，中国和阿联酋投资合作基金仍是这里的锚定投资者，这是一支由穆巴达拉和中国政府共同出资100亿美元的基金。拥有阿布扎比和利雅得的政府作为你正在建设的机器人出租车系统的所有者，是比任何芯片制造商背书都更大的护城河。最重要的是，看到摩根士丹利和贝莱德位列前五，这表明机构投资者的预期远高于当前股价。他们还在阿布扎比获得了全球首个城市级自动驾驶许可，并与优步合作扩大运营。在这个层面上，我认为这是一项伪装成科技股的基础设施投资。</div>
-        </blockquote>
-      </li>
+        <li>
+          <div class="stock-tag">GOOGL (Alphabet Inc.)</div>
+          <blockquote class="quote">
+            I heard this was the casino? GOOG 3DTE - $1,640 -> $11,589.
+            <div class="translation">翻译：我听说这是赌场吗？谷歌3天到期期权 — 1,640美元变为11,589美元。</div>
+          </blockquote>
+          <blockquote class="quote">
+            Is google heading for an earnings problem? Their ads became extremely annoying so I added Ublock Origin to my SR Ware browser. Recently, youtube played ads before the video, now that has escalated to refusing to play videos or ads. Their policies are allowing content creators products to be stolen by AI which hurts the creators. I question how these will effect revenues and how quickly.
+            <div class="translation">翻译：谷歌是否正面临盈利问题？他们的广告变得极其烦人，所以我给我的SR Ware浏览器安装了Ublock Origin。最近YouTube在视频前播放广告，现在已经升级到拒绝播放视频或广告。他们的政策允许内容创作者的作品被AI盗用，这损害了创作者。我质疑这些将如何以及多快影响营收。</div>
+          </blockquote>
+          <blockquote class="quote">
+            Google is exploring new ways to expand the market for its artificial-intelligence chips, seeking to use its financial might to build a broader AI ecosystem that can better compete with market leader Nvidia.
+            <div class="translation">翻译：谷歌正在探索新方法以扩大其人工智能芯片市场，寻求利用其财政实力构建一个更广泛的AI生态系统，以便更好地与市场领导者英伟达竞争。</div>
+          </blockquote>
+          <blockquote class="quote">
+            Leaning towards selling puts on Google and Microsoft, I think big money might still see them as overvalued based on P/E ratios, which versus historical, some could say they are overvalued by 10-15%.
+            <div class="translation">翻译：倾向于卖出谷歌和微软的看跌期权，我认为大资金可能仍认为它们基于市盈率被高估，与历史数据相比，一些人可能会说它们被高估了10-15%。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">MSFT (Microsoft Corp)</div>
+          <blockquote class="quote">
+            I think I'm bearish on MSFT. #1. AI is supposed to replace white collar workers so SaaS total # of subscriptions will likely go down from existing subscribers. #2. In this economy where everything is getting more expensive.. for a family at home wanting home office software, or a student or even a new business.. are you really going to pay MSFT when you can get Google Docs for free?
+            <div class="translation">翻译：我认为我对微软看跌。第一，AI应该会取代白领工人，因此SaaS的总订阅量可能会从现有订阅者那里下降。第二，在当前物价飞涨的经济环境下，一个家庭想要家庭办公软件，或者一个学生甚至一个新的企业，当你可以免费获得Google Docs时，你真的会为微软付费吗？</div>
+          </blockquote>
+          <blockquote class="quote">
+            Leaning towards selling puts on Google and Microsoft, I think big money might still see them as overvalued based on P/E ratios, which versus historical, some could say they are overvalued by 10-15%. I think long term both great companies, Google entertaining 100 year corporate bonds in my opinion is nuts, but I have strong feeling these two titans will be quickest to monetize AI.
+            <div class="translation">翻译：倾向于卖出谷歌和微软的看跌期权，我认为大资金可能仍认为它们基于市盈率被高估，与历史数据相比，一些人可能会说它们被高估了10-15%。我认为从长远来看，两家都是伟大的公司，谷歌发行100年期公司债在我看来是疯狂的，但我强烈感觉这两大巨头将是最快通过AI实现盈利的公司。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">CRWD (CrowdStrike Holdings, Inc.)</div>
+          <blockquote class="quote">
+            CRWD and NET down almost 10% today because... Claude has a new code review skill. One of the most misguided dumps I've seen in a long time just happened. Anthropic released a new code review skill for Claude which will help find and fix vulnerabilities in software and the algos are selling security stocks like crazy. Cloudflare and CrowdStrike do not make application security products that help with code review. They have little to no exposure to this product release.
+            <div class="translation">翻译：CrowdStrike和Cloudflare今天下跌了近10%，因为Claude有了新的代码审查技能。这是我很久以来见过的最被误导的抛售之一。Anthropic发布了Claude的新代码审查技能，这将有助于发现和修复软件漏洞，算法们正在疯狂抛售安全股。Cloudflare和CrowdStrike并不生产有助于代码审查的应用程序安全产品。它们几乎不受此产品发布的影响。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">NET (Cloudflare, Inc.)</div>
+          <blockquote class="quote">
+            CRWD and NET down almost 10% today because... Claude has a new code review skill. Anthropic released a new code review skill for Claude which will help find and fix vulnerabilities in software and the algos are selling security stocks like crazy. Cloudflare and CrowdStrike do not make application security products that help with code review. They have little to no exposure to this product release. Even if Claude does fix all of the worlds' software bugs, no one is going to stop buying Falcon and putting their servers behind Cloudflare's infrastructure because of it.
+            <div class="translation">翻译：CrowdStrike和Cloudflare今天下跌了近10%，因为Claude有了新的代码审查技能。Anthropic发布了Claude的新代码审查技能，这将有助于发现和修复软件漏洞，算法们正在疯狂抛售安全股。Cloudflare和CrowdStrike并不生产有助于代码审查的应用程序安全产品。它们几乎不受此产品发布的影响。即使Claude真的修复了世界上所有的软件bug，也没有人会因此停止购买Falcon并将其服务器置于Cloudflare的基础设施之后。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">PLTR (Palantir Technologies Inc.)</div>
+          <blockquote class="quote">
+            On valuation, if one had the capital to do so, one could purchase PLTR for its current market cap of, say $330 billion and receive something like $2.2 billion (TTM operating cash flow). Alternatively, for that same $330 billion, one could purchase 100% of the following 2 companies &amp; 85% of a third company: 1) Lockheed Martin ($150B market cap) + 2) General Dynamics ($94B market cap) + 85% of Northrop Grumman ($100B). Those 3, combined, produced roughly $18B in operating cash flow TTM. Granted, this is not the best comparison but is illustrative of the literal price PLTR “investors” (buyers, speculators, gamblers) are paying to b.
+            <div class="translation">翻译：就估值而言，如果一个人有足够的资本，可以以目前3300亿美元的市值购买Palantir，并获得大约22亿美元（过去12个月的运营现金流）。或者，用同样的3300亿美元，可以购买以下两家公司100%的股份和第三家公司85%的股份：1) 洛克希德·马丁（市值1500亿美元）+ 2) 通用动力（市值940亿美元）+ 85%的诺斯罗普·格鲁曼（市值1000亿美元）。这三家公司合计产生的过去12个月运营现金流约为180亿美元。诚然，这不是最好的比较，但它说明了Palantir的“投资者”（买家、投机者、赌徒）为之支付的实际价格。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">WMT (Walmart Inc.)</div>
+          <blockquote class="quote">
+            Walmart beats… and still drops. EPS came in at $0.74 vs $0.73 expected, revenue hit $190.6B, e-commerce is now profitable, and ad revenue jumped 46%. Yet the stock is down. Why? Because FY27 guidance came in at $2.80 vs $2.96 expected. The market didn’t care about the quarter. It cared about the trajectory.
+            <div class="translation">翻译：沃尔玛业绩超预期…股价却依然下跌。每股收益为0.74美元，高于预期的0.73美元，营收达到1906亿美元，电商业务实现盈利，广告收入增长46%。然而股价下跌了。为什么？因为27财年指引为2.80美元，低于预期的2.96美元。市场不关心本季度业绩，而关心未来的发展轨迹。</div>
+          </blockquote>
+          <blockquote class="quote">
+            Management commentary pointed to higher-income consumers holding up well, while lower-income shoppers remain pressured. That’s not noise. That’s confirmation of a K-shaped economy. Walmart sits at the center of U.S. consumption. If they’re seeing divergence, that matters more than a one-cent EPS beat.
+            <div class="translation">翻译：管理层评论指出高收入消费者表现良好，而低收入购物者仍面临压力。这不是噪音，而是K型经济的确认。沃尔玛处于美国消费的中心，如果他们看到了这种分化，这比每股收益超出1美分更重要。</div>
+          </blockquote>
+        </li>
     </ul>
 
     <h2>3. 小众公司冒泡</h2>
     <ul>
-      <li>
-        <div class="stock-tag">1. ZIM (ZIM Integrated Shipping Services Ltd.)</div>
-        <blockquote class="quote">
-          I bought 2001 30 strike calls expiring April 17 for an average of $0.19 last year. I tried to get more for the contracts, but finally settled for $1 on almost all of them. My overall contributions since I started investing again last year have been $13,500. Now I have just under $200,000 after fees and before taxes.
-          <div class="translation">翻译：去年我以平均每份0.19美元的价格购买了2001份行权价为30美元、将于4月17日到期的看涨期权。我尝试为这些合约争取更高的价格，但最终以几乎所有合约1美元的价格成交。我去年重新开始投资以来的总投入是13,500美元。现在扣除费用和税前，我拥有近20万美元。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">2. OXY (Occidental Petroleum Corporation)</div>
-        <blockquote class="quote">
-          GOT CALLED OUT FOR SWITCHING FROM AGQ @ 375 TO OXY SHARES AND CALLS BUT WE JUST GETTING STARTED BABY, FYI I BROUGHT AGQ AT 40$ IN MAY!
-          <div class="translation">翻译：我因为从AGQ@375转投OXY股票和看涨期权而被指责，但我们才刚刚开始，顺便说一句，我是5月份以40美元的价格买入AGQ的！</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">3. RDDT (Reddit Inc.)</div>
-        <blockquote class="quote">
-          My last $160 bet woul be RDDT $160C . If RDDT goes back to ATH next week, i’ll be able to recoup some of losses.
-          <div class="translation">翻译：我最后160美元的赌注将是RDDT的160美元看涨期权。如果RDDT下周回到历史最高点，我就能收回一些损失。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">4. HIMS (Hims & Hers Health, Inc.)</div>
-        <blockquote class="quote">
-          Analysts are bracing for a "mixed bag" report where the top-line growth looks great, but the bottom line is under pressure. If they show that their non-GLP-1 business (hair loss, mental health) is thriving despite the noise, or if they provide strong 2026 guidance, the stock could bounce off its recent lows.
-          <div class="translation">翻译：分析师们正在为一份“喜忧参半”的财报做准备，其中营收增长看起来很棒，但利润却面临压力。如果他们能证明其非GLP-1业务（脱发、心理健康）在外界喧嚣中蓬勃发展，或者提供强劲的2026年指导，那么该股可能会从近期低点反弹。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">5. OPEN (Opendoor Technologies Inc.)</div>
-        <blockquote class="quote">
-          Every metric got worse in 2025. Losses tripled. Shareholders diluted 33%. Contribution margin hit 1% — the worst on record. Revenue down. Volume down. Purchases cut in half. Margins shrinking. Losses tripled. A third of your equity given away to creditors. This is what a 16% rally looks like apparently.
-          <div class="translation">翻译：2025年所有指标都恶化了。亏损翻了三倍。股东被稀释了33%。贡献利润率达到1%——创历史新低。营收下降。销量下降。采购量减半。利润率缩水。亏损翻了三倍。三分之一的股本被给予债权人。这显然就是16%的涨势所呈现的面貌。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">6. PLTR (Palantir Technologies Inc.)</div>
-        <blockquote class="quote">
-          On valuation, if one had the capital to do so, one could purchase PLTR for its current market cap of, say $330 billion and receive something like $2.2 billion (TTM operating cash flow). Alternatively, for that same $330 billion, one could purchase 100% of the following 2 companies &amp; 85% of a third company: 1) Lockheed Martin ($150B market cap) + 2) General Dynamics ($94B market cap) + 85% of Northrop Grumman ($100B). Those 3, combined, produced roughly $18B in operating cash flow TTM.
-          <div class="translation">翻译：论估值，如果有人有足够的资金，可以以目前市值3300亿美元收购PLTR，并获得约22亿美元（过去十二个月的运营现金流）。或者，用同样的3300亿美元，可以收购以下两家公司100%的股份和第三家公司85%的股份：1）洛克希德·马丁（市值1500亿美元）+ 2）通用动力（市值940亿美元）+ 85%的诺斯罗普·格鲁曼（市值1000亿美元）。这三家公司合计在过去十二个月产生了约180亿美元的运营现金流。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">7. LAD (Lithia Motors, Inc.)</div>
-        <blockquote class="quote">
-          Lithia Motors (LAD) is one of nation’s largest string of used and new vehicle dealerships. Lithia trades at $292 a share for a total market cap of $7.21 Billion. At $37 B annual revenue and $825 M net income, LAD has become a prime takeover target for larger conglomerates ready to lower their own PE ratios.
-          <div class="translation">翻译：Lithia Motors (LAD) 是全国最大的二手和新车经销商之一。Lithia 股价为292美元，总市值为72.1亿美元。凭借370亿美元的年收入和8.25亿美元的净收入，LAD 已成为准备降低自身市盈率的大型企业集团的优质收购目标。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">8. OMC (Omnicom Group Inc.)</div>
-        <blockquote class="quote">
-          On the surface, it looks like a train wreck with a $941M net loss in Q4 alone, but the underlying numbers tell a very different story. Revenue: Beating estimates at $17.3B (Up 10%). The "Loss" is Paper-only: It’s almost entirely driven by $1.1B in repositioning costs from the IPG merger. Aggressive Buybacks: They announced a $5B buyback ($2.5B accelerated). That's massive for a company this size. Synergy Targets: They doubled their cost-saving target to $1.5B through 2026.
-          <div class="translation">翻译：表面上看，仅第四季度就录得9.41亿美元的净亏损，像是一场灾难，但其基本数据却讲述了一个截然不同的故事。营收：以173亿美元超出预期（增长10%）。“亏损”只是账面亏损：几乎完全是由IPG合并带来的11亿美元重组成本驱动的。激进的回购：他们宣布了50亿美元的回购计划（加速回购25亿美元）。对于这个规模的公司来说，这是巨大的。协同效应目标：他们将2026年的成本节约目标翻倍至15亿美元。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">9. SFM (Sprouts Farmers Market, Inc.)</div>
-        <blockquote class="quote">
-          SFM has been de-rated from a narrative-driven premium to a deep-value multiple that fails to reflect its differentiated positioning, accelerating growth, and high earnings quality. Conservative comp guidance and crowd disillusionment create an asymmetric setup where modest fundamental execution could trigger a meaningful re-rating toward fair value over the next 6–12 months.
-          <div class="translation">翻译：SFM 已从叙事驱动的溢价被降级为深度价值倍数，未能反映其差异化定位、加速增长和高质量盈利。保守的同店销售指引和市场失望情绪创造了一个非对称的局面，适度的基本面执行可能在未来6-12个月内触发其股价向公允价值进行有意义的重估。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">10. NNE (Nano Nuclear Energy Inc.)</div>
-        <blockquote class="quote">
-          What do you guys think about nuclear energy stocks like OKLO, NNE and others? Goes without saying, energy is in short supply for AI and nuclear energy looks like a really good solution. The current administration just recently announced an investment. However, it doesn't look like the technology is there yet, the stock charts look like a crazy rollercoaster.
-          <div class="translation">翻译：你们对 OKLO、NNE 等核能股票有什么看法？不言而喻，AI 对能源需求旺盛，核能看起来是一个非常好的解决方案。本届政府最近也宣布了一项投资。然而，这项技术似乎尚未成熟，股票走势就像过山车一样疯狂。</div>
-        </blockquote>
-      </li>
+        <li>
+          <div class="stock-tag">ZIM (ZIM Integrated Shipping Services Ltd.)</div>
+          <blockquote class="quote">
+            I bought 2001 30 strike calls expiring April 17 for an average of $0.19 last year. I tried to get more for the contracts, but finally settled for $1 on almost all of them. My overall contributions since I started investing again last year have been $13,500. Now I have just under $200,000 after fees and before taxes.
+            <div class="translation">翻译：我去年以平均0.19美元的价格购买了2001份4月17日到期的30行权价看涨期权。我尝试以更高价格出售合约，但最终几乎全部以1美元结算。自去年重新开始投资以来，我的总投入是13,500美元。现在扣除费用和税前，我拥有将近200,000美元。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">RDDT (Reddit, Inc.)</div>
+          <blockquote class="quote">
+            My last $160 bet woul be RDDT $160C . If RDDT goes back to ATH next week, i’ll be able to recoup some of losses. Wish me luck fellow regard!
+            <div class="translation">翻译：我最后160美元的赌注将是Reddit的160美元看涨期权。如果Reddit下周回到历史高点，我将能够挽回一些损失。祝我好运，各位！</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">HIMS (Hims & Hers Health, Inc.)</div>
+          <blockquote class="quote">
+            Hims &amp; Hers Health (HIMS) is scheduled to report its Q4 2025 earnings on Monday, February 23, 2026, after the market closes. Whether the stock will rally is currently a "tug-of-war" between impressive revenue growth and significant regulatory/legal hurdles.
+            <div class="translation">翻译：Hims &amp; Hers Health (HIMS) 定于2026年2月23日（周一）收盘后公布其2025年第四季度财报。该股是否会反弹，目前是令人印象深刻的营收增长和重大的监管/法律障碍之间的“拉锯战”。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">OPEN (Opendoor Technologies Inc.)</div>
+          <blockquote class="quote">
+            OPEN made just $4,000 per home last quarter. Every metric got worse in 2025. Losses tripled. Shareholders diluted 33%. Contribution margin hit 1% — the worst on record. This is what a 16% rally looks like apparently.
+            <div class="translation">翻译：Opendoor上个季度每套房屋仅盈利4000美元。2025年各项指标全部恶化。亏损增加了两倍。股东股权稀释了33%。贡献利润率达到1%——创历史新低。这显然就是16%的涨势所呈现的面貌。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">LAD (Lithia Motors, Inc.)</div>
+          <blockquote class="quote">
+            Lithia Motors (LAD) is one of nation’s largest string of used and new vehicle dealerships. Lithia trades at $292 a share for a total market cap of $7.21 Billion (a minuscule number in the world of stock market). At $37 B annual revenue and $825 M net income, LAD has become a prime takeover target for larger conglomerates ready to lower their own PE ratios.
+            <div class="translation">翻译：Lithia Motors (LAD) 是全国最大的二手车和新车经销商连锁店之一。Lithia每股交易价格为292美元，总市值达72.1亿美元（在全球股市中这是一个微不足道的数字）。凭借370亿美元的年收入和8.25亿美元的净利润，LAD已成为寻求降低自身市盈率的大型企业集团的主要收购目标。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">SFM (Sprouts Farmers Market, Inc.)</div>
+          <blockquote class="quote">
+            SFM (Sprouts Farmers Market, Inc.) THESIS SFM has been de-rated from a narrative-driven premium to a deep-value multiple that fails to reflect its differentiated positioning, accelerating growth, and high earnings quality. Conservative comp guidance and crowd disillusionment create an asymmetric setup where modest fundamental execution could trigger a meaningful re-rating toward fair value over the next 6–12 months.
+            <div class="translation">翻译：Sprouts Farmers Market (SFM) 论点：SFM已从叙事驱动的溢价估值降级为深度价值估值，未能反映其差异化定位、加速增长和高质量盈利。保守的同店销售指引和市场失望情绪创造了一种不对称的局面，即适度的基本面执行力可能在未来6-12个月内触发股价向公允价值进行有意义的重估。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">OMC (Omnicom Group Inc.)</div>
+          <blockquote class="quote">
+            On the surface, it looks like a train wreck with a $941M net loss in Q4 alone, but the underlying numbers tell a very different story. Revenue: Beating estimates at $17.3B (Up 10%). The "Loss" is Paper-only: It’s almost entirely driven by $1.1B in repositioning costs from the IPG merger. Aggressive Buybacks: They announced a $5B buyback ($2.5B accelerated). That's massive for a company this size. Synergy Targets: They doubled their cost-saving target to $1.5B through 2026.
+            <div class="translation">翻译：表面上看，仅第四季度就出现了9.41亿美元的净亏损，像是火车脱轨，但其背后数字却讲述了一个截然不同的故事。收入：达到173亿美元，超出预期（增长10%）。“亏损”只是账面上的：它几乎完全由IPG合并带来的11亿美元重组成本驱动。激进的回购：他们宣布了50亿美元的回购计划（其中25亿美元加速进行）。对于这么大规模的公司来说，这是巨大的。协同效应目标：他们将成本节约目标翻倍，到2026年达到15亿美元。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">MLR (Miller Industries, Inc.)</div>
+          <blockquote class="quote">
+            As I screen for undervalued companies, it seems there's a sweet spot right around $500m market cap. Last month I stumbled upon Miller Industries (ticker: MLR), the dominant player in tow truck systems. Low debt. Low multiples. Cyclical compression. Growth drivers: international expansion, military contracts, robotics.
+            <div class="translation">翻译：在我筛选被低估的公司时，市值5亿美元左右似乎是一个绝佳的切入点。上个月我偶然发现了米勒工业（股票代码：MLR），它是拖车系统领域的主导者。低负债。低估值。周期性压缩。增长驱动因素：国际扩张、军事合同、机器人技术。</div>
+          </blockquote>
+        </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
     <div class="track-header">模型</div>
-    <div class="comment-summary">Anthropic 发布了 Claude AI 的新代码审查技能，被认为是导致 CrowdStrike 和 Cloudflare 等安全软件公司股价下跌的原因，但业内人士认为这是一种误导，因为这些公司与代码审查产品关联不大。</div>
+    <blockquote class="quote">
+      Anthropic released a new code review skill for Claude which will help find and fix vulnerabilities in software.
+      <div class="translation">翻译：Anthropic发布了Claude新的代码审查技能，这将有助于发现并修复软件中的漏洞。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Nvidia is close to finalising a $30bn investment into OpenAI that will replace the long-term $100bn commitment agreed by the companies last year, as part of a massive new funding round for the AI start-up.
+      <div class="translation">翻译：英伟达即将完成对OpenAI的300亿美元投资，这将取代两家公司去年达成的1000亿美元长期承诺，作为这家AI初创公司新一轮巨额融资的一部分。</div>
+    </blockquote>
+
     <div class="track-header">算</div>
-    <div class="comment-summary">Google 正寻求利用其财力扩展 AI 芯片市场，与市场领导者 Nvidia 竞争。Nvidia 即将敲定对 OpenAI 的300亿美元投资，OpenAI 将把大部分新资金再投资于 Nvidia 硬件。3月份 Nvidia GTC 大会预计将重点提及三星和SK海力士作为HBM4主要供应商。</div>
+    <blockquote class="quote">
+      Google is exploring new ways to expand the market for its artificial-intelligence chips, seeking to use its financial might to build a broader AI ecosystem that can better compete with market leader Nvidia.
+      <div class="translation">翻译：谷歌正在探索新方法以扩大其人工智能芯片市场，寻求利用其财政实力构建一个更广泛的AI生态系统，以便更好地与市场领导者英伟达竞争。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Nvidia's GTC on 16th March: both Samsung and SK Hynix is likely to receive significant praises ah primary hardware suppliers. (Samsung has shipped their world-first HBM4 mass production to Nvidia and SK Hynix currently holds approximately 70% of the Vera Rubin HBM4 requirements).
+      <div class="translation">翻译：在3月16日的英伟达GTC大会上，三星和SK海力士很可能作为主要硬件供应商获得显著赞誉。（三星已将其全球首个HBM4量产产品出货给英伟达，SK海力士目前持有大约70%的Vera Rubin HBM4需求）。</div>
+    </blockquote>
+
     <div class="track-header">光</div>
-    <div class="comment-summary">AI 革命的核心是“光网络超级周期”（Optical & Networking Supercycle）。</div>
+    <blockquote class="quote">
+      Optical & Networking Supercycle at the heart of the AI Revolution.
+      <div class="translation">翻译：光学和网络超级周期是人工智能革命的核心。</div>
+    </blockquote>
+
     <div class="track-header">存</div>
-    <div class="comment-summary">韩国半导体公司在HBM4领域表现突出，三星已向 Nvidia 大规模量产出货全球首款HBM4，SK海力士目前占据 Vera Rubin HBM4 需求约70%的份额。</div>
+    <blockquote class="quote">
+      SK Hynix's ADR &amp; Solidigm IPO are due to be announced in 2026.
+      <div class="translation">翻译：SK海力士的美国存托凭证（ADR）和Solidigm的首次公开募股（IPO）定于2026年宣布。</div>
+    </blockquote>
+
     <div class="track-header">电</div>
-    <div class="comment-summary">AI 对能源需求旺盛，核能被视为一个良好的解决方案，尽管技术尚不成熟，相关股票波动剧烈。</div>
+    <blockquote class="quote">
+      Goes without saying, energy is in short supply for AI and nuclear energy looks like a really good solution.
+      <div class="translation">翻译：毋庸置疑，人工智能的能源供应短缺，核能看起来是一个非常好的解决方案。</div>
+    </blockquote>
+
     <div class="track-header">板</div>
-    <div class="comment-summary">（无明确讨论内容）</div>
+    <blockquote class="quote">
+      Optical & Networking Supercycle at the heart of the AI Revolution.
+      <div class="translation">翻译：光学和网络超级周期是人工智能革命的核心。</div>
+    </blockquote>
+
     <div class="track-header">云</div>
-    <div class="comment-summary">超大规模厂商（Hyperscalers）正进行大规模资本支出，引发其激进投资是为了抓住机遇还是被拖入无谓军备竞赛的讨论。Google 正在增加对其数据中心合作伙伴的财政支持，以向更广泛的客户提供计算能力。微软的Azure云计算业务增长故事也受到关注。</div>
+    <blockquote class="quote">
+      Google is dealing with myriad challenges as it seeks to grow. The issues include bottlenecks at manufacturing partners and limited interest from cloud-computing rivals that are among the largest buyers of Nvidia processors.
+      <div class="translation">翻译：谷歌在寻求增长时正面临无数挑战。问题包括制造合作伙伴的瓶颈，以及来自云计算机竞争对手的有限兴趣，这些竞争对手是英伟达处理器最大的买家之一。</div>
+    </blockquote>
+    <blockquote class="quote">
+      This has been a rough three month stretch for mega cap tech, and more specifically, for the hyperscalers. While I remain bullish on most of them, there is increased risk that comes with this capex, which is much larger than anyone could have foreseen several years ago.
+      <div class="translation">翻译：对于市值巨大的科技公司，特别是超大规模云服务提供商而言，这三个月是艰难的时期。虽然我仍然看好其中大部分，但伴随此次资本支出增加的风险也随之上升，其规模远超几年前任何人的预期。</div>
+    </blockquote>
+
     <div class="track-header">AI应用</div>
-    <div class="comment-summary">AI 被认为可能取代白领工人，从而导致 SaaS 订阅总数下降。YouTube 的政策允许内容创作者的作品被AI窃取，引发对其营收影响的担忧。</div>
+    <blockquote class="quote">
+      Anthropic released a new code review skill for Claude which will help find and fix vulnerabilities in software and the algos are selling security stocks like crazy. Cloudflare and CrowdStrike do not make application security products that help with code review. They have little to no exposure to this product release.
+      <div class="translation">翻译：Anthropic发布了Claude新的代码审查技能，这将有助于发现并修复软件中的漏洞，算法们正在疯狂抛售安全股。Cloudflare和CrowdStrike不生产有助于代码审查的应用程序安全产品。它们几乎不受此产品发布的影响。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Their policies are allowing content creators products to be stolen by AI which hurts the creators. I question how these will effect revenues and how quickly.
+      <div class="translation">翻译：他们的政策允许AI窃取内容创作者的产品，这损害了创作者。我质疑这些将如何以及多快影响营收。</div>
+    </blockquote>
+    <blockquote class="quote">
+      AI is supposed to replace white collar workers so SaaS total # of subscriptions will likely go down from existing subscribers.
+      <div class="translation">翻译：人工智能应该会取代白领工人，因此SaaS的总订阅量可能会从现有订阅者那里下降。</div>
+    </blockquote>
 
 </body>
 </html>
