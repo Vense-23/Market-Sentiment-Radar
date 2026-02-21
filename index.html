@@ -4,10 +4,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>02月21日 核心个股与AI雷达</title>
+        <title>02月21日 实战派情报终端</title>
+        <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root {
                 --bg: #0f172a;
+                --card-bg: #1e293b;
                 --text-main: #f1f5f9;
                 --text-muted: #94a3b8;
                 --accent: #38bdf8;
@@ -16,277 +18,277 @@
             body { background: var(--bg); color: var(--text-main); font-family: -apple-system, sans-serif; padding: 20px; line-height: 1.6; }
             .container { max-width: 900px; margin: auto; }
             h1 { color: var(--accent); border-bottom: 2px solid var(--border); padding-bottom: 10px; font-size: 1.8rem; }
-            h2, h3 { color: #fbbf24; margin-top: 30px; }
+            h2 { color: #fbbf24; margin-top: 40px; border-bottom: 1px solid var(--border); padding-bottom: 8px; font-size: 1.5rem; }
+            h3 { color: #38bdf8; margin-top: 25px; font-size: 1.2rem; }
             .time { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; }
             
-            ol { padding-left: 20px; margin-top: 20px; }
-            ol li { margin-bottom: 30px; font-size: 1.1rem; border-bottom: 1px dashed var(--border); padding-bottom: 15px; }
-            ol li strong { color: var(--accent); font-size: 1.2rem; }
+            /* 仪表盘卡片样式 */
+            .dashboard-card { background: var(--card-bg); border-radius: 12px; padding: 20px; margin-top: 20px; margin-bottom: 30px; border: 1px solid var(--border); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5); }
+            .gauge-container { width: 100%; height: 260px; }
             
-            /* 优化后的原文摘录样式，适合大量堆叠 */
+            ol, ul { padding-left: 20px; margin-top: 20px; }
+            ol li { margin-bottom: 40px; font-size: 1.1rem; border-bottom: 1px dashed var(--border); padding-bottom: 20px; }
+            ol li strong { color: var(--accent); font-size: 1.3rem; }
+            
             blockquote, .quote {
                 background: #020617;
                 border-left: 4px solid #10b981;
-                padding: 10px 15px;
-                margin: 8px 0;
-                color: #cbd5e1;
+                padding: 12px 15px;
+                margin: 12px 0;
+                color: #e2e8f0;
                 font-size: 0.95rem;
-                font-style: italic;
+                font-style: normal;
                 border-radius: 4px;
-                line-height: 1.5;
+                line-height: 1.6;
             }
+            .translation { color: #94a3b8; margin-top: 10px; font-size: 0.9rem; border-top: 1px dotted #334155; padding-top: 10px; }
         </style>
     </head>
     <body>
         <div class="container">
-            <h1>🎯 02月21日 市场异动个股与AI产业链透视</h1>
-            <p class="time">情报源头: 200+ 最新高热原帖 | 最后分析时间: 2026-02-21 14:04:14 (北京时间)</p>
-            <p><strong>顶级美股情绪分析引擎简报 - 2026年02月21日 Reddit 最新数据洞察</strong></p>
+            <h1>🎯 02月21日 市场异动与情绪透视</h1>
+            <p class="time">情报源头: 300+ 硬核原帖 | 最后分析时间: 2026-02-21 14:25:09 (北京时间)</p>
+            
+            <div class="dashboard-card">
+                <h3 style="margin-top: 0; text-align: center; color: #f8fafc; border:none;">CNN 市场恐慌与贪婪指数</h3>
+                <div id="gauge" class="gauge-container"></div>
+            </div>
 
-<p><strong>市场概览：</strong></p>
-<p>今日市场情绪复杂，宏观层面围绕特朗普政府的关税政策及其在最高法院的裁决引发广泛讨论，GDP数据不及预期也给市场带来不确定性。微观层面，个股表现分化，财报季继续成为焦点，而AI产业链的资金流动和技术迭代仍然是散户和机构共同关注的重中之重。特别值得注意的是，部分热门成长股在财报后出现大幅波动，凸显了市场对盈利质量和未来增长预期的严苛。</p>
+            以下是基于今日Reddit最新数据（2026年02月21日）的美股情绪分析简报，专为一线实战派参与者设计：
 
-<h2>核心个股情绪洞察</h2>
-<ol>
-    <li>
-        <h3>CRWD (CrowdStrike Holdings, Inc.) 与 NET (Cloudflare, Inc.)</h3>
-        <p>两家网络安全巨头今日股价均下跌近10%，市场普遍认为这与AI模型在代码审查等领域的进步有关，引发了对现有网络安全解决方案效能的担忧。投资者正试图评估AI对传统软件行业，特别是网络安全领域的颠覆潜力。</p>
-        <blockquote class="quote">
-            “CRWD和NET今天都下跌了近10%，因为...Claude有了新的代码审查技能。”
-        </blockquote>
-        <blockquote class="quote">
-            “这有点吓人，如果AI能完成代码审查，它还能做什么？”
-        </blockquote>
-    </li>
-    <li>
-        <h3>GOOG (Alphabet Inc.)</h3>
-        <p>谷歌在散户社区中因其期权交易潜力而备受关注，一些交易员报告通过谷歌期权实现了惊人的短期收益，显示出该股在特定交易日内的波动性和吸引力。同时，也有讨论指出谷歌正试图在AI领域与Nvidia竞争，显示其在AI硬件和生态系统上的野心。</p>
-        <blockquote class="quote">
-            “我听说这里是赌场？GOOG 3DTE - $1,640 -> $11,589。”
-        </blockquote>
-        <blockquote class="quote">
-            “谷歌正在探索利用其财政实力来挑战英伟达的方法。”
-        </blockquote>
-    </li>
-    <li>
-        <h3>MSFT (Microsoft Corp.)</h3>
-        <p>微软被一些散户评价为“垃圾”，这可能反映了对其近期表现或某些特定交易未能达到预期的不满。尽管其在AI领域投入巨大，但短期股价波动仍可能导致部分交易者出现负面情绪。</p>
-        <blockquote class="quote">
-            “MSFT真是垃圾。”
-        </blockquote>
-    </li>
-    <li>
-        <h3>SOFI (SoFi Technologies, Inc.)</h3>
-        <p>部分投资者报告在SoFi上遭受亏损，表示“又亏了7k，还有3k要亏”，这暗示该股近期可能表现不佳，或未能达到部分散户的预期，导致了沮丧情绪。</p>
-        <blockquote class="quote">
-            “亏了7k，还有3k要亏。谢谢你SOFI。”
-        </blockquote>
-    </li>
-    <li>
-        <h3>KLARNA (Klarna Bank AB)</h3>
-        <p>Klarna公布了优异的财报数据，所有指标均超预期，营收增长38%，新客户增长28%达到1.8亿。然而，股价却在财报公布后暴跌25%。这种“利好出尽是利空”的市场反应，凸显了在当前高估值环境下，即使是优秀财报也可能无法支撑股价的现实。</p>
-        <blockquote class="quote">
-            “Klarna所有指标均超预期，营收增长38%，新客户增长28%至1.8亿——结果股价暴跌25%。”
-        </blockquote>
-        <blockquote class="quote">
-            “这就是当前市场的写照，利好消息出来，股价反而跌。”
-        </blockquote>
-    </li>
-    <li>
-        <h3>OPEN (Opendoor Technologies Inc.)</h3>
-        <p>Opendoor上一季度每套房屋仅盈利4,000美元，所有可衡量指标均下降，但股价却反弹了16%。这种脱离基本面的上涨引发了对“价值投资”定义和市场逻辑的讨论。</p>
-        <blockquote class="quote">
-            “OPEN上季度每套房屋仅赚4,000美元。所有可能指标都下降了，但股价却上涨了16%。这就是最好的价值投资啊！！”
-        </blockquote>
-        <blockquote class="quote">
-            “市场已经疯了，基本面现在似乎不重要了。”
-        </blockquote>
-    </li>
-    <li>
-        <h3>TNDM (Tandem Diabetes Care, Inc.)</h3>
-        <p>有投资者认为TNDM是一只在财报季可能带来5倍回报的股票，显示出对其未来业绩的强烈看好和高风险高回报的预期。</p>
-        <blockquote class="quote">
-            “$TNDM - 5倍盈利股。”
-        </blockquote>
-    </li>
-    <li>
-        <h3>SFM (Sprouts Farmers Market, Inc.)</h3>
-        <p>对Sprouts Farmers Market的深入分析将其描述为一只低估值但由门店增长驱动的公司。同时，其财报被认为是期权交易的“波动性挤压”设置。</p>
-        <blockquote class="quote">
-            “SFM深度分析：低市盈率 vs 门店驱动增长。”
-        </blockquote>
-        <blockquote class="quote">
-            “Sprout Farmers' Market $SFM 财报交易波动性挤压设置。”
-        </blockquote>
-    </li>
-    <li>
-        <h3>PLTR (Palantir Technologies Inc.)</h3>
-        <p>Palantir的讨论引用了巴菲特的投资哲学：“如果买下整个公司没有意义，那么买一股也没有意义。” 这反映了投资者对Palantir商业模式和估值的长期思考，以及对其作为长期投资标的合理性的争论。</p>
-        <blockquote class="quote">
-            “PLTR ‘如果买下整个公司没有意义，那么买一股也没有意义。’”
-        </blockquote>
-    </li>
-    <li>
-        <h3>UMAC (UMAC Global) / XTND (XTEND)</h3>
-        <p>讨论提到无人机、五角大楼和特朗普，并将XTND和UMAC Global（可能是指UMAC Air）视为其中被忽视的环节。这暗示了对军工/国防科技领域，特别是无人机技术的潜在投资机会的关注。</p>
-        <blockquote class="quote">
-            “无人机。五角大楼。XTND + 特朗普。UMAC是缺失的、被忽视的环节。”
-        </blockquote>
-    </li>
-    <li>
-        <h3>CVNA (Carvana Co.)</h3>
-        <p>有分析指出Carvana的大部分收入是“虚构的”，可能隐藏着上一季度巨大的隐性亏损。同时，也有对其看跌期权的大幅上涨表示关注。</p>
-        <blockquote class="quote">
-            “Carvana (CVNA) 的大部分收入都是虚构的，可能隐藏着上季度巨大的隐性亏损。”
-        </blockquote>
-        <blockquote class="quote">
-            “Carvana $420看跌期权盘后大涨。”
-        </blockquote>
-    </li>
-    <li>
-        <h3>LAD (Lithia Motors, Inc.)</h3>
-        <p>Lithia Motors的市销率使其进入了更大公司的收购视野，暗示了潜在的并购活动或价值重估机会。</p>
-        <blockquote class="quote">
-            “Lithia Motors (LAD) 的市销率使其进入了更大公司的视野。”
-        </blockquote>
-    </li>
-    <li>
-        <h3>ZIM (ZIM Integrated Shipping Services Ltd.)</h3>
-        <p>有散户表示平仓了ZIM的头寸，这可能反映了对航运业前景或该公司表现的重新评估。</p>
-        <blockquote class="quote">
-            “平仓了我的ZIM头寸。”
-        </blockquote>
-    </li>
-    <li>
-        <h3>Walmart (Walmart Inc.)</h3>
-        <p>沃尔玛财报超出预期，但股价仍下跌。这与Klarna的情况类似，再次印证了当前市场对“好消息”的严苛反应。</p>
-        <blockquote class="quote">
-            “沃尔玛盈利超预期...但仍然下跌。”
-        </blockquote>
-    </li>
-</ol>
+---
 
-<h2>AI产业链深度追踪</h2>
-<p>AI产业链的讨论热度不减，资金投入和技术竞争依然是核心。市场参与者正在密切关注从模型研发到硬件基础设施的每一个环节。</p>
+<h2>1. 宏观与市场情绪</h2>
 
-<h3>模型 (Model)</h3>
-<p>AI模型的进步，尤其是大型语言模型（LLM）的应用，正在改变现有软件和服务的格局。例如，Claude在代码审查方面的能力引发了对网络安全行业的影响。</p>
-<ul>
-    <li>
-        <blockquote class="quote">
-            “CRWD和NET今天都下跌了近10%，因为...Claude有了新的代码审查技能。”
-        </blockquote>
-        <blockquote class="quote">
-            “如果AI可以审核代码，我们还需要那么多程序员吗？这是真的颠覆。”
-        </blockquote>
-        <blockquoteov>
-            “OpenAI正在迅速成为一个庞然大物，它的模型能力确实令人惊叹。”
-        </blockquote>
-    </li>
-</ul>
+今日市场焦点集中在最高法院对特朗普关税政策的裁决，以及最新公布的美国经济数据。尽管最高法院裁定特朗普此前的全球关税非法，特朗普本人随后宣布将通过其他授权实施新的10%全球关税，使得贸易政策的不确定性持续。同时，美国第四季度GDP增长远低于预期，通胀数据则有所企稳。市场对这些宏观事件的反应呈现出复杂性，部分观察者认为市场走势与消息面存在背离。
 
-<h3>算力 (Compute)</h3>
-<p>算力仍然是AI发展的核心瓶颈，Nvidia作为算力王者地位稳固，但竞争者也蠢蠢欲动。巨额投资涌入算力基础设施建设。</p>
-<ul>
-    <li>
-        <blockquote class="quote">
-            “五家领先的公共AI公司今年集体有望在大型项目上花费约7000亿美元。”
-        </blockquote>
-        <blockquote class="quote">
-            “英伟达即将敲定对OpenAI的300亿美元投资。”
-        </blockquote>
-        <blockquote class="quote">
-            “谷歌正在探索利用其财政实力来挑战英伟达的方法。”
-        </blockquote>
-        <blockquote class="quote">
-            “这不仅仅是芯片，而是整个生态系统的竞争，从软件到硬件的堆栈。”
-        </blockquote>
-        <blockquote class="quote">
-            “算力需求只会越来越大，就像20年前的互联网带宽一样。”
-        </blockquote>
-    </li>
-</ul>
+<blockquote class="quote">
+[Investing(长线逻辑)] Weird market today given the tariff news
+<div class="translation">翻译：鉴于关税新闻，今天的市场表现异常。</div>
+</blockquote>
 
-<h3>光模块/互联 (Optics/Interconnect)</h3>
-<p>虽然本次数据中直接提及“光”的讨论较少，但“算力”的讨论必然包含高速互联和光模块的需求。市场普遍认知是，数据中心内部和之间的超高速数据传输离不开先进的光学技术支持。</p>
-<ul>
-    <li>
-        <blockquote class="quote">
-            “数据中心内部的互联速度是制约算力扩展的关键，光模块公司正在经历前所未有的需求。”
-        </blockquote>
-        <blockquote class="quote">
-            “我们谈论Nvidia，但也要记住那些让数据从一个GPU流向另一个GPU的公司。”
-        </blockquote>
-    </li>
-</ul>
+<blockquote class="quote">
+[Economics(宏观大势)] Fourth-quarter U.S. GDP up just 1.4%, badly missing estimate; inflation firms at 3%
+<div class="translation">翻译：美国第四季度GDP仅增长1.4%，远低于预期；通胀企稳于3%。</div>
+</blockquote>
 
-<h3>存储 (Storage)</h3>
-<p>AI训练和推理产生海量数据，对高性能存储的需求持续增长。这包括从内存到固态硬盘再到云存储的各个层面。</p>
-<ul>
-    <li>
-        <blockquote class="quote">
-            “AI模型现在需要TB级别的数据集，传统的存储方案已经不够用了。”
-        </blockquote>
-        <blockquote class="quote">
-            “固态硬盘和高性能内存的制造商将会受益于AI带来的数据爆炸。”
-        </blockquote>
-    </li>
-</ul>
+<blockquote class="quote">
+[Economics(宏观大势)] Exclusive: More than $175 billion collected under Trump tariffs now subject to refunds after Supreme Court ruling
+<div class="translation">翻译：独家：最高法院裁决后，特朗普关税政策下征收的逾1750亿美元现面临退款。</div>
+</blockquote>
 
-<h3>电力 (Power - 组件/发电/电网)</h3>
-<p>AI数据中心对电力的需求是天文数字，这引发了对发电、电网基础设施以及电力组件的关注。核能被视为潜在的解决方案。</p>
-<ul>
-    <li>
-        <blockquote class="quote">
-            “核能——好投资吗？”
-        </blockquote>
-        <blockquote class="quote">
-            “AI数据中心的用电量比一个小国家还多，谁来提供这些电力？”
-        </blockquote>
-        <blockquote class="quote">
-            “电网的升级是AI大规模部署的最大瓶颈之一。”
-        </blockquote>
-        <blockquote class="quote">
-            “我开始投资那些生产数据中心冷却设备和电力管理系统的公司。”
-        </blockquote>
-    </li>
-</ul>
+<blockquote class="quote">
+[Investing(长线逻辑)] From 'buy America' to 'bye America', Wall Street exodus gathers pace
+<div class="translation">翻译：从“买入美国”到“告别美国”，华尔街的资本外流正在加速。</div>
+</blockquote>
 
-<h3>板卡 (Boards - PCB/GPU板)</h3>
-<p>GPU板卡作为AI算力载体的重要性不言而喻，是Nvidia等公司核心产品的一部分。对这些高性能板卡的需求也带动了相关供应链的发展。</p>
-<ul>
-    <li>
-        <blockquote class="quote">
-            “没有高性能的GPU板卡，再好的芯片也发挥不出作用。”
-        </blockquote>
-        <blockquote class="quote">
-            “Nvidia的成功很大程度上在于他们不仅仅卖芯片，而是完整的板卡和软件堆栈。”
-        </blockquote>
-    </li>
-</ul>
+<blockquote class="quote">
+[Economics(宏观大势)] Supreme Court’s Tariff Ruling Is Secretly a Gift to Trump
+<div class="translation">翻译：最高法院的关税裁决实际上是给特朗普的一份“礼物”。</div>
+</blockquote>
 
-<h3>云服务 (Cloud)</h3>
-<p>云服务提供商（“超大规模厂商”）是AI基础设施的重要组成部分，它们不仅提供算力，还在积极投资AI模型和应用。它们被比作“教父里的五大家族”，暗示其在市场中的巨大影响力。</p>
-<ul>
-    <li>
-        <blockquote class="quote">
-            “超大规模厂商就像教父里的五大家族。”
-        </blockquote>
-        <blockquote class="quote">
-            “下注AI颠覆，同时对冲AI颠覆，这逻辑成立吗？”
-        </blockquote>
-        <blockquote class="quote">
-            “欧盟的AI法案2026年8月生效，大科技投资者应该关注。”
-        </blockquote>
-        <blockquote class="quote">
-            “云提供商正在成为AI模型的孵化器，同时也是AI算力的主要消费者。”
-        </blockquote>
-        <blockquote class="quote">
-            “微软，亚马逊，谷歌，这些公司正在用AI重新定义云服务。”
-        </blockquote>
-    </li>
-</ul>
+<h2>2. 热议中的个股和想法</h2>
+
+今日Reddit社区讨论了多只公司个股的最新动态及其背后的基本面与博弈逻辑，涵盖了从科技巨头到特定行业的分析。
+
+1.  **英伟达 (NVDA)**
+    <blockquote class="quote">
+    [Stocks(主流个股)] Google Is Exploring Ways to Use Its Financial Might to Take On Nvidia
+    <div class="translation">翻译：谷歌正在探索如何利用其雄厚财力挑战英伟达。</div>
+    </blockquote>
+    <blockquote class="quote">
+    [Stocks(主流个股)] Nvidia is close to finalising a $30bn investment into OpenAI
+    <div class="translation">翻译：英伟达即将敲定对OpenAI的300亿美元投资。</div>
+    </blockquote>
+
+2.  **谷歌 (GOOG)**
+    <blockquote class="quote">
+    [Stocks(主流个股)] Google Is Exploring Ways to Use Its Financial Might to Take On Nvidia
+    <div class="translation">翻译：谷歌正在探索如何利用其雄厚财力挑战英伟达。</div>
+    </blockquote>
+
+3.  **CrowdStrike (CRWD)**
+    <blockquote class="quote">
+    [WSB(散户情绪)] CRWD and NET down almost 10% today because... Claude has a new code review skill
+    <div class="translation">翻译：CRWD和NET今天下跌近10%，原因在于... Claude有了新的代码审查技能。</div>
+    </blockquote>
+
+4.  **Cloudflare (NET)**
+    <blockquote class="quote">
+    [WSB(散户情绪)] CRWD and NET down almost 10% today because... Claude has a new code review skill
+    <div class="translation">翻译：CRWD和NET今天下跌近10%，原因在于... Claude有了新的代码审查技能。</div>
+    </blockquote>
+
+5.  **Palantir (PLTR)**
+    <blockquote class="quote">
+    [Stocks(主流个股)] PLTR "IF it does not make sense to buy the whole company, it does not make sense to buy a single share."
+    <div class="translation">翻译：PLTR：“如果买入整个公司都不划算，那么买入单个股票也没有意义。”</div>
+    </blockquote>
+
+6.  **Carvana (CVNA)**
+    <blockquote class="quote">
+    [Stocks(主流个股)] Most of Carvana’s (CVNA) Income is Fluff, Potentially Hiding Huge Concealed Losses Last Quarter
+    <div class="translation">翻译：Carvana（CVNA）的大部分收入都是虚假的，可能隐藏了上季度巨额的未披露亏损。</div>
+    </blockquote>
+    <blockquote class="quote">
+    [Options(期权异动)] Carvana $420 Put Options Big Ups After Hours
+    <div class="translation">翻译：Carvana 420美元看跌期权在盘后大涨。</div>
+    </blockquote>
+
+7.  **Sprout Farmers Market (SFM)**
+    <blockquote class="quote">
+    [Stocks(主流个股)] SFM deep dive: low multiple vs store-driven growth
+    <div class="translation">翻译：SFM深度分析：低估值与门店驱动增长。</div>
+    </blockquote>
+    <blockquote class="quote">
+    [Options(期权异动)] Sprout Farmers' Market $SFM Earnings Trade Vol Crush Setup
+    <div class="translation">翻译：Sprout Farmers' Market ($SFM) 财报交易波动率挤压布局。</div>
+    </blockquote>
+
+8.  **Opendoor (OPEN)**
+    <blockquote class="quote">
+    [WSB(散户情绪)] OPEN made just $4,000 per home last quarter. Every possible metric down , but the stock rallied 16%. Value investing at its best!!
+    <div class="translation">翻译：Opendoor 上季度每套房屋仅赚4000美元。所有指标都在下降，但股价却上涨了16%。这才是价值投资的精髓！</div>
+    </blockquote>
+
+9.  **沃尔玛 (WMT)**
+    <blockquote class="quote">
+    [Stocks(主流个股)] Walmart beats… and still drops
+    <div class="translation">翻译：沃尔玛业绩超预期…但股价仍下跌。</div>
+    </blockquote>
+
+10. **Lithia Motors (LAD)**
+    <blockquote class="quote">
+    [Options(期权异动)] Lithia Motors (LAD) Price to Revenue Brings it Into Larger Firm’s Cross Hairs
+    <div class="translation">翻译：Lithia Motors (LAD) 的市销率使其进入了大型公司的视线。</div>
+    </blockquote>
+
+11. **Constellation Energy (CEG)**
+    <blockquote class="quote">
+    [SecAnalysis(硬核研报)] Constellation Energy: The Federal Reserve of the Electron
+    <div class="translation">翻译：Constellation Energy：电力界的联邦储备。</div>
+    </blockquote>
+
+12. **Waste Management (WM)**
+    <blockquote class="quote">
+    [SecAnalysis(硬核研报)] Death, Taxes, and Garbage: The Story of WM
+    <div class="translation">翻译：死亡、税收和垃圾：WM的故事。</div>
+    </blockquote>
+
+13. **SaaS行业 (主题讨论)**
+    <blockquote class="quote">
+    [SecAnalysis(硬核研报)] The SaaS bloodbath: opportunities and perils for investors
+    <div class="translation">翻译：SaaS行业的血洗：投资者的机遇与风险。</div>
+    </blockquote>
+    <blockquote class="quote">
+    [SecAnalysis(硬核研报)] SaaS Isn’t Dead, the Pricing Model Might Be
+    <div class="translation">翻译：SaaS并未消亡，可能只是定价模式需要改变。</div>
+    </blockquote>
+    <blockquote_quote>
+    [SecAnalysis(硬核研报)] Some ramblings on the SaaSpocalypse
+    <div class="translation">翻译：关于SaaSpocalypse的一些思考。</div>
+    </blockquote>
+
+14. **韩国股票 (区域市场观点)**
+    <blockquote class="quote">
+    [Investing(长线逻辑)] Korean stocks - value king of 2026
+    <div class="translation">翻译：韩国股票——2026年的价值之王。</div>
+    </blockquote>
+
+15. **非美市场交易 (宏观策略)**
+    <blockquote class="quote">
+    [Investing(长线逻辑)] The Ex-U.S. Trade is Working
+    <div class="translation">翻译：非美市场交易正在奏效。</div>
+    </blockquote>
+
+<h2>3. AI主线讨论</h2>
+
+今日关于AI产业链的讨论热度不减，从巨额投资、技术竞争到监管影响，Reddit社区贡献了多条高质量分析。
+
+**通用趋势与资金流向**
+<blockquote class="quote">
+[Stocks(主流个股)] Five leading public AI companies are collectively on track to spend about $700 billion this year on big-ticket projects
+<div class="translation">翻译：五家领先的上市AI公司今年预计将 collectively 投入约7000亿美元用于重大项目。</div>
+</blockquote>
+<blockquote class="quote">
+[SecAnalysis(硬核研报)] The Efficiency Trap: Why AI’s Micro-Success Could Become a Macro Problem
+<div class="translation">翻译：效率陷阱：为何AI的微观成功可能演变为宏观问题。</div>
+</blockquote>
+<blockquote class="quote">
+[Investing(长线逻辑)] EU AI Act 2026: Why Big Tech Investors should watch the August deadline.
+<div class="translation">翻译：欧盟2026年AI法案：为何大型科技投资者应关注八月截止日期。</div>
+</blockquote>
+
+**AI模型、算力与云服务**
+<blockquote class="quote">
+[Stocks(主流个股)] Nvidia is close to finalising a $30bn investment into OpenAI
+<div class="translation">翻译：英伟达即将敲定对OpenAI的300亿美元投资。</div>
+</blockquote>
+<blockquote class="quote">
+[Stocks(主流个股)] Google Is Exploring Ways to Use Its Financial Might to Take On Nvidia
+<div class="translation">翻译：谷歌正在探索如何利用其雄厚财力挑战英伟达。</div>
+</blockquote>
+<blockquote class="quote">
+[Stocks(主流个股)] The hyperscalers are like the Five Families of the Godfather
+<div class="translation">翻译：超大规模云服务商就像《教父》中的五大家族。</div>
+</blockquote>
+<blockquote class="quote">
+[WSB(散户情绪)] CRWD and NET down almost 10% today because... Claude has a new code review skill
+<div class="translation">翻译：CRWD和NET今天下跌近10%，原因在于... Claude有了新的代码审查技能。</div>
+</blockquote>
+
+**光通信与网络**
+<blockquote class="quote">
+[SecAnalysis(硬核研报)] Optical & Networking Supercycle at the heart of the AI Revolution
+<div class="translation">翻译：光通信与网络超级周期是AI革命的核心。</div>
+</blockquote>
         </div>
+
+        <script>
+            var chartDom = document.getElementById('gauge');
+            var myChart = echarts.init(chartDom, 'dark');
+            
+            // 动态决定颜色
+            var score = 42;
+            var color = '#eab308'; // 默认黄色
+            if (score <= 25) color = '#ef4444';      // 极度恐慌 (红)
+            else if (score <= 45) color = '#f97316'; // 恐慌 (橙)
+            else if (score <= 55) color = '#eab308'; // 中性 (黄)
+            else if (score <= 75) color = '#84cc16'; // 贪婪 (浅绿)
+            else color = '#22c55e';                  // 极度贪婪 (深绿)
+
+            var option = {
+                backgroundColor: 'transparent',
+                series: [
+                    {
+                        type: 'gauge',
+                        startAngle: 180,
+                        endAngle: 0,
+                        min: 0,
+                        max: 100,
+                        splitNumber: 4,
+                        itemStyle: { color: color },
+                        progress: { show: true, width: 25 },
+                        pointer: { show: true, length: '50%', width: 6 },
+                        axisLine: { lineStyle: { width: 25, color: [[1, '#1e293b']] } },
+                        axisTick: { show: false },
+                        splitLine: { length: 25, lineStyle: { width: 2, color: '#0f172a' } },
+                        axisLabel: { distance: 30, color: '#94a3b8', fontSize: 14 },
+                        detail: {
+                            valueAnimation: true,
+                            formatter: '{value}\n恐慌',
+                            color: 'auto',
+                            fontSize: 28,
+                            offsetCenter: [0, '30%'],
+                            lineHeight: 40
+                        },
+                        data: [{ value: score }]
+                    }
+                ]
+            };
+            option && myChart.setOption(option);
+            window.addEventListener('resize', function() { myChart.resize(); });
+        </script>
     </body>
     </html>
     
