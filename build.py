@@ -6,11 +6,10 @@ import pytz
 import requests
 import json
 
-# 1. 抓取 CNN 恐慌与贪婪指数底层数据
 def get_fear_and_greed():
     url = "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
         "Referer": "https://edition.cnn.com/"
     }
     try:
@@ -19,11 +18,10 @@ def get_fear_and_greed():
         score = int(data['fear_and_greed']['score'])
         rating = data['fear_and_greed']['rating']
         
-        # 将英文评级翻译为中文
         rating_dict = {
             "extreme fear": "极度恐慌",
             "fear": "恐慌",
-            "neutral": "中性",
+            "neutral": "中立",
             "greed": "贪婪",
             "extreme greed": "极度贪婪"
         }
@@ -31,9 +29,8 @@ def get_fear_and_greed():
         return score, cn_rating
     except Exception as e:
         print(f"获取 CNN 指数失败: {e}")
-        return 50, "数据获取延迟"
+        return 50, "中立"
 
-# 2. 七大硬核信息源抓取
 def fetch_data():
     feeds = {
         "WSB(散户情绪)": "https://www.reddit.com/r/wallstreetbets/.rss",
@@ -54,7 +51,6 @@ def fetch_data():
             print(f"抓取 {name} 失败: {e}")
     return content
 
-# 3. AI 深度过滤与分析
 def get_ai_analysis(raw_text):
     genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
     model = genai.GenerativeModel('gemini-2.5-flash')
@@ -63,48 +59,52 @@ def get_ai_analysis(raw_text):
     today_str = datetime.now(tz).strftime("%Y年%m月%d日")
     
     prompt = f"""
-    你现在是一个服务于一线实战派参与者的顶级美股情绪分析引擎。
-    请基于今日（{today_str}）Reddit 最新数据（近350条讨论），生成极度硬核的中文网页简报。
+    你是一个极其严谨的美股量化分析引擎。请基于（{today_str}）Reddit数据生成中文网页。
     
-    【核心质量控制与杂音过滤】（最高优先级，必须严格遵守）：
-    1. 绝对禁止收录券商软件故障、账户限制、出入金问题。
-    2. 绝对禁止收录纯情绪化的攻击或无脑宣泄。
-    3. 只准提取客观、中肯、带有逻辑支撑的观点。
+    【最高优先级规则（铁律，违背将导致系统崩溃）】：
+    1. 绝对不要在二级标题下方写任何“过渡段”、“介绍语”或“废话”。标题一结束，立刻换行，直接输出正文或列表（1. 2. 3.）。
+    2. 摘录原文时，**绝对不要**带有来源标签（如去除“[WSB]”、“[Stocks]”等字样），只输出纯净的英文原文和中文翻译。
+    3. 严防偷懒：在每个个股和细分主线下，**强制要求摘录至少 3 到 5 条**相关的不同原帖！不要只给一条！如果内容多，就给更多。
+    4. 个股板块里只能有个股。宏观大势、ETF、特定产业链讨论必须移出该板块。
 
-    【强制排版与翻译要求】：
-    - 所有引用的 Reddit 评论必须包裹在 <blockquote class="quote"> 中。
-    - 每一条引用必须严格采用以下结构：
-      [英文原文]
-      <div class="translation">翻译：[中文翻译]</div>
-
-    【网页三大强制结构】（必须且只能按顺序输出这三个模块）：
+    【强制网页三大结构】：
     
     <h2>1. 宏观与市场情绪</h2>
-    - 总结今日关于宏观经济、政治局势、机构/散户仓位、整体风险偏好、市场风险的讨论。
-    - 必须摘录 3-5 条高质量的宏观/情绪面逻辑原帖。
+    - 直接列出今日关于宏观经济、政治、整体风险偏好的核心逻辑。强制摘录3-5条原文。
     
     <h2>2. 热议中的个股和想法</h2>
-    - 筛选 10-20 只今日高频提及、且有基本面/博弈逻辑的具体上市公司（不要把大盘 ETF 混进来）。
-    - 必须按顺序“1. 2. 3...”垂直向下排列。
-    - 在每只个股逻辑下方，摘录 2-5 条针对该公司的理性、深度的优质评论。
+    - （不要写开头介绍，直接开始编号）
+    - 列出10-20只个股。
+    - 每只个股下，强制摘录 3-5 条高质量的散户或机构观点原文（纯英文+翻译）。
     
     <h2>3. AI主线讨论</h2>
-    - 聚焦 AI 产业链：模型、算力、光通信、存储、电力、PCB、云服务。
-    - 在相关的细分环节下方，汇总摘录 5-10 个当日探讨行业趋势、技术演进或供应链博弈的高质量原文。
+    - 严格且只能按照以下 8 个分类输出标题，并在每个分类下大量摘录市场真实观点：
+      * 模型：模型进展是第一性原理。
+      * 算：技术路线、台积电产能分配。
+      * 光：光通信格局、技术路线、边际变化；上游边际变化。
+      * 存：格局、边际变化。
+      * 电：数据中心对电力的消耗、边际变化 (如燃气轮机需求、格局、供应链等)。
+      * 板：PCB格局、边际变化；上游边际变化。
+      * 云：中国&全球云服务边际变化。
+      * AI应用：AI对应用产业的改造，千行百业。
 
-    今日原始讨论数据池：
+    【引用排版格式】：
+    <blockquote class="quote">
+      [纯英文原文，不带任何来源前缀]
+      <div class="translation">翻译：[中文翻译]</div>
+    </blockquote>
+
+    原始数据池：
     {raw_text}
     """
     response = model.generate_content(prompt)
     return response.text.replace("```html", "").replace("```", "").strip()
 
-# 4. 组装带 ECharts 仪表盘的 HTML
 def generate_html(report, fg_score, fg_rating):
     tz = pytz.timezone('Asia/Shanghai')
     update_time = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
     today_str = datetime.now(tz).strftime("%m月%d日")
     
-    # 使用纯文本替换，避免 JS 和 Python 大括号冲突
     html_template = """
     <!DOCTYPE html>
     <html lang="zh">
@@ -114,50 +114,39 @@ def generate_html(report, fg_score, fg_rating):
         <title>{{today_str}} 实战派情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
-            :root {
-                --bg: #0f172a;
-                --card-bg: #1e293b;
-                --text-main: #f1f5f9;
-                --text-muted: #94a3b8;
-                --accent: #38bdf8;
-                --border: #334155;
-            }
+            :root { --bg: #0f172a; --card-bg: #1e293b; --text-main: #f1f5f9; --text-muted: #94a3b8; --accent: #38bdf8; --border: #334155; }
             body { background: var(--bg); color: var(--text-main); font-family: -apple-system, sans-serif; padding: 20px; line-height: 1.6; }
             .container { max-width: 900px; margin: auto; }
             h1 { color: var(--accent); border-bottom: 2px solid var(--border); padding-bottom: 10px; font-size: 1.8rem; }
-            h2 { color: #fbbf24; margin-top: 40px; border-bottom: 1px solid var(--border); padding-bottom: 8px; font-size: 1.5rem; }
+            h2 { color: #fbbf24; margin-top: 40px; border-bottom: 1px solid var(--border); padding-bottom: 8px; font-size: 1.5rem; display: block; width: 100%; }
             h3 { color: #38bdf8; margin-top: 25px; font-size: 1.2rem; }
             .time { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; }
             
-            /* 仪表盘卡片样式 */
-            .dashboard-card { background: var(--card-bg); border-radius: 12px; padding: 20px; margin-top: 20px; margin-bottom: 30px; border: 1px solid var(--border); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5); }
-            .gauge-container { width: 100%; height: 260px; }
+            /* CNN风格仪表盘容器 */
+            .dashboard-card { background: #020617; border-radius: 12px; padding: 30px 20px 10px 20px; margin-top: 20px; margin-bottom: 30px; border: 1px solid var(--border); }
+            .gauge-container { width: 100%; height: 280px; }
+            .index-title { text-align: center; color: #f8fafc; font-size: 1.5rem; font-weight: bold; margin-bottom: -20px; }
+            .index-subtitle { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px; }
             
-            ol, ul { padding-left: 20px; margin-top: 20px; }
-            ol li { margin-bottom: 40px; font-size: 1.1rem; border-bottom: 1px dashed var(--border); padding-bottom: 20px; }
-            ol li strong { color: var(--accent); font-size: 1.3rem; }
+            /* 列表与引用强制隔离换行 */
+            ol, ul { padding-left: 20px; margin-top: 15px; display: block; }
+            ol li { margin-bottom: 40px; font-size: 1.1rem; border-bottom: 1px dashed var(--border); padding-bottom: 20px; display: block; }
+            ol li strong { color: var(--accent); font-size: 1.4rem; display: block; margin-bottom: 15px; } /* 强制名字独占一行 */
             
             blockquote, .quote {
-                background: #020617;
-                border-left: 4px solid #10b981;
-                padding: 12px 15px;
-                margin: 12px 0;
-                color: #e2e8f0;
-                font-size: 0.95rem;
-                font-style: normal;
-                border-radius: 4px;
-                line-height: 1.6;
+                background: #020617; border-left: 4px solid #10b981; padding: 12px 15px; margin: 15px 0; color: #e2e8f0; font-size: 0.95rem; border-radius: 4px; line-height: 1.6; display: block;
             }
             .translation { color: #94a3b8; margin-top: 10px; font-size: 0.9rem; border-top: 1px dotted #334155; padding-top: 10px; }
         </style>
     </head>
     <body>
         <div class="container">
-            <h1>🎯 {{today_str}} 市场异动与情绪透视</h1>
+            <h1>🎯 {{today_str}} 市场异动与情报透视</h1>
             <p class="time">情报源头: 300+ 硬核原帖 | 最后分析时间: {{update_time}} (北京时间)</p>
             
             <div class="dashboard-card">
-                <h3 style="margin-top: 0; text-align: center; color: #f8fafc; border:none;">CNN 市场恐慌与贪婪指数</h3>
+                <div class="index-title">Fear & Greed Index</div>
+                <div class="index-subtitle">What emotion is driving the market now?</div>
                 <div id="gauge" class="gauge-container"></div>
             </div>
 
@@ -166,45 +155,42 @@ def generate_html(report, fg_score, fg_rating):
 
         <script>
             var chartDom = document.getElementById('gauge');
-            var myChart = echarts.init(chartDom, 'dark');
+            var myChart = echarts.init(chartDom);
             
-            // 动态决定颜色
-            var score = {{fg_score}};
-            var color = '#eab308'; // 默认黄色
-            if (score <= 25) color = '#ef4444';      // 极度恐慌 (红)
-            else if (score <= 45) color = '#f97316'; // 恐慌 (橙)
-            else if (score <= 55) color = '#eab308'; // 中性 (黄)
-            else if (score <= 75) color = '#84cc16'; // 贪婪 (浅绿)
-            else color = '#22c55e';                  // 极度贪婪 (深绿)
-
             var option = {
-                backgroundColor: 'transparent',
-                series: [
-                    {
-                        type: 'gauge',
-                        startAngle: 180,
-                        endAngle: 0,
-                        min: 0,
-                        max: 100,
-                        splitNumber: 4,
-                        itemStyle: { color: color },
-                        progress: { show: true, width: 25 },
-                        pointer: { show: true, length: '50%', width: 6 },
-                        axisLine: { lineStyle: { width: 25, color: [[1, '#1e293b']] } },
-                        axisTick: { show: false },
-                        splitLine: { length: 25, lineStyle: { width: 2, color: '#0f172a' } },
-                        axisLabel: { distance: 30, color: '#94a3b8', fontSize: 14 },
-                        detail: {
-                            valueAnimation: true,
-                            formatter: '{value}\\n{{fg_rating}}',
-                            color: 'auto',
-                            fontSize: 28,
-                            offsetCenter: [0, '30%'],
-                            lineHeight: 40
+                series: [{
+                    type: 'gauge',
+                    startAngle: 180, endAngle: 0, min: 0, max: 100,
+                    radius: '100%',
+                    center: ['50%', '75%'],
+                    axisLine: {
+                        lineStyle: {
+                            width: 45, // 极宽的彩色带，一比一复刻 CNN
+                            color: [
+                                [0.25, '#ef4444'], // Extreme Fear
+                                [0.45, '#f97316'], // Fear
+                                [0.55, '#d1d5db'], // Neutral
+                                [0.75, '#84cc16'], // Greed
+                                [1,    '#22c55e']  // Extreme Greed
+                            ]
+                        }
+                    },
+                    pointer: {
+                        icon: 'path://M12.8,0.7l12,40.1H0.7L12.8,0.7z',
+                        length: '65%', width: 8, offsetCenter: [0, '-5%'],
+                        itemStyle: { color: '#ffffff' }
+                    },
+                    axisTick: { show: false }, splitLine: { show: false }, axisLabel: { show: false },
+                    detail: {
+                        fontSize: 55, fontWeight: 'bold', offsetCenter: [0, '20%'],
+                        formatter: function (value) {
+                            return value + '\\n{rating|{{fg_rating}}}';
                         },
-                        data: [{ value: score }]
-                    }
-                ]
+                        rich: { rating: { fontSize: 24, color: '#94a3b8', padding: [10, 0, 0, 0], fontWeight: 'normal' } },
+                        color: '#f8fafc'
+                    },
+                    data: [{ value: {{fg_score}} }]
+                }]
             };
             option && myChart.setOption(option);
             window.addEventListener('resize', function() { myChart.resize(); });
@@ -213,7 +199,6 @@ def generate_html(report, fg_score, fg_rating):
     </html>
     """
     
-    # 注入数据
     html_template = html_template.replace("{{today_str}}", today_str)
     html_template = html_template.replace("{{update_time}}", update_time)
     html_template = html_template.replace("{{report}}", report)
@@ -224,15 +209,11 @@ def generate_html(report, fg_score, fg_rating):
         f.write(html_template)
 
 if __name__ == "__main__":
-    print("1. 正在获取 CNN 恐慌与贪婪指数...")
+    print("1. 获取 CNN 指数...")
     score, rating = get_fear_and_greed()
-    print(f"当前指数: {score} ({rating})")
-    
-    print("2. 正在抓取七大硬核信息源...")
+    print("2. 抓取情报...")
     data = fetch_data()
-    
-    print("3. Gemini 正在执行质量过滤与解析...")
+    print("3. Gemini 深度过滤执行中...")
     analysis = get_ai_analysis(data)
-    
-    print("4. 渲染仪表盘与生成网页...")
+    print("4. 渲染页面...")
     generate_html(analysis, score, rating)
