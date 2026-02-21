@@ -61,10 +61,11 @@ def get_ai_analysis(raw_text):
     prompt = f"""
     你是一个极其严谨的美股量化分析引擎。请基于（{today_str}）Reddit数据生成中文网页。
     
-    【最高优先级规则（铁律，违背将导致系统崩溃）】：
-    1. 绝对不要在二级标题下方写任何“过渡段”、“介绍语”或“废话”。标题一结束，立刻换行，直接输出正文或列表（1. 2. 3.）。
-    2. 摘录原文时，绝对不要带有来源标签（如去除“[WSB]”、“[Stocks]”等字样），只输出纯净的英文原文和中文翻译。
-    3. 个股板块里只能有个股。宏观大势、ETF、特定产业链讨论必须移出该板块。
+    【核心质量控制与反偷懒机制】（最高优先级铁律，违背将导致系统崩溃）：
+    1. 【过滤无脑喷子】：像“MSFT is such crap (微软太烂了)”这种纯情绪化、无逻辑、无数据的发泄废话，**直接全部丢弃**！只保留有业务探讨、数据支撑或博弈逻辑的高价值评论。
+    2. 【严防偷懒，强制丰满】：每只入选的股票，**绝对不允许**只放 1 条评论！你必须在数据池里深挖，每只股票强制罗列 3-5 条多角度的相关讨论。如果该股的高质量评论凑不够 3 条，宁可换一只股票上榜，也必须保证最终输出的 15 只股票内容充实！
+    3. 绝对不要在二级标题下方写任何“过渡段”或“介绍语”。标题结束立刻换行输出正文。
+    4. 摘录原文时，去除所有来源标签（如“[WSB]”），只输出纯净英文原文和中文翻译。
 
     【强制网页三大结构】：
     
@@ -73,9 +74,8 @@ def get_ai_analysis(raw_text):
     
     <h2>2. 热议中的个股和想法</h2>
     - （不要写开头介绍，直接开始编号）
-    - 【数量死命令】：你必须、强制、无论如何都要列出 **至少 15 只** 不同的美股上市公司个股！绝对不允许只输出 2-3 只！
-    - 排版必须按顺序“1. 2. 3. ... 15.”垂直向下排列。
-    - 【防止偷懒原则】：如果某些股票的高质量讨论不足，为了保证15只个股的广度，哪怕该股只有 1 条有价值的引用，也必须把它列出来凑够数量。头部热门股可以给3-5条引用，尾部异动股给1-2条即可。
+    - 必须、强制列出 **至少 15 只** 不同的美股上市公司个股！
+    - 每只个股下，强制摘录 3-5 条高质量的散户或机构观点原文（纯英文+翻译）。
     
     <h2>3. AI主线讨论</h2>
     - 严格且只能按照以下 8 个分类输出标题，并在每个分类下大量摘录市场真实观点：
@@ -122,16 +122,15 @@ def generate_html(report, fg_score, fg_rating):
             h3 { color: #38bdf8; margin-top: 25px; font-size: 1.2rem; }
             .time { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; }
             
-            /* CNN风格仪表盘容器 */
-            .dashboard-card { background: #020617; border-radius: 12px; padding: 30px 20px 10px 20px; margin-top: 20px; margin-bottom: 30px; border: 1px solid var(--border); }
-            .gauge-container { width: 100%; height: 280px; }
-            .index-title { text-align: center; color: #f8fafc; font-size: 1.5rem; font-weight: bold; margin-bottom: -20px; }
-            .index-subtitle { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px; }
+            /* 修复 CNN 风格仪表盘容器文字重叠问题 */
+            .dashboard-card { background: #020617; border-radius: 12px; padding: 25px 20px 10px 20px; margin-top: 20px; margin-bottom: 30px; border: 1px solid var(--border); }
+            .gauge-container { width: 100%; height: 260px; margin-top: 10px; }
+            .index-title { text-align: center; color: #f8fafc; font-size: 1.5rem; font-weight: bold; margin-bottom: 5px; } /* 移除了负边距 */
+            .index-subtitle { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px; position: relative; z-index: 10; }
             
-            /* 列表与引用强制隔离换行 */
             ol, ul { padding-left: 20px; margin-top: 15px; display: block; }
             ol li { margin-bottom: 40px; font-size: 1.1rem; border-bottom: 1px dashed var(--border); padding-bottom: 20px; display: block; }
-            ol li strong { color: var(--accent); font-size: 1.4rem; display: block; margin-bottom: 15px; } /* 强制名字独占一行 */
+            ol li strong { color: var(--accent); font-size: 1.4rem; display: block; margin-bottom: 15px; } 
             
             blockquote, .quote {
                 background: #020617; border-left: 4px solid #10b981; padding: 12px 15px; margin: 15px 0; color: #e2e8f0; font-size: 0.95rem; border-radius: 4px; line-height: 1.6; display: block;
@@ -162,16 +161,12 @@ def generate_html(report, fg_score, fg_rating):
                     type: 'gauge',
                     startAngle: 180, endAngle: 0, min: 0, max: 100,
                     radius: '100%',
-                    center: ['50%', '75%'],
+                    center: ['50%', '65%'], /* 下调了圆心，防止文字挤在一起 */
                     axisLine: {
                         lineStyle: {
                             width: 45,
                             color: [
-                                [0.25, '#ef4444'], // Extreme Fear
-                                [0.45, '#f97316'], // Fear
-                                [0.55, '#d1d5db'], // Neutral
-                                [0.75, '#84cc16'], // Greed
-                                [1,    '#22c55e']  // Extreme Greed
+                                [0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']  
                             ]
                         }
                     },
@@ -182,11 +177,11 @@ def generate_html(report, fg_score, fg_rating):
                     },
                     axisTick: { show: false }, splitLine: { show: false }, axisLabel: { show: false },
                     detail: {
-                        fontSize: 55, fontWeight: 'bold', offsetCenter: [0, '20%'],
+                        fontSize: 45, fontWeight: 'bold', offsetCenter: [0, '20%'],
                         formatter: function (value) {
                             return value + '\\n{rating|{{fg_rating}}}';
                         },
-                        rich: { rating: { fontSize: 24, color: '#94a3b8', padding: [10, 0, 0, 0], fontWeight: 'normal' } },
+                        rich: { rating: { fontSize: 20, color: '#94a3b8', padding: [10, 0, 0, 0], fontWeight: 'normal' } },
                         color: '#f8fafc'
                     },
                     data: [{ value: {{fg_score}} }]
