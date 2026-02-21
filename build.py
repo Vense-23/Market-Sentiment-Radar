@@ -133,24 +133,12 @@ def generate_html(report, fg_score, fg_rating):
     html_template = html_template.replace("{{today_str}}", today_str).replace("{{update_time}}", update_time).replace("{{report}}", report).replace("{{fg_score}}", str(fg_score)).replace("{{fg_rating}}", fg_rating)
     with open("index.html", "w", encoding="utf-8") as f: f.write(html_template)
 
-def send_wechat_push(score, rating):
-    token = os.environ.get("PUSHPLUS_TOKEN")
-    if not token: return
-
-    repo_url = "https://vense-23.github.io/Market-Sentiment-Radar/" 
-    title = f"🚨 美股情报雷达已更新 ({rating})"
-    content = f"<h3>📊 当前市场情绪：{rating} ({score}分)</h3><p>👉 <b><a href='{repo_url}'>点击此处，立即查看完整版深度透视网页</a></b></p>"
-    
-    try: requests.post("http://www.pushplus.plus/send", json={"token": token, "title": title, "content": content, "template": "html"}, timeout=10)
-    except: pass
 
 def send_discord_push(score, rating):
     webhook_url = os.environ.get("DISCORD_WEBHOOK_URL")
     if not webhook_url: return
     
-    # 根据分数动态改变 Discord 卡片的侧边颜色 (红色代表恐慌，绿色代表贪婪)
     color = 15158332 if score < 45 else (3066993 if score > 55 else 9807270)
-    
     repo_url = "https://vense-23.github.io/Market-Sentiment-Radar/" 
     tz = pytz.timezone('Asia/Shanghai')
     today_str = datetime.now(tz).strftime("%Y-%m-%d %H:%M")
@@ -160,23 +148,17 @@ def send_discord_push(score, rating):
         "avatar_url": "https://cdn-icons-png.flaticon.com/512/3254/3254107.png",
         "embeds": [{
             "title": f"🎯 {today_str} 美股情绪深度研报已出炉",
-            "description": f"**📊 CNN 恐慌与贪婪指数**：`{rating} ({score}分)`\n\n🤖 AI 已经完成 Reddit 全网数据扫描，提取了最新的个股博弈逻辑与小众黑马股。\n\n👉 **[点击此处进入浏览器阅读极客排版全文]({repo_url})**",
+            "description": f"**📊 CNN 恐慌与贪婪指数**：`{rating} ({score}分)`\n\n🤖 AI 已经完成 Reddit 全网数据扫描，提取了最新的个股博弈逻辑与小众黑马股。\n\n👉 **[点击此处进入浏览器阅读极客排版全文]({repo_url})**\n\n*(注：网页云端部署存在 1-2 分钟延迟，点开若为旧版请稍后刷新)*",
             "color": color
         }]
     }
     
-    try:
-        requests.post(webhook_url, json=payload, timeout=10)
-        print("Discord 推送成功！")
-    except Exception as e:
-        print(f"Discord 推送失败: {e}")
+    try: requests.post(webhook_url, json=payload, timeout=10)
+    except: pass
 
 if __name__ == "__main__":
     score, rating = get_fear_and_greed()
     data = fetch_data()
     analysis = get_ai_analysis(data)
     generate_html(analysis, score, rating)
-    
-    # 网页生成完后，触发推送（代码会自动检测你填了哪个 Secrets，填了哪个就推哪个）
-    send_wechat_push(score, rating)
     send_discord_push(score, rating)
