@@ -67,4 +67,56 @@ def generate_html(report):
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{today
+        <title>{today_str} 核心个股与AI雷达</title>
+        <style>
+            :root {{
+                --bg: #0f172a;
+                --text-main: #f1f5f9;
+                --text-muted: #94a3b8;
+                --accent: #38bdf8;
+                --border: #334155;
+            }}
+            body {{ background: var(--bg); color: var(--text-main); font-family: -apple-system, sans-serif; padding: 20px; line-height: 1.6; }}
+            .container {{ max-width: 900px; margin: auto; }}
+            h1 {{ color: var(--accent); border-bottom: 2px solid var(--border); padding-bottom: 10px; font-size: 1.8rem; }}
+            h2 {{ color: #fbbf24; margin-top: 40px; border-bottom: 1px solid #334155; padding-bottom: 8px; font-size: 1.5rem; }}
+            h3 {{ color: #38bdf8; margin-top: 20px; font-size: 1.2rem; }}
+            .time {{ color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; }}
+            
+            ol {{ padding-left: 20px; margin-top: 20px; }}
+            ol li {{ margin-bottom: 40px; font-size: 1.1rem; border-bottom: 1px dashed var(--border); padding-bottom: 20px; }}
+            ol li strong {{ color: var(--accent); font-size: 1.3rem; }}
+            
+            blockquote, .quote {{
+                background: #020617;
+                border-left: 4px solid #10b981;
+                padding: 12px 15px;
+                margin: 12px 0;
+                color: #cbd5e1;
+                font-size: 0.95rem;
+                font-style: normal;
+                border-radius: 4px;
+                line-height: 1.6;
+            }}
+            .translation {{ color: #94a3b8; margin-top: 8px; font-size: 0.9rem; border-top: 1px dotted #334155; padding-top: 8px; }}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>🎯 {today_str} 市场异动个股与AI产业链透视</h1>
+            <p class="time">情报源头: 200+ 最新高热原帖 | 最后分析时间: {update_time} (北京时间)</p>
+            {report}
+        </div>
+    </body>
+    </html>
+    """
+    with open("index.html", "w", encoding="utf-8") as f:
+        f.write(html_template)
+
+if __name__ == "__main__":
+    print("开始大批量抓取今日 200+ 原始数据...")
+    data = fetch_data()
+    print("Gemini 正在执行严苛过滤与深度海量摘录...")
+    analysis = get_ai_analysis(data)
+    print("生成网页...")
+    generate_html(analysis)
