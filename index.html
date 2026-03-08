@@ -37,346 +37,404 @@
     <body>
         <div class="container">
             <h1>🎯 03月08日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-03-08 11:16:10 (北京时间)</p>
+            <p style="color:#94a3b8">情报最后更新: 2026-03-08 21:15:46 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit 美股市场情绪概览 (2026年03月08日)</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f9f9f9; }
-        h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
-        ul { list-style: none; padding: 0; }
-        li { background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #e74c3c; font-size: 1.1em; margin-bottom: 10px; }
-        .quote { background-color: #ecf0f1; border-left: 4px solid #3498db; margin: 15px 0; padding: 10px 15px; font-style: italic; color: #555; }
-        .translation { font-style: normal; color: #2c3e50; margin-top: 8px; border-top: 1px dashed #bdc3c7; padding-top: 8px; }
-        .track-header { font-weight: bold; color: #2980b9; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; background-color: #eaf6fa; padding: 8px 15px; border-radius: 5px; }
-    </style>
-</head>
-<body>
+            <div class="market-sentiment-report">
+  <h2>1. 宏观与市场情绪</h2>
+  <p>市场当前正处于地缘政治紧张、就业数据疲软和私有信贷市场担忧的复杂交汇点。石油价格飙升，而美国就业报告显示出令人意外的下降，加剧了宏观经济的不确定性。</p>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        U.S. payrolls unexpectedly fell by 92,000 in February; unemployment rate rises to 4.4%.
+        <div class="translation">翻译：美国2月份非农就业人数意外下降9.2万人；失业率升至4.4%。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        BLS Household survey was also poor with 185k less employed people and participation rate falling to 62.0%, worst in decades.
+        <div class="translation">翻译：劳工统计局的家庭调查也表现不佳，就业人数减少18.5万人，参与率降至62.0%，为几十年来最差水平。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Oil surges 35% this week for biggest gain in futures trading history dating back to 1983.
+        <div class="translation">翻译：本周石油价格飙升35%，创下自1983年以来期货交易史上最大涨幅。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Qatar’s energy minister has warned that war in the Middle East could “bring down the economies of the world”, predicting that all Gulf energy exporters would shut down production within days and drive oil to $150 a barrel.
+        <div class="translation">翻译：卡塔尔能源部长警告称，中东战争可能“摧毁世界经济”，并预测所有海湾能源出口国将在几天内停止生产，将油价推高至每桶150美元。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Last week, Asian markets experienced one of the sharpest selloffs in years, with South Korea’s KOSPI dropping more than 12% in a single session as foreign funds aggressively pulled capital from regional equities.
+        <div class="translation">翻译：上周，亚洲市场经历了多年来最剧烈的抛售之一，韩国KOSPI指数在单个交易日内下跌超过12%，因为外国基金积极地从区域股市撤资。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        BlackRock BLK-N -7.17%decrease said on Friday it has put limits on withdrawals from a flagship private credit fund after a surge in redemption requests, amid rising investor worries over the once red-hot asset class.
+        <div class="translation">翻译：贝莱德周五表示，在赎回请求激增后，已对其旗舰私人信贷基金的提款设置了限制，原因是投资者对曾一度火爆的资产类别日益担忧。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Personally, the current environment still feels like it’s in the transition phase between fear and hope for a long time.
+        <div class="translation">翻译：就我个人而言，当前的环境仍然感觉处于恐惧与希望之间的过渡阶段，而且会持续很长时间。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <h1>Reddit 美股市场情绪概览 (2026年03月08日)</h1>
+  <h2>2. 热议中的个股和想法</h2>
+  <ul>
+    <li>
+      <div class="stock-tag">NVDA (NVIDIA Corporation)</div>
+      <blockquote class="quote">
+        Everyone's hyping up NVDA, but looking at the supply chain, the actual bottleneck is shifting heavily to memory.
+        <div class="translation">翻译：每个人都在炒作英伟达，但从供应链来看，实际的瓶颈正严重转向内存。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Nvidia’s new Rubin chips need a massive 288GB of RAM each.
+        <div class="translation">翻译：英伟达的新Rubin芯片每个需要288GB的大容量内存。</div>
+      </blockquote>
+      <blockquote class="quote">
+        That’s an 800% jump over a high-end PC, and way more than the older H100s.
+        <div class="translation">翻译：这比高端PC增加了800%，也远超老款H100芯片。</div>
+      </blockquote>
+      <blockquote class="quote">
+        I'm from Germany and usually invest in American tech stocks like Nvidia and Apple with great gains meanwhile EU stocks barely have any volatility.
+        <div class="translation">翻译：我来自德国，通常投资英伟达和苹果等美国科技股并获得了巨大收益，而欧盟股票几乎没有任何波动。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">ORCL (Oracle Corporation)</div>
+      <blockquote class="quote">
+        In their most recent earnings they posted a beat and still dumped because the beat wasn't good enough.
+        <div class="translation">翻译：在他们最近的财报中，他们公布了超出预期的业绩，但股价仍然下跌，因为业绩超预期还不够好。</div>
+      </blockquote>
+      <blockquote class="quote">
+        They are hundreds of billions in debt.
+        <div class="translation">翻译：他们负债数千亿美元。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Now they allegedly cancelled the deal with OAI for building datacenters.
+        <div class="translation">翻译：现在他们据称取消了与OpenAI关于建设数据中心的交易。</div>
+      </blockquote>
+      <blockquote class="quote">
+        They're in a catch-22 with AI where if they invest in AI they increase their debt and uncertainty around making it profitable, but if they don't then they're not "innovating".
+        <div class="translation">翻译：他们在人工智能领域陷入两难，如果投资人工智能，他们会增加债务和盈利的不确定性，但如果不投资，他们又不算“创新”。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">NVO (Novo Nordisk A/S)</div>
+      <blockquote class="quote">
+        NOVO AND HIMS PLAN TO ANNOUNCE PARTNERSHIP AS SOON AS MONDAY.
+        <div class="translation">翻译：诺和诺德和Hims计划最快于周一宣布合作。</div>
+      </blockquote>
+      <blockquote class="quote">
+        NOVO TO SELL ITS WEIGHT-LOSS DRUGS ON HIMS PLATFORM.
+        <div class="translation">翻译：诺和诺德将在Hims平台上销售其减肥药。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Started buying $NVO shares last Friday continuing throughout the week.
+        <div class="translation">翻译：上周五开始买入NVO股票，并持续了一整周。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Crazy to drop news like that on a Friday night at 7pm Bloomberg.
+        <div class="translation">翻译：彭博社在周五晚上7点发布这样的新闻真是太疯狂了。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">HIMS (Hims & Hers Health, Inc.)</div>
+      <blockquote class="quote">
+        Novo Nordisk plans to sell its weight-loss drugs on Hims &amp; Hers Health platform, bringing an end to a dispute between the two companies that escalated into a legal battle last month, Bloomberg News reported on Friday.
+        <div class="translation">翻译：彭博新闻周五报道，诺和诺德计划在Hims &amp; Hers Health平台销售其减肥药，结束了上月升级为法律纠纷的两家公司之间的争端。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Hims shares surged 39% in after-hours trading after the report.
+        <div class="translation">翻译：报告发布后，Hims股价在盘后交易中飙升39%。</div>
+      </blockquote>
+      <blockquote class="quote">
+        The report comes nearly a month after Novo sued Hims over patent infringement following the U.S. telehealth firm's launch, and then cancellation, of a $49 copy of Novo's obesity pill.
+        <div class="translation">翻译：该报告发布前近一个月，诺和诺德曾起诉Hims侵犯专利权，此前这家美国远程医疗公司推出后又取消了诺和诺德减肥药的49美元仿制药。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">BRCM (Broadcom Inc.)</div>
+      <blockquote class="quote">
+        Broadcom reported Q1 FY2026 earnings on March 4.
+        <div class="translation">翻译：博通于3月4日公布了2026财年第一季度财报。</div>
+      </blockquote>
+      <blockquote class="quote">
+        The numbers: $19.3B revenue (+29% YoY), $8.4B AI semiconductor revenue (+106% YoY), $13.1B adjusted EBITDA (68% margin), $8.0B free cash flow.
+        <div class="translation">翻译：数据显示：营收193亿美元（同比增长29%），AI半导体营收84亿美元（同比增长106%），调整后EBITDA为131亿美元（68%的利润率），自由现金流80亿美元。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Broadcom's AI business is almost entirely custom silicon, chips designed for a specific customer's specific workload.
+        <div class="translation">翻译：博通的人工智能业务几乎完全是定制芯片，为特定客户的特定工作负载而设计。</div>
+      </blockquote>
+      <blockquote class="quote">
+        They're not competing with Nvidia; they're serving a different set of buyers who want differentiated, workload-specific chips.
+        <div class="translation">翻译：他们不与英伟达竞争；他们服务于一群不同的买家，这些买家需要差异化的、针对特定工作负载的芯片。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">CF (CF Industries Holdings, Inc.)</div>
+      <blockquote class="quote">
+        CF produces nitrogen fertilizer using cheap US natural gas but sells at global fertilizer prices.
+        <div class="translation">翻译：CF利用廉价的美国天然气生产氮肥，但以全球肥料价格出售。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Nitrogen fertilizer production = extremely natural-gas intensive.
+        <div class="translation">翻译：氮肥生产是天然气密集型产业。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Almost all of it moves through the Strait of Hormuz.
+        <div class="translation">翻译：几乎所有这些都通过霍尔木兹海峡运输。</div>
+      </blockquote>
+      <blockquote class="quote">
+        If prices spike during this window → panic buying.
+        <div class="translation">翻译：如果在此窗口期价格飙升，就会引发恐慌性购买。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">VZ (Verizon Communications Inc.)</div>
+      <blockquote class="quote">
+        Verizon (VZ) has truly been the exception these past few months: the stock climbed about 20% in February 2026 while the S&amp;P 500 lost 0.9% and the Nasdaq plunged 3.4% over the same period.
+        <div class="translation">翻译：过去几个月，威瑞森（VZ）确实是个例外：在2026年2月，该股上涨了约20%，而同期标普500指数下跌0.9%，纳斯达克指数暴跌3.4%。</div>
+      </blockquote>
+      <blockquote class="quote">
+        That's real defensive outperformance.
+        <div class="translation">翻译：这是真正的防御性超额表现。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Telecoms like Verizon are often seen as defensive plays: stable demand (subscriptions, fixed internet, fiber), recurring revenues, solid dividends (~6-7% yield currently), and low sensitivity to violent economic cycles.
+        <div class="translation">翻译：像威瑞森这样的电信公司通常被视为防御性投资：需求稳定（订阅、固定互联网、光纤），收入经常性，股息丰厚（目前约6-7%的收益率），并且对剧烈的经济周期敏感度低。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">CVNA (Carvana Co.)</div>
+      <blockquote class="quote">
+        CVNA trades at 50x pe.
+        <div class="translation">翻译：Carvana的市盈率为50倍。</div>
+      </blockquote>
+      <blockquote class="quote">
+        There is a high likelihood their numbers are further inflated by “creative accounting,” making them very vulnerable to correction.
+        <div class="translation">翻译：他们的数字很可能被“创造性会计”进一步夸大，这使得他们非常容易受到修正。</div>
+      </blockquote>
+      <blockquote class="quote">
+        CVNA is also vulnerable to rising oil prices, as almost every vehicle they sell is transported hundreds of miles by truck.
+        <div class="translation">翻译：Carvana也容易受到油价上涨的影响，因为他们出售的几乎所有车辆都要通过卡车运输数百英里。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <h2>1. 宏观与市场情绪</h2>
-    <p>当前市场情绪受到多重因素交织影响，中东地缘政治紧张局势导致原油价格飙升，美国劳动力市场意外走弱，以及对私人信贷市场稳定性的担忧，共同构成了复杂的宏观背景。投资者正经历从风险规避到寻求稳定资产的过渡，亚洲市场尤其受到冲击。同时，部分交易者也积极利用市场波动进行期权操作。</p>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Oil surges 35% this week for biggest gain in futures trading history dating back to 1983.
-          <div class="translation">翻译：本周原油飙升35%，创下自1983年期货交易史以来的最大涨幅。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Qatar's energy minister on Thursday warned that the ongoing conflict in the Middle East could "bring down" world economies and that the Gulf energy exporters would shut down production within weeks.
-          <div class="translation">翻译：卡塔尔能源部长周四警告称，中东持续的冲突可能“拖垮”世界经济，海湾能源出口国将在数周内关闭生产。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Last week, Asian markets experienced one of the sharpest selloffs in years, with South Korea’s KOSPI dropping more than 12% in a single session as foreign funds aggressively pulled capital from regional equities.
-          <div class="translation">翻译：上周，亚洲市场经历了多年来最剧烈的抛售之一，韩国综合股价指数(KOSPI)在单日内下跌超过12%，因外国资金积极撤出区域股市。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Total nonfarm payroll employment edged down by 92,000 in February, and the unemployment rate changed little at 4.4 percent. Employment in health care decreased, reflecting strike activity. Employment in information and federal government continued to trend down.
-          <div class="translation">翻译：2月份非农就业总人数小幅下降9.2万人，失业率维持在4.4%不变。医疗保健领域的就业人数减少，反映出罢工活动。信息和联邦政府的就业人数继续呈下降趋势。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          BlackRock BLK-N -7.17%decrease said on Friday it has put limits on withdrawals from a flagship private credit fund after a surge in redemption requests, amid rising investor worries over the once red-hot asset class.
-          <div class="translation">翻译：贝莱德（BLK-N）周五表示，由于赎回请求激增，该公司已对其旗舰私人信贷基金的提款设置限制，这正值投资者对一度炙手可热的资产类别担忧加剧之际。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Right now the best thing to do is to stay in cash.
-          <div class="translation">翻译：现在最好的办法是持有现金。</div>
-        </blockquote>
-      </li>
-    </ul>
+  <h2>3. 小众公司冒泡</h2>
+  <ul>
+    <li>
+      <div class="stock-tag">NBIS (NBIS)</div>
+      <blockquote class="quote">
+        I got into $NBIS during the pre Liberation Day dip, with about $50,000 at an average of 30 bucks.
+        <div class="translation">翻译：我在解放日前夕的下跌中以平均30美元的价格买入了价值约5万美元的NBIS股票。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Many of my shares were purchased in mid March, and given the NBIS pump I've been holding to get them to 1 year old so that I'm charged 15% cap gains instead of 32% income tax.
+        <div class="translation">翻译：我的许多股票是在3月中旬购买的，考虑到NBIS的上涨，我一直持有它们，以便达到一年期，从而按15%的资本利得税而不是32%的所得税征税。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">OKLO (Oklo Inc.)</div>
+      <blockquote class="quote">
+        OKLO has a very cool concept, but nobody has been able to make a profit doing what they are trying to do.
+        <div class="translation">翻译：Oklo有一个非常酷的概念，但没有人能够通过他们正在做的事情来盈利。</div>
+      </blockquote>
+      <blockquote class="quote">
+        At a 9 billion dollar valuation they are still too rich.
+        <div class="translation">翻译：以90亿美元的估值来看，它们仍然过高。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">RCAT (Red Cat Holdings Inc.)</div>
+      <blockquote class="quote">
+        RCAT 814K CALL BUYER STRIKE PRICE 28 EXPIRY 10/16/2026.
+        <div class="translation">翻译：RCAT在2026年10月16日到期，行权价28美元的看涨期权有81.4万份买单。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">MP (MP Materials Corp.)</div>
+      <blockquote class="quote">
+        $MP 95k Call buyer strike price 95$ expiry 09/18/2026.
+        <div class="translation">翻译：MP在2026年9月18日到期，行权价95美元的看涨期权有9.5万份买单。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">PLAB (Photronics, Inc.)</div>
+      <blockquote class="quote">
+        I’m looking at $PLAB $AMKR and $ALMU which are relatively smaller stocks than the giants and probably more risky to hold but I wanna know your thoughts, are these stocks also worth buying?
+        <div class="translation">翻译：我正在关注PLAB、AMKR和ALMU，它们相对比巨头公司规模更小，持有风险可能更高，但我想知道你们的看法，这些股票也值得购买吗？</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">AMKR (Amkor Technology, Inc.)</div>
+      <blockquote class="quote">
+        I’m looking at $PLAB $AMKR and $ALMU which are relatively smaller stocks than the giants and probably more risky to hold but I wanna know your thoughts, are these stocks also worth buying?
+        <div class="translation">翻译：我正在关注PLAB、AMKR和ALMU，它们相对比巨头公司规模更小，持有风险可能更高，但我想知道你们的看法，这些股票也值得购买吗？</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">NSSC (NAPCO Security Technologies, Inc.)</div>
+      <blockquote class="quote">
+        Mar 13, 2026 S&amp;P SmallCap 600 Addition NAPCO Security Technologies NSSC Information Technology.
+        <div class="translation">翻译：2026年3月13日，标普小型股600指数新增NAPCO Security Technologies (NSSC)，属于信息技术板块。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">ALEX (Alexander & Baldwin, Inc.)</div>
+      <blockquote class="quote">
+        Mar 13, 2026 S&amp;P SmallCap 600 Deletion Alexander &amp; Baldwin ALEX Real Estate.
+        <div class="translation">翻译：2026年3月13日，标普小型股600指数剔除Alexander &amp; Baldwin (ALEX)，属于房地产板块。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">GOSS (Gossamer Bio, Inc.)</div>
+      <blockquote class="quote">
+        So the inevitable happened: GOSS missed in phase 3, and I had to decide whether to roll, get assigned and sell covered calls, or get assigned and just sell the shares.
+        <div class="translation">翻译：不可避免的事情发生了：GOSS在三期临床试验中失败了，我不得不决定是展期、被指派并卖出备兑看涨期权，还是被指派后直接卖出股票。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Immediately following the trial miss, I was down about $15.
+        <div class="translation">翻译：在试验失败后，我立即亏损了大约15美元。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <h2>2. 热议中的个股和想法</h2>
-    <ul>
-      <li>
-        <div class="stock-tag">NVO (Novo Nordisk)</div>
-        <blockquote class="quote">
-          Ozempic maker announces it will slash prices in the US from 1k > 675 bucks in 2027.
-          <div class="translation">翻译：Ozempic制造商宣布，将在2027年把美国的价格从1000美元降至675美元。</div>
-        </blockquote>
-        <blockquote class="quote">
-          NOVO AND HIMS PLAN TO ANNOUNCE PARTNERSHIP AS SOON AS MONDAY. NOVO TO SELL ITS WEIGHT-LOSS DRUGS ON HIMS PLATFORM.
-          <div class="translation">翻译：诺和诺德和HIMS计划最快在周一宣布合作。诺和诺德将在HIMS平台上销售其减肥药。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Started buying $NVO shares last Friday continuing throughout the week.
-          <div class="translation">翻译：从上周五开始，本周继续购买诺和诺德的股票。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Novo Nordisk plans to sell its ​weight-loss drugs on Hims &amp; Hers Health platform, bringing an end to a dispute between the two companies that escalated into a legal battle ​last month.
-          <div class="translation">翻译：诺和诺德计划在Hims & Hers Health平台上销售其减肥药，结束了上月升级为法律纠纷的两家公司之间的争端。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">HIMS (Hims & Hers Health)</div>
-        <blockquote class="quote">
-          NOVO AND HIMS PLAN TO ANNOUNCE PARTNERSHIP AS SOON AS MONDAY. NOVO TO SELL ITS WEIGHT-LOSS DRUGS ON HIMS PLATFORM.
-          <div class="translation">翻译：诺和诺德和HIMS计划最快在周一宣布合作。诺和诺德将在HIMS平台上销售其减肥药。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Hims shares surged 39% in after-hours trading after the report.
-          <div class="translation">翻译：该报告发布后，Hims股价在盘后交易中飙升39%。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Novo Nordisk plans to sell its ​weight-loss drugs on Hims &amp; Hers Health platform, bringing an end to a dispute between the two companies that escalated into a legal battle ​last month.
-          <div class="translation">翻译：诺和诺德计划在Hims & Hers Health平台上销售其减肥药，结束了上月升级为法律纠纷的两家公司之间的争端。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The U.S. Food and ​Drug Administration had also threatened action against Hims.
-          <div class="translation">翻译：美国食品药品监督管理局也曾威胁要对Hims采取行动。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">ORCL (Oracle)</div>
-        <blockquote class="quote">
-          In their most recent earnings they posted a beat and still dumped because the beat wasn't good enough.
-          <div class="translation">翻译：他们最近的财报超预期，但股价仍下跌，因为超出预期的幅度不够。</div>
-        </blockquote>
-        <blockquote class="quote">
-          They are hundreds of billions in debt. They are also down almost 53% from their high in September 2025.
-          <div class="translation">翻译：他们负债数百亿。股价也较2025年9月的高点下跌了近53%。</div>
-        </blockquote>
-        <blockquote class="quote">
-          They have been sued by investors. They have recently laid off employees.
-          <div class="translation">翻译：他们已被投资者起诉。他们最近解雇了员工。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Now they allegedly cancelled the deal with OAI for building datacenters. It doesn't feel like they have anything going for them.
-          <div class="translation">翻译：现在他们据称取消了与OAI（OpenAI）合作建设数据中心的交易。感觉他们没有什么进展。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">BRCM (Broadcom)</div>
-        <blockquote class="quote">
-          Broadcom reported Q1 FY2026 earnings on March 4. The numbers: $19.3B revenue (+29% YoY), $8.4B AI semiconductor revenue (+106% YoY), $13.1B adjusted EBITDA (68% margin), $8.0B free cash flow.
-          <div class="translation">翻译：博通于3月4日公布了2026财年第一季度财报。数据显示：营收193亿美元（同比增长29%），AI半导体营收84亿美元（同比增长106%），调整后EBITDA为131亿美元（68%利润率），自由现金流80亿美元。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Q2 guidance: $22B revenue (+47%), $10.7B AI semiconductor revenue (+140% YoY).
-          <div class="translation">翻译：第二季度指引：营收220亿美元（同比增长47%），AI半导体营收107亿美元（同比增长140%）。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Broadcom's AI business is almost entirely custom silicon, chips designed for a specific customer's specific workload. Google's TPU. Anthropic's compute stack. Meta's MTIA accelerator.
-          <div class="translation">翻译：博通的AI业务几乎完全是定制芯片，是为特定客户的特定工作负载设计的芯片。例如谷歌的TPU、Anthropic的计算堆栈和Meta的MTIA加速器。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Broadcom provides IP, advanced packaging, and networking. They're not competing with Nvidia; they're serving a different set of buyers who want differentiated, workload-specific chips.
-          <div class="translation">翻译：博通提供IP、先进封装和网络。他们不与英伟达竞争；他们服务于一群寻求差异化、针对特定工作负载芯片的不同买家。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">VZ (Verizon Communications)</div>
-        <blockquote class="quote">
-          Verizon (VZ) has truly been the exception these past few months: the stock climbed about 20% in February 2026 while the S&amp;P 500 lost 0.9% and the Nasdaq plunged 3.4% over the same period.
-          <div class="translation">翻译：威瑞森（VZ）在过去几个月里确实是个例外：2026年2月其股价上涨了约20%，而同期标普500指数下跌0.9%，纳斯达克指数下跌3.4%。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Telecoms like Verizon are often seen as defensive plays: stable demand (subscriptions, fixed internet, fiber), recurring revenues, solid dividends (~6-7% yield currently), and low sensitivity to violent economic cycles.
-          <div class="translation">翻译：像威瑞森这样的电信公司常被视为防御性股票：需求稳定（订阅、固定互联网、光纤）、经常性收入、稳健的股息（目前约6-7%的收益率），且对剧烈的经济周期敏感度较低。</div>
-        </blockquote>
-        <blockquote class="quote">
-          In the current environment (Iran geopolitical tensions, disappointing jobs data, macro volatility), capital has rotated into these "boring but reliable" sectors.
-          <div class="translation">翻译：在当前环境下（伊朗地缘政治紧张、就业数据令人失望、宏观波动），资金已转向这些“无聊但可靠”的板块。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Less exposed to tech/AI shocks. Resilient when fear dominates (war headlines, jobs data pressure). Classic risk-off → stability rotation.
-          <div class="translation">翻译：较少受到科技/AI冲击。在恐惧主导时（战争头条、就业数据压力）表现出韧性。典型的风险规避 → 转向稳定。</div>
-        </blockquote>
-      </li>
-    </ul>
-
-    <h2>3. 小众公司冒泡</h2>
-    <ul>
-      <li>
-        <div class="stock-tag">CVNA (Carvana)</div>
-        <blockquote class="quote">
-          CVNA trades at 50x pe. There is a high likelihood their numbers are further inflated by “creative accounting,” making them very vulnerable to correction.
-          <div class="translation">翻译：Carvana的市盈率是50倍。他们的数字很有可能被“创造性会计”进一步夸大，使其非常容易受到修正。</div>
-        </blockquote>
-        <blockquote class="quote">
-          CVNA is also vulnerable to rising oil prices, as almost every vehicle they sell is transported hundreds of miles by truck.
-          <div class="translation">翻译：Carvana也容易受到油价上涨的影响，因为他们出售的几乎所有车辆都需要通过卡车运输数百英里。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">OKLO (Oklo Inc.)</div>
-        <blockquote class="quote">
-          OKLO has a very cool concept, but nobody has been able to make a profit doing what they are trying to do.
-          <div class="translation">翻译：Oklo有一个非常酷的概念，但没有人能够通过他们正在尝试的事情获利。</div>
-        </blockquote>
-        <blockquote class="quote">
-          At a 9 billion dollar valuation they are still too rich.
-          <div class="translation">翻译：以90亿美元的估值来看，它们仍然太贵了。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">RCAT (Red Cat Holdings)</div>
-        <blockquote class="quote">
-          RCAT 814K CALL BUYER STRIKE PRICE 28 EXPIRY 10/16/2026.
-          <div class="translation">翻译：RCAT 81.4万份看涨期权买家，行权价28美元，到期日2026年10月16日。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">MP (MP Materials)</div>
-        <blockquote class="quote">
-          $MP 95k Call buyer strike price 95$ expiry 09/18/2026.
-          <div class="translation">翻译：MP Materials 9.5万份看涨期权买家，行权价95美元，到期日2026年9月18日。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">ZETA (Zeta Global)</div>
-        <blockquote class="quote">
-          Currently holding a $ZETA LEAPS position that’s up 35%.
-          <div class="translation">翻译：目前持有ZETA的LEAPS（长期股权增值证券）头寸，已上涨35%。</div>
-        </blockquote>
-        <blockquote class="quote">
-          software is ripping, and I’m very bullish on Zeta.
-          <div class="translation">翻译：软件行业表现强劲，我非常看好Zeta。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">ADP (Automatic Data Processing)</div>
-        <blockquote class="quote">
-          ADP processes payroll for something like 1 in 6 US workers.
-          <div class="translation">翻译：ADP处理着大约六分之一美国工人的工资。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The switching cost is insane when you factor in tax compliance and integrations.
-          <div class="translation">翻译：当你考虑到税务合规和系统集成时，转换供应商的成本是惊人的。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">WM (Waste Management)</div>
-        <blockquote class="quote">
-          Their landfill permits alone are a moat, you literally cannot get new ones in most metro areas.
-          <div class="translation">翻译：他们的垃圾填埋场许可证本身就是一道护城河，在大多数大都市区你根本无法获得新的许可证。</div>
-        </blockquote>
-        <blockquote class="quote">
-          So every year they just raise prices 3-5% and nobody blinks because what are you gonna do.
-          <div class="translation">翻译：所以每年他们只是提价3-5%，没有人会眨眼，因为你能怎么办呢？</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">ADB (Adobe)</div>
-        <blockquote class="quote">
-          Adobe - The current leader in my portfolio. Trading at PE of 16 last check and is attracting investors recently such as Michael Burry.
-          <div class="translation">翻译：Adobe——目前在我投资组合中表现领先。上次查看时市盈率为16倍，近期吸引了迈克尔·伯里等投资者的关注。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">COIN (Coinbase Global, Inc.)</div>
-        <blockquote class="quote">
-          Coinbase - This is either a future unicorn.
-          <div class="translation">翻译：Coinbase——这要么是一个未来的独角兽。</div>
-        </blockquote>
-      </li>
-    </ul>
-
-    <h2>4. AI主线讨论</h2>
-    <ul>
-      <li>
-        <div class="track-header">模型</div>
-        <blockquote class="quote">
-          Caitlin Kalinowski, head of robotics and consumer hardware at OpenAI, announced her resignation on Saturday, citing ​concerns about the company's agreement with the Department ‌of Defense.
-          <div class="translation">翻译：OpenAI机器人与消费硬件主管Caitlin Kalinowski周六宣布辞职，理由是她对公司与美国国防部达成的协议感到担忧。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Kalinowski wrote that OpenAI did not take enough time before agreeing to deploy its AI models ​on the Pentagon's classified cloud networks.
-          <div class="translation">翻译：Kalinowski写道，OpenAI在同意将其AI模型部署到五角大楼的机密云网络之前，没有花足够的时间。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Oracle and OpenAI End Plans to Expand Flagship Data Center.
-          <div class="translation">翻译：甲骨文和OpenAI终止扩大旗舰数据中心的计划。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Anthropic just mapped out which jobs AI could potentially replace. A 'Great Recession for white-collar workers' is absolutely possible.
-          <div class="translation">翻译：Anthropic刚刚绘制了AI可能取代的工作。一场“白领大衰退”绝对可能发生。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="track-header">算</div>
-        <blockquote class="quote">
-          Marvell stock surges 18% as CEO points to continuing AI demand: 'Do you see me blinking?'
-          <div class="translation">翻译：Marvell股价飙升18%，首席执行官指出AI需求持续强劲：“你看到我眨眼了吗？”</div>
-        </blockquote>
-        <blockquote class="quote">
-          Broadcom's AI business is almost entirely custom silicon, chips designed for a specific customer's specific workload.
-          <div class="translation">翻译：博通的AI业务几乎完全是定制芯片，是为特定客户的特定工作负载设计的芯片。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Google's TPU. Anthropic's compute stack. Meta's MTIA accelerator. Broadcom provides IP, advanced packaging, and networking.
-          <div class="translation">翻译：谷歌的TPU。Anthropic的计算堆栈。Meta的MTIA加速器。博通提供IP、先进封装和网络。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="track-header">光</div>
-        <!-- 数据池中未发现相关高质量引用 -->
-      </li>
-      <li>
-        <div class="track-header">存</div>
-        <!-- 数据池中未发现相关高质量引用 -->
-      </li>
-      <li>
-        <div class="track-header">电</div>
-        <!-- 数据池中未发现相关高质量引用 -->
-      </li>
-      <li>
-        <div class="track-header">板</div>
-        <!-- 数据池中未发现相关高质量引用 -->
-      </li>
-      <li>
-        <div class="track-header">云</div>
-        <blockquote class="quote">
-          OpenAI did not take enough time before agreeing to deploy its AI models ​on the Pentagon's classified cloud networks.
-          <div class="translation">翻译：OpenAI在同意将其AI模型部署到五角大楼的机密云网络之前，没有花足够的时间。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Oracle and OpenAI End Plans to Expand Flagship Data Center.
-          <div class="translation">翻译：甲骨文和OpenAI终止扩大旗舰数据中心的计划。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="track-header">AI应用</div>
-        <blockquote class="quote">
-          I've just completed a personal project to help me make decisions about financial options strategies, primarily to automate the analysis.
-          <div class="translation">翻译：我刚刚完成了一个个人项目，主要用于自动化分析，帮助我做出金融期权策略的决策。</div>
-        </blockquote>
-        <blockquote class="quote">
-          AI displacing jobs will become a reality very soon. As an employer, I can say that this is real and not just hypothetical.
-          <div class="translation">翻译：人工智能取代工作岗位很快就会成为现实。作为一名雇主，我可以说这是真实的，而非假设。</div>
-        </blockquote>
-        <blockquote class="quote">
-          I started testing a tool called Nova Flow this week and figured I’d share my experience so far. One thing I’ve been playing with lately is an indicator suite that automatically maps out support/resistance zones and highlights divergences.
-          <div class="translation">翻译：本周我开始测试一个名为Nova Flow的工具，并想分享一下目前的体验。我最近一直在尝试一个能自动绘制支撑/阻力区并突出背离的指标套件。</div>
-        </blockquote>
-        <blockquote class="quote">
-          I asked the AI overlord to value two tickers for me because my brain is as smooth as a marble.
-          <div class="translation">翻译：我请AI大佬帮我评估两只股票，因为我的大脑像弹珠一样光滑。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The Trade Desk - Great fundamentals, no debt, collab with OpenAI incoming.
-          <div class="translation">翻译：The Trade Desk——基本面良好，无债务，即将与OpenAI合作。</div>
-        </blockquote>
-      </li>
-    </ul>
-
-</body>
-</html>
+  <h2>4. AI主线讨论</h2>
+  <div class="track-header">模型</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Caitlin Kalinowski, head of robotics and consumer hardware at OpenAI, announced her resignation on Saturday, citing concerns about the company's agreement with the Department of Defense.
+        <div class="translation">翻译：OpenAI机器人与消费硬件主管Caitlin Kalinowski周六宣布辞职，理由是她对公司与美国国防部达成的协议感到担忧。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        In a social media post on X, Kalinowski wrote that OpenAI did not take enough time before agreeing to deploy its AI models on the Pentagon's classified cloud networks.
+        <div class="translation">翻译：Kalinowski在X上的一篇社交媒体帖子中写道，OpenAI在同意将其人工智能模型部署到五角大楼的机密云网络之前，没有花足够的时间。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Let's agree or assume that at some point in the future, an event will happen that will cause most AI startups to go bankrupt, and that this will drag down the overall stonk market.
+        <div class="translation">翻译：让我们同意或假设，在未来的某个时候，将发生一件事件，导致大多数人工智能初创公司破产，这将拖累整个股市。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        That's what happened with the dot-com bubble, and the resemblances with today's AI market are striking.
+        <div class="translation">翻译：这就是互联网泡沫发生的情况，与当今人工智能市场的相似之处令人震惊。</div>
+      </blockquote>
+    </li>
+  </ul>
+  <div class="track-header">算力</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Nvidia’s new Rubin chips need a massive 288GB of RAM each.
+        <div class="translation">翻译：英伟达的新Rubin芯片每个需要288GB的大容量内存。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Broadcom's AI business is almost entirely custom silicon, chips designed for a specific customer's specific workload.
+        <div class="translation">翻译：博通的人工智能业务几乎完全是定制芯片，为特定客户的特定工作负载而设计。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        If finalized as written, Nvidia and AMD face bureaucratic friction on their international order pipelines.
+        <div class="translation">翻译：如果按原样最终确定，英伟达和AMD将在其国际订单流程中面临官僚摩擦。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        The tiered licensing structure (under 1K GPUs = basic review, 200K+ = host-government security commitments) adds latency to hyperscaler orders in Europe and Asia.
+        <div class="translation">翻译：分级许可结构（1K GPU以下=基本审查，20万+ GPU=东道国政府安全承诺）增加了欧洲和亚洲超大规模厂商订单的延迟。</div>
+      </blockquote>
+    </li>
+  </ul>
+  <div class="track-header">存储</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Spot prices for 16GB DDR4 are already up 2350% YoY to around $76.
+        <div class="translation">翻译：16GB DDR4的现货价格已同比上涨2350%，达到约76美元。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Big tech is hoarding these chips, basically locking up the global memory supply.
+        <div class="translation">翻译：大型科技公司正在囤积这些芯片，基本上锁定了全球内存供应。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        I'm trying to figure out if guys like Micron ($MU) or SK Hynix are better risk/reward than chasing NVDA at all-time highs.
+        <div class="translation">翻译：我正在努力弄清楚像美光（MU）或SK海力士这样的公司是否比在历史高点追逐英伟达具有更好的风险/回报。</div>
+      </blockquote>
+    </li>
+  </ul>
+  <div class="track-header">云服务</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Oracle and OpenAI End Plans to Expand Flagship Data Center.
+        <div class="translation">翻译：甲骨文和OpenAI终止了扩大旗舰数据中心的计划。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        The draft explicitly exempts domestic U.S. data center demand.
+        <div class="translation">翻译：该草案明确豁免了美国国内数据中心的需求。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Oracle Layoffs: Tech giant to slash 30,000 jobs as banks pull out from financing AI data centres.
+        <div class="translation">翻译：甲骨文裁员：随着银行撤回对AI数据中心的融资，这家科技巨头将裁减3万个工作岗位。</div>
+      </blockquote>
+    </li>
+  </ul>
+  <div class="track-header">AI应用</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Anthropic just mapped out which jobs AI could potentially replace.
+        <div class="translation">翻译：Anthropic刚刚绘制出了AI可能取代的哪些工作岗位。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        I've just completed a personal project to help me make decisions about financial options strategies, primarily to automate the analysis.
+        <div class="translation">翻译：我刚刚完成了一个个人项目，主要用于自动化分析，帮助我做出关于金融期权策略的决策。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        I asked the AI overlord to value two tickers for me because my brain is as smooth as a marble.
+        <div class="translation">翻译：我让AI霸主帮我评估了两只股票，因为我的大脑光滑如大理石。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Jeffrey Terry Green, CEO of The Trade Desk, recently purchased around $140M worth of TTD shares just days before news dropped that OpenAI wanted to purchase ads using TTD’s platform.
+        <div class="translation">翻译：The Trade Desk首席执行官Jeffrey Terry Green最近购买了价值约1.4亿美元的TTD股票，就在几天前，有消息传出OpenAI希望使用TTD平台购买广告。</div>
+      </blockquote>
+    </li>
+  </ul>
+</div>
         </div>
         <script>
             var myChart = echarts.init(document.getElementById('gauge'));
