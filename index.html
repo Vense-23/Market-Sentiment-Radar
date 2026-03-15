@@ -37,238 +37,405 @@
     <body>
         <div class="container">
             <h1>🎯 03月15日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-03-15 11:40:43 (北京时间)</p>
+            <p style="color:#94a3b8">情报最后更新: 2026-03-15 21:30:02 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            <h2>1. 宏观与市场情绪</h2>
-<p>本周市场情绪主要围绕中东地缘政治冲突及其对全球能源市场和通货膨胀的影响展开。美国与伊朗之间的战争导致油价飙升，加剧了对经济滞胀的担忧，并引发了美股基金的持续流出。尽管美国政府尝试通过释放石油储备和临时授权购买俄罗斯滞港石油来稳定市场，但效果有限，投资者普遍预计高油价将推迟美联储的降息时机。</p>
-<blockquote class="quote">
-The oil market sent a clear signal this week that a massive release of stockpiled crude by the U.S. and its allies is nowhere near enough to address the unprecedented supply disruption triggered by the Iran war.
-<div class="translation">翻译：本周石油市场发出了一个明确信号，即美国及其盟友大规模释放原油储备，远不足以解决伊朗战争引发的史无前例的供应中断。</div>
-</blockquote>
-<blockquote class="quote">
-Tankers are under attack in the Persian Gulf, the critical Strait of Hormuz remains basically closed, and Iran’s new supreme leader has vowed to keep the trade chokepoint shut.
-<div class="translation">翻译：油轮在波斯湾遭到袭击，关键的霍尔木兹海峡基本关闭，伊朗新任最高领袖誓言将继续关闭这一贸易咽喉要道。</div>
-</blockquote>
-<blockquote
-class="quote">
-U.S. equity funds were under selling pressure for a second straight week through March 11 as Iranian attacks ​on Middle East energy infrastructure and oil tankers increased ‌the risk of economic stagflation.
-<div class="translation">翻译：截至3月11日，美国股票基金连续第二周面临抛售压力，原因是伊朗对中东能源基础设施和油轮的袭击增加了经济滞胀的风险。</div>
-</blockquote>
-<blockquote class="quote">
-As oil prices surged on Thursday amid an intensifying Iran war, U.S. President Donald Trump again demanded Federal Reserve Chair Jerome Powell ​cut interest rates. Investors have rushed the other way, ​betting that higher oil prices will worsen inflation and keep the ​Fed from cutting until the end of the year, ⁠if then.
-<div class="translation">翻译：周四，随着伊朗战争的加剧导致油价飙升，美国总统唐纳德·特朗普再次要求美联储主席杰罗姆·鲍威尔降息。然而，投资者却转向了相反的方向，押注更高的油价将加剧通胀，并使美联储在年底前都不会降息，甚至更久。</div>
-</blockquote>
-<blockquote class="quote">
-The tech vs. energy divergence has been wild since early January. Tech keeps bleeding and dragging everything down, meanwhile energy has been ripping for months.
-<div class="translation">翻译：自一月初以来，科技股与能源股的分化一直很剧烈。科技股持续下跌并拖累整个市场，而能源股却持续上涨了几个月。</div>
-</blockquote>
-<blockquote class="quote">
-Fourth-quarter GDP revised down to just 0.7% growth; January core inflation was 3.1%. Sir, another downward revision has hit the markets.
-<div class="translation">翻译：第四季度GDP增速下修至仅0.7%；1月份核心通胀率为3.1%。先生，市场又一次遭遇了下调。</div>
-</blockquote>
-<blockquote class="quote">
-A federal judge blocked subpoenas issued by a grand jury to the Federal Reserve as part of a criminal investigation of Chair Jerome Powell. That may mean interest rates remain higher that President Donald Trump wants as Powell has resisted Trump’s pressure to cut rates more sharply.
-<div class="translation">翻译：一名联邦法官阻止了大陪审团针对美联储主席杰罗姆·鲍威尔刑事调查发出的传票。这可能意味着利率将保持在唐纳德·特朗普总统希望的更高水平，因为鲍威尔一直抵制特朗普要求更大幅度降息的压力。</div>
-</blockquote>
-<blockquote class="quote">
-I think we're entering a bear market. So I sold a ton of stuff and bought a ton of hedges.
-<div class="translation">翻译：我认为我们正在进入熊市。所以我卖掉了大量持仓并买入了很多对冲。</div>
-</blockquote>
+            <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>市场情绪洞察 (2026年03月15日)</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f8f9fa; }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+        h2 { font-size: 1.8em; }
+        h3 { color: #34495e; font-size: 1.4em; margin-top: 20px; }
+        ul { list-style-type: none; padding: 0; }
+        li { background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        blockquote { background-color: #f0f3f6; border-left: 4px solid #007bff; margin: 15px 0; padding: 10px 20px; font-style: italic; color: #555; border-radius: 4px; }
+        .quote { white-space: pre-wrap; }
+        .translation { font-size: 0.9em; color: #6a7c8a; margin-top: 10px; padding-top: 5px; border-top: 1px dashed #cfd8dc; }
+        .stock-tag { font-weight: bold; color: #007bff; font-size: 1.1em; margin-bottom: 10px; }
+        .track-header { font-weight: bold; color: #2c3e50; font-size: 1.2em; margin-top: 15px; margin-bottom: 5px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+    </style>
+</head>
+<body>
 
-<h2>2. 热议中的个股和想法</h2>
-<li>
-      <div class="stock-tag">SpaceX (SpaceX)</div>
-      <blockquote class="quote">
-        SpaceX (which has acquired xAI, which itself has acquired X) is looking to list on the NASDAQ, aiming for a valuation of around $1.75 trillion.
-        <div class="translation">翻译：SpaceX（已收购xAI，而xAI又收购了X）正寻求在纳斯达克上市，目标估值约为1.75万亿美元。</div>
-      </blockquote>
-      <blockquote class="quote">
-        SpaceX is insisting that NASDAQ changes its rules for inclusion in the NASDAQ-100 index, as a condition for listing. The NASDAQ-100 rule changes would, effectively, allow SpaceX to very quickly get included on the NASDAQ-100, which then forces any index fund tracking the NASDAQ-100 to buy SpaceX stocks based on SpaceX's market capitalisation.
-        <div class="translation">翻译：SpaceX坚持要求纳斯达克修改其纳入纳斯达克100指数的规则，作为上市的条件。纳斯达克100指数规则的修改将有效地允许SpaceX非常迅速地被纳入纳斯达克100指数，这反过来将迫使所有跟踪纳斯达克100指数的指数基金根据SpaceX的市值购买其股票。</div>
-      </blockquote>
-      <blockquote class="quote">
-        S&P Dow Jones Indices LLC is considering changes to rules governing how companies join the S&P 500 Index, a move that would potentially fast-track SpaceX’s entry after its IPO, people familiar with the matter said.
-        <div class="translation">翻译：知情人士透露，标普道琼斯指数有限责任公司正在考虑修改管理公司如何加入标普500指数的规则，此举可能会在SpaceX首次公开募股后加速其进入该指数。</div>
-      </blockquote>
-      </li><li>
-      <div class="stock-tag">Microvast (MVST)</div>
-      <blockquote class="quote">
-        Microvast ($MVST) earnings are scheduled for this Monday, March 16 (after hours). The market thinks this is a distressed asset heading for insolvency and heavy dilution from an active At the Money Offering (ATM).
-        <div class="translation">翻译：Microvast ($MVST) 的财报定于本周一（3月16日）盘后发布。市场认为这是一种困境资产，正走向破产，并因活跃的价内发行（ATM）而面临严重的稀释。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Based on a forensic trace of NY court dockets and hyper-specific job requisitions, the reality is the exact opposite. Microvast has secured its balance sheet and (in my read of the circumstantial but highly suggestive evidence) is about to announce a massive Joint Venture/Licensing deal with Oshkosh Corporation ($OSK) to turn on the Clarksville factory and power Oshkosh's refuse trucks today, new robotic autonomous fleet tomorrow, and likely even the USPS delivery vehicles in 2027/2028.
-        <div class="translation">翻译：根据对纽约法院案卷的法务追溯和超具体的工作要求，实际情况恰恰相反。Microvast已经巩固了其资产负债表，并且（根据我对环境但高度暗示性证据的解读）即将宣布与Oshkosh Corporation（$OSK）达成一项大规模的合资/许可协议，以启动克拉克斯维尔工厂，并为Oshkosh的垃圾车、未来的机器人自动驾驶车队以及可能在2027/2028年的美国邮政送货车辆提供动力。</div>
-      </blockquote>
-      </li><li>
-      <div class="stock-tag">NVIDIA (NVDA)</div>
-      <blockquote class="quote">
-        The market is already three weeks deep into a losing streak, oil is sitting near $100, and Nvidia is walking into its biggest conference of the year carrying a lot of weight.
-        <div class="translation">翻译：市场已连续三周下跌，油价接近100美元，而英伟达正带着巨大的压力步入今年最重要的会议。</div>
-      </blockquote>
-      <blockquote class="quote">
-        My honest take: the stock doesn't just need a good presentation. It needs Jensen to make a credible case that AI capex is the last thing hyperscalers cut when margins get squeezed, and right now, margins are getting squeezed.
-        <div class="translation">翻译：我的真心看法是：这只股票需要的不仅仅是一场好的演示。它需要黄仁勋提出一个可信的论点，即在利润受挤压时，AI资本支出是超大规模数据中心最不可能削减的项目，而现在，利润正受到挤压。</div>
-      </blockquote>
-      <blockquote class="quote">
-        What I'm watching for: concrete Blackwell Ultra timelines with actual delivery dates, not roadmap slides.
-        <div class="translation">翻译：我关注的是：具体的Blackwell Ultra时间表和实际交付日期，而不是路线图幻灯片。</div>
-      </blockquote>
-      <blockquote class="quote">
-        For example if you buy an NVDA 100c with 2 years to expiry, with the overnight rate currently at 3.75ish, we are paying $7.50 extra for that call (100 * 3.75) * 2 years just in interest (or expressed as the rho greek).
-        <div class="translation">翻译：例如，如果你购买一份行权价为100美元、两年后到期的英伟达看涨期权，考虑到目前隔夜利率约为3.75%，我们仅为这份看涨期权支付的利息就额外增加了7.50美元（100 * 3.75）* 2年（或用Rho希腊字母表示）。</div>
-      </blockquote>
-      </li><li>
-      <div class="stock-tag">Meta Platforms (META)</div>
-      <blockquote class="quote">
-        Meta (META.O) is planning sweeping layoffs ​that could affect 20% or more of the company, three sources familiar with the matter told Reuters, as ‌Meta seeks to offset costly artificial intelligence infrastructure bets and prepare for greater efficiency brought about by AI-assisted workers.
-        <div class="translation">翻译：据三位知情人士告诉路透社，Meta (META.O) 正在计划大规模裁员，可能影响公司20%或更多员工，因为Meta试图抵消昂贵的人工智能基础设施投入，并为AI辅助工作带来的更高效率做准备。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Zuck might be cucking 1/5th of his staff soon. Adjust your Put Calls accordingly.
-        <div class="translation">翻译：扎克伯格可能很快会裁掉他五分之一的员工。请相应地调整你的看跌期权。</div>
-      </blockquote>
-      </li><li>
-      <div class="stock-tag">Adobe (ADBE)</div>
-      <blockquote class="quote">
-        Adobe CEO Narayen to Step Down as Company Issues Tepid Sales Forecast.
-        <div class="translation">翻译：Adobe首席执行官纳拉延将辞职，公司发布疲软的销售预测。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Why the Agentic Evolution Preserves Software but Destroys Adobe.
-        <div class="translation">翻译：为什么代理式演进能保护软件却会摧毁Adobe。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Adobe - The Transformation That Everyone Hated.
-        <div class="translation">翻译：Adobe——一场人人都讨厌的转型。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Good news: AI Will Eat Application Software.
-        <div class="translation">翻译：好消息：AI将吞噬应用软件。</div>
-      </blockquote>
-      </li><li>
-      <div class="stock-tag">Carvana (CVNA)</div>
-      <blockquote class="quote">
-        My thesis has been that CVNA's rampant accounting fraud could knock the share price down.
-        <div class="translation">翻译：我的论点是，CVNA猖獗的会计欺诈可能导致股价下跌。</div>
-      </blockquote>
-      <blockquote class="quote">
-        What makes Carvana so vulnerable to the conflict in Iran? Well it is a perfect storm.
-        <div class="translation">翻译：是什么让Carvana在中东冲突面前如此脆弱？这是一场完美的风暴。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Higher oil prices: Carvana moves almost every vehicle through overland transport. Every dollar at the pump slashes money from their gross per unit (GPU).
-        <div class="translation">翻译：油价上涨：Carvana几乎所有车辆都通过陆路运输。油价每上涨一美元都会削减他们每单位总利润（GPU）的收入。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Inflation and Interest Rates: Carvana borrows and loans out mountains of cash. Inflation and higher interest rates raises Carvana's borrowing costs.
-        <div class="translation">翻译：通货膨胀和利率：Carvana借入和贷出大量现金。通货膨胀和更高的利率提高了Carvana的借贷成本。</div>
-      </blockquote>
-      </li><li>
-      <div class="stock-tag">Check Point Software Technologies (CHKP)</div>
-      <blockquote class="quote">
-        I’ve been conducting a fundamental assessment of Check Point Software Technologies ($CHKP) following its recent 18% price correction.
-        <div class="translation">翻译：在其近期18%的价格修正后，我正在对Check Point Software Technologies ($CHKP) 进行一项基本面评估。</div>
-      </blockquote>
-      <blockquote class="quote">
-        While the market is currently fixed on short-term hardware revenue guidance headwinds, the underlying cash-generating physics suggest a significant valuation anomaly.
-        <div class="translation">翻译：尽管市场目前关注短期硬件收入指引的不利因素，但其潜在的现金生成机制表明存在显著的估值异常。</div>
-      </blockquote>
-      <blockquote class="quote">
-        CHKP holds $4.34B in gross cash/investments. Adjusting for the $2B in convertible notes, we find a risk-free net cash position of $2.34B.
-        <div class="translation">翻译：CHKP持有43.4亿美元的总现金/投资。扣除20亿美元可转换票据后，我们发现其无风险净现金头寸为23.4亿美元。</div>
-      </blockquote>
-      <blockquote class="quote">
-        The firm operates a capital-light software model with negligible CapEx. FY2025 operating cash flow reached $1.234B.
-        <div class="translation">翻译：该公司采用资本密集度低的软件模式，资本支出可忽略不计。2025财年运营现金流达到12.34亿美元。</div>
-      </blockquote>
-      </li>
+    <h1>真实市场情绪网页 (2026年03月15日)</h1>
 
-<h2>3. 小众公司冒泡</h2>
-<li>
-      <div class="stock-tag">Dollar Tree (DLTR)</div>
-      <blockquote class="quote">
-        ATM Straddle Cost $11.08 DLTR Breakeven Low @ Expiration $95.92 -10.4% DLTR Current Price $107.7 DLTR Breakeven High @ Expiration $118.08 10.4% Implied Vol 67% Expected Vol Full Crush (vol points) 40.3 Delta $4.58 Gamma $6.07 Vega $11.79 Theta $-74.8 Post earnings mean opening gap +/- 5.9% with standard deviation of 5.9%: 68% CI range +/-11.8%.
-        <div class="translation">翻译：ATM跨式期权成本为11.08美元，DLTR到期时盈亏平衡下限为95.92美元（-10.4%），DLTR当前价格为107.7美元，到期时盈亏平衡上限为118.08美元（10.4%），隐含波动率为67%，预期波动率完全挤压（波动点）为40.3，Delta为4.58，Gamma为6.07，Vega为11.79，Theta为-74.8。财报后平均开盘跳空幅度为+/- 5.9%，标准差为5.9%：68%置信区间范围为+/-11.8%。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Full vol crush = -4.4% of stock price. Crush adjusted move +/-7.3%. Implied move +/- 10.3% so options are a bit cheap.
-        <div class="translation">翻译：完全波动率挤压等于股价的-4.4%。经挤压调整后的波动为+/-7.3%。隐含波动为+/-10.3%，因此期权略显便宜。</div>
-      </blockquote>
-      <blockquote class="quote">
-        However, of last 11 earnings events opening gap > implied move only 27.3% GREAT candidate to go short vol - credit straddle, strangle or IC should all print.
-        <div class="translation">翻译：然而，在过去11次财报事件中，开盘跳空大于隐含波动的只有27.3%。这是一个做空波动率的绝佳标的——信用跨式期权、宽跨式期权或铁蝶式期权都应该会有收益。</div>
-      </blockquote>
-      </li><li>
-      <div class="stock-tag">Nutrien (NTR)</div>
-      <blockquote class="quote">
-        My focuses have been a mix of what I think will be important for the future and things we use every day and things I support. Nutrien (NTR) 14.81%.
-        <div class="translation">翻译：我的重点一直是我认为对未来很重要，以及我们日常使用和支持的事物的混合。Nutrien (NTR) 占14.81%。</div>
-      </blockquote>
-      </li><li>
-      <div class="stock-tag">ASML Holding (ASML)</div>
-      <blockquote class="quote">
-        My focuses have been a mix of what I think will be important for the future and things we use every day and things I support. ASML Holding 11.20%.
-        <div class="translation">翻译：我的重点一直是我认为对未来很重要，以及我们日常使用和支持的事物的混合。ASML Holding 占11.20%。</div>
-      </blockquote>
-      </li><li>
-      <div class="stock-tag">Joby Aviation (JOBY)</div>
-      <blockquote class="quote">
-        My focuses have been a mix of what I think will be important for the future and things we use every day and things I support. Joby Aviation 5.55%.
-        <div class="translation">翻译：我的重点一直是我认为对未来很重要，以及我们日常使用和支持的事物的混合。Joby Aviation 占5.55%。</div>
-      </blockquote>
-      </li><li>
-      <div class="stock-tag">Reddit (RDDT)</div>
-      <blockquote class="quote">
-        Wrote an article analyzing the business a couple weeks ago and now finally felt comfortable enough to open a 1% position into the company.
-        <div class="translation">翻译：几周前写了一篇分析该公司业务的文章，现在终于觉得足够放心，可以买入该公司1%的仓位。</div>
-      </blockquote>
-      <blockquote class="quote">
-        (Using a 28 EPS growth rate and 30 P/E I got a return of 15.7% CAGR over five years.)
-        <div class="translation">翻译：(使用28的EPS增长率和30的市盈率，我得到了五年内15.7%的复合年增长率。)</div>
-      </blockquote>
-      </li>
+    <h2>1. 宏观与市场情绪</h2>
+    <p>当前市场情绪高度受到中东冲突和油价飙升的影响，对经济增长和通胀前景的担忧加剧。投资者正在重新评估其投资组合，防御性资产和能源板块受到关注，而科技股则面临压力。宏观数据显示经济增长放缓，通胀压力持续。</p>
+    <ul>
+        <li>
+            <div class="stock-tag">宏观经济：地缘政治与石油</div>
+            <blockquote class="quote">
+                My prediction: Oil equities likely to raise, and the S&P will continue to slide, on the back of a sustained Strait of Hormuz closure.
+                <div class="translation">翻译：我的预测是：在霍尔木兹海峡持续关闭的背景下，石油股票可能会上涨，而标普指数将继续下跌。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Oil poised for further gains as Middle East conflict threatens export facilities.
+                <div class="translation">翻译：随着中东冲突威胁到出口设施，油价有望进一步上涨。</div>
+            </blockquote>
+            <blockquote class="quote">
+                The oil market sent a clear signal this week that a massive release of stockpiled crude by the U.S. and its allies is nowhere near enough to address the unprecedented supply disruption triggered by the Iran war.
+                <div class="translation">翻译：本周石油市场发出了一个明确信号，即美国及其盟友大规模释放原油储备，远不足以解决伊朗战争引发的前所未有的供应中断问题。</div>
+            </blockquote>
+            <blockquote class="quote">
+                US equity fund outflows extend to second week as Iran war sours sentiment.
+                <div class="translation">翻译：由于伊朗战争恶化市场情绪，美国股票基金连续第二周出现资金外流。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">宏观经济：增长与通胀</div>
+            <blockquote class="quote">
+                Fourth-quarter GDP revised down to just 0.7% growth; January core inflation was 3.1%.
+                <div class="translation">翻译：第四季度GDP增速下调至仅0.7%；1月份核心通胀率为3.1%。</div>
+            </blockquote>
+            <blockquote class="quote">
+                It kind of feels like the market isn’t really afraid of just one thing right now, It’s more the combination of inflation staying high while growth starts slowing down.
+                <div class="translation">翻译：现在市场似乎不是只害怕一件事，更多的是通胀居高不下而经济增长开始放缓的组合。</div>
+            </blockquote>
+            <blockquote class="quote">
+                The "Stealth" Cooling: 92,000 jobs lost in February.
+                <div class="translation">翻译：“隐形”降温：2月份有92,000个工作岗位流失。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">市场情绪：牛熊转换</div>
+            <blockquote class="quote">
+                I think we're entering a bear market. So I sold a ton of stuff and bought a ton of hedges.
+                <div class="translation">翻译：我认为我们正在进入熊市。所以我卖出了大量资产并购买了大量对冲工具。</div>
+            </blockquote>
+            <blockquote class="quote">
+                I'm down about 10% in total nw since all time highs.
+                <div class="translation">翻译：自历史高点以来，我的净值总共下跌了大约10%。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">宏观经济：美联储政策</div>
+            <blockquote class="quote">
+                Judge blocks subpoenas against Fed Chair Jerome Powell, citing 'essentially zero evidence'.
+                <div class="translation">翻译：法官阻止了针对美联储主席杰罗姆·鲍威尔的传票，理由是“基本没有证据”。</div>
+            </blockquote>
+        </li>
+    </ul>
 
-<h2>4. AI主线讨论</h2>
-<div class="track-header">算力 (Compute)</div>
-<blockquote class="quote">
-The U.S. Commerce Department withdrew a proposed rule that would have expanded export controls on advanced AI chips. By withdrawing it, the U.S. is avoiding additional restrictions for now, which is generally positive for U.S. semiconductor companies and global AI supply chains.
-<div class="translation">翻译：美国商务部撤回了一项拟议规则，该规则原将扩大对先进AI芯片的出口管制。通过撤回此规定，美国目前避免了额外的限制，这对于美国半导体公司和全球AI供应链总体而言是积极的。</div>
-</blockquote>
-<blockquote class="quote">
-My honest take: the stock doesn't just need a good presentation. It needs Jensen to make a credible case that AI capex is the last thing hyperscalers cut when margins get squeezed, and right now, margins are getting squeezed.
-<div class="translation">翻译：我的真心看法是：这只股票需要的不仅仅是一场好的演示。它需要黄仁勋提出一个可信的论点，即在利润受挤压时，AI资本支出是超大规模数据中心最不可能削减的项目，而现在，利润正受到挤压。</div>
-</blockquote>
-<blockquote class="quote">
-What I'm watching for: concrete Blackwell Ultra timelines with actual delivery dates, not roadmap slides.
-<div class="translation">翻译：我关注的是：具体的Blackwell Ultra时间表和实际交付日期，而不是路线图幻灯片。</div>
-</blockquote>
-<div class="track-header">云 (Cloud)</div>
-<blockquote class="quote">
-Nebius is following a proven, sequenced go-to-market strategy that mirrors what they already executed at Yandex. The current AI cloud business is stage one which funnily enough &quot;Yandex Cloud&quot; was the last segment at Yandex before the spinoff with Nebius.
-<div class="translation">翻译：Nebius正在遵循一套经过验证的、序列化的市场进入策略，这与他们之前在Yandex执行的策略如出一辙。当前的AI云业务是第一阶段，有趣的是，“Yandex Cloud”是Yandex在分拆出Nebius之前的最后一个业务部门。</div>
-</blockquote>
-<blockquote class="quote">
-The segment they are building toward, Physical AI, is stage two.
-<div class="translation">翻译：他们正在建设的第二阶段是实体AI领域。</div>
-</blockquote>
-<div class="track-header">AI应用 (AI Applications)</div>
-<blockquote class="quote">
-Netflix to Pay as Much as $600 Million for Ben Affleck’s AI Firm. “The filmmaking process really since its inception has been one long technological progression,” Affleck said in a video posted by Netflix. “We’ve always been seeking to make it feel more realistic, more honest, and InterPositive I hope is another iteration or step in keeping with that long and storied history.”
-<div class="translation">翻译：Netflix将为本·阿弗莱克的AI公司支付高达6亿美元。“电影制作过程自诞生以来，一直是一段漫长的技术进步史，”阿弗莱克在Netflix发布的一段视频中说，“我们一直在寻求让它感觉更真实、更真诚，而InterPositive希望是与这段悠久历史保持一致的又一次迭代或一步。”</div>
-</blockquote>
-<blockquote class="quote">
-Meta (META.O) is planning sweeping layoffs ​that could affect 20% or more of the company, three sources familiar with the matter told Reuters, as ‌Meta seeks to offset costly artificial intelligence infrastructure bets and prepare for greater efficiency brought about by AI-assisted workers.
-<div class="translation">翻译：据三位知情人士告诉路透社，Meta (META.O) 正在计划大规模裁员，可能影响公司20%或更多员工，因为Meta试图抵消昂贵的人工智能基础设施投入，并为AI辅助工作带来的更高效率做准备。</div>
-</blockquote>
-<blockquote class="quote">
-Why the Agentic Evolution Preserves Software but Destroys Adobe.
-<div class="translation">翻译：为什么代理式演进能保护软件却会摧毁Adobe。</div>
-</blockquote>
-<blockquote class="quote">
-Anyone tried trading using their AI agent? It's a good way to compose a trade since it parses and analyzes the chain well.
-<div class="translation">翻译：有人尝试过使用他们的AI代理进行交易吗？它是一种很好的交易构成方式，因为它能很好地解析和分析交易链。</div>
-</blockquote>
+    <h2>2. 热议中的个股和想法</h2>
+    <ul>
+        <li>
+            <div class="stock-tag">OXY (Occidental Petroleum)</div>
+            <blockquote class="quote">
+                Everyone says oil will go up so I full ported into OXY on Friday. Will this print?
+                <div class="translation">翻译：每个人都说油价会上涨，所以我周五满仓买入了OXY。这次会成功吗？</div>
+            </blockquote>
+            <blockquote class="quote">
+                Cappy Army (formerly of Task and Purpose) did a video on Kharg on friday that made me pull the trigger. Sure as anything, after the closing bell Kharg goes down.
+                <div class="translation">翻译：Cappy Army（前Task and Purpose成员）周五发布了一个关于哈尔格岛的视频，让我决定动手。果不其然，收盘后哈尔格岛就出事了。</div>
+            </blockquote>
+            <blockquote class="quote">
+                I bought puts (XLE,OXY) on march 10th with June expiry. i just dipped my little toe in the water to see how hot it is. i bought in when oil was $90.
+                <div class="translation">翻译：我在3月10日买入了XLE和OXY的6月到期看跌期权。我只是小试牛刀，想看看情况如何。我在油价90美元时买入。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">MVST (Microvast Holdings)</div>
+            <blockquote class="quote">
+                Microvast ($MVST) earnings are scheduled for this Monday, March 16 (after hours). The market thinks this is a distressed asset heading for insolvency and heavy dilution from an active At the Money Offering (ATM).
+                <div class="translation">翻译：Microvast ($MVST) 的财报定于本周一（3月16日）盘后发布。市场认为这是一家面临破产和通过价内发行（ATM）大幅稀释股权的困境资产。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Based on a forensic trace of NY court dockets and hyper-specific job requisitions, the reality is the exact opposite.
+                <div class="translation">翻译：根据对纽约法院案卷和高度具体招聘要求的法务追踪，实际情况恰恰相反。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Microvast has secured its balance sheet and (in my read of the circumstantial but highly suggestive evidence) is about to announce a massive Joint Venture/Licensing deal with Oshkosh Corporation ($OSK) to turn on the Clarksville factory and power Oshkosh's refuse trucks today, new robotic autonomous fleet tomorrow, and likely even the USPS delivery vehicles in 2027/2028.
+                <div class="translation">翻译：Microvast已经巩固了其资产负债表，并且（根据我对间接但极具暗示性证据的解读）即将宣布与Oshkosh Corporation ($OSK) 达成一项大规模合资/授权协议，以启动Clarksville工厂，并为Oshkosh目前的垃圾车、未来的机器人自动驾驶车队，甚至可能是2027/2028年的美国邮政送货车辆提供动力。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">OSK (Oshkosh Corporation)</div>
+            <blockquote class="quote">
+                Microvast has secured its balance sheet and (in my read of the circumstantial but highly suggestive evidence) is about to announce a massive Joint Venture/Licensing deal with Oshkosh Corporation ($OSK) to turn on the Clarksville factory and power Oshkosh's refuse trucks today, new robotic autonomous fleet tomorrow, and likely even the USPS delivery vehicles in 2027/2028.
+                <div class="translation">翻译：Microvast已经巩固了其资产负债表，并且（根据我对间接但极具暗示性证据的解读）即将宣布与Oshkosh Corporation ($OSK) 达成一项大规模合资/授权协议，以启动Clarksville工厂，并为Oshkosh目前的垃圾车、未来的机器人自动驾驶车队，甚至可能是2027/2028年的美国邮政送货车辆提供动力。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">AAPL (Apple Inc.)</div>
+            <blockquote class="quote">
+                Bought yesterday when it was -1%. Then it ended -2%.
+                <div class="translation">翻译：昨天在它下跌1%的时候买入。结果收盘时跌了2%。</div>
+            </blockquote>
+            <blockquote class="quote">
+                At least MSFT, GOOG, and AMZN today has a brief window of recovery but AAPL was just a straight plummet.
+                <div class="translation">翻译：至少MSFT、GOOG和AMZN今天有过短暂的反弹窗口，但AAPL却是一路暴跌。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Sold most of them because who knows what will happen over the weekend but still holding a few.
+                <div class="translation">翻译：我大部分都卖掉了，因为谁也不知道周末会发生什么，但仍然持有一部分。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">META (Meta Platforms Inc.)</div>
+            <blockquote class="quote">
+                Zuck might be cucking 1/5th of his staff soon. Adjust your Put Calls accordingly.
+                <div class="translation">翻译：扎克伯格可能很快会裁掉五分之一的员工。相应调整你的看跌期权。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Meta (META.O) is planning sweeping layoffs ​that could affect 20% or more of the company, three sources familiar with the matter told Reuters, as ‌Meta seeks to offset costly artificial intelligence infrastructure bets and prepare for greater efficiency brought about by AI-assisted workers.
+                <div class="translation">翻译：据三位知情人士透露，Meta (META.O) 正计划进行大规模裁员，可能影响公司20%或更多的员工，因为Meta旨在抵消昂贵的人工智能基础设施投资，并为AI辅助工作带来的更高效率做准备。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">NVDA (NVIDIA Corp)</div>
+            <blockquote class="quote">
+                The stock doesn't just need a good presentation. It needs Jensen to make a credible case that AI capex is the last thing hyperscalers cut when margins get squeezed, and right now, margins are getting squeezed.
+                <div class="translation">翻译：这只股票不仅需要一次精彩的演示。它需要黄仁勋提供一个可信的论据，证明当利润空间被压缩时，AI资本支出是超大规模公司最后才会削减的东西，而现在，利润空间正在被压缩。</div>
+            </blockquote>
+            <blockquote class="quote">
+                What I'm watching for: concrete Blackwell Ultra timelines with actual delivery dates, not roadmap slides.
+                <div class="translation">翻译：我关注的是：具体的Blackwell Ultra时间表和实际交付日期，而不是路线图幻灯片。</div>
+            </blockquote>
+            <blockquote class="quote">
+                What I think would send it lower: a repeat of last year's conference energy.
+                <div class="translation">翻译：我认为会导致股价下跌的是：重复去年大会上的那种能量。</div>
+            </blockquote>
+            <blockquote class="quote">
+                By withdrawing it, the U.S. is avoiding additional restrictions for now, which is generally positive for U.S. semiconductor companies and global AI supply chains.
+                <div class="translation">翻译：通过撤回该规定，美国目前避免了额外的限制，这对于美国半导体公司和全球AI供应链总体而言是积极的。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">ADBE (Adobe Inc.)</div>
+            <blockquote class="quote">
+                Adobe CEO Narayen to Step Down as Company Issues Tepid Sales Forecast.
+                <div class="translation">翻译：Adobe首席执行官Narayen将辞职，公司发布疲软销售预测。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Why the Agentic Evolution Preserves Software but Destroys Adobe.
+                <div class="translation">翻译：为什么智能代理的演进保留了软件，但却摧毁了Adobe。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Adobe - The Transformation That Everyone Hated.
+                <div class="translation">翻译：Adobe——一场人人都讨厌的转型。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">CVNA (Carvana Co.)</div>
+            <blockquote class="quote">
+                My thesis has been that CVNA's rampant accounting fraud could knock the share price down.
+                <div class="translation">翻译：我的论点是，CVNA猖獗的会计欺诈可能会导致股价下跌。</div>
+            </blockquote>
+            <blockquote class="quote">
+                And now, more thanks to the conflict in the Middle East than anything else, CVNA stock is in free fall.
+                <div class="translation">翻译：现在，更多地由于中东冲突而不是其他任何原因，CVNA的股价正在自由落体。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Higher oil prices: Carvana moves almost every vehicle through overland transport.
+                <div class="translation">翻译：油价上涨：Carvana几乎所有车辆都通过陆路运输。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Inflation and Interest Rates: Carvana borrows and loans out mountains of cash.
+                <div class="translation">翻译：通货膨胀和利率：Carvana借出和贷出大量现金。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">CHKP (Check Point Software Technologies Ltd.)</div>
+            <blockquote class="quote">
+                I’ve been conducting a fundamental assessment of Check Point Software Technologies ($CHKP) following its recent 18% price correction.
+                <div class="translation">翻译：在Check Point Software Technologies ($CHKP) 最近下跌18%之后，我对其进行了基本面评估。</div>
+            </blockquote>
+            <blockquote class="quote">
+                While the market is currently fixated on short-term hardware revenue guidance headwinds, the underlying cash-generating physics suggest a significant valuation anomaly.
+                <div class="translation">翻译：虽然市场目前专注于短期硬件收入指引逆风，但其潜在的现金生成机制表明存在显著的估值异常。</div>
+            </blockquote>
+            <blockquote class="quote">
+                The firm operates a capital-light software model with negligible CapEx.
+                <div class="translation">翻译：该公司运营着一个资本轻型的软件模式，资本支出可以忽略不计。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">DLTR (Dollar Tree, Inc.)</div>
+            <blockquote class="quote">
+                Implied move +/- 10.3% so options are a bit cheap.
+                <div class="translation">翻译：隐含波动幅度为正负10.3%，因此期权略显便宜。</div>
+            </blockquote>
+            <blockquote class="quote">
+                However, of last 11 earnings events opening gap > implied move only 27.3%.
+                <div class="translation">翻译：然而，在过去11次财报事件中，开盘缺口大于隐含波动幅度的只占27.3%。</div>
+            </blockquote>
+            <blockquote class="quote">
+                GREAT candidate to go short vol - credit straddle, strangle or IC should all print. Choose your poison based on your risk tolerance!
+                <div class="translation">翻译：做空波动率的绝佳标的——信用跨式、勒式或铁秃鹫期权都应该能赚钱。根据你的风险承受能力选择你的策略！</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">ORCL (Oracle Corporation)</div>
+            <blockquote class="quote">
+                I started a position in orcl today by constructing a leaps calendar as I think the price is cheap at 150 and think the price can go up to 250 by year end.
+                <div class="translation">翻译：我今天通过构建一个远期日历期权在ORCL建仓，我认为其价格在150美元时很便宜，并且认为到年底价格可以涨到250美元。</div>
+            </blockquote>
+            <blockquote class="quote">
+                As pre-earnings IV is elevated, I also sold an iron condor.
+                <div class="translation">翻译：由于财报前隐含波动率升高，我还卖出了一个铁秃鹫期权。</div>
+            </blockquote>
+            <blockquote class="quote">
+                By the looks of the earnings print and AH price, my call side on the iron condor is breached.
+                <div class="translation">翻译：从财报发布和盘后价格来看，我的铁秃鹫期权中的看涨期权侧被突破了。</div>
+            </blockquote>
+            <blockquote class="quote">
+                But the condor is meant to offset the IV crush, so it make sense to hold a bit longer in case of the price fades back to the 150s.
+                <div class="translation">翻译：但铁秃鹫期权是为了抵消隐含波动率暴跌的影响，所以如果价格回落到150美元左右，持有时长更长一点是有意义的。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">RDDT (Reddit Inc.)</div>
+            <blockquote class="quote">
+                Wrote an article analyzing the business a couple weeks ago and now finally felt comfortable enough to open a 1% position into the company.
+                <div class="translation">翻译：几周前写了一篇分析该公司业务的文章，现在终于觉得足够放心，可以开立公司1%的仓位。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Hopefully every couple weeks moving forward will add another 1% until I get to 4% of my portfolio.
+                <div class="translation">翻译：希望接下来每几周能再增加1%的仓位，直到达到我投资组合的4%。</div>
+            </blockquote>
+            <blockquote class="quote">
+                (Using a 28 EPS growth rate and 30 P/E I got a return of 15.7% CAGR over five years.)
+                <div class="translation">翻译：（使用28的每股收益增长率和30的市盈率，我得到了五年内15.7%的复合年增长率。）</div>
+            </blockquote>
+        </li>
+    </ul>
+
+    <h2>3. 小众公司冒泡</h2>
+    <ul>
+        <li>
+            <div class="stock-tag">JOBY (Joby Aviation)</div>
+            <blockquote class="quote">
+                My focuses have been a mix of what I think will be important for the future and things we use every day and things I support.
+                <div class="translation">翻译：我的重点一直是我认为对未来很重要，以及我们日常使用和支持的事物的结合。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">CRSP (CRISPR Therapeutics AG)</div>
+            <blockquote class="quote">
+                My focuses have been a mix of what I think will be important for the future and things we use every day and things I support.
+                <div class="translation">翻译：我的重点一直是我认为对未来很重要，以及我们日常使用和支持的事物的结合。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">CTVA (Corteva, Inc.)</div>
+            <blockquote class="quote">
+                My focuses have been a mix of what I think will be important for the future and things we use every day and things I support.
+                <div class="translation">翻译：我的重点一直是我认为对未来很重要，以及我们日常使用和支持的事物的结合。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">XRX (Xerox Holdings Corp)</div>
+            <blockquote class="quote">
+                Xerox: From Tech Obsolescence to LME Engineering.
+                <div class="translation">翻译：施乐：从技术淘汰到LME工程。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">ASTS (AST SpaceMobile, Inc.)</div>
+            <blockquote class="quote">
+                I bought ASTS calls last September and my position was 70 calls of $12.5 1/15/2027 expiration.
+                <div class="translation">翻译：我去年九月买入了ASTS的看涨期权，我的仓位是70份，行权价12.5美元，2027年1月15日到期。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">ALEC (Alector, Inc.)</div>
+            <blockquote class="quote">
+                You might remember my post about a near riskless arbitrage position in a $ALEC call calendar.
+                <div class="translation">翻译：你可能还记得我关于ALEC看涨日历期权中一个接近无风险套利仓位的帖子。</div>
+            </blockquote>
+        </li>
+    </ul>
+
+    <h2>4. AI主线讨论</h2>
+    <ul>
+        <li>
+            <div class="track-header">模型 (Models)</div>
+            <blockquote class="quote">
+                Is Software Dead? Who Survives When AI Eats the Premium?
+                <div class="translation">翻译：软件已死？当AI吞噬溢价时，谁能生存下来？</div>
+            </blockquote>
+            <blockquote class="quote">
+                Why the Agentic Evolution Preserves Software but Destroys Adobe.
+                <div class="translation">翻译：为什么智能代理的演进保留了软件，但却摧毁了Adobe。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Good news: AI Will Eat Application Software.
+                <div class="translation">翻译：好消息：AI将吞噬应用软件。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">算 (Compute)</div>
+            <blockquote class="quote">
+                Dylan Patel — Deep Dive on the 3 Big Bottlenecks to Scaling AI Compute.
+                <div class="translation">翻译：Dylan Patel — 深入探讨扩展AI计算的3大瓶颈。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Came across Leopold Aschenbrenner’s Situational Awareness stuff, thoughts on the power/compute thesis?
+                <div class="translation">翻译：偶然看到Leopold Aschenbrenner的“态势感知”内容，对电力/计算的论点有什么看法？</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">光 (Optics)</div>
+            <blockquote class="quote">
+                目前数据池中没有关于AI主线中“光”的讨论。
+                <div class="translation"></div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">存 (Storage)</div>
+            <blockquote class="quote">
+                目前数据池中没有关于AI主线中“存”的讨论。
+                <div class="translation"></div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">电 (Power)</div>
+            <blockquote class="quote">
+                Came across Leopold Aschenbrenner’s Situational Awareness stuff, thoughts on the power/compute thesis?
+                <div class="translation">翻译：偶然看到Leopold Aschenbrenner的“态势感知”内容，对电力/计算的论点有什么看法？</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">板 (Boards/Infrastructure)</div>
+            <blockquote class="quote">
+                The Orchestration Layer: Why ServiceNow Spent $11.6B to Become CUDA for Workflows.
+                <div class="translation">翻译：编排层：为什么ServiceNow花费116亿美元成为工作流的CUDA。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">云 (Cloud)</div>
+            <blockquote class="quote">
+                Nebius is following a proven, sequenced go-to-market strategy that mirrors what they already executed at Yandex.
+                <div class="translation">翻译：Nebius正在遵循一种经过验证的、序列化的市场进入策略，这与他们之前在Yandex执行的策略如出一辙。</div>
+            </blockquote>
+            <blockquote class="quote">
+                The current AI cloud business is stage one which funnily enough "Yandex Cloud" was the last segment at Yandex before the spinoff with Nebius.
+                <div class="translation">翻译：当前的AI云业务是第一阶段，有趣的是，“Yandex Cloud”在与Nebius分拆之前是Yandex的最后一个业务板块。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">AI应用 (AI Applications)</div>
+            <blockquote class="quote">
+                Meta planning sweeping layoffs as AI costs mount.
+                <div class="translation">翻译：Meta计划进行大规模裁员，因为AI成本不断上升。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Executives say AI boosts productivity but the real gain is just 16 minutes per week.
+                <div class="translation">翻译：高管们表示AI提高了生产力，但实际收益每周只有16分钟。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Anyone tried trading using their AI agent? It's a good way to compose a trade since it parses and analyzes the chain well.
+                <div class="translation">翻译：有人尝试过使用他们的AI代理进行交易吗？它能很好地解析和分析期权链，因此是构建交易的好方法。</div>
+            </blockquote>
+        </li>
+    </ul>
+
+</body>
+</html>
         </div>
         <script>
             var myChart = echarts.init(document.getElementById('gauge'));
