@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>03月23日 情报终端</title>
+        <title>03月24日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,376 +36,432 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 03月23日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-03-23 21:54:48 (北京时间)</p>
+            <h1>🎯 03月24日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-03-24 11:19:19 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit 美股市场情绪概览 (2026年03月23日)</title>
+    <title>美股市场情绪报告 - 2026年03月24日</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 20px; color: #333; background-color: #f9f9f9; }
-        h1, h2, h3 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
-        ul { list-style: none; padding: 0; }
-        li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #007bff; font-size: 1.1em; margin-bottom: 10px; }
-        .quote { background-color: #e9f7ef; border-left: 4px solid #28a745; margin: 10px 0; padding: 10px 15px; font-style: italic; color: #36454F; }
-        .translation { font-style: normal; color: #555; margin-top: 8px; border-top: 1px dashed #ccc; padding-top: 5px; }
-        .track-header { font-weight: bold; color: #6f42c1; font-size: 1.05em; margin-top: 15px; margin-bottom: 5px; }
-        .note { color: #777; font-size: 0.9em; margin-top: 20px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 960px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
+        h1, h2, h3 { color: #2c3e50; margin-top: 30px; margin-bottom: 15px; }
+        h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+        ul { list-style-type: none; padding: 0; }
+        li { background-color: #fff; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .stock-tag { font-weight: bold; color: #2980b9; margin-bottom: 10px; font-size: 1.1em; }
+        .quote { margin: 10px 0 0 0; padding: 10px 15px; border-left: 4px solid #f39c12; background-color: #fcf8e3; color: #5a5a5a; font-style: italic; }
+        .translation { margin-top: 5px; font-size: 0.9em; color: #7f8c8d; }
+        .track-header { font-weight: bold; color: #34495e; margin-top: 20px; margin-bottom: 10px; font-size: 1.05em; border-bottom: 1px dashed #ccc; padding-bottom: 5px;}
     </style>
 </head>
 <body>
 
-    <h1>Reddit 美股市场情绪概览 (2026年03月23日)</h1>
+    <h1>美股市场情绪报告 - 2026年03月24日</h1>
 
     <h2>1. 宏观与市场情绪</h2>
-    <p>市场情绪在2026年3月23日主要受地缘政治事件主导，特别是美伊冲突的升级与缓和所引发的剧烈波动。油价和股市期货随新闻起伏，投资者在担忧冲突长期化和寻找避险资产之间摇摆。与此同时，对私有信贷市场潜在风险的担忧以及对AI领域资本支出可持续性的疑问也浮出水面。</p>
     <ul>
-        <li>
-            <blockquote class="quote">
-                Iran denies claims: 'We reject all negotiations – US has failed and Hormuz will remain closed'
-                <div class="translation">翻译：伊朗否认相关说法：“我们拒绝一切谈判——美国已经失败，霍尔木兹海峡将保持关闭。”</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                I AM PLEASE TO REPORT THAT THE UNITED STATES OF AMERICA, AND THE COUNTRY OF IRAN, HAVE HAD, OVER THE LAST TWO DAYS, VERY GOOD AND PRODUCTIVE CONVERSATIONS REGARDING A COMPLETE AND TOTAL RESOLUTION OF OUR HOSTILITIES IN THE MIDDLE EAST.
-                <div class="translation">翻译：我很高兴地报告，美利坚合众国和伊朗国在过去两天里，就中东地区敌对行动的彻底全面解决进行了非常良好和富有成效的对话。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                The bond market saw a sharp whipsaw today, driven mostly by geopolitical headlines rather than economic data.
-                <div class="translation">翻译：债市今天出现剧烈震荡，主要受地缘政治新闻而非经济数据驱动。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                A global selloff in stocks and Treasuries deepened as investors pared risk, with the war in Iran entering a fourth week and showing no sign of de-escalation.
-                <div class="translation">翻译：随着伊朗战争进入第四周且没有缓和迹象，全球股市和国债抛售加剧，投资者削减风险敞口。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                With the whole US–Iran situation escalating, oil spiking, and markets turning volatile, I’m torn: Do you dig further into savings now and try to catch the bottom, or wait it out because this could get way uglier?
-                <div class="translation">翻译：随着美伊局势升级、油价飙升、市场变得动荡，我感到很纠结：现在是继续动用储蓄抄底，还是观望等待，因为情况可能会变得更糟？</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                After 2008 regulators told banks to stop making risky loans. So they did. Instead of lending directly to people and companies that can’t pay them back, banks started lending to private credit funds who do the dirty work for them.
-                <div class="translation">翻译：2008年后，监管机构要求银行停止发放风险贷款。他们确实这么做了。银行不再直接向那些无法偿还贷款的个人和公司放贷，而是开始向私有信贷基金放贷，让它们代劳这些脏活。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                It’s not a crash. But it doesn’t feel like a healthy uptrend either. More like a slow compression phase where returns quietly disappear.
-                <div class="translation">翻译：这不是一场崩盘。但也不像是健康的上涨趋势。更像是一个缓慢的压缩阶段，回报悄然消失。</div>
-            </blockquote>
-        </li>
+      <li>
+        <blockquote class="quote">
+          a $3 TRILLION swing market cap in 56 minutes, just in the S&P 500.
+          <div class="translation">翻译：S&P 500指数在短短56分钟内出现了3万亿美元的市值波动。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Market feels more compromised then ever, it is reaching crazy proportions with daily swings on a tweet. It honestly feels demoralizing and as I used to be a person that invested as a hobby now its just frustrating.
+          <div class="translation">翻译：市场感觉比以往任何时候都更受到影响，每天因一条推文而产生的波动达到了疯狂的程度。这真的让人感到士气低落，我曾经把投资当作爱好，现在却只感到沮丧。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          I see the entire market is now depending on a tweet or a comment from Trump.
+          <div class="translation">翻译：我看到整个市场现在都取决于特朗普的一条推文或评论。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Yes, I shorted the market, because we are at war. Trump comes out LYING, and saves it. Iran denied his claims, and I thought, naturally, the market would reverse back down. Technicals, fundamentals, they mean nothing, because our leaders can simply lie and change the narrative.
+          <div class="translation">翻译：是的，我做空了市场，因为我们正处于战争中。特朗普出来撒谎，然后又挽救了市场。伊朗否认了他的说法，我以为市场自然会逆转下跌。技术面、基本面都毫无意义，因为我们的领导人可以简单地撒谎并改变叙事。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Trump's Truth Social post about Iran ceasefire and negotations seems to have come 20 minutes *after* S&P futures price jump?
+          <div class="translation">翻译：特朗普关于伊朗停火和谈判的Truth Social帖子似乎是在S&P期货价格跳涨20分钟后才发布的？</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Volume in stock and oil futures surged minutes before Trump's market-turning post.
+          <div class="translation">翻译：在特朗普发布扭转市场的帖子前几分钟，股票和石油期货的交易量激增。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Oil prices tumbled Monday after President Donald Trump said the U.S. and Iran had productive talks, leading him to order a halt on strikes against key energy infrastructure in the country. West Texas Intermediate futures were down 8% at $90.10 per barrel.
+          <div class="translation">翻译：周一油价暴跌，此前唐纳德·特朗普总统表示美国和伊朗进行了富有成效的会谈，导致他下令停止对伊朗关键能源基础设施的打击。西德克萨斯中质原油期货下跌8%，报每桶90.10美元。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Iran War ceasefire ain't fixing oil prices. Even if the Strait reopened tomorrow, there's barely anything left to ship. Rebuilding energy infrastructure takes 3 to 5 years. The strikes physically erased nearly a fifth of the world's gas supply. Current disruption: 11 million barrels per day. More than both 1970s shocks combined, and the war is still ongoing. A pause doesn't rebuild a refinery.
+          <div class="translation">翻译：伊朗战争停火并不能解决油价问题。即使霍尔木兹海峡明天重新开放，也几乎没有什么可运输的了。重建能源基础设施需要3到5年。袭击实际上摧毁了全球近五分之一的天然气供应。目前的停产每天达到1100万桶。这比1970年代两次石油危机加起来还要多，而且战争仍在继续。暂停打击并不能重建炼油厂。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          If Hormuz stays disrupted, fertilizer might be the sleeper trade. Everyone’s watching oil right now, which makes sense. But if Hormuz disruption actually holds, the second-order effect seems way bigger than people are pricing in.
+          <div class="translation">翻译：如果霍尔木兹海峡持续中断，化肥可能成为一个潜在的交易机会。现在所有人都在关注石油，这很合理。但如果霍尔木兹海峡中断真的持续下去，其二级效应似乎比人们定价的要大得多。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The market still looks underprepared for synchronized copper mine disruptions. One mine going down is a headline. Three giant copper mines running into serious trouble in the same cycle is something else entirely.
+          <div class="translation">翻译：市场似乎仍未对同步的铜矿中断做好准备。一个矿山停产只是个新闻。在同一个周期内，三个大型铜矿同时出现严重问题，这完全是另一回事。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          With VIX >25, trading Vega negative strategies is highly attractive right now. SPY and/or SPX Iron Condors (or Butterflies) are the obvious choice in this environment.
+          <div class="translation">翻译：VIX指数高于25时，交易负Vega策略现在非常有吸引力。在这种环境下，SPY和/或SPX的铁秃鹫（或蝶式）是显而易见的选择。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Are you actually buying this dip or just pretending to be brave? With the whole US–Iran situation escalating, oil spiking, and markets turning volatile, I’m torn: Do you dig further into savings now and try to catch the bottom, or wait it out because this could get way uglier? Feels like every dip looks like the dip… until it isn’t.
+          <div class="translation">翻译：你真的在抄底，还是只是假装勇敢？随着美国与伊朗局势升级、油价飙升、市场变得动荡，我感到左右为难：是现在拿出更多储蓄尝试抄底，还是观望等待，因为情况可能会变得更糟？感觉每次下跌都像是底部……直到它不是。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
-        <li>
-            <div class="stock-tag">1. SMCI (Super Micro Computer)</div>
-            <blockquote class="quote">
-                Looking at the weekly, did SMCI really have a 86% drop from it's high between March and November of 2024? That's insane. Thoughts on the possibility of still wheeling this stock?
-                <div class="translation">翻译：从周线图看，SMCI在2024年3月到11月之间真的从高点下跌了86%吗？这太疯狂了。觉得这支股票还有可能继续“滚轮”策略吗？</div>
-            </blockquote>
-            <blockquote class="quote">
-                I got assigned SMCI at $40 a share. Any chance of recovery or am I cooked?
-                <div class="translation">翻译：我以每股40美元的价格被指派了SMCI的股票。还有机会恢复吗，还是我完蛋了？</div>
-            </blockquote>
-            <blockquote class="quote">
-                SMCI just crashed due to co founder being caught smuggling. i just sold a 28$ put a few days ago on SMCI. i feel like any news that hits is going to hit the stock price.
-                <div class="translation">翻译：SMCI刚刚因为联合创始人被指控走私而暴跌。几天前我刚卖了28美元的SMCI看跌期权。我觉得任何负面新闻都会冲击股价。</div>
-            </blockquote>
-            <blockquote class="quote">
-                I’ve been thinking about corporate governance risk after recent events with SMCI. Auditor resignations (as happened with SMCI before)? Insider selling (as a true indicator of underlying issues - how can one tell)?
-                <div class="translation">翻译：在SMCI最近的事件之后，我一直在思考公司治理风险。审计师辞职（就像SMCI之前发生的那样）？内部人士抛售（作为潜在问题的真实指标——如何判断）？</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">2. MSFT (Microsoft Corp)</div>
-            <blockquote class="quote">
-                Hello all, as an absolute regard I invested into Microsoft hoping for a quick bounce after their earnings that never came.
-                <div class="translation">翻译：大家好，作为一个完全不顾风险的人，我投资了微软，希望能在那次财报后迅速反弹，结果从未实现。</div>
-            </blockquote>
-            <blockquote class="quote">
-                I’m going to be adding more Microsoft since it’s PE is less than 30 now.
-                <div class="translation">翻译：我打算增持微软，因为它现在的市盈率低于30。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">3. UAL (United Airlines Holdings Inc)</div>
-            <blockquote class="quote">
-                United Airlines plans for oil hitting $175 a barrel and staying above $100 next year as industry faces worst shock since COVID.
-                <div class="translation">翻译：美联航预计明年油价将触及每桶175美元并保持在100美元以上，航空业正面临自新冠疫情以来最严重的冲击。</div>
-            </blockquote>
-            <blockquote class="quote">
-                United Airlines to cut more flights as it eyes oil above $100 through 2027.
-                <div class="translation">翻译：美联航计划削减更多航班，因为它预计油价在2027年之前都将保持在100美元以上。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">4. COST (Costco Wholesale Corp)</div>
-            <blockquote class="quote">
-                I was checking into Costco's fundamentals and compared with their historical data and since 2024, Costco's stock price is just out of whack.
-                <div class="translation">翻译：我查了Costco的基本面，并与历史数据进行了比较，自2024年以来，Costco的股价简直失控了。</div>
-            </blockquote>
-            <blockquote class="quote">
-                10% EPS growth for 3 years. Exit at 35x PE (historical mean is 30x and a mature business). Result: -10% CAGR. Even if we look at the operating free cash flow which would grow at a 5% pace and an historical mean of 25x, again a negative return of 15%.
-                <div class="translation">翻译：三年内EPS增长10%。以35倍市盈率退出（历史平均30倍，且是一个成熟业务）。结果：复合年增长率为-10%。即使我们看经营自由现金流，以5%的速度增长，历史平均25倍，回报仍是负15%。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">5. VRT (Vertiv Holdings Co)</div>
-            <blockquote class="quote">
-                VRT itself seems like an amazing foundation business especially in this current atmosphere, given that it serves as the “pick and shovel” of the AI industry.
-                <div class="translation">翻译：VRT本身似乎是一个令人惊叹的基础业务，特别是在当前这种氛围下，因为它充当了AI行业的“卖铲子”角色。</div>
-            </blockquote>
-            <blockquote class="quote">
-                It had a great earnings on Feb 11, with beating estimates of 1.29 of EPS at 1.36, with 23% revenue growth and an expected 250% growth of new orders. Its stock price though has increased in this past year of 180% and 160% in the past five years.
-                <div class="translation">翻译：它在2月11日公布了出色的财报，每股收益超出预期，达到1.36美元（预期1.29美元），营收增长23%，新订单预计增长250%。然而，其股价在过去一年中上涨了180%，过去五年中上涨了160%。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">6. ORCL (Oracle Corp)</div>
-            <blockquote class="quote">
-                On one hand Cloud services are growing, AI investments are ramping up, and the business seems solid. On the other hand Spending is out of control, debt is significant, and the stock price has been under pressure.
-                <div class="translation">翻译：一方面，云服务正在增长，AI投资正在加速，业务看起来稳健。另一方面，支出失控，债务巨大，股价一直承压。</div>
-            </blockquote>
-            <blockquote class="quote">
-                The company is getting stronger, but the stock price isn’t reflecting that. My own take is: It might continue to be volatile in the short term, but if growth stays on track in the medium term, a return to 200+ isn’t out of the question.
-                <div class="translation">翻译：公司正在变得更强大，但股价并未反映出来。我自己的看法是：短期内它可能继续波动，但如果中期增长保持正轨，重回200美元以上并非不可能。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">7. LION (Lionsgate Entertainment Corp)</div>
-            <blockquote class="quote">
-                With the drawdown of IRANIAN war and the false sell-off of LION heading into their poison pill expiration, MICHAEL release, later Hunger Games release, and debt buy down, I have increased my position to 275,000 shares (single investor).
-                <div class="translation">翻译：鉴于伊朗战争的平息以及LION在毒丸条款到期、电影《迈克尔》上映、后续《饥饿游戏》上映和债务削减前的虚假抛售，我已经增持至27.5万股（单一投资者）。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Once the poison pill at Lionsgate Studios expires (May 7, 2026), the dynamics around control of the company change pretty materially. By June 2026, An activist or buyer can build a position quickly in the open market, No automatic dilution penalty kicks, and board can no longer stop the takeover as easily.
-                <div class="translation">翻译：一旦狮门影业的毒丸条款于2026年5月7日到期，公司控制权周围的动态将发生重大变化。到2026年6月，激进投资者或买家可以在公开市场迅速建立头寸，没有自动稀释罚款，董事会也无法再轻易阻止收购。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Lionsgate primed for takeover: Pure-play studio assets are easier to value/sell Post-spinoff structure = fewer legacy protections Content library = very attractive to buyers.
-                <div class="translation">翻译：狮门影业已准备好被收购：纯粹的影视工作室资产更容易估值/出售，分拆后的结构意味着更少的遗留保护，内容库对买家极具吸引力。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">8. ADBE (Adobe Inc)</div>
-            <blockquote class="quote">
-                Adobe is one of the most misunderstood software companies in the market today. The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
-                <div class="translation">翻译：Adobe是当今市场上最被误解的软件公司之一。AI生成内容将蚕食Adobe的席位许可、Canva和Midjourney将抢占其市场、生成模型将使专业创意软件过时等说法，方向上似乎合理，但在最关键的方面几乎肯定是错误的：即对Adobe营收和盈利能力的最终影响。</div>
-            </blockquote>
-            <blockquote class="quote">
-                I am long Adobe and continue to add to my position as the risk/reward improves. The Q1 FY2026 earnings print, a record beat on every major metric, bolsters my thesis which I highlight below.
-                <div class="translation">翻译：我做多Adobe，并随着风险/回报比的改善继续增持。2026财年第一季度财报创纪录地超越所有主要指标，这支撑了我的论点。</div>
-            </blockquote>
-        </li>
+      <li>
+        <div class="stock-tag">VLO (Valero Energy Corporation)</div>
+        <blockquote class="quote">
+          Valero Energy (VLO) is a good oil stock because they refine PDVSA Venezuelan Crude-Benefitted from closure of of the Strait Of Hormuz.
+          <div class="translation">翻译：Valero Energy (VLO)是一只好油股，因为他们提炼PDVSA委内瑞拉原油，并受益于霍尔木兹海峡的关闭。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Valero has performed well during the Maduro regime and after the shift towards the Rodriguez administration and its efforts in liberalizing the oil sector.
+          <div class="translation">翻译：Valero在马杜罗政权期间以及罗德里格斯政府转向石油部门自由化后表现良好。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Equally or potentially more importantly the tensions involving the closure of the Strait Of Hormuz have benefitted Valero's stock price.
+          <div class="translation">翻译：同样重要甚至可能更重要的是，霍尔木兹海峡关闭所带来的紧张局势也使Valero的股价受益。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">META (Meta Platforms, Inc.)</div>
+        <blockquote class="quote">
+          META was beaten down hard, way below where it should’ve been. My gut was screaming this was about to rip. Took the shot. Closed the trade for another $60K+.
+          <div class="translation">翻译：Meta被严重打压，远低于其应有的水平。我的直觉告诉我它即将暴涨。我抓住了机会。平仓又赚了6万美元以上。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">SMCI (Super Micro Computer, Inc.)</div>
+        <blockquote class="quote">
+          Looking at the weekly, did SMCI really have a 86% drop from it's high between March and November of 2024? That's insane... what was the cause?
+          <div class="translation">翻译：看周线图，SMCI在2024年3月到11月之间真的从高点下跌了86%吗？这太疯狂了……原因是什么？</div>
+        </blockquote>
+        <blockquote class="quote">
+          I got assigned SMCI at $40 a share. Any chance of recovery or am I cooked? Debating if I should even bother running CCs or just take the L on this one.
+          <div class="translation">翻译：我以每股40美元的价格被指派了SMCI股票。还有恢复的希望吗，还是我完蛋了？我在考虑是否应该继续卖备兑看涨期权，还是直接认赔。</div>
+        </blockquote>
+        <blockquote class="quote">
+          SMCI just crashed due to co founder being caught smuggling.
+          <div class="translation">翻译：SMCI刚刚因联合创始人被发现走私而暴跌。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Auditor resignations (as happened with SMCI before)? Insider selling (as a true indicator of underlying issues - how can one tell)? Opaque disclosures in filings or on calls?
+          <div class="translation">翻译：审计师辞职（正如SMCI之前发生的那样）？内部人士抛售（作为潜在问题的真实指标——如何判断）？文件或电话会议中不透明的披露？</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">NVDA (NVIDIA Corporation)</div>
+        <blockquote class="quote">
+          NVDA Option Premiums fell off a cliff over the weekend. Why in the world would IV drop so much over the weekend?
+          <div class="translation">翻译：NVIDIA的期权溢价在周末暴跌。为什么波动率在周末会下降这么多？</div>
+        </blockquote>
+        <blockquote class="quote">
+          Good time to sell puts on NVDA around 170? Weekly/biweekly.
+          <div class="translation">翻译：现在是在170左右卖NVIDIA看跌期权的好时机吗？每周/双周的。</div>
+        </blockquote>
+        <blockquote class="quote">
+          everyone in this sub is chasing high IV, big premiums, NVDA, PLTR, MSTR.
+          <div class="translation">翻译：这个子版块里的每个人都在追逐高隐含波动率、高溢价、NVIDIA、Palantir、MicroStrategy。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">ETSY (Etsy, Inc.)</div>
+        <blockquote class="quote">
+          ETSY is a strong short. This is a company trading with a P/E higher than all relevant peers and a company with declining sales.
+          <div class="translation">翻译：ETSY是一个强烈的做空目标。这是一家市盈率高于所有相关同行且销售额下降的公司。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Sure they sold Depop, at a loss, but infused cash to lower debt, but at what expense? The expense of growth.
+          <div class="translation">翻译：他们确实亏本出售了Depop，注入现金以降低债务，但代价是什么？是以牺牲增长为代价的。</div>
+        </blockquote>
+        <blockquote class="quote">
+          ETSY operates a high cost marketplace, high fees on sellers, high shipping costs and more on buyers, and a premium on the goods that are ‘supposedly’ craft.
+          <div class="translation">翻译：ETSY运营着一个高成本的市场，对卖家收取高额费用，对买家收取高额运费及其他费用，并对“所谓”的手工商品收取溢价。</div>
+        </blockquote>
+        <blockquote class="quote">
+          We are entering the toughest economy in a decade and since COVID, and discretionary spending is way down. ETSY is not a place to take a long term bet. AI continues to replace (not add to) these types of businesses.
+          <div class="translation">翻译：我们正在进入十年来最艰难的经济时期，自疫情以来，可自由支配支出大幅下降。ETSY不是一个适合长期押注的地方。人工智能正在继续取代（而不是补充）这类业务。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">ADBE (Adobe Inc.)</div>
+        <blockquote class="quote">
+          Adobe is one of the most misunderstood software companies in the market today.
+          <div class="translation">翻译：Adobe是当今市场上最被误解的软件公司之一。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
+          <div class="translation">翻译：认为AI生成内容将蚕食Adobe的授权许可、Canva和Midjourney将抢占其市场、生成模型将使专业创意软件过时的说法在方向上是合理的，但在最关键的方面几乎肯定是错误的：即对Adobe收入和盈利能力的最终影响。</div>
+        </blockquote>
+        <blockquote class="quote">
+          I am long Adobe and continue to add to my position as the risk/reward improves.
+          <div class="translation">翻译：我做多Adobe，并随着风险/回报比的改善继续增持。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The Q1 FY2026 earnings print, a record beat on every major metric, bolsters my thesis which I highlight below.
+          <div class="translation">翻译：2026财年第一季度的财报，各项主要指标均创纪录地超出预期，这进一步支持了我的论点，我在下面会详细说明。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">MU (Micron Technology, Inc.)</div>
+        <blockquote class="quote">
+          MU will continue to rise, but I’m so tired of holding it. Glad I got out semi on top before she tanked today.
+          <div class="translation">翻译：美光科技（MU）会继续上涨，但我已经厌倦了持有它。很高兴在它今天暴跌之前，我在相对高点离场了。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>3. 小众公司冒泡</h2>
     <ul>
-        <li>
-            <div class="stock-tag">1. SNPS (Synopsys Inc)</div>
-            <blockquote class="quote">
-                Activist Elliott takes multibillion-dollar stake in Synopsys, source says.
-                <div class="translation">翻译：消息人士称，激进投资者Elliott持有Synopsys数十亿美元的股份。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">2. AMZN (Amazon.com Inc)</div>
-            <blockquote class="quote">
-                Amazon is just a giant and will do very well for the next decade, but has recently been hit due to their giant CAPEX.
-                <div class="translation">翻译：亚马逊是一个巨头，未来十年会表现出色，但最近因其庞大的资本支出而受到冲击。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">3. MELI (MercadoLibre Inc)</div>
-            <blockquote class="quote">
-                MELI i feel is a solid company too.
-                <div class="translation">翻译：我觉得MELI也是一家稳健的公司。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">4. SE (Sea Ltd)</div>
-            <blockquote class="quote">
-                SEA highly volatile and could dip a lot more.
-                <div class="translation">翻译：SEA波动性很高，可能还会跌很多。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">5. BTU (Peabody Energy Corp)</div>
-            <blockquote class="quote">
-                We are all aware Qatar now has a structural 17% hit on LNG exports, primarily with destination being SE Asia & Europe. As a result the regional European & Asian LNG spot prices have soared and many countries are actively shifting policies to allow thermal coal usage.
-                <div class="translation">翻译：我们都知道，卡塔尔的液化天然气出口现在面临17%的结构性打击，主要目的地是东南亚和欧洲。因此，欧洲和亚洲区域的液化天然气现货价格飙升，许多国家正在积极调整政策以允许使用热力煤。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">6. NU (Nu Holdings Ltd)</div>
-            <blockquote class="quote">
-                I’m also investing in Nu Holdings, a Fintech stock.
-                <div class="translation">翻译：我也在投资Nu Holdings，一家金融科技股票。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">7. ORLY (O'Reilly Automotive Inc)</div>
-            <blockquote class="quote">
-                The rest will be going into more defensive compounders like ORLY and TJX.
-                <div class="translation">翻译：其余的将投入到ORLY和TJX等更具防御性的复合型公司。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">8. TJX (The TJX Companies Inc)</div>
-            <blockquote class="quote">
-                The rest will be going into more defensive compounders like ORLY and TJX.
-                <div class="translation">翻译：其余的将投入到ORLY和TJX等更具防御性的复合型公司。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">9. TRIP (Tripadvisor Inc)</div>
-            <blockquote class="quote">
-                My focus is on Tripadvisor, and the news surrounding it is so consistent that a positive scenario is increasingly likely. Tripadvisor has just undergone a quiet but very important management change. The latest 8K confirms that Greg Maffei (who is the Chairman since 2013) will not run for re-election, and another director will step down.
-                <div class="translation">翻译：我关注Tripadvisor，围绕它的新闻非常一致，积极情景的可能性越来越大。Tripadvisor刚刚经历了一次安静但非常重要的管理层变动。最新的8K文件确认Greg Maffei（自2013年起担任董事长）将不再竞选连任，另一位董事也将卸任。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">10. TWFG (TWFG Inc.)</div>
-            <blockquote class="quote">
-                Been following TWFG since it IPO'd in July 2024 and wanted to share some DD on this name since it barely gets mentioned anywhere. Its based out of North Houston in an area called the Woodlands, and seems to serve that geographic region deeply.
-                <div class="translation">翻译：自TWFG在2024年7月上市以来，我一直在关注它，并想分享一些关于这支几乎无人提及的股票的尽职调查。它位于北休斯顿 Woodlands 地区，似乎在该地理区域深耕。</div>
-            </blockquote>
-            <blockquote class="quote">
-                I think its interesting right now because they KEEP outperforming.
-                <div class="translation">翻译：我认为它现在很有趣，因为它们持续表现出色。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">11. ONDS (Oncorus Inc)</div>
-            <blockquote class="quote">
-                $ONDS was quite active in the past week with the news. Going back a little in time it has also secured bunch of contracts. I believe this will be a big stock in the future, but let’s stick to this earnings.
-                <div class="translation">翻译：ONDS上周因新闻活跃度很高。回顾过去，它也获得了一系列合同。我相信这支股票未来会大放异彩，但我们还是专注于本次财报吧。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">12. KO (The Coca-Cola Company)</div>
-            <blockquote class="quote">
-                The only one I’ve found so far that has decent volume is KO.
-                <div class="translation">翻译：到目前为止，我发现唯一成交量不错的低贝塔股票是可口可乐（KO）。</div>
-            </blockquote>
-        </li>
+      <li>
+        <div class="stock-tag">MOS (The Mosaic Company)</div>
+        <blockquote class="quote">
+          If Hormuz stays disrupted, fertilizer might be the sleeper trade. Natural gas -&gt; nitrogen production gets tight fast Phosphate supply is already limited globally Fertilizer demand doesn’t drop (food still needs to be produced) So oil spikes first… but fertilizer feels like it lags, then moves harder once shortages actually show up.
+          <div class="translation">翻译：如果霍尔木兹海峡持续中断，化肥可能成为一个潜在的交易机会。天然气→氮气生产将迅速吃紧，全球磷酸盐供应已经受限，化肥需求不会下降（食物仍需生产）。所以油价会先飙升……但化肥感觉会滞后，一旦短缺真正显现，其价格会上涨得更厉害。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Been looking at MOS and CF.
+          <div class="translation">翻译：我一直在关注马赛克公司（MOS）和CF实业（CF）。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">CF (CF Industries Holdings, Inc.)</div>
+        <blockquote class="quote">
+          If Hormuz stays disrupted, fertilizer might be the sleeper trade. Natural gas -&gt; nitrogen production gets tight fast Phosphate supply is already limited globally Fertilizer demand doesn’t drop (food still needs to be produced) So oil spikes first… but fertilizer feels like it lags, then moves harder once shortages actually show up.
+          <div class="translation">翻译：如果霍尔木兹海峡持续中断，化肥可能成为一个潜在的交易机会。天然气→氮气生产将迅速吃紧，全球磷酸盐供应已经受限，化肥需求不会下降（食物仍需生产）。所以油价会先飙升……但化肥感觉会滞后，一旦短缺真正显现，其价格会上涨得更厉害。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Been looking at MOS and CF.
+          <div class="translation">翻译：我一直在关注马赛克公司（MOS）和CF实业（CF）。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">TDG (TransDigm Group Incorporated)</div>
+        <blockquote class="quote">
+          I was thinking that TDG would also get a boost similar to LMT and RDX during this period of uncertainty and potential escalation of war. However, TDG is trading at 52-week lows.
+          <div class="translation">翻译：我原以为TransDigm（TDG）也会像洛克希德·马丁（LMT）和雷神公司（RDX）一样，在这个不确定性和战争可能升级的时期获得提振。然而，TDG却在52周低点交易。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Currently its PE is at 37x which I thought is actually relatively reasonable. The last earnings it had it actually considerably beat the estimated EPS along with revenue and also has positive and improved upcoming guidance.
+          <div class="translation">翻译：目前其市盈率是37倍，我个人认为这相对合理。其上一次财报的每股收益和收入都大幅超出预期，并且未来的业绩指引也积极且有所改善。</div>
+        </blockquote>
+        <blockquote class="quote">
+          I’m curious to people’s thoughts on: Why is TDG trading in such a negative manner? Does TDG truly have a positive upside? Is it more of a falling knife that I might be catching?
+          <div class="translation">翻译：我很好奇大家对以下问题的看法：为什么TDG的交易方式如此消极？TDG真的有积极的上涨空间吗？我是否正在抓住一把正在下落的刀子？</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">ELDN (Eledon Pharmaceuticals, Inc.)</div>
+        <blockquote class="quote">
+          Eledon has 10/10 people with Type 1 diabetes that have gone completely off insulin. Soon to be 12/12.
+          <div class="translation">翻译：Eledon公司的10名1型糖尿病患者中有10名已完全停用胰岛素。很快将达到12名中的12名。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Their therapy has been shown to be well tolerated without toxicity, this is remarkable news for 2 million Americans that suffer from type 1 diabetes.
+          <div class="translation">翻译：他们的疗法已被证明耐受性良好且无毒性，这对于200万患有1型糖尿病的美国人来说是了不起的消息。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">ICE (Intercontinental Exchange, Inc.)</div>
+        <blockquote class="quote">
+          Intercontinental Exchange (ICE) is a leading owner and operator of global exchanges, including holding the world's premier energy markets where roughly half of the world's oil futures are traded.
+          <div class="translation">翻译：洲际交易所（ICE）是全球领先的交易所所有者和运营商，其中包括拥有世界一流的能源市场，全球约一半的石油期货在此交易。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Key benchmarks like Brent Crude and WTI are traded on ICE futures Europe and U.S., along with options, gasoil, and gasoline.
+          <div class="translation">翻译：布伦特原油和WTI等主要基准油品以及期权、柴油和汽油都在ICE欧洲和美国期货交易所交易。</div>
+        </blockquote>
+        <blockquote class="quote">
+          ICE stock could have a great quarter report.
+          <div class="translation">翻译：ICE的股票可能会有一个出色的季度报告。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">RIVN (Rivian Automotive, Inc.)</div>
+        <blockquote class="quote">
+          Last week, Rivian (RIVN) and Uber (UBER) completed a $1.25 billion deal for up to 50,000 R2 robotaxis.
+          <div class="translation">翻译：上周，Rivian (RIVN) 和 Uber (UBER) 完成了一项价值12.5亿美元的交易，涉及多达50,000辆R2自动驾驶出租车。</div>
+        </blockquote>
+        <blockquote class="quote">
+          “Transportation, mobility is a small world, so I've known Dara for a long time,” Scaringe told Yahoo Finance in an exclusive interview.
+          <div class="translation">翻译：“交通和出行是一个小圈子，所以我认识达拉很久了，”斯卡林奇在雅虎财经的独家采访中说。</div>
+        </blockquote>
+        <blockquote class="quote">
+          “We’ve been talking about this deal for maybe about a year, but different versions of it, and it’s hard to define a deal of scale where there’s so many unknowns.”
+          <div class="translation">翻译：“我们讨论这笔交易可能已经一年左右了，但讨论的是不同的版本，而且在一个有这么多未知数的规模性交易中，很难给出一个明确的定义。”</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">UBER (Uber Technologies, Inc.)</div>
+        <blockquote class="quote">
+          Last week, Rivian (RIVN) and Uber (UBER) completed a $1.25 billion deal for up to 50,000 R2 robotaxis.
+          <div class="translation">翻译：上周，Rivian (RIVN) 和 Uber (UBER) 完成了一项价值12.5亿美元的交易，涉及多达50,000辆R2自动驾驶出租车。</div>
+        </blockquote>
+        <blockquote class="quote">
+          “Transportation, mobility is a small world, so I've known Dara for a long time,” Scaringe told Yahoo Finance in an exclusive interview.
+          <div class="translation">翻译：“交通和出行是一个小圈子，所以我认识达拉很久了，”斯卡林奇在雅虎财经的独家采访中说。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Uber Is Quietly Winning the AV Rideshare Setup.
+          <div class="translation">翻译：优步正在悄悄赢得自动驾驶共享出行的布局。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">COST (Costco Wholesale Corporation)</div>
+        <blockquote class="quote">
+          If 35x earnings felt wild for Costco, how are we supposed to feel about 50x?
+          <div class="translation">翻译：如果好市多35倍的市盈率已经让人觉得离谱，那么50倍我们该作何感想？</div>
+        </blockquote>
+        <blockquote class="quote">
+          10% EPS growth for 3 years. Exit at 35x PE (historical mean is 30x and a mature business). Result: -10% CAGR.
+          <div class="translation">翻译：3年期每股收益增长10%。以35倍市盈率退出（历史均值30倍，且是成熟业务）。结果：复合年增长率为-10%。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Even if we look at the operating free cash flow which would grow at a 5% pace and an historical mean of 25x, again a negative return of 15%.
+          <div class="translation">翻译：即使我们看运营自由现金流，它将以5%的速度增长，而历史均值为25倍，再次出现15%的负回报。</div>
+        </blockquote>
+        <blockquote class="quote">
+          I mean, once again, some valuations in the stock market are just madness. This proves that the current irrationality is overblown.
+          <div class="translation">翻译：我的意思是，股票市场中的一些估值简直是疯狂。这证明了当前的非理性情绪被过度夸大了。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">NFLX (Netflix, Inc.)</div>
+        <blockquote class="quote">
+          [ 30,000 shares @NFLX ] started DCA during the Warner acquisition drama.
+          <div class="translation">翻译：[ 30,000股 Netflix ] 在华纳收购风波期间开始定期定额投资。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Will be selling weekly CC to generate extra CASH Possibly @NLFX see ATH EoY.
+          <div class="translation">翻译：将每周卖出备兑看涨期权以产生额外现金，Netflix可能会在年底达到历史新高。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">SNDK (SanDisk)</div>
+        <blockquote class="quote">
+          I recently discovered SNDK and saw the crazy premiums on Covered Calls.
+          <div class="translation">翻译：我最近发现了SNDK，看到了其备兑看涨期权疯狂的溢价。</div>
+        </blockquote>
+        <blockquote class="quote">
+          I am looking at getting into SNDK by selling a CSP at around 600usd strike (premium 3900usd atm) and if it assigns, selling CC's.
+          <div class="translation">翻译：我正考虑通过出售SNDK在600美元行权价附近的看跌期权（目前溢价3900美元）进入该股，如果被指派，就出售备兑看涨期权。</div>
+        </blockquote>
+        <blockquote class="quote">
+          IV (90) is really high on this stock.
+          <div class="translation">翻译：这只股票的隐含波动率（IV）真的很高。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型</div>
     <ul>
-        <li>
-            <blockquote class="quote">
-                The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
-                <div class="translation">翻译：AI生成内容将蚕食Adobe的席位许可、Canva和Midjourney将抢占其市场、生成模型将使专业创意软件过时等说法，方向上似乎合理，但在最关键的方面几乎肯定是错误的：即对Adobe营收和盈利能力的最终影响。</div>
-            </blockquote>
-        </li>
-    </ul>
-
-    <div class="track-header">算</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                Companies are spending Hundreds of Billions of dollars on AI and this is driving unprecedented demand for HBM (high density, high bandwidth DRAM) which is already sold out for 2026.
-                <div class="translation">翻译：各大公司在AI上投入数千亿美元，这正在推动对HBM（高密度、高带宽DRAM）前所未有的需求，该产品2026年已售罄。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Semiconductor companies (The Big Three) are investing in additional capacity just to meet the perceived demand of 2028/2029.
-                <div class="translation">翻译：半导体公司（三大巨头）正在投资增加产能，以满足2028/2029年的预期需求。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Who will use all the GPUs and HBM being built?
-                <div class="translation">翻译：谁会使用所有正在建造的GPU和HBM？</div>
-            </blockquote>
-        </li>
-    </ul>
-
-    <div class="track-header">光</div>
-    <p>暂无相关高质量讨论。</p>
-
-    <div class="track-header">存</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                Companies are spending Hundreds of Billions of dollars on AI and this is driving unprecedented demand for HBM (high density, high bandwidth DRAM) which is already sold out for 2026.
-                <div class="translation">翻译：各大公司在AI上投入数千亿美元，这正在推动对HBM（高密度、高带宽DRAM）前所未有的需求，该产品2026年已售罄。</div>
-            </blockquote>
-        </li>
-    </ul>
-
-    <div class="track-header">电</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                AI 'glitches' are already happening and there has been a lot of noise about Data Centers burdening the already stressed out Power Infrastructure so what happens if a backlash stifles the current demand for AI?
-                <div class="translation">翻译：AI“故障”已经发生，关于数据中心给本已紧张的电力基础设施带来负担的议论很多，那么如果出现反弹抑制了当前对AI的需求会怎样？</div>
-            </blockquote>
-        </li>
-    </ul>
-
-    <div class="track-header">板</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                Iran’s attack this week on Qatar’s natural gas export facility threatens to disrupt not just world energy markets but also global technology supply chains because the helium it produces is crucial for a range of advanced industries.
-                <div class="translation">翻译：本周伊朗对卡塔尔天然气出口设施的袭击，不仅威胁到世界能源市场，也威胁到全球技术供应链，因为其生产的氦气对一系列先进产业至关重要。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Semiconductor companies (The Big Three) are investing in additional capacity just to meet the perceived demand of 2028/2029.
-                <div class="translation">翻译：半导体公司（三大巨头）正在投资增加产能，以满足2028/2029年的预期需求。</div>
-            </blockquote>
-        </li>
-    </ul>
-
-    <div class="track-header">云</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                Cloud services are growing, AI investments are ramping up, and the business seems solid.
-                <div class="translation">翻译：云服务正在增长，AI投资正在加速，业务看起来稳健。</div>
-            </blockquote>
-        </li>
-    </ul>
-
-    <div class="track-header">AI应用</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                Specifically looking at WeRide when they dropped their 2025 full year report today. The revenue hit $98 million, up 90% YoY, meaning the actual sale of robotaxis and robobuses grew over 300%.
-                <div class="translation">翻译：具体来看，今天文远知行（WeRide）发布2025年全年财报时，营收达到9800万美元，同比增长90%，意味着Robotaxi和Robobus的实际销售增长超过300%。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Robotaxi service user growth more than 900% YoY. Total cost of Ownership drop by 38% in a year. They're claiming a 1:40 ratio for remote assistance now which means one human for 4o cars. The human-in-the-loop cost is starting to evaporate.
-                <div class="translation">翻译：Robotaxi服务用户同比增长超过900%。总拥有成本一年内下降38%。他们现在声称远程协助比例为1:40，这意味着一名人类可以管理40辆车。人工干预成本正开始消失。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Why invest in AI long term when it leads to mass unemployment and the collapse of the economy and therefore also these companies?
-                <div class="translation">翻译：当AI长期来看会导致大规模失业和经济崩溃，进而导致这些公司也崩溃时，为什么还要投资AI？</div>
-            </blockquote>
-        </li>
+      <li><div class="track-header">模型</div>
+        <blockquote class="quote">
+          OpenAl offering private-equity firms a guaranteed return of 17.5%, and early access to models not yet public. How is this legal?
+          <div class="translation">翻译：OpenAI向私募股权公司提供17.5%的保证回报，并提前提供尚未公开的模型。这合法吗？</div>
+        </blockquote>
+        <blockquote class="quote">
+          DXYZ (https://destiny.xyz/tech100): Anthropic 22% (100 million of the 438 million fund) SpaceX 16.2% Databricks 4.0% xAI 3.5% OpenAI 2.1%.
+          <div class="translation">翻译：DXYZ基金（https://destiny.xyz/tech100）：Anthropic占22%（基金总额4.38亿美元中的1亿美元），SpaceX占16.2%，Databricks占4.0%，xAI占3.5%，OpenAI占2.1%。</div>
+        </blockquote>
+      </li>
+      <li><div class="track-header">算</div>
+        <blockquote class="quote">
+          Businesses that are investing in AI with double the growth rate of Costco are trading at high valuations.
+          <div class="translation">翻译：那些投资于人工智能、增长速度是好市多两倍的公司，目前正以高估值进行交易。</div>
+        </blockquote>
+      </li>
+      <li><div class="track-header">光</div>
+        <blockquote class="quote">
+          No specific quotes found directly addressing Optics (光) for AI in the provided data.
+          <div class="translation">翻译：在提供的数据中未找到直接涉及AI光学（光）的特定引用。</div>
+        </blockquote>
+      </li>
+      <li><div class="track-header">存</div>
+        <blockquote class="quote">
+          No specific quotes found directly addressing Storage (存) for AI in the provided data.
+          <div class="translation">翻译：在提供的数据中未找到直接涉及AI存储（存）的特定引用。</div>
+        </blockquote>
+      </li>
+      <li><div class="track-header">电</div>
+        <blockquote class="quote">
+          Energy Systems Are Getting More Complex - And Complexity Usually Creates New Winners.
+          <div class="translation">翻译：能源系统正变得越来越复杂——而复杂性通常会创造新的赢家。</div>
+        </blockquote>
+        <blockquote class="quote">
+          intermittent generation (wind, solar) distributed assets (EVs, batteries, microgrids) variable demand (AI data centers running 24/7) increasing electrification across sectors.
+          <div class="translation">翻译：间歇性发电（风能、太阳能）、分布式资产（电动汽车、电池、微电网）、可变需求（AI数据中心24/7运行）、以及各行业日益增长的电气化。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Grid decarbonization is actually happening faster than electrification itself . Meaning we’re adding clean energy supply faster than we’re converting demand. That creates imbalances. And imbalances need to be managed.
+          <div class="translation">翻译：电网脱碳实际上比电气化本身发生得更快。这意味着我们增加清洁能源供应的速度快于我们转换需求的速度。这造成了不平衡，而这种不平衡需要管理。</div>
+        </blockquote>
+      </li>
+      <li><div class="track-header">板</div>
+        <blockquote class="quote">
+          No specific quotes found directly addressing Boards (板) for AI in the provided data.
+          <div class="translation">翻译：在提供的数据中未找到直接涉及AI电路板（板）的特定引用。</div>
+        </blockquote>
+      </li>
+      <li><div class="track-header">云</div>
+        <blockquote class="quote">
+          DXYZ (https://destiny.xyz/tech100): Anthropic 22% (100 million of the 438 million fund) SpaceX 16.2% Databricks 4.0% xAI 3.5% OpenAI 2.1%.
+          <div class="translation">翻译：DXYZ基金（https://destiny.xyz/tech100）：Anthropic占22%（基金总额4.38亿美元中的1亿美元），SpaceX占16.2%，Databricks占4.0%，xAI占3.5%，OpenAI占2.1%。</div>
+        </blockquote>
+      </li>
+      <li><div class="track-header">AI应用</div>
+        <blockquote class="quote">
+          Last week, Rivian (RIVN) and Uber (UBER) completed a $1.25 billion deal for up to 50,000 R2 robotaxis.
+          <div class="translation">翻译：上周，Rivian (RIVN) 和 Uber (UBER) 完成了一项价值12.5亿美元的交易，涉及多达50,000辆R2自动驾驶出租车。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Rivian CEO on how its Uber deal came together, and why the AI 'driver' is the future of mobility.
+          <div class="translation">翻译：Rivian首席执行官谈论其与优步的合作是如何达成的，以及为什么AI“驾驶员”是未来出行的方向。</div>
+        </blockquote>
+        <blockquote class="quote">
+          AI continues to replace (not add to) these types of businesses.
+          <div class="translation">翻译：人工智能正在继续取代（而不是补充）这类业务。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
+          <div class="translation">翻译：认为AI生成内容将蚕食Adobe的授权许可、Canva和Midjourney将抢占其市场、生成模型将使专业创意软件过时的说法在方向上是合理的，但在最关键的方面几乎肯定是错误的：即对Adobe收入和盈利能力的最终影响。</div>
+        </blockquote>
+        <blockquote class="quote">
+          What Young Workers Are Doing to AI-Proof Themselves.
+          <div class="translation">翻译：年轻工人正在采取什么措施来让自己“AI免疫”。</div>
+        </blockquote>
+      </li>
     </ul>
 
 </body>
@@ -419,7 +475,7 @@
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
                     detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n极度恐慌', color: '#fff' },
-                    data: [{ value: 18 }]
+                    data: [{ value: 16 }]
                 }]
             });
         </script>
