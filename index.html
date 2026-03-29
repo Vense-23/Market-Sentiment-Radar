@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>03月28日 情报终端</title>
+        <title>03月29日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,396 +36,366 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 03月28日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-03-28 21:32:01 (北京时间)</p>
+            <h1>🎯 03月29日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-03-29 11:43:34 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit市场情绪分析 (2026年03月28日)</title>
+    <title>Reddit 美股市场情绪分析 (2026年03月29日)</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f9f9f9; }
-        h1, h2 { color: #2c3e50; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f9f9f9; }
+        h1, h2, h3 { color: #2c3e50; }
         h2 { border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
-        ul { list-style-type: none; padding: 0; }
-        li { background-color: #fff; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 15px; padding: 15px; }
+        ul { list-style: none; padding: 0; }
+        li { background-color: #fff; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
         .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 10px; font-size: 1.1em; }
-        .quote { background-color: #ecf0f1; border-left: 4px solid #3498db; margin: 10px 0; padding: 10px 15px; font-style: italic; }
-        .translation { color: #555; margin-top: 5px; font-style: normal; }
-        .track-header { font-weight: bold; color: #2980b9; margin-top: 20px; margin-bottom: 10px; font-size: 1.05em; border-bottom: 1px dashed #2980b9; padding-bottom: 5px; }
-        .ai-quote { background-color: #f0f8ff; border-left: 4px solid #1abc9c; margin: 10px 0; padding: 10px 15px; font-style: italic; }
-        .ai-translation { color: #555; margin-top: 5px; font-style: normal; }
+        .quote { border-left: 4px solid #f39c12; background-color: #fdf5e6; margin: 10px 0; padding: 10px 15px; font-style: italic; color: #555; }
+        .translation { font-size: 0.9em; color: #2980b9; margin-top: 8px; border-top: 1px dashed #c0d9eb; padding-top: 5px; }
+        .track-header { font-weight: bold; color: #27ae60; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; }
+        .ai-category { margin-left: 20px; margin-bottom: 10px; }
+        .ai-category h3 { color: #34495e; font-size: 1em; margin-bottom: 5px; }
     </style>
 </head>
 <body>
 
-    <h1>Reddit市场情绪分析 (2026年03月28日)</h1>
+    <h1>Reddit 美股市场情绪分析 (2026年03月29日)</h1>
 
     <h2>1. 宏观与市场情绪</h2>
     <ul>
-        <li>
-            <blockquote class="quote">
-                To be precise, the Dow is ~10.6% off its record of ~50.5k; the NASDAQ Composite is ~12.8% off its record of ~24k; and the S&P 500 is ~9.1% off its record of ~7k. Due to the outsized annual returns of the last 3 years, I came into 2026 thinking the odds of a pullback or negative year were higher than normal. Long before the Middle East conflict, I noticed something rotten had been brewing in the markets for a long time. It started around last October, when the S&P 500 began to flatline near the 7,000 milestone but was unable to break through it.
-                <div class="translation">翻译：准确地说，道琼斯指数较其约50.5k的纪录下跌约10.6%；纳斯达克综合指数较其约24k的纪录下跌约12.8%；标普500指数较其约7k的纪录下跌约9.1%。鉴于过去3年超高的年度回报，我进入2026年时认为回调或负收益年的可能性高于正常水平。早在中东冲突之前，我就注意到市场中长期以来一直存在着一些问题。它始于去年10月左右，当时标普500指数在7,000点里程碑附近开始持平，但未能突破。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                The Strait of Hormuz closure has set off a chain of events the likes of which only likely have COVID as a comparison. Hormuz has been blocked coming up on four weeks. The actual disruption is someplace closer to 10,000,000 BPD. 10mm BPD is roughly 10% of global demand. For a highly inelastic commodity like oil, a 10% loss leads to orders of magnitude higher levels of prices.
-                <div class="translation">翻译：霍尔木兹海峡的关闭引发了一系列事件，其影响可能只有新冠疫情可以相比。霍尔木兹海峡已被封锁近四周。实际中断量接近每天1000万桶。每天1000万桶大约占全球需求的10%。对于石油这种高度非弹性的商品，10%的损失会导致价格上涨数个数量级。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                We are at almost max pessimism. It's times like these where if you have cash on the sidelines to start DCAing into some solid names that have crushed on earnings. Companies with zero correlation to the geopolitical climate and sheltered from the presidents mood swings. A bottom indicator is typically a vix spike, followed by high sell trade volume and capitulation.
-                <div class="translation">翻译：我们几乎处于极度悲观的状态。正是在这样的时期，如果你手头有现金，就可以开始平均成本法投入一些在财报上表现出色的稳健公司。这些公司与地缘政治气候没有关联，并且不受总统情绪波动的影响。市场底部指标通常是VIX指数飙升，随后是高卖出交易量和投降。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Barclays says that Trump's ability to talk down oil and maintain equity prices is fading. The "Trump put," the president's ability to calm markets with announcements about the war, is losing its efficacy. Headline fatigue and flip-flopping are weighing on investors as the war in Iran drags on.
-                <div class="translation">翻译：巴克莱银行表示，特朗普压低油价和维持股票价格的能力正在减弱。“特朗普看跌期权”（总统通过发布战争消息来安抚市场的能力）正在失去效力。随着伊朗战争的持续，头条新闻疲劳和反复无常的政策正在给投资者带来压力。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Surging energy prices, rising import costs and mounting stagflation concerns are pushing markets to consider that the Federal Reserve’s next move could be a rate hike. Traders in the futures market pushed the probability of a rate increase by the end of 2026 to 52% on Friday morning, the first time it has crossed the 50% threshold, according to the CME Group FedWatch tool.
-                <div class="translation">翻译：能源价格飙升、进口成本上升以及滞胀担忧加剧，正促使市场考虑美联储的下一步行动可能是加息。根据芝加哥商品交易所集团的FedWatch工具，期货市场交易员在周五上午将2026年底加息的可能性推高至52%，这是首次突破50%的门槛。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Oil pushed higher as traders braced for the Iran war to stretch into April and attacks continued across the Middle East, with transit through the critical Strait of Hormuz still largely halted. Global benchmark Brent rose above $111 a barrel after erasing an earlier drop, while West Texas Intermediate was near $99.
-                <div class="translation">翻译：随着交易员们为伊朗战争可能延长至4月以及中东地区持续的袭击做准备，石油价格走高，通过关键的霍尔木兹海峡的运输仍大部分中断。全球基准布伦特原油在抹去早盘跌幅后涨至每桶111美元以上，而西德克萨斯中质原油接近99美元。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                The stock market has been fine up until early February of this year. Buy now that we got a War fully breaking out, institutions and retail don’t seem to have an appetite for equities like they used to. The drawdown is so universal that it seems like the only things working this year is oil stocks.
-                <div class="translation">翻译：直到今年2月初，股市都表现良好。但现在随着战争全面爆发，机构和散户似乎不再像以前那样对股票有兴趣。跌幅如此普遍，以至于今年唯一表现良好的似乎只有石油股。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                The market isn’t cheap right now. It’s just less expensive. S&P 500 right now: • ~25–26x trailing P/E • ~20–21x forward P/E. Both are still well above long-term historical averages. The forward multiple being 20–21x means investors are baking in pretty heroic earnings growth for the next 12–24 months.
-                <div class="translation">翻译：目前的市场并不便宜。只是没那么贵了。标普500指数目前：• 追踪市盈率约25-26倍 • 预期市盈率约20-21倍。两者都远高于长期历史平均水平。20-21倍的预期市盈率意味着投资者正在预期未来12-24个月内将出现相当惊人的盈利增长。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                The data points to a massive "Flight to Quality." S&P 500 Momentum: BUY (Velocity: 0.120) COT Flow: REVERSAL 🔽. Institutional hedgers dropped -8,374 contracts. ML Model: Short Probability rising to 65.7% (+13.9% change). Summary: Critical divergence. Price is trending up, but commercial volume indicates smart money is selling into strength.
-                <div class="translation">翻译：数据显示存在大规模的“逃向优质资产”现象。标普500动量：买入（速度：0.120）。COT流量：反转🔽。机构对冲者减持了-8,374份合约。机器学习模型：做空概率上升至65.7%（+13.9%变化）。总结：关键背离。价格呈上升趋势，但商业交易量表明聪明资金正在逢高抛售。</div>
-            </blockquote>
-        </li>
+      <li>
+        <blockquote class="quote">
+          TL;DR: Oil CEOs are basically saying the market is clueless. The Strait of Hormuz shutdown is a massive real supply shock, not just fear. We’re talking 8 to 10 million barrels per day gone along with a huge LNG hit, leading to fuel shortages already hitting Asia with Europe next. Oil around 100 dollars is not the top, it is the new floor.
+          <div class="translation">翻译：简而言之：石油公司的CEO们基本上都说市场一片茫然。霍尔木兹海峡的关闭是一个巨大的真实供应冲击，而不仅仅是恐慌。我们谈论的是每天损失8到1000万桶石油，同时液化天然气也受到巨大冲击，这已经导致亚洲出现燃料短缺，欧洲将是下一个。每桶100美元的油价不是顶部，而是新的底线。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          In its periodic update of economic conditions, the Organization for Economic Cooperation and Development forecast all-items inflation in the U.S. to be at 4.2% for 2026. The forecast is a sharp step up from the prior projection of 2.8%. Moreover, it is much higher than the 2.7% Fed officials estimated when they updated their own forecasts last week.
+          <div class="translation">翻译：在对其经济状况的定期更新中，经济合作与发展组织预测美国2026年总体通胀率为4.2%。这一预测较此前的2.8%大幅上升。此外，它远高于美联储官员上周更新预测时估计的2.7%。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The Dow is ~10.6% off its record of ~50.5k; the NASDAQ Composite is ~12.8% off its record of ~24k; and the S&P 500 is ~9.1% off its record of ~7k.
+          <div class="translation">翻译：道琼斯指数较其约50.5k的记录下跌约10.6%；纳斯达克综合指数较其约24k的记录下跌约12.8%；标普500指数较其约7k的记录下跌约9.1%。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Long before the Middle East conflict, I noticed something rotten had been brewing in the markets for a long time. It started around last October, when the S&P 500 began to flatline near the 7,000 milestone but was unable to break through it.
+          <div class="translation">翻译：早在中东冲突之前，我就注意到市场中酝酿着一些长期以来的腐烂。它始于去年十月左右，当时标普500指数在7000点里程碑附近开始持平，但未能突破。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The S&P 500 is 50 day Moving Average is now below the 100 day Moving Average.
+          <div class="translation">翻译：标普500指数的50日移动平均线现在低于100日移动平均线。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Surging energy prices, rising import costs and mounting stagflation concerns are pushing markets to consider that the Federal Reserve’s next move could be a rate hike.
+          <div class="translation">翻译：能源价格飙升、进口成本上升以及滞胀担忧加剧，正促使市场考虑美联储的下一步行动可能是加息。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Markets now see the Fed’s next move as a potential rate hike as inflation fears mount.
+          <div class="translation">翻译：随着通胀担忧加剧，市场现在认为美联储的下一步行动可能是加息。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The market isn’t cheap right now. It’s just less expensive.
+          <div class="translation">翻译：市场现在并不便宜。它只是不那么贵了。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
-        <li>
-          <div class="stock-tag">1. MSFT (Microsoft)</div>
-          <blockquote class="quote">
-            MSFT on 19 Nov 2021 : $343.11 MSFT on 27 Mar 2026 : $358.56 +4.4% total return over 4 years. Of course this is a very specific ‘timing the market’ example and I picked a peak period in 2021 but still blows my mind that the stock has dropped 25% this year.
-            <div class="translation">翻译：微软在2021年11月19日是343.11美元；在2026年3月27日是358.56美元，四年内总回报率为+4.4%。当然，这是一个非常具体的“择时”例子，我选择了一个2021年的高峰期，但该股今年下跌了25%，这仍然让我感到震惊。</div>
-          </blockquote>
-          <blockquote class="quote">
-            I have options ending Dec 2026 for both meta (500 and 700 strike) and msft (450,510,520 strikes). I bought after earnings at different times and bought more on the "dip". I have not used margin but overleveraged and I am sad to say that I invested a large % of my portfolio in these options, which are all now down big time.
-            <div class="translation">翻译：我有Meta（500和700行权价）和微软（450、510、520行权价）的期权，将于2026年12月到期。我在财报发布后不同时间买入，并在“下跌”时加仓。我没有使用保证金，但过度杠杆化了，我很遗憾地说，我将大部分投资组合投入到这些期权中，现在它们都大幅亏损。</div>
-          </blockquote>
-          <blockquote class="quote">
-            You have a day where volatility is elevated, and the stock being cheap and also sitting at a key level. Hard to not write a put.
-            <div class="translation">翻译：在一个波动性很高、股票便宜且处于关键支撑位的日子里。很难不卖出看跌期权。</div>
-          </blockquote>
-          <blockquote class="quote">
-            MSFT (I have 250 stocks, 96k value): My biggest "worry" at since I have so much of it. The good things is purchase price is 260USD average but the stock has really gone down. I am hoping to exit once it bounces back to approx 500USD.
-            <div class="translation">翻译：微软（我持有250股，价值9.6万美元）：我最大的“担忧”在于我持仓太多。好消息是平均购买价格是260美元，但股票已经下跌了很多。我希望在股价反弹至大约500美元时退出。</div>
-          </blockquote>
-        </li>
-        <li>
-          <div class="stock-tag">2. META (Meta Platforms)</div>
-          <blockquote class="quote">
-            Meta,reddit,sofi,crdo are my biggest holding, My average for meta is 650 and reddit 180, and for sofi is 22, for crdo is 140, also have some hood at 90. Didn't help that my two biggest holding reddit and meta dumped hard this week.
-            <div class="translation">翻译：Meta、Reddit、SoFi和Credo是我最大的持仓，我的Meta平均成本是650美元，Reddit是180美元，SoFi是22美元，Credo是140美元，另外还有一些Robinhood在90美元。本周我的两大重仓股Reddit和Meta大幅下跌，这没有起到任何帮助作用。</div>
-          </blockquote>
-          <blockquote class="quote">
-            Im a meta shareholder, and i have no clue what zuck is trying to do. Hes going crazy again with all this AI spending on chips,data centres etc. I dont understand what the end goal is here, META is an Ad company and they are doing well. They are guiding 30 percent revenye growth for 2026 better then all mag7 excluding nvidia. Its one of the most profitable companies on planet.
-            <div class="translation">翻译：我是一名Meta股东，但我完全不知道扎克伯格在做什么。他又在芯片、数据中心等方面疯狂投入AI开支。我不明白最终目标是什么，Meta是一家广告公司，他们表现很好。他们预计2026年营收增长30%，好于除英伟达之外的所有“七巨头”。它是地球上最赚钱的公司之一。</div>
-          </blockquote>
-          <blockquote class="quote">
-            I have options ending Dec 2026 for both meta (500 and 700 strike) and msft (450,510,520 strikes). I bought after earnings at different times and bought more on the "dip". I have not used margin but overleveraged and I am sad to say that I invested a large % of my portfolio in these options, which are all now down big time.
-            <div class="translation">翻译：我有Meta（500和700行权价）和微软（450、510、520行权价）的期权，将于2026年12月到期。我在财报发布后不同时间买入，并在“下跌”时加仓。我没有使用保证金，但过度杠杆化了，我很遗憾地说，我将大部分投资组合投入到这些期权中，现在它们都大幅亏损。</div>
-          </blockquote>
-          <blockquote class="quote">
-            Planning to roll and double down going forward! Hope it bounces back soon.
-            <div class="translation">翻译：计划未来继续展期并加倍投入！希望它能尽快反弹。</div>
-          </blockquote>
-        </li>
-        <li>
-          <div class="stock-tag">3. RDDT (Reddit)</div>
-          <blockquote class="quote">
-            My average for meta is 650 and reddit 180, and for sofi is 22, for crdo is 140, also have some hood at 90. Didn't help that my two biggest holding reddit and meta dumped hard this week.
-            <div class="translation">翻译：我的Meta平均成本是650美元，Reddit是180美元，SoFi是22美元，Credo是140美元，另外还有一些Robinhood在90美元。本周我的两大重仓股Reddit和Meta大幅下跌，这没有起到任何帮助作用。</div>
-          </blockquote>
-          <blockquote class="quote">
-            Reddit is currently at around a 10x P/S, which could drop to ~6x over the next 12 months, with a forward P/E close to 25x. At the same time, Reddit has relatively low risk of disruption from AI compared to most SaaS companies.
-            <div class="translation">翻译：Reddit目前的市销率约为10倍，未来12个月内可能降至约6倍，预期市盈率接近25倍。同时，与大多数SaaS公司相比，Reddit受AI颠覆的风险相对较低。</div>
-          </blockquote>
-          <blockquote class="quote">
-            Marketing platforms tend to be durable, especially when user growth is strong - and Reddit is one of the few social platforms that is still actually growing. The biggest “problem” is the high retail ownership, which tends to swing depending on market sentiment.
-            <div class="translation">翻译：营销平台往往具有韧性，尤其是在用户增长强劲的情况下——而Reddit是少数几个仍在实际增长的社交平台之一。最大的“问题”是零售持股比例高，这往往会随市场情绪波动。</div>
-          </blockquote>
-          <blockquote class="quote">
-            Still, I believe that within 2-3 years the stock could be above $300, and we may look back at early 2026 the same way we now look at 2022 for Meta Platforms at $90.
-            <div class="translation">翻译：尽管如此，我相信在2-3年内，该股可能超过300美元，我们可能会以现在看待2022年Meta Platforms在90美元时的目光，回看2026年初。</div>
-          </blockquote>
-        </li>
-        <li>
-          <div class="stock-tag">4. GOOGL (Alphabet)</div>
-          <blockquote class="quote">
-            I bought a little bit of MSFT, GOOG, VOO, JPM, AMZN. Curious what others bought, if anything? Are you buying little at a time on the way down or just holding out?
-            <div class="translation">翻译：我买了一点微软、谷歌、VOO、摩根大通和亚马逊。好奇其他人买了什么？你们是分批买入还是等待？</div>
-          </blockquote>
-          <blockquote class="quote">
-            The QQQs are down 11.5 GOOGL down 8 new low WFC down 1.5 IGV the software ETF off.25 GLD -14 META crushed -44 Hope to update later.
-            <div class="translation">翻译：QQQ下跌11.5，谷歌下跌8，创下新低，富国银行下跌1.5，IGV软件ETF下跌0.25，GLD下跌14，Meta暴跌44。希望稍后更新。</div>
-          </blockquote>
-        </li>
-        <li>
-          <div class="stock-tag">5. NVDA (Nvidia)</div>
-          <blockquote class="quote">
-            like Nvidea is literally in the teens for FWD PE...
-            <div class="translation">翻译：就像英伟达的预期市盈率实际处于十几倍...</div>
-          </blockquote>
-          <blockquote class="quote">
-            The ticker which is working the best by far for me is NVDA Selling 3-6dte, and buying 6-11dte, within that range. Just opened $175 STO 1dte, BTO 4dte ratio'd 3x.
-            <div class="translation">翻译：对我来说目前表现最好的股票是英伟达，卖出3-6天到期期权，买入6-11天到期期权，在这个范围内操作。刚以175美元开仓卖出1天到期期权，买入4天到期期权，比例为3倍。</div>
-          </blockquote>
-          <blockquote class="quote">
-            For every three call calendars I bought, purchased x1 $170 put calendar with same dte to offset in case there's more pullback.
-            <div class="translation">翻译：我每买入三个看涨日历价差，就买入一个相同到期日的170美元看跌日历价差，以防市场进一步回调。</div>
-          </blockquote>
-          <blockquote class="quote">
-            BRK/B, META, NVDA, and V...all because of these White House shenanigans. Thankfully they're all spreads and my losses are defined. Plus, there's only one that's expiring today and that is NVDA.
-            <div class="translation">翻译：伯克希尔哈撒韦B、Meta、英伟达和Visa...所有这些都是因为白宫的捣乱。幸运的是，它们都是价差交易，我的损失是有限的。此外，今天只有一个即将到期的，那就是英伟达。</div>
-          </blockquote>
-        </li>
-        <li>
-          <div class="stock-tag">6. PLTR (Palantir Technologies)</div>
-          <blockquote class="quote">
-            Everyone keeps treating Palantir like a government contractor with a flashy demo. That read is at least two years stale.
-            <div class="translation">翻译：每个人都把Palantir看作是一个拥有华丽演示的政府承包商。这种看法至少过时了两年。</div>
-          </blockquote>
-          <blockquote class="quote">
-            Q4 bookings hit $4.3B. US commercial TCV came in at $1.3B. AIP — their AI platform — is not a prototype anymore. It is generating real enterprise deals at real scale.
-            <div class="translation">翻译：第四季度预订量达到43亿美元。美国商业总合同价值（TCV）达到13亿美元。AIP——他们的AI平台——不再是原型产品。它正在大规模地生成真正的企业交易。</div>
-          </blockquote>
-          <blockquote class="quote">
-            The boot camp model turned into a repeatable sales motion and the close rates on those deals are not what you get from vaporware. The commercial growth rate in the US was 54% year-over-year last quarter.
-            <div class="translation">翻译：训练营模式变成了一种可重复的销售动作，这些交易的成交率并非虚无缥缈的产品所能达到。上个季度，美国商业增长率同比增长54%。</div>
-          </blockquote>
-          <blockquote class="quote">
-            That is not a government-dependent company. Government is still growing and still sticky, but the commercial segment is what changes the valuation math here. What the market keeps pricing is the old Palantir — the one burning cash on long-cycle government contracts with lumpy revenue and a cult CEO.
-            <div class="translation">翻译：这不再是一家依赖政府的公司。政府业务仍在增长且具有粘性，但商业部门才是改变这里估值计算方式的关键。市场仍在定价的是旧的Palantir——那家在长期政府合同上烧钱，收入不稳定，CEO带有个人崇拜色彩的公司。</div>
-          </blockquote>
-        </li>
-        <li>
-          <div class="stock-tag">7. ADBE (Adobe Inc.)</div>
-          <blockquote class="quote">
-            Adobe is one of the most misunderstood software companies in the market today.
-            <div class="translation">翻译：Adobe是当今市场上最被误解的软件公司之一。</div>
-          </blockquote>
-          <blockquote class="quote">
-            The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
-            <div class="translation">翻译：关于AI生成内容将蚕食Adobe的席位授权，Canva和Midjourney将抢占其市场，以及生成模型将使专业创意软件过时等说法，方向上看似合理，但在最关键的方面几乎肯定是错误的：即对Adobe收入和盈利能力的最终影响。</div>
-          </blockquote>
-          <blockquote class="quote">
-            I am long Adobe and continue to add to my position as the risk/reward improves. The Q1 FY2026 earnings print, a record beat on every major metric, bolsters my thesis which I highlight below.
-            <div class="translation">翻译：我长期持有Adobe，并随着风险/回报比的改善继续增仓。2026财年第一季度的财报，各项主要指标均创纪录超预期，进一步支撑了我的论点。</div>
-          </blockquote>
-        </li>
+      <li>
+        <div class="stock-tag">1. MSFT (Microsoft)</div>
+        <blockquote class="quote">
+          Microsoft Set for Worst Quarter Since 2008 as AI Takes Two Bites.
+          <div class="translation">翻译：微软受AI双重打击，将迎来2008年以来最差季度。</div>
+        </blockquote>
+        <blockquote class="quote">
+          MSFT on 19 Nov 2021 : $343.11 MSFT on 27 Mar 2026 : $358.56 +4.4% total return over 4 years.
+          <div class="translation">翻译：微软在2021年11月19日为343.11美元；在2026年3月27日为358.56美元，四年总回报率为+4.4%。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Feels wrong not to sell a put on MSFT. You have a day where volatility is elevated, and the stock being cheap and also sitting at a key level. Hard to not write a put.
+          <div class="translation">翻译：不在微软上卖出看跌期权感觉不对劲。在一个波动性升高、股价便宜且处于关键水平的日子里，很难不卖出看跌期权。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">2. META (Meta Platforms)</div>
+        <blockquote class="quote">
+          My average for meta is 650 and reddit 180, and for sofi is 22, for crdo is 140, also have some hood at 90.
+          <div class="translation">翻译：我的Meta平均成本是650美元，Reddit是180美元，Sofi是22美元，Crdo是140美元，Robinhood也有一些，成本是90美元。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Quality stocks trading at or near their 52-week lows: Meta META (-33%).
+          <div class="translation">翻译：交易价格在其52周低点或附近的优质股票：Meta META (-33%)。</div>
+        </blockquote>
+        <blockquote class="quote">
+          I have options ending Dec 2026 for both meta (500 and 700 strike) and msft (450,510,520 strikes). I bought after earnings at different times and bought more on the &quot;dip&quot;.
+          <div class="translation">翻译：我持有Meta（行权价500和700）和微软（行权价450、510、520）的期权，均于2026年12月到期。我在不同时间盈利后买入，并在“下跌”时加仓。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Planning to roll and double down going forward! Hope it bounces back soon.
+          <div class="translation">翻译：计划继续展期并加倍投入！希望它能尽快反弹。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">3. NVDA (NVIDIA)</div>
+        <blockquote class="quote">
+          Nvidea is literally in the teens for FWD PE.
+          <div class="translation">翻译：英伟达的远期市盈率实际上处于十几倍。</div>
+        </blockquote>
+        <blockquote class="quote">
+          ATM Calendars Are Doing Amazing Rn. The ticker which is working the best by far for me is NVDA.
+          <div class="translation">翻译：目前，ATM日历价差策略表现惊人。对我来说，表现最好的股票是英伟达。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Selling 3-6dte, and buying 6-11dte, within that range. Just opened $175 STO 1dte, BTO 4dte ratio'd 3x. For every three call calendars I bought, purchased x1 $170 put calendar with same dte to offset in case there's more pullback.
+          <div class="translation">翻译：卖出3-6天到期的，买入6-11天到期的，在这个区间内操作。刚刚以175美元卖出1天到期的期权，以175美元买入4天到期的期权，比例为3:1。我每购买三个看涨日历价差，就购买一个行权价为170美元的看跌日历价差，到期日相同，以抵消可能出现的更多回调。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">4. ADBE (Adobe)</div>
+        <blockquote class="quote">
+          Quality stocks trading at or near their 52-week lows: Adobe ADBE (-65%).
+          <div class="translation">翻译：交易价格在其52周低点或附近的优质股票：Adobe ADBE (-65%)。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Adobe is one of the most misunderstood software companies in the market today. The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
+          <div class="translation">翻译：Adobe是当今市场上最被误解的软件公司之一。关于AI生成内容将蚕食Adobe席位许可证、Canva和Midjourney将抢占其市场、以及生成模型将使专业创意软件过时的说法，在方向上似乎合理，但在最关键的方面几乎肯定是错误的：即对Adobe收入和盈利能力的最终影响。</div>
+        </blockquote>
+        <blockquote class="quote">
+          I am long Adobe and continue to add to my position as the risk/reward improves. The Q1 FY2026 earnings print, a record beat on every major metric, bolsters my thesis.
+          <div class="translation">翻译：我做多Adobe，并随着风险/回报比的改善继续加仓。2026财年第一季度财报，各项主要指标均创纪录，这进一步证实了我的论点。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">5. PLTR (Palantir Technologies)</div>
+        <blockquote class="quote">
+          Everyone keeps treating Palantir like a government contractor with a flashy demo. That read is at least two years stale.
+          <div class="translation">翻译：每个人都把Palantir当作一个拥有华丽演示的政府承包商。这种看法至少过时两年了。</div>
+        </blockquote>
+        <blockquote class="quote">
+          AIP — their AI platform — is not a prototype anymore. It is generating real enterprise deals at real scale. The boot camp model turned into a repeatable sales motion and the close rates on those deals are not what you get from vaporware.
+          <div class="translation">翻译：AIP——他们的AI平台——不再是原型。它正在以真实规模生成真实的企业交易。训练营模式变成了一种可重复的销售模式，这些交易的成交率并非虚假软件所能达到的。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The commercial growth rate in the US was 54% year-over-year last quarter. That is not a government-dependent company. Government is still growing and still sticky, but the commercial segment is what changes the valuation math here.
+          <div class="translation">翻译：上个季度，美国商业增长率为54%同比。这不是一家依赖政府的公司。政府业务仍在增长且具有粘性，但商业部门是改变此处估值计算的关键。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>3. 小众公司冒泡</h2>
     <ul>
-        <li>
-          <div class="stock-tag">1. SOFI (SoFi Technologies)</div>
-          <blockquote class="quote">
-            My average for meta is 650 and reddit 180, and for sofi is 22, for crdo is 140, also have some hood at 90. I initially brought sofi at 12 and sold 30. I am not sure how to deal with drawdown it was my worst week in a long time and i am down on my initial investment 20 percent to be specific.
-            <div class="translation">翻译：我的Meta平均成本是650美元，Reddit是180美元，SoFi是22美元，Credo是140美元，另外还有一些Robinhood在90美元。我最初以12美元买入SoFi并以30美元卖出。我不知道如何应对这次回撤，这是我很久以来最糟糕的一周，我的初始投资亏损了20%。</div>
-          </blockquote>
-          <blockquote class="quote">
-            Selling naked puts while long shares Example: I own 1000 shares of Sofi. I then sell 10 naked puts OTM. I also put a stop loss for Sofi at the strike price of the puts. If the price drops below the strike price, I automatically sell the shares.
-            <div class="translation">翻译：在持有股票的同时卖出裸看跌期权，例如：我持有1000股SoFi。然后我卖出10份价外裸看跌期权。我还为SoFi设置了止损，止损价等于看跌期权的行权价。如果价格跌破行权价，我将自动卖出股票。</div>
-          </blockquote>
-        </li>
-        <li>
-          <div class="stock-tag">2. NFLX (Netflix)</div>
-          <blockquote class="quote">
-            Netflix raises prices across all streaming plans.
-            <div class="translation">翻译：Netflix提高所有流媒体套餐的价格。</div>
-          </blockquote>
-        </li>
-        <li>
-          <div class="stock-tag">3. MU (Micron Technology)</div>
-          <blockquote class="quote">
-            Micron, SanDisk Stocks Tumble After Google Unveils AI Memory Compression Breakthrough. In last 5 days Sandisk fell 21%, Micron fell 19.5%, WDC fell 11.5%.
-            <div class="translation">翻译：在谷歌公布AI内存压缩突破后，美光、闪迪股票暴跌。过去5天内，闪迪下跌21%，美光下跌19.5%，西数下跌11.5%。</div>
-          </blockquote>
-        </li>
-        <li>
-          <div class="stock-tag">4. WDC (Western Digital Corporation)</div>
-          <blockquote class="quote">
-            Micron, SanDisk Stocks Tumble After Google Unveils AI Memory Compression Breakthrough. In last 5 days Sandisk fell 21%, Micron fell 19.5%, WDC fell 11.5%.
-            <div class="translation">翻译：在谷歌公布AI内存压缩突破后，美光、闪迪股票暴跌。过去5天内，闪迪下跌21%，美光下跌19.5%，西数下跌11.5%。</div>
-          </blockquote>
-        </li>
-        <li>
-          <div class="stock-tag">5. AVGO (Broadcom Inc.)</div>
-          <blockquote class="quote">
-            Everyone owns Broadcom. It shows up in every AI basket, every semiconductor ETF, every "picks and shovels" pitch. The consensus is basically unanimous long.
-            <div class="translation">翻译：人人都持有博通。它出现在每一个AI投资组合、每一个半导体ETF、每一个“卖铲子”的宣传中。共识基本上是一致看涨。</div>
-          </blockquote>
-          <blockquote class="quote">
-            The non-GAAP numbers look great. The problem is how you get there. Broadcom strips out stock-based comp that runs north of $2B annually, amortization on acquisitions, and restructuring charges that seem to recur every single year. The VMware integration is the central question. They paid $69B for it. The synergy case requires meaningful cross-sell.
-            <div class="translation">翻译：非公认会计准则数据看起来很棒。问题在于如何实现。博通剔除了每年超过20亿美元的股权激励、收购摊销以及似乎每年都会发生的重组费用。VMware的整合是核心问题。他们为此支付了690亿美元。协同效应需要有意义的交叉销售。</div>
-          </blockquote>
-        </li>
-        <li>
-          <div class="stock-tag">6. CVNA (Carvana Co.)</div>
-          <blockquote class="quote">
-            As of 10:25 my portfolio has been helped by my short positions. CVNA down 11.38. Quoting SamShames of Simpler Trading. “ I think it’s a 200 stock.
-            <div class="translation">翻译：截至10:25，我的投资组合因我的空头头寸而受益。Carvana下跌11.38。引用Simpler Trading的SamShames的话：“我认为它是一只200美元的股票。</div>
-          </blockquote>
-        </li>
-        <li>
-          <div class="stock-tag">7. CRWD (CrowdStrike Holdings)</div>
-          <blockquote class="quote">
-            Cybersecurity stocks fell Friday, with CrowdStrike (NASDAQ:CRWD) dropping 7%, Palo Alto Networks (NASDAQ:PANW) declining 6%, Zscaler (NASDAQ:ZS) down 4.5%, and Okta (NASDAQ:OKTA), SentinelOne (NYSE:S) and Fortinet (NASDAQ:FTNT) losing 3%. The declines appeared tied to reports that Anthropic’s latest AI model was leaked before launch after descriptions were stored in a publicly-accessible data cache, first reported by Fortune.
-            <div class="translation">翻译：网络安全股周五下跌，其中CrowdStrike (NASDAQ:CRWD) 下跌7%，Palo Alto Networks (NASDAQ:PANW) 下跌6%，Zscaler (NASDAQ:ZS) 下跌4.5%，Okta (NASDAQ:OKTA)、SentinelOne (NYSE:S) 和Fortinet (NASDAQ:FTNT) 均下跌3%。这些下跌似乎与Anthropic最新AI模型在发布前因描述存储在一个公开可访问的数据缓存中而被泄露的报道有关，该消息最初由《财富》杂志报道。</div>
-          </blockquote>
-        </li>
-        <li>
-          <div class="stock-tag">8. NLY (Annaly Capital Management)</div>
-          <blockquote class="quote">
-            Last week sold 22.5 strike puts expiration 3/27 collected .63. Will get assigned shares today, cost of 21.87 - .70 (dividends) brings cost to 21.17. Next week will probably sell covered calls, july 22 calls, collect ~.50 brings down cost to 20.67. Will collect next dividend (june), ~.70 cost then ~19.90.
-            <div class="translation">翻译：上周卖出了行权价为22.5美元、3月27日到期的看跌期权，收取了0.63美元。今天将获得股票分配，成本为21.87美元，减去0.70美元（股息），成本降至21.17美元。下周可能会卖出备兑看涨期权，卖出7月22日看涨期权，收取约0.50美元，成本降至20.67美元。6月将收取下一笔股息，约0.70美元，届时成本降至约19.90美元。</div>
-          </blockquote>
-        </li>
+      <li>
+        <div class="stock-tag">1. TSLA (Tesla)</div>
+        <blockquote class="quote">
+          -short TSLA @386 (overall postive on tsla but valuation compression needs to happen first, will turn around and buy eventually).
+          <div class="translation">翻译：-做空特斯拉，价格386美元（总体对特斯拉持积极态度，但估值压缩需要先发生，最终会转而买入）。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">2. WHR (Whirlpool Corporation)</div>
+        <blockquote class="quote">
+          I’m fairly new to investing and interested in opinions specific to Whirlpool (WHR). Has anyone considered buying Whirlpool shares right now?
+          <div class="translation">翻译：我刚开始投资，对惠而浦（WHR）的特定观点很感兴趣。现在有人考虑购买惠而浦股票吗？</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">3. POET (POET Technologies)</div>
+        <blockquote class="quote">
+          Between POET Technologies and Lightwave Logic (LWLG), which one are you currently more bullish on and why?
+          <div class="translation">翻译：在POET Technologies和Lightwave Logic (LWLG)之间，你目前更看好哪一个，原因是什么？</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">4. ITRN (Ituran Location and Control Ltd)</div>
+        <blockquote class="quote">
+          I'm a GARPy investor and mainly look for companies that trade at fair or undervalued valuations. I try to think with the idea from Buffet, 'It's Better To Buy A Wonderful Company At Fair Price Than A Fair Company At A Wonderful Price'. Some of the things I look for are companies with higher ROIC, PEG's under 2 and P/FCF under 30.
+          <div class="translation">翻译：我是一名GARPy投资者，主要寻找以公允或低估估值交易的公司。我尝试用巴菲特的理念来思考，即“以公允价格购买一家优秀公司胜过以优秀价格购买一家普通公司”。我寻找的一些指标是高ROIC、PEG低于2以及P/FCF低于30的公司。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">5. CLF (Cleveland-Cliffs)</div>
+        <blockquote class="quote">
+          With steel tariffs at 25%, the domestic producers that were always fighting uphill against cheap imports just had the playing field completely tilted in their favor. Cleveland-Cliffs is the most interesting name here because they are not just a steel producer — they are fully vertically integrated from iron ore mining through finishing.
+          <div class="translation">翻译：随着25%的钢铁关税，那些一直以来与廉价进口产品艰难竞争的国内生产商，现在竞争环境完全倾向于他们。Cleveland-Cliffs是这里最有趣的公司，因为他们不仅仅是钢铁生产商，他们是从铁矿石开采到最终加工的完全垂直整合公司。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">6. MU (Micron Technology)</div>
+        <blockquote class="quote">
+          MU is a strong buy in my model. Revenue is projected to increase 190% this FYE 8/26 and 52% next fiscal year.
+          <div class="translation">翻译：根据我的模型，美光是强力买入。预计本财年（截至2026年8月）营收将增长190%，下一财年将增长52%。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">7. SK HYNIX (SK海力士)</div>
+        <blockquote class="quote">
+          Samsung Electronics and SK Hynix likely have several months of inventory, but it’s crucial that they accelerate efforts to secure alternative sources, Lee said, as the war could drag on and potentially disrupt supplies of more materials beyond helium.
+          <div class="translation">翻译：李表示，三星电子和SK海力士可能还有几个月的库存，但至关重要的是，它们必须加快努力确保替代来源，因为战争可能会拖延，并可能扰乱氦气之外更多材料的供应。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">8. UBER (Uber Technologies)</div>
+        <blockquote class="quote">
+          Uber Is Quietly Winning the AV Rideshare Setup.
+          <div class="translation">翻译：优步正在悄然赢得自动驾驶打车服务的布局。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">9. SAP (SAP SE)</div>
+        <blockquote class="quote">
+          Why the World Still Runs on SAP.
+          <div class="translation">翻译：为什么世界仍在依靠SAP运行。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型 (Models)</div>
-    <ul>
+    <div class="ai-category">
+      <div class="track-header">模型</div>
+      <ul>
         <li>
-          <blockquote class="ai-quote">
-            Google Unveils AI Memory Compression Breakthrough. The leaked draft introduced a new tier of AI models called "Capybara."
-            <div class="ai-translation">翻译：谷歌公布了AI内存压缩突破。泄露的草稿中引入了一个名为“Capybara”的新AI模型层级。</div>
+          <blockquote class="quote">
+            SoftBank secures $40 billion loan to boost OpenAI investments.
+            <div class="translation">翻译：软银获得400亿美元贷款，以增加对OpenAI的投资。</div>
           </blockquote>
         </li>
         <li>
-          <blockquote class="ai-quote">
-            Anthropic’s latest AI model was leaked before launch after descriptions were stored in a publicly-accessible data cache, first reported by Fortune. Details about the new model, codenamed "Claude Mythos," were reportedly stored in a draft blog available in an unsecured and publicly-searchable data store.
-            <div class="ai-translation">翻译：据《财富》杂志首次报道，Anthropic的最新AI模型在发布前被泄露，此前其描述存储在一个公开可访问的数据缓存中。据报道，关于这个代号为“Claude Mythos”的新模型的详细信息，存储在一个不安全且公开可搜索的数据存储中的博客草稿中。</div>
-          </blockquote>
-        </li>
-        <li>
-          <blockquote class="ai-quote">
+          <blockquote class="quote">
             The AI stuff is progressing (Hunyuan model, Yuanbao app).
-            <div class="ai-translation">翻译：AI方面正在取得进展（混元模型、元宝应用）。</div>
+            <div class="translation">翻译：AI方面的工作正在进展中（混元模型、元宝应用）。</div>
           </blockquote>
         </li>
-    </ul>
-
-    <div class="track-header">算 (Compute)</div>
-    <ul>
+      </ul>
+    </div>
+    <div class="ai-category">
+      <div class="track-header">算</div>
+      <ul>
         <li>
-          <blockquote class="ai-quote">
+          <blockquote class="quote">
+            Micron, SanDisk Stocks Tumble After Google Unveils AI Memory Compression Breakthrough.
+            <div class="translation">翻译：谷歌发布AI内存压缩突破后，美光、闪迪股价暴跌。</div>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote class="quote">
+            Samsung Electronics and SK Hynix likely have several months of inventory, but it’s crucial that they accelerate efforts to secure alternative sources, Lee said, as the war could drag on and potentially disrupt supplies of more materials beyond helium.
+            <div class="translation">翻译：李表示，三星电子和SK海力士可能还有几个月的库存，但至关重要的是，它们必须加快努力确保替代来源，因为战争可能会拖延，并可能扰乱氦气之外更多材料的供应。</div>
+          </blockquote>
+        </li>
+      </ul>
+    </div>
+    <div class="ai-category">
+      <div class="track-header">光</div>
+      <ul>
+        <li>
+          <blockquote class="quote">
+            Photonics companies being repriced as energy efficiency plays.
+            <div class="translation">翻译：光子学公司被重新定价为能源效率的投资对象。</div>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote class="quote">
+            Between POET Technologies and Lightwave Logic (LWLG), which one are you currently more bullish on and why?
+            <div class="translation">翻译：在POET Technologies和Lightwave Logic (LWLG)之间，你目前更看好哪一个，原因是什么？</div>
+          </blockquote>
+        </li>
+      </ul>
+    </div>
+    <div class="ai-category">
+      <div class="track-header">存</div>
+      <ul>
+        <li>
+          <blockquote class="quote">
+            In last 5 days Sandisk fell 21%, Micron fell 19.5%, WDC fell 11.5%.
+            <div class="translation">翻译：在过去的5天里，闪迪下跌了21%，美光下跌了19.5%，WDC下跌了11.5%。</div>
+          </blockquote>
+        </li>
+      </ul>
+    </div>
+    <div class="ai-category">
+      <div class="track-header">电</div>
+      <ul>
+        <li>
+          <blockquote class="quote">
+            AI data centers need power that never goes off. Solar and wind can't guarantee that. Nuclear, natural gas, and hydro can.
+            <div class="translation">翻译：AI数据中心需要永不中断的电力。太阳能和风能无法保证这一点。核能、天然气和水力发电可以。</div>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote class="quote">
+            One AI query uses 10x the electricity of a Google search.
+            <div class="translation">翻译：一次AI查询的用电量是谷歌搜索的10倍。</div>
+          </blockquote>
+        </li>
+      </ul>
+    </div>
+    <div class="ai-category">
+      <div class="track-header">板</div>
+      <ul>
+        <li>
+          <blockquote class="quote">
+            Huge Investments that have been waiting to build Massive Data Centers in the Middle East.
+            <div class="translation">翻译：在中东地区，有大量投资一直在等待建设大型数据中心。</div>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote class="quote">
             Even AI data center components require materials from Middle East and shipped on boats from Asia.
-            <div class="ai-translation">翻译：即使是AI数据中心组件也需要中东的原材料，并通过亚洲的船只运输。</div>
+            <div class="translation">翻译：即使是AI数据中心组件也需要来自中东的材料，并通过船只从亚洲运输。</div>
+          </blockquote>
+        </li>
+      </ul>
+    </div>
+    <div class="ai-category">
+      <div class="track-header">云</div>
+      <ul>
+        <li>
+          <blockquote class="quote">
+            Microsoft Set for Worst Quarter Since 2008 as AI Takes Two Bites.
+            <div class="translation">翻译：微软受AI双重打击，将迎来2008年以来最差季度。</div>
           </blockquote>
         </li>
         <li>
-          <blockquote class="ai-quote">
-            It is about Huge Investments that have been waiting to build Massive Data Centers in the Middle East. They told trump, get rid of the missles and we will spend Billions on AI Data centers.
-            <div class="ai-translation">翻译：这是关于大量投资的，这些投资一直在等待在中东建设大型数据中心。他们告诉特朗普，摆脱导弹，我们将在AI数据中心上投入数十亿美元。</div>
+          <blockquote class="quote">
+            Most of these data centers also in EU.
+            <div class="translation">翻译：这些数据中心大部分也在欧盟。</div>
+          </blockquote>
+        </li>
+      </ul>
+    </div>
+    <div class="ai-category">
+      <div class="track-header">AI应用</div>
+      <ul>
+        <li>
+          <blockquote class="quote">
+            AIP — their AI platform — is not a prototype anymore. It is generating real enterprise deals at real scale.
+            <div class="translation">翻译：AIP——他们的AI平台——不再是原型。它正在以真实规模生成真实的企业交易。</div>
           </blockquote>
         </li>
         <li>
-          <blockquote class="ai-quote">
-            Hes going crazy again with all this AI spending on chips,data centres etc.
-            <div class="ai-translation">翻译：他再次在芯片、数据中心等方面的AI支出上投入巨资。</div>
+          <blockquote class="quote">
+            The Q1 FY2026 earnings print, a record beat on every major metric, bolsters my thesis.
+            <div class="translation">翻译：2026财年第一季度财报，各项主要指标均创纪录，这进一步证实了我的论点。</div>
           </blockquote>
         </li>
-    </ul>
-
-    <div class="track-header">光 (Optics/Photonics)</div>
-    <ul>
-        <li>暂无相关讨论</li>
-    </ul>
-
-    <div class="track-header">存 (Storage)</div>
-    <ul>
-        <li>
-          <blockquote class="ai-quote">
-            Micron, SanDisk Stocks Tumble After Google Unveils AI Memory Compression Breakthrough. In last 5 days Sandisk fell 21%, Micron fell 19.5%, WDC fell 11.5%.
-            <div class="ai-translation">翻译：在谷歌公布AI内存压缩突破后，美光、闪迪股票暴跌。过去5天内，闪迪下跌21%，美光下跌19.5%，西数下跌11.5%。</div>
-          </blockquote>
-        </li>
-    </ul>
-
-    <div class="track-header">电 (Power/Electricity)</div>
-    <ul>
-        <li>暂无相关讨论</li>
-    </ul>
-
-    <div class="track-header">板 (Boards/Infrastructure)</div>
-    <ul>
-        <li>
-          <blockquote class="ai-quote">
-            Even AI data center components require materials from Middle East and shipped on boats from Asia.
-            <div class="ai-translation">翻译：即使是AI数据中心组件也需要中东的原材料，并通过亚洲的船只运输。</div>
-          </blockquote>
-        </li>
-        <li>
-          <blockquote class="ai-quote">
-            It is about Huge Investments that have been waiting to build Massive Data Centers in the Middle East. They told trump, get rid of the missles and we will spend Billions on AI Data centers.
-            <div class="ai-translation">翻译：这是关于大量投资的，这些投资一直在等待在中东建设大型数据中心。他们告诉特朗普，摆脱导弹，我们将在AI数据中心上投入数十亿美元。</div>
-          </blockquote>
-        </li>
-    </ul>
-
-    <div class="track-header">云 (Cloud)</div>
-    <ul>
-        <li>
-          <blockquote class="ai-quote">
-            ServiceNow Spent $11.6B to Become CUDA for Workflows.
-            <div class="ai-translation">翻译：ServiceNow斥资116亿美元，旨在成为工作流领域的CUDA。</div>
-          </blockquote>
-        </li>
-    </ul>
-
-    <div class="track-header">AI应用 (AI Applications)</div>
-    <ul>
-        <li>
-          <blockquote class="ai-quote">
-            The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
-            <div class="ai-translation">翻译：关于AI生成内容将蚕食Adobe的席位授权，Canva和Midjourney将抢占其市场，以及生成模型将使专业创意软件过时等说法，方向上看似合理，但在最关键的方面几乎肯定是错误的：即对Adobe收入和盈利能力的最终影响。</div>
-          </blockquote>
-        </li>
-        <li>
-          <blockquote class="ai-quote">
-            AIP — their AI platform — is not a prototype anymore. It is generating real enterprise deals at real scale. The boot camp model turned into a repeatable sales motion and the close rates on those deals are not what you get from vaporware.
-            <div class="ai-translation">翻译：AIP——他们的AI平台——不再是原型产品。它正在大规模地生成真正的企业交易。训练营模式变成了一种可重复的销售动作，这些交易的成交率并非虚无缥缈的产品所能达到。</div>
-          </blockquote>
-        </li>
-        <li>
-          <blockquote class="ai-quote">
-            At the same time, Reddit has relatively low risk of disruption from AI compared to most SaaS companies. Marketing platforms tend to be durable, especially when user growth is strong.
-            <div class="ai-translation">翻译：与此同时，与大多数SaaS公司相比，Reddit受AI颠覆的风险相对较低。营销平台往往具有韧性，尤其是在用户增长强劲的情况下。</div>
-          </blockquote>
-        </li>
-    </ul>
+      </ul>
+    </div>
 
 </body>
 </html>
