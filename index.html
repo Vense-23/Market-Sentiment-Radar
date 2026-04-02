@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>04月01日 情报终端</title>
+        <title>04月02日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,488 +36,239 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 04月01日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-04-01 22:11:24 (北京时间)</p>
+            <h1>🎯 04月02日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-04-02 11:31:35 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股市场情绪报告 (2026年04月01日)</title>
+    <title>2026年04月02日美股市场情绪报告</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f4f7f6; }
-        h1, h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px; }
-        h2 { font-size: 1.8em; }
-        h3 { font-size: 1.4em; color: #34495e; margin-top: 25px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px; text-align: center; }
+        h2 { color: #34495e; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px; margin-bottom: 15px; }
+        .track-header { font-weight: bold; margin-top: 15px; margin-bottom: 10px; color: #555; }
         ul { list-style: none; padding: 0; }
-        li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #2980b9; margin-bottom: 10px; font-size: 1.1em; }
-        blockquote { margin: 10px 0 10px 20px; padding: 10px 15px; border-left: 4px solid #95a5a6; background-color: #ecf0f1; border-radius: 4px; font-style: italic; color: #555; }
-        .translation { font-style: normal; color: #2c3e50; margin-top: 8px; padding-top: 8px; border-top: 1px dashed #bdc3c7; }
-        .track-header { font-weight: bold; color: #e74c3c; margin-top: 20px; margin-bottom: 10px; font-size: 1.2em; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
-        .summary { background-color: #e8f5e9; border-left: 5px solid #4CAF50; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
-        .summary p { margin: 0; }
+        li { background-color: #fff; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; padding: 15px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .stock-tag { font-weight: bold; color: #007bff; margin-bottom: 10px; font-size: 1.1em; }
+        .quote { font-style: italic; color: #555; border-left: 4px solid #007bff; padding-left: 15px; margin: 10px 0; background-color: #f8fafd; }
+        .translation { font-style: normal; color: #333; margin-top: 5px; font-size: 0.9em; }
+        .summary { background-color: #e9f7ef; border-left: 4px solid #28a745; padding: 15px; margin-bottom: 20px; border-radius: 8px; }
+        .summary p { margin: 0 0 10px 0; }
+        .summary p:last-child { margin-bottom: 0; }
     </style>
 </head>
 <body>
-
-    <h1>美股市场情绪报告 (2026年04月01日)</h1>
+    <h1>美股市场情绪报告 (2026年04月02日)</h1>
 
     <h2>1. 宏观与市场情绪</h2>
     <div class="summary">
-        <p>市场当前波动剧烈，对地缘政治事件（尤其是伊朗冲突和霍尔木兹海峡问题）反应敏感。尽管有停火谈判的乐观情绪导致近期市场反弹，但许多观点认为这可能只是熊市反弹，而非真正的底部。经济数据喜忧参半：私人就业增长好于预期，但整体就业市场（如JOLTS报告）和建筑业招聘显示放缓，消费者信心上升的同时租金却在走弱。通胀担忧持续存在，油价和汽油价格居高不下。同时，美国政府提议允许401(k)投资替代资产，以及纳斯达克100指数新上市规则引发了广泛关注，尤其是对未来大型IPO的影响。</p>
+        <p>市场情绪在多重地缘政治和经济数据影响下波动剧烈。围绕伊朗战争的进展，特别是关于停火和美国撤军的各种报道，导致油价和股市出现显著反弹，但同时也有声音警告这可能只是“熊市反弹”。ADP就业数据显示私营部门就业增长集中在教育和医疗服务领域，整体招聘放缓，引发对经济潜在“滞胀”的担忧。纳斯达克100指数规则的变更，特别是为SpaceX和OpenAI等大型IPO加速纳入，也引起了投资者对被动投资风险的关注。期权市场波动剧烈，日内交易者在0DTE期权上获利或巨亏。</p>
     </div>
     <ul>
-      <li>
-        <blockquote>
-          I don’t see why the markets ripped yesterday (3/31).
-          <div class="translation">翻译：我不明白为什么市场昨天（3月31日）暴涨。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote>
-          We still don’t have a solution to the Strait of Hormuz, and reports indicate that Trump doesn’t care if it fully reopens.
-          <div class="translation">翻译：霍尔木兹海峡的问题仍未解决，有报道称特朗普并不关心它是否完全重新开放。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote>
-          If that happens, our debt becomes unsustainable and the dollar finally faces a real competitor.
-          <div class="translation">翻译：如果发生这种情况，我们的债务将变得不可持续，美元最终将面临一个真正的竞争对手。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote>
-          ADP: US private payrolls +62K vs +39K est in March.
-          <div class="translation">翻译：ADP：美国3月私人非农就业人数增加6.2万人，预期为增加3.9万人。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote>
-          Today's 3.8% Nasdaq rally is not "the recovery."
-          <div class="translation">翻译：今天纳斯达克3.8%的反弹并非“复苏”。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote>
-          The catalyst: reports that Trump told aides he'd accept ending the war without reopening Hormuz, plus Iran's president signaling willingness to negotiate.
-          <div class="translation">翻译：催化剂是：有报道称特朗普告诉助手他愿意在不重新开放霍尔木兹海峡的情况下结束战争，加上伊朗总统表示愿意谈判。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote>
-          Brent crude closed at $101.
-          <div class="translation">翻译：布伦特原油收盘价为101美元。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote>
-          Feels like a relief rally… not convinced it’s the bottom.
-          <div class="translation">翻译：感觉像是一次解脱性反弹……但不相信这是底部。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote>
-          Big picture hasn’t changed much IMO: oil still a problem inflation still sticky Fed not cutting anytime soon.
-          <div class="translation">翻译：在我看来，大局没有太大变化：石油仍是个问题，通胀依然顽固，美联储短期内不会降息。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote>
-          Employees could use their workplace retirement plans to invest in cryptocurrencies, private equity and other “alternative assets” under a proposal released Monday by the Trump administration.
-          <div class="translation">翻译：根据特朗普政府周一发布的一项提案，员工可以使用其工作场所退休计划投资加密货币、私募股权和其他“另类资产”。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote>
-          NASDAQ has confirmed it will change the listing rules for NASDAQ-100, ahead of the SpaceX and OpenAI IPOs this year.
-          <div class="translation">翻译：纳斯达克已确认将修改纳斯达克100指数的上市规则，为今年SpaceX和OpenAI的IPO做准备。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote>
-          The market regime just shifted to risk-off territory for the first time since late 2022.
-          <div class="translation">翻译：市场机制自2022年末以来首次转向避险区域。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote>
-          The macro picture is flashing a stagflation warning.
-          <div class="translation">翻译：宏观经济图景正在闪烁滞胀警告。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote>
-          The market has no idea what to price in right now and it shows.
-          <div class="translation">翻译：市场现在不知道该如何定价，这表现得很明显。</div>
-        </blockquote>
-      </li>
+        <li>
+          <blockquote class="quote">
+            I don’t see why the markets ripped yesterday (3/31). We still don’t have a solution to the Strait of Hormuz, and reports indicate that Trump doesn’t care if it fully reopens. If that’s true, we’re looking at a permanent tax on the Strait for the foreseeable future. The Iranian regime is even more hardline than before, and they’ve indicated they want to start selling oil in Yuan. If that happens, our debt becomes unsustainable and the dollar finally faces a real competitor. This is not even mentioning that oil remains at $100 and gas prices are predicted to hit $5+ this month.
+            <div class="translation">翻译：我不明白为什么昨天（3月31日）市场会飙升。我们仍然没有解决霍尔木兹海峡的问题，有报道称特朗普不关心它是否完全重新开放。如果这是真的，我们正在考虑对海峡征收永久性税费。伊朗政权比以前更加强硬，他们表示希望开始用人民币出售石油。如果发生这种情况，我们的债务将变得不可持续，美元最终将面临真正的竞争对手。这还没有提到石油仍保持在100美元，汽油价格预计本月将达到5美元以上。</div>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote class="quote">
+            ADP: US private payrolls +62K vs +39K est in March. 58K of 62K in education and health services. Private sector employment growth was a bit better than expected in March, but health care and construction continued to provide nearly all the momentum. Job growth totaled 62,000 for the month, down just 4,000 from February’s upwardly revised level but above the Dow Jones consensus for 39,000.
+            <div class="translation">翻译：ADP：美国3月份私营部门新增就业6.2万，预期3.9万。在6.2万新增就业中，5.8万来自教育和医疗服务领域。3月份私营部门就业增长略好于预期，但医疗保健和建筑业继续提供了几乎所有的增长动力。当月就业总计6.2万人，比2月份向上修正后的水平仅减少4000人，但高于道琼斯3.9万人的共识。</div>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote class="quote">
+            Today's 3.8% Nasdaq rally is not "the recovery." It's a bear market rally. S&P up 2.91%. Nasdaq up 3.83%. Dow up 2.49%. Best day since May. The catalyst: reports that Trump told aides he'd accept ending the war without reopening Hormuz, plus Iran's president signaling willingness to negotiate. Headlines everywhere: "peace is near!" Markets ripped. But here's what didn't change today: The Strait of Hormuz is still closed. Even in Trump's own leaked "peace" scenario, it stays closed. Brent crude closed at $101. Qatar's Ras Laffan LNG complex is physically destroyed. 17% of their LNG capacity gone. Repair timeline: 3-5 YEARS.
+            <div class="translation">翻译：今天纳斯达克3.8%的反弹不是“复苏”。这是熊市反弹。标普上涨2.91%。纳斯达克上涨3.83%。道琼斯上涨2.49%。这是自5月以来表现最好的一天。催化剂是：报道称特朗普告诉助手他将接受在不重新开放霍尔木兹海峡的情况下结束战争，加上伊朗总统表示愿意谈判。头条新闻到处都是：“和平即将到来！”市场飙升。但今天没有改变的是：霍尔木兹海峡仍然关闭。即使在特朗普自己泄露的“和平”情景中，它也仍然关闭。布伦特原油收于101美元。卡塔尔的拉斯拉凡液化天然气综合设施遭到物理破坏。其17%的液化天然气产能消失。修复时间：3-5年。</div>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote class="quote">
+            NASDAQ has confirmed it will change the listing rules for NASDAQ-100, ahead of the SpaceX and OpenAI IPOs this year. Companies will now be listed on NASDAQ-100 after only 15 days after IPO (previously, there was a three month period of "seasoning" before listing). This reduces the amount of time for price discovery. The minimum 10% float has been removed. This allows companies to float a very small percentage of their shares, artificially squeezing supply. Companies that float less than 20% of their shares will have their market capitalisations artificially multiplied by x3, for the purposes of calculating market capitalisation.
+            <div class="translation">翻译：纳斯达克已确认将修改纳斯达克100指数的上市规则，以应对今年SpaceX和OpenAI的IPO。公司现在将在IPO后仅15天内被列入纳斯达克100指数（此前有三个月的“成熟期”才能上市）。这减少了价格发现的时间。最低10%的流通股要求已被取消。这允许公司仅流通非常小比例的股份，人为地挤压供应。流通股低于20%的公司，其市值将被人为地乘以3倍，用于计算市值。</div>
+          </blockquote>
+        </li>
     </ul>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
-      <li>
-        <div class="stock-tag">META (Meta Platforms, Inc.)</div>
-        <blockquote class="quote">
-          Biggest gain from META sold calls after earnings.
-          <div class="translation">翻译：Meta在财报后卖出看涨期权获得了最大收益。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The IRGC named companies including Cisco, HP, Intel, Oracle, Microsoft, Apple, Google, Meta, IBM, Dell, Nvidia, Tesla, GE, JPMorgan, and Boeing, among others, as potential targets.
-          <div class="translation">翻译：伊斯兰革命卫队点名包括思科、惠普、英特尔、甲骨文、微软、苹果、谷歌、Meta、IBM、戴尔、英伟达、特斯拉、通用电气、摩根大通和波音在内的公司，作为潜在目标。</div>
-        </blockquote>
-        <blockquote class="quote">
-          META is currently trading at $556.82, up 3.81% today.
-          <div class="translation">翻译：Meta目前交易价格为556.82美元，今天上涨3.81%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">MSFT (Microsoft Corp.)</div>
-        <blockquote class="quote">
-          The IRGC named companies including Cisco, HP, Intel, Oracle, Microsoft, Apple, Google, Meta, IBM, Dell, Nvidia, Tesla, GE, JPMorgan, and Boeing, among others, as potential targets.
-          <div class="translation">翻译：伊斯兰革命卫队点名包括思科、惠普、英特尔、甲骨文、微软、苹果、谷歌、Meta、IBM、戴尔、英伟达、特斯拉、通用电气、摩根大通和波音在内的公司，作为潜在目标。</div>
-        </blockquote>
-        <blockquote class="quote">
-          MSFT at $358 feels like a gift.
-          <div class="translation">翻译：微软股价在358美元感觉像是一个礼物。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Down ~35% from highs, sitting right near the bottom of its 52W range (344-555).
-          <div class="translation">翻译：较最高点下跌约35%，目前接近其52周区间的底部（344-555）。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Still a $2.7T company, nothing is broken here.
-          <div class="translation">翻译：它仍然是一家2.7万亿美元的公司，没有出现任何问题。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">NKE (Nike, Inc.)</div>
-        <blockquote class="quote">
-          Nike Guides for Sales Declines Ahead as Turnaround Plan Hits Snags.
-          <div class="translation">翻译：耐克预测销售额将下降，因其转型计划遭遇挫折。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The sneaker and athletic apparel company said turnaround efforts will continue to affect results.
-          <div class="translation">翻译：这家运动鞋和运动服装公司表示，转型努力将继续影响业绩。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Options are pricing in an 8.2% move.
-          <div class="translation">翻译：期权市场正在消化8.2%的价格波动。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Most favored to beat: Nike (NKE): 79.5%.
-          <div class="translation">翻译：最有可能超出预期的：耐克（NKE）：79.5%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">ORCL (Oracle Corp.)</div>
-        <blockquote class="quote">
-          Oracle cutting thousands in latest layoff round as company continues to ramp AI spending.
-          <div class="translation">翻译：甲骨文在最新一轮裁员中裁撤数千人，同时公司继续加大人工智能支出。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The IRGC named companies including Cisco, HP, Intel, Oracle, Microsoft, Apple, Google, Meta, IBM, Dell, Nvidia, Tesla, GE, JPMorgan, and Boeing, among others, as potential targets.
-          <div class="translation">翻译：伊斯兰革命卫队点名包括思科、惠普、英特尔、甲骨文、微软、苹果、谷歌、Meta、IBM、戴尔、英伟达、特斯拉、通用电气、摩根大通和波音在内的公司，作为潜在目标。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">TSLA (Tesla, Inc.)</div>
-        <blockquote class="quote">
-          The IRGC named companies including Cisco, HP, Intel, Oracle, Microsoft, Apple, Google, Meta, IBM, Dell, Nvidia, Tesla, GE, JPMorgan, and Boeing, among others, as potential targets.
-          <div class="translation">翻译：伊斯兰革命卫队点名包括思科、惠普、英特尔、甲骨文、微软、苹果、谷歌、Meta、IBM、戴尔、英伟达、特斯拉、通用电气、摩根大通和波音在内的公司，作为潜在目标。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Tesla first-quarter deliveries likely to dip sequentially as EV demand softens.
-          <div class="translation">翻译：由于电动汽车需求疲软，特斯拉第一季度交付量可能环比下降。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Tesla is expected to report deliveries before the markets ​open on Thursday.
-          <div class="translation">翻译：特斯拉预计将在周四市场开盘前公布交付量。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">LYV (Live Nation Entertainment, Inc.)</div>
-        <blockquote class="quote">
-          I keep coming back to Live Nation because the structural position is genuinely hard to replicate.
-          <div class="translation">翻译：我一直关注Live Nation，因为其结构性地位确实难以复制。</div>
-        </blockquote>
-        <blockquote class="quote">
-          You have the venues, the ticketing platform, and the artist management all under one roof.
-          <div class="translation">翻译：它将场地、票务平台和艺人管理都整合在一个体系下。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The DOJ has been making noise about a breakup for years, but here is the thing: even if they force a Ticketmaster spinoff, Live Nation still owns or operates around 350 venues globally.
-          <div class="translation">翻译：司法部多年来一直在鼓吹拆分，但问题是：即使他们强制拆分Ticketmaster，Live Nation在全球仍拥有或运营约350个场馆。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Revenue has been compounding nicely post-COVID.
-          <div class="translation">翻译：疫情后，收入一直在稳健增长。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">GS (Goldman Sachs Group, Inc.)</div>
-        <blockquote class="quote">
-          Goldman just came off one of its best quarters in years.
-          <div class="translation">翻译：高盛刚刚度过了多年来最好的一个季度之一。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Strong IB advisory, booming financing activity, and ROE numbers that got analysts falling over each other to upgrade the name.
-          <div class="translation">翻译：强劲的投行咨询业务、蓬勃发展的融资活动以及让分析师争相上调评级的股本回报率数据。</div>
-        </blockquote>
-        <blockquote class="quote">
-          When that window closes, which it will, that revenue falls off fast.
-          <div class="translation">翻译：当那个窗口关闭时，收入会迅速下降，而这一定会发生。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">ADBE (Adobe Inc.)</div>
-        <blockquote class="quote">
-          Adobe is one of the most misunderstood software companies in the market today.
-          <div class="translation">翻译：Adobe是当今市场上最被误解的软件公司之一。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
-          <div class="translation">翻译：人工智能生成内容将侵蚀Adobe的席位许可，Canva和Midjourney将抢占其市场，生成模型将使专业创意软件过时的说法在方向上是合理的，但在最关键的方面几乎肯定是错误的：即对Adobe收入和盈利能力的最终影响。</div>
-        </blockquote>
-        <blockquote class="quote">
-          I am long Adobe and continue to add to my position as the risk/reward improves.
-          <div class="translation">翻译：我做多Adobe，并随着风险/回报比的改善继续增持。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">FLY (Firefly Aerospace Inc.)</div>
-        <blockquote class="quote">
-          $FLY - priced like a dodgy rocket company...their software tracked every Iranian missile fired in combat.
-          <div class="translation">翻译：$FLY——价格就像一家可疑的火箭公司……其软件追踪了每一枚在战斗中发射的伊朗导弹。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Thesis has strengthened on every single data point.
-          <div class="translation">翻译：每个数据点都加强了我的论点。</div>
-        </blockquote>
-        <blockquote class="quote">
-          FLY = becoming a space defence technology platform.
-          <div class="translation">翻译：FLY正在成为一个太空防御技术平台。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">NVO (Novo Nordisk A/S)</div>
-        <blockquote class="quote">
-          Looking at the recent posts about Novo Nordisk's 0.56 P/S and 10x Forward P/E, the consensus seems to be that the market is "pricing in the death of the company."
-          <div class="translation">翻译：从最近关于诺和诺德0.56市销率和10倍远期市盈率的帖子来看，共识似乎是市场正在“计入公司消亡”的预期。</div>
-        </blockquote>
-        <blockquote class="quote">
-          However, value usually only gets this cheap if there's a structural belief that earnings will permanently decline.
-          <div class="translation">翻译：然而，估值通常只有在存在收益将永久下降的结构性信念时才会变得如此便宜。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">TRIP (TripAdvisor, Inc.)</div>
-        <blockquote class="quote">
-          If Starboard succeeds, Is Expedia the most logical buyer for Viator?
-          <div class="translation">翻译：如果Starboard成功，Expedia会是Viator最合理的买家吗？</div>
-        </blockquote>
-        <blockquote class="quote">
-          At the center of it all is Viator, and the question that arises for me now is who will ultimately buy what is most valuable in the company and at what price.
-          <div class="translation">翻译：这一切的核心是Viator，现在我面临的问题是谁最终会以何种价格购买公司最有价值的部分。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Their modus operandi is to enter a company that has hidden value, simplify the structure, put pressure on the board and eventually cash in on that value through a sale or spin-off.
-          <div class="translation">翻译：他们的操作模式是进入一家具有隐藏价值的公司，简化结构，向董事会施压，最终通过出售或分拆来实现该价值。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">IREN (Iris Energy Limited)</div>
-        <blockquote class="quote">
-          The goal was to pivot into IREN at the prices from January.
-          <div class="translation">翻译：目标是在一月份的价格转入IREN。</div>
-        </blockquote>
-        <blockquote class="quote">
-          So, since January I collected a solid $1,78k in premium from CCs.
-          <div class="translation">翻译：因此，自一月份以来，我从备兑看涨期权中收取了可观的1780美元期权费。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">PM (Philip Morris International Inc.)</div>
-        <blockquote class="quote">
-          I'm risking off from tech and some of my precious metals so I'm curious what that best way to play a stock like Phillip morris.
-          <div class="translation">翻译：我正在从科技股和一些贵金属中撤出风险，所以我想知道如何最好地投资菲利普莫里斯这样的股票。</div>
-        </blockquote>
-        <blockquote class="quote">
-          People may cut back on spending during a recession but they will always find the money for smokes.
-          <div class="translation">翻译：人们在经济衰退期间可能会削减开支，但他们总会为香烟找到钱。</div>
-        </blockquote>
-      </li>
+        <li>
+          <div class="stock-tag">MSFT (Microsoft Corporation)</div>
+          <blockquote class="quote">
+            My only positions now are META and MSFT shares + calls.
+            <div class="translation">翻译：我目前仅持有的头寸是META和MSFT的股票+看涨期权。</div>
+          </blockquote>
+          <blockquote class="quote">
+            MSFT at $358 feels like a gift. down ~35% from highs, sitting right near the bottom of its 52W range (344-555). still a $2.7T company, nothing is broken here. For context It near the nov 2021 high. looking at the $360C 8/21. near the money, earnings in ~29 days which should give a nice IV ramp leading into it. azure and AI sentiment has cooled off which is honestly when i like getting into these. when everyone's bored of a name but the fundamentals haven't actually changed. the 5Y chart shows this 345-360 zone has been support before.
+            <div class="translation">翻译：微软（MSFT）在358美元感觉像是一个礼物。从高点下跌了约35%，目前接近其52周区间的底部（344-555）。它仍然是一家2.7万亿美元的公司，没有出现任何问题。作为参考，它接近2021年11月的高点。我正在关注21年8月到期的360美元看涨期权。接近行权价，财报将在大约29天后发布，这应该会在财报前带来良好的隐含波动率上升。Azure和AI的情绪已经冷却，这正是我喜欢介入这些股票的时候。当所有人对某个名字感到厌倦但基本面并未真正改变时。5年图表显示345-360美元区间此前曾是支撑位。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">NKE (Nike, Inc.)</div>
+          <blockquote class="quote">
+            Nike may have beat Wall Street’s fiscal 2026 third-quarter earnings expectations but it wasn’t enough to win over investors losing patience with CEO Elliott Hill’s turnaround. The sneaker giant expects sales to be down for the rest of the year and its recovery in China to last through fiscal 2027, slated to end next spring. Hill acknowledged the turnaround is taking “longer” than he expected, but said the company’s “direction is clear.”
+            <div class="translation">翻译：耐克（Nike）可能超出了华尔街对其2026财年第三季度盈利的预期，但这不足以赢得那些对首席执行官埃利奥特·希尔（Elliott Hill）的转型失去耐心的投资者。这家运动鞋巨头预计今年剩余时间的销售额将下降，其在中国的复苏将持续到2027财年，预计明年春季结束。希尔承认转型比他预期的要“长”，但表示公司的“方向明确”。</div>
+          </blockquote>
+          <blockquote class="quote">
+            Seeing that Nike stock is now below $50 a share and it is now at the lowest PE ratio its been at for a long time. I'm wondering if it's a good price point to start a position. I know there has been competition in the running category, but it seems to be less talked about. I still feel that they make the best basketball shoes (for those who actually play).
+            <div class="translation">翻译：看到耐克（Nike）股价现在低于每股50美元，市盈率也达到了很长一段时间以来的最低点。我在想这是否是开始建仓的好价位。我知道跑步鞋领域存在竞争，但这似乎较少被提及。我仍然觉得他们生产最好的篮球鞋（对于那些真正打球的人来说）。</div>
+          </blockquote>
+          <blockquote class="quote">
+            Yesterday I posted that $NKE options looked underpriced going into earnings. ATM straddles with 2DTE are trading at $4.31, with NKE trading at $52.80. The break even move is therefore plus or minus 8.2%. Over the last 16 earnings announcements, the median absolute change in NKE has been 7.6% with a standard deviation of 8.9%. Options are pricing in an 8.2% move. Therefore, from this metric, options looks cheap.
+            <div class="translation">翻译：我昨天发帖说，耐克（NKE）期权在财报发布前看起来被低估了。2天到期日（2DTE）的平价跨式期权交易价格为4.31美元，而NKE的交易价格为52.80美元。因此，盈亏平衡点是正负8.2%。在过去的16次财报发布中，NKE的绝对变化中位数为7.6%，标准差为8.9%。期权定价为8.2%的变动。因此，从这个指标来看，期权看起来很便宜。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">META (Meta Platforms, Inc.)</div>
+          <blockquote class="quote">
+            Today's price action was odd with almost a round-trip for META and other tech stocks, in general. Does anyone have any idea why the path retraced? When MS reiterated META, I did not find the analysis compelling.
+            <div class="translation">翻译：今天Meta（META）及其他科技股的股价走势异常，几乎走了一个来回。有人知道为什么会回撤吗？当摩根士丹利重申Meta时，我觉得他们的分析不具说服力。</div>
+          </blockquote>
+          <blockquote class="quote">
+            Back to the EBITDA: Decoding Meta’s $1,116 Executive Playbook.
+            <div class="translation">翻译：回到EBITDA：解读Meta的1116美元高管策略手册。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">NVO (Novo Nordisk A/S)</div>
+          <blockquote class="quote">
+            Lilly's weight-loss pill wins US approval, sets up next battle with rival Novo Nordisk.
+            <div class="translation">翻译：礼来公司的减肥药获得美国批准，将与竞争对手诺和诺德展开下一场竞争。</div>
+          </blockquote>
+          <blockquote class="quote">
+            Is Novo Nordisk the new "Intel"? (When high ROE meets a falling knife) Looking at the recent posts about Novo Nordisk's 0.56 P/S and 10x Forward P/E, the consensus seems to be that the market is "pricing in the death of the company." However, value usually only gets this cheap if there's a structural belief that earnings will permanently decline.
+            <div class="translation">翻译：诺和诺德（Novo Nordisk）是新的“英特尔”吗？（当高ROE遇到下跌的刀子时）从最近关于诺和诺德0.56的市销率和10倍远期市盈率的帖子来看，共识似乎是市场正在“给公司定价死亡”。然而，价值通常只有在存在收益将永久下降的结构性信念时才会如此便宜。</div>
+          </blockquote>
+        </li>
     </ul>
 
     <h2>3. 小众公司冒泡</h2>
     <ul>
-      <li>
-        <div class="stock-tag">XOM (Exxon Mobil Corp.)</div>
-        <blockquote class="quote">
-          Exxon Mobil Is on Track for Its Best Quarter Ever.
-          <div class="translation">翻译：埃克森美孚有望迎来有史以来最好的一个季度。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">TER (Teradyne, Inc.)</div>
-        <blockquote class="quote">
-          TER Mar 27 2026 290 call.
-          <div class="translation">翻译：泰瑞达（TER）2026年3月27日290美元看涨期权。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">OXY (Occidental Petroleum Corp.)</div>
-        <blockquote class="quote">
-          OXY Mar 27 2026 61 call.
-          <div class="translation">翻译：西方石油（OXY）2026年3月27日61美元看涨期权。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">WDC (Western Digital Corp.)</div>
-        <blockquote class="quote">
-          WDC. Built the position in batches on March 30.
-          <div class="translation">翻译：西部数据。3月30日分批建仓。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">LW (Lamb Weston Holdings, Inc.)</div>
-        <blockquote class="quote">
-          Most favored to beat: Lamb Weston (LW): 95.5%.
-          <div class="translation">翻译：最有可能超出预期的：Lamb Weston (LW)：95.5%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">DAL (Delta Air Lines, Inc.)</div>
-        <blockquote class="quote">
-          Most favored to beat: Delta Air Lines (DAL): 84.0%.
-          <div class="translation">翻译：最有可能超出预期的：达美航空 (DAL)：84.0%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">UNTY (Unity Bancorp, Inc.)</div>
-        <blockquote class="quote">
-          Most favored to beat: Unity Bancorp (UNTY): 82.5%.
-          <div class="translation">翻译：最有可能超出预期的：Unity Bancorp (UNTY)：82.5%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">RH (RH Inc.)</div>
-        <blockquote class="quote">
-          Names the market is cautious on: RH: 24.0% chance to beat.
-          <div class="translation">翻译：市场对其持谨慎态度的公司：RH：24.0% 的可能性超出预期。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">PLAY (Dave & Buster's Entertainment, Inc.)</div>
-        <blockquote class="quote">
-          Names the market is cautious on: Dave & Buster’s (PLAY): 16.0% chance to beat.
-          <div class="translation">翻译：市场对其持谨慎态度的公司：Dave & Buster's (PLAY)：16.0% 的可能性超出预期。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">ALLB (Allbirds, Inc.)</div>
-        <blockquote class="quote">
-          Allbirds is selling for $39 million.
-          <div class="translation">翻译：Allbirds以3900万美元的价格出售。</div>
-        </blockquote>
-      </li>
+        <li>
+          <div class="stock-tag">IREN (Iris Energy Limited)</div>
+          <blockquote class="quote">
+            This is my IREN wheel which I started in January. The goal was to pivot into IREN at the prices from January. That price has been “confirmed” with multiple private investments later on so I'm very happy with my current "pivot" entries. Since January I collected a solid $1,78k in premium from CCs. I opened a few CSPs on the side which never got hit so that's why some wheels are at "$0" - those were "freebies" aka low risk csps that I've found.
+            <div class="translation">翻译：这是我从一月份开始的IREN轮式策略。目标是在一月份的价格点转向IREN。这个价格后来通过多笔私人投资得到了“证实”，所以我对目前的“转向”入场非常满意。自一月份以来，我从备兑看涨期权（CCs）中获得了1780美元的稳定溢价。我还开了一些备兑看跌期权（CSPs），但从未被行权，所以有些轮式策略显示为“0美元”——这些是“免费赠品”，也就是我发现的低风险CSPs。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">RDDT (Reddit Inc.)</div>
+          <blockquote class="quote">
+            I've been wondering how you would recommend handling being down something like 40% as a WHEEL option trader. I still believe in the stock and have just been waiting for it to go back up but my main questions has been if I should sell covered calls below cost basis. On the one hand I'd hate for it to get called away at a big loss but on the other hand my thinking is I could just start selling PUTs again if they got called away? Ticker is RDDT and ACB is probably 230.
+            <div class="translation">翻译：我一直在思考作为一个轮式期权交易者，如果股票下跌40%左右，应该如何处理。我仍然相信这只股票，并且一直在等待它回升，但我主要的问题是，我是否应该在成本价以下卖出备兑看涨期权。一方面，我不希望它被以巨大损失平仓，但另一方面，我的想法是如果它们被平仓，我就可以再次开始卖出看跌期权？股票代码是RDDT，我的平均成本可能在230。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">LYV (Live Nation Entertainment, Inc.)</div>
+          <blockquote class="quote">
+            I keep coming back to Live Nation because the structural position is genuinely hard to replicate. You have the venues, the ticketing platform, and the artist management all under one roof. That is not an accident — it took decades and billions of dollars to assemble. Nobody is building that from scratch. Even if they force a Ticketmaster spinoff, Live Nation still owns or operates around 350 venues globally. That is the real asset. Whoever controls the venues sets the rules. Ticketing is downstream of that. Revenue has been compounding nicely post-COVID.
+            <div class="translation">翻译：我一直关注Live Nation，因为其结构性地位确实难以复制。它拥有场馆、票务平台和艺人管理，所有这些都在一个屋檐下。这并非偶然——它花了数十年和数十亿美元才得以整合。没有人能从零开始建立这些。即使他们被迫剥离Ticketmaster，Live Nation仍然在全球拥有或运营约350个场馆。这才是真正的资产。谁控制场馆，谁就制定规则。票务是其下游业务。疫情后，营收一直保持良好复合增长。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">PM (Philip Morris International Inc.)</div>
+          <blockquote class="quote">
+            I'm risking off from tech and some of my precious metals so i'm curious what that best way to play a stock like Phillip morris. People may cut back on spending during a recession but they will always find the money for smokes. It about 15% above it's 52 week low and about 17% off it's 52 week high.
+            <div class="translation">翻译：我正在从科技股和一些贵金属中撤资，所以我想知道如何最好地操作像菲利普·莫里斯（Philip Morris）这样的股票。在经济衰退期间，人们可能会削减开支，但他们总会找到钱买烟。它的价格比52周低点高出约15%，比52周高点低约17%。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">ADBE (Adobe Inc.)</div>
+          <blockquote class="quote">
+            Adobe is one of the most misunderstood software companies in the market today. The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power. I am long Adobe and continue to add to my position as the risk/reward improves. The Q1 FY2026 earnings print, a record beat on every major metric, bolsters my thesis which I highlight below.
+            <div class="translation">翻译：Adobe是当今市场上最被误解的软件公司之一。关于AI生成内容将蚕食Adobe席位许可、Canva和Midjourney将抢占其市场、生成模型将使专业创意软件过时的说法在方向上是合理的，但在最关键的方面几乎肯定是错误的：即对Adobe收入和盈利能力的最终影响。我做多Adobe，并随着风险/回报的改善继续增持。2026财年第一季度财报，在各项主要指标上均创下历史新高，这支持了我的论点。</div>
+          </blockquote>
+        </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
+    <div class="track-header">模型</div>
     <ul>
-      <li>
-        <div class="track-header">模型</div>
-        <blockquote>
-          OpenAI Valued at $852 Billion After Completing $122 Billion Round.
-          <div class="translation">翻译：OpenAI在完成1220亿美元融资后，估值达到8520亿美元。</div>
-        </blockquote>
-        <blockquote>
-          The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
-          <div class="translation">翻译：人工智能生成内容将侵蚀Adobe的席位许可，Canva和Midjourney将抢占其市场，生成模型将使专业创意软件过时的说法在方向上是合理的，但在最关键的方面几乎肯定是错误的：即对Adobe收入和盈利能力的最终影响。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="track-header">算</div>
-        <blockquote>
-          Oracle cutting thousands in latest layoff round as company continues to ramp AI spending.
-          <div class="translation">翻译：甲骨文在最新一轮裁员中裁撤数千人，同时公司继续加大人工智能支出。</div>
-        </blockquote>
-        <blockquote>
-          The IRGC named companies including Cisco, HP, Intel, Oracle, Microsoft, Apple, Google, Meta, IBM, Dell, Nvidia, Tesla, GE, JPMorgan, and Boeing, among others, as potential targets.
-          <div class="translation">翻译：伊斯兰革命卫队点名包括思科、惠普、英特尔、甲骨文、微软、苹果、谷歌、Meta、IBM、戴尔、英伟达、特斯拉、通用电气、摩根大通和波音在内的公司，作为潜在目标。</div>
-        </blockquote>
-        <blockquote>
-          Intel Foundry: A Last Chance.
-          <div class="translation">翻译：英特尔代工：最后的机会。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="track-header">光</div>
-        <blockquote>
-          The IRGC named companies including Cisco, HP, Intel, Oracle, Microsoft, Apple, Google, Meta, IBM, Dell, Nvidia, Tesla, GE, JPMorgan, and Boeing, among others, as potential targets.
-          <div class="translation">翻译：伊斯兰革命卫队点名包括思科、惠普、英特尔、甲骨文、微软、苹果、谷歌、Meta、IBM、戴尔、英伟达、特斯拉、通用电气、摩根大通和波音在内的公司，作为潜在目标。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="track-header">存</div>
-        <blockquote>
-          The IRGC named companies including Cisco, HP, Intel, Oracle, Microsoft, Apple, Google, Meta, IBM, Dell, Nvidia, Tesla, GE, JPMorgan, and Boeing, among others, as potential targets.
-          <div class="translation">翻译：伊斯兰革命卫队点名包括思科、惠普、英特尔、甲骨文、微软、苹果、谷歌、Meta、IBM、戴尔、英伟达、特斯拉、通用电气、摩根大通和波音在内的公司，作为潜在目标。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="track-header">电</div>
-        <blockquote>
-        </blockquote>
-      </li>
-      <li>
-        <div class="track-header">板</div>
-        <blockquote>
-          Helium stocks of South Korea's chipmakers to last until June, sources say.
-          <div class="translation">翻译：消息人士称，韩国芯片制造商的氦气库存将持续到6月。</div>
-        </blockquote>
-        <blockquote>
-          The IRGC named companies including Cisco, HP, Intel, Oracle, Microsoft, Apple, Google, Meta, IBM, Dell, Nvidia, Tesla, GE, JPMorgan, and Boeing, among others, as potential targets.
-          <div class="translation">翻译：伊斯兰革命卫队点名包括思科、惠普、英特尔、甲骨文、微软、苹果、谷歌、Meta、IBM、戴尔、英伟达、特斯拉、通用电气、摩根大通和波音在内的公司，作为潜在目标。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="track-header">云</div>
-        <blockquote>
-          MSFT at $358 feels like a gift. azure and AI sentiment has cooled off which is honestly when i like getting into these.
-          <div class="translation">翻译：微软股价在358美元感觉像是一个礼物。Azure和人工智能情绪已经降温，这正是我喜欢介入这些股票的时候。</div>
-        </blockquote>
-        <blockquote>
-          Oracle cutting thousands in latest layoff round as company continues to ramp AI spending.
-          <div class="translation">翻译：甲骨文在最新一轮裁员中裁撤数千人，同时公司继续加大人工智能支出。</div>
-        </blockquote>
-        <blockquote>
-          The IRGC named companies including Cisco, HP, Intel, Oracle, Microsoft, Apple, Google, Meta, IBM, Dell, Nvidia, Tesla, GE, JPMorgan, and Boeing, among others, as potential targets.
-          <div class="translation">翻译：伊斯兰革命卫队点名包括思科、惠普、英特尔、甲骨文、微软、苹果、谷歌、Meta、IBM、戴尔、英伟达、特斯拉、通用电气、摩根大通和波音在内的公司，作为潜在目标。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="track-header">AI应用</div>
-        <blockquote>
-          The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
-          <div class="translation">翻译：人工智能生成内容将侵蚀Adobe的席位许可，Canva和Midjourney将抢占其市场，生成模型将使专业创意软件过时的说法在方向上是合理的，但在最关键的方面几乎肯定是错误的：即对Adobe收入和盈利能力的最终影响。</div>
-        </blockquote>
-        <blockquote>
-          I am long Adobe and continue to add to my position as the risk/reward improves.
-          <div class="translation">翻译：我做多Adobe，并随着风险/回报比的改善继续增持。</div>
-        </blockquote>
-        <blockquote>
-          Pro-AI group to spend $100 million on US midterm elections as backlash grows.
-          <div class="translation">翻译：随着反对声日益高涨，亲人工智能团体计划在美国中期选举中投入1亿美元。</div>
-        </blockquote>
-        <blockquote>
-          FND Research Report: Written by an AI Workflow.
-          <div class="translation">翻译：FND研究报告：由AI工作流撰写。</div>
-        </blockquote>
-      </li>
+        <li>
+          <blockquote class="quote">
+            Anthropic is IPOing later this year. OpenAI [is also mentioned in the context of Nasdaq rule changes].
+            <div class="translation">翻译：Anthropic将于今年晚些时候进行IPO。OpenAI [在纳斯达克规则变更的背景下也被提及]。</div>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote class="quote">
+            The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
+            <div class="translation">翻译：关于AI生成内容将蚕食Adobe席位许可、Canva和Midjourney将抢占其市场、生成模型将使专业创意软件过时的说法在方向上是合理的，但在最关键的方面几乎肯定是错误的：即对Adobe收入和盈利能力的最终影响。</div>
+          </blockquote>
+        </li>
     </ul>
-
+    <div class="track-header">算</div>
+    <ul>
+        <li>
+          <blockquote class="quote">
+            Intel Foundry: A Last Chance.
+            <div class="translation">翻译：英特尔代工厂：最后的机会。</div>
+          </blockquote>
+        </li>
+    </ul>
+    <div class="track-header">光</div>
+    <ul>
+        <li>
+          <blockquote class="quote">
+            [未提及]
+            <div class="translation">翻译：[未提及]</div>
+          </blockquote>
+        </li>
+    </ul>
+    <div class="track-header">存</div>
+    <ul>
+        <li>
+          <blockquote class="quote">
+            [未提及]
+            <div class="translation">翻译：[未提及]</div>
+          </blockquote>
+        </li>
+    </ul>
+    <div class="track-header">电</div>
+    <ul>
+        <li>
+          <blockquote class="quote">
+            Defiance adds AI and power infrastructure ETF to European rollout. The Defiance AI & Power Infrastructure UCITS ETF (AIPO) is listed on Deutsche Börse and Borsa Italiana with a total expense ratio (TER) of 0.69%. AIPO tracks the MarketVector US Listed AI & Power Infrastructure index which captures companies exposed to electrical grid systems and AI infrastructure. This can be through nuclear and other decentralised energy technologies, electric equipment and related engineering and construction services, electrical utilities, data centre operations and AI-related computing hardware.
+            <div class="translation">翻译：Defiance将AI和电力基础设施ETF纳入欧洲发行计划。Defiance AI & Power Infrastructure UCITS ETF (AIPO)已在德意志交易所和意大利证券交易所上市，总费用比率（TER）为0.69%。AIPO追踪MarketVector美国上市AI和电力基础设施指数，该指数涵盖了涉足电力电网系统和AI基础设施的公司。这可以通过核能及其他分布式能源技术、电气设备及相关工程和建筑服务、电力公用事业、数据中心运营和AI相关计算硬件来实现。</div>
+          </blockquote>
+        </li>
+    </ul>
+    <div class="track-header">板</div>
+    <ul>
+        <li>
+          <blockquote class="quote">
+            [未提及]
+            <div class="translation">翻译：[未提及]</div>
+          </blockquote>
+        </li>
+    </ul>
+    <div class="track-header">云</div>
+    <ul>
+        <li>
+          <blockquote class="quote">
+            azure and AI sentiment has cooled off which is honestly when i like getting into these.
+            <div class="translation">翻译：Azure和AI的情绪已经冷却，这正是我喜欢介入这些股票的时候。</div>
+          </blockquote>
+        </li>
+    </ul>
+    <div class="track-header">AI应用</div>
+    <ul>
+        <li>
+          <blockquote class="quote">
+            Adobe is one of the most misunderstood software companies in the market today. The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
+            <div class="translation">翻译：Adobe是当今市场上最被误解的软件公司之一。关于AI生成内容将蚕食Adobe席位许可、Canva和Midjourney将抢占其市场、生成模型将使专业创意软件过时的说法在方向上是合理的，但在最关键的方面几乎肯定是错误的：即对Adobe收入和盈利能力的最终影响。</div>
+        </li>
+        <li>
+          <blockquote class="quote">
+            Adyen: Its Past & (AI) Future.
+            <div class="translation">翻译：Adyen：它的过去与（AI）未来。</div>
+          </blockquote>
+        </li>
+    </ul>
 </body>
 </html>
         </div>
