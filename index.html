@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>04月05日 情报终端</title>
+        <title>04月06日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,334 +36,277 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 04月05日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-04-05 21:35:22 (北京时间)</p>
+            <h1>🎯 04月06日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-04-06 11:46:08 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股市场情绪（2026年04月05日）</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
-        h1 { color: #2c3e50; text-align: center; margin-bottom: 30px; }
-        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
-        h3 { color: #34495e; margin-top: 20px; }
-        ul { list-style: none; padding: 0; }
-        li { background-color: #fff; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 10px; font-size: 1.1em; }
-        .quote { background-color: #ecf0f1; border-left: 4px solid #3498db; margin: 15px 0; padding: 10px 15px; font-style: italic; color: #555; }
-        .translation { font-size: 0.9em; color: #7f8c8d; margin-top: 10px; }
-        .track-header { font-weight: bold; color: #2980b9; margin-top: 15px; margin-bottom: 5px; font-size: 1.05em; border-bottom: 1px dashed #a0d9f7; padding-bottom: 5px; }
-        .summary-quote { background-color: #f0f8ff; border-left: 4px solid #2ecc71; margin: 15px 0; padding: 10px 15px; font-style: italic; color: #555; }
-        .summary-translation { font-size: 0.9em; color: #7f8c8d; margin-top: 10px; }
-    </style>
-</head>
-<body>
-
-    <h1>美股市场情绪（2026年04月05日）</h1>
-
-    <h2>1. 宏观与市场情绪</h2>
-    <div class="summary-quote">
-        Everyone is talking about the Iran war and Trump’s tariffs, but I wanted to see which companies are actually panicking in their official SEC filings. I looked for 8 specific themes: tariffs, war, geopolitical, oil/energy, sanctions, supply chain, interest rates, and recession. Here is the data. Some of this makes zero sense on paper, but the 10-Ks don't lie.
-        <div class="summary-translation">翻译：大家都在谈论伊朗战争和特朗普的关税，但我想看看哪些公司在他们的官方SEC文件中真正感到恐慌。我调查了8个具体主题：关税、战争、地缘政治、石油/能源、制裁、供应链、利率和衰退。这是数据。其中一些在纸面上毫无意义，但10-K文件不会说谎。</div>
-    </div>
-    <div class="summary-quote">
-        The market is pricing geopolitical risk like it's a one-day event. Put skew on SPY is steep in the weeklies and flattens out by June, so people are buying short-dated crash insurance but literally nobody is hedging the scenario where the Strait of Hormuz actually closes for three months. That's the disconnect. Oil is the transmission mechanism here. Hormuz closes, Brent goes to $140+ within weeks. That feeds into CPI within 60 days. Fed can't cut into an oil shock.
-        <div class="summary-translation">翻译：市场正在将地缘政治风险定价为一日事件。SPY的看跌期权偏斜在周度期权中很陡峭，但到6月就趋于平缓，所以人们正在购买短期崩盘保险，但实际上没有人对霍尔木兹海峡实际关闭三个月的情况进行对冲。这就是脱节之处。石油是这里的传导机制。霍尔木兹关闭，布伦特原油将在几周内升至140美元以上。这将在60天内传导至CPI。美联储无法在石油冲击中降息。</div>
-    </div>
-    <div class="summary-quote">
-        Iran War news continues to be BEARISH for the S&P. First, in line with their strategy of counter-escalations and widening, Iran continued attacks on regional refineries and desalination plants, hitting some in Kuwait. These types of attacks bring us from a short-term supply shock driven by logistics constraints (Hormuz), to a long-term supply shock driven by diminished production. Second, Iran has rejected a 48-hour ceasefire proposal by the US.
-        <div class="summary-translation">翻译：伊朗战争新闻对标普继续构成看跌影响。首先，伊朗按照其反升级和扩大策略，继续袭击区域炼油厂和海水淡化厂，袭击了科威特的一些设施。这类袭击使我们从物流限制（霍尔木兹）驱动的短期供应冲击，转向由生产减少驱动的长期供应冲击。其次，伊朗拒绝了美国提出的48小时停火提议。</div>
-    </div>
-    <div class="summary-quote">
-        I think everyone can agree the biggest thing in the stock market—not only this year, but in the history of the market—will be the SpaceX IPO. As we get closer and closer to the IPO in June, the media coverage and retail frenzy will only get crazier and crazier.
-        <div class="summary-translation">翻译：我认为每个人都同意，今年乃至整个市场历史上最大的事件将是SpaceX的IPO。随着6月IPO的临近，媒体报道和散户狂热只会越来越疯狂。</div>
-    </div>
-    <div class="summary-quote">
-        Michael Burry Flags 'Structural Manipulation' Risk In Nasdaq Rules Ahead Of Potential SpaceX Listing. The new Nasdaq rule changes pushed by Elon Musk/SpaceX are not just “Nasdaq made IPOs faster. It's a corrupt change, called out as "structural manipulation" by Michael Burry, that will make owners of new large IPO companies (like SpaceX or OpenAI) rich at the expense of the general public.
-        <div class="summary-translation">翻译：迈克尔·伯里（Michael Burry）指出纳斯达克规则在SpaceX可能上市前存在“结构性操纵”风险。埃隆·马斯克/SpaceX推动的纳斯达克新规则修改不仅仅是“纳斯达克加快了IPO速度”。迈克尔·伯里称之为“结构性操纵”，这将使大型IPO公司（如SpaceX或OpenAI）的所有者以牺牲公众利益为代价致富。</div>
-    </div>
-    <div class="summary-quote">
-        U.S. jobs growth surges past expectations in March.
-        <div class="summary-translation">翻译：美国3月份就业增长超出预期。</div>
-    </div>
-    <div class="summary-quote">
-        I keep hearing from manufacturers that orders are softer and everyone is cutting prices. Feels like margins are getting thinner. Are export-heavy companies going to get hit?
-        <div class="summary-translation">翻译：我不断听到制造商们说订单疲软，大家都在降价。感觉利润率越来越薄。出口型公司会受到冲击吗？</div>
-    </div>
-    <div class="summary-quote">
-        Institutional Flow Report: Major Rotation into 10Y Treasuries and S&P 500 Re-accumulation. S&P 500: Momentum is neutral (Z-Score: -0.47). COT flow shows a massive reversal with +37,299 contracts. Summary: Major shift; after previous distribution, institutional hedgers are re-entering aggressively.
-        <div class="summary-translation">翻译：机构资金流报告：大量资金转向10年期国债和标普500指数的再积累。标普500指数：动量中性（Z-Score: -0.47）。COT数据显示，合约数量大幅逆转，增加了37,299份。总结：重大转变；在之前的分销后，机构对冲者正在积极重新入场。</div>
-    </div>
-    <div class="summary-quote">
-        My instinct is that the volatility feels "real" but a lot of it is already priced in. You're buying insurance after the car already got hit.
-        <div class="summary-translation">翻译：我的直觉是，波动性感觉“真实”，但其中大部分已被定价。你是在汽车被撞后才购买保险。</div>
-    </div>
+            <h2>1. 宏观与市场情绪</h2>
+    <p>市场情绪在2026年4月6日受到地缘政治局势的强烈影响，尤其是美国与伊朗之间的冲突。原油价格飙升，并伴随对供应链中断和通胀上升的担忧。尽管如此，美元保持强势，而黄金作为避险资产的地位日益突出。宏观经济数据显示劳动力市场表现强劲，但消费者支出有所放缓。</p>
+    <blockquote>
+      US stock market futures fall at the open as President Trump declares Tuesday as “Power Plant and Bridge Day&quot; in Iran: S&P 500: -0.7% Nasdaq 100: -0.8% Dow Jones: -0.7% WTI Crude: +3.0% Natural Gas: +1.0% Gold: -0.9%.
+      <div class="translation">翻译：美国股指期货开盘下跌，此前特朗普总统宣布周二为伊朗的“发电厂和桥梁日”：标普500指数下跌0.7%，纳斯达克100指数下跌0.8%，道琼斯指数下跌0.7%，WTI原油上涨3.0%，天然气上涨1.0%，黄金下跌0.9%。</div>
+    </blockquote>
+    <blockquote>
+      everyone is talking about the iran war and trump’s tariffs, but i wanted to see which companies are actually panicking in their official sec filings. i spent my entire weekend digging through the "risk factors" section of the 2 most recent 10-Ks for 98 s&p 500 companies. i looked for 8 specific themes: tariffs, war, geopolitical, oil/energy, sanctions, supply chain, interest rates, and recession. here is the data.
+      <div class="translation">翻译：每个人都在谈论伊朗战争和特朗普的关税，但我想看看哪些公司在他们的官方SEC文件中真正感到恐慌。我整个周末都在查看98家标普500公司最近两次10-K文件的“风险因素”部分。我寻找了8个特定主题：关税、战争、地缘政治、石油/能源、制裁、供应链、利率和衰退。这是数据。</div>
+    </blockquote>
+    <blockquote>
+      Iran has attacked refineries again in Kuwait. These attacks are potentially the most bearish thing for the S&P, and the most bullish thing for oil. Every time there is refinery damage, a Hormuz re-opening becomes less and less helpful. These cause medium and long term supply disruptions, and medium and long term elevated oil prices, leading to a daisy chain impact on manufacturing and supply chains and an increase in CPI.
+      <div class="translation">翻译：伊朗再次袭击了科威特炼油厂。这些袭击可能对标普指数是最看跌的，对石油是最看涨的。每次炼油厂受损，霍尔木兹海峡重新开放的作用就越来越小。这些导致中长期供应中断和中长期油价上涨，进而对制造业和供应链产生连锁影响，并推高CPI。</div>
+    </blockquote>
+    <blockquote>
+      Facing the largest supply shock in history, I find it very peculiar that people are reluctant to allocate to oil and gas companies. I see a common theme where people see that the price of the stock has gone up and thus the move must already be over, or close to over, or too late.
+      <div class="translation">翻译：面对历史上最大的供应冲击，我发现人们不愿配置石油和天然气公司非常奇怪。我看到一个普遍的现象是，人们认为股价已经上涨，因此这波行情肯定已经结束，或者即将结束，或者为时已晚。</div>
+    </blockquote>
+    <blockquote>
+      The market is pricing geopolitical risk like it's a one-day event. Put skew on SPY is steep in the weeklies and flattens out by June, so people are buying short-dated crash insurance but literally nobody is hedging the scenario where the Strait of Hormuz actually closes for three months.
+      <div class="translation">翻译：市场正在将地缘政治风险定价为一天事件。SPY的看跌期权偏度在周度期权中很陡峭，但到六月就趋于平缓，所以人们正在购买短期崩盘保险，但实际上没有人对霍尔木兹海峡实际关闭三个月的情况进行对冲。</div>
+    </blockquote>
+    <blockquote>
+      The market has four cycles: Early cycle, Mid cycle, Late cycle and recession. Currently I think we are late cycle heading towards recession unless their is an end to the war soon. The oil shocks are too large.
+      <div class="translation">翻译：市场有四个周期：早期周期、中期周期、后期周期和衰退。目前我认为我们处于后期周期，正走向衰退，除非战争很快结束。石油冲击太大。</div>
+    </blockquote>
+    <blockquote>
+      U.S. jobs growth surges past expectations in March.
+      <div class="translation">翻译：美国3月份就业增长超出预期。</div>
+    </blockquote>
+    <blockquote>
+      I’m curious of everyone’s current status year to date. Currently right now I’m down ~5% which is about 7,000 USD of my portfolio. How is everyone else doing? Are you guys holding dry powder still or buying?
+      <div class="translation">翻译：我很好奇大家今年的最新情况。目前我的投资组合下跌了约5%，即约7000美元。其他人怎么样？你们还在持有现金还是在买入？</div>
+    </blockquote>
+    <blockquote>
+      Please explain why the Dollar is still so strong despite everything happening? It was 15% weaker 5 months ago.
+      <div class="translation">翻译：请解释一下为什么美元在发生这么多事情之后仍然如此坚挺？它在5个月前还弱了15%。</div>
+    </blockquote>
+    <blockquote>
+      Are you all seeing a reduction in consumer discretionary shopping as well? This is not strictly investing per se but I run a vintage and collectibles item shop out here in Arizona. And I’m seeing a huge drop in sales this past month.
+      <div class="translation">翻译：你们也看到了非必需消费品购物减少了吗？这本身并非严格意义上的投资，但我我在亚利桑那州经营一家古董和收藏品商店。我看到上个月销售额大幅下降。</div>
+    </blockquote>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
-        <li>
-            <div class="stock-tag">MSFT (微软)</div>
-            <blockquote class="quote">
-                The Artemis II team have reported issues regarding Microsoft Outlook and glitches with the platform. Just thought I would share in case this has a little impact on the stock! Not the type of marketing you would want if you were Microsoft!
-                <div class="translation">翻译：Artemis II团队报告了微软Outlook的问题和平台故障。只是想分享一下，以防这会对股票产生一点影响！如果我是微软，这可不是我想要的营销！</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">COIN (Coinbase Global, Inc.)</div>
-            <blockquote class="quote">
-                The actual beneficiary is Coinbase — it is the exchange infrastructure that does not care which coin wins. The Prime brokerage business is underappreciated.
-                <div class="translation">翻译：实际受益者是Coinbase——它是交易所基础设施，它不关心哪种加密货币获胜。其主要经纪业务被低估了。</div>
-            </blockquote>
-            <blockquote class="quote">
-                BlackRock custodies its IBIT holdings through Coinbase. That is not just fee revenue — it is a trust relationship with institutional capital that is sticky and expanding.
-                <div class="translation">翻译：贝莱德通过Coinbase托管其IBIT持仓。这不仅仅是费用收入，它是一种与机构资本建立的信任关系，这种关系具有粘性且正在不断扩大。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Transaction revenue gets all the attention, but the subscription and services line now runs above $500M quarterly and barely fluctuates with crypto prices. That is the part that compounds. The market keeps discounting COIN as a speculative crypto play, but a growing chunk of the P&L is starting to look like a stable business.
-                <div class="translation">翻译：交易收入备受关注，但其订阅和服务业务线现在每季度收入超过5亿美元，并且几乎不随加密货币价格波动。这才是复利增长的部分。市场继续将COIN视为投机性的加密货币玩法，但其损益表中越来越大的一部分开始看起来像一个稳定的业务。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">TRMB (Trimble Inc.)</div>
-            <blockquote class="quote">
-                The gross margin and EBITDA jumps everyone points to were materially front-loaded by January term-license renewals. That is a calendar effect.
-                <div class="translation">翻译：每个人都提到的毛利率和EBITDA的增长很大程度上是由于1月份的定期许可续约提前实现的。这是一个日历效应。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Trimble collects a big chunk of recurring software revenue at the start of the year, which flatters Q1 numbers and makes trailing comparisons look like genuine operational progress when they are partly just timing.
-                <div class="translation">翻译：Trimble在年初收取了大部分经常性软件收入，这使得第一季度的数字看起来很好，并使得同期比较看起来像是真正的运营进展，而部分原因只是时间安排。</div>
-            </blockquote>
-            <blockquote class="quote">
-                On top of that, the execution risk is real. The transition from perpetual to subscription licensing is still mid-cycle, and they are running it while also integrating acquisitions. Those two things together tend to produce guidance miss risk.
-                <div class="translation">翻译：除此之外，执行风险是真实存在的。从永久许可到订阅许可的转型仍处于中期，他们正在进行这项工作，同时也在整合收购。这两件事加在一起往往会产生业绩指引未达预期的风险。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">MU (Micron Technology, Inc.)</div>
-            <blockquote class="quote">
-                I bought MU stock in the end of 2024 and sold it after it couldn’t hold $100. Had 500 shares and sold for a loss around 89 and 65.
-                <div class="translation">翻译：我在2024年底买了MU股票，在它未能守住100美元后卖出了。当时有500股，以大约89美元和65美元的价格亏本卖出。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Same shares if had held would be worth 183k at 365.
-                <div class="translation">翻译：如果我当时持有同样的股票，现在价值将是18.3万美元，每股365美元。</div>
-            </blockquote>
-            <blockquote class="quote">
-                MU was my big winner netting $5329.
-                <div class="translation">翻译：MU是我的大赢家，净赚5329美元。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">ADBE (Adobe Inc.)</div>
-            <blockquote class="quote">
-                Adobe is one of the most misunderstood software companies in the market today. The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
-                <div class="translation">翻译：Adobe是当今市场上最被误解的软件公司之一。人工智能生成内容将蚕食Adobe的席位许可，Canva和Midjourney将抢占其市场，生成模型将使专业创意软件过时的说法在方向上是合理的，但在最关键的方面几乎肯定是错误的：对Adobe收入和盈利能力的最终影响。</div>
-            </blockquote>
-            <blockquote class="quote">
-                I am long Adobe and continue to add to my position as the risk/reward improves. The Q1 FY2026 earnings print, a record beat on every major metric, bolsters my thesis.
-                <div class="translation">翻译：我做多Adobe，并随着风险/回报比的改善继续加仓。2026财年第一季度财报，各项主要指标均创纪录超预期，这支撑了我的论点。</div>
-            </blockquote>
-        </li>
+      <li>
+        <div class="stock-tag">META (Meta Platforms, Inc.)</div>
+        <blockquote class="quote">
+          Saw premarket was tanking april 2nd and was about to get margin called and dumped meta at 561 and slv at 62 for a 300k loss.
+          <div class="translation">翻译：4月2日看到盘前暴跌，我即将面临追加保证金，于是以561美元的价格抛售了Meta，以62美元的价格抛售了SLV，亏损了30万美元。</div>
+        </blockquote>
+        <blockquote class="quote">
+          You're welcome silver and meta holders.
+          <div class="translation">翻译：不客气，白银和Meta的持有者们。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Back to the EBITDA: Decoding Meta’s $1,116 Executive Playbook.
+          <div class="translation">翻译：回到EBITDA：解读Meta的1,116美元高管策略手册。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">COIN (Coinbase Global, Inc.)</div>
+        <blockquote class="quote">
+          I had a ‘feeling’ about Bitcoin last week.
+          <div class="translation">翻译：上周我对比特币有一种“预感”。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Every time crypto gets a serious institutional tailwind, the analysis focuses on BTC and ETH prices. The actual beneficiary is Coinbase — it is the exchange infrastructure that does not care which coin wins. The Prime brokerage business is underappreciated.
+          <div class="translation">翻译：每当加密货币获得强劲的机构利好时，分析都集中在比特币和以太坊的价格上。实际受益者是Coinbase——它是交易基础设施，不关心哪个币种胜出。其主要经纪业务被低估了。</div>
+        </blockquote>
+        <blockquote class="quote">
+          BlackRock custodies its IBIT holdings through Coinbase. That is not just fee revenue — it is a trust relationship with institutional capital that is sticky and expanding. You do not just switch custody providers for a $50B ETF overnight.
+          <div class="translation">翻译：贝莱德通过Coinbase托管其IBIT持仓。这不仅仅是费用收入，它还是一种与机构资本之间稳固且不断扩大的信任关系。你不可能在一夜之间为500亿美元的ETF更换托管服务商。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">MU (Micron Technology, Inc.)</div>
+        <blockquote class="quote">
+          I bought MU stock in the end of 2024 and sold it after it couldn’t hold $100. Had 500 shares and sold for a loss around 89 and fucking 65.
+          <div class="translation">翻译：我在2024年底买了美光科技的股票，在它未能守住100美元后卖出。持有500股，以89美元和65美元左右的价格卖出，亏损。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Same shares if had held would be worth 183k at 365.
+          <div class="translation">翻译：如果当时持有同样的股票，现在价值将达到18.3万美元，每股365美元。</div>
+        </blockquote>
+        <blockquote class="quote">
+          MU was my big winner netting $5329.
+          <div class="translation">翻译：美光是我的大赢家，净赚5329美元。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">LITE (Lumentum Holdings Inc.)</div>
+        <blockquote class="quote">
+          Lumentum is no longer just an optical components company serving legacy networking markets. The business is increasingly being repriced as a critical supplier to the AI infrastructure buildout, especially where speed, bandwidth, power efficiency, and optical connectivity start to become bottlenecks. That shift is real.
+          <div class="translation">翻译：Lumentum不再仅仅是一家服务传统网络市场的光学组件公司。该业务正日益被重新定价为AI基础设施建设的关键供应商，尤其是在速度、带宽、电源效率和光连接开始成为瓶颈的领域。这种转变是真实存在的。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Non-GAAP diluted earnings per share increased from $0.57 in fiscal Q3 2025 to $1.67 in fiscal Q2 2026, a gain of roughly 193% in less than a year. Management now guides fiscal Q3 2026 to $2.25. That is not hype. It is a real acceleration in earnings power.
+          <div class="translation">翻译：非GAAP摊薄每股收益从2025财年第三季度的0.57美元增至2026财年第二季度的1.67美元，在不到一年的时间里增长了约193%。管理层目前预计2026财年第三季度将达到2.25美元。这不是炒作，而是盈利能力的真实加速。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The optical/data center AI theme has been giving these names some serious vol.
+          <div class="translation">翻译：光通信/数据中心AI主题给这些股票带来了巨大的波动。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">ADBE (Adobe Inc.)</div>
+        <blockquote class="quote">
+          Adobe is one of the most misunderstood software companies in the market today.
+          <div class="translation">翻译：Adobe是当今市场上最被误解的软件公司之一。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
+          <div class="translation">翻译：关于AI生成内容将蚕食Adobe许可证、Canva和Midjourney将抢占其市场、生成模型将使专业创意软件过时的说法在方向上是合理的，但在最重要的方式上几乎肯定是错误的：即对Adobe收入和盈利能力的最终影响。</div>
+        </blockquote>
+        <blockquote class="quote">
+          I am long Adobe and continue to add to my position as the risk/reward improves. The Q1 FY2026 earnings print, a record beat on every major metric, bolsters my thesis which I highlight below.
+          <div class="translation">翻译：我做多Adobe，并随着风险/回报的改善继续增持。2026财年第一季度的财报，在所有主要指标上均创下历史新高，这加强了我的论点，我在下文中对此进行了强调。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>3. 小众公司冒泡</h2>
     <ul>
-        <li>
-            <div class="stock-tag">LEU (Centrus Energy Corp.)</div>
-            <blockquote class="quote">
-                Will sit down and do a proper DD, but since there is so much to write about I will do that in a seperate post. For now, here is my starting position.
-                <div class="translation">翻译：我会坐下来做一份适当的尽职调查，但因为有很多内容要写，我将在另一篇文章中完成。目前，这是我的初始仓位。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Due to the geopolitical situation I am keeping a lot of cash for flexibility but as the situation resolves and clarity returns to the market I will be adding to the position.
-                <div class="translation">翻译：由于地缘政治局势，我保留了大量现金以保持灵活性，但随着局势解决和市场明朗，我将增加仓位。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">SOFI (SoFi Technologies, Inc.)</div>
-            <blockquote class="quote">
-                Myself along with a few of you dastardly gentlemen are most likely holding the bag on SOFI. I'm posting to illustrate how I've near completely mismanaged this trade from a timing and execution standpoint but still have my head above water.
-                <div class="translation">翻译：我和你们中的一些人很可能正在持有SOFI的“包袱”。我发帖是为了说明我如何几乎完全错误地管理了这笔交易，无论从时机还是执行角度，但仍然勉强维持着。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Given SOFI lands in the meme bucket, my initial outlay is about 30% of the total allocation. Entry consists of a combination of long stock, short calls & puts.
-                <div class="translation">翻译：考虑到SOFI属于“meme股”类别，我的初始投入约占总配置的30%。入场包括多头股票、空头看涨期权和看跌期权的组合。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Sofi is currently -27% from my entry point, my open PNL is -$2,533, closed +$3,065 for a total of +532.
-                <div class="translation">翻译：Sofi目前较我的入场点下跌27%，我的未实现盈亏为-2,533美元，已实现盈亏为+3,065美元，总计+532美元。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">DE (Deere & Company)</div>
-            <blockquote class="quote">
-                Why don't more people talk about these stocks. John Deere (DE) and Caterpillar (CAT) have outperformed VOO and VTI in the past 2 decades.
-                <div class="translation">翻译：为什么更多人不说这些股票。约翰迪尔（DE）和卡特彼勒（CAT）在过去20年里跑赢了VOO和VTI。</div>
-            </blockquote>
-            <blockquote class="quote">
-                I believe this is due to the fact that when the world it falling to pieces, farmers are not stopping, during the pandemic and the market fall in 2022, farmers did not stop farming, construction workers did not stop working.
-                <div class="translation">翻译：我相信这是因为当世界陷入混乱时，农民们不会停止劳作，在疫情和2022年市场下跌期间，农民没有停止耕种，建筑工人也没有停止工作。</div>
-            </blockquote>
-            <blockquote class="quote">
-                For example during this war going on currently VOO and VTI are down 4%, while DE and CAT are up above 20% YTD.
-                <div class="translation">翻译：例如，在当前正在进行的这场战争中，VOO和VTI下跌了4%，而DE和CAT今年迄今上涨了20%以上。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">CAT (Caterpillar Inc.)</div>
-            <blockquote class="quote">
-                John Deere (DE) and Caterpillar (CAT) have outperformed VOO and VTI in the past 2 decades.
-                <div class="translation">翻译：约翰迪尔（DE）和卡特彼勒（CAT）在过去20年里跑赢了VOO和VTI。</div>
-            </blockquote>
-            <blockquote class="quote">
-                I believe this is due to the fact that when the world it falling to pieces, farmers are not stopping, during the pandemic and the market fall in 2022, farmers did not stop farming, construction workers did not stop working.
-                <div class="translation">翻译：我相信这是因为当世界陷入混乱时，农民们不会停止劳作，在疫情和2022年市场下跌期间，农民没有停止耕种，建筑工人也没有停止工作。</div>
-            </blockquote>
-            <blockquote class="quote">
-                For example during this war going on currently VOO and VTI are down 4%, while DE and CAT are up above 20% YTD.
-                <div class="translation">翻译：例如，在当前正在进行的这场战争中，VOO和VTI下跌了4%，而DE和CAT今年迄今上涨了20%以上。</div>
-            </blockquote>
-        </li>
+      <li>
+        <div class="stock-tag">OWL (Blue Owl Capital Inc.)</div>
+        <blockquote class="quote">
+          Blue Owl Stock Crashes to All-Time Low After $5.4 Billion Redemption Requests.
+          <div class="translation">翻译：蓝猫资本股价在54亿美元赎回请求后跌至历史新低。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Investors requested to pull 40.7% of Blue Owl's $6.2 billion tech-focused fund and 21.9% of its $36 billion flagship credit fund in Q1, among the largest quarterly redemption requests ever seen in the non-traded BDC market. OWL stock dropped 5.4% to $8.24, now down over 40% year-to-date.
+          <div class="translation">翻译：投资者请求在第一季度撤回蓝猫资本62亿美元科技基金的40.7%和其360亿美元旗舰信贷基金的21.9%，这是非上市BDC市场有史以来最大的季度赎回请求之一。OWL股价下跌5.4%至8.24美元，今年迄今已下跌超过40%。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">LAC (Lithium Americas Corp.)</div>
+        <blockquote class="quote">
+          LAC - 2.3b loan/stake from Department of Energy, largest Lithium deposit in North America.
+          <div class="translation">翻译：LAC——获得能源部23亿美元贷款/股权，拥有北美最大的锂矿床。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">UUUU (Energy Fuels Inc.)</div>
+        <blockquote class="quote">
+          UUUU - Greenlit for infrastructure build out, has the only US processing plant for Uranium ore.
+          <div class="translation">翻译：UUUU——已获准进行基础设施建设，拥有美国唯一一家铀矿石加工厂。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">DE (Deere & Company)</div>
+        <blockquote class="quote">
+          John Deere (DE) and Caterpillar (CAT) have outperformed VOO and VTI in the past 2 decades.
+          <div class="translation">翻译：在过去的20年里，约翰迪尔（DE）和卡特彼勒（CAT）的表现优于VOO和VTI。</div>
+        </blockquote>
+        <blockquote class="quote">
+          during this war going on currently VOO and VTI are down 4%, while DE and CAT are up above 20% YTD.
+          <div class="translation">翻译：在当前正在进行的这场战争中，VOO和VTI今年迄今下跌了4%，而DE和CAT则上涨了20%以上。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">CAT (Caterpillar Inc.)</div>
+        <blockquote class="quote">
+          John Deere (DE) and Caterpillar (CAT) have outperformed VOO and VTI in the past 2 decades.
+          <div class="translation">翻译：在过去的20年里，约翰迪尔（DE）和卡特彼勒（CAT）的表现优于VOO和VTI。</div>
+        </blockquote>
+        <blockquote class="quote">
+          during this war going on currently VOO and VTI are down 4%, while DE and CAT are up above 20% YTD.
+          <div class="translation">翻译：在当前正在进行的这场战争中，VOO和VTI今年迄今下跌了4%，而DE和CAT则上涨了20%以上。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">INO (Inovio Pharmaceuticals, Inc.)</div>
+        <blockquote class="quote">
+          Why is Inovio Board investing in the Co. even as shares crash? It's a tell to a card player- A strong future movement is in the cards?
+          <div class="translation">翻译：为何Inovio董事会在股价暴跌之际仍投资公司？这对牌手而言是个暗示——未来会有强劲走势吗？</div>
+        </blockquote>
+        <blockquote class="quote">
+          They're sure we're approaching daylight-they have experts, Funds for 3107-3100-5412-Factor VIII rollout: will pay off, they know how it will go.
+          <div class="translation">翻译：他们确信我们即将迎来曙光——他们拥有专家，3107-3100-5412-因子VIII的推出资金将获得回报，他们知道事情会如何发展。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">INTC (Intel Corporation)</div>
+        <blockquote class="quote">
+          Intel Foundry: A Last Chance.
+          <div class="translation">翻译：英特尔代工厂：最后的机会。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">ADYEN (Adyen N.V.)</div>
+        <blockquote class="quote">
+          Adyen: Its Past & (AI) Future.
+          <div class="translation">翻译：Adyen：它的过去与（AI）未来。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Adyen: Much ado about nothing...or something?
+          <div class="translation">翻译：Adyen：大惊小怪……还是确有其事？</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
     <div class="track-header">模型</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                SpaceX might be our first look at an AI labs' numbers since it owns xAI. Granted it's not OAI or Anthropic but should be a good baseline given Twitter's userbase using Grok.
-                <div class="translation">翻译：SpaceX可能是我们首次了解AI实验室财务数据的一个机会，因为它拥有xAI。虽然它不是OpenAI或Anthropic，但考虑到Twitter的用户群正在使用Grok，它应该是一个很好的基准。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                It's a popular idea among finance boomers that software companies are only going down because AI is kicking their asses so much. You can build your own saas product in house now, AI is so great.
-                <div class="translation">翻译：金融界的老一辈中有一个流行的观点，认为软件公司之所以下跌，是因为AI对它们造成了巨大冲击。你现在可以在内部构建自己的SaaS产品了，AI太棒了。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Last year Jan when DeepSeek dropped, entire semiconductor market bled and the investor thesis was wrong. Now last month when TurboQuant dropped, market bled again. People went gaga over DeepSeek because it's an efficient AI and people assumed demand will fall because now AI can be made cheaply. But when inference got cheaper it expanded who could afford to deploy AI at all.
-                <div class="translation">翻译：去年1月DeepSeek发布时，整个半导体市场都遭受重创，投资者的论点是错误的。上个月TurboQuant发布时，市场再次遭受重创。人们对DeepSeek趋之若鹜，因为它是一种高效的AI，人们认为需求会下降，因为现在AI可以便宜地制造。但当推理变得更便宜时，它扩大了能够部署AI的群体。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                The deeper concern driving the tech fund specifically: investors are fleeing exposure to software companies that could be disrupted by AI, exactly the type of loans these private credit funds are invested in.
-                <div class="translation">翻译：驱动科技基金的更深层担忧是：投资者正在逃离可能被AI颠覆的软件公司敞口，而这正是这些私募信贷基金所投资的贷款类型。</div>
-            </blockquote>
-        </li>
-    </ul>
-
+    <blockquote>
+      Musk asks SpaceX IPO banks to buy Grok AI subscriptions, NYT reports.
+      <div class="translation">翻译：据《纽约时报》报道，马斯克要求SpaceX IPO的银行购买Grok AI订阅服务。</div>
+    </blockquote>
     <div class="track-header">算</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                Recently Google teased TurboQuant (an algorithm that compresses memory) so the market thought that demand will crash for RAM so let’s just sell everything.
-                <div class="translation">翻译：最近谷歌发布了TurboQuant（一种压缩内存的算法），市场认为内存需求将大幅下降，因此大家纷纷抛售。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                With TurboQuant, the algorithm only touches inference memory and has zero impact on training memory where the majority of demand lies.
-                <div class="translation">翻译：对于TurboQuant，该算法只影响推理内存，对训练内存（大部分需求所在）没有影响。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                With Deepseek, cheaper inference expanded who could afford AI, demand went up not down.
-                <div class="translation">翻译：有了Deepseek，更便宜的推理扩大了能够承担AI的群体，需求不降反升。</div>
-            </blockquote>
-        </li>
-    </ul>
-
+    <blockquote>
+      Nearly half of planned US data centers have been delayed or canceled limited by shortages of power. Companies like Amazon, Oracle, Meta, Google, and OpenAI have committed over 600B this year to building out datacenters.
+      <div class="translation">翻译：美国近半数计划中的数据中心因电力短缺而被延迟或取消。亚马逊、甲骨文、Meta、谷歌和OpenAI等公司今年已承诺投入超过6000亿美元建设数据中心。</div>
+    </blockquote>
+    <blockquote>
+      electrical power components like transformers, switchgears, and batteries, are not able to keep up with demand. Exports of these critical parts have increased coming out from China, but it isn't enoughto meet the unsatiable demand for AI in the US.
+      <div class="translation">翻译：变压器、开关设备和电池等电力组件无法满足需求。尽管来自中国的这些关键部件出口有所增加，但仍不足以满足美国对AI永不满足的需求。</div>
+    </blockquote>
+    <blockquote>
+      Lumentum is no longer just an optical components company serving legacy networking markets. The business is increasingly being repriced as a critical supplier to the AI infrastructure buildout, especially where speed, bandwidth, power efficiency, and optical connectivity start to become bottlenecks.
+      <div class="translation">翻译：Lumentum不再仅仅是一家服务传统网络市场的光学组件公司。该业务正日益被重新定价为AI基础设施建设的关键供应商，尤其是在速度、带宽、电源效率和光连接开始成为瓶颈的领域。</div>
+    </blockquote>
     <div class="track-header">光</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                The optical/data center AI theme has been giving these names some serious vol.
-                <div class="translation">翻译：光通信/数据中心AI主题给这些股票带来了巨大的波动。</div>
-            </blockquote>
-        </li>
-    </ul>
-
+    <blockquote>
+      Lumentum is no longer just an optical components company serving legacy networking markets. The business is increasingly being repriced as a critical supplier to the AI infrastructure buildout, especially where speed, bandwidth, power efficiency, and optical connectivity start to become bottlenecks.
+      <div class="translation">翻译：Lumentum不再仅仅是一家服务传统网络市场的光学组件公司。该业务正日益被重新定价为AI基础设施建设的关键供应商，尤其是在速度、带宽、电源效率和光连接开始成为瓶颈的领域。</div>
+    </blockquote>
+    <blockquote>
+      The optical/data center AI theme has been giving these names some serious vol.
+      <div class="translation">翻译：光通信/数据中心AI主题给这些股票带来了巨大的波动。</div>
+    </blockquote>
     <div class="track-header">存</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                Recently Google teased TurboQuant (an algorithm that compresses memory) so the market thought that demand will crash for RAM so let’s just sell everything.
-                <div class="translation">翻译：最近谷歌发布了TurboQuant（一种压缩内存的算法），市场认为内存需求将大幅下降，因此大家纷纷抛售。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                So memory demand drastically rose.
-                <div class="translation">翻译：因此，内存需求急剧上升。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                With TurboQuant, the algorithm only touches inference memory and has zero impact on training memory where the majority of demand lies.
-                <div class="translation">翻译：对于TurboQuant，该算法只影响推理内存，对训练内存（大部分需求所在）没有影响。</div>
-            </blockquote>
-        </li>
-    </ul>
-
+    <blockquote>
+      Will this change the outlook on other supplier companies like memory and gpus for 2026?
+      <div class="translation">翻译：这会改变2026年内存和GPU等其他供应商公司的前景吗？</div>
+    </blockquote>
     <div class="track-header">电</div>
-    <p>暂无相关讨论。</p>
-
+    <blockquote>
+      Nearly half of planned US data centers have been delayed or canceled limited by shortages of power.
+      <div class="translation">翻译：美国近半数计划中的数据中心因电力短缺而被延迟或取消。</div>
+    </blockquote>
+    <blockquote>
+      However, electrical power components like transformers, switchgears, and batteries, are not able to keep up with demand.
+      <div class="translation">翻译：然而，变压器、开关设备和电池等电力组件无法满足需求。</div>
+    </blockquote>
+    <blockquote>
+      The only sustainable "clean" energy to reach the government's goal of zero emissions by 2050 is going nuclear. The US alone will need 300-320 small nuclear reactors, which consume about half a million pounds of enriched Uranium per year.
+      <div class="translation">翻译：到2050年实现政府零排放目标的唯一可持续“清洁”能源是核能。仅美国就需要300-320座小型核反应堆，每年消耗约50万磅浓缩铀。</div>
+    </blockquote>
     <div class="track-header">板</div>
-    <p>暂无相关讨论。</p>
-
+    <p>（暂无相关高质量讨论）</p>
     <div class="track-header">云</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                You can build your own saas product in house now, AI is so great.
-                <div class="translation">翻译：现在你可以在内部构建自己的SaaS产品了，AI太棒了。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                The company's software-as-a-service (SAAS) platform utilizes AI technology to analyze structured and unstructured data from.
-                <div class="translation">翻译：该公司的软件即服务（SaaS）平台利用AI技术分析结构化和非结构化数据。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                The deeper concern driving the tech fund specifically: investors are fleeing exposure to software companies that could be disrupted by AI.
-                <div class="translation">翻译：驱动科技基金的更深层担忧是：投资者正在逃离可能被AI颠覆的软件公司敞口。</div>
-            </blockquote>
-        </li>
-    </ul>
-
+    <blockquote>
+      The company's software-as-a-service (SAAS) platform utilizes AI technology to analyze structured and unstructured data.
+      <div class="translation">翻译：该公司的软件即服务（SAAS）平台利用AI技术分析结构化和非结构化数据。</div>
+    </blockquote>
     <div class="track-header">AI应用</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
-                <div class="translation">翻译：人工智能生成内容将蚕食Adobe的席位许可，Canva和Midjourney将抢占其市场，生成模型将使专业创意软件过时的说法在方向上是合理的，但在最关键的方面几乎肯定是错误的：对Adobe收入和盈利能力的最终影响。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                The company's software-as-a-service (SAAS) platform utilizes AI technology to analyze structured and unstructured data from.
-                <div class="translation">翻译：该公司的软件即服务（SaaS）平台利用AI技术分析结构化和非结构化数据。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Adyen: Its Past & (AI) Future
-                <div class="translation">翻译：Adyen：它的过去与（AI）未来。</div>
-            </blockquote>
-        </li>
-    </ul>
-
-</body>
-</html>
+    <blockquote>
+      It's a popular idea among finance boomers that software companies are only going down because AI is kicking their asses so much. "You can build your own saas product in house now, AI is so great".
+      <div class="translation">翻译：金融界婴儿潮一代中流行一种观点，认为软件公司之所以走下坡路，是因为AI把它们打得落花流水。“现在你可以自己内部构建SaaS产品了，AI太棒了”。</div>
+    </blockquote>
+    <blockquote>
+      SpaceX IPO will be our first look at AI lab financials since it owns xAI. Granted it's not OAI or Anthropic but should be a good baseline given Twitter's userbase using Grok.
+      <div class="translation">翻译：SpaceX的IPO将是我们首次了解AI实验室的财务状况，因为它拥有xAI。虽然它不是OpenAI或Anthropic，但考虑到Twitter用户群使用Grok，应该是一个很好的基线。</div>
+    </blockquote>
+    <blockquote>
+      The narrative that AI-generated content will cannibalize Adobe’s seat licenses, that Canva and Midjourney will eat its lunch, that generative models render professional creative software obsolete is directionally plausible, but almost certainly wrong in the way that matters most: the ultimate impact on Adobe’s revenue and earnings power.
+      <div class="translation">翻译：关于AI生成内容将蚕食Adobe许可证、Canva和Midjourney将抢占其市场、生成模型将使专业创意软件过时的说法在方向上是合理的，但在最重要的方式上几乎肯定是错误的：即对Adobe收入和盈利能力的最终影响。</div>
+    </blockquote>
         </div>
         <script>
             var myChart = echarts.init(document.getElementById('gauge'));
