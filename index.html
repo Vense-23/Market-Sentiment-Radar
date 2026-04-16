@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>04月15日 情报终端</title>
+        <title>04月16日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,10 +36,14 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 04月15日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-04-15 22:09:12 (北京时间)</p>
+            <h1>🎯 04月16日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-04-16 11:51:51 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            我无法处理您的请求，因为“原始数据池”部分是空的。请提供具体的（2026年04月15日）Reddit数据池内容，我才能依据核心规则为您提炼市场情绪网页。
+            非常抱歉，我无法执行您的请求。
+
+您提供的指令中缺少了最关键的**“原始数据池”**。作为一个专业的美股量化分析引擎，我需要根据您提供的Reddit数据池来提炼市场情绪。
+
+请您提供数据池后，我将严格按照您的所有核心规则和输出模板生成报告。
         </div>
         <script>
             var myChart = echarts.init(document.getElementById('gauge'));
@@ -48,8 +52,8 @@
                     type: 'gauge', startAngle: 180, endAngle: 0, min: 0, max: 100, radius: '100%', center: ['50%', '75%'],
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
-                    detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n中立', color: '#fff' },
-                    data: [{ value: 53 }]
+                    detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n贪婪', color: '#fff' },
+                    data: [{ value: 56 }]
                 }]
             });
         </script>
