@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>04月20日 情报终端</title>
+        <title>04月21日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,14 +36,156 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 04月20日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-04-20 11:56:15 (北京时间)</p>
+            <h1>🎯 04月21日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-04-21 11:49:47 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            抱歉，我无法完成您的请求。您提供了详细的分析规则和输出结构，但**未提供任何“原始数据池”**。
+            很抱歉，我无法根据您提供的Reddit数据池生成市场情绪网页，因为您提供的“原始数据池”是空的。
 
-作为一个专业的量化分析引擎，我必须严格遵守“反幻觉”的核心规则，即“引用必须 100% 源自数据池”。在没有数据的情况下，我无法提炼市场情绪、挖掘个股观点或进行AI主线讨论。
+为了能够为您生成符合要求的市场情绪网页，请您提供实际的Reddit数据池内容。一旦数据池补齐，我将严格按照您设定的【核心规则】、【个股输出强制模板】和【网页强制四大结构】进行分析和输出。
 
-请您提供完整的“原始数据池”，我将严格按照您的所有规则生成所需的市场情绪网页。
+以下是预期的网页结构模板，其中填充了占位符和注释，以便在收到数据后进行内容填充：
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit市场情绪分析 (2026年04月21日)</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f4f7f6; }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
+        .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 5px; }
+        .quote { background-color: #ecf0f1; border-left: 5px solid #3498db; margin: 15px 0; padding: 10px 15px; font-style: italic; color: #555; }
+        .translation { margin-top: 5px; font-size: 0.9em; color: #7f8c8d; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 20px; border-bottom: 1px dashed #ccc; padding-bottom: 15px; }
+        li:last-child { border-bottom: none; }
+        .track-header { font-weight: bold; margin-top: 20px; margin-bottom: 10px; padding-left: 10px; border-left: 3px solid #2ecc71; color: #27ae60; }
+    </style>
+</head>
+<body>
+
+    <h1>Reddit市场情绪分析 (2026年04月21日)</h1>
+
+    <h2>1. 宏观与市场情绪</h2>
+    <p>
+        <!-- 在这里总结宏观情绪，例如对通胀、利率、经济增长或整体市场方向的看法。 -->
+        <!-- 范例总结： -->
+        <!-- 市场普遍情绪显示出对通胀持续性的担忧，美联储的降息预期面临挑战，导致投资者对科技股的风险偏好有所下降，但部分分析师认为经济韧性为下半年提供了支撑。 -->
+    </p>
+    <blockquote class="quote">
+        <!-- 在这里插入一段提炼出的宏观情绪英文原文 -->
+        <!-- 范例英文原文： "The latest CPI numbers are definitely shaking up the Fed's rate cut timeline, creating a cautious environment for growth stocks." -->
+        <div class="translation">翻译：<!-- 在这里插入中文翻译 --></div>
+    </blockquote>
+
+    <h2>2. 热议中的个股和想法</h2>
+    <ul>
+        <!-- 按照强制模板填充，每只股票输出2-4条引用 -->
+        <!-- 范例： -->
+        <!--
+        <li>
+          <div class="stock-tag">NVDA (NVIDIA Corporation)</div>
+          <blockquote class="quote">
+            NVIDIA's dominance in AI chips is undeniable, but rising competition from custom ASICs and AMD's MI300X could pressure margins in the long run. Their data center growth remains robust.
+            <div class="translation">翻译：英伟达在AI芯片领域的主导地位无可争议，但来自定制ASIC和AMD MI300X的日益激烈的竞争可能会长期给利润率带来压力。其数据中心业务增长依然强劲。</div>
+          </blockquote>
+          <blockquote class="quote">
+            I'm cautiously optimistic on NVDA. While the valuation is stretched, their software ecosystem and continuous innovation in Hopper/Blackwell architectures justify some premium. Demand for their compute power isn't slowing down.
+            <div class="translation">翻译：我对英伟达持谨慎乐观态度。虽然估值过高，但其软件生态系统以及在Hopper/Blackwell架构上的持续创新，证明了一定的溢价是合理的。对他们计算能力的需求并未放缓。</div>
+          </blockquote>
+        </li>
+        <li>
+          <div class="stock-tag">TSLA (Tesla, Inc.)</div>
+          <blockquote class="quote">
+            Tesla's Q1 delivery numbers were a disappointment, indicating softening demand in key markets. The price cuts are a clear sign they are struggling to move inventory.
+            <div class="translation">翻译：特斯拉第一季度的交付量令人失望，表明主要市场的需求疲软。降价是他们难以消化库存的明确信号。</div>
+          </blockquote>
+          <blockquote class="quote">
+            Don't underestimate Tesla's long-term vision. FSD advancements, Optimus robot, and energy storage could be massive catalysts beyond just EV sales. The current dip is an accumulation opportunity for patient investors.
+            <div class="translation">翻译：不要低估特斯拉的长期愿景。FSD的进步、擎天柱机器人和储能业务可能是除了电动车销售之外的巨大催化剂。目前的下跌对于有耐心的投资者来说是一个积累机会。</div>
+          </blockquote>
+        </li>
+        -->
+        <!-- 如果没有数据，此部分将为空 -->
+    </ul>
+
+    <h2>3. 小众公司冒泡</h2>
+    <ul>
+        <!-- 按照强制模板填充，挖掘0-10只冷门股，没有则不写本部分标题和内容。 -->
+        <!-- 范例： -->
+        <!--
+        <li>
+          <div class="stock-tag">SMCI (Super Micro Computer, Inc.)</div>
+          <blockquote class="quote">
+            SMCI is quietly becoming a critical player in liquid-cooled AI servers. Their modular designs and direct relationships with chipmakers give them an edge. Expecting continued growth as data centers upgrade.
+            <div class="translation">翻译：超微电脑正在悄然成为液冷AI服务器的关键参与者。他们的模块化设计和与芯片制造商的直接合作关系赋予他们优势。随着数据中心的升级，预计将持续增长。</div>
+          </blockquote>
+        </li>
+        -->
+        <!-- 如果没有数据，此部分将为空或不显示 -->
+    </ul>
+
+    <h2>4. AI主线讨论</h2>
+    <div class="track-header">模型</div>
+    <blockquote class="quote">
+        <!-- 插入模型相关讨论的英文原文 -->
+        <!-- 范例英文原文： "The pace of new LLM development is insane. GPT-5 is rumored to be truly multimodal, blurring lines between text, image, and video." -->
+        <div class="translation">翻译：<!-- 插入中文翻译 --></div>
+    </blockquote>
+
+    <div class="track-header">算</div>
+    <blockquote class="quote">
+        <!-- 插入计算能力相关讨论的英文原文 -->
+        <!-- 范例英文原文： "Everyone is racing to build their own custom AI chips, but NVIDIA's CUDA ecosystem still provides a significant moat. The compute demand for training foundation models is insatiable." -->
+        <div class="translation">翻译：<!-- 插入中文翻译 --></div>
+    </blockquote>
+
+    <div class="track-header">光</div>
+    <blockquote class="quote">
+        <!-- 插入光模块/光互联相关讨论的英文原文 -->
+        <!-- 范例英文原文： "Optical interconnects are the next bottleneck for AI clusters. We need faster transceivers beyond 800G to handle the sheer volume of data between GPUs." -->
+        <div class="translation">翻译：<!-- 插入中文翻译 --></div>
+    </blockquote>
+
+    <div class="track-header">存</div>
+    <blockquote class="quote">
+        <!-- 插入存储相关讨论的英文原文 -->
+        <!-- 范例英文原文： "High Bandwidth Memory (HBM) is critical for AI accelerators. Micron and Samsung are ramping up production, but supply remains tight given the demand." -->
+        <div class="translation">翻译：<!-- 插入中文翻译 --></div>
+    </blockquote>
+
+    <div class="track-header">电</div>
+    <blockquote class="quote">
+        <!-- 插入电力/电源相关讨论的英文原文 -->
+        <!-- 范例英文原文： "The power requirements for new AI data centers are astronomical. We need significant investments in grid infrastructure and more efficient power delivery units." -->
+        <div class="translation">翻译：<!-- 插入中文翻译 --></div>
+    </blockquote>
+
+    <div class="track-header">板</div>
+    <blockquote class="quote">
+        <!-- 插入服务器主板/PCB相关讨论的英文原文 -->
+        <!-- 范例英文原文： "Advanced PCB technology is quietly enabling faster data transfer within AI servers. Companies producing these high-layer count boards are essential but often overlooked." -->
+        <div class="translation">翻译：<!-- 插入中文翻译 --></div>
+    </blockquote>
+
+    <div class="track-header">云</div>
+    <blockquote class="quote">
+        <!-- 插入云服务相关讨论的英文原文 -->
+        <!-- 范例英文原文： "Cloud providers are seeing massive boosts from AI infrastructure demand. AWS, Azure, and GCP are all reporting strong growth in their AI-related services." -->
+        <div class="translation">翻译：<!-- 插入中文翻译 --></div>
+    </blockquote>
+
+    <div class="track-header">AI应用</div>
+    <blockquote class="quote">
+        <!-- 插入AI应用相关讨论的英文原文 -->
+        <!-- 范例英文原文： "AI for drug discovery and personalized medicine is showing immense promise. Companies leveraging large language models to analyze genomic data could be game-changers." -->
+        <div class="translation">翻译：<!-- 插入中文翻译 --></div>
+    </blockquote>
+
+</body>
+</html>
         </div>
         <script>
             var myChart = echarts.init(document.getElementById('gauge'));
@@ -53,7 +195,7 @@
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
                     detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n贪婪', color: '#fff' },
-                    data: [{ value: 68 }]
+                    data: [{ value: 69 }]
                 }]
             });
         </script>
