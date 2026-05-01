@@ -37,80 +37,87 @@
     <body>
         <div class="container">
             <h1>🎯 05月01日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-05-01 12:35:51 (北京时间)</p>
+            <p style="color:#94a3b8">情报最后更新: 2026-05-01 22:00:16 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
+    <title>美股量化分析：市场情绪报告 (2026年05月01日)</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit市场情绪分析 (2026年05月01日)</title>
     <style>
-        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f4f4f4; }
-        h1 { color: #2c3e50; text-align: center; margin-bottom: 30px; }
-        h2 { color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 40px; }
-        h3 { color: #34495e; margin-top: 25px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-bottom: 20px; text-align: center; }
+        h2 { color: #34495e; margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .track-header { font-weight: bold; margin-top: 15px; margin-bottom: 5px; color: #2980b9; }
         ul { list-style: none; padding: 0; }
-        li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; font-size: 1.1em; color: #2980b9; margin-bottom: 10px; }
-        .quote { font-style: italic; color: #555; border-left: 4px solid #3498db; padding-left: 15px; margin: 10px 0; }
-        .translation { font-size: 0.9em; color: #777; margin-top: 5px; }
-        .track-header { font-weight: bold; font-size: 1.05em; color: #e74c3c; margin-top: 15px; margin-bottom: 8px; border-bottom: 1px dotted #e74c3c; padding-bottom: 3px;}
-        .ai-category-item { margin-bottom: 10px; }
+        li { background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 15px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 10px; font-size: 1.1em; }
+        .quote { background-color: #f0f8ff; border-left: 4px solid #3498db; padding: 10px 15px; margin: 10px 0; font-style: italic; color: #555; }
+        .translation { font-style: normal; color: #333; margin-top: 8px; border-top: 1px dashed #e0e0e0; padding-top: 5px; font-size: 0.95em; }
+        .section-summary { background-color: #ecf0f1; border-left: 4px solid #7f8c8d; padding: 10px 15px; margin-bottom: 20px; color: #34495e; }
     </style>
 </head>
 <body>
-    <h1>Reddit市场情绪分析 (2026年05月01日)</h1>
+    <h1>美股量化分析：市场情绪报告 (2026年05月01日)</h1>
 
     <h2>1. 宏观与市场情绪</h2>
-    <p>Reddit社区在2026年5月1日普遍关注美联储的政策走向、经济增长数据以及能源市场波动。市场在科技巨头财报和宏观数据交织影响下，呈现出复杂情绪，既有小盘股跑赢大盘的乐观信号，也有对高油价和历史新高市场估值的担忧。</p>
+    <div class="section-summary">
+        市场在2026年5月1日表现出复杂的宏观情绪，油价因地缘政治紧张局势飙升至120美元以上，市场普遍关注其对通胀和企业盈利的长期影响。尽管美国Q1 GDP增长2%，失业率降至57年新低，显示经济韧性，但消费者的财务信心却普遍下降。美联储内部对货币政策的分歧加剧，而标普500指数的上涨主要由少数权重股推动，市场广度有所担忧。不过，小型股罗素2000指数的表现优于大型股，以及VIX指数的下跌和苹果强劲的财报，给市场带来了一丝乐观的广度改善信号。投资者正密切关注即将发布的GDP和PCE数据，以判断未来市场走向。
+    </div>
     <ul>
       <li>
         <blockquote class="quote">
-          US Economy Grew 2% Amid Iran Oil Shock.
-          <div class="translation">翻译：伊朗石油冲击下，美国经济增长2%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          The Federal Reserve kept interest rates unchanged, but internal disagreements and differing opinions among officials persisted. This decision has essentially dashed market expectations for a Fed rate cut this year, while rising expectations of a rate hike will provide upward pressure on the dollar and significantly suppress gold prices.
-          <div class="translation">翻译：美联储维持利率不变，但官员内部的分歧和不同意见依然存在。这一决定基本上打消了市场对美联储今年降息的预期，而加息预期上升将为美元提供上行压力，并显著抑制金价。</div>
+          Oil price rises above $120 after reports of 'extended' Iran blockade.
+          <div class="translation">翻译：有报道称伊朗实施“延长封锁”后，油价升至120美元以上。</div>
         </blockquote>
       </li>
       <li>
         <blockquote class="quote">
           Brent crude is sitting above $105/barrel, up roughly 44% since before the conflict started.
-          <div class="translation">翻译：布伦特原油价格高于105美元/桶，自冲突爆发以来上涨了约44%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          More optimism across the market today. SPX closed 7,209. The part that actually matters: russell 2000 led the day at +2.21%.
-          <div class="translation">翻译：今天市场普遍更加乐观。标普500指数收盘7,209点。真正重要的是：罗素2000指数领涨，当日上涨2.21%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          The oil price is once again well on its way toward new all-time highs. The S&P 500 just casually delivered a “nothing to see here” rally of almost 14% in 20 trading days. At the same time, the Dispersion Index keeps rising, which basically means: the index is increasingly being driven by a few heavyweights rather than broad market participation.
-          <div class="translation">翻译：油价再次朝着历史新高迈进。标普500指数在20个交易日内轻松实现了近14%的“没什么可看”的反弹。与此同时，离散指数持续上升，这基本上意味着：指数越来越由少数权重股驱动，而不是广泛的市场参与。</div>
+          <div class="translation">翻译：布伦特原油价格维持在每桶105美元以上，自冲突开始以来上涨了约44%。</div>
         </blockquote>
       </li>
       <li>
         <blockquote class="quote">
           Duration matters more than peak price and the market is starting to price that in. If Brent averages even $100–110 over multiple quarters, that likely keeps retail fuel in the $4.30–4.60 range.
-          <div class="translation">翻译：持续时间比峰值价格更重要，市场开始将此纳入考量。如果布伦特原油在多个季度平均价格达到100-110美元，零售燃油价格可能会维持在4.30-4.60美元区间。</div>
+          <div class="translation">翻译：持续时间比峰值价格更重要，市场已开始将此因素计入定价。如果布伦特原油价格在多个季度内平均达到100-110美元，零售燃料价格可能维持在4.30-4.60美元区间。</div>
         </blockquote>
       </li>
       <li>
         <blockquote class="quote">
-          As an almost 40yr old with at maybe 20 years left in the market and a 1 year emergency fund already in place, should I still be dca'ing into the market when we are at the ath of the ath?
-          <div class="translation">翻译：作为一个将近40岁，可能还有20年投资生涯，并且已经有一年应急基金的人，当市场处于历史高位时，我是否还应该继续定投？</div>
+          US Economy Grew 2% Amid Iran Oil Shock. GDP just came in at 2% annualized growth for Q1, which is actually a pretty solid number considering everything going on.
+          <div class="translation">翻译：伊朗石油冲击下美国经济增长2%。第一季度GDP年化增长率为2%，考虑到当前局势，这是一个相当不错的数字。</div>
         </blockquote>
       </li>
       <li>
         <blockquote class="quote">
-          U.S. Debt Tops 100% of GDP.
-          <div class="translation">翻译：美国债务占GDP比重超过100%。</div>
+          U.S. jobless claims hit lowest level since 1969.
+          <div class="translation">翻译：美国首次申请失业救济人数创下1969年以来新低。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          More than half of Americans say their finances are getting worse.
+          <div class="translation">翻译：超过一半的美国人表示他们的财务状况正在恶化。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The S&P 500 just casually delivered a “nothing to see here” rally of almost 14% in 20 trading days.
+          <div class="translation">翻译：标普500指数在20个交易日内轻松上涨了近14%，似乎“没什么可看的”。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The Dispersion Index keeps rising, which basically means: the index is increasingly being driven by a few heavyweights rather than broad market participation.
+          <div class="translation">翻译：分散指数持续上升，这基本意味着：指数越来越由少数几只权重股而非广泛市场参与驱动。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Russell 2000 led the day at +2.21%. Small caps outperforming mega-caps at an ATH is exactly the breadth signal you want to see. VIX collapsed 10%.
+          <div class="translation">翻译：罗素2000指数今日领涨2.21%。小型股在历史高点跑赢大型股，正是你希望看到的市场广度信号。VIX指数下跌10%。</div>
         </blockquote>
       </li>
     </ul>
@@ -118,139 +125,136 @@
     <h2>2. 热议中的个股和想法</h2>
     <ul>
       <li>
-        <div class="stock-tag">AAPL (Apple Inc.)</div>
+        <div class="stock-tag">GOOGL (Alphabet Inc.)</div>
         <blockquote class="quote">
-          Apple reports earnings and revenue beat, boosted by services business.
-          <div class="translation">翻译：苹果公司报告盈利和营收超出预期，服务业务表现出色。</div>
+          Alphabet beats on revenue, with cloud booming 63% and topping $20 billion.
+          <div class="translation">翻译：Alphabet营收超预期，云业务飙升63%，营收超过200亿美元。</div>
         </blockquote>
         <blockquote class="quote">
-          AAPL Q2 2026 (Jan-Mar 2026) Quarterly Results Revenue = $111.2 billion (up 17% YoY) Net Income = $29.58 billion (up 19% YoY) Earnings Per Share = $2.01 (up 22% YoY).
-          <div class="translation">翻译：苹果公司2026财年第二季度（2026年1月至3月）业绩：营收1112亿美元（同比增长17%），净收入295.8亿美元（同比增长19%），每股收益2.01美元（同比增长22%）。</div>
+          I entered these LEAPS last summer to capture the AI infrastructure scale-up without tying up the massive capital required to buy 3,000 outright shares.
+          <div class="translation">翻译：我去年夏天买入这些超长期期权是为了抓住AI基础设施规模扩张的机会，而无需投入购买3000股股票所需的巨额资金。</div>
         </blockquote>
         <blockquote class="quote">
-          Apple's up about 3% after hours after issuing unexpectedly high Q2 revenue guidance (14-17% revenue growth vs 9% expected). It also mentioned that margin % would remain consistent at around 48%. However, at the same time, it mentioned that memory costs are rising.
-          <div class="translation">翻译：苹果在盘后上涨约3%，此前发布了出乎意料的高于预期的第二季度营收指引（营收增长14-17%，而预期为9%）。公司还提到利润率将保持在48%左右。然而，与此同时，公司也指出内存成本正在上升。</div>
+          With the underlying now trading near $378, these contracts are roughly $78 deep in the money. The Delta on these is effectively approaching 1.0.
+          <div class="translation">翻译：随着标的股票现在交易在378美元附近，这些合约大约深价78美元。这些合约的Delta实际上接近1.0。</div>
         </blockquote>
         <blockquote class="quote">
-          With Tim Cook stepping down soon, I believe the earnings report will be impressive. Apple will let their CEO leave with dignity, and the numbers will reflect that.
-          <div class="translation">翻译：随着蒂姆·库克即将卸任，我相信这份财报将令人印象深刻。苹果将让他们的CEO体面离开，数据将反映这一点。</div>
+          Went all in on GOOGL about a year ago. I sold 1 of my original LEAPs a few months ago.
+          <div class="translation">翻译：大约一年前我全仓买入GOOGL。几个月前我卖出了我最初的其中一份超长期期权。</div>
         </blockquote>
       </li>
       <li>
         <div class="stock-tag">META (Meta Platforms, Inc.)</div>
         <blockquote class="quote">
-          Buying the META dip.
-          <div class="translation">翻译：逢低买入Meta。</div>
+          Meta shares slide as plan to spend billions more on AI spooks investors.
+          <div class="translation">翻译：Meta计划在人工智能上投入更多资金，吓坏投资者，股价下跌。</div>
         </blockquote>
         <blockquote class="quote">
-          Thanks to the loyal META investors for the profits they delivered!
-          <div class="translation">翻译：感谢忠实的Meta投资者带来的利润！</div>
+          Are investors punishing Meta because it lacks the "landlord" status of Alphabet and Amazon? While they rent out their AI infrastructure to the world via Cloud services, Meta is spending $140 billion on internal tools just to keep people doom scrolling longer.
+          <div class="translation">翻译：投资者是否在惩罚Meta，因为它缺乏Alphabet和亚马逊的“房东”地位？当其他公司通过云服务向全球出租AI基础设施时，Meta却花费1400亿美元用于内部工具，只为让人们沉迷于信息流更久。</div>
         </blockquote>
         <blockquote class="quote">
-          Meta shares slide as plan to spend billions more on AI spooks investors. Meta is still a cash-printing machine with record engagement, but without a Cloud revenue stream to offset this massive CapEx, is this a smart entry point or a "trust me" trap?
-          <div class="translation">翻译：Meta股价下跌，因计划投入数十亿美元用于AI项目吓坏了投资者。Meta仍然是一台印钞机，用户参与度创历史新高，但如果没有云收入流来抵消这笔巨额资本支出，这究竟是一个明智的切入点，还是一个“相信我”的陷阱？</div>
+          Meta is still a cash-printing machine with record engagement, but without a Cloud revenue stream to offset this massive CapEx, is this a smart entry point or a "trust me" trap?
+          <div class="translation">翻译：Meta仍然是一台印钞机，用户参与度创历史新高，但如果没有云收入流来抵消这笔巨大的资本支出，这究竟是一个明智的切入点，还是一个“相信我”的陷阱？</div>
         </blockquote>
         <blockquote class="quote">
-          Meta shares fell in extended trading on Wednesday after the company reported lower-than-expected capital expenditures and missed on user growth.
-          <div class="translation">翻译：Meta股价周三盘后下跌，此前公司报告资本支出低于预期且用户增长不及预期。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">INTC (Intel Corporation)</div>
-        <blockquote class="quote">
-          INTC $27k gains, I am buying even more! When momentum is so 1 sided, usually you continue the momentum for many months i.e. it does not get over in 1 month.
-          <div class="translation">翻译：英特尔获得2.7万美元收益，我正在买入更多！当势头如此一边倒时，通常会持续数月，也就是说不会在一个月内结束。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Even with this momentum P/S is only 8, whereas NVDA P/S is 24. Ignore the P/E cause it had EPS of $5 just in 2019, so if you ignore the temporary losses this thing is still easily a P/E of 20 which is not at all regarded.
-          <div class="translation">翻译：即使有这样的势头，市销率也只有8，而英伟达的市销率为24。忽略市盈率，因为它在2019年每股收益为5美元，所以如果你忽略暂时的亏损，这个股票仍然很容易达到20倍市盈率，这根本不被认为是高估。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Shorting 2000 shares of INTC at 75 Overly confident thinking Nana is just a joke, aint no way earning affect this dinosaur ticker BLEEDING THROUGH MY butthole(s) in 4k across accounts Sorrry Nana u r not the joke I am.
-          <div class="translation">翻译：以75美元的价格做空2000股英特尔，过于自信地认为“奶奶”只是个笑话，认为盈利不会影响这只老牌股票，结果在多个账户上亏得一塌糊涂。对不起“奶奶”，我才是笑话。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Intel's 1Q26 Earnings: The CPU Thesis Arrived; The Foundry Thesis Didn't.
-          <div class="translation">翻译：英特尔2026年第一季度财报：CPU论点成立；代工论点未达预期。</div>
+          Meta stock drops as capex, user growth numbers come in below Wall Street estimates.
+          <div class="translation">翻译：Meta股价下跌，因为资本支出和用户增长数据低于华尔街预期。</div>
         </blockquote>
       </li>
       <li>
-        <div class="stock-tag">GOOGL (Alphabet Inc.)</div>
+        <div class="stock-tag">AAPL (Apple Inc.)</div>
         <blockquote class="quote">
-          Went all in on GOOGL about a year ago. I sold 1 of my original LEAPs a few months ago. Planning to hold all the rest and exercise at expiry.
-          <div class="translation">翻译：大约一年前全仓买入Alphabet。几个月前卖掉了我最初的一个长期期权。计划持有剩余的并在到期时行权。</div>
+          Apple reports earnings and revenue beat, boosted by services business.
+          <div class="translation">翻译：苹果公布的盈利和营收超出预期，服务业务表现抢眼。</div>
         </blockquote>
         <blockquote class="quote">
-          Alphabet reported first-quarter earnings after the bell Wednesday. Revenue: $109.9 billion vs $107.2 billion expected by analysts polled by LSEG. Google Cloud: $20.02 billion vs. $18.05 billion estimated.
-          <div class="translation">翻译：Alphabet周三盘后公布第一季度财报。营收：1099亿美元，高于路孚特分析师预期的1072亿美元。Google Cloud：200.2亿美元，高于预估的180.5亿美元。</div>
+          AAPL Q2 2026 (Jan-Mar 2026) Quarterly Results Revenue = $111.2 billion (up 17% YoY) Net Income = $29.58 billion (up 19% YoY) Earnings Per Share = $2.01 (up 22% YoY).
+          <div class="translation">翻译：苹果公司2026年第二季度（1月-3月）季度业绩：营收1112亿美元（同比增长17%），净利润295.8亿美元（同比增长19%），每股收益2.01美元（同比增长22%）。</div>
         </blockquote>
         <blockquote class="quote">
-          GOOGL Q1 2026 (Jan-Mar 2026) Quarterly Results Revenue = $109.9 billion (up 22% YoY) Net Income = $62.6 billion (up 81% YoY) Earnings Per Share = $5.11 (up 81.8% YoY) Revenue Backlog = $460 billion.
-          <div class="translation">翻译：Alphabet 2026年第一季度（2026年1月至3月）业绩：营收1099亿美元（同比增长22%），净利润626亿美元（同比增长81%），每股收益5.11美元（同比增长81.8%），递延收入4600亿美元。</div>
+          Apple's up about 3% after hours after issuing unexpectedly high Q2 revenue guidance (14-17% revenue growth vs 9% expected). It also mentioned that margin % would remain consistent at around 48%.
+          <div class="translation">翻译：苹果在盘后上涨约3%，此前发布了出人意料的高第二季度营收指引（营收增长14-17%，而预期为9%）。公司还提到利润率将保持在约48%。</div>
         </blockquote>
         <blockquote class="quote">
-          With the market opening and GOOGL gapping up heavily on their Q1 print, I wanted to break down the mechanics of my current Alphabet position and my rationale for holding through the earnings catalyst rather than selling the premium.
-          <div class="translation">翻译：随着市场开盘，Alphabet在第一季度财报公布后大幅高开，我想分析我目前Alphabet头寸的运作机制，以及我选择在财报催化剂下继续持有而非卖出期权费的理由。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">MSFT (Microsoft Corporation)</div>
-        <blockquote class="quote">
-          MSFT can only be denied for so long…. at least until my calls expire worthless, then it’s new ATHs!
-          <div class="translation">翻译：微软不可能被长期压制…至少在我的看涨期权到期归零之前，之后就会创下历史新高！</div>
-        </blockquote>
-        <blockquote class="quote">
-          Microsoft Corp. today announced the following results for the quarter ended March 31, 2026, as compared to the corresponding period of last fiscal year: · Revenue was $82.9 billion and increased 18% (up 15% in constant currency). · Operating income was $38.4 billion and increased 20% (up 16% in constant currency).
-          <div class="translation">翻译：微软公司今日公布截至2026年3月31日季度业绩，与去年同期相比：营收829亿美元，增长18%（按不变汇率计算增长15%）。运营收入384亿美元，增长20%（按不变汇率计算增长16%）。</div>
+          Tim Cook will step down on September 1, 2026, with John Ternus taking over. As for whether Apple will increase investment in AI, I think it’s inevitable.
+          <div class="translation">翻译：蒂姆·库克将于2026年9月1日卸任，由约翰·特努斯接任。至于苹果是否会增加对人工智能的投资，我认为这是不可避免的。</div>
         </blockquote>
       </li>
       <li>
-        <div class="stock-tag">SDSK (SanDisk Corporation)</div>
+        <div class="stock-tag">NVDA (NVIDIA Corporation)</div>
         <blockquote class="quote">
-          SanDisk on Thursday reported 251% jump in its third quarter revenue that sailed past Wall Street expectations helped by strong demand for datacenter offerings and higher prices. The company said its third quarter revenue was $5.95 billion, jumping 251% from the year-ago quarter. It also sailed past analyst estimates of $4.73 billion.
-          <div class="translation">翻译：SanDisk周四报告其第三季度营收飙升251%，超出华尔街预期，这得益于对数据中心产品和更高价格的强劲需求。该公司表示，其第三季度营收为59.5亿美元，较去年同期增长251%。这超出了分析师预期的47.3亿美元。</div>
+          Top AI Companies Agree to Pentagon Deals for Classified Work. It includes GOOGL, MSFT, AMZN, NVDA, TSLA and a startup, Reflection AI.
+          <div class="translation">翻译：顶级AI公司同意与五角大楼签订涉密工作协议。其中包括谷歌、微软、亚马逊、英伟达、特斯拉以及初创公司Reflection AI。</div>
         </blockquote>
         <blockquote class="quote">
-          “This quarter marks a fundamental inflection point for SanDisk — where our technology leadership is enabling a deliberate shift in our mix toward the highest-value end markets, led by Datacenter,” said David Goeckeler, CEO of SanDisk.
-          <div class="translation">翻译：SanDisk首席执行官David Goeckeler表示：“本季度标志着SanDisk的一个根本性转折点——我们的技术领先地位正在推动我们的产品组合向价值最高的终端市场（以数据中心为主导）刻意转变。”</div>
+          Coulda had more if i didn’t paper hand the NVDA $245 call when it was trading at $206/share.
+          <div class="translation">翻译：如果我没有在英伟达股价为206美元/股时提前卖掉245美元的看涨期权，我本可以赚得更多。</div>
         </blockquote>
         <blockquote class="quote">
-          Wall Street has grown increasingly bullish on SanDisk in recent weeks, citing tight NAND supply, strong AI infrastructure demand for memory. Investors are looking at SanDisk’s enterprise solid-state drive business, which analysts say is poised for share gains.
-          <div class="translation">翻译：华尔街近几周对SanDisk日益看好，理由是NAND供应紧张以及AI基础设施对存储的强劲需求。投资者关注SanDisk的企业级固态硬盘业务，分析师称其有望获得市场份额。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">RDDT (Reddit Inc.)</div>
-        <blockquote class="quote">
-          Reddit reports 69% jump in revenue, topping analyst estimates. Earnings per share: $1.01 vs. 58 cents expected Revenue: $663 million vs. $611 million expected. Net income soared to $204 million, or $1.01 per share, from $26 million, or 13 cents per share, a year ago.
-          <div class="translation">翻译：Reddit报告营收增长69%，超出分析师预期。每股收益：1.01美元，而预期为58美分。营收：6.63亿美元，而预期为6.11亿美元。净利润从一年前的2600万美元（每股13美分）飙升至2.04亿美元（每股1.01美元）。</div>
+          The largest position in the index, Nvidia, is currently trading at its lowest put/call ratio in over a year (0.37), while also attracting massive call volumes from retail investors.
+          <div class="translation">翻译：指数中最大的持仓——英伟达，目前正以一年多以来的最低看跌/看涨期权比率（0.37）进行交易，同时吸引了散户投资者大量的看涨期权交易量。</div>
         </blockquote>
         <blockquote class="quote">
-          Reddit reports Free Cash Flow of $311 million versus $127 million. And average revenue per user of $5.23 up 44%. Still a fraction of Instagram - despite highly targetable specific discussion groups.
-          <div class="translation">翻译：Reddit报告自由现金流3.11亿美元，而此前为1.27亿美元。平均每用户收入为5.23美元，增长44%。尽管有高度可定向的特定讨论组，但仍仅为Instagram的一小部分。</div>
-        </blockquote>
-        <blockquote class="quote">
-          They are buying back A Lot of shares while they are growing this fast. At under 20X 2027 RDDT is a great value in my opinion.
-          <div class="translation">翻译：他们正在快速增长的同时回购大量股票。我认为Reddit在2027年市盈率低于20倍是一个巨大的价值。</div>
-        </blockquote>
-        <blockquote class="quote">
-          In the first quarter of 2026, we estimate revenue in the range of $595 million to $605 million, representing 52% to 54% year-over-year revenue growth, with a midpoint of about 53%. The Q1 guide implies a total adjusted cost base of $385 million which would be down sequentially to Q4 expenses.
-          <div class="translation">翻译：在2026年第一季度，我们估计营收将在5.95亿美元至6.05亿美元之间，同比增长52%至54%，中点约为53%。第一季度指引意味着总调整成本基础为3.85亿美元，这将较第四季度支出环比下降。</div>
+          Druckenmiller... bought and sold SDSK within 1 quarter, at 414% return in a few months, then bought Bloom Energy in Q4 '25 (174% return so far). He's also been very early in NVDA (400%+).
+          <div class="translation">翻译：德鲁肯米勒...在不到一个季度内买卖了SNDK，几个月内获得了414%的回报，随后在25年第四季度买入了Bloom Energy（迄今已获得174%的回报）。他也在英伟达（超过400%）的早期投资中表现出色。</div>
         </blockquote>
       </li>
       <li>
         <div class="stock-tag">LLY (Eli Lilly and Company)</div>
         <blockquote class="quote">
-          Eli Lilly crushed Q1 and raised guidance again. EPS: $8.55 vs $6.66 expected Revenue: $19.8B vs $17.62B expected (+56% YoY). Stock up 5% premarket.
-          <div class="translation">翻译：礼来公司第一季度业绩大超预期并再次上调指引。每股收益：8.55美元，预期为6.66美元。营收：198亿美元，预期为176.2亿美元（同比增长56%）。盘前股价上涨5%。</div>
+          Eli Lilly blows past quarterly estimates, hikes outlook as Zepbound and Mounjaro sales skyrocket.
+          <div class="translation">翻译：礼来公司季度业绩远超预期，上调展望，因Zepbound和Mounjaro销售额飙升。</div>
         </blockquote>
         <blockquote class="quote">
           Main driver was GLP-1 demand: Mounjaro: $8.66B revenue (+125%), beat estimates Zepbound: $4.16B US revenue (+80%), also beat.
-          <div class="translation">翻译：主要驱动因素是GLP-1需求：Mounjaro营收86.6亿美元（增长125%），超出预期；Zepbound美国营收41.6亿美元（增长80%），也超出预期。</div>
+          <div class="translation">翻译：主要驱动力是GLP-1需求：Mounjaro营收86.6亿美元（增长125%），超出预期；Zepbound美国营收41.6亿美元（增长80%），也超出预期。</div>
         </blockquote>
         <blockquote class="quote">
-          Lilly now expects 2026 revenue of $82B–$85B (was $80B–$83B) and adjusted EPS of $35.50–$37 (was $33.50–$35). They currently hold about 60% of the US obesity/diabetes GLP-1 market, ahead of Novo at 39%.
-          <div class="translation">翻译：礼来公司目前预计2026年营收为820亿至850亿美元（此前为800亿至830亿美元），调整后每股收益为35.50至37美元（此前为33.50至35美元）。他们目前占据美国肥胖/糖尿病GLP-1市场约60%的份额，领先于诺和诺德的39%。</div>
+          Lilly now expects 2026 revenue of $82B–$85B (was $80B–$83B) and adjusted EPS of $35.50–$37 (was $33.50–$35).
+          <div class="translation">翻译：礼来目前预计2026年营收为820亿至850亿美元（原为800亿至830亿美元），调整后每股收益为35.50至37美元（原为33.50至35美元）。</div>
+        </blockquote>
+        <blockquote class="quote">
+          They currently hold about 60% of the US obesity/diabetes GLP-1 market, ahead of Novo at 39%. Even with lower prices, demand keeps ripping. New obesity pill Foundayo just launched, so next earnings call will probably focus on whether it can become another monster product.
+          <div class="translation">翻译：他们目前占据美国肥胖/糖尿病GLP-1市场约60%的份额，领先于诺和诺德的39%。即使价格较低，需求仍在飙升。新的减肥药Foundayo刚刚上市，因此下一次财报电话会议可能会关注它是否能成为又一个重磅产品。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">SNDK (SanDisk)</div>
+        <blockquote class="quote">
+          SanDisk -6% after-hours on Q3 FY26: $5.95B revenue vs $4.73B est, $23.41 EPS vs $14.66 est, revenue +251% YoY.
+          <div class="translation">翻译：闪迪在2026财年第三季度盘后下跌6%：营收59.5亿美元，高于预期的47.3亿美元；每股收益23.41美元，高于预期的14.66美元；营收同比增长251%。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Sandisk on Thursday reported 251% jump in its third quarter revenue that sailed past Wall Street expectations helped by strong demand for datacenter offerings and higher prices.
+          <div class="translation">翻译：闪迪周四公布第三季度营收激增251%，远超华尔街预期，这得益于数据中心产品的强劲需求和更高的价格。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Wall Street has grown increasingly bullish on SanDisk in recent weeks, citing tight NAND supply, strong AI infrastructure demand for memory.
+          <div class="translation">翻译：华尔街最近几周对闪迪越来越看好，理由是NAND供应紧张以及AI基础设施对内存的强劲需求。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Investors are looking at SanDisk’s enterprise solid-state drive business, which analysts say is poised for share gains. The upcoming ramp of BiCS8-based QLC enterprise SSDs is expected to reinforce SanDisk’s data center bit growth, average selling price tailwinds and margin expansion.
+          <div class="translation">翻译：投资者正关注闪迪的企业级固态硬盘业务，分析师称该业务有望获得市场份额。即将推出的基于BiCS8的QLC企业级固态硬盘预计将加强闪迪在数据中心的比特增长、平均售价顺风和利润率扩张。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">AMD (Advanced Micro Devices, Inc.)</div>
+        <blockquote class="quote">
+          Went all in on AMD last year, got chopped up trying to catch the knife in March, then went full degen margin to buy TQQQ at 40.
+          <div class="translation">翻译：去年我全仓买入AMD，三月份试图接飞刀时损失惨重，然后全面加杠杆在40美元买入TQQQ。</div>
+        </blockquote>
+        <blockquote class="quote">
+          I'm planning to snatch some additional shares or deep ITM calls for: BE, AVGO, INTC or AMD.
+          <div class="translation">翻译：我计划额外购买一些股票或深度实值看涨期权，包括：BE、AVGO、INTC或AMD。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Everyone talking blue team recently made me check on a decision I made 9 years ago to go with red team.
+          <div class="translation">翻译：最近大家都在谈论“蓝队”，这让我重新审视了9年前选择“红队”的决定。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Have 1100 shares AMD. Currently have: 4x 245C 5/22/26 (ITM) 4x 300C 1/15/27 (ITM) 3x 540C 12/15/28 (OTM).
+          <div class="translation">翻译：持有1100股AMD。目前有：4份245C 26年5月22日到期（实值）、4份300C 27年1月15日到期（实值）、3份540C 28年12月15日到期（虚值）。</div>
         </blockquote>
       </li>
     </ul>
@@ -260,197 +264,190 @@
       <li>
         <div class="stock-tag">WEN (The Wendy's Company)</div>
         <blockquote class="quote">
-          Wendy’s closed today at $6.96, resulting in a market cap of approximately $1.33 billion. That is an unusually low valuation for a company with $2.18 billion in TTM revenue, consistent free cash flow, and a brand that has been part of American culture for over 50 years. The company also carries roughly $908 million in owned real estate on the balance sheet.
-          <div class="translation">翻译：Wendy's今天收盘价为6.96美元，市值约为13.3亿美元。对于一家拥有21.8亿美元TTM营收、持续自由现金流以及作为美国文化一部分超过50年的品牌来说，这是一个异常低的估值。该公司资产负债表上还拥有约9.08亿美元的自有房地产。</div>
+          Wendy’s closed today at $6.96, resulting in a market cap of approximately $1.33 billion. That is an unusually low valuation for a company with $2.18 billion in TTM revenue, consistent free cash flow, and a brand that has been part of American culture for over 50 years.
+          <div class="translation">翻译：Wendy's今日收盘价为6.96美元，市值约为13.3亿美元。对于一家拥有21.8亿美元滚动收入、稳定自由现金流，并作为美国文化一部分超过50年的品牌公司来说，这是一个异常低的估值。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Updated Valuation Snapshot • P/E (TTM): ~8.1x • P/S: 0.61x • Dividend yield: ~8.1% (annual dividend of $0.56 with a well-covered ~66% payout ratio).
+          <div class="translation">翻译：最新估值快照 • 市盈率（TTM）：约8.1倍 • 市销率：0.61倍 • 股息收益率：约8.1%（年度股息0.56美元，派息率约66%，覆盖良好）。</div>
         </blockquote>
       </li>
       <li>
         <div class="stock-tag">VITL (Vital Farms, Inc.)</div>
         <blockquote class="quote">
-          The price of $VITL has fallen by about 76% from its recent all-time highs due to the outbreak of avian flu in the US, but now that the situation has been brought under control, egg prices have dropped by 97% from their recent highs. To be honest, I don't know how much lower egg prices can go, and $VITL is a premium brand.
-          <div class="translation">翻译：由于美国禽流感爆发，Vital Farms股价从近期历史高点下跌了约76%，但现在情况已得到控制，鸡蛋价格也从近期高点下跌了97%。老实说，我不知道鸡蛋价格还能跌多少，而且Vital Farms是一个高端品牌。</div>
+          Key facts that led me to this decision: Current P/E: 8.80. Debt: negligible. Margins and returns: all positive.
+          <div class="translation">翻译：促使我做出这一决定的关键事实是：当前市盈率：8.80。债务：可忽略不计。利润率和回报：全部为正。</div>
         </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">GPRO (GoPro, Inc.)</div>
         <blockquote class="quote">
-          GoPro, once one of Americas favorite brands, released their most exciting camera ever a couple weeks ago (the Mission 1 lineup). Perhaps the biggest thing gopro has always had going for it is the image quality of the cameras. Now the game changer and reason to be so excited here is that the Mission 1 pro ILS camera (1 of the 3 new cameras announced).
-          <div class="translation">翻译：GoPro曾是美国最受欢迎的品牌之一，几周前发布了他们有史以来最令人兴奋的相机（Mission 1系列）。GoPro一直以来最大的优势可能是其相机的图像质量。现在，令人兴奋的变革之处在于Mission 1 Pro ILS相机（三款新相机之一）。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">DRTS (Alpha Tau Medical Ltd.)</div>
-        <blockquote class="quote">
-          Alpha Tau specializes in DaRTs therapy where they take stainless steel “darts” coated in Radium-224 and insert them directly into tumors as an Alpha radiation source. Why this is a breakthrough: Using DaRTs therapy, a surgeon is able to ablate.
-          <div class="translation">翻译：Alpha Tau专门从事DaRTs疗法，他们将涂有镭-224的“不锈钢飞镖”直接插入肿瘤作为阿尔法辐射源。这项技术之所以是一项突破，是因为使用DaRTs疗法，外科医生能够进行消融。</div>
+          The price of $VITL has fallen by about 76% from its recent all-time highs due to the outbreak of avian flu in the US, but now that the situation has been brought under control, egg prices have dropped by 97% from their recent highs.
+          <div class="translation">翻译：VITL的价格从近期历史高点下跌了约76%，原因是美国爆发了禽流感，但现在情况已得到控制，鸡蛋价格从近期高点下跌了97%。</div>
         </blockquote>
       </li>
       <li>
         <div class="stock-tag">DOCS (Doximity, Inc.)</div>
         <blockquote class="quote">
-          Doximity (DOCS) is a digital platform used by 80% of U.S. physicians for collaboration, telehealth, and medical news. They make money by charging pharma companies for targeted marketing access. The stock sold off because pharma clients delayed ad budgets due to regulatory uncertainty around drug pricing (MFN deals).
-          <div class="translation">翻译：Doximity (DOCS) 是一个被80%美国医生用于协作、远程医疗和医学新闻的数字平台。他们通过向制药公司收取定向营销访问费来盈利。由于围绕药品定价（MFN交易）的监管不确定性，制药客户推迟了广告预算，导致该股被抛售。</div>
+          Doximity (DOCS) is a digital platform used by 80% of U.S. physicians for collaboration, telehealth, and medical news.
+          <div class="translation">翻译：Doximity (DOCS) 是一个数字平台，80%的美国医生使用它进行协作、远程医疗和获取医学新闻。</div>
         </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">CVNA (Carvana Co.)</div>
         <blockquote class="quote">
-          On the surface Carvana's (CVNA) last earnings report was pretty rosy. Revenue up, earnings up, sales up. Unfortunately, the company actually lost shareholders over $1 billion dollars last quarter. Carvana's entire profitability is an illusion, at a time when truly profitable companies are thriving.
-          <div class="translation">翻译：从表面上看，Carvana (CVNA)上期财报相当乐观。营收增长、盈利增长、销售额增长。不幸的是，该公司上季度实际上让股东损失了超过10亿美元。在真正盈利的公司蓬勃发展之际，Carvana的全部盈利能力都是一种幻象。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">UBER (Uber Technologies, Inc.)</div>
-        <blockquote class="quote">
-          Uber Technologies, Inc. (NYSE: UBER) announced a new set of products and features at its annual GO–GET product event, including hotel bookings and new travel tools. Among the new offerings, Uber introduced a partnership with Expedia Group (NYSE: EXPE) that allows Uber customers to book hotels directly in the Uber app.
-          <div class="translation">翻译：Uber Technologies, Inc. (NYSE: UBER) 在其年度GO–GET产品活动中宣布了一系列新产品和功能，包括酒店预订和新的旅行工具。在新产品中，Uber推出了与Expedia Group (NYSE: EXPE) 的合作，允许Uber客户直接在Uber应用程序中预订酒店。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">HOOD (Robinhood Markets, Inc.)</div>
-        <blockquote class="quote">
-          $HOOD gapped hard lower overnight — $82.07 close to ~$72 at the open. The 5/1/26 83 straddle could have been closed ~$10.23 with cost basis of $7.65. Closing IV ~82% vs opening 120%. In hindsight, the trade prints +$2.58 (+34%).
-          <div class="translation">翻译：Robinhood隔夜大幅低开——收盘价82.07美元跌至开盘价约72美元。2026年5月1日83美元的跨式期权可以以约10.23美元平仓，成本基础为7.65美元。收盘隐含波动率约为82%，而开盘时为120%。事后来看，这笔交易带来了2.58美元（+34%）的收益。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">ASTS (AST SpaceMobile, Inc.)</div>
-        <blockquote class="quote">
-          I own 1,000 shares of ASTS at a very low cost basis (~$4.69/share). About 6 months ago I sold 5x Jan 2028 $150 calls against my position and deployed that premium elsewhere. ASTS has since pulled back significantly and the calls are now much cheaper to buy back, so I want to close them and redeploy.
-          <div class="translation">翻译：我持有1000股ASTS，成本价非常低（约4.69美元/股）。大约6个月前，我卖出了5份2028年1月150美元的看涨期权，并将期权费部署到其他地方。此后ASTS股价大幅回调，现在看涨期权回购成本低得多，所以我想平仓并重新部署。</div>
+          The stock sold off because pharma clients delayed ad budgets due to regulatory uncertainty around drug pricing (MFN deals). Wall Street panicked, but the fundamentals remain pristine: 89.75% gross margins, 23.59% ROIC, $724M in net cash, and management just authorized a $500M buyback program.
+          <div class="translation">翻译：该股之所以下跌，是因为制药客户因药品定价（最惠国待遇协议）的监管不确定性而推迟了广告预算。华尔街感到恐慌，但基本面依然良好：毛利率89.75%，投资回报率23.59%，净现金7.24亿美元，管理层刚刚批准了5亿美元的回购计划。</div>
         </blockquote>
       </li>
       <li>
         <div class="stock-tag">FVRR (Fiverr International Ltd.)</div>
         <blockquote class="quote">
-          FVRR has been killed lately as the fears of AI replacing the need for FVRR take over sentiment on the street. But, if you step back and look at it for a moment, FVRR has a market cap around $370mm at the moment, and $280mm cash on hand, giving an EV of around $90mm, or almost $8 *per share* in cash!
-          <div class="translation">翻译：Fiverr最近遭受重创，因为市场普遍担心AI将取代对Fiverr的需求。但如果你退一步看，Fiverr目前的市值约为3.7亿美元，手头有2.8亿美元现金，企业价值约为9000万美元，即每股近8美元现金！</div>
+          FVRR has been killed lately as the fears of AI replacing the need for FVRR take over sentiment on the street.
+          <div class="translation">翻译：FVRR最近表现不佳，因为市场普遍担心人工智能将取代对FVRR的需求。</div>
+        </blockquote>
+        <blockquote class="quote">
+          FVRR has a market cap around $370mm at the moment, and $280mm cash on hand, giving an EV of around $90mm, or almost $8 per share in cash!
+          <div class="translation">翻译：FVRR目前市值约为3.7亿美元，手头现金2.8亿美元，企业价值约为9000万美元，或每股近8美元现金！</div>
+        </blockquote>
+        <blockquote class="quote">
+          They're guiding for $60mm to $80mm FCF in 2026 alone, which is almost enough to buy their entire company back!
+          <div class="translation">翻译：他们预计2026年自由现金流将达到6000万至8000万美元，这几乎足以回购整个公司！</div>
         </blockquote>
       </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
+    <div class="track-header">模型</div>
     <ul>
-      <div class="track-header">模型 (Models)</div>
-      <li class="ai-category-item">
-        <blockquote class="quote">
-          Google’s Gemini models announced as being the foundation for the next generation of Siri and Apple Intelligence.
-          <div class="translation">翻译：谷歌的Gemini模型被宣布将成为下一代Siri和Apple Intelligence的基础。</div>
-        </blockquote>
-      </li>
-      <li class="ai-category-item">
+      <li>
         <blockquote class="quote">
           AWS adding OpenAI models to Bedrock shows cloud AI is moving from exclusivity to model distribution.
-          <div class="translation">翻译：亚马逊AWS将OpenAI模型添加到Bedrock表明云AI正在从独占走向模型分发。</div>
+          <div class="translation">翻译：AWS将OpenAI模型添加到Bedrock表明云AI正在从独占走向模型分发。</div>
         </blockquote>
       </li>
-      <li class="ai-category-item">
+      <li>
         <blockquote class="quote">
-          Writers for the MIT Technological Review recently discussed DeepSeek's performance and were incredibly impressed, putting it only marginally behind U.S. models. While I think this is bullish for AI due to Jevons Paradox, it's bearish for ASML.
-          <div class="translation">翻译：麻省理工科技评论的撰稿人最近讨论了DeepSeek的性能，并对其印象深刻，认为其仅略低于美国模型。虽然我认为由于杰文斯悖论这对人工智能是利好，但对ASML来说是利空。</div>
+          If frontier models become more cloud-neutral, who captures the economics: $AMZN/$MSFT/$GOOG distribution, $ORCL capacity, or $NVDA bottleneck supply?
+          <div class="translation">翻译：如果前沿模型变得更倾向于云中立，那么谁将获得经济效益：亚马逊/微软/谷歌的分发能力、甲骨文的容量，还是英伟达的瓶颈供应？</div>
         </blockquote>
       </li>
-      <div class="track-header">算 (Compute)</div>
-      <li class="ai-category-item">
+    </ul>
+
+    <div class="track-header">算</div>
+    <ul>
+      <li>
         <blockquote class="quote">
-          Meanwhile, the largest position in the index, Nvidia, is currently trading at its lowest put/call ratio in over a year (0.37), while also attracting massive call volumes from retail investors.
-          <div class="translation">翻译：与此同时，指数中最大的持仓股英伟达目前的看跌/看涨期权比率处于一年多来的最低水平（0.37），同时也吸引了散户投资者大量的看涨期权交易量。</div>
+          SanDisk Q3 revenue surges 251%, crushes Wall Street targets on datacenter growth. Wall Street has grown increasingly bullish on SanDisk in recent weeks, citing tight NAND supply, strong AI infrastructure demand for memory.
+          <div class="translation">翻译：闪迪第三季度营收飙升251%，远超华尔街预期，得益于数据中心业务的增长。华尔街近几周对闪迪越来越看好，理由是NAND供应紧张和AI基础设施对内存的强劲需求。</div>
         </blockquote>
       </li>
-      <li class="ai-category-item">
+      <li>
         <blockquote class="quote">
           DeepSeek was largely trained and ran on Chinese chips that were made using only DUV.
-          <div class="translation">翻译：DeepSeek主要在中国芯片上训练和运行，这些芯片仅使用DUV技术制造。</div>
+          <div class="translation">翻译：DeepSeek主要在中国芯片上训练和运行，这些芯片仅使用DUV（深紫外光刻）技术制造。</div>
         </blockquote>
       </li>
-      <li class="ai-category-item">
+      <li>
         <blockquote class="quote">
-          CRDO designs high speed connectivity hardware that enables data transfer for AI.
-          <div class="translation">翻译：Credo设计用于AI数据传输的高速连接硬件。</div>
+          The Match Act is a bill with Bipartisan support that would effectively end all ASML revenue from China if passed. China was roughly 1/3 of ASML revenue the last two years.
+          <div class="translation">翻译：《匹配法案》是一项获得两党支持的法案，如果通过，将有效终止ASML来自中国的所有收入。过去两年，中国约占ASML收入的三分之一。</div>
         </blockquote>
       </li>
-      <li class="ai-category-item">
-        <blockquote class="quote">
-          TSM delaying high NA EUV.
-          <div class="translation">翻译：台积电推迟高数值孔径EUV技术。</div>
-        </blockquote>
-      </li>
-      <div class="track-header">光 (Optics)</div>
-      <li class="ai-category-item">
+    </ul>
+
+    <div class="track-header">光</div>
+    <ul>
+      <li>
         <blockquote class="quote">
           Optical networking, data center construction, cooling, and power equipment have all been bid up hard.
-          <div class="translation">翻译：光网络、数据中心建设、散热和电力设备的价格都已被大幅推高。</div>
+          <div class="translation">翻译：光网络、数据中心建设、冷却和电力设备的价格都已被大幅推高。</div>
         </blockquote>
       </li>
-      <div class="track-header">存 (Storage)</div>
-      <li class="ai-category-item">
+      <li>
         <blockquote class="quote">
-          SanDisk on Thursday reported 251% jump in its third quarter revenue that sailed past Wall Street expectations helped by strong demand for datacenter offerings and higher prices.
-          <div class="translation">翻译：SanDisk周四报告其第三季度营收飙升251%，超出华尔街预期，这得益于对数据中心产品和更高价格的强劲需求。</div>
+          TSM delaying high NA EUV.
+          <div class="translation">翻译：台积电推迟高数值孔径EUV（极紫外光刻）技术。</div>
         </blockquote>
       </li>
-      <li class="ai-category-item">
+    </ul>
+
+    <div class="track-header">存</div>
+    <ul>
+      <li>
         <blockquote class="quote">
-          I can tell you that beyond the June quarter, we believe memory costs will drive an increasing impact on our business and we'll continue to evaluate this.
-          <div class="translation">翻译：我可以告诉你，在6月季度之后，我们相信内存成本将对我们的业务产生越来越大的影响，我们将继续对此进行评估。</div>
+          Investors are looking at SanDisk’s enterprise solid-state drive business, which analysts say is poised for share gains. The upcoming ramp of BiCS8-based QLC enterprise SSDs is expected to reinforce SanDisk’s data center bit growth, average selling price tailwinds and margin expansion.
+          <div class="translation">翻译：投资者正关注闪迪的企业级固态硬盘业务，分析师称该业务有望获得市场份额。即将推出的基于BiCS8的QLC企业级固态硬盘预计将加强闪迪在数据中心的比特增长、平均售价顺风和利润率扩张。</div>
         </blockquote>
       </li>
-      <div class="track-header">电 (Power)</div>
-      <li class="ai-category-item">
+    </ul>
+
+    <div class="track-header">电</div>
+    <ul>
+      <li>
         <blockquote class="quote">
-          Druckenmiller bought Bloom Energy in Q4 '25 (174% return so far).
-          <div class="translation">翻译：德鲁肯米勒在25年第四季度买入了Bloom Energy（迄今已获得174%的回报）。</div>
+          Bloom Energy +1,100% (Shares only). Been a big winner of the AI energy trade.
+          <div class="translation">翻译：Bloom Energy上涨1100%（仅限股票）。它一直是AI能源交易的赢家。</div>
         </blockquote>
       </li>
-      <div class="track-header">板 (Boards/Chips)</div>
-      <li class="ai-category-item">
+      <li>
         <blockquote class="quote">
-          The Match Act is a bill with Bipartisan support that would effectively end all ASML revenue from China if passed.
-          <div class="translation">翻译：《Match法案》是一项获得两党支持的法案，如果通过，将有效终止ASML来自中国的所有收入。</div>
+          AI power supply, power distribution, compute, semiconductors, cooling, networking, data center construction, materials, critical minerals, defense AI, have all been bid up hard.
+          <div class="translation">翻译：AI电源供应、配电、计算、半导体、冷却、网络、数据中心建设、材料、关键矿物、国防AI等领域的价格都已被大幅推高。</div>
         </blockquote>
       </li>
-      <div class="track-header">云 (Cloud)</div>
-      <li class="ai-category-item">
+    </ul>
+
+    <div class="track-header">板</div>
+    <ul>
+      <li>
         <blockquote class="quote">
-          Put my entire Roth IRA last week into medium dated calls for everything Infra/Data Center related. Today was nice!
-          <div class="translation">翻译：上周我将整个Roth IRA投入到中期看涨期权中，涵盖了所有与基础设施/数据中心相关的领域。今天过得很愉快！</div>
+          CRDO designs high speed connectivity hardware that enables data transfer for AI.
+          <div class="translation">翻译：CRDO设计用于实现AI数据高速传输的连接硬件。</div>
         </blockquote>
       </li>
-      <li class="ai-category-item">
+    </ul>
+
+    <div class="track-header">云</div>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          Top AI Companies Agree to Pentagon Deals for Classified Work. It includes GOOGL, MSFT, AMZN, NVDA, TSLA and a startup, Reflection AI.
+          <div class="translation">翻译：顶级AI公司同意与五角大楼签订涉密工作协议。其中包括谷歌、微软、亚马逊、英伟达、特斯拉以及初创公司Reflection AI。</div>
+        </blockquote>
+      </li>
+      <li>
         <blockquote class="quote">
           AWS grew 28% to $37.6B, Azure and other cloud services grew about 40%, and Google Cloud grew 63% to $20B , clear evidence that AI demand is showing up in cloud revenue.
-          <div class="translation">翻译：亚马逊AWS增长28%达到376亿美元，Azure及其他云服务增长约40%，谷歌云增长63%达到200亿美元，这清晰地表明AI需求正体现在云收入中。</div>
+          <div class="translation">翻译：AWS增长28%达到376亿美元，Azure和其他云服务增长约40%，谷歌云增长63%达到200亿美元，这清楚表明AI需求正体现在云收入中。</div>
         </blockquote>
       </li>
-      <li class="ai-category-item">
+      <li>
         <blockquote class="quote">
-          Completed $32 billion acquisition of cloud and AI security firm Wiz.
-          <div class="translation">翻译：完成了对云和AI安全公司Wiz的320亿美元收购。</div>
+          If frontier models become more cloud-neutral, who captures the economics: $AMZN/$MSFT/$GOOG distribution, $ORCL capacity, or $NVDA bottleneck supply?
+          <div class="translation">翻译：如果前沿模型变得更倾向于云中立，那么谁将获得经济效益：亚马逊/微软/谷歌的分发能力、甲骨文的容量，还是英伟达的瓶颈供应？</div>
         </blockquote>
       </li>
-      <div class="track-header">AI应用 (AI Applications)</div>
-      <li class="ai-category-item">
+    </ul>
+
+    <div class="track-header">AI应用</div>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          AppLovin (APP) is the cleaner way to play performance ads + AI leverage.
+          <div class="translation">翻译：AppLovin (APP) 是利用效果广告和AI杠杆的更简洁方式。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Meta is spending $140 billion on internal tools just to keep people doom scrolling longer.
+          <div class="translation">翻译：Meta正斥资1400亿美元用于内部工具，只为让人们沉迷于信息流更久。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          As for whether Apple will increase investment in AI, I think it’s inevitable.
+          <div class="translation">翻译：至于苹果是否会增加对人工智能的投资，我认为这是不可避免的。</div>
+        </blockquote>
+      </li>
+      <li>
         <blockquote class="quote">
           Claude for equity research.
-          <div class="translation">翻译：用Claude进行股票研究。</div>
-        </blockquote>
-      </li>
-      <li class="ai-category-item">
-        <blockquote class="quote">
-          AXON Research Report: Written by an AI Workflow.
-          <div class="translation">翻译：AXON研究报告：由AI工作流撰写。</div>
-        </blockquote>
-      </li>
-      <li class="ai-category-item">
-        <blockquote class="quote">
-          FVRR has been killed lately as the fears of AI replacing the need for FVRR take over sentiment on the street.
-          <div class="translation">翻译：Fiverr最近受到了沉重打击，因为市场担心AI将取代对Fiverr的需求，这种情绪在街头蔓延。</div>
-        </blockquote>
-      </li>
-      <li class="ai-category-item">
-        <blockquote class="quote">
-          500k+ Waymo rides per week.
-          <div class="translation">翻译：Waymo每周提供超过50万次乘车服务。</div>
+          <div class="translation">翻译：Claude用于股票研究。</div>
         </blockquote>
       </li>
     </ul>
@@ -465,7 +462,7 @@
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
                     detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n贪婪', color: '#fff' },
-                    data: [{ value: 66 }]
+                    data: [{ value: 67 }]
                 }]
             });
         </script>
