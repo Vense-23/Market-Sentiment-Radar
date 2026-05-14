@@ -37,357 +37,382 @@
     <body>
         <div class="container">
             <h1>🎯 05月14日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-05-14 12:28:31 (北京时间)</p>
+            <p style="color:#94a3b8">情报最后更新: 2026-05-14 23:06:14 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            <h2>1. 宏观与市场情绪</h2>
-    <blockquote class="quote">
-      Inflation just came in hotter than expected. April PPI jumped to 6.0%, well above the 4.9% forecast, hitting the highest level since January 2023. Core PPI rose to 5.2%, beating expectations of 4.3%. Now both CPI and PPI are officially sitting at their highest levels in more than 3 years.
-      <div class="translation">翻译：通胀升温超预期。4月份PPI跃升至6.0%，远高于4.9%的预期，创下自2023年1月以来的最高水平。核心PPI上升至5.2%，超出4.3%的预期。现在CPI和PPI都正式达到3年多来的最高水平。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Why it matters: If producers are paying more, those costs can eventually hit consumers. That keeps inflation sticky and makes the Fed’s job much harder. Rate cuts? Less likely. Rate hike odds? Rising.
-      <div class="translation">翻译：重要性：如果生产者支付更多成本，这些成本最终会转嫁给消费者。这使得通胀更具粘性，并使美联储的工作变得更加困难。降息？可能性更小。加息的可能性？正在上升。</div>
-    </blockquote>
-    <blockquote class="quote">
-      NASDAQ is already back up 1% from the session lows. After a 26%+ run, this market still can’t even manage a proper 2% red day.
-      <div class="translation">翻译：纳斯达克指数已经从盘中低点反弹1%。在经历26%以上的涨幅后，这个市场甚至无法出现一个像样的2%下跌日。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Market still feels weird to me right now. You’ve got inflation staying hotter than the Fed wants, traders talking about inflation maybe ending the year around 4.5%, rate cuts getting pushed back again, yields staying high, and geopolitical stuff still unresolved.
-      <div class="translation">翻译：目前市场对我来说仍然感觉很奇怪。通胀持续高于美联储的预期，交易员们谈论通胀可能在年底达到4.5%左右，降息再次推迟，收益率居高不下，地缘政治问题仍未解决。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Normally you’d expect at least a decent pullback with that setup, but every dip gets bought within hours.
-      <div class="translation">翻译：通常情况下，在这种局面下你至少会预期一个像样的回调，但每一次下跌都在几小时内被买入。</div>
-    </blockquote>
-    <blockquote class="quote">
-      QQQ is up ~30% is the last 30 (trading) days. SOXX is as overbought (on the weekly) as it’s ever been.
-      <div class="translation">翻译：纳指100 ETF (QQQ) 在过去30个交易日上涨了约30%。半导体ETF (SOXX) 在周线上已经达到了前所未有的超买状态。</div>
-    </blockquote>
-    <blockquote class="quote">
-      This can’t go on forever, can it? Everything and everyone is winning.
-      <div class="translation">翻译：这不可能永远持续下去，对吧？所有人和所有事都在赢。</div>
-    </blockquote>
-    <blockquote class="quote">
-      The strait of hormuz is still effectively closed. Diesel hit 5.80 a gallon. Jet fuel is tracking even higher. This is not a one month blip, this is the pipeline repricing in real time.
-      <div class="translation">翻译：霍尔木兹海峡仍然实际关闭。柴油价格达到每加仑5.80美元。航空燃油价格甚至更高。这不是一个月的短暂波动，而是管道正在实时重新定价。</div>
-    </blockquote>
-    <blockquote class="quote">
-      WallStreetBets filed a public comment opposing a proposed shift to semiannual securities reports, instead of quarterly reports. The community says quarterly reporting is a mechanism by which retail investors taught themselves to read financial statements, and reducing the frequency would cut that mechanism in half.
-      <div class="translation">翻译：WallStreetBets提交了一份公开意见，反对将证券报告改为半年一次的提议，而非季度报告。该社区表示，季度报告是散户投资者学习阅读财务报表的一种机制，减少报告频率将使这种机制减半。</div>
-    </blockquote>
+            <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股市场情绪分析 (2026年05月14日)</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f4f4f4; }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 40px; }
+        h2 { font-size: 1.8em; }
+        ul { list-style: none; padding: 0; }
+        li { background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; padding: 15px 20px; }
+        .stock-tag { font-size: 1.2em; font-weight: bold; color: #e74c3c; margin-bottom: 10px; }
+        .quote { background-color: #ecf0f1; border-left: 4px solid #3498db; margin: 15px 0; padding: 10px 15px; font-style: italic; color: #555; }
+        .translation { font-style: normal; color: #2980b9; margin-top: 5px; border-top: 1px dashed #bdc3c7; padding-top: 5px; }
+        .track-header { font-size: 1.1em; font-weight: bold; color: #2c3e50; margin-top: 20px; margin-bottom: 10px; padding-left: 10px; border-left: 3px solid #f39c12; }
+    </style>
+</head>
+<body>
+
+    <h1>美股市场情绪分析 (2026年05月14日)</h1>
+
+    <h2>1. 宏观与市场情绪</h2>
+    <p>市场正经历一场由AI热潮推动的“熔涨”，纳斯达克和标普500指数徘徊在历史高位，但潜在的宏观风险不容忽视。通胀是当前最主要的担忧，4月PPI和核心PPI均超出预期，达到三年多来的高点，这使得美联储降息的可能性降低，加息的可能性上升。地缘政治紧张局势，特别是霍尔木兹海峡的持续关闭，对能源供应造成重大干扰，导致油价自2022年以来首次突破100美元，但市场对此反应平淡，引发对当前涨势健康性的质疑。此外，特朗普政府与中国的接触，以及随行的大批科技公司CEO，正受到密切关注，可能影响贸易和芯片政策。散户投资者，特别是通过WallStreetBets社区，正积极反对美国证交会（SEC）关于减少季度财报披露频率的提议，认为其对散户参与和理解市场至关重要。</p>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          Inflation just came in hotter than expected. April PPI jumped to 6.0%, well above the 4.9% forecast, hitting the highest level since January 2023. Core PPI rose to 5.2%, beating expectations of 4.3%. Now both CPI and PPI are officially sitting at their highest levels in more than 3 years.
+          <div class="translation">翻译：通胀再次超出预期。4月PPI环比上涨6.0%，远高于4.9%的预测，达到2023年1月以来的最高水平。核心PPI上涨5.2%，超出4.3%的预期。现在CPI和PPI均正式达到三年多来的最高水平。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Everyone saying this feels like 1999 leading up to the .com boom. But this feels more like post covid December 2021 to me. Worldwide supply shortages coupled with oil and gas prices spiking. And Inflation ticking up under a president desperate to stimulate the economy with easy money.
+          <div class="translation">翻译：所有人都在说这感觉像是1999年互联网泡沫破裂前夕。但这对我来说更像是2021年12月疫情后的情况。全球供应短缺加上石油和天然气价格飙升。通货膨胀在一位急于通过宽松货币刺激经济的总统领导下不断上升。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          NASDAQ is already back up 1% from the session lows. After a 26%+ run, this market still can’t even manage a proper 2% red day. Market still feels weird to me right now.
+          <div class="translation">翻译：纳斯达克指数已经从盘中低点反弹了1%。在经历了26%以上的涨幅之后，这个市场甚至无法经历一次像样的2%下跌日。现在市场对我来说仍然感觉很奇怪。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The market doesn't seem to realize that the Strait staying closed is much, much worse than any quibbling between the US and Iran. Physical crude is still very expensive.
+          <div class="translation">翻译：市场似乎没有意识到霍尔木兹海峡持续关闭的后果远比美伊之间的任何争吵都要糟糕得多。实体原油价格仍然非常昂贵。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          WallStreetBets filed a public comment opposing a proposed shift to semiannual securities reports, instead of quarterly reports. The community says quarterly reporting is a mechanism by which retail investors taught themselves to read financial statements, and reducing the frequency would cut that mechanism in half.
+          <div class="translation">翻译：WallStreetBets提交了一份公开意见，反对将证券报告改为半年一次的提议，而不是季度报告。社区表示，季度报告是散户投资者学习阅读财务报表的一种机制，减少报告频率将使这种机制减半。</div>
+        </blockquote>
+      </li>
+    </ul>
 
     <h2>2. 热议中的个股和想法</h2>
-    <li>
-      <div class="stock-tag">1. NVDA (NVIDIA Corporation)</div>
-      <blockquote class="quote">
-        Turns out I bought some NVDA back in 2019 at a crazy low price and didn’t even know I had this. Sitting on massive gain.
-        <div class="translation">翻译：原来我在2019年以一个非常低的价格买了一些英伟达股票，自己都不知道。现在正坐拥巨额收益。</div>
-      </blockquote>
-      <blockquote class="quote">
-        NVDA: 300-350k profit bought my first shares in 2016 been in and out since and usually would buy 100k leaps that expire years from the date bought would cash those at around 25k profit.
-        <div class="translation">翻译：英伟达：2016年首次购买股票以来，利润达到30-35万美元，期间多次进出，通常会购买10万美元的长期期权，并在到期前几年以大约2.5万美元的利润套现。</div>
-      </blockquote>
-      <blockquote class="quote">
-        I liked my investment a lot when I bought, and it’s still pretty great, but Reddit has me shivering with its posts about the impending crash.
-        <div class="translation">翻译：我买入时非常喜欢我的投资，它现在仍然非常棒，但Reddit上关于即将到来的崩盘的帖子让我感到不寒而栗。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Jensen Huang, Nvidia CEO Tim Cook, Apple CEO Larry Fink, BlackRock CEO Stephen Schwarzman, Blackstone CEO Kelly Ortberg, Boeing CEO Brian Sikes, Cargill CEO Jane Fraser, Citigroup CEO Larry Culp, General Electric CEO David Solomon, Goldman Sachs CEO Sanjay Mehrotra, Micron CEO Cristiano Amon, Qualcomm CEO President Trump also says there are "many other" CEOs joining him on the trip who have not yet been disclosed.
-        <div class="translation">翻译：英伟达首席执行官黄仁勋、苹果首席执行官蒂姆·库克、贝莱德首席执行官拉里·芬克、黑石首席执行官史蒂芬·施瓦茨曼、波音首席执行官凯利·奥特伯格、嘉吉首席执行官布莱恩·赛克斯、花旗集团首席执行官简·弗雷泽、通用电气首席执行官拉里·卡尔普、高盛首席执行官大卫·所罗门、美光首席执行官桑杰·梅赫罗特拉、高通首席执行官克里斯蒂亚诺·阿蒙等。特朗普总统还表示，有“许多其他”尚未披露的首席执行官也将随他一同出访。</div>
-      </blockquote>
-    </li>
-    <li>
-      <div class="stock-tag">2. MU (Micron Technology)</div>
-      <blockquote class="quote">
-        There has been explosive number of posts, comments, coverage, and articles on the memory sector.
-        <div class="translation">翻译：关于内存行业，帖子、评论、报道和文章的数量呈爆炸式增长。</div>
-      </blockquote>
-      <blockquote class="quote">
-        The loudest argument against MU right now is the massive capex. People see 750+billion being poured into AI arms race and are rightfully concerned that Micron is blindly pumping out chips that will eventually oversupply the market while hyperscalers dial back.
-        <div class="translation">翻译：目前反对美光的最强烈论点是其巨大的资本支出。人们看到7500多亿美元被投入到AI军备竞赛中，并有理由担心美光正在盲目生产芯片，最终将导致市场供过于求，而超大规模厂商则会减少投入。</div>
-      </blockquote>
-      <blockquote class="quote">
-        MU will be the biggest beneficiary of imminent Samsung strike. Currently only 3 companies make HBM4, the biggest bottleneck of the entire AI build. Samsung, SK, and MU. Samsungs union walked away from talks last night, strike window is set for5/21 to 6/7, 18 days of the worlds biggest memory fab going dark.
-        <div class="translation">翻译：美光将成为即将到来的三星罢工的最大受益者。目前只有三家公司生产HBM4，这是整个AI建设中最大的瓶颈，它们是三星、SK海力士和美光。三星工会昨晚退出谈判，罢工窗口定在5月21日至6月7日，这将导致全球最大的内存晶圆厂停产18天。</div>
-      </blockquote>
-      <blockquote class="quote">
-        When Samsung goes dark for 18 days during a record memory upcycle, spot DRAM and NAND prices melt up, and MU’s 2027 contra.
-        <div class="translation">翻译：当三星在创纪录的内存上行周期中停产18天时，现货DRAM和NAND价格将飙升，而美光2027年的合约将受到影响。</div>
-      </blockquote>
-    </li>
-    <li>
-      <div class="stock-tag">3. GOOGL (Alphabet Inc.)</div>
-      <blockquote class="quote">
-        I bought a ton of different leaps before and after 🥭's tariff adventure, totaling $33k cost basis, ending up worth 1.35M. This is the best returning specific lot, on a Jan 2027 380C purchased on April 4 last year when GOOGL hit 145.
-        <div class="translation">翻译：在芒果（特朗普）的关税冒险前后，我买了很多不同的长期期权，总成本为3.3万美元，最终价值达到135万美元。这是回报最好的一批，是去年4月4日谷歌股价达到145美元时购买的2027年1月380C。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Realized about 900k of the gains including the above position to derisk (hurt to do), but holding onto about 500k of the longest dated positions (Dec 2027 365C) as I still strongly believe in the company.
-        <div class="translation">翻译：我兑现了包括上述头寸在内的大约90万美元收益以降低风险（这样做很痛苦），但仍持有约50万美元的长期头寸（2027年12月365C），因为我仍然坚信这家公司。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Google- doesnt need much reasoning, a behemoth thats great at making profit.
-        <div class="translation">翻译：谷歌——无需太多理由，它是一个在盈利方面表现出色的庞然大物。</div>
-      </blockquote>
-    </li>
-    <li>
-      <div class="stock-tag">4. RKLB (Rocket Lab USA)</div>
-      <blockquote class="quote">
-        My biggest gainer by far was Rocket Lab. Had 13,500 shares at like 22 avg during liberation day times but trimmed as it went up to 40 and 50 and completely cashed out right on tax day.
-        <div class="translation">翻译：目前为止我最大的赢家是Rocket Lab。在解放日期间，我持有13,500股，平均成本约为22美元，但随着股价上涨到40和50美元时进行了减仓，并在报税日完全清仓。</div>
-      </blockquote>
-      <blockquote class="quote">
-        RKLB taking me to the moon🙏🏼 $456 > $12,500.
-        <div class="translation">翻译：RKLB带我飞向月球🙏🏼 456美元变成了12,500美元。</div>
-      </blockquote>
-      <blockquote class="quote">
-        On a stock like RKLB, I have a total gain % of 765% right now. In the recent past, I have cashed out gains of 4,700 total in a few lots, which is about 80% of my Cost basis total.
-        <div class="translation">翻译：对于像RKLB这样的股票，我现在总收益率为765%。最近，我分几批兑现了总计4700美元的收益，这大约是我总成本的80%。</div>
-      </blockquote>
-    </li>
+    <ul>
+      <li>
+        <div class="stock-tag">1. NVDA (NVIDIA Corporation)</div>
+        <blockquote class="quote">
+          Turns out I bought some NVDA back in 2019 at a crazy low price and didn’t even know I had this. Sitting on massive gain. Should I hodl or sell ?
+          <div class="translation">翻译：结果我早在2019年以一个非常低的价格买了一些英伟达股票，当时我甚至不知道自己有这个账户。现在正获得巨额收益。我应该持有还是卖出？</div>
+        </blockquote>
+        <blockquote class="quote">
+          US clears H200 chip sales to 10 China firms as Nvidia CEO looks for breakthrough.
+          <div class="translation">翻译：美国批准向10家中国公司销售H200芯片，英伟达CEO寻求突破。</div>
+        </blockquote>
+        <blockquote class="quote">
+          I liked my investment a lot when I bought, and it’s still pretty great, but Reddit has me shivering with its posts about the impending crash. I just bought this for gaming and got super lucky I could sell but then I owe tens of thousands in taxes.
+          <div class="translation">翻译：我当初买入时非常喜欢我的投资，现在它依然很棒，但Reddit上关于即将到来的崩盘的帖子让我不寒而栗。我当时只是为了玩游戏而买的，非常幸运能够卖出，但之后我将欠数万美元的税款。</div>
+        </blockquote>
+        <blockquote class="quote">
+          NVDA stands out because any shift in export restrictions could affect future AI revenue.
+          <div class="translation">翻译：英伟达之所以引人注目，是因为出口限制的任何变化都可能影响其未来的AI收入。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">2. MU (Micron Technology, Inc.)</div>
+        <blockquote class="quote">
+          Held: • 93 MU @131 (now ~800).
+          <div class="translation">翻译：持有：• 93股美光科技，成本价131美元（现价约800美元）。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The loudest argument against MU right now is the massive capex. People see 750+billion being poured into AI arms race and are rightfully concerned that Micron is blindly pumping out chips that will eventually oversupply the market while hyperscalers dial back.
+          <div class="translation">翻译：目前对美光科技最强烈的反对理由是其巨额资本支出。人们看到7500多亿美元投入到AI军备竞赛中，并理所当然地担心美光科技盲目生产芯片，最终将导致市场供过于求，而超大规模企业则会缩减投入。</div>
+        </blockquote>
+        <blockquote
+          My general thesis is that MU is probably going to keep going up for a while, but I wanted a safety net. Profitable trade if MU is between $0 and $2,014 a share in Jan 2027.
+          <div class="translation">翻译：我的总体判断是美光科技可能会继续上涨一段时间，但我想有个安全网。如果美光科技在2027年1月时的股价在0到2014美元之间，这笔交易将是盈利的。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Was very volatile today and sold some puts on the dip and plan to close tomorrow when more theta decay kicks in, big risk but big reward from theta.
+          <div class="translation">翻译：今天波动很大，我在下跌时卖出了一些看跌期权，并计划明天在更多时间衰减发生时平仓，风险很大但期权金（theta）带来的回报也很高。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">3. GOOGL (Alphabet Inc.)</div>
+        <blockquote class="quote">
+          I bought a ton of different leaps before and after 🥭's tariff adventure, totaling $33k cost basis, ending up worth 1.35M. This is the best returning specific lot, on a Jan 2027 380C purchased on April 4 last year when GOOGL hit 145.
+          <div class="translation">翻译：我在🥭的关税政策前后购买了大量不同的长期期权，总成本为3.3万美元，最终价值达到135万美元。这是回报率最高的特定批次，是去年4月4日谷歌股价达到145美元时购买的2027年1月380C看涨期权。</div>
+        </blockquote>
+        <blockquote class="quote">
+          absolute generational melt-up. this is exactly how every trillion dollar supercycle starts and nobody ever listens at this pace Google will hit $1,000 before the end of summer and honestly I wouldn’t be shocked if the Nasdaq just renamed itself the GOOG exchange.
+          <div class="translation">翻译：绝对是世代性熔涨。这就是每一万亿美元超级周期开始的方式，但没有人听信。照这个速度，谷歌将在夏末前达到1000美元，说实话，如果纳斯达克改名为谷歌交易所，我也不会感到震惊。</div>
+        </blockquote>
+        <blockquote class="quote">
+          I am heavily invested in Google and feel it has the room for the most upside surprises because they are involved in so many different areas.
+          <div class="translation">翻译：我重仓投资了谷歌，感觉它在如此多的不同领域都有涉足，因此拥有最大的上行惊喜空间。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">4. NBIS (Nebius Group)</div>
+        <blockquote class="quote">
+          Bought NBIS. Looking to hold for a few years. The bacon is cooking on everything!
+          <div class="translation">翻译：买了NBIS。打算持有几年。一切都在顺利进行！</div>
+        </blockquote>
+        <blockquote class="quote">
+          Less than 10 trades. Turned 3k to 140k in 3 years.
+          <div class="translation">翻译：不到10笔交易。在3年内将3千美元变成了14万美元。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Nebius Group reported a nearly eightfold rise in quarterly revenue on Wednesday, benefiting from rising demand for artificial intelligence ‌infrastructure and cloud services amid a boom in enterprise spending on ‌the technology.
+          <div class="translation">翻译：Nebius集团周三公布季度营收增长近八倍，受益于人工智能基础设施和云服务需求增长，以及企业在技术支出上的蓬勃发展。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Sold these this year for 13.55 each expiring EOY. Didn’t think NBIS would be worth 200 this year. Goal: I want to keep my shares or roll them and sell them at higher than 200 if I have to.
+          <div class="translation">翻译：今年以每股13.55美元的价格卖出了这些股票，年底到期。没想到NBIS今年能值200美元。目标是我想保留我的股票，或者如果必须的话，通过展期并在高于200美元的价格出售。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">5. RKLB (Rocket Lab USA, Inc.)</div>
+        <blockquote class="quote">
+          My biggest gainer by far was Rocket Lab. Had 13,500 shares at like 22 avg during liberation day times but trimmed as it went up to 40 and 50 and completely cashed out right on tax day.
+          <div class="translation">翻译：我迄今为止最大的赢家是火箭实验室。在解放日期间，我持有13,500股，平均成本约22美元，但随着股价涨到40和50美元时我进行了减仓，并在报税日完全清仓。</div>
+        </blockquote>
+        <blockquote class="quote">
+          RKLB taking me to the moon🙏🏼 $456 > $12,500.
+          <div class="translation">翻译：火箭实验室带我上月球🙏🏼 456美元涨到12,500美元。</div>
+        </blockquote>
+        <blockquote class="quote">
+          On a stock like RKLB, I have a total gain % of 765% right now. I’m stuck in that limbo of wondering if I should take some additional gains and put it in a standard S&P fund, and/or something like SGOV…or just ‘letting it ride’ and see where it gets in 3-4 years when I might have to sell off a decent amount when I need the $$.
+          <div class="translation">翻译：对于像RKLB这样的股票，我目前的总收益率为765%。我陷入了一种困境，不知道是应该再获利了结一部分并投入标准的标普基金或SGOV之类的产品，还是干脆“让它自由发展”，看看三四年后我需要用钱时它能达到什么程度。</div>
+        </blockquote>
+      </li>
+    </ul>
 
     <h2>3. 小众公司冒泡</h2>
-    <li>
-      <div class="stock-tag">1. NOK (Nokia Corporation)</div>
-      <blockquote class="quote">
-        Officially a NOK Millionaire (CAD). This position started at 290k CAD back in February. I’ve used leverage/margin, I’ve also bought more as the price climbed, increasing my average.
-        <div class="translation">翻译：正式成为诺基亚股票的百万富翁（加元）。这个头寸始于二月份的29万加元。我使用了杠杆/保证金，也随着价格上涨买入更多，提高了我的平均成本。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Price target of $30, and will reassess my position then.
-        <div class="translation">翻译：目标价是30美元，届时我将重新评估我的头寸。</div>
-      </blockquote>
-    </li>
-    <li>
-      <div class="stock-tag">2. NBIS (Nebius Group)</div>
-      <blockquote class="quote">
-        3k into 140k. Thx NBIS Less than 10 trades. Turned 3k to 140k in 3 years.
-        <div class="translation">翻译：3千美元变成14万美元。谢谢NBIS。不到10次交易。在3年内将3千美元变成了14万美元。</div>
-      </blockquote>
-      <blockquote class="quote">
-        AI cloud firm Nebius reports near eightfold revenue jump, shares surge.
-        <div class="translation">翻译：AI云公司Nebius报告称季度营收增长近八倍，股价飙升。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Investments in graphics processing units and data center hardware for its core AI cloud business drove first-quarter capital expenditure to about $2.5 billion, compared with $544 million a year earlier and above analysts' estimate of $2.4 billion, according to Visible Alpha.
-        <div class="translation">翻译：根据Visible Alpha的数据，对其核心AI云业务的图形处理单元和数据中心硬件的投资推动了第一季度资本支出达到约25亿美元，高于去年同期的5.44亿美元和分析师24亿美元的预期。</div>
-      </blockquote>
-    </li>
-    <li>
-      <div class="stock-tag">3. ILMN (Illumina, Inc.)</div>
-      <blockquote class="quote">
-        $ILMN may be one of the strangest Trump–Xi summit trades hiding in plain sight.
-        <div class="translation">翻译：伊鲁米纳（$ILMN）可能是特朗普-习近平峰会中最奇怪的、隐藏在众目睽睽之下的交易之一。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Illumina got put on China’s Unreliable Entities List. China later eased the outright equipment ban, but ILMN is still stuck on the lis.
-        <div class="translation">翻译：伊鲁米纳被列入中国的不可靠实体清单。中国后来放宽了设备禁令，但伊鲁米纳仍然在清单上。</div>
-      </blockquote>
-    </li>
-    <li>
-      <div class="stock-tag">4. FLEX (Flex Ltd.)</div>
-      <blockquote class="quote">
-        The biggest bottleneck in the AI buildout isn't just chips. It is the power and cooling needed to keep them from melting.
-        <div class="translation">翻译：人工智能建设中最大的瓶颈不仅仅是芯片，而是保持其不熔化所需的电力和散热。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Flex ($FLEX) is the one actually building the vertical power-to-chip infrastructure.
-        <div class="translation">翻译：Flex ($FLEX) 才是真正构建垂直的电力到芯片基础设施的公司。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Management just dropped a massive catalyst: they’re spinning off the Cloud and Power Infrastructure (CPI) segment into its own company in early 2027. Right now, this hyper-growth AI business is hidden behind a "boring" legacy manufacturing valuation.
-        <div class="translation">翻译：管理层刚刚宣布了一个巨大的催化剂：他们将在2027年初将云和电力基础设施（CPI）部门分拆成独立公司。目前，这项超高速增长的AI业务被隐藏在一个“无聊的”传统制造业估值之下。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Earnings Smash: Just hit 6.7% adjusted margins a full year early. Guidance: Raised FY27 EPS to $4.21–$4.51 (consensus was only $3.60).
-        <div class="translation">翻译：盈利大爆发：提前一年达到6.7%的调整后利润率。指引：将2027财年每股收益上调至4.21–4.51美元（市场预期仅为3.60美元）。</div>
-      </blockquote>
-    </li>
-    <li>
-      <div class="stock-tag">5. BB (BlackBerry Limited)</div>
-      <blockquote class="quote">
-        BlackBerry has quietly been making a name for itself. I found the stock on Yahoo Trending, the 3 month volume 12m vs current volume 40m+, this made me dig a little deeper like what's going on here?
-        <div class="translation">翻译：黑莓一直在悄然崛起。我在Yahoo Trending上发现该股，其3个月成交量为1200万，而当前成交量超过4000万，这让我深入探究一下究竟发生了什么？</div>
-      </blockquote>
-      <blockquote class="quote">
-        Turns out they have an AI software which is the safety guardrail necessary for real world AI implications, it prevents a robot from running into a human for example, used in defense, robotics, automotive, etc.
-        <div class="translation">翻译：原来他们拥有AI软件，这是一种在现实世界AI应用中必不可少的安全防护系统，例如它可以防止机器人撞到人类，广泛应用于国防、机器人、汽车等领域。</div>
-      </blockquote>
-      <blockquote class="quote">
-        They have nearly 1 billion in backlog orders, that's massive for only a 3.7b market cap. Then there's the profit margins which are a whopping 84%.
-        <div class="translation">翻译：他们有近10亿美元的积压订单，对于一个市值仅37亿美元的公司来说，这是一个巨大的数字。此外，其利润率高达84%。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Their software is called QNX, which is partnered directly with NVDA's Thor unit or something Thor.
-        <div class="translation">翻译：他们的软件名为QNX，直接与英伟达的Thor部门或某个Thor项目合作。</div>
-      </blockquote>
-    </li>
-    <li>
-      <div class="stock-tag">6. SE (Sea Limited)</div>
-      <blockquote class="quote">
-        $SE just had a monster quarter, seems like they took a beating due to a few quarters of horrendous earnings misses.
-        <div class="translation">翻译：Sea Limited (SE) 刚刚公布了一个惊人的季度业绩，之前似乎因为几个季度糟糕的盈利不及预期而遭受重创。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Re-accelerating growth, crazy beat on topline. TikTok did NOT kill them.
-        <div class="translation">翻译：增长再次加速，营收超出预期。TikTok并没有击垮他们。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Profitability ok despite tough TikTok competition. Doesn’t seem like a zero-sum game anymore and long-term a duopoly is emerging.
-        <div class="translation">翻译：尽管TikTok竞争激烈，但盈利能力尚可。这似乎不再是一个零和游戏，长期来看一个双头垄断正在形成。</div>
-      </blockquote>
-    </li>
-    <li>
-      <div class="stock-tag">7. SATS (EchoStar Corporation)</div>
-      <blockquote class="quote">
-        FCC approves EchoStar sales of 65 megahertz spectrum to SpaceX, 50 megahertz to AT&T.
-        <div class="translation">翻译：联邦通信委员会批准EchoStar向SpaceX出售65兆赫兹频谱，向AT&T出售50兆赫兹频谱。</div>
-      </blockquote>
-      <blockquote class="quote">
-        I have been long SATS for a while and added to my position after this. Market hasn't budged, I have listened to their conference calls and read the earnings reports. Still a good time if this makes sense to you.
-        <div class="translation">翻译：我持有SATS多头头寸已有一段时间，并在消息公布后加仓。市场对此没有太大反应，但我听了他们的电话会议并阅读了财报。如果你认同我的观点，现在仍然是好时机。</div>
-      </blockquote>
-    </li>
-    <li>
-      <div class="stock-tag">8. F (Ford Motor Company)</div>
-      <blockquote class="quote">
-        Ford is pivoting its battery plant to serve utilities, data centers and other businesses.
-        <div class="translation">翻译：福特正在将其电池工厂转型，为公用事业、数据中心和其他企业提供服务。</div>
-      </blockquote>
-      <blockquote class="quote">
-        IMO should be a good battery play. Position: F JAN 15 '27 11.85 Call.
-        <div class="translation">翻译：我认为这应该是一个不错的电池相关投资。仓位：福特2027年1月15日11.85美元看涨期权。</div>
-      </blockquote>
-    </li>
-    <li>
-      <div class="stock-tag">9. CASY (Casey General Stores, Inc.)</div>
-      <blockquote class="quote">
-        CASY (Casey General Stores) is an insane stock that I’ve never heard of in my life.
-        <div class="translation">翻译：CASY（Casey General Stores）是我这辈子从未听说过的疯狂股票。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Since 2000, it’s averaged around 20% per year and looks like a straight candle up with very, very few down years.
-        <div class="translation">翻译：自2000年以来，它每年平均增长约20%，走势像一根直线向上的K线，下跌的年份非常少。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Earnings look solid but it has a pretty high PE. Still, it’s rare to see a stock that has pretty much been a big green candle with very few corrections for 26 years straight.
-        <div class="translation">翻译：盈利看起来稳健，但市盈率相当高。尽管如此，连续26年几乎都是一根大阳线，很少出现回调的股票实属罕见。</div>
-      </blockquote>
-    </li>
+    <ul>
+      <li>
+        <div class="stock-tag">1. VG (Venture Global LNG, Inc.)</div>
+        <blockquote class="quote">
+          Everyone knows that the Strait of Whore-moose remains closed. But oil futures have been fairly muted lately considering the size of the disruption, which has led the market to move on and overlook certain names in the energy sector as huge beneficiaries of recent developments. The market doesn't seem to realize that the Strait staying closed is much, much worse than any quibbling between the US and Iran. Physical crude is still very expensive.
+          <div class="translation">翻译：每个人都知道霍尔木兹海峡仍然关闭。但考虑到中断的规模，近期油价期货表现平平，这导致市场忽视了能源领域某些公司作为近期事态发展巨大受益者的地位。市场似乎没有意识到海峡持续关闭的后果远比美伊之间的任何争吵都要糟糕得多。实体原油价格仍然非常昂贵。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">2. ILMN (Illumina, Inc.)</div>
+        <blockquote class="quote">
+          Trump is in China meeting Xi, and he brought a bunch of the boiz with him. But the one outlier??? Illumina. So why the hell is Illumina’s CEO there? In 2015, Illumina got put on China’s Unreliable Entities List.
+          <div class="translation">翻译：特朗普正在中国与习近平会面，他带了一群人随行。但有一个例外是谁？ Illumina。那么Illumina的CEO为什么会出现在那里？ 2015年，Illumina被列入中国的不可靠实体清单。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">3. CSCO (Cisco Systems, Inc.)</div>
+        <blockquote class="quote">
+          Sorry to those Cisco employees that are going to be laid off. Your hard work is making the company successful and it's unfortunate that your job loss makes for massive gains for the stock. The bull thesis is that AI needs networking.
+          <div class="translation">翻译：对那些即将被裁员的思科员工表示遗憾。你们的辛勤工作使公司取得了成功，不幸的是，你们的失业却为股票带来了巨大的收益。看涨的逻辑是AI需要网络。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Cisco Q3 2026 earnings report just posted a blowout revenue beat of $15.8 billion, and their stock surged double digits. What stood out was their forward guidance.
+          <div class="translation">翻译：思科2026财年第三季度财报公布了158亿美元的营收超出预期，其股价飙升了两位数。引人注目的是其前瞻性指引。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">4. HIMS (Hims & Hers Health, Inc.)</div>
+        <blockquote class="quote">
+          Q1 2026 looked ugly on the headline and entirely different on the substance: this is the trough quarter of a deliberate strategic pivot, and Q1 captured roughly one week of full branded Ozempic and Wegovy sales after the late-March launch. The transition’s costs are all in the print. Almost none of the new revenue is. Subscribers grew 9% to 2.584M, a sharp deceleration from the 111% top-line growth in thi.
+          <div class="translation">翻译：2026年第一季度标题看起来很糟糕，但在实质上却完全不同：这是深思熟虑的战略转型的低谷期，第一季度只包含了3月底推出后大约一周的Ozempic和Wegovy品牌销售额。转型成本全部体现在财报中，而新收入几乎没有。订阅用户增长9%至258.4万人，相比之前111%的营收增长大幅放缓。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">5. CASY (Casey's General Stores, Inc.)</div>
+        <blockquote class="quote">
+          Since 2000, it’s averaged around 20% per year and looks like a straight candle up with very, very few down years. Earnings look solid but it has a pretty high PE.
+          <div class="translation">翻译：自2000年以来，它每年平均增长约20%，看起来像一根笔直的上涨蜡烛，下跌的年份非常少。收益看起来不错，但市盈率相当高。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">6. GIB (CGI Inc.)</div>
+        <blockquote class="quote">
+          They seem to have a strong business model that isn’t overly reliant on AI and are deeply embedded with the US gov. They’ve tanked in stock since the Trump admin took over due to both instability and the Doge nonsense but I see no reason why they wouldn’t bounce back easily once stability is restored to the gov.
+          <div class="translation">翻译：他们似乎拥有一个不 अत्यधिक依赖人工智能的强大商业模式，并且与美国政府深度融合。自特朗普政府上任以来，由于不稳定和Doge币的荒谬，他们的股价暴跌，但我看不出一旦政府恢复稳定，他们没有理由不会轻易反弹。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">7. NOK (Nokia Corporation)</div>
+        <blockquote class="quote">
+          This position started at 290k CAD back in February. I’ve used leverage/margin, I’ve also bought more as the price climbed, increasing my average. Today, my holdings broke passed 806k USD, or 1.1m CAD. Price target of $30, and will reassess my position then.
+          <div class="translation">翻译：这个仓位始于二月份的29万加元。我使用了杠杆/保证金，并且随着价格上涨不断加仓，提高了我的平均成本。今天，我的持仓突破了80.6万美元，合110万加元。目标价是30美元，届时我将重新评估我的仓位。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">8. VRT (Vertiv Holdings Co)</div>
+        <blockquote class="quote">
+          VRT short is a price expression, not a business expression. Industrial peers (ETN, HUBB, nVent) trade 20-30x. A re-rate to 35-40x forward (still premium) = $180-220 stock. Hyperscaler capex is the load-bearing wall.
+          <div class="translation">翻译：VRT的做空是基于价格而非业务表现。工业同行（ETN, HUBB, nVent）的交易市盈率在20-30倍。即使重估到35-40倍远期市盈率（仍属高估），股价也应在180-220美元，即股价下跌约40-50%，而基本面不变。超大规模数据中心的资本支出是其核心支撑。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">9. HMR (Homology Medicines, Inc.)</div>
+        <blockquote class="quote">
+          The company had roughly $19 million in cash on its books. Nearly the majority of the entire market cap was cash. Insiders own over 90% of the float. Float is under 6 million shares nearly unborrowable. All it needed was any real demand to touch that stock.
+          <div class="translation">翻译：该公司账面上有大约1900万美元现金。几乎整个市值的大部分都是现金。内部人持有超过90%的流通股。流通股不足600万股，几乎无法借用。它所需要的就是任何真实的需求来触及这只股票。</div>
+        </blockquote>
+      </li>
+    </ul>
 
     <h2>4. AI主线讨论</h2>
     <div class="track-header">模型</div>
-    <blockquote class="quote">
-      Ramp says over half of U.S. businesses on its platform now pay for AI tools, and its latest data shows Anthropic passing OpenAI in paid business adoption, 34.4% vs. 32.3%.
-      <div class="translation">翻译：Ramp表示，其平台上一半以上的美国企业现在都在为AI工具付费，其最新数据显示，Anthropic在付费商业采用率方面已超过OpenAI，分别为34.4%和32.3%。</div>
-    </blockquote>
-    <blockquote class="quote">
-      If Claude keeps taking enterprise share, is this mainly a Google Cloud/TPU bull case, an AWS bull case, Microsoft/OpenAI risk, or just a broader Nvidia/data center demand signal?
-      <div class="translation">翻译：如果Claude继续在企业市场占据份额，这主要是对谷歌云/TPU的利好，还是对AWS的利好，是微软/OpenAI的风险，亦或仅仅是更广泛的英伟达/数据中心需求信号？</div>
-    </blockquote>
-    <blockquote class="quote">
-      Claude for equity research.
-      <div class="translation">翻译：Claude用于股票研究。</div>
-    </blockquote>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          Ramp says over half of U.S. businesses on its platform now pay for AI tools, and its latest data shows Anthropic passing OpenAI in paid business adoption, 34.4% vs. 32.3%. That is a pretty sharp reversal from earlier this year.
+          <div class="translation">翻译：Ramp公司表示，其平台上超过一半的美国企业现在为AI工具付费，其最新数据显示，Anthropic在付费企业采用率方面超过了OpenAI，分别为34.4%和32.3%。这与今年早些时候相比是一个相当大的逆转。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Datadog’s Big New Customer: Anthropic.
+          <div class="translation">翻译：Datadog的大新客户：Anthropic。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Claude for equity research.
+          <div class="translation">翻译：使用Claude进行股权研究。</div>
+        </blockquote>
+      </li>
+    </ul>
 
     <div class="track-header">算</div>
-    <blockquote class="quote">
-      Currently only 3 companies make HBM4, the biggest bottleneck of the entire AI build. Samsung, SK, and MU.
-      <div class="translation">翻译：目前只有三家公司生产HBM4，这是整个AI建设中最大的瓶颈，它们是三星、SK海力士和美光。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Nebius Group has grabbed a slice of the lucrative AI and cloud infrastructure ⁠market by providing Nvidia GPUs and computing platforms.
-      <div class="translation">翻译：Nebius Group通过提供英伟达GPU和计算平台，抢占了利润丰厚的人工智能和云基础设施市场。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Investments in graphics processing units and data center hardware for its core AI cloud business drove first-quarter capital expenditure to about $2.5 billion.
-      <div class="translation">翻译：对其核心AI云业务的图形处理单元和数据中心硬件的投资推动了第一季度资本支出达到约25亿美元。</div>
-    </blockquote>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          US clears H200 chip sales to 10 China firms as Nvidia CEO looks for breakthrough.
+          <div class="translation">翻译：美国批准向10家中国公司销售H200芯片，英伟达CEO寻求突破。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Last week, the CME Group announced a partnership with Silicon Data to launch the first ever futures contracts for AI computing power. CME’s CEO, Terrence Duffy, literally called compute "the new oil of the 21st century."
+          <div class="translation">翻译：上周，芝商所集团宣布与Silicon Data合作，推出首个AI计算能力期货合约。芝商所CEO泰伦斯·达菲（Terrence Duffy）将计算能力称为“21世纪的新石油”。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          By introducing a futures market, AWS can now buy the chips and simultaneously short compute future.
+          <div class="translation">翻译：通过引入期货市场，AWS现在可以购买芯片，同时做空计算能力期货。</div>
+        </blockquote>
+      </li>
+    </ul>
 
     <div class="track-header">光</div>
-    <blockquote class="quote">
-      暂无相关讨论
-      <div class="translation">翻译：No relevant discussion</div>
-    </blockquote>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          暂无直接提及。
+          <div class="translation"></div>
+        </blockquote>
+      </li>
+    </ul>
 
     <div class="track-header">存</div>
-    <blockquote class="quote">
-      The conventional DRAM that used to live quietly inside your PC or smartphone is now affecting everything from profit margins on Nintendo consoles to the prospects of AI data center expansion across the world.
-      <div class="translation">翻译：传统DRAM芯片曾安静地存在于您的个人电脑或智能手机中，如今它正影响着从任天堂游戏机利润率到全球AI数据中心扩张前景的一切。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Tech lynchpins Samsung and SK Hynix, the nation’s two largest companies, are the go-to providers of the su.
-      <div class="translation">翻译：韩国的两家最大公司，科技巨头三星和SK海力士，是该领域的首选供应商。</div>
-    </blockquote>
-    <blockquote class="quote">
-      MU will be the biggest beneficiary of imminent Samsung strike. Once shutdown, tooling recalibration on these lines take WEEKS not days.
-      <div class="translation">翻译：美光将是即将到来的三星罢工的最大受益者。一旦停产，这些生产线的工具重新校准需要数周而非数天。</div>
-    </blockquote>
-    <blockquote class="quote">
-      SK already sold out their DRAM, NAND, and HBM thru end of 2026 to NVDA.
-      <div class="translation">翻译：SK海力士已经将2026年底前的DRAM、NAND和HBM芯片全部售予英伟达。</div>
-    </blockquote>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          The loudest argument against MU right now is the massive capex. People see 750+billion being poured into AI arms race and are rightfully concerned that Micron is blindly pumping out chips that will eventually oversupply the market while hyperscalers dial back.
+          <div class="translation">翻译：目前对美光科技最强烈的反对理由是其巨额资本支出。人们看到7500多亿美元投入到AI军备竞赛中，并理所当然地担心美光科技盲目生产芯片，最终将导致市场供过于求，而超大规模企业则会缩减投入。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The conventional DRAM that used to live quietly inside your PC or smartphone is now affecting everything from profit margins on Nintendo consoles to the prospects of AI data center expansion across the world.
+          <div class="translation">翻译：过去在个人电脑或智能手机中默默无闻的传统DRAM现在正影响着一切，从任天堂游戏机的利润率到全球AI数据中心扩张的前景。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Sell Your Memory Stocks.
+          <div class="translation">翻译：卖掉你的内存股票。</div>
+        </blockquote>
+      </li>
+    </ul>
 
     <div class="track-header">电</div>
-    <blockquote class="quote">
-      The biggest bottleneck in the AI buildout isn't just chips. It is the power and cooling needed to keep them from melting.
-      <div class="translation">翻译：人工智能建设中最大的瓶颈不仅仅是芯片。它是保持其不熔化所需的电力和散热。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Flex ($FLEX) is the one actually building the vertical power-to-chip infrastructure.
-      <div class="translation">翻译：Flex ($FLEX) 才是真正构建垂直的电力到芯片基础设施的公司。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Ford is pivoting its battery plant to serve utilities, data centers and other businesses. IMO should be a good battery play.
-      <div class="translation">翻译：福特正在将其电池工厂转型，为公用事业、数据中心和其他企业提供服务。我认为这应该是一个不错的电池相关投资。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Vertiv ($VRT) is a ~90x trailing P/E electrical equipment company servicing AI capex build.
-      <div class="translation">翻译：Vertiv ($VRT) 是一家市盈率约90倍的电气设备公司，服务于人工智能资本支出建设。</div>
-    </blockquote>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          It feels like the AI trade is becoming a power demand story too.
+          <div class="translation">翻译：感觉AI交易也正在变成一个电力需求的故事。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Large scale AI datacenters need a few boring but hard things cheap power, grid capacity, cooling, and industrial sites you can actually run 24/7. Miners accidentally built a lot of that.
+          <div class="translation">翻译：大型AI数据中心需要一些枯燥但重要的东西：廉价电力、电网容量、冷却以及能全天候运行的工业场地。矿工们偶然间建造了其中很多。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          OKLO - main investor Altman XE - main investor Bezos. Neither company has a working prototype, a concrete concept, or anything to prove their tech is a viable solution yet. However, their valuations are already incredibly high.
+          <div class="translation">翻译：OKLO的主要投资者是奥特曼，X Energy的主要投资者是贝索斯。两家公司都没有可行的原型、具体的概念，也无法证明其技术是可行的解决方案。然而，它们的估值已经非常高。</div>
+        </blockquote>
+      </li>
+    </ul>
 
     <div class="track-header">板</div>
-    <blockquote class="quote">
-      A reading of the S-1/A, with operational benchmarks against peers. Pressure-testing the Cerebras IPO.
-      <div class="translation">翻译：对S-1/A文件进行解读，并与同行进行运营基准比较，以对Cerebras的首次公开募股进行压力测试。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Nebius Group reported a nearly eightfold rise in quarterly revenue on Wednesday, benefiting from rising demand for artificial intelligence ‌infrastructure and cloud services amid a boom in enterprise spending on ‌the technology.
-      <div class="translation">翻译：Nebius Group周三报告称季度营收增长近八倍，受益于企业对人工智能技术支出激增，对人工智能基础设施和云服务的需求不断增长。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Nebius has grabbed a slice of the lucrative AI and cloud infrastructure ⁠market by providing Nvidia GPUs and computing platforms.
-      <div class="translation">翻译：Nebius通过提供英伟达GPU和计算平台，抢占了利润丰厚的人工智能和云基础设施市场。</div>
-    </blockquote>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          暂无直接提及。
+          <div class="translation"></div>
+        </blockquote>
+      </li>
+    </ul>
 
     <div class="track-header">云</div>
-    <blockquote class="quote">
-      AI cloud firm Nebius reports near eightfold revenue jump, shares surge, benefiting from rising demand for artificial intelligence ‌infrastructure and cloud services amid a boom in enterprise spending on ‌the technology.
-      <div class="translation">翻译：人工智能云公司Nebius报告称季度营收增长近八倍，股价飙升，受益于企业对人工智能技术支出激增，对人工智能基础设施和云服务的需求不断增长。</div>
-    </blockquote>
-    <blockquote class="quote">
-      If Claude keeps taking enterprise share, is this mainly a Google Cloud/TPU bull case, an AWS bull case, Microsoft/OpenAI risk, or just a broader Nvidia/data center demand signal?
-      <div class="translation">翻译：如果Claude继续在企业市场占据份额，这主要是对谷歌云/TPU的利好，还是对AWS的利好，是微软/OpenAI的风险，亦或仅仅是更广泛的英伟达/数据中心需求信号？</div>
-    </blockquote>
-    <blockquote class="quote">
-      Alibaba's core profit plunges 84% even as AI and cloud growth accelerate.
-      <div class="translation">翻译：尽管人工智能和云业务增长加速，阿里巴巴核心利润仍暴跌84%。</div>
-    </blockquote>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          Nebius Group reported a nearly eightfold rise in quarterly revenue on Wednesday, benefiting from rising demand for artificial intelligence infrastructure and cloud services amid a boom in enterprise spending on the technology.
+          <div class="translation">翻译：Nebius集团周三公布季度营收增长近八倍，受益于人工智能基础设施和云服务需求增长，以及企业在技术支出上的蓬勃发展。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Cloud growth accelerating so fast AWS executives are waking up in cold sweats.
+          <div class="translation">翻译：云业务增长如此之快，以至于AWS高管们都从噩梦中惊醒。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Consensus CAPEX estimates for Hyperscalers for 26,27 and 28 are USDbn 637, 804 and 850 (just MSFT, Amazon, Meta and Alphabet).
+          <div class="translation">翻译：超大规模数据中心提供商（仅微软、亚马逊、Meta和Alphabet）2026、2027和2028年的资本支出共识预测分别为6370亿美元、8040亿美元和8500亿美元。</div>
+        </blockquote>
+      </li>
+    </ul>
 
     <div class="track-header">AI应用</div>
-    <blockquote class="quote">
-      BlackBerry has an AI software which is the safety guardrail necessary for real world AI implications, it prevents a robot from running into a human for example, used in defense, robotics, automotive, etc.
-      <div class="translation">翻译：黑莓拥有一款AI软件，它是现实世界AI应用中必不可少的安全防护系统，例如它可以防止机器人撞到人类，广泛应用于国防、机器人、汽车等领域。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Datadog’s Big New Customer: Anthropic.
-      <div class="translation">翻译：Datadog 的大新客户：Anthropic。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Ramp says over half of U.S. businesses on its platform now pay for AI tools.
-      <div class="translation">翻译：Ramp 表示，其平台上一半以上的美国企业现在都在为AI工具付费。</div>
-    </blockquote>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          Atlassian being one of the final AI winners.
+          <div class="translation">翻译：Atlassian是最终的AI赢家之一。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Vibe Excel and the Future of White-Collar Work.
+          <div class="translation">翻译：Vibe Excel和白领工作的未来。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Ramp says over half of U.S. businesses on its platform now pay for AI tools.
+          <div class="translation">翻译：Ramp公司表示，其平台上超过一半的美国企业现在为AI工具付费。</div>
+        </blockquote>
+      </li>
+    </ul>
+
+</body>
+</html>
         </div>
         <script>
             var myChart = echarts.init(document.getElementById('gauge'));
