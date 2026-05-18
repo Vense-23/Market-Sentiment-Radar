@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>05月17日 情报终端</title>
+        <title>05月18日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,387 +36,507 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 05月17日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-05-17 22:02:39 (北京时间)</p>
+            <h1>🎯 05月18日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-05-18 12:50:49 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit市场情绪摘要 (2026年05月17日)</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
-        h1, h2, h3 { color: #2c3e50; }
-        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
-        li { margin-bottom: 15px; background-color: #fff; border: 1px solid #ddd; border-radius: 5px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #007bff; margin-bottom: 10px; font-size: 1.1em; }
-        .quote { margin: 10px 0 0 0; padding: 15px 20px; border-left: 4px solid #007bff; background-color: #eaf4ff; font-style: italic; color: #555; border-radius: 0 5px 5px 0; }
-        .quote .translation { margin-top: 10px; font-style: normal; color: #333; font-size: 0.95em; }
-        .track-header { font-weight: bold; color: #28a745; margin-top: 20px; margin-bottom: 10px; font-size: 1.05em; border-bottom: 1px dotted #ccc; padding-bottom: 5px; }
-        ul { list-style-type: none; padding: 0; }
-    </style>
-</head>
+            <style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; line-height: 1.6; color: #333; margin: 20px; background-color: #f4f7f6; }
+  h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 40px; }
+  h3 { color: #34495e; margin-top: 30px; }
+  ul { list-style: none; padding: 0; }
+  li { background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; padding: 15px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+  .stock-tag { font-weight: bold; color: #2c3e50; font-size: 1.1em; margin-bottom: 10px; }
+  .quote { border-left: 4px solid #3498db; padding-left: 15px; margin: 10px 0; font-style: italic; color: #555; }
+  .translation { font-style: normal; color: #7f8c8d; margin-top: 5px; font-size: 0.9em; }
+  .track-header { font-weight: bold; color: #3498db; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; padding-left: 5px; }
+  .section-summary { margin-bottom: 20px; color: #34495e; }
+  .source { font-size: 0.8em; color: #95a5a6; text-align: right; margin-top: 5px; }
+</style>
+
 <body>
 
-    <h1>Reddit市场情绪摘要 (2026年05月17日)</h1>
+  <h1>Reddit 市场情绪网页 (2026年05月18日)</h1>
 
-    <h2>1. 宏观与市场情绪</h2>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Traders are suddenly pricing in a possible rate hike at the next Fed meeting after the inflation print, which is a pretty sharp flip from the “rate cuts soon” narrative just a short time ago.
-          <div class="translation">翻译：通胀数据公布后，交易员们突然开始预计美联储下次会议可能会加息，这与此前“即将降息”的说法形成了鲜明逆转。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          The S&P just hit 7,500 but nearly half the index is below its 50-day moving average.
-          <div class="translation">翻译：标普500指数刚刚达到7,500点，但近一半的成分股低于其50日移动平均线。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Earlier this year it felt like sentiment was extremely negative everywhere. Now fast forward a few months and sentiment feels completely different. Stocks are ripping again, people seem bullish on AI/growth, and fear kinda disappeared.
-          <div class="translation">翻译：今年早些时候，市场情绪普遍悲观。但几个月后，情绪完全不同了。股市再次飙升，人们对人工智能/增长感到乐观，恐惧情绪也消失了。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Chevron CEO throwing around words like shortage Gas is up 50% The war doesn't seem to have an end in sight.
-          <div class="translation">翻译：雪佛龙首席执行官抛出“短缺”等词汇，汽油价格上涨了50%，战争似乎没有尽头。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          China, US agree to reduce tariffs on unspecified products to boost trade.
-          <div class="translation">翻译：中美同意削减未指明产品的关税以促进贸易。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Trump left Beijing with no deal, just "fantastic" conversations... and the market punished tech immediately.
-          <div class="translation">翻译：特朗普从北京空手而归，只带回了“美妙的对话”，市场立即惩罚了科技股。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          CBRS opened at $350 against a $185 IPO price, briefly hit $385, and closed day one at $311. That's the whole story in one stock. Pure sentiment, zero fundamentals like GetClaw predicted so im not suprised.
-          <div class="translation">翻译：CBRS以350美元开盘，高于185美元的IPO价格，短暂触及385美元，首日收盘报311美元。这就是一只股票的全部故事。纯粹的情绪，没有基本面，正如GetClaw所预测的那样，我并不惊讶。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          The more you learn investing, the more you realize there’s not much to optimize beyond saving more, staying invested, and avoiding mistakes.
-          <div class="translation">翻译：你对投资了解得越多，就越会意识到除了多存钱、坚持投资和避免错误之外，没有什么可优化的了。</div>
-        </blockquote>
-      </li>
-    </ul>
+  <h2>1. 宏观与市场情绪</h2>
+  <div class="section-summary">
+    市场在2026年5月18日充满不确定性，宏观面受到地缘政治紧张、通胀加速和美联储政策转向预期等多重因素影响。伊朗战争导致油价飙升，对全球经济构成威胁，并可能引发芯片制造商的担忧。同时，美国通胀数据（CPI 3.8%，PPI 6%）高于预期，导致债券市场预期美联储将加息而非降息，新任美联储主席凯文·沃什面临挑战。尽管金银作为传统通胀对冲工具意外下跌，市场情绪却在年初的悲观后转向看涨，尤其是在人工智能和成长型股票领域。
+  </div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Only 5 times in my life a pigeon pooped on my right shoulder. Hence I believe the short term bear market is coming. Tomorrow will be a red day.
+        <div class="translation">翻译：我一生中只有5次被鸽子拉屎在右肩上。因此，我相信短期熊市即将来临。明天将是红色的一天。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Well fuck him stocks only go up, Green Day tomorrow.
+        <div class="translation">翻译：去他妈的，股票只会涨，明天是绿色的一天。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Markets will go sideways tmrw, fuck your puts, fuck your calls, theta gang all year round.
+        <div class="translation">翻译：明天市场会横盘整理，去你的看跌期权，去你的看涨期权，theta 帮全年无休。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Seeing retail get literally dumped on in broad daylight is the ultimate contrarian buy signal. The bottom is in. Markets are going green tomorrow. Calls on everything.
+        <div class="translation">翻译：眼睁睁看着散户在大白天被“倾倒”是最终的逆向买入信号。底部已现。明天市场将上涨。全面买入看涨期权。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        US stock market has dropped from Q2 -> Q4 during midterm election years.
+        <div class="translation">翻译：美国股市在中期选举年从第二季度跌至第四季度。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        inflation is accelerating. CPI 3.8 percent in april, the highest since may 2023. PPI 6 percent annual with wholesale gasoline up 15.6 percent in a single month, driving over 40 percent of the april goods increase. core CPI 2.8 percent. bond market already moved. 30 year yield at the highest level since may 2025, approaching territory not seen consistently since before 2008. Traders are fully pricing in one fed rate hike by March.
+        <div class="translation">翻译：通货膨胀正在加速。4月份CPI为3.8%，是2023年5月以来的最高水平。PPI年率为6%，其中汽油批发价格在一个月内上涨了15.6%，贡献了4月份商品增长的40%以上。核心CPI为2.8%。债券市场已经发生变化。30年期国债收益率达到2025年5月以来的最高水平，接近2008年以前持续未见的水平。交易员已完全消化了美联储在3月加息一次的预期。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Earlier this year it felt like sentiment was extremely negative everywhere. Now fast forward a few months and sentiment feels completely different. Stocks are ripping again, people seem bullish on AI/growth, and fear kinda disappeared.
+        <div class="translation">翻译：今年早些时候，感觉市场情绪极其消极。现在几个月过去了，情绪感觉完全不同。股票再次飙升，人们似乎看好人工智能/增长，恐惧感也消失了。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Trump flew home from Beijing. No trade framework. No Taiwan agreement. His words: "fantastic conversations." INTC dropped 6%. AMD lost 5.7%. MU fell 6.6%. NVDA shed 4.4%. The S&P closed down 1.24%, Nasdaq down 1.54%.
+        <div class="translation">翻译：特朗普从北京飞回家。没有贸易框架。没有台湾协议。他的原话是：“极好的对话。”英特尔下跌6%。AMD下跌5.7%。美光下跌6.6%。英伟达下跌4.4%。标普收盘下跌1.24%，纳斯达克下跌1.54%。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Iran setting up a crypto toll booth doesn't scream "everything will all be over soon.". Trump rushing to the "situation room" calling his buddies over at Axios trying to get a fast bullish headline out as he prepares military strikes. Looks like another red wedding for longs tomorrow. What's that smell? I think it's chip bulls sweating profusely.
+        <div class="translation">翻译：伊朗设立加密货币收费站并不意味着“一切很快就会结束”。特朗普冲到“作战室”，给Axios的朋友打电话，试图在他准备军事打击之际迅速发布看涨头条。看起来明天对多头来说又是一场“血色婚礼”。那是什么味道？我想是芯片多头在大量出汗。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Gold shot up hard earlier this year over 5500 an ounce before giving back around 16 percent to sit near 4500 now. One part of me says this dip looks like a chance to add more. The other part wonders if the easy gains are already made.
+        <div class="translation">翻译：今年早些时候，黄金价格曾飙升至每盎司5500美元以上，随后回落约16%，目前徘徊在4500美元附近。我的一部分想法是，这次下跌看起来是增持的好机会。而另一部分则在想，是否容易的收益已经赚到手了。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        My portfolio is literally 68% semiconductors + defense lol. Like accidentally. That’s probably the actual policy priority. Tesla stuck out like a sore thumb with 25% China production but apparently Elon has Trump on speed dial so 🤷. Most stuff is down 0.5-9% rn but honestly I’m just watching to see if this actually moves predictably when trade news drops.
+        <div class="translation">翻译：我的投资组合实际上是68%的半导体+国防，这真是巧合。这可能才是真正的政策优先事项。特斯拉以其25%的中国产量显得格格不入，但埃隆似乎和特朗普有直通电话，所以🤷。目前大部分股票下跌0.5-9%，但老实说，我只是在观察贸易消息发布时，这些股票是否真的会可预测地波动。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        friday's gold move is the bond market talking. gold opened 4652 and closed 4538 on the broker daily candle, low of 4511 intraday. 114 dollar single-day drop. silver collapsed from a weekly high near 88 down to a 75.89 close. this looks insane when CPI is at 3.8 percent and PPI is at 6 percent. The answer is real rates.
+        <div class="translation">翻译：周五黄金的走势是债券市场在“说话”。黄金开盘4652，经纪商日线收盘4538，盘中低点4511。单日下跌114美元。白银从每周高点88附近跌至75.89收盘。当CPI为3.8%而PPI为6%时，这看起来很疯狂。答案是实际利率。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Brent oil back above $110 as Iran could sustain blockade for months according to US Intel.
+        <div class="translation">翻译：据美国情报部门称，由于伊朗可能维持封锁数月，布伦特原油价格回升至每桶110美元以上。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Traders now see next Fed interest rate move as a hike following inflation surge.
+        <div class="translation">翻译：通胀飙升后，交易员现在认为美联储下一步的利率行动将是加息。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Kevin Warsh comes into the Fed facing a big 'family fight' over cutting interest rates.
+        <div class="translation">翻译：凯文·沃什入主美联储，面临着一场关于降息的巨大“家庭内斗”。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <h2>2. 热议中的个股和想法</h2>
-    <ul>
-      <li>
-        <div class="stock-tag">MU (Micron Technology)</div>
-        <blockquote class="quote">
-          I'm a bit surprised that Micron dropped THIS much today. Can Micron actually lose right now, though?
-          <div class="translation">翻译：我对美光今天跌幅如此之大感到有些惊讶。但是，美光现在真的会亏损吗？</div>
-        </blockquote>
-        <blockquote class="quote">
-          I don't see any reason they don't meet market estimate next earnings call in June, but their outlook must be amazing considering half their competition was on strike, no?
-          <div class="translation">翻译：我不认为他们无法达到6月份下次财报电话会议的市场预期，但考虑到他们一半的竞争对手都在罢工，他们的前景肯定很棒，不是吗？</div>
-        </blockquote>
-        <blockquote class="quote">
-          Even if memory capex is reduced, they'd have more orders coming in that Samsung would've received and can command more premium with less competition.
-          <div class="translation">翻译：即使存储资本支出减少，他们也会获得三星本应获得更多订单，并且在竞争较少的情况下可以获得更高的溢价。</div>
-        </blockquote>
-        <blockquote class="quote">
-          I wouldn't even mind owning MU and selling calls on it if i have to.
-          <div class="translation">翻译：我甚至不介意持有美光并被迫卖出看涨期权。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">005930.KS (Samsung Electronics Co Ltd)</div>
-        <blockquote class="quote">
-          Samsung -8.6% as 50k workers prepare 18-day strike over 15% profit share demand, $2B daily loss risk and chip output cuts.
-          <div class="translation">翻译：三星因5万名工人准备举行18天罢工，要求15%的利润分成，面临每天20亿美元损失风险和芯片产量削减，股价下跌8.6%。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Samsung Electronics has entered emergency management mode as up to 50,000 employees prepare to strike for 18 days starting May 21.
-          <div class="translation">翻译：三星电子已进入紧急管理模式，多达5万名员工准备从5月21日开始罢工18天。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Samsung Electronics has proposed performance bonuses of 607% of annual salary for its memory chip division, compared to just 50-100% for its foundry and System LSI units, reflecting a stark profit divide that has intensified labor tensions.
-          <div class="translation">翻译：三星电子提议其存储芯片部门的绩效奖金为年薪的607%，而晶圆代工和系统LSI部门仅为50-100%，这反映出利润差距巨大，加剧了劳资紧张。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The union has threatened an 18-day general strike starting May 21, which JPMorgan estimates could erase up to ₩31 trillion (approximately $20.7 billion) in operating profit.
-          <div class="translation">翻译：工会已威胁从5月21日开始举行18天的总罢工，摩根大通估计这可能抹去高达31万亿韩元（约207亿美元）的营业利润。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">GOOGL (Alphabet Inc.)</div>
-        <blockquote class="quote">
-          Three moves stood out in Berkshire's Q1 13F, but the story is the rotation between two of them: GOOGL: position more than tripled, from 17.8M shares to 54.2M. Roughly $5.6B → $15.6B. About $10B of fresh capital deployed in a single quarter.
-          <div class="translation">翻译：伯克希尔第一季度13F报告中有三项举动引人注目，但关键是其中两项之间的轮换：谷歌A：持仓增加了两倍多，从1780万股增至5420万股。大约56亿美元增至156亿美元。一个季度内投入了约100亿美元的新资本。</div>
-        </blockquote>
-        <blockquote class="quote">
-          In Q1, Berkshire tripled their $GOOG position while Bill Ackman sold 95% to buy $MSFT despite being “very” bullish on GOOG long term.
-          <div class="translation">翻译：第一季度，伯克希尔将其谷歌持仓增加了两倍，而比尔·阿克曼尽管长期看好谷歌，却卖出了95%的谷歌股份转而购买微软。</div>
-        </blockquote>
-        <blockquote class="quote">
-          My investing philosophy aligns with Berkshire's. I would rather double down on the winners I have high conviction in or just let them run.
-          <div class="translation">翻译：我的投资理念与伯克希尔一致。我宁愿加倍投资我高度看好的赢家，或者任其发展。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">MSFT (Microsoft Corp)</div>
-        <blockquote class="quote">
-          Bill Ackman on X: “To be clear, our sale of $GOOG was not a bet against the company. But at current valuations and in light of our finite capital base, we used $GOOG as a source of funds for $MSFT”.
-          <div class="translation">翻译：比尔·阿克曼在X上表示：“澄清一下，我们出售谷歌并非是做空该公司。但在当前估值以及我们有限的资本基础下，我们用谷歌作为购买微软的资金来源。”</div>
-        </blockquote>
-        <blockquote class="quote">
-          Why is no one talking about how GTA 6 for the first couple years being ONLY available on XBOX and Playstation both of which are own by Microsoft and Sony and will be getting 30 PERCENT of every sale of GTA 6 without spending a cent on developing GTA 6.
-          <div class="translation">翻译：为什么没有人讨论GTA 6最初几年只在Xbox和PlayStation上发售，而这两个平台都归微软和索尼所有，并且在不花费一分钱开发GTA 6的情况下，将获得GTA 6每笔销售额的30%。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Im bullish on GTA 6 but i’m loading the boat on Sony and Microsoft the two companies that benefit without spending a cent.
-          <div class="translation">翻译：我看好GTA 6，但我正在大举买入索尼和微软，这两家公司无需花费一分钱就能受益。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">NVDA (NVIDIA Corp)</div>
-        <blockquote class="quote">
-          Trump Confirms Beijing Rejects Nvidia H200 Purchases; Jensen Huang's Last-Minute Trip Yields No Breakthrough.
-          <div class="translation">翻译：特朗普证实北京拒绝采购英伟达H200；黄仁勋的最后一刻之行未能取得突破。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Nvidia would have no way to manufacture its AI GPUs, Apple would lack chips for the iPhone, and AMD or Intel would be left paralyzed.
-          <div class="translation">翻译：英伟达将无法制造其AI GPU，苹果将缺乏iPhone芯片，而AMD或英特尔将陷入瘫痪。</div>
-        </blockquote>
-        <blockquote class="quote">
-          $NVDA (Ai king/infrastructure) Same time frame and again less than 4k premium.
-          <div class="translation">翻译：英伟达（人工智能之王/基础设施）同样的时间框架，并且再次低于4000美元的期权金。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">TSLA (Tesla Inc)</div>
-        <blockquote class="quote">
-          This week was pure chaos theater but I loved every second of it. Monday-Tuesday TSLA got flushed. $445 straight down to $416.80 on those “China sales collapse” headlines.
-          <div class="translation">翻译：这一周是纯粹的混乱剧场，但我喜欢它的每一秒。周一至周二，特斯拉因“中国销售崩溃”的头条新闻，股价从445美元直接跌至416.80美元。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Then Elon jumps on the plane to Beijing… boom 💥 — narrative does a full 180. Stock rips, clears the $437 pivot, and tags $451.98.
-          <div class="translation">翻译：然后埃隆跳上飞往北京的飞机……砰💥——叙事完全逆转。股价飙升，突破437美元的支点，触及451.98美元。</div>
-        </blockquote>
-        <blockquote class="quote">
-          I closed the short-term layers, locked in sizable realized gains, rolled the rest with a fat 14% cushion.
-          <div class="translation">翻译：我平仓了短期头寸，锁定了可观的已实现收益，并以14%的丰厚缓冲平仓了其余头寸。</div>
-        </blockquote>
-        <blockquote class="quote">
-          I don’t need TSLA to rip to $500 to win. I just need it to stay “not bearish”.
-          <div class="translation">翻译：我不需要特斯拉飙升到500美元才能赢。我只需要它保持“不看跌”即可。</div>
-        </blockquote>
-      </li>
-    </ul>
+  <h2>2. 热议中的个股和想法</h2>
+  <ul>
+    <li>
+      <div class="stock-tag">005930.KS (Samsung Electronics Co., Ltd.)</div>
+      <blockquote class="quote">
+        Samsung -8.6% as 50k workers prepare 18-day strike over 15% profit share demand, $2B daily loss risk and chip output cuts. Note: 50k workers is 40% of Samsung's South Korean workforce. Discuss: Bullish or bearish for MU, SNDK, WDC, STX? Supply squeeze or demand slowdown for memory prices? Short-term shock or longer-term pricing catalyst?
+        <div class="translation">翻译：三星因5万名工人准备举行18天罢工，要求15%的利润分成，面临每天20亿美元的损失风险和芯片产量削减，股价下跌8.6%。注意：5万名工人占三星韩国劳动力的40%。讨论：这对美光、西部数据、希捷来说是利好还是利空？内存价格是供应紧张还是需求放缓？短期冲击还是长期定价催化剂？</div>
+      </blockquote>
+      <blockquote class="quote">
+        A South Korean court granted on May 18 a partial injunction requested by Samsung Electronics ordering the company’s union in the country to ensure its strike does not cut into production volume. The court also said in the ruling that union action must not lead to the degradation of materials used in the world’s largest memory chip maker’s production.
+        <div class="translation">翻译：韩国一家法院于5月18日批准了三星电子提出的部分禁令请求，命令该公司在韩国的工会确保其罢工不会削减生产量。法院在裁决中还表示，工会行动不得导致这家全球最大内存芯片制造商生产所用材料的品质下降。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Samsung Electronics has proposed performance bonuses of 607% of annual salary for its memory chip division, compared to just 50-100% for its foundry and System LSI units, reflecting a stark profit divide that has intensified labor tensions. The union has threatened an 18-day general strike starting May 21, which JPMorgan estimates could erase up to ₩31 trillion (approximately $20.7 billion) in operating profit.
+        <div class="translation">翻译：三星电子提议其内存芯片部门的绩效奖金为年薪的607%，而其代工和系统LSI部门仅为50-100%，这反映了巨大的利润差距，加剧了劳资紧张关系。工会已威胁从5月21日开始举行18天大罢工，摩根大通估计这可能抹去高达31万亿韩元（约207亿美元）的营业利润。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Samsung Electronics and its South Korean labour union will resume pay talks ​on Monday with a government mediator, the union said, in a ‌move that could ease concerns over a potentially disruptive strike at the tech giant.
+        <div class="translation">翻译：三星电子及其韩国工会将于周一与政府调解员恢复工资谈判，工会表示，此举可能缓解对这家科技巨头潜在破坏性罢工的担忧。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">NVDA (NVIDIA Corporation)</div>
+      <blockquote class="quote">
+        What $10,000 invested in these IPO’s is worth today… Nvidia: $56 million.
+        <div class="translation">翻译：今天，这些首次公开募股中投资1万美元的价值是……英伟达：5600万美元。</div>
+      </blockquote>
+      <blockquote class="quote">
+        NVDA shed 4.4%. The S&P closed down 1.24%, Nasdaq down 1.54%.
+        <div class="translation">翻译：英伟达下跌4.4%。标普收盘下跌1.24%，纳斯达克下跌1.54%。</div>
+      </blockquote>
+      <blockquote class="quote">
+        You may get MU and it may 3x, or you may get it and dump 50%. With the ETF you get the entire trend, regardless of what happens with memory. The Semis ETF rebalances, adds new companies and changes percentages of each company, you will own Nvidia, MU and every other winner.
+        <div class="translation">翻译：你可能会买美光，它可能涨三倍，也可能跌50%。有了ETF，你就能把握整个趋势，无论内存发生什么。半导体ETF会进行再平衡，增加新公司并改变各公司的持股比例，你将拥有英伟达、美光和所有其他赢家。</div>
+      </blockquote>
+      <blockquote class="quote">
+        NVDA (Ai king/infrastructure) Thinking Dec 2026-Jan 2027 under $4k premium.
+        <div class="translation">翻译：英伟达（人工智能之王/基础设施）考虑2026年12月至2027年1月的期权，期权费低于4000美元。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Trump Confirms Beijing Rejects Nvidia H200 Purchases; Jensen Huang's Last-Minute Trip Yields No Breakthrough.
+        <div class="translation">翻译：特朗普证实北京拒绝购买英伟达H200；黄仁勋的最后一刻之行未能取得突破。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">MU (Micron Technology, Inc.)</div>
+      <blockquote class="quote">
+        Bullish or bearish for MU, SNDK, WDC, STX? Supply squeeze or demand slowdown for memory prices? Short-term shock or longer-term pricing catalyst?
+        <div class="translation">翻译：这对美光、闪迪、西部数据、希捷是利好还是利空？内存价格是供应紧张还是需求放缓？短期冲击还是长期定价催化剂？</div>
+      </blockquote>
+      <blockquote class="quote">
+        MU fell 6.6%. The S&P closed down 1.24%, Nasdaq down 1.54%.
+        <div class="translation">翻译：美光下跌6.6%。标普收盘下跌1.24%，纳斯达克下跌1.54%。</div>
+      </blockquote>
+      <blockquote class="quote">
+        I bought MU at 400 and NBIS at 86 with about 60% of my portfolio at the start of the year. MU collared at 400p and 600c.
+        <div class="translation">翻译：今年年初我用大约60%的投资组合买入了400美元的美光和86美元的NBIS。美光以400看跌期权和600看涨期权进行了领口策略。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Im looking at option chain for MU and I noticed in my chain scanner that the 2 weeks out around 0.15-0.3 delta are trading at pretty high premiums.... I wouldn't even mind owning MU and selling calls on it if i have to.
+        <div class="translation">翻译：我正在查看美光的期权链，发现在我的期权链扫描器中，两周后delta在0.15-0.3左右的期权交易价格相当高……如果不得不拥有美光并卖出看涨期权，我也不会介意。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">AMD (Advanced Micro Devices, Inc.)</div>
+      <blockquote class="quote">
+        I have 6 Amd long calls at 200$ and short calls at 215(edited). So I am stuck unless the market goes down so I can slowly pay back my short calls.
+        <div class="translation">翻译：我有6张200美元的AMD长期看涨期权和215美元的短期看涨期权（已编辑）。所以我被套住了，除非市场下跌，我才能慢慢偿还我的短期看涨期权。</div>
+      </blockquote>
+      <blockquote class="quote">
+        AMD: $7.4 million.
+        <div class="translation">翻译：AMD：740万美元。</div>
+      </blockquote>
+      <blockquote class="quote">
+        AMD lost 5.7%. The S&P closed down 1.24%, Nasdaq down 1.54%.
+        <div class="translation">翻译：AMD下跌5.7%。标普收盘下跌1.24%，纳斯达克下跌1.54%。</div>
+      </blockquote>
+      <blockquote class="quote">
+        All the tech stocks have been doing really well, bought in around 2021-ish with names like AMD TSM etc as well as the usual VTI.
+        <div class="translation">翻译：所有科技股都表现得非常好，大约在2021年左右买入，包括AMD、台积电等公司以及常见的VTI。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">MSFT (Microsoft Corporation)</div>
+      <blockquote class="quote">
+        Microsoft: $42 million.
+        <div class="translation">翻译：微软：4200万美元。</div>
+      </blockquote>
+      <blockquote class="quote">
+        To be clear, our sale of $GOOG was not a bet against the company. We are very bullish long term on Alphabet. But at current valuations and in light of our finite capital base, we used $GOOG as a source of funds for $MSFT.
+        <div class="translation">翻译：需要澄清的是，我们出售谷歌并非做空该公司。我们长期看好Alphabet。但鉴于当前估值和我们有限的资本基础，我们利用谷歌的资金来购买微软。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Why is no one talking about how GTA 6 for the first couple years being ONLY available on XBOX and Playstation both of which are own by Microsoft and Sony and will be getting 30 PERCENT of every sale of GTA 6 without spending a cent on developing GTA 6. Im bullish on GTA 6 but i’m loading the boat on Sony and Microsoft the two companies that benefit without spending a cent.
+        <div class="translation">翻译：为什么没人谈论《GTA 6》最初几年只在XBOX和PlayStation平台上线，而这两个平台都归微软和索尼所有，并且它们将在不花一分钱开发《GTA 6》的情况下获得《GTA 6》每一笔销售的30%？我虽然看好《GTA 6》，但我正大举买入索尼和微软的股票，这两家公司无需投入开发就能获利。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">INTC (Intel Corporation)</div>
+      <blockquote class="quote">
+        RIP Intel call holders, RIP Nana.
+        <div class="translation">翻译：英特尔看涨期权持有者，安息吧，娜娜。</div>
+      </blockquote>
+      <blockquote class="quote">
+        INTC dropped 6%. The S&P closed down 1.24%, Nasdaq down 1.54%.
+        <div class="translation">翻译：英特尔下跌6%。标普收盘下跌1.24%，纳斯达克下跌1.54%。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Intel's 1Q26 Earnings: The CPU Thesis Arrived; The Foundry Thesis Didn't.
+        <div class="translation">翻译：英特尔2026年第一季度财报：CPU论点得到验证；代工论点未能实现。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">GOOG (Alphabet Inc.)</div>
+      <blockquote class="quote">
+        Alphabet: $1.9 million.
+        <div class="translation">翻译：Alphabet：190万美元。</div>
+      </blockquote>
+      <blockquote class="quote">
+        In Q1, Berkshire tripled their $GOOG position while Bill Ackman sold 95% to buy $MSFT despite being “very” bullish on GOOG long term. What if $MSFT turns out to be a “value trap”?
+        <div class="translation">翻译：在第一季度，伯克希尔将其谷歌仓位增加了两倍，而比尔·阿克曼则出售了95%以购买微软，尽管他“非常”长期看好谷歌。如果微软最终是一个“价值陷阱”怎么办？</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">NOK (Nokia Corporation)</div>
+      <blockquote class="quote">
+        Dec 2026 $24 calls worth $4.15M Jan 2027 $27 calls worth $1.5M Sep 2026 $19 calls worth $3.4M June 2026 $17 calls worth $700K Calls have always been a dangerous game with $NOK, but these definitely caught my attention.
+        <div class="translation">翻译：2026年12月24美元看涨期权价值415万美元，2027年1月27美元看涨期权价值150万美元，2026年9月19美元看涨期权价值340万美元，2026年6月17美元看涨期权价值70万美元。对于诺基亚来说，看涨期权一直是一场危险的游戏，但这些期权确实引起了我的注意。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">TSLA (Tesla, Inc.)</div>
+      <blockquote class="quote">
+        Tesla: $3.7 million.
+        <div class="translation">翻译：特斯拉：370万美元。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Tesla stuck out like a sore thumb with 25% China production but apparently Elon has Trump on speed dial so 🤷.
+        <div class="translation">翻译：特斯拉因25%的产量在中国而显得格格不入，但埃隆似乎和特朗普有直通电话，所以🤷。</div>
+      </blockquote>
+      <blockquote class="quote">
+        BPTRX mutual fund has about 60% of their assets invested in Elon Musk's companies (37.43% SpaceX, 23.09% Tesla).
+        <div class="translation">翻译：BPTRX共同基金约60%的资产投资于埃隆·马斯克的公司（37.43%投资于SpaceX，23.09%投资于特斯拉）。</div>
+      </blockquote>
+      <blockquote class="quote">
+        this morning the bot sold a TSLA 440C, at the time it was about 11 delta so looked safe, so it executed the order and sold a credit of $81. underlying price was about $429 at the moment.
+        <div class="translation">翻译：今天早上，机器人卖出了一张特斯拉440看涨期权，当时它的delta约为11，看起来很安全，所以它执行了订单，卖出了81美元的期权费。当时标的资产价格约为429美元。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <h2>3. 小众公司冒泡</h2>
-    <ul>
-      <li>
-        <div class="stock-tag">CBRS (Cerebras Systems)</div>
-        <blockquote class="quote">
-          CBRS IPO'd Thursday, opened at $350, closed at $311, then shed another 10% Friday.
-          <div class="translation">翻译：CBRS周四IPO，开盘350美元，收盘311美元，周五又下跌10%。</div>
-        </blockquote>
-        <blockquote class="quote">
-          A reading of the S-1/A, with operational benchmarks against peers.
-          <div class="translation">翻译：对S-1/A文件的解读，并与同行进行运营基准比较。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The names now circulating: SpaceX (which merged with xAI in February), OpenAI, and Anthropic. If even one of those lists this year, we're talking about IPOs that could dwarf CBRS in size and attention.
-          <div class="translation">翻译：现在流传的名字有：SpaceX（于二月与xAI合并）、OpenAI和Anthropic。如果其中任何一家今年上市，我们谈论的将是规模和关注度都可能让CBRS相形见绌的IPO。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">GCTS (GCT Semiconductor)</div>
-        <blockquote class="quote">
-          I got in thinking it’s just a small semiconductor play maybe they land some contracts, clean up revenue, and grind their way up.
-          <div class="translation">翻译：我最初认为这只是一个小型半导体投资，也许他们能拿下一些合同，清理营收，然后慢慢发展起来。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Then they drop a satellite partnership and suddenly I’m imagining them personally flying up there to install chips mid-orbit.
-          <div class="translation">翻译：然后他们宣布了卫星合作，我突然想象他们亲自飞上去，在轨道中安装芯片。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Fast forward a bit and somehow every device on Earth is running GCTS silicon, they’re hosting earnings calls from space, and analysts are still asking if $2 is “strong resistance”.
-          <div class="translation">翻译：快进一下，不知怎么的，地球上每台设备都在运行GCTS的硅芯片，他们从太空召开财报电话会议，分析师还在问2美元是否是“强劲阻力”。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">POET (POET Technologies Inc)</div>
-        <blockquote class="quote">
-          Bought May 5. Sold when the stock was hovering around $19.50.
-          <div class="translation">翻译：5月5日买入。当股价徘徊在19.50美元左右时卖出。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Regretted the sale after market close on Thursday, as it shot up to $25 in after hours.
-          <div class="translation">翻译：周四收盘后对卖出感到后悔，因为它在盘后飙升至25美元。</div>
-        </blockquote>
-        <blockquote class="quote">
-          But with how Friday went, I am glad I sold when I did.
-          <div class="translation">翻译：但鉴于周五的走势，我很庆幸我当时卖出了。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">RKLB (Rocket Lab USA Inc)</div>
-        <blockquote class="quote">
-          I consider Rocket Lab to be a long-term, fundamental holding for my portfolio.
-          <div class="translation">翻译：我将Rocket Lab视为我投资组合的长期、基本面持仓。</div>
-        </blockquote>
-        <blockquote class="quote">
-          As someone who was watching the initial liftoff in the commercial space economy, I always viewed Rocket Lab as a winner.
-          <div class="translation">翻译：作为一个关注商业航天经济初期发展的人，我一直认为Rocket Lab是一个赢家。</div>
-        </blockquote>
-        <blockquote class="quote">
-          For starters, Peter Beck is exactly what I look for in a founder and CEO.
-          <div class="translation">翻译：首先，彼得·贝克正是我寻找的创始人兼CEO类型。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">RDDT (Reddit Inc.)</div>
-        <blockquote class="quote">
-          So originally I sold some RDDT puts and took assignment on 3/24 at $132 (+ 2.21 premium collected so my average price per shares ended up under $130).
-          <div class="translation">翻译：最初我卖出了一些Reddit的看跌期权，并在3月24日以132美元的价格接受了指派（加上收取的2.21美元期权金，所以我的平均持股成本最终低于130美元）。</div>
-        </blockquote>
-        <blockquote class="quote">
-          I turned around and sold the 5/15 $150cc for $6.45.
-          <div class="translation">翻译：我转手卖出了5月15日150美元的看涨期权，价格是6.45美元。</div>
-        </blockquote>
-        <blockquote class="quote">
-          This turned out to be a massive mistake as RDDT would take off on a recovery streak which would recover into earnings racing all the way up to the beautiful price of the stock trading at $176.21.
-          <div class="translation">翻译：这被证明是一个巨大的错误，因为Reddit随后开启了一波复苏行情，并在财报发布前一路飙升至176.21美元的美丽价格。</div>
-        </blockquote>
-      </li>
-    </ul>
+  <h2>3. 小众公司冒泡</h2>
+  <ul>
+    <li>
+      <div class="stock-tag">TTWO (Take-Two Interactive Software, Inc.)</div>
+      <blockquote class="quote">
+        Why is no one talking about how GTA 6 for the first couple years being ONLY available on XBOX and Playstation both of which are own by Microsoft and Sony and will be getting 30 PERCENT of every sale of GTA 6 without spending a cent on developing GTA 6. Everyone is focusing in on TTWO when the real money makers are going to be the two platforms.
+        <div class="translation">翻译：为什么没有人谈论《GTA 6》最初几年只在XBOX和PlayStation平台上线，而这两个平台都归微软和索尼所有，并且它们将在不花一分钱开发《GTA 6》的情况下获得《GTA 6》每一笔销售的30%？每个人都在关注Take-Two，而真正的赚钱者将是这两个平台。</div>
+      </blockquote>
+      <blockquote class="quote">
+        TTWO (GTA6 catalyst release, considering GTA5 made over $10Billion in its mid-lifespan) *same time/4k premium or less.
+        <div class="translation">翻译：TTWO（《GTA 6》催化剂发布，考虑到《GTA 5》在其生命中期创造了超过100亿美元的收入）*同时/4千美元或更少的溢价。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">SPSC (SPS Commerce, Inc.)</div>
+      <blockquote class="quote">
+        SPS Commerce (SPSC) is the digital plumbing that connects retailers like Walmart and Target to their 300,000 suppliers. 96% recurring revenue, 100 straight quarters of growth, $147M net cash, management buying back shares aggressively. The stock cratered 59% because Amazon policy changes are causing 4,000 small suppliers to churn from one acquired segment. I think Wall Street is overreacting to a temporary cleanup operation. Trading at $51 vs. intrinsic value of $65.59 (22% margin of safety).
+        <div class="translation">翻译：SPS Commerce (SPSC) 是连接沃尔玛和塔吉特等零售商与其30万家供应商的数字管道。该公司拥有96%的经常性收入，连续100个季度增长，净现金1.47亿美元，管理层积极回购股票。该股票因亚马逊政策变化导致一个被收购部门的4000家小型供应商流失而暴跌59%。我认为华尔街对暂时性的清理操作反应过度了。目前交易价格为51美元，而内在价值为65.59美元（22%的安全边际）。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">CBRS (Cerebras Systems)</div>
+      <blockquote class="quote">
+        $CBRS IPO'd Thursday, opened at $350, closed at $311, then shed another 10% Friday. That's the whole story in one stock. Pure sentiment, zero fundamentals.
+        <div class="translation">翻译：CBRS周四IPO，开盘350美元，收盘311美元，周五又下跌10%。这只股票说明了一切。纯粹是情绪驱动，没有基本面。</div>
+      </blockquote>
+      <blockquote class="quote">
+        A reading of the S-1/A, with operational benchmarks against peers. Pressure-testing the Cerebras IPO.
+        <div class="translation">翻译：S-1/A文件的阅读，包含与同行的运营基准测试。对Cerebras首次公开募股进行压力测试。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">RDDT (Reddit, Inc.)</div>
+      <blockquote class="quote">
+        So originally I sold some RDDT puts and took assignment on 3/24 at $132 (+ 2.21 premium collected so my average price per shares ended up under $130) I turned around and sold the 5/15 $150cc for $6.45 This turned out to be a massive mistake as RDDT would take off on a recovery streak which would recover into earnings racing all the way up to the beautiful price of the stock trading at $176.21.
+        <div class="translation">翻译：我最初卖出了一些Reddit的看跌期权，并在3月24日以132美元的价格被分配（加上收取的2.21美元溢价，我的平均每股成本最终低于130美元）。我随后卖出了5月15日150美元的看涨期权，价格为6.45美元。结果这是一个巨大的错误，因为Reddit随后进入了反弹行情，在财报发布前一路飙升至176.21美元的惊人价格。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">RKLB (Rocket Lab USA, Inc.)</div>
+      <blockquote class="quote">
+        With companies like NVDIA, RKLB, SYM, OKLO and IONQ stealing the show, I think it’s time to look into new sectors to find the next BIG names.
+        <div class="translation">翻译：随着英伟达、火箭实验室、SYM、OKLO和IonQ等公司大放异彩，我认为是时候审视新领域，寻找下一个大牌了。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Has RKLB been on a steroidal run of late? Yeppers. Might it keep pulling back next week? Of course it could. But, it's really doing quite well today, considering how red the overall mkt is. Anyhow, I sold 2 $116 CSP's for next Friday.. Got a nice $520.
+        <div class="translation">翻译：火箭实验室最近是不是像打了兴奋剂一样猛涨？是的。下周它会继续回调吗？当然有可能。但是，考虑到大盘的红色行情，它今天表现得确实相当不错。无论如何，我卖了两张下周五到期的116美元看跌期权，赚了520美元。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">IONQ (IonQ, Inc.)</div>
+      <blockquote class="quote">
+        With companies like NVDIA, RKLB, SYM, OKLO and IONQ stealing the show, I think it’s time to look into new sectors to find the next BIG names.
+        <div class="translation">翻译：随着英伟达、火箭实验室、SYM、OKLO和IonQ等公司大放异彩，我认为是时候审视新领域，寻找下一个大牌了。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">DDOG (Datadog, Inc.)</div>
+      <blockquote class="quote">
+        Datadog’s Big New Customer: Anthropic.
+        <div class="translation">翻译：Datadog的大新客户：Anthropic。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">PYPL (PayPal Holdings, Inc.)</div>
+      <blockquote class="quote">
+        PayPal's Third Act: The Restructuring Gamble at 8× Earnings.
+        <div class="translation">翻译：PayPal的第三幕：以8倍市盈率进行的重组赌博。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">PANW (Palo Alto Networks, Inc.)</div>
+      <blockquote class="quote">
+        This is not my fault I sold a covered call at 0.1 delta when my leaps were already up 50%. The stupid market just makes this stock only go up. Fuck you palto alto and fuck you market. This market is rigged.
+        <div class="translation">翻译：这不是我的错，当我的长期看涨期权已经上涨50%时，我卖出了一个0.1 Delta的备兑看涨期权。这个愚蠢的市场就是让这只股票一直上涨。去你的Palo Alto，去你的市场。这个市场被操纵了。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">7906.T (Yonex Co., Ltd.)</div>
+      <blockquote class="quote">
+        Their tennis racket market share has tripled in the past year and they still can't meet demand for their Ezone racket. I'm reading the buy ratings are between buy and strong buy.
+        <div class="translation">翻译：他们网球拍的市场份额在过去一年里翻了三倍，而且他们的Ezone球拍仍然供不应求。我看到买入评级介于“买入”和“强烈买入”之间。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型 (Model)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          We all know that cpu and gpu are for inferences and training, photonics accelerate the process and then memory and storage to reduce latency, enhance computation and store data.
-          <div class="translation">翻译：我们都知道CPU和GPU用于推理和训练，光子学加速过程，然后内存和存储用于降低延迟、增强计算和存储数据。</div>
-        </blockquote>
-      </li>
-    </ul>
+  <h2>4. AI主线讨论</h2>
+  <div class="section-summary">
+    人工智能的讨论涵盖了从基础模型到硬件基础设施再到实际应用的全方位内容。模型方面，Anthropic的Claude正在挑战ChatGPT的主导地位。算力需求推动了对CPU、GPU和专门AI芯片（如Cerebras）的关注，但地缘政治因素可能影响Nvidia H200等高端芯片的供应。光电和存储作为加速AI处理和降低延迟的关键组件也备受瞩目，尤其是在内存技术创新方面。此外，AI对电力基础设施的巨大需求及其在机器人、无人机等应用领域的潜力，预示着AI革命的广泛影响。
+  </div>
 
-    <div class="track-header">算 (Compute)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Nvidia would have no way to manufacture its AI GPUs, Apple would lack chips for the iPhone, and AMD or Intel would be left paralyzed.
-          <div class="translation">翻译：英伟达将无法制造其AI GPU，苹果将缺乏iPhone芯片，而AMD或英特尔将陷入瘫痪。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Trump Confirms Beijing Rejects Nvidia H200 Purchases; Jensen Huang's Last-Minute Trip Yields No Breakthrough.
-          <div class="translation">翻译：特朗普证实北京拒绝采购英伟达H200；黄仁勋的最后一刻之行未能取得突破。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Cerebras's $5.55B IPO opens the floodgates.
-          <div class="translation">翻译：Cerebras 55.5亿美元的IPO打开了闸门。</div>
-        </blockquote>
-      </li>
-    </ul>
+  <div class="track-header">模型</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Obviously DRAM is best suited for LLMs and data centers.
+        <div class="translation">翻译：显然，DRAM最适合大型语言模型（LLM）和数据中心。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        For the first time in years, ChatGPT falls to second place in the generative AI market, slumping behind Anthropic’s Claude. ChatGPT now lags in second place in various key metrics, including net new ARR, mobile app downloads, business adoption, daily active users, annualized revenue, etc.
+        <div class="translation">翻译：多年来，ChatGPT首次在生成式AI市场中跌至第二位，落后于Anthropic的Claude。ChatGPT目前在多项关键指标上均落后于第二名，包括净新增年度经常性收入、移动应用下载量、商业应用、日活跃用户和年化收入等。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <div class="track-header">光 (Optics/Photonics)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Memory, storage and photonic suddenly went ballistic and only a few saw them coming.
-          <div class="translation">翻译：内存、存储和光子学突然飙升，只有少数人预见到了。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          I’m thinking of long call$ for $COHR (Ai/optics).
-          <div class="translation">翻译：我正在考虑购买COHR（人工智能/光学）的长期看涨期权。</div>
-        </blockquote>
-      </li>
-    </ul>
+  <div class="track-header">算</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        We all know that cpu and gpu are for inferences and training.
+        <div class="translation">翻译：我们都知道CPU和GPU用于推理和训练。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        A reading of the S-1/A, with operational benchmarks against peers. Pressure-testing the Cerebras IPO.
+        <div class="translation">翻译：对S-1/A文件的解读，包含与同行的运营基准测试。对Cerebras首次公开募股进行压力测试。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Intel's 1Q26 Earnings: The CPU Thesis Arrived; The Foundry Thesis Didn't.
+        <div class="translation">翻译：英特尔2026年第一季度财报：CPU论点得到验证；代工论点未能实现。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Trump Confirms Beijing Rejects Nvidia H200 Purchases; Jensen Huang's Last-Minute Trip Yields No Breakthrough.
+        <div class="translation">翻译：特朗普证实北京拒绝购买英伟达H200；黄仁勋的最后一刻之行未能取得突破。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <div class="track-header">存 (Storage)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Memory, storage and photonic suddenly went ballistic and only a few saw them coming.
-          <div class="translation">翻译：内存、存储和光子学突然飙升，只有少数人预见到了。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Memory, storage and photonic suddenly went ballistic and only a few saw them coming. I am not someone working in the tech industry nor someone who knew ai revolution so well that I am able to even analyze and kinda foresee what might be in demand during this one of the most important time in human history.
-          <div class="translation">翻译：内存、存储和光子学突然飙升，只有少数人预见到了。我既不是科技行业从业者，也不是对人工智能革命了如指掌的人，所以我甚至无法分析和预见在这个人类历史上最重要的时期可能有哪些需求。</div>
-        </blockquote>
-      </li>
-    </ul>
+  <div class="track-header">光</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        photonics accelerate the process.
+        <div class="translation">翻译：光子技术加速了这一过程。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        COHR (Ai/optics) Thinking Dec 2026-Jan 2027 under $4k premium.
+        <div class="translation">翻译：COHR（人工智能/光学）考虑2026年12月至2027年1月的期权，期权费低于4000美元。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <div class="track-header">电 (Electricity)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          The Coming War for Electricity AI, data centers, electric vehicles, and industrial reshoring are colliding with an aging grid.
-          <div class="translation">翻译：电力大战即将到来：人工智能、数据中心、电动汽车和工业回流正在与老化的电网发生冲突。</div>
-        </blockquote>
-      </li>
-    </ul>
+  <div class="track-header">存</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Memory, storage and photonic suddenly went ballistic and only a few saw them coming. What are components of infrastructure that you think might be in situation like memory and cpu where demand exceeds supply.
+        <div class="translation">翻译：内存、存储和光子技术突然爆发，只有少数人预见到了。你认为哪些基础设施组件可能会像内存和CPU一样出现供不应求的情况？</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        What would be the best memory option for AI drones or robots? MRAM: Fast, most expensive, stores memory with no power. SRAM: Fastest, very expensive, no refresh required but needs constant power. DRAM, Slowest, Cheapest, Refresh required (uses more power when chip is working).
+        <div class="translation">翻译：AI无人机或机器人的最佳内存选择是什么？MRAM：速度快，最昂贵，无需电源即可存储。SRAM：速度最快，非常昂贵，无需刷新但需要持续供电。DRAM：速度最慢，最便宜，需要刷新（芯片工作时耗电更多）。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Samsung Electronics has proposed performance bonuses of 607% of annual salary for its memory chip division, compared to just 50-100% for its foundry and System LSI units, reflecting a stark profit divide that has intensified labor tensions.
+        <div class="translation">翻译：三星电子提议其内存芯片部门的绩效奖金为年薪的607%，而其代工和系统LSI部门仅为50-100%，这反映了巨大的利润差距，加剧了劳资紧张关系。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Sell Your Memory Stocks.
+        <div class="translation">翻译：卖掉你的内存股票。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <div class="track-header">板 (Boards/Semiconductors)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Taiwan manufactures about 62% of the world's semiconductors and over 90% of cutting-edge chips (through TSMC).
-          <div class="translation">翻译：台湾生产全球约62%的半导体和超过90%的尖端芯片（通过台积电）。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          The industry has stopped being cyclical, it’s an exponential growth industry.
-          <div class="translation">翻译：这个行业已经不再是周期性的了，它是一个指数级增长的行业。</div>
-        </blockquote>
-      </li>
-    </ul>
+  <div class="track-header">电</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        The Coming War for Electricity AI, data centers, electric vehicles, and industrial reshoring are colliding with an aging grid.
+        <div class="translation">翻译：即将到来的电力战争：人工智能、数据中心、电动汽车和工业回流正在与老化的电网发生冲突。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <div class="track-header">云 (Cloud)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          The Coming War for Electricity AI, data centers, electric vehicles, and industrial reshoring are colliding with an aging grid.
-          <div class="translation">翻译：电力大战即将到来：人工智能、数据中心、电动汽车和工业回流正在与老化的电网发生冲突。</div>
-        </blockquote>
-      </li>
-    </ul>
+  <div class="track-header">板</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        NVDA (Ai king/infrastructure) Same time frame and again less than 4k premium.
+        <div class="translation">翻译：英伟达（人工智能之王/基础设施）期权，相同时间框架，期权费低于4000美元。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        What are components of infrastructure that you think might be in situation like memory and cpu where demand exceeds supply. And all these are needed for ai models and applications.
+        <div class="translation">翻译：你认为哪些基础设施组件可能会像内存和CPU一样出现供不应求的情况？而所有这些都是AI模型和应用所必需的。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <div class="track-header">AI应用 (AI Application)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          I wrote this report on Indian IT services in the AI era. The thesis is that a 24% margin attached to billable labor may be less durable than a 15% margin attached to workflow ownership, managed services, platforms, and acquired capability.
-          <div class="translation">翻译：我撰写了这份关于人工智能时代印度IT服务业的报告。报告的核心论点是，与计费劳务相关的24%利润率可能不如与工作流所有权、托管服务、平台和获取能力相关的15%利润率持久。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          my AI trading bot made me $81 today selling a 0DTE option, and i still couldn't believe it.
-          <div class="translation">翻译：我的AI交易机器人今天通过卖出0DTE期权赚了81美元，我仍然不敢相信。</div>
-        </blockquote>
-      </li>
-    </ul>
+  <div class="track-header">云</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        AI, data centers, electric vehicles, and industrial reshoring are colliding with an aging grid.
+        <div class="translation">翻译：人工智能、数据中心、电动汽车和工业回流正在与老化的电网发生冲突。</div>
+      </blockquote>
+    </li>
+  </ul>
+
+  <div class="track-header">AI应用</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        What would be the best memory option for AI drones or robots?
+        <div class="translation">翻译：AI无人机或机器人的最佳内存选择是什么？</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Understanding the difference between cARR and actual ARR + how the metric gets gamed by founders looking to raise money.
+        <div class="translation">翻译：理解cARR和实际ARR之间的区别+创始人为了融资如何操纵这些指标。</div>
+      </blockquote>
+    </li>
+  </ul>
 
 </body>
-</html>
         </div>
         <script>
             var myChart = echarts.init(document.getElementById('gauge'));
