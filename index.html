@@ -37,300 +37,458 @@
     <body>
         <div class="container">
             <h1>🎯 05月19日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-05-19 00:02:13 (北京时间)</p>
+            <p style="color:#94a3b8">情报最后更新: 2026-05-19 12:40:22 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            <div class="market-sentiment-report">
+            <!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit 美股市场情绪概览 (2026年05月19日)</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0 auto; max-width: 900px; padding: 20px; background-color: #f4f7f6; }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
+        h2 { font-size: 1.8em; }
+        ul { list-style: none; padding: 0; }
+        li { background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 10px; font-size: 1.1em; }
+        .quote { background-color: #ecf0f1; border-left: 5px solid #3498db; margin: 10px 0; padding: 10px 15px; font-style: italic; color: #555; }
+        .translation { font-style: normal; color: #2c3e50; margin-top: 5px; font-size: 0.95em; }
+        .track-header { font-weight: bold; color: #2980b9; margin-top: 20px; margin-bottom: 10px; font-size: 1.2em; border-bottom: 1px dashed #a0d4f5; padding-bottom: 5px; }
+    </style>
+</head>
+<body>
 
-<h2>1. 宏观与市场情绪</h2>
-<p>当前市场情绪复杂，通胀压力持续，利率前景不明，地缘政治紧张加剧了不确定性。关于美联储货币政策，新任主席Warsh倾向于使用Trimmed Mean PCE来评估通胀，此指标目前远低于Core PCE，可能为降息提供依据。然而，债券市场强烈预示加息而非降息，10年期国债收益率创一年新高，G7国家债券市场已显现压力。高利率对高估值成长股构成挑战，但也有观点认为，高利率反而促使资金从投机性创业公司流向如英伟达这类能提供实际AI基础设施、带来即时现金流的“安全港”。地缘政治方面，伊朗冲突持续，石油价格飙升至110美元以上，美国情报显示伊朗能维持封锁数月，加剧了能源供应担忧，G7财长将就此召开会议。市场对伊朗和平协议的传闻反应积极，但美伊在核问题上的立场分歧巨大，协议前景渺茫。</p>
-<blockquote class="quote">
-  Warsh wants the Fed to judge inflation using Trimmed Mean PCE instead of Core PCE. That matters because Trimmed Mean PCE is currently much lower — about 2.36% versus 3.20% for Core PCE — making inflation look closer to target and giving the Fed more justification to cut rates.
-  <div class="translation">翻译：Warsh希望美联储使用Trimmed Mean PCE而非Core PCE来判断通胀。这很重要，因为Trimmed Mean PCE目前远低于Core PCE（约2.36%对3.20%），使得通胀看起来更接近目标，并为美联储降息提供了更多理由。</div>
-</blockquote>
-<blockquote class="quote">
-  Rate hike odds went from 1% to 45% in a month. Nvidia reports wednesday with a PE of 48. High rates kill growth stocks, something has to give.
-  <div class="translation">翻译：加息的可能性在一个月内从1%升至45%。英伟达周三发布财报，市盈率为48。高利率扼杀成长股，必然会有所牺牲。</div>
-</blockquote>
-<blockquote
-  Brent oil back above $110 as Iran could sustain blockade for months according to US Intel.
-  <div class="translation">翻译：据美国情报显示，伊朗可能维持封锁数月，布伦特原油价格回升至110美元以上。</div>
-</blockquote>
-<blockquote class="quote">
-  Higher interest rates are actually driving the concentration of capital to Nvidia, not killing it. During ZIRP, capital was free and investors could throw money at a hundred different speculative startups. Now that the hurdle rate on return is so high, that speculative party is over. Capital has pulled out of "unproven" growth and is looking for a safe haven that still offers a growth strategy.
-  <div class="translation">翻译：实际上，更高的利率正在推动资本向英伟达集中，而非扼杀它。在零利率政策时期，资本是自由的，投资者可以向数百家投机性初创公司投入资金。现在，由于回报的门槛率如此之高，投机狂欢已经结束。资本已经从“未经证实”的增长领域撤出，正在寻找一个仍能提供增长策略的避风港。</div>
-</blockquote>
+    <h1>Reddit 美股市场情绪概览 (2026年05月19日)</h1>
 
-<h2>2. 热议中的个股和想法</h2>
-<ul>
-  <li>
-    <div class="stock-tag">1. NVDA (NVIDIA)</div>
-    <blockquote class="quote">
-      I believe Nvidia will end the day in the green before earnings. Earnings may be more volatile, but I do believe it'll go up interday.
-      <div class="translation">翻译：我相信英伟达在财报发布前会以绿色收盘。财报可能会更具波动性，但我确实认为它在盘中会上涨。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Rate hike odds went from 1% to 45% in a month. Nvidia reports wednesday with a PE of 48. High rates kill growth stocks, something has to give.
-      <div class="translation">翻译：加息的可能性在一个月内从1%升至45%。英伟达周三发布财报，市盈率为48。高利率扼杀成长股，必然会有所牺牲。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Trump Confirms Beijing Rejects Nvidia H200 Purchases; Jensen Huang's Last-Minute Trip Yields No Breakthrough.
-      <div class="translation">翻译：特朗普证实北京拒绝购买英伟达H200芯片；黄仁勋的最后一刻访问未能取得突破。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Higher interest rates are actually driving the concentration of capital to Nvidia, not killing it. Investors can't afford to wait 10 years for pre-revenue tech companies to become profitable, and Nvidia is selling promises; they're pulling in tens of billions in hard cash now by selling actual infrastructure for the AI boom.
-      <div class="translation">翻译：更高的利率实际上正在推动资本向英伟达集中，而非扼杀它。投资者无法承受等待10年，直到营收前的科技公司盈利，而英伟达正在兑现承诺；他们通过销售AI繁荣所需的实际基础设施，现在正获得数百亿美元的硬现金。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">2. HD (Home Depot)</div>
-    <blockquote class="quote">
-      I think the markets are incorrectly valuating HD (Home Depot). 60% of revenue is retail 40% of revenue are contractors. Business started focusing more on contractors.
-      <div class="translation">翻译：我认为市场对家得宝（HD）的估值不正确。60%的收入来自零售，40%来自承包商。公司业务开始更加关注承包商。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Acquisitions that forced cancelation of share buybacks, and now with another acquisition were going to see even more financial pressure that puts debt refinancing pressure on this company. They're close to having their rating reduced at this rate.
-      <div class="translation">翻译：强制取消股票回购的收购，加上现在的另一项收购，将导致该公司面临更大的财务压力，给债务再融资带来压力。以这种速度，他们接近于评级下调。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Congressional timing edge + fresh insider buying heading into the report. Worth watching.
-      <div class="translation">翻译：国会议员的交易时间优势加上财报发布前的最新内部人购买。值得关注。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Interestingly, 4 insiders have filed Home Depot buys in the past month.
-      <div class="translation">翻译：有趣的是，过去一个月有4位内部人提交了购买家得宝股票的申报。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">3. SSNLF (Samsung Electronics)</div>
-    <blockquote class="quote">
-      Samsung -8.6% as 50k workers prepare 18-day strike over 15% profit share demand, $2B daily loss risk and chip output cuts. Note: 50k workers is 40% of Samsung's South Korean workforce.
-      <div class="translation">翻译：三星因5万名工人准备举行18天罢工，要求15%的利润分成，股价下跌8.6%，面临每天20亿美元的损失风险和芯片产量削减。注：5万名工人占三星韩国劳动力的40%。</div>
-    </blockquote>
-    <blockquote class="quote">
-      A South Korean court granted on May 18 a partial injunction requested by Samsung Electronics ordering the company’s union in the country to ensure its strike does not cut into production volume. The court also said in the ruling that union action must not lead to the degradation of materials used in the world’s largest memory chip maker’s production.
-      <div class="translation">翻译：韩国一家法院于5月18日批准了三星电子提出的部分禁令申请，命令该公司在韩国的工会确保其罢工不会削减产量。法院还在裁决中表示，工会行动不得导致这家全球最大内存芯片制造商生产中使用的材料降级。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Sell Your Memory Stocks.
-      <div class="translation">翻译：卖掉你的内存股。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">4. AMD (Advanced Micro Devices)</div>
-    <blockquote class="quote">
-      I have 6 Amd long calls at 200$ and short calls at 215(edited). So I am stuck unless the market goes down so I can slowly pay back my short calls.
-      <div class="translation">翻译：我有6张AMD的200美元长期看涨期权和215美元短期看涨期权。因此我被困住了，除非市场下跌，我才能慢慢偿还我的短期看涨期权。</div>
-    </blockquote>
-    <blockquote class="quote">
-      First off, we pigeons do not waste premium aerial ammunition on a man already trapped in an AMD 200/215 call spread during peak IV confusion. That’s excessive.
-      <div class="translation">翻译：首先，我们鸽子不会将宝贵的空中弹药浪费在一个在IV高峰期困于AMD 200/215看涨期权价差中的人身上。那太浪费了。</div>
-    </blockquote>
-    <blockquote class="quote">
-      All the tech stocks have been doing really well, bought in around 2021-ish with names like AMD TSM etc as well as the usual VTI.
-      <div class="translation">翻译：所有科技股表现都非常好，大约在2021年左右买入，包括AMD、台积电等股票以及常见的VTI。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">5. MU (Micron Technology)</div>
-    <blockquote class="quote">
-      Discuss: Bullish or bearish for MU, SNDK, WDC, STX? Supply squeeze or demand slowdown for memory prices? Short-term shock or longer-term pricing catalyst?
-      <div class="translation">翻译：讨论：对MU、SNDK、WDC、STX是看涨还是看跌？内存价格是供应紧张还是需求放缓？是短期冲击还是长期定价催化剂？</div>
-    </blockquote>
-    <blockquote class="quote">
-      At week's end, 5 stocks remain in inventory: APLD, AXTI, BE, IONQ, and MU.
-      <div class="translation">翻译：周末，库存中还有5只股票：APLD、AXTI、BE、IONQ和MU。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Sell Your Memory Stocks.
-      <div class="translation">翻译：卖掉你的内存股。</div>
-    </blockquote>
-    <blockquote class="quote">
-      I bought MU at 400 and NBIS at 86 with about 60% of my portfolio at the start of the year.
-      <div class="translation">翻译：今年年初，我用大约60%的投资组合购买了400美元的MU和86美元的NBIS。</div>
-    </blockquote>
-  </li>
-</ul>
+    <h2>1. 宏观与市场情绪</h2>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          Warsh wants the Fed to judge inflation using Trimmed Mean PCE instead of Core PCE.
+          <div class="translation">翻译：Warsh 希望美联储使用截尾平均个人消费支出（Trimmed Mean PCE）而非核心个人消费支出（Core PCE）来衡量通货膨胀。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          That matters because Trimmed Mean PCE is currently much lower — about 2.36% versus 3.20% for Core PCE — making inflation look closer to target and giving the Fed more justification to cut rates.
+          <div class="translation">翻译：这一点很重要，因为截尾平均个人消费支出目前远低于核心个人消费支出——前者约为2.36%，后者为3.20%——这使得通货膨胀看起来更接近目标，并为美联储降息提供了更多理由。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          New Fed Chair Kevin Warsh takes over as inflation hits 3.8% amid geopolitical oil pressures — policy outlook uncertain.
+          <div class="translation">翻译：新任美联储主席Kevin Warsh上任之际，通胀率达到3.8%，地缘政治石油压力加剧，政策前景充满不确定性。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The fed was supposed to be cutting rates this year literally every forecast from january had 2-3 cuts priced in.
+          <div class="translation">翻译：美联储今年本应降息，实际上1月份的每一个预测都预示着将有2-3次降息。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Now we're sitting at 45% odds of a hike because of Iran driving oil to $107 and inflation not budging.
+          <div class="translation">翻译：现在，由于伊朗导致油价升至107美元且通胀居高不下，加息的可能性已达45%。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Higher interest rates make borrowing more expensive for companies, which tends to slow investment, reduce profit margins, and slow down customer spending.
+          <div class="translation">翻译：更高的利率使得企业借贷成本增加，这往往会减缓投资、降低利润率并抑制消费者支出。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The market pumped yet again this morning on supposed peace deal progress, this time on rumors of oil sanctions relief for Iran.
+          <div class="translation">翻译：今天早上市场再次因所谓的和平协议进展而上涨，这次是受伊朗石油制裁解除传闻的推动。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Brent oil back above $110 as Iran could sustain blockade for months according to US Intel.
+          <div class="translation">翻译：根据美国情报部门的消息，布伦特原油价格回升至110美元以上，因为伊朗能够维持封锁数月。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          gold dropped 114 dollars on friday while CPI is at 3.8% and PPI at 6%.
+          <div class="translation">翻译：周五黄金下跌114美元，而CPI为3.8%，PPI为6%。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The bond market is telling you something the Fed will not say yet.
+          <div class="translation">翻译：债券市场正在告诉你一些美联储尚未透露的信息。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Real rates are rising.
+          <div class="translation">翻译：实际利率正在上升。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The market punishes impatience more consistently than it rewards intelligence.
+          <div class="translation">翻译：市场惩罚不耐烦的程度远超奖励智慧。</div>
+        </blockquote>
+      </li>
+    </ul>
 
-<h2>3. 小众公司冒泡</h2>
-<ul>
-  <li>
-    <div class="stock-tag">1. MRNA (Moderna)</div>
-    <blockquote class="quote">
-      My prediction has officially come true. FDA concerns are gone. Vinay Prasad got pushed out. Marty Makary resigned. The flu vaccine is now being reviewed. The lawsuits are resolved, and the Phase 3 Intismeran autogene (mRNA-4157/V940) data is coming this summer, with an anticipated FDA application in the fall. This resolves all known risks and the path ahead is clear.
-      <div class="translation">翻译：我的预测已正式实现。FDA的担忧已消除。Vinay Prasad被排挤出局。Marty Makary辞职。流感疫苗正在审查中。诉讼已解决，第三期Intismeran自基因（mRNA-4157/V940）数据将于今年夏天公布，预计秋季向FDA提交申请。这解决了所有已知风险，前方的道路一片光明。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Intismeran is initially going to be used for melanoma and non-small cell lung cancer. Between those two and the profit-sharing agreement with Merck, revenue should still top $10 billion combined with existing revenue that already beat estimates.
-      <div class="translation">翻译：Intismeran最初将用于治疗黑色素瘤和非小细胞肺癌。结合这两项以及与默克的利润分享协议，营收应能超过100亿美元，这还不包括已超出预期的现有收入。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">2. CBRS (Cerebras Systems)</div>
-    <blockquote class="quote">
-      The tech is super cool. They make this massive chip the size of a manhole cover instead of linking a bunch of small ones together, so it basically makes AI go brrr.
-      <div class="translation">翻译：这项技术非常酷。他们制造出一种巨大的芯片，大小如人孔盖，而不是将一堆小芯片连接起来，所以它基本上能让AI飞速运转。</div>
-    </blockquote>
-    <blockquote class="quote">
-      The OpenAI deal: They signed a massive contract with OpenAI that could bring in billions of.
-      <div class="translation">翻译：与OpenAI的协议：他们与OpenAI签署了一份巨额合同，可能带来数十亿美元的收入。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">3. SPSC (SPS Commerce)</div>
-    <blockquote class="quote">
-      SPS Commerce (SPSC) is the digital plumbing that connects retailers like Walmart and Target to their 300,000 suppliers. 96% recurring revenue, 100 straight quarters of growth, $147M net cash, management buying back shares aggressively.
-      <div class="translation">翻译：SPS Commerce (SPSC) 是连接沃尔玛和塔吉特等零售商与其30万供应商的数字管道。96%的经常性收入，连续100个季度的增长，1.47亿美元的净现金，管理层积极回购股票。</div>
-    </blockquote>
-    <blockquote class="quote">
-      The stock cratered 59% because Amazon policy changes are causing 4,000 small suppliers to churn from one acquired segment. I think Wall Street is overreacting to a temporary cleanup operation. Trading at $51 vs. intrinsic value of $65.59 (22% margin of safety).
-      <div class="translation">翻译：该股票暴跌59%，原因在于亚马逊的政策变化导致一个收购部门的4000家小型供应商流失。我认为华尔街对这种暂时性的清理行动反应过度了。目前股价为51美元，而内在价值为65.59美元（22%的安全边际）。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">4. CC (Chemours Company)</div>
-    <blockquote class="quote">
-      They have unique solution to the cooling problem in AI data centers. "Thermal & Specialized Solutions (TSS): This is the segment driving the AI-cooling hype.
-      <div class="translation">翻译：他们为AI数据中心的散热问题提供了独特的解决方案。“热能与专业解决方案（TSS）：这是推动AI散热热潮的部门。</div>
-    </blockquote>
-    <blockquote class="quote">
-      These highly engineered fluids are critical for two-phase immersion cooling, a technology used to prevent next-generation AI data centers and supercomputers from overheating.
-      <div class="translation">翻译：这些高度工程化的流体对于两相浸入式冷却至关重要，这项技术用于防止下一代AI数据中心和超级计算机过热。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">5. NEE (NextEra Energy) / D (Dominion Energy)</div>
-    <blockquote class="quote">
-      NextEra Energy will buy Dominion Energy in an all-stock deal valued at nearly $67 billion, uniting two leading players in the race to meet growing electricity demand from data centers that run artificial intelligence.
-      <div class="translation">翻译：NextEra Energy将以近670亿美元的全股票交易收购Dominion Energy，合并两家在满足运行人工智能的数据中心日益增长的电力需求竞赛中的领先企业。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Dominion is the utility responsible for powering the world’s largest data center market in northern Virginia.
-      <div class="translation">翻译：Dominion是负责为全球最大的数据中心市场（弗吉尼亚州北部）供电的公用事业公司。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">6. RDW (Redwire)</div>
-    <blockquote class="quote">
-      They are positioned in a few different sectors Space infrastructure Defense Tech Satellite systems. Revenue has grown about %50 year to year.
-      <div class="translation">翻译：他们涉足多个领域：太空基础设施、国防科技、卫星系统。收入同比增长约50%。</div>
-    </blockquote>
-    <blockquote class="quote">
-      They have been losing money/have burned cash in the past , however they are winning lots of contracts with about 500 million in backlogs. They have recent contacts with MDA SHIELD, DARPA, ESA QKDSat the biggest being with MDA for 151 billion ceiling.
-      <div class="translation">翻译：他们过去一直亏损/烧钱，但正在赢得大量合同，积压订单约5亿美元。他们最近与MDA SHIELD、DARPA、ESA QKDSat有合作，其中最大的是与MDA的1510亿美元上限合同。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">7. DRTS (Alpha Tau Medical)</div>
-    <blockquote class="quote">
-      The technology uses Radium-224 seeds that release radioactive particles capable of diffusing through tumors, solving the traditional range limitation of alpha radiation. Alpha radiation causes severe double-strand DNA damage in cancer cells and may be more effective against radiation-resistant tumors like glioblastoma.
-      <div class="translation">翻译：该技术使用镭-224种子，释放能够穿透肿瘤的放射性粒子，解决了传统α辐射的射程限制。α辐射对癌细胞造成严重的双链DNA损伤，可能对胶质母细胞瘤等耐辐射肿瘤更有效。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Early 2026 REGAIN trial data in recurrent glioblastoma showed: 100% local disease control, 67% complete response rate and Tumor disappearance in MRI scans for two patients.
-      <div class="translation">翻译：2026年初，复发性胶质母细胞瘤的REGAIN试验数据显示：100%的局部疾病控制率，67%的完全缓解率，以及两名患者MRI扫描显示肿瘤消失。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">8. AMPX (Amprius Technologies)</div>
-    <blockquote class="quote">
-      Basically, Amprius Technologies makes silicon anode batteries, which is just a step up from the standard lithium-ion stuff most people are familiar with. What I want to put forth is how huge this stock could turn out to be and how great it is doing right now.
-      <div class="translation">翻译：基本上，Amprius Technologies生产硅负极电池，这比大多数人熟悉的标准锂离子电池更进一步。我想提出的是，这只股票的潜力有多大，以及它目前的表现有多好。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">9. DGXX (Digi Power X)</div>
-    <blockquote class="quote">
-      Digi Power X ($DGXX): An AI hyperscaler with potential. Okay, so the market cap is around 500M$ by the time I'm writing this, they have no debt.
-      <div class="translation">翻译：Digi Power X ($DGXX)：一个有潜力的AI超大规模计算提供商。好的，在我撰写本文时，其市值约为5亿美元，且无债务。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">10. CAMB (Campine NV)</div>
-    <blockquote class="quote">
-      Campine NV (Euronext: CAMB) is uniquely positioned to dominate the European (and global) market without digging a single hole in the ground. As a leading circular economy player, they extract antimony directly from recycled industrial waste and lead-acid automotive batteries.
-      <div class="translation">翻译：Campine NV（泛欧交易所代码：CAMB）在不进行任何采矿的情况下，在欧洲（乃至全球）市场占据独特的领先地位。作为循环经济的领导者，他们直接从回收的工业废料和铅酸汽车电池中提取锑。</div>
-    </blockquote>
-    <blockquote class="quote">
-      This secondary recycling model requires up to.
-      <div class="translation">翻译：这种二次回收模式需要达到。</div>
-    </blockquote>
-  </li>
-</ul>
+    <h2>2. 热议中的个股和想法</h2>
+    <ul>
+      <li>
+        <div class="stock-tag">1. NVDA (Nvidia)</div>
+        <blockquote class="quote">
+          Still holding since 2022, up almost 6500%.
+          <div class="translation">翻译：自2022年以来一直持有，涨幅接近6500%。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Nvidia reports wednesday expecting $79 billion in revenue, stock is up 640% in 3 years.
+          <div class="translation">翻译：英伟达周三将公布财报，预计营收790亿美元，该股在三年内上涨了640%。</div>
+        </blockquote>
+        <blockquote class="quote">
+          PE sitting at 48, that valuation only makes sense if rates stay low and AI spending doesn't slow down.
+          <div class="translation">翻译：市盈率目前为48倍，这种估值只有在利率保持低位且AI支出不减速的情况下才合理。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Higher interest rates are actually driving the concentration of capital to Nvidia, not killing it.
+          <div class="translation">翻译：实际上，更高的利率正在促使资金集中到英伟达，而非扼杀其增长。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">2. ORCL (Oracle Corporation)</div>
+        <blockquote class="quote">
+          Oracle has faced legitimate criticism over its massive $523B RPO (remaining performance obligations) backlog, driven by its heavy customer concentration with OpenAI - Oracle's primary partner for training large-scale data models in its AI data centers.
+          <div class="translation">翻译：甲骨文因其高达5230亿美元的RPO（剩余履约义务）积压而面临合理批评，这主要是由于其在AI数据中心大规模数据模型训练方面对主要合作伙伴OpenAI的客户集中度过高。</div>
+        </blockquote>
+        <blockquote class="quote">
+          For ORCL shareholders, this concentration risk was compounded by the uncertainty surrounding the trial between Musk and Altman.
+          <div class="translation">翻译：对于ORCL的股东来说，马斯克和奥尔特曼之间的诉讼不确定性加剧了这种集中风险。</div>
+        </blockquote>
+        <blockquote class="quote">
+          My eyes show that AMD and ORCL are showing lots of eager activity towards the downside but how do you interpret the heavy put buying at the ASK/ heavy Call selling at the BID?
+          <div class="translation">翻译：在我看来，AMD和ORCL表现出大量积极看跌的活动，但你如何解读大量的卖出价买入看跌期权/买入价卖出看涨期权？</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">3. LULU (Lululemon Athletica Inc.)</div>
+        <blockquote class="quote">
+          Lululemon is advertising a landing page on Reddit basically making its case against Chip Wilson’s board push.
+          <div class="translation">翻译：Lululemon正在Reddit上宣传一个着陆页，基本是在为自己对抗Chip Wilson的董事会推动辩护。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Wilson is trying to get three new directors onto the board, and LULU is clearly trying to frame that as unnecessary drama rather than a real fix.
+          <div class="translation">翻译：Wilson试图让三位新董事进入董事会，而LULU显然试图将其描绘成不必要的闹剧，而非真正的解决方案。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The company seems to be positioning itself as the steadier option while Wilson argues the board has dropped the ball on succession and oversight.
+          <div class="translation">翻译：该公司似乎将自己定位为更稳健的选择，而Wilson则认为董事会在继任和监督方面失职。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">4. NEE (NextEra Energy, Inc.)</div>
+        <blockquote class="quote">
+          NextEra Energy will buy Dominion Energy in an all-stock deal valued at nearly $67 billion, uniting two leading players in the race to meet growing electricity demand from data centers that run artificial intelligence.
+          <div class="translation">翻译：NextEra Energy将以一项价值近670亿美元的全股票交易收购Dominion Energy，此举将 объеди这两家在满足AI数据中心日益增长的电力需求竞赛中的领先企业。</div>
+        </blockquote>
+        <blockquote class="quote">
+          NextEra is the biggest renewable energy developer in the U.S. with a portfolio of natural gas and nuclear generation as well.
+          <div class="translation">翻译：NextEra是美国最大的可再生能源开发商，同时拥有天然气和核能发电资产。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">5. D (Dominion Energy, Inc.)</div>
+        <blockquote class="quote">
+          NextEra Energy will buy Dominion Energy in an all-stock deal valued at nearly $67 billion, uniting two leading players in the race to meet growing electricity demand from data centers that run artificial intelligence.
+          <div class="translation">翻译：NextEra Energy将以一项价值近670亿美元的全股票交易收购Dominion Energy，此举将 объеди这两家在满足AI数据中心日益增长的电力需求竞赛中的领先企业。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Dominion is the utility responsible for powering the world’s largest data center market in northern Virginia.
+          <div class="translation">翻译：Dominion是负责为弗吉尼亚州北部全球最大数据中心市场供电的公用事业公司。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">6. SG (Sweetgreen, Inc.)</div>
+        <blockquote class="quote">
+          Sweetgreen SG has finally broken out of a long term chop, put in a strong bottom, and is poised for a strong rebound driven by fundamentals including revenue and margin expansion from wraps addition, same store sales return to positivity, Spyce divestiture, and a marketing strategy pivot that is yielding positive social media results.
+          <div class="translation">翻译：Sweetgreen SG终于摆脱了长期盘整，筑底强劲，并有望实现强劲反弹，这得益于其基本面改善，包括通过增加卷饼产品实现营收和利润率扩张、同店销售额恢复正增长、剥离Spyce业务以及产生积极社交媒体效果的营销策略转型。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Wraps are an easy win for SG in targeting cost-sensitive demos, priced from $10.95, and are showing success in expanding the base beyond salads.
+          <div class="translation">翻译：卷饼是Sweetgreen SG在瞄准价格敏感客户方面的一个轻松胜利，售价从10.95美元起，并成功地将客户群扩展到沙拉之外。</div>
+        </blockquote>
+        <blockquote class="quote">
+          In April 2026, SG demonstrated a 4.8% same-store sales growth increase in wrap test markets.
+          <div class="translation">翻译：2026年4月，Sweetgreen SG在卷饼试点市场表现出4.8%的同店销售增长。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">7. INTC (Intel Corporation)</div>
+        <blockquote class="quote">
+          I was somehow able to hold almost $160k worth of Intel stock with an account worth $10k.
+          <div class="translation">翻译：我竟然能用1万美元的账户持有价值近16万美元的英特尔股票。</div>
+        </blockquote>
+        <blockquote class="quote">
+          I pretty much decided to unwind this position this morning for a massive, massive loss.
+          <div class="translation">翻译：今天早上我基本决定平仓这个头寸，承受了巨额亏损。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Schwab will allow you to buy back your covered calls on margin, assuming that you sell your shares by EOD.
+          <div class="translation">翻译：嘉信理财允许你在保证金交易中回购你的备兑看涨期权，前提是你必须在当天收盘前卖出你的股票。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">8. MSFT (Microsoft Corporation)</div>
+        <blockquote class="quote">
+          Gates Foundation Sells Remaining Stake in Microsoft.
+          <div class="translation">翻译：盖茨基金会出售了其在微软的剩余股份。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The latest filing for the three months ended March 31 showed that the Gates Foundation no longer holds any Microsoft shares.
+          <div class="translation">翻译：截至3月31日的最新文件显示，盖茨基金会不再持有任何微软股票。</div>
+        </blockquote>
+        <blockquote class="quote">
+          In a filing for the three months ended Dec. 31, the charitable trust had held around 7.7 million shares in Microsoft, valued at $3.71 billion.
+          <div class="translation">翻译：在截至12月31日的申报中，该慈善信托基金持有约770万股微软股票，价值37.1亿美元。</div>
+        </blockquote>
+      </li>
+    </ul>
 
-<h2>4. AI主线讨论</h2>
-<div class="track-header">模型 (Models)</div>
-<blockquote class="quote">
-  For the first time in years, ChatGPT falls to second place in the generative AI market, slumping behind Anthropic’s Claude. ChatGPT now lags in second place in various key metrics, including net new ARR, mobile app downloads, business adoption, daily active users, annualized revenue, etc.
-  <div class="translation">翻译：多年来，ChatGPT首次在生成式AI市场中跌至第二位，落后于Anthropic的Claude。ChatGPT目前在多项关键指标上排名第二，包括净新增年度经常性收入、移动应用下载量、商业采用率、日活跃用户和年度化收入等。</div>
-</blockquote>
-<blockquote class="quote">
-  China has bern pushing good AI models out, it seems the underlying infra has gotten self sufficient. if they publish some alternative to CUDA thos would oblit.
-  <div class="translation">翻译：中国一直在推出优秀的AI模型，看来其底层基础设施已实现自给自足。如果他们发布一些CUDA的替代方案，那将是毁灭性的。</div>
-</blockquote>
-<div class="track-header">算 (Compute)</div>
-<blockquote class="quote">
-  The tech is super cool. They make this massive chip the size of a manhole cover instead of linking a bunch of small ones together, so it basically makes AI go brrr.
-  <div class="translation">翻译：这项技术非常酷。他们制造出一种巨大的芯片，大小如人孔盖，而不是将一堆小芯片连接起来，所以它基本上能让AI飞速运转。</div>
-</blockquote>
-<blockquote class="quote">
-  Digi Power X ($DGXX): An AI hyperscaler with potential.
-  <div class="translation">翻译：Digi Power X ($DGXX)：一个有潜力的AI超大规模计算提供商。</div>
-</blockquote>
-<blockquote class="quote">
-  Nvidia is selling promises; they're pulling in tens of billions in hard cash now by selling actual infrastructure for the AI boom.
-  <div class="translation">翻译：英伟达正在兑现承诺；他们通过销售AI繁荣所需的实际基础设施，现在正获得数百亿美元的硬现金。</div>
-</blockquote>
-<div class="track-header">光 (Optics)</div>
-<blockquote class="quote">
-  I’m thinking of long call$ for $COHR (Ai/optics) Thinking Dec 2026-Jan 2027 under $4k premium.
-  <div class="translation">翻译：我正在考虑购买$COHR（人工智能/光学）的长期看涨期权，考虑2026年12月至2027年1月，溢价低于4000美元。</div>
-</blockquote>
-<div class="track-header">存 (Storage)</div>
-<blockquote class="quote">
-  Samsung -8.6% as 50k workers prepare 18-day strike over 15% profit share demand, $2B daily loss risk and chip output cuts.
-  <div class="translation">翻译：三星因5万名工人准备举行18天罢工，要求15%的利润分成，股价下跌8.6%，面临每天20亿美元的损失风险和芯片产量削减。</div>
-</blockquote>
-<blockquote class="quote">
-  Sell Your Memory Stocks.
-  <div class="translation">翻译：卖掉你的内存股。</div>
-</blockquote>
-<div class="track-header">电 (Power)</div>
-<blockquote class="quote">
-  NextEra Energy will buy Dominion Energy in an all-stock deal valued at nearly $67 billion, uniting two leading players in the race to meet growing electricity demand from data centers that run artificial intelligence.
-  <div class="translation">翻译：NextEra Energy将以近670亿美元的全股票交易收购Dominion Energy，合并两家在满足运行人工智能的数据中心日益增长的电力需求竞赛中的领先企业。</div>
-</blockquote>
-<blockquote class="quote">
-  "Thermal & Specialized Solutions (TSS): This is the segment driving the AI-cooling hype. These highly engineered fluids are critical for two-phase immersion cooling, a technology used to prevent next-generation AI data centers and supercomputers from overheating.
-  <div class="translation">翻译：“热能与专业解决方案（TSS）：这是推动AI散热热潮的部门。这些高度工程化的流体对于两相浸入式冷却至关重要，这项技术用于防止下一代AI数据中心和超级计算机过热。</div>
-</blockquote>
-<div class="track-header">板 (Boards)</div>
-<blockquote class="quote">
-  A South Korean court granted on May 18 a partial injunction requested by Samsung Electronics ordering the company’s union in the country to ensure its strike does not cut into production volume. The court also said in the ruling that union action must not lead to the degradation of materials used in the world’s largest memory chip maker’s production.
-  <div class="translation">翻译：韩国一家法院于5月18日批准了三星电子提出的部分禁令申请，命令该公司在韩国的工会确保其罢工不会削减产量。法院还在裁决中表示，工会行动不得导致这家全球最大内存芯片制造商生产中使用的材料降级。</div>
-</blockquote>
-<div class="track-header">云 (Cloud)</div>
-<blockquote class="quote">
-  Digi Power X ($DGXX): An AI hyperscaler with potential.
-  <div class="translation">翻译：Digi Power X ($DGXX)：一个有潜力的AI超大规模计算提供商。</div>
-</blockquote>
-<blockquote class="quote">
-  Datadog’s Big New Customer: Anthropic.
-  <div class="translation">翻译：Datadog的大新客户：Anthropic。</div>
-</blockquote>
-<div class="track-header">AI应用 (AI Applications)</div>
-<blockquote class="quote">
-  American Jobs with AI Exposure Really Are Starting to Disappear, Data Show.
-  <div class="translation">翻译：数据显示，美国面临AI风险的就业岗位确实开始消失。</div>
-</blockquote>
-<blockquote
-  Anyone using AI agents for options trading? Hitting some execution issues.
-  <div class="translation">翻译：有人使用AI代理进行期权交易吗？遇到一些执行问题。</div>
-</blockquote>
-<blockquote class="quote">
-  My AI trading bot made me $81 today selling a 0DTE option, and i still couldn't believe it.
-  <div class="translation">翻译：我的AI交易机器人今天通过出售一份0DTE期权让我赚了81美元，我仍然不敢相信。</div>
-</blockquote>
-</div>
+    <h2>3. 小众公司冒泡</h2>
+    <ul>
+      <li>
+        <div class="stock-tag">1. NOW (ServiceNow, Inc.)</div>
+        <blockquote class="quote">
+          Fuck the SaaSpocalypse, enterprise software is alive.
+          <div class="translation">翻译：去他妈的SaaS末日，企业软件依然生机勃勃。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">2. RKLB (Rocket Lab USA, Inc.)</div>
+        <blockquote class="quote">
+          Bought around 500 shares of RKLB @ 4.31 and the stock wasn't moving much.
+          <div class="translation">翻译：我以4.31美元的价格购买了大约500股RKLB，但股价没有太大变动。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">3. PL (Planet Labs PBC)</div>
+        <blockquote class="quote">
+          Investor committed $163k to Planet Labs.
+          <div class="translation">翻译：一位投资者向Planet Labs投入了16.3万美元。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">4. RDW (Redwire Corporation)</div>
+        <blockquote class="quote">
+          They are positioned in a few different sectors Space infrastructure Defense Tech Satellite systems Revenue has grown about %50 year to year They have been losing money/have burned cash in the past , however they are winning lots of contracts with about 500 million in backlogs.
+          <div class="translation">翻译：他们涉足航天基础设施、国防科技和卫星系统等多个领域。尽管过去亏损并烧钱，但营收同比增长约50%，并赢得了大量合同，积压订单达5亿美元。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Kind of see it as a high upside, mid volatility stock depending on if defense spending slows.
+          <div class="translation">翻译：我将其视为一只高潜在收益、中等波动性的股票，这取决于国防开支是否放缓。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">5. AMPX (Amprius Technologies, Inc.)</div>
+        <blockquote class="quote">
+          Amprius Technologies makes silicon anode batteries, which is just a step up from the standard lithium-ion stuff most people are familiar with.
+          <div class="translation">翻译：Amprius Technologies生产硅负极电池，这比大多数人熟悉的标准锂离子电池更先进。</div>
+        </blockquote>
+        <blockquote class="quote">
+          I have been really researching it more and realizing how huge this stock could turn out to be and how great it is doing right now.
+          <div class="translation">翻译：我一直在深入研究它，并意识到这只股票潜力巨大，目前表现非常出色。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">6. DGXX (Digi Power X)</div>
+        <blockquote class="quote">
+          I found Digi Power X which is a better stock than Boost Run in my opinion.
+          <div class="translation">翻译：在我看来，我发现了Digi Power X，它比Boost Run更具投资价值。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The market cap is around 500M$ by the time I'm writing this, they have no debt.
+          <div class="translation">翻译：在我写这篇评论时，其市值约为5亿美元，并且没有债务。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">7. INFQ (Infleqtion)</div>
+        <blockquote class="quote">
+          INFQ has 2 key advantages in the space - 1 -neutral atoms ; quantum calculations require superposition, which typically requires cooling - INFQ uses atoms held between lasers to reach superposition, no cooling required, a significant advantage?
+          <div class="translation">翻译：INFQ在该领域拥有两个关键优势——1、中性原子；量子计算需要叠加态，这通常需要冷却——INFQ使用激光束中的原子达到叠加态，无需冷却，这是一个显著优势吗？</div>
+        </blockquote>
+        <blockquote class="quote">
+          Sqale QPU in Use by NVIDIA to try and develop next gen of quantum A.I. LLMs.
+          <div class="translation">翻译：NVIDIA正在使用Sqale QPU来尝试开发下一代量子AI大型语言模型。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">8. CC (The Chemours Company)</div>
+        <blockquote class="quote">
+          They have unique solution to the cooling problem in AI data centers.
+          <div class="translation">翻译：他们在AI数据中心的冷却问题上拥有独特的解决方案。</div>
+        </blockquote>
+        <blockquote class="quote">
+          These highly engineered fluids are critical for two-phase immersion cooling, a technology used to prevent next-generation AI data centers and supercomputers from overheating.
+          <div class="translation">翻译：这些高度工程化的流体对于两相浸没式冷却至关重要，该技术用于防止下一代AI数据中心和超级计算机过热。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">9. CBRS (Cerebras Systems, Inc.)</div>
+        <blockquote class="quote">
+          Pressure-testing the Cerebras IPO.
+          <div class="translation">翻译：对Cerebras的IPO进行压力测试。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Cerebras $CBRS Equity Research Report -- 2026 Edition.
+          <div class="translation">翻译：Cerebras $CBRS 股票研究报告——2026年版。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">10. TTWO (Take-Two Interactive Software, Inc.)</div>
+        <blockquote class="quote">
+          $TTWO (GTA6 catalyst release, considering GTA5 made over $10Billion in its mid-lifespan).
+          <div class="translation">翻译：Take-Two Interactive Software Inc. (TTWO) (GTA6发布是催化剂，考虑到GTA5在其生命周期中期创造了超过100亿美元的收入)。</div>
+        </blockquote>
+      </li>
+    </ul>
+
+    <h2>4. AI主线讨论</h2>
+    <ul>
+      <li>
+        <div class="track-header">模型</div>
+        <blockquote class="quote">
+          For the first time in years, ChatGPT falls to second place in the generative AI market, slumping behind Anthropic’s Claude.
+          <div class="translation">翻译：ChatGPT多年来首次在生成式AI市场中跌至第二位，落后于Anthropic的Claude。</div>
+        </blockquote>
+        <blockquote class="quote">
+          ChatGPT now lags in second place in various key metrics, including net new ARR, mobile app downloads, business adoption, daily active users, annualized revenue, etc.
+          <div class="translation">翻译：ChatGPT目前在多项关键指标上排名第二，包括净新增年度经常性收入、移动应用下载量、商业采用率、日活跃用户数、年化收入等。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Musk alleged that when he co-founded OpenAI in 2015 and invested $38M of his own money it was based on an explicit agreement with Altman that the organization would remain a non-profit company that is dedicated to developing AGI for the benefit of humanity.
+          <div class="translation">翻译：马斯克声称，他于2015年与奥尔特曼共同创立OpenAI并投入3800万美元时，是基于一项明确协议，即该组织将保持非营利性质，致力于为人类利益开发通用人工智能（AGI）。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Altman and his executives turned the company for profit and as a result, Musk wants to sue for $134B disgorgement.
+          <div class="translation">翻译：奥尔特曼及其高管将公司转为营利性，因此马斯克要求追回1340亿美元的不当所得。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">算</div>
+        <blockquote class="quote">
+          AI infrastructure, defence, energy transition, healthcare innovation.
+          <div class="translation">翻译：AI基础设施、国防、能源转型、医疗健康创新。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Nvidia is selling promises; they're pulling in tens of billions in hard cash now by selling actual infrastructure for the AI boom.
+          <div class="translation">翻译：英伟达正在兑现承诺；他们通过销售AI繁荣所需的实际基础设施，现在正获得数百亿美元的现金。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Reports suggest that China, despite lifted bans, is declining to buy Nvidia chips and is now forbidding Chinese firms from buying them, indicating underlying infrastructure has become self-sufficient given China's strong AI model development.
+          <div class="translation">翻译：报告显示，尽管禁令解除，中国仍拒绝购买英伟达芯片，并禁止中国企业购买，这表明鉴于中国强大的AI模型开发能力，其底层基础设施已实现自给自足。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Pressure-testing the Cerebras IPO.
+          <div class="translation">翻译：对Cerebras的IPO进行压力测试。</div>
+        </blockquote>
+        <blockquote class="quote">
+          South Korea court orders Samsung union strike to not impact chip volume.
+          <div class="translation">翻译：韩国法院命令三星工会罢工不得影响芯片产量。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">光</div>
+        <blockquote class="quote">
+          I’m thinking of long call$ for $COHR (Ai/optics).
+          <div class="translation">翻译：我正在考虑买入$COHR（人工智能/光学）的长期看涨期权。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">存</div>
+        <blockquote class="quote">
+          Seagate leads memory sell-off as CEO says it would ‘take too long’ to build new factories.
+          <div class="translation">翻译：希捷在内存抛售中领跌，因首席执行官表示建造新工厂“耗时太长”。</div>
+        </blockquote>
+        <blockquote class="quote">
+          If it would &quot;take too long to build new factories&quot;, that should be bullish, right?
+          <div class="translation">翻译：如果“建造新工厂耗时太长”，那应该看涨才对，是吗？</div>
+        </blockquote>
+        <blockquote class="quote">
+          Sell Your Memory Stocks.
+          <div class="translation">翻译：卖掉你的内存股。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">电</div>
+        <blockquote class="quote">
+          NextEra Energy to buy Dominion in deal that unites two key players in race to power AI data centers.
+          <div class="translation">翻译：NextEra Energy将收购Dominion，此交易 объеди了两家在为AI数据中心供电竞赛中的关键参与者。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Dominion is the utility responsible for powering the world’s largest data center market in northern Virginia.
+          <div class="translation">翻译：Dominion是负责为弗吉尼亚州北部全球最大数据中心市场供电的公用事业公司。</div>
+        </blockquote>
+        <blockquote class="quote">
+          They have unique solution to the cooling problem in AI data centers.
+          <div class="translation">翻译：他们在AI数据中心的冷却问题上拥有独特的解决方案。</div>
+        </blockquote>
+        <blockquote class="quote">
+          These highly engineered fluids are critical for two-phase immersion cooling, a technology used to prevent next-generation AI data centers and supercomputers from overheating.
+          <div class="translation">翻译：这些高度工程化的流体对于两相浸没式冷却至关重要，该技术用于防止下一代AI数据中心和超级计算机过热。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">板</div>
+        <blockquote class="quote">
+          Nvidia is selling promises; they're pulling in tens of billions in hard cash now by selling actual infrastructure for the AI boom.
+          <div class="translation">翻译：英伟达正在兑现承诺；他们通过销售AI繁荣所需的实际基础设施，现在正获得数百亿美元的现金。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Oracle's primary partner for training large-scale data models in its AI data centers.
+          <div class="translation">翻译：甲骨文是其AI数据中心中用于训练大规模数据模型的主要合作伙伴。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">云</div>
+        <blockquote class="quote">
+          I looked for other under the radar AI hyperscaler or Neocloud that did not skyrocket.
+          <div class="translation">翻译：我寻找了其他尚未飙升、不为人知的AI超大规模云计算公司或新云服务公司。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Digi Power X which is a better stock than Boost Run in my opinion.
+          <div class="translation">翻译：在我看来，Digi Power X是一只比Boost Run更好的股票。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Oracle's primary partner for training large-scale data models in its AI data centers.
+          <div class="translation">翻译：甲骨文是其AI数据中心中用于训练大规模数据模型的主要合作伙伴。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">AI应用</div>
+        <blockquote class="quote">
+          Anyone using AI agents for options trading? Hitting some execution issues.
+          <div class="translation">翻译：有人使用AI代理进行期权交易吗？我在执行方面遇到了一些问题。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Got my equity strategy running cleanly through an agent.
+          <div class="translation">翻译：我的股票策略通过一个代理程序运行得很流畅。</div>
+        </blockquote>
+        <blockquote class="quote">
+          My trading bot actually made $81 today selling a 0DTE option, and i still couldn't believe it.
+          <div class="translation">翻译：我的交易机器人今天通过卖出0DTE期权赚了81美元，我仍然不敢相信。</div>
+        </blockquote>
+        <blockquote class="quote">
+          American Jobs with AI Exposure Really Are Starting to Disappear, Data Show.
+          <div class="translation">翻译：数据显示，受AI影响的美国工作岗位确实开始消失。</div>
+        </blockquote>
+      </li>
+    </ul>
+
+</body>
+</html>
         </div>
         <script>
             var myChart = echarts.init(document.getElementById('gauge'));
