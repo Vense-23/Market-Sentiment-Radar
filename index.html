@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>05月25日 情报终端</title>
+        <title>05月26日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,460 +36,321 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 05月25日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-05-25 23:37:14 (北京时间)</p>
+            <h1>🎯 05月26日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-05-26 12:43:04 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股市场情绪概览 (2026年05月25日)</title>
+    <title>美股市场情绪报告 (2026年05月26日)</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f9f9f9; }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        h2 { color: #34495e; margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        ul { list-style: none; padding: 0; }
-        li { background-color: #fff; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 10px; font-size: 1.1em; }
-        .quote { font-style: italic; color: #555; border-left: 4px solid #95a5a6; padding-left: 15px; margin: 10px 0; }
-        .translation { font-style: normal; color: #7f8c8d; font-size: 0.9em; margin-top: 5px; }
-        .track-header { font-weight: bold; color: #2980b9; margin-top: 20px; margin-bottom: 10px; font-size: 1.05em; border-bottom: 1px dashed #c0d9ec; padding-bottom: 5px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; line-height: 1.6; color: #333; margin: 20px; background-color: #f4f7f6; }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; margin-top: 30px; }
+        h3 { color: #34495e; margin-top: 20px; }
+        ul { list-style-type: none; padding: 0; }
+        li { background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .stock-tag { font-weight: bold; color: #2980b9; margin-bottom: 10px; font-size: 1.1em; }
+        .quote { background-color: #ecf0f1; border-left: 4px solid #95a5a6; margin: 10px 0; padding: 10px 15px; font-style: italic; color: #555; }
+        .translation { font-style: normal; color: #2c3e50; margin-top: 5px; border-top: 1px dashed #bdc3c7; padding-top: 5px; }
+        .track-header { font-weight: bold; color: #16a085; margin-top: 15px; margin-bottom: 5px; font-size: 1em; text-transform: uppercase; }
+        .quote-small { font-size: 0.9em; line-height: 1.4; }
+        .quote-source { font-size: 0.8em; color: #7f8c8d; text-align: right; margin-top: 5px; }
     </style>
 </head>
 <body>
 
-    <h1>美股市场情绪概览 (2026年05月25日)</h1>
+    <h1>美股市场情绪报告 (2026年05月26日)</h1>
 
     <h2>1. 宏观与市场情绪</h2>
     <ul>
-        <li>
-            <blockquote class="quote">
-                The S&amp;P 500 is trading at 31.8x earnings. Long-term average is ~17.6x. even the 10-year average is only ~23x. So we're not just "a little elevated" we're pretty stretched on a historical basis.
-                <div class="translation">翻译：标普500指数的市盈率为31.8倍。长期平均水平约为17.6倍，即使是10年平均水平也只有约23倍。所以我们不仅仅是“略微高估”，从历史角度来看，我们已经相当紧张了。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                The bull case is baked into the forward P/E: analysts have it at 23.2x, which means they're pricing in roughly 27% earnings growth over the next 12 months.
-                <div class="translation">翻译：牛市的论点已经体现在远期市盈率中：分析师预测为23.2倍，这意味着他们预计未来12个月的盈利增长率约为27%。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Especially with rates still sitting around 4-4.5% on the 10Y, which means the equity risk premium is basically paper thin right now.
-                <div class="translation">翻译：特别是考虑到10年期国债利率仍在4-4.5%左右，这意味着股权风险溢价目前基本微乎其微。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                New Fed Chair Kevin Warsh suggests he may take an Alan Greenspan-style approach at the central bank.
-                <div class="translation">翻译：新任美联储主席凯文·沃什暗示他可能会在央行采取艾伦·格林斯潘式的做法。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Is it possible we get a paradoxical reaction to rate cut/hike? If Warsh actually cuts rates, wouldn’t the long end rise with inflation expectation rising and in return actually increase the cost of capital for most firms financing at 5+ years?
-                <div class="translation">翻译：利率降息/加息是否可能引发反常反应？如果沃什真的降息，长期利率会不会随着通胀预期上升而上涨，反过来又会增加大多数融资期限超过5年的公司的资本成本？</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                U.S. and Iran Agree in Principle to Reopen Strait of Hormuz, U.S. Official Says.
-                <div class="translation">翻译：美国官员称，美国和伊朗原则上同意重新开放霍尔木兹海峡。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                With the recent "memorandum of understanding" between the US and Iran announced yesterday/this morning, I expect oil prices will drop, so I'm thinking of buying more.
-                <div class="translation">翻译：随着昨天/今天早上美国和伊朗之间宣布的最新“谅解备忘录”，我预计油价将下跌，所以我正在考虑增持。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                hyperscaler capex started 2026 at $515B and it's now $740B mid-year, with 2027 already pencilled in at $889B that's 2.7% of US GDP going into AI infrastructure, in 2019 this number was 0.3%.
-                <div class="translation">翻译：超大规模云服务商的资本支出在2026年初为5150亿美元，年中已达到7400亿美元，而2027年已预估为8890亿美元，这相当于美国GDP的2.7%投入到AI基础设施，而2019年这一数字仅为0.3%。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                The part that's really breaking my bubble thesis is that EPS is actually moving with it. tech earnings estimates for 2027 are up nearly 20% YTD and in 1999 profits lagged the spending by a mile that's not what's happening here, at least not yet.
-                <div class="translation">翻译：真正打破我泡沫论点的是，每股收益实际上与此同步增长。2027年的科技盈利预期今年迄今已上涨近20%，而在1999年，利润远远落后于支出，这里的情况并非如此，至少目前还没有。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Apparently they were running zero-day iron condors using some kind of martingale approach where they kept doubling their position size after losses. From what I gathered, this outfit had around $60 million in losses when everything went sideways.
-                <div class="translation">翻译：显然，他们正在使用某种马丁格尔策略来运行零日铁秃鹫，在亏损后不断将头寸规模翻倍。据我所知，当一切都出错时，这支团队的损失约为6000万美元。</div>
-            </blockquote>
-        </li>
+      <li>
+        <blockquote class="quote">
+          The S&P 500 is trading at 31.8x earnings. trailing P/E is at 31.8x. Long-term average is ~17.6x. even the 10-year average is only ~23x. So we're not just "a little elevated" we're pretty stretched on a historical basis. The bull case is baked into the forward P/E: analysts have it at 23.2x, which means they're pricing in roughly 27% earnings growth over the next 12 months.
+          <div class="translation">翻译：标普500指数市盈率为31.8倍。历史市盈率（TTM P/E）为31.8倍。长期平均水平约为17.6倍。甚至10年平均水平也仅为约23倍。因此，我们不仅仅是“略微高估”，从历史上看，我们已经相当紧张。牛市行情已计入远期市盈率：分析师预计为23.2倍，这意味着他们在未来12个月内定价了大约27%的盈利增长。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The Capex Unwind Thesis 2027 - 2028: What do railroads in the 1880s, telecom fiber in 2000, and AI infrastructure in 2026 have in common? Each was a capex cycle where the shovel-makers got rich first and lost the most once the cycle finished. I believe this may happen in 2027-2028 and will be doing heavy shorts likely after the initial IPO pop, late 2026. The AI bubble, the so-called "K-shaped economy", everything points towards one thing and one thing alone: the US economy right now is the Capex Economy.
+          <div class="translation">翻译：2027-2028年的资本支出去杠杆理论：19世纪80年代的铁路、2000年的电信光纤以及2026年的人工智能基础设施有什么共同之处？每一次都是一个资本支出周期，其中“卖铲人”先富起来，然后在周期结束后损失最大。我相信这可能发生在2027-2028年，并可能在首次公开募股（IPO）初期飙升之后，在2026年末进行大量做空。人工智能泡沫，所谓的“K型经济”，一切都指向一件事：美国经济目前是资本支出经济。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Economist Justin Wolfers Warns We Will Be Paying 'Iran Tax' For Months If Not Years And The 'Hit' To Family Budgets Will be 'Very Real.
+          <div class="translation">翻译：经济学家贾斯汀·沃尔弗斯警告说，我们将在数月甚至数年内支付“伊朗税”，对家庭预算的“冲击”将“非常真实”。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Seeing big call buys for TLT - Jan 2028. May 22: Jan 2028 $105 calls, 239,575 volume. May 22: Jan 2028 $120 calls, 188,024 volume. Someone positioning for lower rates?
+          <div class="translation">翻译：看到TLT（2028年1月到期）出现大量看涨期权买入。5月22日：2028年1月105美元看涨期权，成交量239,575。5月22日：2028年1月120美元看涨期权，成交量188,024。有人在为利率下降做准备吗？</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
-        <li>
-            <div class="stock-tag">NVDA (NVIDIA Corporation)</div>
-            <blockquote class="quote">
-                If you ask a GPU chip designer who has the more forward-thinking architecture, most would agree it is AMD over $NVDA precisely because of their chiplet-based IP.
-                <div class="translation">翻译：如果你问一位GPU芯片设计师谁拥有更具前瞻性的架构，大多数人会同意是AMD而非$NVDA，这正是因为它们的chiplet（小芯片）IP。</div>
-            </blockquote>
-            <blockquote class="quote">
-                The line from huang on cnbc (may 21) that keeps rattling around in my head: 'huawei is very, very strong... their local chip ecosystem performs well because we are out of that market'.
-                <div class="translation">翻译：黄仁勋在CNBC（5月21日）上说的一句话在我脑海中挥之不去：“华为非常非常强大……他们的本地芯片生态系统表现良好，因为我们已经离开了那个市场。”</div>
-            </blockquote>
-            <blockquote class="quote">
-                Nvidia china revenue is effectively zero.
-                <div class="translation">翻译：英伟达在中国的收入实际上为零。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Ironically, the CUDA moat that made $NVDA famous will likely lead to its toppling as king (AMD ROCm is getting good enough).
-                <div class="translation">翻译：讽刺的是，使$NVDA闻名遐迩的CUDA护城河很可能会导致其王者地位的终结（AMD ROCm已经足够好用）。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">RKLB (Rocket Lab USA, Inc.)</div>
-            <blockquote class="quote">
-                ASTS/RKLB: kinda similar stocks that have both risen 300-400% already.
-                <div class="translation">翻译：ASTS/RKLB：两种相似的股票，都已上涨300-400%。</div>
-            </blockquote>
-            <blockquote class="quote">
-                So I have meager (share quantity) positions in RKLB and ASTS, however since my entry price was so low I have bagged 5 figures in profit on each.
-                <div class="translation">翻译：我在RKLB和ASTS的持仓（股票数量）微薄，但由于我的买入价非常低，每只股票都赚取了五位数的利润。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Over the course of the last month I sold ~$300k of Apple (40% of my portfolio), now averaging into RKLB at $106.
-                <div class="translation">翻译：在过去一个月里，我卖出了约30万美元的苹果股票（占我投资组合的40%），现在正以106美元的价格均摊买入RKLB。</div>
-            </blockquote>
-            <blockquote class="quote">
-                I still believe in RKLB and given the last earnings report I think it’s gonna keep on going up, but a lot slower than in the past six months.
-                <div class="translation">翻译：我仍然相信RKLB，鉴于最新的财报，我认为它会继续上涨，但速度会比过去六个月慢很多。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">RDDT (Reddit, Inc.)</div>
-            <blockquote class="quote">
-                RDDT has been getting absolutely smoked this year.
-                <div class="translation">翻译：RDDT今年遭遇了重创。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Worst performer in the WSB 2026 top picks by a good margin and one of the worst mid+ market cap performers period.
-                <div class="translation">翻译：在WSB 2026年热门股票中表现最差，并且是中期市值以上股票中表现最差之一。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Earlier today, META announced Forum, a standalone app for Facebook Groups. Some analysts report that the Forum app will be a competitive threat to reddit, because casual redditors "just looking for answers" will use the Forum app instead of reddit.
-                <div class="translation">翻译：今天早些时候，META发布了Forum，一个独立的Facebook群组应用。一些分析师报告称，Forum应用将对Reddit构成竞争威胁，因为“只是寻找答案”的普通Reddit用户将转而使用Forum应用。</div>
-            </blockquote>
-            <blockquote class="quote">
-                RDDT is down 40% so far in 2026, despite 7 quarters in a row of sale.
-                <div class="translation">翻译：尽管连续七个季度销售增长，但RDDT在2026年至今仍下跌了40%。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">MSFT (Microsoft Corporation)</div>
-            <blockquote class="quote">
-                Microsoft is reportedly planning to reduce the use of Anthropic's Claude Code — a move designed to push its employees toward GitHub Copilot CLI.
-                <div class="translation">翻译：据报道，微软计划减少使用Anthropic的Claude Code，此举旨在推动其员工转向GitHub Copilot CLI。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Will other companies also cut third-party AI tools because of high AI costs?
-                <div class="translation">翻译：其他公司也会因为高昂的AI成本而削减第三方AI工具的使用吗？</div>
-            </blockquote>
-            <blockquote class="quote">
-                Are AI coding tools actually more expensive than human engineers in real use?
-                <div class="translation">翻译：在实际使用中，AI编码工具真的比人类工程师更昂贵吗？</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">BB (BlackBerry Limited)</div>
-            <blockquote class="quote">
-                Blackberry is up 50% on the month &amp; 109% year to date.
-                <div class="translation">翻译：黑莓本月上涨50%，年初至今上涨109%。</div>
-            </blockquote>
-            <blockquote class="quote">
-                They have no idea they stopped making smartphones a long time ago and went all in on software.
-                <div class="translation">翻译：他们不知道黑莓很久以前就停止生产智能手机，并全力投入软件领域。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Their software QNX is the most advanced safety certified robotic software in the entire world and currently in 275M vehicles, medical devices, and industrial robots.
-                <div class="translation">翻译：他们的QNX软件是全球最先进的经过安全认证的机器人软件，目前已应用于2.75亿辆汽车、医疗设备和工业机器人中。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Now that we’re entering a world of AI + Robotics, their software is about to hit billions of devices.
-                <div class="translation">翻译：现在我们正进入一个AI+机器人世界，他们的软件即将覆盖数十亿设备。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">AMD (Advanced Micro Devices, Inc.)</div>
-            <blockquote class="quote">
-                If you ever built a computer from scratch, you would know that AMD CPU chips have been king over Intel for more than a decade now.
-                <div class="translation">翻译：如果你曾从零开始组装一台电脑，你就会知道AMD的CPU芯片在过去十多年里一直领先于英特尔。</div>
-            </blockquote>
-            <blockquote class="quote">
-                AMD is a master in chiplet based design - the ability to have multiple chips or cores working in unison to solve problems.
-                <div class="translation">翻译：AMD是基于小芯片设计的行家，这种设计能够让多个芯片或核心协同工作来解决问题。</div>
-            </blockquote>
-            <blockquote class="quote">
-                If you ask a GPU chip designer who has the more forward-thinking architecture, most would agree it is AMD over $NVDA precisely because of their chiplet-based IP.
-                <div class="translation">翻译：如果你问一位GPU芯片设计师谁拥有更具前瞻性的架构，大多数人会同意是AMD而非$NVDA，这正是因为它们的chiplet（小芯片）IP。</div>
-            </blockquote>
-            <blockquote class="quote">
-                The only crux that $AMD currently has is ROCm - their development framework competing with Nvidia's much more mature CUDA. However, my argument is this gap is narrowing much faster than what analysts are pricing.
-                <div class="translation">翻译：$AMD目前唯一的症结是ROCm——他们的开发框架与Nvidia更成熟的CUDA竞争。然而，我的论点是这个差距正在以分析师预期的更快速度缩小。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">GOOGL (Alphabet Inc.)</div>
-            <blockquote class="quote">
-                The future is open-sourced hardware (TPUs) and software (Gemini) and $GOOGL has shown itself to be at the forefront of this evolution.
-                <div class="translation">翻译：未来是开源硬件（TPU）和软件（Gemini），而$GOOGL已证明自己处于这场演进的前沿。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Google’s Gemini has shown itself to be a neutral model, and has unique training data (Gmail + YouTube) that peers lack.
-                <div class="translation">翻译：谷歌的Gemini已经证明自己是一个中立模型，并且拥有同行所缺乏的独特训练数据（Gmail + YouTube）。</div>
-            </blockquote>
-        </li>
+      <li>
+        <div class="stock-tag">NVDA (NVIDIA)</div>
+        <blockquote class="quote">
+          Semiconductor stocks are basically a black hole right now and everything else is getting left behind. NVIDIA has basically been a money printer.
+          <div class="translation">翻译：半导体股票现在基本上是一个黑洞，其他所有股票都被抛在后面。英伟达基本上是一台印钞机。</div>
+        </blockquote>
+        <blockquote class="quote">
+          If you ask a GPU chip designer who has the more forward-thinking architecture, most would agree it is AMD over $NVDA precisely because of their chiplet-based IP. The only crux that $AMD currently has is ROCm - their development framework competing with Nvidia's much more mature CUDA.
+          <div class="translation">翻译：如果你问一位GPU芯片设计师，谁拥有更具前瞻性的架构，大多数人会同意是AMD而非英伟达，正是因为他们的chiplet（小芯片）IP。AMD目前唯一的症结是ROCm——他们的开发框架正在与英伟达更成熟的CUDA竞争。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Bought to close my 10 Nvidia calls and rolled to 2027, strike from $134 to $150. Back a few years ago I was selling covered calls on my Nvidia, usually 15-20% higher strike prices expiring in 2-3 weeks. Two years ago Nvidia exploded thanks to AI while I had a contract. Decided to roll it instead of letting it exercise. Did that a few times with an always higher strike price. On Friday I rolled it for a $150 strike expiring December 2027.
+          <div class="translation">翻译：我平仓了10份英伟达看涨期权，并展期至2027年，行权价从134美元调整到150美元。几年前，我一直在卖出英伟达的备兑看涨期权，通常是行权价高出15-20%，2-3周后到期。两年前，英伟达因AI而爆发，当时我有一份合约。我决定展期，而不是让它被行权。我这样做了几次，每次都提高了行权价。周五，我将其展期至2027年12月到期的150美元行权价合约。</div>
+        </blockquote>
+        <blockquote class="quote">
+          If management is hinting at constrained shipments or frontloaded deliveries, tsmc's near term mix shifts, which immediately ripples into advanced packaging and hig end memory. Imo the tone of the guidance matters a lot more than the eps beat if you hold any of these supplier names.
+          <div class="translation">翻译：如果管理层暗示出货受限或提前交付，台积电的近期产品组合将发生变化，这会立即波及到先进封装和高端存储器。在我看来，如果你持有任何这些供应商的股票，指引的基调比每股收益超出预期更重要。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">MSFT (Microsoft)</div>
+        <blockquote class="quote">
+          Microsoft reportedly cuts Claude Code for GitHub Copilot CLI. AI coding costs may exceed human engineers. Will other companies also cut third-party AI tools because of high AI costs? Is Microsoft doing this mainly for cost savings or to push its own tools? Are AI coding tools actually more expensive than human engineers in real use?
+          <div class="translation">翻译：据报道，微软为GitHub Copilot CLI削减了Claude代码。人工智能编程成本可能超过人类工程师。其他公司是否也会因为高昂的AI成本而削减第三方AI工具？微软此举主要是为了节省成本还是为了推广自己的工具？AI编程工具在实际使用中真的比人类工程师更昂贵吗？</div>
+        </blockquote>
+        <blockquote class="quote">
+          MSFT looking attractive after this overreaction selloff. Microsoft just posted their Q2 results and immediately dropped around 8% which seems completely excessive to me. Market seems worried about three main things after earnings - too much OpenAI dependency, capital spending concerns, and Azure growth slowing down. But the OpenAI exposure issue is overblown.
+          <div class="translation">翻译：微软在这次过度反应的抛售之后看起来很有吸引力。微软刚刚公布了第二季度业绩，股价立即下跌了约8%，在我看来这完全是过度的。市场似乎担心财报后的三个主要问题——对OpenAI的过度依赖、资本支出担忧以及Azure增长放缓。但OpenAI的风险敞口问题被夸大了。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">BB (BlackBerry)</div>
+        <blockquote class="quote">
+          A turnaround isn't a successful turnaround unless it hits and exceeds it's previous all time high, which is $150 in BB's case. This is a simple matter of optics and human nature.
+          <div class="translation">翻译：除非股价达到并超过历史最高点，否则扭亏为盈就不算成功，就黑莓而言是150美元。这只是光学效应和人性的简单问题。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Blackberry is up 50% on the month & 109% year to date. Everyone still thinks Blackberry is a dead smartphone company. They have no idea they stopped making smartphones a long time ago and went all in on software. They also don’t know that their software QNX is the most advanced safety certified robotic software in the entire world and currently in 275M vehicles, medical devices, and industrial robots. Now that we’re entering a world of AI + Robotics, their software is about to hit billions of devices.
+          <div class="translation">翻译：黑莓本月上涨50%，年初至今上涨109%。大家仍然认为黑莓是一家死去的智能手机公司。他们不知道黑莓很久以前就停止生产智能手机，并全力投入软件业务。他们也不知道黑莓的QNX软件是全球最先进的安全认证机器人软件，目前已应用于2.75亿辆汽车、医疗设备和工业机器人中。现在我们正在进入AI+机器人世界，他们的软件即将覆盖数十亿设备。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">AMD (Advanced Micro Devices)</div>
+        <blockquote class="quote">
+          If you ever built a computer from scratch, you would know that AMD CPU chips have been king over Intel for more than a decade now. The reason is that AMD is a master in chiplet based design - the ability to have multiple chips or cores working in unison to solve problems. This approach (vs the historical monolithic design) revolutionized CPU performance and AMD has been quietly applying their insights here to their GPUs.
+          <div class="translation">翻译：如果你曾从零开始组装电脑，你会知道AMD的CPU芯片在过去十多年来一直领先于英特尔。原因在于AMD是chiplet（小芯片）设计的行家——能够让多个芯片或核心协同工作来解决问题。这种方法（相对于传统的单片设计）彻底改变了CPU性能，AMD一直悄然将其洞察应用于他们的GPU。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Semiconductor stocks are basically a black hole right now and everything else is getting left behind. Micron, AMD, the whole space has gone on these absolutely absurd runs that would normally take several years to play out. These aren't slow grinds either, a lot of these moves happened in weeks.
+          <div class="translation">翻译：半导体股票现在基本上是一个黑洞，其他所有股票都被抛在后面。美光、AMD，整个板块都经历了这些绝对荒谬的涨势，通常需要几年才能实现。这些也不是缓慢的磨盘式上涨，很多这样的涨幅都是在几周内发生的。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">NOW (ServiceNow)</div>
+        <blockquote class="quote">
+          NOW might actually be a decent Ai play. ServiceNow stands as an orchestration layer between legacy software and modern digital workflows for databases using agentic AI. Every business process has to flow through its platformf for safe execution. Theyre basically the TSMC of agentic AI workflows excellent entry price based on changing momentum. forward pe 28, trailing p/e 60. 80% profit margin. $5B in free cash flow. $3B+ in net cash after debt.
+          <div class="translation">翻译：ServiceNow可能是一个不错的人工智能投资标的。ServiceNow作为遗留软件和现代数字工作流之间的协调层，利用代理AI处理数据库。每个业务流程都必须通过其平台进行安全执行。他们基本上是代理AI工作流的台积电，基于变化中的动能，这是一个绝佳的入场价格。远期市盈率为28，历史市盈率为60。利润率为80%。自由现金流50亿美元。扣除债务后净现金超过30亿美元。</div>
+        </blockquote>
+        <blockquote class="quote">
+          SaaS is oversold and AI will be a tailwind for the winners. Earnings are starting to show the AI narrative shift SalesForce, ServiceNow, Workday, etc are all very sticky at the enterprise level.
+          <div class="translation">翻译：SaaS（软件即服务）被超卖了，AI将成为赢家的利好因素。财报开始显示AI叙事转变，SalesForce、ServiceNow、Workday等在企业层面都非常具有粘性。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>3. 小众公司冒泡</h2>
     <ul>
-        <li>
-            <div class="stock-tag">SIVERS (Sivers Semiconductor AB)</div>
-            <blockquote class="quote">
-                It's a company who make some laser for AI data center photonic.
-                <div class="translation">翻译：这是一家为AI数据中心光子学制造激光器的公司。</div>
-            </blockquote>
-            <blockquote class="quote">
-                The company is not in good situation : they are losing money, their main shareholder is suffering.
-                <div class="translation">翻译：该公司状况不佳：他们正在亏损，主要股东也面临困境。</div>
-            </blockquote>
-            <blockquote class="quote">
-                But, one X influencers made a call and everyone listen to him. Today, the stock is carried by retails investor, mainly in US.
-                <div class="translation">翻译：但是，一位X平台的影响者发出了呼吁，所有人都听从了他。如今，这只股票主要由美国散户投资者支撑。</div>
-            </blockquote>
-            <blockquote class="quote">
-                The stock has past from 10sek to 85.
-                <div class="translation">翻译：该股已从10瑞典克朗上涨到85。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">TOST (Toast, Inc.)</div>
-            <blockquote class="quote">
-                TOST at $23, seriously undervalued imo been looking at this one for a while.
-                <div class="translation">翻译：我认为TOST在23美元被严重低估，我已经关注这只股票一段时间了。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Company is killing it financially but stock got destroyed with the rest of tech the numbers are wild honestly - revenue up 22%, profit went from 19M to 342M in a year, basically no debt.
-                <div class="translation">翻译：公司财务表现出色，但股价却像其他科技股一样遭到重创，其数据令人震惊——收入增长22%，利润一年内从1900万美元增至3.42亿美元，基本没有债务。</div>
-            </blockquote>
-            <blockquote class="quote">
-                70% of analysts say buy and literally nobody says sell. they only have like 10% of their market so theres a ton of room left.
-                <div class="translation">翻译：70%的分析师建议买入，几乎没有人建议卖出。他们只占据了约10%的市场份额，因此仍有巨大的增长空间。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Management just authorized 500M in buybacks at these prices which says a lot.
-                <div class="translation">翻译：管理层刚刚批准了5亿美元的股票回购，这在当前价格下意义重大。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">CAMPINE (Campine NV)</div>
-            <blockquote class="quote">
-                The company had a monster 2025, mostly because antimony prices went crazy.
-                <div class="translation">翻译：该公司在2025年表现出色，主要原因是锑价飙升。</div>
-            </blockquote>
-            <blockquote class="quote">
-                The obvious bear case is that lead-acid battery makers may reduce antimony content over time.
-                <div class="translation">翻译：明显的看跌理由是，铅酸电池制造商可能会随着时间推移减少锑的含量。</div>
-            </blockquote>
-            <blockquote class="quote">
-                So if antimony use declines in some battery types, tin content may rise at least partly.
-                <div class="translation">翻译：因此，如果某些电池类型中锑的使用量下降，锡的含量至少可能会部分上升。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">COIN (Coinbase Global, Inc.)</div>
-            <blockquote class="quote">
-                Coinbase reported $2.3B in Q1 revenue per the 10Q. Transaction fees, USDC stablecoin interest, and custody made up roughly 90% of that.
-                <div class="translation">翻译：Coinbase根据10Q报告称第一季度营收为23亿美元。交易费、USDC稳定币利息和托管服务约占总营收的90%。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Revenue went from $2.5B in Q4 2021 to $1.2B by Q2 2022 as SEC enforcement escalated.
-                <div class="translation">翻译：随着SEC执法力度加大，营收从2021年第四季度的25亿美元下降到2022年第二季度的12亿美元。</div>
-            </blockquote>
-            <blockquote class="quote">
-                The company has not meaningfully diversified since then. The bull case still comes down to 'policy stays favorable'.
-                <div class="translation">翻译：自那时以来，该公司尚未进行有意义的多元化。看涨的理由仍然归结为“政策保持有利”。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">MU (Micron Technology, Inc.)</div>
-            <blockquote class="quote">
-                Micron - has direct play on ai memory demand, one of the clearest near term beneficiaries of the data centre buildout.
-                <div class="translation">翻译：美光——在人工智能内存需求方面有直接作用，是数据中心建设最明确的近期受益者之一。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">ANET (Arista Networks, Inc.)</div>
-            <blockquote class="quote">
-                Arista networks - strong ai networking exposure.
-                <div class="translation">翻译：Arista Networks - 具有强大的人工智能网络曝光度。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">VRT (Vertiv Holdings Co)</div>
-            <blockquote class="quote">
-                Vertiv- creates the cooling and power equipment that keeps servers running.
-                <div class="translation">翻译：Vertiv - 生产保持服务器运行的冷却和电力设备。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">INTU (Intuit Inc.)</div>
-            <blockquote class="quote">
-                It seems like intuit has some decent software and their PE is already sub 20.
-                <div class="translation">翻译：看起来Intuit有一些不错的软件，而且其市盈率已经低于20。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">MSTR (MicroStrategy Incorporated)</div>
-            <blockquote class="quote">
-                The MSTR leaps are basically a bet that b coin doesn’t go straight to $0 on me.
-                <div class="translation">翻译：MSTR的长期期权本质上是赌比特币不会直接跌到0美元。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">DDOG (Datadog, Inc.)</div>
-            <blockquote class="quote">
-                Datadog’s Big New Customer: Anthropic.
-                <div class="translation">翻译：Datadog的大客户：Anthropic。</div>
-            </blockquote>
-        </li>
+      <li>
+        <div class="stock-tag">ASTS (AST SpaceMobile, Inc.)</div>
+        <blockquote class="quote">
+          The thematic trade around the space sector will materialize and that $ASTS was the public pure-play. The stock was $20 that Monday and it closed this Friday at $105. Space is still undervalued and will re-rate higher(er) in the lead up to the SpaceX IPO.
+          <div class="translation">翻译：围绕太空板块的主题交易将会实现，$ASTS是其纯粹的上市公司代表。该股周一开盘价为20美元，周五收盘价为105美元。在SpaceX IPO之前，太空领域仍被低估，并将获得更高的重估。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">MP (MP Materials Corp.)</div>
+        <blockquote class="quote">
+          Mountain Pass | government backed asymetric play on critical mineral independence. basically a domestic monopoly. only rare earth mining site in north america. critical for breaking the 70% china monopoly on rare earth. sitting right in the middle of the ai data centers, semi conductor fabs, EV's, robotics, power storage, cooling systems, etc price hovering around $62-65 waiting for a reason to break out.
+          <div class="translation">翻译：芒廷山口（Mountain Pass）| 政府支持的非对称关键矿产独立性投资。基本上是国内垄断。北美唯一的稀土矿区。对于打破中国70%的稀土垄断至关重要。位于AI数据中心、半导体工厂、电动汽车、机器人、储能、冷却系统等核心位置，股价徘徊在62-65美元之间，等待突破的理由。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">BDX (Becton, Dickinson and Company)</div>
+        <blockquote class="quote">
+          Defensive play on $BDX: medical supplier, pays with 2.8% dividends payout. Currently trading at a discount compared to its peers. recession proof deep value relative to historical average. pretty solid moat. they make standard medical equipment that hospitals cant do without. the make 30% of the needles and syringes globally. 80% of needles supplied to hospitals in the US comes from them.
+          <div class="translation">翻译：BDX的防御性投资：医疗供应商，支付2.8%的股息。目前相对于同行折价交易。相对于历史平均水平，具有抗衰退的深度价值。护城河相当稳固。他们生产医院离不开的标准医疗设备。他们生产全球30%的针头和注射器。美国医院80%的针头由他们供应。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">TOST (Toast, Inc.)</div>
+        <blockquote class="quote">
+          TOST at $23, seriously undervalued imo been looking at this one for a while. company is killing it financially but stock got destroyed with the rest of tech the numbers are wild honestly - revenue up 22%, profit went from 19M to 342M in a year, basically no debt. 70% of analysts say buy and literally nobody says sell. they only have like 10% of their market so theres a ton of room left.
+          <div class="translation">翻译：TOST股价为23美元，在我看来严重被低估，我已经关注它一段时间了。公司财务表现极佳，但股价与其它科技股一同遭受重创，其数据简直惊人——营收增长22%，利润一年内从1900万美元增至3.42亿美元，基本无债务。70%的分析师建议买入，无人建议卖出。他们仅占据市场约10%的份额，因此还有巨大的增长空间。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">LLY (Eli Lilly and Company)</div>
+        <blockquote class="quote">
+          A single dose of Lilly's PCSK9 base editor, VERVE-102, reduced PCSK9 by up to 88% and LDL-C by up to 62%, with durable effects supporting its potential as a one-time treatment for hypercholesterolemia. They've gone and made what seems to be a powerful, permanent gene therapy for LDL cholesterol. That means they'll be able to effectively prevent most heart disease with a single infusion.
+          <div class="translation">翻译：礼来公司PCSK9碱基编辑器VERVE-102单剂量治疗可将PCSK9降低高达88%，LDL-C降低高达62%，且效果持久，支持其作为高胆固醇血症一次性治疗的潜力。他们已经制造出一种似乎强大而永久的低密度脂蛋白胆固醇基因疗法。这意味着他们将能够通过一次输注有效预防大多数心脏病。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">PAYPL (PayPal Holdings, Inc.)</div>
+        <blockquote class="quote">
+          I do not see that with all the massive AI wave Paypal is not going to be able to cut their costs by at least 30% in total. Costumer service, transaction observation and a whole lot of other areas could be easily outsourced to AI agents. So i might be a bagholder for sone tine but i still believe that the stock is undervalued and missunderstood.
+          <div class="translation">翻译：我认为，在如此大规模的AI浪潮下，PayPal不可能无法将总成本削减至少30%。客户服务、交易监控以及许多其他领域都可以轻松外包给AI代理。因此，我可能被套牢一段时间，但我仍然相信这只股票被低估且被误解了。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">RDDT (Reddit, Inc.)</div>
+        <blockquote class="quote">
+          After peaking well above $280 last year, the stock has taken a pretty significant hit and is currently sitting around the $141 mark. Given the massive pullback, I’m seriously considering opening a position here, but I wanted to get the sub's take on the current risk-to-reward ratio.
+          <div class="translation">翻译：在去年触及远超280美元的高点后，该股遭遇了相当大的打击，目前徘徊在141美元左右。鉴于如此大规模的回调，我正在认真考虑在此建仓，但我希望听取本板块对当前风险回报率的看法。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">POET (POET Technologies Inc.)</div>
+        <blockquote class="quote">
+          Outside of fiber optics, photonics remain a research project with no real applications to AI compute. $POET is one such company that has latched onto the AI infra narrative and surprisingly had a recent short squeeze.
+          <div class="translation">翻译：除了光纤，光子学仍然是一个研究项目，在人工智能计算方面没有实际应用。POET就是这样一家公司，它依附于人工智能基础设施的叙事，并且出人意料地近期出现了轧空。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
+    <div class="track-header">模型 (Models)</div>
     <ul>
-        <li>
-            <div class="track-header">模型</div>
-            <blockquote class="quote">
-                Microsoft is reportedly planning to reduce the use of Anthropic's Claude Code — a move designed to push its employees toward GitHub Copilot CLI.
-                <div class="translation">翻译：据报道，微软计划减少使用Anthropic的Claude Code，此举旨在推动其员工转向GitHub Copilot CLI。</div>
-            </blockquote>
-            <blockquote class="quote">
-                The future is open-sourced hardware (TPUs) and software (Gemini) and $GOOGL has shown itself to be at the forefront of this evolution.
-                <div class="translation">翻译：未来是开源硬件（TPU）和软件（Gemini），而$GOOGL已证明自己处于这场演进的前沿。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Google’s Gemini has shown itself to be a neutral model, and has unique training data (Gmail + YouTube) that peers lack.
-                <div class="translation">翻译：谷歌的Gemini已经证明自己是一个中立模型，并且拥有同行所缺乏的独特训练数据（Gmail + YouTube）。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="track-header">算</div>
-            <blockquote class="quote">
-                If you ask a GPU chip designer who has the more forward-thinking architecture, most would agree it is AMD over $NVDA precisely because of their chiplet-based IP.
-                <div class="translation">翻译：如果你问一位GPU芯片设计师谁拥有更具前瞻性的架构，大多数人会同意是AMD而非$NVDA，这正是因为它们的chiplet（小芯片）IP。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Ironically, the CUDA moat that made $NVDA famous will likely lead to its toppling as king (AMD ROCm is getting good enough).
-                <div class="translation">翻译：讽刺的是，使$NVDA闻名遐迩的CUDA护城河很可能会导致其王者地位的终结（AMD ROCm已经足够好用）。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Trump announced $2 billion in support for companies involved in quantum computing through the CHIPS and Science Act.
-                <div class="translation">翻译：特朗普宣布通过《芯片与科学法案》向参与量子计算的公司提供20亿美元支持。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Cerebras $CBRS Equity Research Report -- 2026 Edition.
-                <div class="translation">翻译：Cerebras $CBRS 股票研究报告——2026年版。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="track-header">光</div>
-            <blockquote class="quote">
-                Sivers Semiconductor AB: It's a company who make some laser for AI data center photonic.
-                <div class="translation">翻译：Sivers Semiconductor AB：这是一家为AI数据中心光子学制造激光器的公司。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Pivoted to opticals and semis recently.
-                <div class="translation">翻译：最近转向了光学和半导体领域。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="track-header">存</div>
-            <blockquote class="quote">
-                Micron - has direct play on ai memory demand, one of the clearest near term beneficiaries of the data centre buildout.
-                <div class="translation">翻译：美光——在人工智能内存需求方面有直接作用，是数据中心建设最明确的近期受益者之一。</div>
-            </blockquote>
-            <blockquote class="quote">
-                If quantum keeps progressing, the early beneficiaries may be the companies already selling memory, chip design, and control systems, not the pure-play quantum names.
-                <div class="translation">翻译：如果量子技术继续发展，早期的受益者可能是那些已经销售存储器、芯片设计和控制系统的公司，而不是纯粹的量子技术公司。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Sell Your Memory Stocks.
-                <div class="translation">翻译：卖掉你的内存股票。</div>
-            </blockquote>
-            <blockquote class="quote">
-                SanDisk - makes flash storage and SSD memory products, stock price is heavily affected by the global chip demand.
-                <div class="translation">翻译：闪迪——生产闪存和固态硬盘产品，其股价受全球芯片需求影响很大。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="track-header">电</div>
-            <blockquote class="quote">
-                Vertiv- creates the cooling and power equipment that keeps servers running.
-                <div class="translation">翻译：Vertiv - 生产保持服务器运行的冷却和电力设备。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="track-header">板</div>
-            <blockquote class="quote">
-                hyperscaler capex started 2026 at $515B and it's now $740B mid-year, with 2027 already pencilled in at $889B that's 2.7% of US GDP going into AI infrastructure, in 2019 this number was 0.3%.
-                <div class="translation">翻译：超大规模云服务商的资本支出在2026年初为5150亿美元，年中已达到7400亿美元，而2027年已预估为8890亿美元，这相当于美国GDP的2.7%投入到AI基础设施，而2019年这一数字仅为0.3%。</div>
-            </blockquote>
-            <blockquote class="quote">
-                The one signal i'm watching is semiconductor pricing it's been deflationary for decades.
-                <div class="translation">翻译：我正在关注的一个信号是半导体定价，几十年来它一直处于通缩状态。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Huawei's 2026 ascend order book reportedly crossed $12B, up roughly 60% yoy.
-                <div class="translation">翻译：据报道，华为2026年的昇腾订单已突破120亿美元，同比增长约60%。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Nvidia china revenue is effectively zero.
-                <div class="translation">翻译：英伟达在中国的收入实际上为零。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="track-header">云</div>
-            <blockquote class="quote">
-                Latest corporate filings show that OpenAI and Anthropic alone make up over half of the entire $2 trillion future cloud backlog held by Microsoft, Oracle, Google, and Amazon.
-                <div class="translation">翻译：最新的公司文件显示，OpenAI和Anthropic两家公司就占据了微软、甲骨文、谷歌和亚马逊持有的2万亿美元未来云服务积压订单的一半以上。</div>
-            </blockquote>
-            <blockquote class="quote">
-                This massive pipeline is actually being created through a circular accounting trick called a round trip revenue loop.
-                <div class="translation">翻译：这个庞大的业务渠道实际上是通过一种被称为“循环收入循环”的循环会计手法创造出来的。</div>
-            </blockquote>
-            <blockquote class="quote">
-                A tech giant gives billions of dollars to an AI startup as an 'investment'. But hidden in the contract is a strict rule forcing the startup to hand that exact same money straight back to the tech giant to rent their computer servers.
-                <div class="translation">翻译：一家科技巨头向一家AI初创公司提供数十亿美元作为“投资”。但合同中隐藏着一条严格的规定，强制初创公司将这笔钱原封不动地交还给科技巨头，用于租赁其计算机服务器。</div>
-            </blockquote>
-            <blockquote class="quote">
-                When Microsoft invested $13 billion into OpenAI, it didn't just give them cash; it gave them 'cloud credits' to use Microsoft servers. OpenAI used those exact credits to train its AI.
-                <div class="translation">翻译：当微软向OpenAI投资130亿美元时，它不仅提供了现金；它还提供了用于微软服务器的“云积分”。OpenAI正是利用这些积分来训练其人工智能。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="track-header">AI应用</div>
-            <blockquote class="quote">
-                Microsoft reportedly cuts Claude Code for GitHub Copilot CLI. AI coding costs may exceed human engineers.
-                <div class="translation">翻译：据报道，微软为GitHub Copilot CLI削减了Claude代码。AI编码成本可能超过人类工程师。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Blackberry partnered with NVDIA because their software is the only game in town.
-                <div class="translation">翻译：黑莓与英伟达合作，因为他们的软件是该领域唯一的选择。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Understanding the difference between cARR and actual ARR + how the metric gets gamed by founders looking to raise money.
-                <div class="translation">翻译：了解cARR和实际ARR之间的区别，以及寻求融资的创始人如何利用这些指标进行操纵。</div>
-            </blockquote>
-        </li>
+      <li>
+        <blockquote class="quote quote-small">
+          Microsoft reportedly cuts Claude Code for GitHub Copilot CLI. AI coding costs may exceed human engineers.
+          <div class="translation">翻译：据报道，微软为GitHub Copilot CLI削减了Claude代码。人工智能编程成本可能超过人类工程师。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote quote-small">
+          Cerebras is primarily an LLM / generative AI infrastructure story, not a universal “all AI” chip story. Cerebras’ own public inference materials discuss applications mostly centered on open LLMs such as Llama, Qwen, GLM, and GPT-OSS.
+          <div class="translation">翻译：Cerebras主要是一个大型语言模型（LLM）/生成式AI基础设施的故事，而不是一个通用的“所有AI”芯片故事。Cerebras自己的公开推理材料讨论的应用主要集中在Llama、Qwen、GLM和GPT-OSS等开放LLM上。</div>
+        </blockquote>
+      </li>
+    </ul>
+
+    <div class="track-header">算 (Compute)</div>
+    <ul>
+      <li>
+        <blockquote class="quote quote-small">
+          Semiconductor stocks are basically a black hole right now and everything else is getting left behind. The demand side of the story is real. AI infrastructure spending is not a meme, the hyperscalers are burning through capex at a rate that actually justifies a lot of this. NVIDIA has basically been a money printer.
+          <div class="translation">翻译：半导体股票现在基本上是一个黑洞，其他所有股票都被抛在后面。需求方面的故事是真实的。人工智能基础设施支出不是一个迷因，超大规模公司正以实际证明其合理性的速度消耗资本支出。英伟达基本上是一台印钞机。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote quote-small">
+          AMD CPU chips have been king over Intel for more than a decade now. The reason is that AMD is a master in chiplet based design - the ability to have multiple chips or cores working in unison to solve problems. This approach (vs the historical monolithic design) revolutionized CPU performance and AMD has been quietly applying their insights here to their GPUs.
+          <div class="translation">翻译：AMD的CPU芯片在过去十多年来一直领先于英特尔。原因在于AMD是chiplet（小芯片）设计的行家——能够让多个芯片或核心协同工作来解决问题。这种方法（相对于传统的单片设计）彻底改变了CPU性能，AMD一直悄然将其洞察应用于他们的GPU。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote quote-small">
+          If management is hinting at constrained shipments or frontloaded deliveries, tsmc's near term mix shifts, which immediately ripples into advanced packaging and hig end memory.
+          <div class="translation">翻译：如果管理层暗示出货受限或提前交付，台积电的近期产品组合将发生变化，这会立即波及到先进封装和高端存储器。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote quote-small">
+          The line from huang on cnbc (may 21) that keeps rattling around in my head: "huawei is very, very strong... their local chip ecosystem performs well because we are out of that market." washington cleared about ten chinese names to import up to 75k h200s each and not a single chip has shipped because beijing told them to consolidate on domestic silicon. nvidia china revenue is effectively zero.
+          <div class="translation">翻译：黄仁勋在5月21日CNBC上的一句话在我脑海中挥之不去：“华为非常非常强大……他们的本土芯片生态系统表现良好，因为我们已经离开了那个市场。”华盛顿批准了约十家中国公司进口多达7.5万个H200芯片，但没有一个芯片发货，因为北京告诉他们要整合国内硅片。英伟达在中国的收入实际上为零。</div>
+        </blockquote>
+      </li>
+    </ul>
+
+    <div class="track-header">光 (Photonics)</div>
+    <ul>
+      <li>
+        <blockquote class="quote quote-small">
+          Sivers Semiconductor AB. It's a company who make some laser for AI data center photonic.
+          <div class="translation">翻译：Sivers Semiconductor AB。这是一家为AI数据中心光子技术制造激光器的公司。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote quote-small">
+          Outside of fiber optics, photonics remain a research project with no real applications to AI compute. $POET is one such company that has latched onto the AI infra narrative and surprisingly had a recent short squeeze.
+          <div class="translation">翻译：除了光纤，光子学在人工智能计算方面仍是一个研究项目，没有实际应用。POET就是这样一家公司，它抓住了AI基础设施的叙事，并意外地近期遭遇了轧空。</div>
+        </blockquote>
+      </li>
+    </ul>
+
+    <div class="track-header">存 (Storage)</div>
+    <ul>
+      <li>
+        <blockquote class="quote quote-small">
+          If management is hinting at constrained shipments or frontloaded deliveries, tsmc's near term mix shifts, which immediately ripples into advanced packaging and hig end memory.
+          <div class="translation">翻译：如果管理层暗示出货受限或提前交付，台积电的近期产品组合将发生变化，这会立即波及到先进封装和高端存储器。</div>
+        </blockquote>
+      </li>
+    </ul>
+
+    <div class="track-header">电 (Power/Electricity)</div>
+    <ul>
+      <li>
+        <blockquote class="quote quote-small">
+          $MP - next bottleneck in the AI infrastructure build out. Mountain Pass | government backed asymetric play on critical mineral independence. critical for breaking the 70% china monopoly on rare earth. sitting right in the middle of the ai data centers, semi conductor fabs, EV's, robotics, power storage, cooling systems.
+          <div class="translation">翻译：MP是人工智能基础设施建设的下一个瓶颈。芒廷山口（Mountain Pass）| 政府支持的关键矿产独立性非对称博弈。对于打破中国70%的稀土垄断至关重要。位于人工智能数据中心、半导体制造厂、电动汽车、机器人、储能、冷却系统等核心位置。</div>
+        </blockquote>
+      </li>
+    </ul>
+
+    <div class="track-header">板 (Boards/Hardware)</div>
+    <ul>
+      <li>
+        <blockquote class="quote quote-small">
+          If management is hinting at constrained shipments or frontloaded deliveries, tsmc's near term mix shifts, which immediately ripples into advanced packaging and hig end memory.
+          <div class="translation">翻译：如果管理层暗示出货受限或提前交付，台积电的近期产品组合将发生变化，这会立即波及到先进封装和高端存储器。</div>
+        </blockquote>
+      </li>
+    </ul>
+
+    <div class="track-header">云 (Cloud)</div>
+    <ul>
+      <li>
+        <blockquote class="quote quote-small">
+          SaaS is oversold and AI will be a tailwind for the winners. Earnings are starting to show the AI narrative shift SalesForce, ServiceNow, Workday, etc are all very sticky at the enterprise level.
+          <div class="translation">翻译：SaaS（软件即服务）被超卖了，AI将成为赢家的利好因素。财报开始显示AI叙事转变，SalesForce、ServiceNow、Workday等在企业层面都非常具有粘性。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote quote-small">
+          Microsoft reportedly cuts Claude Code for GitHub Copilot CLI. Microsoft is reportedly planning to reduce the use of Anthropic's Claude Code — a move designed to push its employees toward GitHub Copilot CLI.
+          <div class="translation">翻译：据报道，微软为GitHub Copilot CLI削减了Claude代码。据报道，微软正计划减少使用Anthropic的Claude代码，此举旨在推动其员工转向GitHub Copilot CLI。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote quote-small">
+          The OpenAI payments to Azure were around $11.6bn last fiscal year against total cloud revenue of roughly $169bn so its not even that significant percentage wise.
+          <div class="translation">翻译：去年财年，OpenAI向Azure支付的费用约为116亿美元，而云总收入约为1690亿美元，因此从百分比来看，这并不算太重要。</div>
+        </blockquote>
+      </li>
+    </ul>
+
+    <div class="track-header">AI应用 (AI Applications)</div>
+    <ul>
+      <li>
+        <blockquote class="quote quote-small">
+          Microsoft CEO Satya Nadella revealed that the company writes up to 30% of its code using generative AI.
+          <div class="translation">翻译：微软首席执行官萨蒂亚·纳德拉透露，公司使用生成式人工智能编写了高达30%的代码。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote quote-small">
+          BlackBerry (BB) isn’t about Smartphones anymore. Their software QNX is the most advanced safety certified robotic software in the entire world and currently in 275M vehicles, medical devices, and industrial robots. Now that we’re entering a world of AI + Robotics, their software is about to hit billions of devices.
+          <div class="translation">翻译：黑莓（BB）不再是关于智能手机的公司了。他们的QNX软件是全球最先进的安全认证机器人软件，目前已应用于2.75亿辆汽车、医疗设备和工业机器人中。现在我们正在进入人工智能+机器人世界，他们的软件即将覆盖数十亿设备。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote quote-small">
+          Paypal bagholder. Costumer service, transaction observation and a whole lot of other areas could be easily outsourced to AI agents.
+          <div class="translation">翻译：PayPal被套牢者。客户服务、交易监控以及许多其他领域都可以轻松外包给AI代理。</div>
+        </blockquote>
+      </li>
     </ul>
 
 </body>
