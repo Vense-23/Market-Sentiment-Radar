@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>05月29日 情报终端</title>
+        <title>05月30日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,250 +36,412 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 05月29日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-05-29 12:53:47 (北京时间)</p>
+            <h1>🎯 05月30日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-05-30 00:13:38 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            <h2>1. 宏观与市场情绪</h2>
-<p>2026年5月29日的市场情绪显示，尽管AI概念股持续强劲拉升，但投资者对市场，尤其是AI领域，普遍存在“泡沫”担忧。有观点指出，大型科技公司在AI基础设施建设上的资本支出（CapEx）投入巨大，但实际投资回报率（ROI）尚未显现，市场对其未来增长的可持续性持怀疑态度。与此同时，最新的经济数据显示，美国4月核心通胀率符合预期为3.3%，但第一季度GDP增长被下调至1.6%，以及CEO对美国经济的悲观情绪和供应链风险的担忧，为市场蒙上了一层阴影。此外，中国资本正以创纪录的速度流向美国，而美国银行的一项调查显示，现金水平下降，股权配置达到2001年以来最高水平，预示着市场可能接近转折点。</p>
-<blockquote class="quote">
-  The fact that there is an AI bubble can't really be denied by anyone at this point probably.
-  <div class="translation">翻译：AI泡沫的存在可能任何人都无法否认。</div>
-</blockquote>
-<blockquote class="quote">
-  I am talking myself into selling 70% of my tech holdings and move it into the S&P 500 fund.
-  <div class="translation">翻译：我正在说服自己卖掉70%的科技股持仓，转投标普500基金。</div>
-</blockquote>
-<blockquote class="quote">
-  Yeah the AI buildout is real and there’s a lot of demand I get it. But basically the entire hardware boom is these big hyperscalers buying stuff. There’s no real ROI shown yet by any of them and it seems like the market is pricing these stocks as if the CapEx from the big boys is going to double again next year and the year after
-  <div class="translation">翻译：是的，AI建设是真实的，需求也很旺盛，我明白。但基本上，整个硬件热潮都是这些大型超大规模公司在购买产品。目前它们中没有任何一家展现出真正的投资回报，市场对这些股票的定价似乎是假设这些大公司的资本支出明年和后年还会翻倍。</div>
-</blockquote>
-<blockquote<blockquote class="quote">
-  Cash levels dropped to 3.9%, which is below the threshold historically associated with market turning points. In one month, equity allocation jumped from being 13% overweight to a worrying 50% overweight – this was the largest move on record since 2001. According to Hartnett, the market is just a "chip shot" away from triggering a sell signal.
-  <div class="translation">翻译：现金水平降至3.9%，低于历史上与市场转折点相关的阈值。一个月内，股票配置从超配13%跃升至令人担忧的超配50%——这是2001年以来的最大涨幅。据哈特内特称，市场距离触发抛售信号仅“一步之遥”。</div>
-</blockquote>
-<blockquote class="quote">
-  Uber president says AI spending is getting ‘harder to justify’ After reportedly exhausting its annual AI budget just four months into 2026, Uber is now questioning whether it’s actually seeing meaningful returns on its investments.
-  <div class="translation">翻译：优步总裁表示，AI支出“越来越难以证明其合理性”。据报道，优步在2026年仅四个月就耗尽了年度AI预算，现在正在质疑其投资是否真正带来了有意义的回报。</div>
-</blockquote>
+            <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Reddit市场情绪分析 (2026年05月30日)</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f9f9f9; }
+        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
+        li { margin-bottom: 15px; list-style-type: none; padding-left: 0; }
+        .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 5px; font-size: 1.1em; }
+        .quote { background-color: #ecf0f1; border-left: 4px solid #3498db; margin: 10px 0; padding: 10px 15px; font-style: italic; color: #555; }
+        .translation { font-size: 0.9em; color: #7f8c8d; margin-top: 5px; }
+        .track-header { font-weight: bold; color: #2980b9; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; border-bottom: 1px dashed #2980b9; padding-bottom: 5px; }
+        p { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
 
-<h2>2. 热议中的个股和想法</h2>
-<li>
-  <div class="stock-tag">DELL (Dell Technologies)</div>
-  <blockquote class="quote">
-    Dell +40% after-hours after revenue surged 88% YoY to $43.8B as AI server sales jumped 757% to $16.1B
-    <div class="translation">翻译：戴尔盘后上涨40%，因营收同比增长88%至438亿美元，其中AI服务器销售额飙升757%至161亿美元。</div>
-  </blockquote>
-  <blockquote class="quote">
-    Dell reported its fastest pace of revenue growth for any period since its return to the public market more than seven years ago, and topped analysts’ estimates for sales and profit.
-    <div class="translation">翻译：戴尔公布了其自七年多前重返公开市场以来任何时期最快的营收增长速度，并超出了分析师对其销售额和利润的预期。</div>
-  </blockquote>
-  <blockquote class="quote">
-    Dell (NYSE:DELL) reported revenue ahead of Wall Street’s expectations in Q1 CY2026, with sales up 87.5% year on year to $43.84 billion.
-    <div class="translation">翻译：戴尔（NYSE:DELL）公布2026财年第一季度营收超出华尔街预期，销售额同比增长87.5%至438.4亿美元。</div>
-  </blockquote>
-  <blockquote class="quote">
-    Its non-GAAP profit of $4.80 per share was 62% above analysts’ consensus estimates.
-    <div class="translation">翻译：其非GAAP每股收益为4.80美元，比分析师普遍预期高出62%。</div>
-  </blockquote>
-</li>
-<li>
-  <div class="stock-tag">SpaceX (SpaceX)</div>
-  <blockquote class="quote">
-    Bought some SpaceX earlier this week Finally pulled the trigger and bought some SpaceX earlier this week 🚀🌎 Been wanting to get in on this for a long time. Watching what they’ve accomplished with reusable rockets, Starlink, and the future of space travel has been insane.
-    <div class="translation">翻译：本周早些时候买了一些SpaceX，终于下决心在本周早些时候买了一些SpaceX。很长时间以来一直想参与其中。看着他们在可重复使用火箭、星链以及未来太空旅行方面取得的成就简直不可思议。</div>
-  </blockquote>
-  <blockquote class="quote">
-    People are predicting the Space X IPO will crash the market. The S1 is already out and it's ugly, who is buying this stock?
-    <div class="translation">翻译：人们预测SpaceX的IPO将导致市场崩溃。S1文件已经发布了，内容很难看，谁还会买这只股票？</div>
-  </blockquote>
-  <blockquote class="quote">
-    How Elon has "engineered" the SpaceX IPO to benefit insiders... the video says that the IPO is structured to spike right after listing and then... Artificial scarcity - SpaceX floats less than 5% of shares. Manufactured demand - Retail gets a 30% allocation vs the usual ~10%. Branded "Main Street over Wall Street."
-    <div class="translation">翻译：埃隆如何“设计”SpaceX的IPO以造福内部人士……视频称，IPO的结构是为了在上市后立即飙升，然后……人为稀缺——SpaceX只发行不到5%的股份。人为需求——散户获得30%的分配，而通常约为10%。品牌宣传为“华尔街之外的主街”。</div>
-  </blockquote>
-  <blockquote class="quote">
-    93% of SpaceX’s estimated TAM is not space. All of it is in an AI business a la Anthropic/Google/OpenAI. They estimate $22.7T will be from enterprise AI services alone. SpaceX is not IPOing as a space stock. They are IPOing as a software company that also operates space launch, specifically an AI development/hosting company.
-    <div class="translation">翻译：SpaceX估计的总目标市场（TAM）中，93%并非来自太空业务。所有这些都属于类似Anthropic/Google/OpenAI的AI业务。他们估计仅企业AI服务就能带来22.7万亿美元的收入。SpaceX并非作为一家太空股票进行IPO。他们是作为一家软件公司上市，同时也经营太空发射业务，具体来说是一家AI开发/托管公司。</div>
-  </blockquote>
-</li>
-<li>
-  <div class="stock-tag">AMD (Advanced Micro Devices)</div>
-  <blockquote class="quote">
-    I started investing in AMD around 5 years ago. Since then, I've steadily been DCAing and buying more on a consistent basis, regardless of the stock price. I'm now up by over 300%.
-    <div class="translation">翻译：我大约在五年前开始投资AMD。从那时起，我一直稳定地进行定投，并持续买入更多，无论股价如何。现在我的收益已超过300%。</div>
-  </blockquote>
-  <blockquote class="quote">
-    My profits right now are around 150K USD and certainly nothing to scoff at, but it's not like I can retire off the profits.
-    <div class="translation">翻译：我现在的利润大约是15万美元，这当然不是小数目，但也不足以让我靠这些利润退休。</div>
-  </blockquote>
-  <blockquote class="quote">
-    If I keep holding and the stock explodes over the next few years however, it could actually be a life-changing amount of money that allows me to build generational wealth.
-    <div class="translation">翻译：然而，如果我继续持有，并且这只股票在未来几年内爆发，那它确实可能是一笔改变人生的资金，让我能够创造世代财富。</div>
-  </blockquote>
-  <blockquote class="quote">
-    But of course there's a risk that the AI bubble will burst and I'd lose it all.
-    <div class="translation">翻译：但当然也有风险，那就是AI泡沫可能破裂，我可能会失去一切。</div>
-  </blockquote>
-</li>
-<li>
-  <div class="stock-tag">MSFT (Microsoft)</div>
-  <blockquote class="quote">
-    What's holding MSFT back right now ? The market has had a massive rally, AI hype is everywhere, yet Microsoft still feels stuck around the $400 range. Every time it looks ready to break out, it just stalls.
-    <div class="translation">翻译：现在是什么阻碍着微软？市场经历了大规模的反弹，AI热潮无处不在，但微软仍然感觉停滞在400美元左右。每次看起来要突破时，它就停滞不前。</div>
-  </blockquote>
-  <blockquote class="quote">
-    Is the market starting to worry about: AI capex spending? Azure slowing eventually? valuation already being fair? OpenAI dependence? Or am I overthinking this and MSFT is simply consolidating ?
-    <div class="translation">翻译：市场是否开始担心：AI资本支出？Azure最终会放缓吗？估值是否已经合理？对OpenAI的依赖？还是我过度思考了，微软只是在盘整？</div>
-  </blockquote>
-</li>
-<li>
-  <div class="stock-tag">NOK (Nokia Corporation)</div>
-  <blockquote class="quote">
-    Nokia is quietly becoming the backbone of AI infrastructure and nobody noticed 🚀
-    <div class="translation">翻译：诺基亚正在悄然成为AI基础设施的支柱，却无人察觉🚀</div>
-  </blockquote>
-  <blockquote class="quote">
-    I've been holding this "dead phone company" for over a year and I'm not selling.
-    <div class="translation">翻译：我已经持有这家“已死的手机公司”一年多了，而且我不会卖出。</div>
-  </blockquote>
-  <blockquote class="quote">
-    The company you're looking at today builds the physical infrastructure that AI runs on.
-    <div class="translation">翻译：你今天看到的这家公司正在构建AI运行所需的物理基础设施。</div>
-  </blockquote>
-  <blockquote class="quote">
-    Different business, different management, different thesis entirely. The problem is the name. "Nokia" still makes people think of a brick phone with Snake on it.
-    <div class="translation">翻译：完全不同的业务、不同的管理、不同的论点。问题出在名字上。“诺基亚”这个名字仍然让人们想起带着贪吃蛇的板砖手机。</div>
-  </blockquote>
-</li>
-<li>
-  <div class="stock-tag">MU (Micron Technology)</div>
-  <blockquote class="quote">
-    $MU became the AI memory trade nobody wanted to chase.
-    <div class="translation">翻译：$MU成为了一个无人追捧的AI存储交易。</div>
-  </blockquote>
-  <blockquote class="quote">
-    Micron turning into a trillion-dollar AI winner still feels crazy. A year ago most people were focused on GPUs, hyperscalers and software. Now memory is suddenly the bottleneck everyone cares about. HBM demand is tight, pricing power is back, and the whole thesis looks stronger than it did when the stock was much cheaper.
-    <div class="translation">翻译：美光成为万亿级AI赢家仍然感觉不可思议。一年前，大多数人关注的是GPU、超大规模厂商和软件。现在，内存突然成为所有人关注的瓶颈。HBM需求紧张，定价权回归，整个论点看起来比股票价格便宜时更强劲。</div>
-  </blockquote>
-  <blockquote class="quote">
-    HBM demand is tight, pricing power is back, and the whole thesis looks stronger than it did when the stock was much cheaper.
-    <div class="translation">翻译：HBM需求紧张，定价权回归，整个论点看起来比股票价格便宜时更强劲。</div>
-  </blockquote>
-  <blockquote class="quote">
-    I was in $MU earlier, took profits, and completely underestimated how big the AI memory trade could get. Classic mistake: I saw the thesis, but not the full rerate.
-    <div class="translation">翻译：我之前投资了$MU，获利了结，却完全低估了AI内存交易的潜力。这是个典型的错误：我看到了理论，但没有看到全面的重估。</div>
-  </blockquote>
-</li>
+    <h1>Reddit市场情绪分析 (2026年05月30日)</h1>
 
-<h2>3. 小众公司冒泡</h2>
-<li>
-  <div class="stock-tag">CRSR (Corsair Gaming)</div>
-  <blockquote class="quote">
-    Market cap is $1.3b and I continue to believe this just the beginning of a material move up. Low float, low market cap, AI narrative and improving fundamentals make this ripe for a re-rate.
-    <div class="translation">翻译：市值13亿美元，我仍然相信这只是大幅上涨的开始。低流通量、低市值、AI叙事和不断改善的基本面使其具备重估的潜力。</div>
-  </blockquote>
-</li>
-<li>
-  <div class="stock-tag">TNDM (Tandem Diabetes Care)</div>
-  <blockquote class="quote">
-    I am going to tell you why there’s a high probability that the company Tandem Diabetes is going to get privately acquired, or trade at such a high multiple in the next few years it’ll make your crypto plays look like a used napkin NFT.
-    <div class="translation">翻译：我将告诉你，为什么Tandem Diabetes公司在未来几年内很有可能被私有化收购，或者以如此高的倍数交易，以至于你的加密货币投资看起来就像用过的餐巾纸NFT。</div>
-  </blockquote>
-</li>
-<li>
-  <div class="stock-tag">UMAC (Unusual Machines)</div>
-  <blockquote class="quote">
-    UMAC: Trump-Linked Drone Maker May Get a Pentagon Deal Up 57% on the idea of a deal, I am locking in before an actual deal.
-    <div class="translation">翻译：UMAC：与特朗普关联的无人机制造商可能获得五角大楼的订单，因潜在交易上涨57%，我将在实际交易前锁定利润。</div>
-  </blockquote>
-</li>
-<li>
-  <div class="stock-tag">AVAV (AeroVironment)</div>
-  <blockquote class="quote">
-    AVAV just broke out today due to trumps announcement of drone funding increase. $1.1B in backlogs and low debt.
-    <div class="translation">翻译：AVAV今天因特朗普宣布增加无人机资金而突破。拥有11亿美元的积压订单和低债务。</div>
-  </blockquote>
-</li>
-<li>
-  <div class="stock-tag">RDDT (Reddit)</div>
-  <blockquote class="quote">
-    RDDT is obviously sitting right at the source as a data provider for the models, and fundamentals are looking genuinely strong.
-    <div class="translation">翻译：RDDT显然是模型的原始数据提供商，基本面看起来确实强劲。</div>
-  </blockquote>
-</li>
-<li>
-  <div class="stock-tag">SNOW (Snowflake)</div>
-  <blockquote class="quote">
-    With SNOW, that crazy jump after earnings showed that the market is really eating up their new AI products.
-    <div class="translation">翻译：对于Snowflake（SNOW），财报公布后的疯狂上涨表明市场确实对其新的AI产品非常买账。</div>
-  </blockquote>
-</li>
-<li>
-  <div class="stock-tag">SHOP (Shopify)</div>
-  <blockquote class="quote">
-    With a P/E of around 100, any classic value investor would probably run away screaming. But when I look at my own circle or various online shops, I've noticed that more and more merchants are adopting their ecosystem. And one thing is super obvious: once you're in, you don't switch easily.
-    <div class="translation">翻译：市盈率大约100倍，任何经典的价值投资者可能都会尖叫着跑开。但当我审视自己的圈子或各种在线商店时，我注意到越来越多的商家正在采用他们的生态系统。有一点非常明显：一旦你进入，就不容易转换。</div>
-  </blockquote>
-</li>
-<li>
-  <div class="stock-tag">ADBE (Adobe)</div>
-  <blockquote class="quote">
-    So I plotted ADBE revenue per quarter for the past 32 quarters and they grow revenue at an average of 3.5%/quarter. Since ChatGPT came out they’ve averaged 2.5%/quarters. But if you zoom out, this is one of the most consistent companies I’ve seen when it comes to making money.
-    <div class="translation">翻译：我绘制了Adobe过去32个季度的季度营收图，它们平均每季度增长3.5%。自ChatGPT问世以来，它们平均每季度增长2.5%。但如果放大来看，这是我见过的在盈利方面最稳定的公司之一。</div>
-  </blockquote>
-</li>
-<li>
-  <div class="stock-tag">ARM (ARM Holdings)</div>
-  <blockquote class="quote">
-    Recently, within the past few months it has gone up by around 150% which I reckon could be due to their announcement of going into CPUs.
-    <div class="translation">翻译：最近几个月，它上涨了大约150%，我估计这可能是因为他们宣布进军CPU领域。</div>
-  </blockquote>
-</li>
-<li>
-  <div class="stock-tag">FUNC (First United Corporation)</div>
-  <blockquote class="quote">
-    This is a small Maryland/WV regional bank that appears materially undervalued relative to profitability, capital quality, and shareholder returns.
-    <div class="translation">翻译：这是一家位于马里兰州/西弗吉尼亚州的小型区域银行，相对于盈利能力、资本质量和股东回报而言，其估值似乎被严重低估。</div>
-  </blockquote>
-</li>
+    <h2>1. 宏观与市场情绪</h2>
+    <p>市场对人工智能泡沫的担忧日益加剧，尤其是在消费层面出现参与迹象、以及大型科技公司资本支出可持续性受质疑的背景下。尽管股市整体表现强劲，但部分投资者正考虑将资金从科技股转向更保守的标普500指数。同时，对于即将到来的大型IPO，市场对纳斯达克和标普指数调整上市规则以允许未盈利公司快速入选表示担忧，认为这可能是一种市场操纵行为。经济数据显示，美国GDP增长放缓、通胀处于三年高位，以及企业CEO对美国经济前景的悲观情绪，都加剧了宏观层面的不确定性。</p>
+    <blockquote class="quote">
+      when a woman starts becoming financially involved, there’s a bubble it’s officially folks.
+      <div class="translation">翻译：当女性开始参与金融时，就会出现泡沫，各位，这已经官方了。</div>
+    </blockquote>
+    <blockquote class="quote">
+      The fact that there is an AI bubble can't really be denied by anyone at this point probably.
+      <div class="translation">翻译：人工智能泡沫的存在，此刻可能没有人能否认。</div>
+    </blockquote>
+    <blockquote class="quote">
+      I know that when the bubble pops the S&P 500 will take a hit, but not nearly as hard as the tech market.
+      <div class="translation">翻译：我知道当泡沫破裂时，标普500指数会受到打击，但不会像科技市场那样严重。</div>
+    </blockquote>
+    <blockquote class="quote">
+      There’s no real ROI shown yet by any of them and it seems like the market is pricing these stocks as if the CapEx from the big boys is going to double again next year and the year after.
+      <div class="translation">翻译：这些公司目前都没有显示出真正的投资回报，市场似乎给这些股票定价，就好像大公司的资本支出明年和后年还会再翻一番一样。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Additionally, S&P is seeking to remove its requirement that a company be profitable before being listed on the S&P 500.
+      <div class="translation">翻译：此外，标普正寻求取消公司在被列入标普500指数之前必须盈利的要求。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Cash levels dropped to 3.9%, which is below the threshold historically associated with market turning points.
+      <div class="translation">翻译：现金水平降至3.9%，低于历史上与市场转折点相关的阈值。</div>
+    </blockquote>
 
-<h2>4. AI主线讨论</h2>
-<div class="track-header">模型</div>
-<blockquote class="quote">
-  Alphabet funds Anthropic, Anthropic buys Google compute, Google books cloud/backlog, Alphabet leads funding on new, absurd valuations on Anthropic fundraising rounds, Anthropic’s valuation increases, Alphabet’s stake increases which contributes to their earnings growth and fuels the “best and raise” machine, then AI/cloud hype continues to build….
-  <div class="translation">翻译：Alphabet资助Anthropic，Anthropic购买谷歌的算力，谷歌记录云服务/积压订单，Alphabet在新一轮Anthropic融资中领投，给出了荒谬的估值，Anthropic的估值增加，Alphabet的股权也随之增加，这有助于其盈利增长并推动“最佳和提高”机器，然后AI/云的热潮继续发展……</div>
-</blockquote>
-<div class="track-header">算</div>
-<blockquote class="quote">
-  ARM seems to have a low profile proposition and strong performance starting from selling chip architecture licensing to now producing their chips.
-  <div class="translation">翻译：ARM似乎拥有低调的定位和强劲的表现，从销售芯片架构授权发展到如今生产自己的芯片。</div>
-</blockquote>
-<div class="track-header">光</div>
-<!-- 未找到相关内容 -->
-<div class="track-header">存</div>
-<blockquote class="quote">
-  Micron turning into a trillion-dollar AI winner still feels crazy. A year ago most people were focused on GPUs, hyperscalers and software. Now memory is suddenly the bottleneck everyone cares about. HBM demand is tight, pricing power is back, and the whole thesis looks stronger than it did when the stock was much cheaper.
-  <div class="translation">翻译：美光成为万亿级AI赢家仍然感觉不可思议。一年前，大多数人关注的是GPU、超大规模厂商和软件。现在，内存突然成为所有人关注的瓶颈。HBM需求紧张，定价权回归，整个论点看起来比股票价格便宜时更强劲。</div>
-</blockquote>
-<div class="track-header">电</div>
-<blockquote class="quote">
-  Is it still memory? Is it storage? Is it networking? Is it power? Is it cooling? Is it data center infrastructure?
-  <div class="translation">翻译：它仍然是内存吗？是存储吗？是网络吗？是电力吗？是散热吗？还是数据中心基础设施？</div>
-</blockquote>
-<div class="track-header">板</div>
-<blockquote class="quote">
-  Dell +40% after-hours after revenue surged 88% YoY to $43.8B as AI server sales jumped 757% to $16.1B
-  <div class="translation">翻译：戴尔盘后上涨40%，因营收同比增长88%至438亿美元，其中AI服务器销售额飙升757%至161亿美元。</div>
-</blockquote>
-<div class="track-header">云</div>
-<blockquote class="quote">
-  Alphabet funds Anthropic, Anthropic buys Google compute, Google books cloud/backlog
-  <div class="translation">翻译：Alphabet资助Anthropic，Anthropic购买谷歌的算力，谷歌记录云服务/积压订单。</div>
-</blockquote>
-<div class="track-header">AI应用</div>
-<blockquote class="quote">
-  Uber president says AI spending is getting ‘harder to justify’ After reportedly exhausting its annual AI budget just four months into 2026, Uber is now questioning whether it’s actually seeing meaningful returns on its investments.
-  <div class="translation">翻译：优步总裁表示，AI支出“越来越难以证明其合理性”。据报道，优步在2026年仅四个月就耗尽了年度AI预算，现在正在质疑其投资是否真正带来了有意义的回报。</div>
-</blockquote>
+    <h2>2. 热议中的个股和想法</h2>
+    <li>
+      <div class="stock-tag">DELL (Dell Technologies)</div>
+      <blockquote class="quote">
+        Dell soars 30% on ER.
+        <div class="translation">翻译：戴尔因财报飙升30%。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Dell reported its fastest pace of revenue growth for any period since its return to the public market more than seven years ago, and topped analysts’ estimates for sales and profit.
+        <div class="translation">翻译：戴尔公布了自七年多前重返公开市场以来的最快营收增长速度，并超出分析师对销售额和利润的预期。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Computer hardware and IT solutions company Dell (NYSE:DELL) reported revenue ahead of Wall Street’s expectations in Q1 CY2026, with sales up 87.5% year on year to $43.84 billion.
+        <div class="translation">翻译：计算机硬件和IT解决方案公司戴尔（NYSE:DELL）公布2026财年第一季度营收超出华尔街预期，销售额同比增长87.5%至438.4亿美元。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Its non-GAAP profit of $4.80 per share was 62% above analysts’ consensus estimates.
+        <div class="translation">翻译：其非GAAP每股利润为4.80美元，比分析师共识预期高出62%。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">ASTS (AST SpaceMobile)</div>
+      <blockquote class="quote">
+        ASTS took a massive hit today/tonight between the SpaceX IPO noise and the Blue Origin explosion.
+        <div class="translation">翻译：ASTS今天/今晚在SpaceX IPO消息和蓝色起源爆炸之间遭受了巨大打击。</div>
+      </blockquote>
+      <blockquote class="quote">
+        The Blue Origin explosion changes literally nothing for ASTS.
+        <div class="translation">翻译：蓝色起源的爆炸对ASTS来说根本没有任何改变。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">NOK (Nokia)</div>
+      <blockquote class="quote">
+        The company you're looking at today builds the physical infrastructure that AI runs on.
+        <div class="translation">翻译：你今天看到的这家公司正在构建AI运行所需的物理基础设施。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Different business, different management, different thesis entirely.
+        <div class="translation">翻译：完全不同的业务、不同的管理、完全不同的投资理论。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">MSFT (Microsoft)</div>
+      <blockquote class="quote">
+        The market has had a massive rally, AI hype is everywhere, yet Microsoft still feels stuck around the $400 range.
+        <div class="translation">翻译：市场经历了一次大规模反弹，人工智能热潮无处不在，但微软仍然感觉被困在400美元左右。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Is the market starting to worry about: AI capex spending? Azure slowing eventually? valuation already being fair? OpenAI dependence?
+        <div class="translation">翻译：市场是否开始担忧：AI资本支出？Azure最终放缓？估值已经合理？对OpenAI的依赖？</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">AMD (Advanced Micro Devices)</div>
+      <blockquote class="quote">
+        I started investing in AMD around 5 years ago.
+        <div class="translation">翻译：我大约在五年前开始投资AMD。</div>
+      </blockquote>
+      <blockquote class="quote">
+        If I keep holding and the stock explodes over the next few years however, it could actually be a life-changing amount of money that allows me to build generational wealth.
+        <div class="translation">翻译：然而，如果我继续持有并且这只股票在未来几年内爆发，那将是一笔改变人生的财富，能让我建立世代相传的财富。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">CRSR (Corsair Gaming)</div>
+      <blockquote class="quote">
+        So now I post my 90% gains for another 3 upvotes.
+        <div class="translation">翻译：所以现在我发布我90%的收益，再获得3个赞。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Low float, low market cap, AI narrative and improving fundamentals make this ripe for a re-rate.
+        <div class="translation">翻译：低流通股、低市值、AI叙事和不断改善的基本面使其具备重估的条件。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">MU (Micron Technology)</div>
+      <blockquote class="quote">
+        I started selling strangles on MU.
+        <div class="translation">翻译：我开始对美光科技（MU）进行卖出宽跨式期权操作。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Micron (MU) stock is doing well the last few weeks.
+        <div class="translation">翻译：美光科技（MU）的股票在过去几周表现良好。</div>
+      </blockquote>
+      <blockquote class="quote">
+        From what I gather, memory is cyclical and you don't buy cyclical stocks at the highs.
+        <div class="translation">翻译：据我所知，内存是周期性的，你不应该在周期高点买入周期性股票。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Sell Your Memory Stocks.
+        <div class="translation">翻译：卖掉你的内存股票。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">SNOW (Snowflake)</div>
+      <blockquote class="quote">
+        Product rev is up 34% to like 1.33B which is insane, and everyone on here is freaking out over the stock popping but they are completely missing the actual point, the real juice is one layer deeper.
+        <div class="translation">翻译：产品营收增长34%至约13.3亿美元，这简直是疯了，这里每个人都为股票上涨而疯狂，但他们完全忽略了重点，真正的价值更深一层。</div>
+      </blockquote>
+      <blockquote class="quote">
+        With SNOW, that crazy jump after earnings showed that the market is really eating up their new AI products.
+        <div class="translation">翻译：就Snowflake而言，财报后的疯狂跳涨表明市场确实对其新AI产品买账。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">NOW (ServiceNow)</div>
+      <blockquote class="quote">
+        NOW and SHOP are both heavily integrating AI into their platforms too – purely from a charting perspective, both look like pretty solid rebound setups.
+        <div class="translation">翻译：NOW和SHOP都在其平台中大量集成人工智能——纯粹从图表角度来看，两者都像是相当稳健的反弹设置。</div>
+      </blockquote>
+      <blockquote class="quote">
+        All of those warrants have currently a plus of 50% or more, hence I am getting a Bit nervous to miss and Sell.
+        <div class="translation">翻译：所有这些认股权证目前都有50%或以上的收益，因此我有点紧张，担心错过并卖出。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">RDDT (Reddit)</div>
+      <blockquote class="quote">
+        RDDT is obviously sitting right at the source as a data provider for the models, and fundamentals are looking genuinely strong.
+        <div class="translation">翻译：Reddit显然是作为模型的数据提供者，其基本面看起来确实强劲。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Just like the previous year or so, the premiums on RDDT have been nuts this year.
+        <div class="translation">翻译：就像过去一年左右一样，Reddit的期权金今年表现疯狂。</div>
+      </blockquote>
+      <blockquote class="quote">
+        All of those warrants have currently a plus of 50% or more, hence I am getting a Bit nervous to miss and Sell.
+        <div class="translation">翻译：所有这些认股权证目前都有50%或以上的收益，因此我有点紧张，担心错过并卖出。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">GOOGL (Alphabet Inc.)</div>
+      <blockquote class="quote">
+        Alphabet is simultaneously an investor, a supplier, an infrastructure owner, a distributor, and a competitor of Anthropic.
+        <div class="translation">翻译：Alphabet同时是Anthropic的投资者、供应商、基础设施所有者、分销商和竞争对手。</div>
+      </blockquote>
+      <blockquote class="quote">
+        This is just one small piece of the circularity between just 1 relationship out of the dozens that are taking place right now.
+        <div class="translation">翻译：这只是目前正在发生的数十种关系中，其中一种关系循环往复的一小部分。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">NVDA (NVIDIA Corporation)</div>
+      <blockquote class="quote">
+        Like I mean we all know that Nvidia investing into OpenAI and OpenAI buying chips from Nvidia is inflating the valuation of both massively.
+        <div class="translation">翻译：我的意思是，我们都知道英伟达投资OpenAI以及OpenAI向英伟达购买芯片，这正在大幅抬高两者的估值。</div>
+      </blockquote>
+      <blockquote class="quote">
+        NVDA and all the AI infrastructure names obviously had their massive run.
+        <div class="translation">翻译：英伟达和所有AI基础设施相关的股票显然都经历了大规模上涨。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">SHOP (Shopify Inc.)</div>
+      <blockquote class="quote">
+        NOW and SHOP are both heavily integrating AI into their platforms too – purely from a charting perspective, both look like pretty solid rebound setups.
+        <div class="translation">翻译：NOW和SHOP都在其平台中大量集成人工智能——纯粹从图表角度来看，两者都像是相当稳健的反弹设置。</div>
+      </blockquote>
+      <blockquote class="quote">
+        With a P/E of around 100, any classic value investor would probably run away screaming.
+        <div class="translation">翻译：市盈率在100左右，任何经典的价值投资者可能都会尖叫着跑开。</div>
+      </blockquote>
+    </li>
+
+    <h2>3. 小众公司冒泡</h2>
+    <li>
+      <div class="stock-tag">ORCL (Oracle Corporation)</div>
+      <blockquote class="quote">
+        Back to April, a bot post in Reddit told me to buy $ORCL, so I did it, turned 6.4k to 200k thank you Sir bot.
+        <div class="translation">翻译：回到四月，Reddit上的一个机器人帖子告诉我买入ORCL，所以我照做了，把6.4K变成了200K，谢谢机器人先生。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">IREN (Iris Energy Limited)</div>
+      <blockquote class="quote">
+        IREN has secured over 4.5 GW of power capacity across North America to build next-generation data centers for AI and high-performance computing.
+        <div class="translation">翻译：IREN已在北美 확보 超过4.5吉瓦的电力容量，用于建设下一代AI和高性能计算数据中心。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">OUST (Ouster, Inc.)</div>
+      <blockquote class="quote">
+        So I bought a small position in Ouster a while ago because I thought there would be a physical AI boom and Ouster had a reasonable chance to capture some of that value.
+        <div class="translation">翻译：我前段时间少量买入了Ouster，因为我认为会出现物理AI热潮，而Ouster很有可能抓住这部分价值。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">MRNA (Moderna, Inc.)</div>
+      <blockquote class="quote">
+        MRNA is around $47.17, down about 0.85%, and r/FlowDesk shows bearish premium around $461k versus bullish premium around $142k, leaving net premium near -$318k.
+        <div class="translation">翻译：Moderna（MRNA）股价约为47.17美元，下跌约0.85%，r/FlowDesk显示看跌期权溢价约为46.1万美元，而看涨期权溢价约为14.2万美元，净溢价接近负31.8万美元。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">QS (QuantumScape Corporation)</div>
+      <blockquote class="quote">
+        I believe in the company and have no plans to sell a single share--unless some get called away.
+        <div class="translation">翻译：我相信这家公司，并且不打算出售任何一股股票——除非有些被行权。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">BB (BlackBerry Limited)</div>
+      <blockquote class="quote">
+        BB has been on a bit of a run.
+        <div class="translation">翻译：黑莓（BB）最近经历了一波上涨。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">FNMA (Fannie Mae)</div>
+      <blockquote class="quote">
+        Back at the end of the GFC in 2008, Fannie Mae (FNMA) and Freddie Mac (FMCC) went into conservatorship.
+        <div class="translation">翻译：在2008年全球金融危机末期，房利美（FNMA）和房地美（FMCC）进入了资产托管状态。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">HERB.CN (Herbal Dispatch Inc.)</div>
+      <blockquote class="quote">
+        Excited to see another milestone shipment from Herbal Dispatch 261 KG of medical cannabis now on route to Switzerland.
+        <div class="translation">翻译：很高兴看到Herbal Dispatch的又一里程碑式出货，261公斤医用大麻现已运往瑞士。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">ZTS (Zoetis Inc.)</div>
+      <blockquote class="quote">
+        World's leading animal pharma company at 13x PE with 9% EPS growth.
+        <div class="translation">翻译：世界领先的动物制药公司，市盈率为13倍，每股收益增长9%。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">PYPL (PayPal Holdings, Inc.)</div>
+      <blockquote class="quote">
+        PayPal's Third Act: The Restructuring Gamble at 8× Earnings.
+        <div class="translation">翻译：PayPal的第三幕：以8倍收益进行的重组赌注。</div>
+      </blockquote>
+    </li>
+
+    <h2>4. AI主线讨论</h2>
+    <div class="track-header">模型</div>
+    <p>关于AI模型的讨论主要围绕其估值膨胀、以及大型科技公司与新兴AI模型公司之间复杂的投资和供应关系。同时，也有对AI初创公司如何通过虚报营收指标来提高估值的质疑。</p>
+    <blockquote class="quote">
+      Like I mean we all know that Nvidia investing into OpenAI and OpenAI buying chips from Nvidia is inflating the valuation of both massively.
+      <div class="translation">翻译：我的意思是，我们都知道英伟达投资OpenAI以及OpenAI向英伟达购买芯片，这正在大幅抬高两者的估值。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Alphabet funds Anthropic, Anthropic buys Google compute, Google books cloud/backlog, Alphabet leads funding on new, absurd valuations on Anthropic fundraising rounds, Anthropic’s valuation increases, Alphabet’s stake increases which contributes to their earnings growth and fuels the “best and raise” machine, then AI/cloud hype continues to build….
+      <div class="translation">翻译：Alphabet资助Anthropic，Anthropic购买Google的计算服务，Google获得云/积压订单，Alphabet在新一轮Anthropic融资中以荒谬的估值领投，Anthropic的估值因此增加，Alphabet的持股价值随之增长，这有助于其盈利增长并助推“不断加码”的机器，然后AI/云的热潮持续升温……</div>
+    </blockquote>
+    <blockquote class="quote">
+      95% apparently is due to xAI and Grok.
+      <div class="translation">翻译：显然95%的价值来自于xAI和Grok。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Understanding the difference between cARR and actual ARR + how the metric gets gamed by founders looking to raise money.
+      <div class="translation">翻译：了解cARR和实际ARR之间的区别，以及寻求融资的创始人如何玩弄这一指标。</div>
+    </blockquote>
+
+    <div class="track-header">算</div>
+    <p>AI计算需求持续旺盛，Dell的AI服务器销售额飙升即是明证。然而，企业对AI计算的高昂成本（“AI贴纸冲击”）也开始感到担忧，并质疑其投资回报率。Cerebras等专业AI计算硬件公司也受到市场关注。</p>
+    <blockquote class="quote">
+      Dell +40% after-hours after revenue surged 88% YoY to $43.8B as AI server sales jumped 757% to $16.1B.
+      <div class="translation">翻译：戴尔在收盘后大涨40%，此前营收同比增长88%至438亿美元，其中AI服务器销售额猛增757%至161亿美元。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Demand for AI compute, data centers, and power continues to accelerate.
+      <div class="translation">翻译：对AI计算、数据中心和电力的需求持续加速增长。</div>
+    </blockquote>
+    <blockquote class="quote">
+      The big limitation for the capability of vision based physical AI is inference compute, and that's exactly the kind of thing that can get orders of magnitude better over the next 5 years.
+      <div class="translation">翻译：基于视觉的物理AI能力的最大限制是推理计算，而这正是未来五年内可以提升数个数量级的东西。</div>
+    </blockquote>
+    <blockquote class="quote">
+      AI sticker shock hits corporate America.
+      <div class="translation">翻译：AI成本冲击企业美国。</div>
+    </blockquote>
+
+    <div class="track-header">光</div>
+    <p>AI硬件领域，光子学相关讨论中提及该领域可能出现增长停滞，提示投资者关注潜在的轮动。</p>
+    <blockquote class="quote">
+      photonics and AI hardware starting to stall.
+      <div class="translation">翻译：光子学和AI硬件开始停滞。</div>
+    </blockquote>
+
+    <div class="track-header">存</div>
+    <p>AI驱动下，对内存（DRAM）和NAND闪存的需求激增，带动了相关存储芯片公司。但市场也存在分歧，部分观点认为内存具有周期性，不应在高点买入，甚至建议卖出内存股票。</p>
+    <blockquote class="quote">
+      With the rise of Micron, Sandisk and all the other memory stocks driven by AI demand, i was looking for other companies that might blow up.
+      <div class="translation">翻译：随着美光、闪迪以及其他所有受AI需求驱动的内存股的崛起，我正在寻找其他可能爆发的公司。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Memory, energy etc have missed the chance to invest early but thought about long term storage.
+      <div class="translation">翻译：内存、能源等错过了早期投资的机会，但考虑了长期存储。</div>
+    </blockquote>
+    <blockquote class="quote">
+      From what I gather, memory is cyclical and you don't buy cyclical stocks at the highs.
+      <div class="translation">翻译：据我所知，内存是周期性的，你不应该在周期高点买入周期性股票。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Sell Your Memory Stocks.
+      <div class="translation">翻译：卖掉你的内存股票。</div>
+    </blockquote>
+
+    <div class="track-header">电</div>
+    <p>为满足AI数据中心日益增长的电力需求，Iris Energy等公司正积极布局， 확보 大规模电力容量。</p>
+    <blockquote class="quote">
+      IREN has secured over 4.5 GW of power capacity across North America to build next-generation data centers for AI and high-performance computing.
+      <div class="translation">翻译：IREN已在北美 확보 超过4.5吉瓦的电力容量，用于建设下一代AI和高性能计算数据中心。</div>
+    </blockquote>
+
+    <div class="track-header">板</div>
+    <p>Nokia等公司正在构建AI运行所需的物理基础设施，这包括关键的芯片和电路板等组件，而半导体ETF的强劲表现也反映了对这些核心部件的需求。</p>
+    <blockquote class="quote">
+      The company you're looking at today builds the physical infrastructure that AI runs on.
+      <div class="translation">翻译：你今天看到的这家公司正在构建AI运行所需的物理基础设施。</div>
+    </blockquote>
+    <blockquote class="quote">
+      I'm up over 100% on my semi etf which excludes the major memory players.
+      <div class="translation">翻译：我的半导体ETF（不包括主要的内存公司）上涨了100%以上。</div>
+    </blockquote>
+
+    <div class="track-header">云</div>
+    <p>云服务商在AI生态系统中扮演着核心角色，如亚马逊的AWS正在捕获大量云支出，微软的Azure业务增长受到关注。Alphabet也通过云计算基础设施与AI模型公司形成互惠关系。</p>
+    <blockquote class="quote">
+      Alphabet funds Anthropic, Anthropic buys Google compute, Google books cloud/backlog.
+      <div class="translation">翻译：Alphabet资助Anthropic，Anthropic购买Google的计算服务，Google获得云/积压订单。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Amazon is capturing the cloud spend, Datadog is grabbing all the telemetry dollars, and ServiceNow is swallowing the workflow orchestration.
+      <div class="translation">翻译：亚马逊正在攫取云支出，Datadog正在获取所有遥测数据，而ServiceNow正在吞噬工作流编排市场。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Azure slowing eventually?
+      <div class="translation">翻译：Azure最终会放缓吗？</div>
+    </blockquote>
+
+    <div class="track-header">AI应用</div>
+    <p>市场对AI应用前景的看法两极分化。一方面，Reddit、Snowflake、ServiceNow和Shopify等公司被视为第二波AI浪潮的受益者，它们通过整合AI来提升自身利润。另一方面，Uber等公司对AI支出，特别是与大语言模型相关的代币消耗，表示出“AI贴纸冲击”的担忧，质疑其投资回报率。</p>
+    <blockquote class="quote">
+      I'm starting to wonder if the money is finally rotating into the companies that are actually using AI to boost their own margins.
+      <div class="translation">翻译：我开始怀疑资金是否最终正在轮转到那些实际使用人工智能来提升自身利润的公司。</div>
+    </blockquote>
+    <blockquote class="quote">
+      RDDT is obviously sitting right at the source as a data provider for the models, and fundamentals are looking genuinely strong.
+      <div class="translation">翻译：Reddit显然是作为模型的数据提供者，其基本面看起来确实强劲。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Uber president and chief operating officer Andrew Macdonald said the company isn’t seeing a connection between rising token consumption for Claude Code and more useful features being delivered to consumers.
+      <div class="translation">翻译：Uber总裁兼首席运营官安德鲁·麦克唐纳表示，公司并未发现Claude Code代币消耗量的增长与向消费者提供更多有用功能之间存在关联。</div>
+    </blockquote>
+    <blockquote class="quote">
+      “So if you’re not actually able to draw a direct line to how much useful features and functionality you’re shipping to your users, that trade becomes harder to justify.”
+      <div class="translation">翻译：“因此，如果你不能直接说明向用户提供了多少有用的功能，那么这项交易就变得更难证明其合理性。”</div>
+    </blockquote>
+
+</body>
+</html>
         </div>
         <script>
             var myChart = echarts.init(document.getElementById('gauge'));
@@ -289,7 +451,7 @@
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
                     detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n贪婪', color: '#fff' },
-                    data: [{ value: 60 }]
+                    data: [{ value: 59 }]
                 }]
             });
         </script>
