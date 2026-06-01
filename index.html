@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>06月01日 情报终端</title>
+        <title>06月02日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,388 +36,476 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 06月01日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-06-01 13:25:25 (北京时间)</p>
+            <h1>🎯 06月02日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-06-02 02:23:13 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<title>Reddit 美股市场情绪分析 (2026年06月01日)</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 960px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
-  h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
-  ul { list-style: none; padding: 0; }
-  li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-  .quote { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 10px 15px; margin: 10px 0; font-style: italic; color: #555; }
-  .translation { font-size: 0.9em; color: #7f8c8d; margin-top: 5px; }
-  .stock-tag { font-weight: bold; color: #2980b9; margin-bottom: 10px; font-size: 1.1em; }
-  .track-header { font-weight: bold; color: #e67e22; margin-top: 20px; margin-bottom: 10px; font-size: 1.05em; border-bottom: 1px dashed #e67e22; padding-bottom: 5px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股市场情绪概览 (2026年06月02日)</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2, h3 { color: #2c3e50; }
+        h2 { border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
+        ul { list-style: none; padding: 0; }
+        li { background-color: #fff; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 15px; padding: 15px; }
+        .stock-tag { font-weight: bold; color: #e74c3c; font-size: 1.1em; margin-bottom: 10px; }
+        .quote { border-left: 4px solid #3498db; padding-left: 15px; margin: 10px 0; font-style: italic; color: #555; }
+        .translation { font-size: 0.9em; color: #777; margin-top: 5px; }
+        .track-header { font-weight: bold; color: #2980b9; margin-top: 20px; margin-bottom: 10px; font-size: 1.05em; }
+        .ai-category { margin-bottom: 10px; padding-left: 15px; }
+        .ai-category ul { list-style: disc; padding-left: 20px; }
+    </style>
 </head>
 <body>
 
-<h1>Reddit 美股市场情绪分析 (2026年06月01日)</h1>
+    <h1>美股市场情绪概览 (2026年06月02日)</h1>
 
-<h2>1. 宏观与市场情绪</h2>
-<ul>
-  <li>
-    <blockquote class="quote">
-      If you swing for the fences... you're going to strike out a lot, but you're also going to hit some home runs.
-      <div class="translation">翻译：如果你想要一击全垒打……你会常常出局，但你也会打出一些全垒打。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      I see this week everyone showing their gains. People talking about 30k last year, turning into 1M today with MU. Today, many new millionaires from Dell calls. People posting about "feeling sorry" for those who missed "the easiest money there will ever be in their lifetime." "Never made so much money in a month, up 700k in May" Is everyone getting ridiculously rich? How do you all pick the winners that go 8000% in a year and not the ones that stay flat or rise 10-20%?
-      <div class="translation">翻译：我看到这周大家都在展示他们的收益。人们谈论着去年3万美元，现在通过MU变成了100万美元。今天，许多人通过戴尔看涨期权成为新百万富翁。人们发帖说“为那些错过了‘一生中最容易赚钱’的人感到遗憾”。“一个月内从未赚这么多钱，五月份涨了70万美元”是不是所有人都变得异常富有？你们是如何挑选出一年内上涨8000%的赢家，而不是那些持平或只上涨10-20%的股票？</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      My portfolio mostly consists of high quality mega cap stocks and ETFs. It’s up +4% YTD. I have exposure to banks, waste management, credit cards, PE, software, semis, mega tech, and defensive areas like utilities, Costco and Berkshire. I understand why I’m lagging but it sometimes can be frustrating seeing others like semis pumping days after days. I have no plan to alter my portfolio and chase anything. There will be volatility heading into the election for sure. Just want to see how others are dealing with underperformance.
-      <div class="translation">翻译：我的投资组合主要由高质量的大盘股和ETF组成。今年迄今上涨了4%。我投资于银行、废物管理、信用卡、私募股权、软件、半导体、大型科技股以及公用事业、Costco和伯克希尔等防御性领域。我明白自己为何落后，但看着半导体股票日复一日地飙升有时确实令人沮丧。我没打算改变投资组合或追逐任何东西。可以肯定的是，大选前市场将出现波动。我只是想看看其他人是如何应对表现不佳的。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      Insider selling in WDC & INFQ vs. retail hype on SPCE/MU/NVDA WDC’s recent insider sales (750 shares by a director) and INFQ’s massive 1.5M-share dump feel like red flags in semiconductor and biotech. Yet retail traders are still betting big on SPCE (post-lawsuit settlement), MU (AI demand), and NVDA (call activity). How do you reconcile these diverging signals? Also, the political trades—like Senator McCormick’s index-linked purchases—are interesting. Could they signal broader market positioning? Any thoughts on earnings this week (AVGO, PANW, MDT) as catalysts?
-      <div class="translation">翻译：WDC和INFQ的内部人士抛售与SPCE/MU/NVDA的散户炒作。WDC近期内部人士出售（一位董事出售750股）和INFQ大规模抛售150万股，在半导体和生物技术领域感觉像危险信号。然而，散户交易者仍在SPCE（诉讼和解后）、MU（AI需求）和NVDA（看涨期权活动）上大举押注。你们如何协调这些截然不同的信号？此外，政治交易——比如参议员麦考密克的指数挂钩购买——也很有趣。它们能否预示更广泛的市场定位？对本周财报（AVGO、PANW、MDT）作为催化剂有何看法？</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      After 7 long years of losing, I finally started getting lucky. I focused on accumulating all my capital in one account to have fire power. Then I just played covered call and reinvested in simple ETFs or blue chips. I took high conviction bets on SMH, Google (and CC) etc. Here is the learning, options are not bad, just use it wisely and don’t be greedy.
-      <div class="translation">翻译：在经历了七年漫长的亏损后，我终于开始走运了。我专注于将所有资金集中在一个账户中，以拥有强大的火力。然后我只做备兑看涨期权，并将收益再投资于简单的ETF或蓝筹股。我对SMH、谷歌（以及备兑看涨期权）等进行了高信念的押注。从中得到的教训是，期权不坏，只要明智使用，不要贪婪。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      Before becoming a homeowner, I honestly didn’t care much about volatility. when my portfolio dropped 15–20%, I told myself it would recover eventually. But after buying a house and taking on a mortgage, my mindset shifted way more than I expected. Now I catch myself thinking a lot more about stability and liquidity.
-      <div class="translation">翻译：在成为房主之前，我老实说不太在意波动性。当我的投资组合下跌15-20%时，我告诉自己它最终会恢复。但买房并承担抵押贷款后，我的心态比预期发生了更大的转变。现在我发现自己更多地考虑稳定性和流动性。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      Pretty gutted. Hodl'd RSU stocks for 4-5 years with the stock bouncing between 60 and 120 over that period. 7 weeks after I sold about 90% of my stock for a "new" family car (2025 model), the stock exploded to a peak of 190 where I sold for about 102. Missed out on about 22k, which isent live changing but it still feels absolutely terrible. To make matters worse, when I look on reddit for similair stories, I just see posts of people becoming milionaires from the recent stock surge or stories of people buying stocks like nvidia when they were still 4 dollars.
-      <div class="translation">翻译：非常沮丧。我持有RSU股票4-5年，期间股价在60到120之间波动。在我卖掉大约90%的股票去买一辆“新”家用汽车（2025年款）的7周后，股票飙升至190的峰值，而我卖出时的价格大约是102。错过了大约2.2万美元，这虽然不能改变生活，但感觉仍然糟透了。更糟糕的是，当我在Reddit上寻找类似的故事时，我只看到人们从最近的股市飙升中成为百万富翁，或者人们在英伟达股价还在4美元时就买入的故事。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      I see a lot of people in other posts, recently and over the years, asking how anyone can expect growth to happen with a shrinking population. Investment growth is not population growth. It helps, sometimes a lot, but they are not the same. You can have growth with shrinking populations and less raw materials simply by being more efficient. Making the same number of products with 10% less material is 10% growth.
-      <div class="translation">翻译：我看到最近和这些年里，很多人在其他帖子中问，人口萎缩的情况下如何还能期望经济增长。投资增长不等于人口增长。它有时很有帮助，但两者并不相同。即使人口减少和原材料减少，你也可以通过提高效率来实现增长。用减少10%的材料生产相同数量的产品，就是10%的增长。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      When watching personal finance videos I’ve seen commentators claim that if global/US index funds don’t continue growing over the long term then you’ll have a lot more to worry about than investments not growing - aka it would be an event that would cause multiple crises across the world and you’d be worrying about buying fresh water instead of the S&amp;P 500. My question is, what would realistically happen if the world entered a very prolonged period of stagnation/decline?
-      <div class="translation">翻译：在看个人理财视频时，我看到评论员声称，如果全球/美国指数基金长期不增长，那么你将有更多事情要担心，而不仅仅是投资不增长——换句话说，那将是引发全球多重危机，你会担心购买淡水而不是标普500指数的事件。我的问题是，如果世界进入一个非常长时间的停滞/衰退期，实际会发生什么？</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      The AI boom has entered an uncharted, perilous new phase.
-      <div class="translation">翻译：人工智能热潮已进入一个未知且危险的新阶段。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      5 economic signals suggest U.S. consumers are feeling the strain.
-      <div class="translation">翻译：5个经济信号表明美国消费者感受到了压力。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      Americans’ savings rate falls to lowest level since 2022 as inflation outpaces paychecks.
-      <div class="translation">翻译：美国人的储蓄率降至2022年以来的最低水平，因为通货膨胀超过了工资增长。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      China factory activity stalls in May as demand weakens.
-      <div class="translation">翻译：中国5月份工厂活动停滞，因需求减弱。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      Japan, South Korea and Taiwan are suffering industrial rot.
-      <div class="translation">翻译：日本、韩国和台湾正遭受工业衰退。</div>
-    </blockquote>
-  </li>
-</ul>
+    <h2>1. 宏观与市场情绪</h2>
+    <ul>
+        <li>
+            <strong>地缘政治与石油供应</strong>
+            <blockquote class="quote">
+                My portfolio is first and foremost an aggressive, highly concentrated bet on a prolonged global shortage of oil.
+                <div class="translation">翻译：我的投资组合首先是对全球长期石油短缺的一次激进、高度集中的押注。</div>
+            </blockquote>
+            <blockquote class="quote">
+                ExxonMobil senior vice president Neil Chapman warned Thursday that global oil inventories are approaching record lows and that prices will spike sharply within weeks.
+                <div class="translation">翻译：埃克森美孚高级副总裁尼尔·查普曼周四警告称，全球石油库存正逼近历史低点，物价将在几周内大幅飙升。</div>
+            </blockquote>
+            <blockquote class="quote">
+                The market barely seems bothered right now.
+                <div class="translation">翻译：市场目前似乎几乎没有受到干扰。</div>
+            </blockquote>
+            <blockquote class="quote">
+                I've been seeing analyst after analyst saying that the oil reserves mostly of European and Asian countries are two weeks away from running out if no Iran deal is reached.
+                <div class="translation">翻译：我一直在看到一个又一个分析师说，如果伊朗未能达成协议，欧洲和亚洲国家的大部分石油储备将在两周内耗尽。</div>
+            </blockquote>
+        </li>
+        <li>
+            <strong>AI泡沫与市场估值</strong>
+            <blockquote class="quote">
+                AI is real, useful, and will change a lot of industries.
+                <div class="translation">翻译：AI是真实存在的，有用的，并将改变许多行业。</div>
+            </blockquote>
+            <blockquote class="quote">
+                But the current AI investment cycle still looks like a bubble.
+                <div class="translation">翻译：但当前的AI投资周期看起来仍然像一个泡沫。</div>
+            </blockquote>
+            <blockquote class="quote">
+                JPMorgan traders cast doubt on speculative tech after 57% rally.
+                <div class="translation">翻译：在投机性科技股上涨57%后，摩根大通的交易员们对其表示怀疑。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Burry warned in a recent post on Substack that leading companies like Nvidia and Elon Musk's xAI are leveraging GPU-backed securities deal structures to secure funding to power their growing AI data centres while putting the retirement funds of Americans at risk.
+                <div class="translation">翻译：Burry在Substack上最近的一篇文章中警告称，像英伟达和埃隆·马斯克的xAI这样的领先公司正在利用GPU支持的证券交易结构来为日益增长的AI数据中心获取资金，同时将美国退休人员的退休金置于风险之中。</div>
+            </blockquote>
+            <blockquote class="quote">
+                The stock market just did something eerily similar to the dot-com bubble top in 2000.
+                <div class="translation">翻译：股市刚刚出现了一些与2000年互联网泡沫顶峰时期惊人相似的情况。</div>
+            </blockquote>
+        </li>
+        <li>
+            <strong>被动投资的未来与SpaceX IPO</strong>
+            <blockquote class="quote">
+                In my opinion, SpaceX is the death knell passive investing.
+                <div class="translation">翻译：在我看来，SpaceX是被动投资的丧钟。</div>
+            </blockquote>
+            <blockquote class="quote">
+                SpaceX is going public soon.
+                <div class="translation">翻译：SpaceX即将上市。</div>
+            </blockquote>
+            <blockquote class="quote">
+                The company is valued at around 1.75 trillion.
+                <div class="translation">翻译：该公司的估值约为1.75万亿美元。</div>
+            </blockquote>
+            <blockquote class="quote">
+                However, the insiders are keeping about 95 percent of the shares.
+                <div class="translation">翻译：然而，内部人士保留了大约95%的股份。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Now, the people who make these rules are changing them just for SpaceX.
+                <div class="translation">翻译：现在，制定这些规则的人正在仅仅为了SpaceX而改变它们。</div>
+            </blockquote>
+            <blockquote class="quote">
+                A Danish pension fund has blacklisted SpaceX, calling it grossly overvalued with catastrophic governance.
+                <div class="translation">翻译：一家丹麦养老基金已将SpaceX列入黑名单，称其估值严重过高且治理灾难。</div>
+            </blockquote>
+        </li>
+        <li>
+            <strong>住房市场动态</strong>
+            <blockquote class="quote">
+                Berkshire Hathaway agreed Sunday to acquire homebuilder Taylor Morrison Home in a $6.8 billion deal, deepening the conglomerate’s bet on the U.S. housing market after a prolonged downturn.
+                <div class="translation">翻译：伯克希尔哈撒韦公司周日同意以68亿美元收购住宅建筑商泰勒·莫里森住宅公司，在长期低迷后加深了该集团对美国房地产市场的押注。</div>
+            </blockquote>
+            <blockquote class="quote">
+                The Housing Market Is Frozen.
+                <div class="translation">翻译：房地产市场陷入停滞。</div>
+            </blockquote>
+        </li>
+    </ul>
 
-<h2>2. 热议中的个股和想法</h2>
-<ul>
-  <li>
-    <div class="stock-tag">1. SPCE (Virgin Galactic Holdings, Inc.)</div>
-    <blockquote class="quote">
-      A filing from Friday showed that investor Rich Huang and RichRich Capital LLC disclosed a 5.26% stake in Virgin Galactic. According to the filing, RichRich Capital reported owning 4.87 million shares, representing 4.62% of the company, consisting of 304,600 shares, along with call options on an additional 4.57 million shares. Huang, the sole member of RichRich Capital, reported a total stake of 5.58 million shares, representing 5.26% of Virgin Galactic.
-      <div class="translation">翻译：周五的一份文件显示，投资者Rich Huang和RichRich Capital LLC披露了维珍银河5.26%的股权。根据文件，RichRich Capital报告持有487万股，占公司4.62%的股份，其中包括304,600股，以及额外457万股的看涨期权。Huang作为RichRich Capital的唯一成员，报告持有维珍银河总计558万股，占5.26%。</div>
-    </blockquote>
-    <blockquote class="quote">
-      First the IV is at an extraordinary 205% - in the top 100% percentile. Even if you get the direction right, IV crush can kill all your call gains. The most explosive part of the squeeze may already have occurred unless fresh call demand develops at higher strikes ($7–10). So IV and theta are against you, if you're buying calls, you better hope on your mother's lives there's demand / continued pumping this week or you're screwed.
-      <div class="translation">翻译：首先，IV（隐含波动率）达到了惊人的205%，处于前100%的百分位数。即使你方向判断正确，IV暴跌也会吞噬你所有的看涨期权收益。除非在更高行权价（7-10美元）出现新的看涨期权需求，否则最猛烈的逼空可能已经发生。因此，IV和theta对你不利，如果你买入看涨期权，你最好祈祷这周有需求/持续炒作，否则你会很惨。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Too much hype driving this likely gamma squeeze by Robinhood call options.
-      <div class="translation">翻译：过多的炒作正在推动Robinhood看涨期权可能引发的伽马挤压。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">2. NOW (ServiceNow, Inc.)</div>
-    <blockquote class="quote">
-      I've mostly been focused on AI names and semis, but seeing $NOW jump 10% after earnings/news has me wondering if the market is starting to reward software again. For the last few years it felt like SaaS was dead money compared to chips and infrastructure plays. Now companies like ServiceNow seem to be putting up strong numbers and getting premium valuations again.
-      <div class="translation">翻译：我主要关注人工智能股和半导体，但看到$NOW在财报/新闻后上涨10%，让我开始思考市场是否再次开始奖励软件公司。过去几年，相比芯片和基础设施股票，SaaS感觉是死钱。现在像ServiceNow这样的公司似乎再次展现出强劲的业绩并获得高估值。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Is the AI supply chain play going to plateau / correct slightly. And if so, after last week’s price action, is the redemption of all these SaaS stocks the next trade. If so are we going back to all time highs for the likes of NOW, MSFT etc.?
-      <div class="translation">翻译：人工智能供应链的行情是否会趋于平稳或略微回调？如果是这样，在上周的价格走势之后，这些SaaS股票的“救赎”是否是下一波交易？如果是，我们是否会看到像NOW、MSFT等股票重回历史新高？</div>
-    </blockquote>
-    <blockquote class="quote">
-      High quality SaaS business that had pulled back significantly from its highs. Strong fundamentals, sticky revenue model and plenty of time for the thesis to play out. The $120 strike gave the stock room to move without paying through the nose for premium.
-      <div class="translation">翻译：一家高质量的SaaS企业，曾从高点大幅回调。基本面强劲，营收模式具有粘性，有足够时间让投资逻辑兑现。120美元的行权价给了这只股票足够的上涨空间，而无需支付过高的溢价。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">3. RDDT (Reddit, Inc.)</div>
-    <blockquote class="quote">
-      Just wanted to briefly share my thoughts on the Reddit stock. I don't really need to go into the usual metrics long story short, the fundamentals are solid, and the chart setup is playing out, targeting ATH in my personal opinion.
-      <div class="translation">翻译：我只想简单分享一下我对Reddit股票的看法。我不需要深入探讨常规指标，长话短说，基本面扎实，图表形态正在显现，我认为目标是历史新高。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Namely, the desire for genuine human communication – which is actually growing precisely because of AI! At first, AI-generated videos and texts might be funny or impressive, but eventually, you hit a point where it's just annoying.
-      <div class="translation">翻译：具体来说，对真实人类交流的渴望——这实际上正是因为人工智能而增长的！起初，AI生成的视频和文本可能很有趣或令人印象深刻，但最终，你会觉得它很烦人。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Just like the previous year or so, the premiums on RDDT have been nuts this year. Just sharing the cumulative realized profits of selling RDDT options this YTD.
-      <div class="translation">翻译：就像过去一年左右一样，今年RDDT的期权溢价简直疯了。我只是分享一下今年迄今出售RDDT期权所实现的累计利润。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">4. DELL (Dell Technologies Inc.)</div>
-    <blockquote class="quote">
-      Is anyone else wheeling DELL currently? It seems like they are actually booking some serious profits from their hardware and server racks. I assume AI companies are paying them for compute or something but not fully sure where all the money comes from. Any Dell investors out there that have read into a breakdown of all their profits? 2027 guidance seems high.
-      <div class="translation">翻译：现在还有人交易戴尔的期权轮动策略吗？看起来他们确实从硬件和服务器机架中获得了可观的利润。我猜是人工智能公司在为计算付费，但我不太确定所有的钱都来自哪里。有没有戴尔的投资者深入研究过他们所有利润的细目？2027年的指导价似乎很高。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Im considering selling some low $300s PUT around 1 month - 45 days out. What do yall think? Super low delta puts paying like $40-$50 per day.
-      <div class="translation">翻译：我正在考虑卖出一些行权价在300美元左右，1到1.5个月到期的低Delta看跌期权。大家觉得怎么样？超低Delta的看跌期权每天能赚40-50美元。</div>
-    </blockquote>
-    <blockquote class="quote">
-      How many of you poor poor sons of guns sold calls on DELL?
-      <div class="translation">翻译：你们这些可怜的家伙，有多少人卖空了戴尔的看涨期权？</div>
-    </blockquote>
-  </li>
-</ul>
+    <h2>2. 热议中的个股和想法</h2>
+    <ul>
+        <li>
+            <div class="stock-tag">1. MSTR (MicroStrategy Inc.)</div>
+            <blockquote class="quote">
+                Michael Saylor’s Strategy sold bitcoin last week for the second time ever as geopolitical uncertainty continues to weigh on the bitcoin price and crypto market broadly.
+                <div class="translation">翻译：由于地缘政治不确定性继续拖累比特币价格和更广泛的加密市场，迈克尔·塞勒的Strategy公司上周进行了有史以来第二次比特币出售。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Between May 26 and May 31, Strategy sold 32 coins for $2.5 million, and at an average of $77,135 per coin, according to a Monday filing.
+                <div class="translation">翻译：根据周一的一份文件，在5月26日至5月31日期间，Strategy公司出售了32枚比特币，价值250万美元，平均每枚77,135美元。</div>
+            </blockquote>
+            <blockquote class="quote">
+                This is the second time Strategy has ever sold bitcoin and comes soon after the company announced a pivot from Saylor’s longstanding “never sell” strategy in favor of actively managing its balance sheet.
+                <div class="translation">翻译：这是Strategy公司有史以来第二次出售比特币，并且是在该公司宣布从塞勒长期以来的“永不卖出”策略转向积极管理其资产负债表之后不久。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">2. NOW (ServiceNow, Inc.)</div>
+            <blockquote class="quote">
+                I've mostly been focused on AI names and semis, but seeing $NOW jump 10% after earnings/news has me wondering if the market is starting to reward software again.
+                <div class="translation">翻译：我大部分时间都在关注AI和半导体股票，但看到ServiceNow在财报/新闻发布后跳涨10%，这让我怀疑市场是否又开始奖励软件股了。</div>
+            </blockquote>
+            <blockquote class="quote">
+                High quality SaaS business that had pulled back significantly from its highs.
+                <div class="translation">翻译：这是一个高质量的SaaS业务，曾从高点大幅回调。</div>
+            </blockquote>
+            <blockquote class="quote">
+                CFO Mastantuono mentioned something interesting on the earnings call: right now, about half of all new business is coming from non-seat-based deals.
+                <div class="translation">翻译：首席财务官马斯坦图奥诺在财报电话会议上提到了一个有趣的现象：目前，大约一半的新业务来自非基于席位的交易。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Two big players, one move – and suddenly everyone else is trying to get on board too.
+                <div class="translation">翻译：两大巨头，一次行动——突然间，其他人也都想加入。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">3. RIVN (Rivian Automotive, Inc.)</div>
+            <blockquote class="quote">
+                Rivian has enough cash on hand to survive until R2 launches and scales.
+                <div class="translation">翻译：Rivian手头有足够的现金，足以支撑到R2车型发布并实现规模化生产。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Once R2 flips vehicle economics positive, the upside is no longer just selling EVs, but monetizing the software, autonomy, and partnership platform underneath the company.
+                <div class="translation">翻译：一旦R2车型实现车辆经济效益转正，其上涨空间将不再局限于销售电动汽车，而是通过公司底层的软件、自动驾驶和合作平台实现货币化。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">4. TTD (The Trade Desk, Inc.)</div>
+            <blockquote class="quote">
+                World cup starts this month, advertising goes up = TTD goes up.
+                <div class="translation">翻译：世界杯本月开始，广告支出增加意味着The Trade Desk的股价上涨。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Midterms coming, more political advertising = TTD goes up.
+                <div class="translation">翻译：中期选举即将到来，更多政治广告意味着The Trade Desk的股价上涨。</div>
+            </blockquote>
+            <blockquote class="quote">
+                ShORt InTEreS still very high at 18%, if it rallies it will rally HARD.
+                <div class="translation">翻译：空头持仓量仍高达18%，如果它上涨，将会涨得非常猛烈。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">5. NVDA (NVIDIA Corporation)</div>
+            <blockquote class="quote">
+                Nvidia jumps into PCs with new Arm-based chip debuting in laptops from Microsoft, Dell, HP.
+                <div class="translation">翻译：英伟达携新的基于Arm架构的芯片进军PC市场，该芯片将在微软、戴尔、惠普的笔记本电脑中首次亮相。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Retail traders are still betting big on NVDA (call activity).
+                <div class="translation">翻译：散户交易者仍在大量押注英伟达（看涨期权活跃）。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Leading companies like Nvidia and Elon Musk's xAI are leveraging GPU-backed securities deal structures to secure funding to power their growing AI data centres.
+                <div class="translation">翻译：像英伟达和埃隆·马斯克的xAI这样的领先公司正在利用GPU支持的证券交易结构来为日益增长的AI数据中心获取资金。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">6. MU (Micron Technology, Inc.)</div>
+            <blockquote class="quote">
+                Thank you Sandisk and Micron.
+                <div class="translation">翻译：感谢闪迪和美光。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Soaring profits have helped keep memory chipmakers’ stock market valuations in check despite the rally.
+                <div class="translation">翻译：飙升的利润帮助内存芯片制造商的股市估值保持在合理水平，尽管市场出现反弹。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Indeed, Micron and Sandisk look downright cheap at around 10 times earnings over next 12 months, compared with the Philadelphia semiconductor index, which trades at almost 27 times.
+                <div class="translation">翻译：事实上，美光和闪迪在未来12个月的市盈率约为10倍，看起来非常便宜，而费城半导体指数的市盈率几乎是27倍。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">7. DELL (Dell Technologies Inc.)</div>
+            <blockquote class="quote">
+                It seems like they are actually booking some serious profits from their hardware and server racks.
+                <div class="translation">翻译：看起来他们实际上从其硬件和服务器机架中获得了可观的利润。</div>
+            </blockquote>
+            <blockquote class="quote">
+                I assume AI companies are paying them for compute or something but not fully sure where all the money comes from.
+                <div class="translation">翻译：我猜想人工智能公司正在为计算能力或其他服务付费给他们，但不太确定所有资金的来源。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">8. HPE (Hewlett Packard Enterprise Company)</div>
+            <blockquote class="quote">
+                That massive 5B ai backlog is insane because that money flows straight through other tickers before HPE ever prints it as hardware revenue.
+                <div class="translation">翻译：那高达50亿美元的AI积压订单令人难以置信，因为在惠普将其作为硬件收入入账之前，这笔钱会直接流向其他股票。</div>
+            </blockquote>
+            <blockquote class="quote">
+                If you want to make money on this you have to front run the pipeline.
+                <div class="translation">翻译：如果你想通过这个赚钱，就必须抢先布局供应链。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">9. HUBS (HubSpot, Inc.)</div>
+            <blockquote class="quote">
+                It popped almost 11% on Friday to close at $220.63, yet it’s still down over 50% from its 52-week high of $611.00.
+                <div class="translation">翻译：它在周五上涨近11%，收于220.63美元，但仍比其52周高点611.00美元下跌了50%以上。</div>
+            </blockquote>
+            <blockquote class="quote">
+                The underlying business momentum is actually very strong: Q1 2026 revenue was up 23% YoY to $881 million.
+                <div class="translation">翻译：其潜在业务势头实际上非常强劲：2026年第一季度收入同比增长23%至8.81亿美元。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Full-year 2026 revenue guidance was raised to ~$3.7 billion.
+                <div class="translation">翻译：2026年全年收入指导上调至约37亿美元。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">10. LOGI (Logitech International S.A.)</div>
+            <blockquote class="quote">
+                LOGI is pressing around Citi’s $124 target while the average target still sits lower.
+                <div class="translation">翻译：罗技目前正逼近花旗的124美元目标价，而平均目标价仍低于此。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Fiscal 2026 sales were about $4.84 billion, non GAAP operating margin hit 18.8%, operating cash flow cleared $1 billion & the company returned $768 million to shareholders.
+                <div class="translation">翻译：2026财年销售额约为48.4亿美元，非GAAP营业利润率达到18.8%，运营现金流超过10亿美元，公司向股东返还了7.68亿美元。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">11. IBM (International Business Machines Corporation)</div>
+            <blockquote class="quote">
+                It's interesting that this stock rode it all the way down to the 200s based on disappointing earnings and questions about its AI play.
+                <div class="translation">翻译：有趣的是，这只股票因令人失望的财报和对其AI策略的质疑，一路跌至200美元区间。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Now appears this ride back up has less to do about quantum computing, but rather what the administration is doing just by mentioning to 'buy it'.
+                <div class="translation">翻译：现在看来，这次反弹与量子计算关系不大，更多的是因为政府仅仅提及“购买它”所带来的影响。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">12. RDDT (Reddit, Inc.)</div>
+            <blockquote class="quote">
+                Just wanted to briefly share my thoughts on the Reddit stock.
+                <div class="translation">翻译：只想简单分享一下我对Reddit股票的看法。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Whenever the topic of AI and Reddit comes up, everyone only talks about the "data gold" being sold to train the models.
+                <div class="translation">翻译：每当谈到人工智能和Reddit时，每个人都只谈论用于训练模型所出售的“数据金矿”。</div>
+            </blockquote>
+            <blockquote class="quote">
+                But I think there is a completely different catalyst at play here.
+                <div class="translation">翻译：但我认为这里存在一个完全不同的催化剂。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Namely, the desire for genuine human communication – which is actually growing precisely because of AI.
+                <div class="translation">翻译：也就是说，对真正人类交流的渴望——这实际上正是因为人工智能而增长的。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">13. SPCE (Virgin Galactic Holdings, Inc.)</div>
+            <blockquote class="quote">
+                Trading of SPCE halted.
+                <div class="translation">翻译：SPCE（维珍银河）的交易已暂停。</div>
+            </blockquote>
+            <blockquote class="quote">
+                IV was 200% on Friday and popped 50% to 300% today - and yes, IV currently is in 100% percentile (since when I started tracking it's just higher IVs every day).
+                <div class="translation">翻译：隐含波动率（IV）周五为200%，今天跳涨50%至300%——是的，IV目前处于100%分位数（自从我开始追踪以来，隐含波动率每天都在升高）。</div>
+            </blockquote>
+            <blockquote class="quote">
+                The most explosive part of the squeeze may already have occurred unless fresh call demand develops at higher strikes ($7–10).
+                <div class="translation">翻译：除非在更高行权价（7-10美元）出现新的看涨期权需求，否则逼空最猛烈的阶段可能已经发生。</div>
+            </blockquote>
+        </li>
+    </ul>
 
-<h2>3. 小众公司冒泡</h2>
-<ul>
-  <li>
-    <div class="stock-tag">1. HIVE (Hive Blockchain Technologies Ltd.)</div>
-    <blockquote class="quote">
-      HIVE digital technologies is transitioning from Crypto mining to AI Data centers the same way everyone is, but they’re taking a winning approach. They own a marginal percentage of the industry but are answering the energy bottle neck the best. They’re primarily operating in these countries: Sweden 🇸🇪 Canada 🇨🇦 Paraguay 🇵🇾 These are 3 of the best counties from an energy perspective. Canada and Sweden provide the perfect climate to support the infrastructure. Paraguay is one the most energy rich countries in the planet using renewable energy. Paraguay has a surplus of energy from hydroelectric sources, primarily the massive Itaipú Dam which is where Hive’s Yguazú Campus derives its energy from.
-      <div class="translation">翻译：HIVE数字科技正在像其他公司一样从加密货币挖矿转型到人工智能数据中心，但他们采取了一种成功的策略。他们在行业中占有很小的份额，但却最好地解决了能源瓶颈问题。他们主要在瑞典🇸🇪、加拿大🇨🇦、巴拉圭🇵🇾这些国家运营，这三个国家从能源角度来看都是最好的。加拿大和瑞典提供了支持基础设施的完美气候。巴拉圭是地球上能源最丰富的国家之一，使用可再生能源。巴拉圭拥有水电资源的盈余，主要是巨大的伊泰普大坝，Hive的Yguazú园区就是从那里获取能源的。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">2. SAP (SAP SE)</div>
-    <blockquote class="quote">
-      You're thinking SAP is Stanley Hudson. Just... sitting there. Doing the crossword. Not exciting. Not a growth story. Just... enormous and immovable and slightly resentful of Mondays. But here is the thing about Stanley Hudson. Stanley Hudson CANNOT BE FIRED. Michael tried. Corporate tried. The laws of nature tried. Stanley is still there. And now SAP Cloud is up 33%.
-      <div class="translation">翻译：你可能认为SAP就像Stanley Hudson。只是……坐在那里。做填字游戏。不兴奋。不是一个增长故事。只是……庞大、不可动摇，对星期一有点怨恨。但关于Stanley Hudson的重点是，Stanley Hudson是不能被解雇的。Michael试过。公司试过。自然法则试过。Stanley还在那里。现在SAP云业务增长了33%。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">3. HUBS (HubSpot, Inc.)</div>
-    <blockquote class="quote">
-      It popped almost 11% on Friday to close at $220.63, yet it’s still down over 50% from its 52-week high of $611.00 The underlying business momentum is actually very strong: • Strong Growth: Q1 2026 revenue was up 23% YoY to $881 million. • Strong Forecast: Full-year 2026 revenue guidance was raised to ~$3.7 billion. • Cash Flow: They generated nearly $199 million in operating cash flow just in Q1. • Customer Engine: Total customers grew 16% and the average revenue per customer is also up.
-      <div class="translation">翻译：它在周五上涨近11%，收于220.63美元，但仍比其52周高点611.00美元下跌超过50%。其潜在业务势头实际上非常强劲：• 强劲增长：2026年第一季度收入同比增长23%至8.81亿美元。• 强劲预测：2026年全年收入指导上调至约37亿美元。• 现金流：仅在第一季度就产生了近1.99亿美元的运营现金流。• 客户引擎：客户总数增长16%，每个客户的平均收入也在增长。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">4. MRVL (Marvell Technology, Inc.)</div>
-    <blockquote class="quote">
-      If i had to guess the reasons it's due to the agreement with $NVDA. $MRVL is also in talks with $GOOGL on designing two TPUs for AI. EPS for $MRVL was also beat for the quarter.
-      <div class="translation">翻译：如果我不得不猜测原因，那是因为与英伟达达成了协议。Marvell还在与谷歌洽谈设计两款用于人工智能的TPU。Marvell本季度的每股收益也超出了预期。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">5. SNAP (Snap Inc.)</div>
-    <blockquote class="quote">
-      Something changed about 2 months ago where now every ad is a video (about 5 seconds long) that is unclickable therefore have to watch it. Seems like this change will lead to huge ad dollars as a lot more people have to actually look at them now as opposed to the past. Going to add more to position in the coming months especially if this thesis is evidenced by quarterly results.
-      <div class="translation">翻译：大约2个月前，发生了一些变化，现在所有的广告都是无法点击的视频（约5秒钟长），因此不得不观看。看起来这一变化将带来巨大的广告收入，因为现在更多人不得不真正观看广告，而不是过去。未来几个月我将增加持仓，特别是如果这一论点得到季度业绩的证实。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">6. TEM (Tempus AI, Inc.)</div>
-    <blockquote class="quote">
-      I've been building a basket of speculative AI names, and Tempus AI ($TEM) has become one of my highest-conviction positions. The bull case isn't chatbots but a combination of diagnostics, genomics, AI, and what may be one of the most valuable proprietary clinical datasets in healthcare. Data licensing is growing rapidly, backlog exceeds $1 billion, and the company's recent FDA pathway announcement could further improve reimbursement, physician adoption, and the strength of its competitive moat.
-      <div class="translation">翻译：我一直在建立一个投机性人工智能股票组合，Tempus AI ($TEM) 已成为我最有信心的持仓之一。其看涨理由并非聊天机器人，而是诊断、基因组学、人工智能的结合，以及可能成为医疗保健领域最有价值的专有临床数据集之一。数据许可业务正在快速增长，积压订单超过10亿美元，公司近期公布的FDA路径可能会进一步改善报销、医生采纳率，并增强其竞争护城河。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">7. HPE (Hewlett Packard Enterprise Company)</div>
-    <blockquote class="quote">
-      that massive 5B ai backlog is insane because that money flows straight through other tickers before HPE ever prints it as hardware revenue. hpe bumping their fy26 fcf target to 2.0B proves the cash flow is real.
-      <div class="translation">翻译：那高达50亿美元的人工智能积压订单令人难以置信，因为这笔钱在惠普将其计入硬件收入之前，会直接流向其他股票。惠普将其2026财年的自由现金流目标提高到20亿美元，证明了其现金流的真实性。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">8. NTAP (NetApp, Inc.)</div>
-    <blockquote class="quote">
-      netapp is gonna print because of the flash arrays and storage deals getting pulled forward for greenlake systems.
-      <div class="translation">翻译：NetApp将会有不错的业绩，因为GreenLake系统的闪存阵列和存储交易正在提前进行。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">9. CDW (CDW Corporation)</div>
-    <blockquote class="quote">
-      cdw gets all the enterprise orders.
-      <div class="translation">翻译：CDW获得了所有企业订单。</div>
-    </blockquote>
-  </li>
-  <li>
-    <div class="stock-tag">10. CSCO (Cisco Systems, Inc.)</div>
-    <blockquote class="quote">
-      cisco is gonna moon just from the switching and fabric orders to wire up the money.
-      <div class="translation">翻译：思科仅凭用于连接资金的交换和光纤订单就能大幅上涨。</div>
-    </blockquote>
-  </li>
-</ul>
+    <h2>3. 小众公司冒泡</h2>
+    <ul>
+        <li>
+            <div class="stock-tag">1. SMMT (Summit Therapeutics Inc.)</div>
+            <blockquote class="quote">
+                Yesterday the OS data came out for the trial with the result being 0.66 which is really promising for future development of the treatment.
+                <div class="translation">翻译：昨天公布的试验总生存期（OS）数据显示为0.66，这对该疗法的未来开发非常有前景。</div>
+            </blockquote>
+            <blockquote class="quote">
+                But yet today the stock is down 11% on market opening.
+                <div class="translation">翻译：然而，今天开盘时股价却下跌了11%。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">2. GRRR (Gorilla Technology Group Inc.)</div>
+            <blockquote class="quote">
+                You’ve got a $530M market cap company sitting on a $5B contracted backlog.
+                <div class="translation">翻译：你有一家市值5.3亿美元的公司，拥有50亿美元的合同积压订单。</div>
+            </blockquote>
+            <blockquote class="quote">
+                NVIDIA just put Yotta (who signed 3.3B of deals with Gorilla and will likely sign more, since Gorilla is set to put up 100% of Yotta’s announced expansion) on the big screen at GTC Taiwan saying Nvidia ❤️ Yotta.
+                <div class="translation">翻译：英伟达在台湾GTC大会上展示了Yotta（该公司与Gorilla签署了33亿美元的协议，并且很可能签署更多协议，因为Gorilla将承担Yotta全部已宣布的扩张项目），表示英伟达爱Yotta。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">3. TMHC (Taylor Morrison Home Corporation)</div>
+            <blockquote class="quote">
+                Berkshire Hathaway agreed Sunday to acquire homebuilder Taylor Morrison Home in a $6.8 billion deal, deepening the conglomerate’s bet on the U.S. housing market after a prolonged downturn.
+                <div class="translation">翻译：伯克希尔哈撒韦公司周日同意以68亿美元收购住宅建筑商泰勒·莫里森住宅公司，在长期低迷后加深了该集团对美国房地产市场的押注。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Taylor Morrison has 350 communities and they basically trap buyers into their own mortgage and insurance stuff so its a massive cash cow.
+                <div class="translation">翻译：泰勒·莫里森拥有350个社区，他们基本上将买家困在自己的抵押贷款和保险产品中，因此这是一个巨大的现金牛。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">4. GGG (Graco Inc.)</div>
+            <blockquote class="quote">
+                The GGG CFO bought $340k at around $78 a share on March 11, stock was down 15% from its January high.
+                <div class="translation">翻译：GGG的首席财务官在3月11日以每股约78美元的价格购买了34万美元的股票，当时股价较1月高点下跌了15%。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">5. EXEL (Exelixis, Inc.)</div>
+            <blockquote class="quote">
+                The CEO at EXEL filed $1.2M on April 8 at around $22 a share, right before positive trial data dropped.
+                <div class="translation">翻译：EXEL的首席执行官在4月8日以每股约22美元的价格申报了120万美元的股票，就在积极的试验数据公布之前。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">6. HERB (Herbal Dispatch Inc.)</div>
+            <blockquote class="quote">
+                Vancouver-based cannabis e-commerce and distribution leader Herbal Dispatch Inc. delivered a transformative first quarter that positions the company as one of the most compelling high-growth stories in the evolving global cannabis sector.
+                <div class="translation">翻译：总部位于温哥华的大麻电商和分销领导者Herbal Dispatch Inc.交付了一个变革性的第一季度，将公司定位为不断发展的全球大麻领域中最引人注目的高增长故事之一。</div>
+            </blockquote>
+            <blockquote class="quote">
+                The standout highlight from Q1 is the 98% year over year surge in direct-to-consumer medical revenue climbing from $383,912 in Q1 2025 to $761,375 in Q1 2026.
+                <div class="translation">翻译：第一季度最突出的亮点是直接面向消费者的医疗收入同比增长98%，从2025年第一季度的383,912美元增至2026年第一季度的761,375美元。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">7. AMPG (AmeriAmp Global Corp.)</div>
+            <blockquote class="quote">
+                Micro- cap company received an FCC and Canadian certification for 5G DAS and AMPG also in the game for AI-RAN.
+                <div class="translation">翻译：这家微型市值公司获得了FCC和加拿大对5G分布式天线系统（DAS）的认证，AmeriAmp Global Corp.也参与了AI-RAN领域。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">8. TSN (Tyson Foods, Inc.)</div>
+            <blockquote class="quote">
+                The US's largest domestic protein producers screen relatively attractively when viewed across the cycle, enjoy defensive demand, and have scale moats.
+                <div class="translation">翻译：从整个周期来看，美国最大的国内蛋白质生产商表现出相对吸引力，享有防御性需求，并拥有规模护城河。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">9. PYPL (PayPal Holdings, Inc.)</div>
+            <blockquote class="quote">
+                PayPal's Third Act: The Restructuring Gamble at 8× Earnings.
+                <div class="translation">翻译：PayPal的第三幕：以8倍收益进行的重组赌博。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">10. ZTS (Zoetis Inc.)</div>
+            <blockquote class="quote">
+                World's leading animal pharma company at 13x PE with 9% EPS growth.
+                <div class="translation">翻译：全球领先的动物制药公司，市盈率为13倍，每股收益增长9%。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">11. WDC (Western Digital Corporation)</div>
+            <blockquote class="quote">
+                WDC’s recent insider sales (750 shares by a director) and INFQ’s massive 1.5M-share dump feel like red flags in semiconductor and biotech.
+                <div class="translation">翻译：西部数据（WDC）最近的内部人交易（一位董事出售了750股）和Infoneq Technologies Inc.（INFQ）大规模抛售150万股，在半导体和生物技术领域都像是危险信号。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">12. TEM (Tempus AI)</div>
+            <blockquote class="quote">
+                I've been building a basket of speculative AI names, and Tempus AI ($TEM) has become one of my highest-conviction positions.
+                <div class="translation">翻译：我一直在建立一个投机性AI股票组合，而Tempus AI ($TEM) 已成为我最坚信的持仓之一。</div>
+            </blockquote>
+            <blockquote class="quote">
+                The bull case isn't chatbots but a combination of diagnostics, genomics, AI, and what may be one of the most valuable proprietary clinical datasets in healthcare.
+                <div class="translation">翻译：看涨的理由不是聊天机器人，而是诊断、基因组学、AI以及可能是医疗保健领域最有价值的专有临床数据集的结合。</div>
+            </blockquote>
+        </li>
+    </ul>
 
-<h2>4. AI主线讨论</h2>
-<div class="track-header">模型</div>
-<ul>
-  <li>
-    <blockquote class="quote">
-      For modeling: I mostly just use Claude on excel to do data entry and formatting when I play around with dcf or 3 stmt model just to learn what drives growth.
-      <div class="translation">翻译：在建模方面：我主要只是在Excel上使用Claude进行数据输入和格式化，当我尝试使用DCF或三张报表模型时，只是为了学习什么驱动增长。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      Understanding the difference between cARR and actual ARR + how the metric gets gamed by founders looking to raise money.
-      <div class="translation">翻译：了解cARR和实际ARR之间的区别，以及寻求融资的创始人如何操纵这一指标。</div>
-    </blockquote>
-  </li>
-</ul>
-<div class="track-header">算</div>
-<ul>
-  <li>
-    <blockquote class="quote">
-      Nvidia jumps into PCs with new Arm-based chip debuting in laptops from Microsoft, Dell, HP.
-      <div class="translation">翻译：英伟达携新的基于Arm的芯片进军PC市场，该芯片将在微软、戴尔、惠普的笔记本电脑中首次亮相。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      Japan has finalized its participation in the U.S.-led Genesis Mission, a major initiative to harness artificial intelligence for accelerating scientific breakthroughs. According to reporting from Yomiuri Shimbun, Tokyo will contribute $500 million as part of a combined $1 billion U.S.-Japan investment over the next five years in AI, quantum technology, nuclear fusion, and biotechnology.
-      <div class="translation">翻译：日本已敲定参与美国主导的“创世纪任务”，这是一项利用人工智能加速科学突破的重大倡议。据《读卖新闻》报道，东京将贡献5亿美元，作为未来五年美日总计10亿美元在人工智能、量子技术、核聚变和生物技术领域投资的一部分。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      Mr Musk thinks he has found an even bigger market for SpaceX to dominate: ai. He believes that AI’s appetite for computing power cannot be satisfied by earthly data centres, which are often impeded by power shortages, red tape and opposition from a distrustful public. Along with several other AI bigwigs, he reckons those problems can be solved by putting data centres in space. He argues that SpaceX, with its unmatched ability to carry things off the planet, is the firm to make it happen. The scale of his ambition is outlined in the firm’s regulatory filings.
-      <div class="translation">翻译：马斯克认为他找到了一个更大的市场让SpaceX主导：人工智能。他认为，人工智能对计算能力的需求无法通过地球数据中心满足，这些数据中心常常受到电力短缺、繁文缛节和不信任公众的反对。他和其他几位人工智能巨头认为，这些问题可以通过将数据中心放置在太空来解决。他主张，SpaceX凭借其无与伦比的将物体送出地球的能力，是实现这一目标的最佳公司。他的雄心壮志已在该公司的监管文件中概述。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      A reading of the S-1/A, with operational benchmarks against peers. Pressure-testing the Cerebras IPO.
-      <div class="translation">翻译：一份S-1/A文件的解读，其中包含与同行相比的运营基准。对Cerebras IPO进行压力测试。</div>
-    </blockquote>
-  </li>
-</ul>
-<div class="track-header">光</div>
-<ul>
-  <li>
-    <blockquote class="quote">
-      I am eyeing entering the physical AI (sensor) space as I believe Ai holds great potential to actually help people in care/maintenance/logistics sectors. I was eyeing Ouster but it’s a bit too expensive for my taste so I am thinking about pivoting to Lumibird (LBIRD).
-      <div class="translation">翻译：我正在关注进入物理人工智能（传感器）领域，因为我相信人工智能在护理/维护/物流领域具有巨大的帮助潜力。我曾关注Ouster，但它的价格对我来说有点太贵了，所以我正在考虑转向Lumibird（LBIRD）。</div>
-    </blockquote>
-  </li>
-</ul>
-<div class="track-header">存</div>
-<ul>
-  <li>
-    <blockquote class="quote">
-      $GLXY IS IN $SPCE & MUSK SAYS DATA CENTERS WILL BE IN SPACE. $GLXY Has the best data center in the country so this just makes sense.
-      <div class="translation">翻译：$GLXY正在$SPCE中，马斯克说数据中心将在太空。$GLXY拥有全国最好的数据中心，所以这很有道理。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      Soaring profits have helped keep memory chipmakers’ stock market valuations in check despite the rally. Indeed, Micron and Sandisk look downright cheap at around 10 times earnings over next 12 months, compared with the Philadelphia semiconductor index, which trades at almost 27 times. However, those valuations are based on the assumption that this boom is going to last. Using trailing profits, valuations look much more extreme, with Micron trading at a multiple of 46 and Sandisk at 58.
-      <div class="translation">翻译：尽管股价上涨，飙升的利润帮助内存芯片制造商的股市估值保持在合理水平。实际上，与费城半导体指数近27倍的市盈率相比，美光和闪迪按未来12个月的收益计算，市盈率约为10倍，看起来非常便宜。然而，这些估值是基于这种繁荣将持续的假设。如果使用滞后利润计算，估值看起来要极端得多，美光的市盈率为46倍，闪迪为58倍。</div>
-    </blockquote>
-  </li>
-</ul>
-<div class="track-header">电</div>
-<ul>
-  <li>
-    <blockquote class="quote">
-      He believes that AI’s appetite for computing power cannot be satisfied by earthly data centres, which are often impeded by power shortages, red tape and opposition from a distrustful public.
-      <div class="translation">翻译：他认为，人工智能对计算能力的需求无法通过地球数据中心满足，这些数据中心常常受到电力短缺、繁文缛节和不信任公众的反对。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      how is the power grid going to manage all of the new ai demand centers coming online?
-      <div class="translation">翻译：电网将如何管理所有即将上线的新人工智能需求中心？</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      Mitsubishi Electric provides power semi-conductors, grid and power conversion equipment, UPS systems, cooling and energy management technologies - all used in data centres.
-      <div class="translation">翻译：三菱电机提供电力半导体、电网和电力转换设备、UPS系统、冷却和能源管理技术——所有这些都用于数据中心。</div>
-    </blockquote>
-  </li>
-</ul>
-<div class="track-header">板</div>
-<ul>
-  <li>
-    <blockquote class="quote">
-      that massive 5B ai backlog is insane because that money flows straight through other tickers before HPE ever prints it as hardware revenue. if you want to make money on this you have to front run the pipeline. netapp is gonna print because of the flash arrays and storage deals getting pulled forward for greenlake systems, cdw gets all the enterprise orders, and cisco is gonna moon just from the switching and fabric orders to wire up the money.
-      <div class="translation">翻译：那高达50亿美元的人工智能积压订单令人难以置信，因为这笔钱在惠普将其计入硬件收入之前，会直接流向其他股票。如果你想从中赚钱，你必须抢先布局供应链。NetApp将会有不错的业绩，因为GreenLake系统的闪存阵列和存储交易正在提前进行，CDW获得了所有企业订单，思科仅凭用于连接资金的交换和光纤订单就能大幅上涨。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      Mitsubishi Electric provides power semi-conductors, grid and power conversion equipment, UPS systems, cooling and energy management technologies - all used in data centres.
-      <div class="translation">翻译：三菱电机提供电力半导体、电网和电力转换设备、UPS系统、冷却和能源管理技术——所有这些都用于数据中心。</div>
-    </blockquote>
-  </li>
-</ul>
-<div class="track-header">云</div>
-<ul>
-  <li>
-    <blockquote class="quote">
-      Now companies like ServiceNow seem to be putting up strong numbers and getting premium valuations again. Do you think we're entering another multi-year SaaS run, or is this just a temporary rotation while AI spending works its way through the system?
-      <div class="translation">翻译：现在像ServiceNow这样的公司似乎再次展现出强劲的业绩并获得高估值。你认为我们正在进入另一个多年的SaaS行情，还是这只是在人工智能支出渗透系统时的临时轮动？</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      And now SAP Cloud is up 33%.
-      <div class="translation">翻译：现在SAP云业务增长了33%。</div>
-    </blockquote>
-  </li>
-</ul>
-<div class="track-header">AI应用</div>
-<ul>
-  <li>
-    <blockquote class="quote">
-      For reading: there are tons of good write ups on fintwit and Reddit, so I use gpt to summarize these posts and 10Ks and earnings call transcripts. For assumptions and consensus: I ask Gemini to vet my growth assumptions and if they match consensus or what management thinks.
-      <div class="translation">翻译：在阅读方面：fintwit和Reddit上有很多好的文章，所以我用GPT来总结这些帖子、10K文件和财报电话会议记录。在假设和共识方面：我请Gemini审查我的增长假设，看它们是否与共识或管理层的看法一致。</div>
-    </blockquote>
-  </li>
-  <li>
-    <blockquote class="quote">
-      Namely, the desire for genuine human communication – which is actually growing precisely because of AI! At first, AI-generated videos and texts might be funny or impressive, but eventually, you hit a point where it's just annoying.
-      <div class="translation">翻译：具体来说，对真实人类交流的渴望——这实际上正是因为人工智能而增长的！起初，AI生成的视频和文本可能很有趣或令人印象深刻，但最终，你会觉得它很烦人。</div>
-    </blockquote>
-  </li>
-</ul>
+    <h2>4. AI主线讨论</h2>
+    <div class="ai-category">
+        <div class="track-header">模型 (Models)</div>
+        <ul>
+            <li>Anthropic confidentially files IPO prospectus with SEC. (暗示其AI模型的发展与商业化)</li>
+            <li>Elon Musk's xAI are leveraging GPU-backed securities deal structures to secure funding to power their growing AI data centres. (xAI作为AI模型公司获取资金)</li>
+            <li>"AI eats the world". (泛指AI模型对各行业的影响)</li>
+            <li>AI Startups Hallucinate Their Revenue Metrics. (讨论AI初创公司模型商业化和营收衡量)</li>
+        </ul>
+    </div>
+    <div class="ai-category">
+        <div class="track-header">算 (Compute)</div>
+        <ul>
+            <li>Nvidia jumps into PCs with new Arm-based chip debuting in laptops from Microsoft, Dell, HP. (Nvidia推出新芯片，强化AI计算能力)</li>
+            <li>Elon Musk-Nvidia Deal is Putting US Retirees at Risk. (GPU支持的交易结构与AI数据中心算力)</li>
+            <li>SpaceX's ambition: putting 100 terawatts of computing power into orbit. (将数据中心置于太空以满足AI计算需求)</li>
+            <li>HPE’s $5B AI backlog is prolly gonna pump these 3 tickers on monday. (HPE的AI积压订单表明硬件和服务器机架需求旺盛)</li>
+            <li>Dell is booking some serious profits from their hardware and server racks. (Dell硬件和服务器机架受益于AI计算需求)</li>
+            <li>Cerebras S-1: operational benchmarks against peers, pressure-testing the Cerebras IPO. (Cerebras作为AI芯片/系统提供商，专注于AI计算硬件)</li>
+        </ul>
+    </div>
+    <div class="ai-category">
+        <div class="track-header">光 (Optics/Networking)</div>
+        <ul>
+            <li>Cisco is gonna moon just from the switching and fabric orders to wire up the money. (思科将受益于连接AI数据中心的交换和光纤订单)</li>
+        </ul>
+    </div>
+    <div class="ai-category">
+        <div class="track-header">存 (Storage)</div>
+        <ul>
+            <li>Netapp is gonna print because of the flash arrays and storage deals getting pulled forward for greenlake systems. (NetApp将受益于GreenLake系统的闪存阵列和存储协议)</li>
+            <li>Micron and Sandisk look downright cheap at around 10 times earnings over next 12 months. (美光和闪迪作为内存芯片制造商，受益于AI存储需求)</li>
+        </ul>
+    </div>
+    <div class="ai-category">
+        <div class="track-header">电 (Power)</div>
+        <ul>
+            <li>How is the power grid going to manage all of the new ai demand centers coming online? (对AI数据中心上线后电网负荷的担忧)</li>
+            <li>Musk reckons those problems (power shortages) can be solved by putting data centres in space. (SpaceX提出将数据中心置于太空以解决地面电力短缺)</li>
+        </ul>
+    </div>
+    <div class="ai-category">
+        <div class="track-header">板 (Boards/Hardware)</div>
+        <ul>
+            <li>Nvidia jumps into PCs with new Arm-based chip. (Nvidia新Arm芯片在AI硬件板卡中的应用)</li>
+            <li>DELL sell PUTs looks hot. It seems like they are actually booking some serious profits from their hardware and server racks. (戴尔的硬件和服务器机架为AI提供基础架构)</li>
+        </ul>
+    </div>
+    <div class="ai-category">
+        <div class="track-header">云 (Cloud)</div>
+        <ul>
+            <li>Cloud providers buy NVIDIA GPUs and report AI growth. (云服务提供商购买NVIDIA GPU以支持AI增长)</li>
+            <li>Microsoft has paused some data center leases and canceled projects. (大型云服务商对数据中心策略的调整，可能影响AI云基础设施扩展)</li>
+        </ul>
+    </div>
+    <div class="ai-category">
+        <div class="track-header">AI应用 (AI Applications)</div>
+        <ul>
+            <li>Every startup is suddenly “AI-native.” Every SaaS company has an AI assistant. Every CEO is talking about agents. (AI技术在各行业和SaaS产品中的广泛应用)</li>
+            <li>RDDT: The desire for genuine human communication – which is actually growing precisely because of AI. (Reddit作为平台，其“数据金矿”用于AI训练，同时AI也促使对真实人类交流的需求增长)</li>
+            <li>ServiceNow: Right now, about half of all new business is coming from non-seat-based deals. (ServiceNow的业务模式变化，暗示更多AI驱动的服务或解决方案)</li>
+            <li>TEM: The bull case isn't chatbots but a combination of diagnostics, genomics, AI, and what may be one of the most valuable proprietary clinical datasets in healthcare. (Tempus AI在医疗诊断、基因组学领域的AI应用前景)</li>
+        </ul>
+    </div>
 
 </body>
 </html>
@@ -430,7 +518,7 @@
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
                     detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n贪婪', color: '#fff' },
-                    data: [{ value: 60 }]
+                    data: [{ value: 59 }]
                 }]
             });
         </script>
