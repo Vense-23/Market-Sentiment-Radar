@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>06月24日 情报终端</title>
+        <title>06月25日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,181 +36,117 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 06月24日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-06-24 23:17:19 (北京时间)</p>
+            <h1>🎯 06月25日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-06-25 12:42:13 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股市场情绪分析 (2026年06月24日)</title>
+    <title>Reddit 美股市场情绪分析 (2026年06月25日)</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
-        h1, h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
-        h2 { font-size: 1.8em; }
+        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 20px; background-color: #f9f9f9; }
+        h1 { color: #2c3e50; text-align: center; margin-bottom: 30px; }
+        h2 { color: #34495e; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px; }
         ul { list-style: none; padding: 0; }
-        li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #0056b3; font-size: 1.1em; margin-bottom: 10px; }
-        .quote { background-color: #e9f7ef; border-left: 4px solid #28a745; margin: 15px 0 5px 0; padding: 10px 15px; font-style: italic; color: #36454F; }
-        .translation { font-size: 0.9em; color: #555; margin-top: 5px; padding-top: 5px; border-top: 1px dashed #ccc; }
-        .macro-summary { background-color: #eaf4fd; border-left: 4px solid #007bff; margin-bottom: 20px; padding: 15px; }
-        .macro-summary p { margin: 0 0 10px 0; }
-        .track-header { font-weight: bold; color: #0056b3; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; padding-bottom: 5px; border-bottom: 1px solid #eee; }
-        .ai-category-item { margin-bottom: 10px; }
-        .ai-category-item .quote { margin-top: 5px; margin-bottom: 5px; }
+        li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 20px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 10px; font-size: 1.1em; }
+        .quote { background-color: #f0f8ff; border-left: 5px solid #3498db; margin: 15px 0; padding: 10px 15px; font-style: italic; color: #555; }
+        .translation { margin-top: 10px; font-size: 0.9em; color: #777; }
+        .track-header { font-weight: bold; color: #2980b9; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; }
     </style>
 </head>
 <body>
-
-    <h1>美股市场情绪分析 (2026年06月24日)</h1>
+    <h1>Reddit 美股市场情绪分析 (2026年06月25日)</h1>
 
     <h2>1. 宏观与市场情绪</h2>
-    <div class="macro-summary">
-        <p>今日市场讨论焦点集中在全球对AI和半导体领域的巨额投资计划，特别是日本宣布的2.3万亿美元投资，显示出该领域的长期增长潜力。同时，关于AI代币价格下跌与AI相关股票高位运行的背离现象引发关注，市场开始将重心从计算需求转向AI生态系统的变现能力和定价权。</p>
-    </div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          JAPAN JUST ANNOUNCED A $2.3 TRILLION INVESTMENT PLAN FOR AI AND SEMICONDUCTORS OVER THE NEXT 14 YEARS Prime Minister Sanae Takaichi just unveiled the roadmap covering the period through fiscal 2040. The bulk of the AI and chip spending goes toward semiconductors and vertical AI built for specific industries. The US is spending trillions on AI infrastructure. China is spending trillions. Now Japan is committing $2.3 trillion.
-          <div class="translation">翻译：日本刚刚宣布了一项未来14年内2.3万亿美元的AI和半导体投资计划。首相高市早苗刚刚公布了截至2040财年的路线图。AI和芯片支出的主要部分流向半导体和为特定行业构建的垂直AI。美国正在投入数万亿美元用于AI基础设施。中国也在投入数万亿美元。现在，日本承诺投入2.3万亿美元。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          AI Token Prices Keep Falling. Token prices have been trending lower while many AI-related stocks remain near highs. For companies like NVDA, MU, AVGO, and the hyperscalers themselves, AI monetization is becoming one of the most important variables to watch. Lower token prices are great for users. They make AI cheaper and accelerate adoption. But, they also put pressure on pricing power across the AI ecosystem. The market has spent the last two years focusing on compute demand, GPU shortages, datacenter buildouts, and capex announcements. This chart focuses on the revenue side of the equation. It’s still an early indicator, but I think it’s worth watching.
-          <div class="translation">翻译：AI代币价格持续下跌。代币价格一直在走低，而许多AI相关股票仍处于高位。对于像英伟达（NVDA）、美光（MU）、博通（AVGO）以及超大规模云服务商本身等公司来说，AI变现能力正成为最重要的观察变量之一。较低的代币价格对用户有利，它们使AI更便宜并加速采用。但它们也对整个AI生态系统的定价权构成压力。过去两年，市场一直关注计算需求、GPU短缺、数据中心建设和资本支出公告。这张图表关注的是营收方面。这仍然是一个早期指标，但我认为值得关注。</div>
-        </blockquote>
-      </li>
-    </ul>
+    <p>Reddit社区在2026年6月25日主要关注个股盈利表现和短期交易策略。当日市场讨论集中在即将到来的财报季以及用户对次日市场走势的展望。尽管缺乏明确的宏观经济讨论，但个股的大幅波动（如美光股价因内存紧缩和营收飙升而跳涨9%）显示出市场对具体公司业绩的敏感。</p>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
       <li>
-        <div class="stock-tag">WEN (The Wendy's Company)</div>
+        <div class="stock-tag">1. WEN (The Wendy's Company)</div>
         <blockquote class="quote">
-          New CEO, NEW CFO, LETS FUCKING GO! Position posted - $3300 shares at basis of $8.58 per share.
-          <div class="translation">翻译：新任CEO，新任CFO，干他妈的！仓位已公布 - 3300股，成本为每股8.58美元。</div>
+          50% of my portfolio. Lets take it to the moooon
+          <div class="translation">翻译：我投资组合的50%。让我们把它推向月球。</div>
         </blockquote>
         <blockquote class="quote">
-          The rest of the market may believe Wendys is dead. Okay, let them believe.
-          <div class="translation">翻译：市场其他部分可能认为Wendy's已经死了。好吧，让他们去相信。</div>
+          Why are we turning this into a meme play? It has profits, and a physical business with a low 8p/e and a 8% dividend.
+          <div class="translation">翻译：为什么我们要把它变成一个表情包式炒作？它有利润，有实体业务，市盈率低至8倍，还有8%的股息。</div>
         </blockquote>
         <blockquote class="quote">
-          Wendys (WEN) has certain catalysts ready to cook. We have: new management (the U.S. business may be struggling, but that’s already obvious).
-          <div class="translation">翻译：Wendy's (WEN) 拥有一些即将发酵的催化剂。我们有：新的管理层（美国业务可能正在挣扎，但这已经很明显了）。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">GOOGL (Alphabet Inc.)</div>
-        <blockquote class="quote">
-          Alphabet added to Dow Jones Industrial Average, replacing Verizon
-          <div class="translation">翻译：Alphabet被纳入道琼斯工业平均指数，取代Verizon。</div>
+          NEW CEO, NEW CFO! Position posted - 3300 shares at basis of $8.58 per share.
+          <div class="translation">翻译：新CEO，新CFO！已发布仓位 - 3300股，成本价每股8.58美元。</div>
         </blockquote>
         <blockquote class="quote">
-          Google is the everything company Elon wants to build.
-          <div class="translation">翻译：谷歌是埃隆想建立的“一切公司”。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Google p/e is only 25, Costco is 50, apple selling the same f phone from 2006 is 40.
-          <div class="translation">翻译：谷歌市盈率只有25，Costco是50，苹果从2006年开始卖同样的破手机市盈率是40。</div>
+          After hours party soon 50$ in a week
+          <div class="translation">翻译：盘后派对很快开始，一周内到50美元。</div>
         </blockquote>
       </li>
       <li>
-        <div class="stock-tag">SK Hynix (SK Hynix Inc.)</div>
+        <div class="stock-tag">2. MU (Micron Technology)</div>
         <blockquote class="quote">
-          South Korea's SK Hynix says to raise up to $29 bln in ADR listing
-          <div class="translation">翻译：韩国SK海力士表示将通过ADR上市筹集至多290亿美元。</div>
+          Micron stock jumps 9% as soaring prices from memory crunch lead to quadrupling of revenue
+          <div class="translation">翻译：美光股价上涨9%，因为内存紧缩导致价格飙升，营收翻了两番。</div>
         </blockquote>
         <blockquote class="quote">
-          SK Hynix Seeks $29 Billion With US Listing to Fund AI Boom
-          <div class="translation">翻译：SK海力士寻求通过美国上市筹集290亿美元以资助AI繁荣。</div>
+          I sold this call when MU was at $470 resistance 2 months ago and everyone was screaming “Top, TOP!, cyclical, Cyclical” and i thought it will never break $500.
+          <div class="translation">翻译：2个月前美光在470美元阻力位时我卖出了这份看涨期权，当时所有人都喊着“到顶了，到顶了！周期股，周期股！”，我以为它永远不会突破500美元。</div>
         </blockquote>
         <blockquote class="quote">
-          SK Hynix ADR Hits Nasdaq on July 10
-          <div class="translation">翻译：SK海力士ADR将于7月10日在纳斯达克上市。</div>
+          Micron tops Q3 earnings estimates, offers better-than-expected outlook and declares dividend
+          <div class="translation">翻译：美光第三季度盈利超出预期，提供了好于预期的前景并宣布派发股息。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">3. MSTR (MicroStrategy)</div>
+        <blockquote class="quote">
+          MSTR is currently sitting on a $12.5B unrealized loss, exceeding the largest trading loss in history (Bill Hwang/Archegos) by $2.5B
+          <div class="translation">翻译：MSTR目前正承受125亿美元的未实现亏损，这已经超过了历史上最大的交易亏损（Bill Hwang/Archegos）25亿美元。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">4. ASTS (AST SpaceMobile)</div>
+        <blockquote class="quote">
+          Every single one of you will regret seeing this post and NOT buying at this generational wealth-making opportunity of a life time.
+          <div class="translation">翻译：你们每一个人都会后悔看到这个帖子却没有抓住这个一生难遇的世代财富创造机会。</div>
         </blockquote>
       </li>
     </ul>
 
     <h2>3. 小众公司冒泡</h2>
-    <!-- 根据核心规则，数据池中未发现符合“小众公司冒泡”标准的单一上市公司高质量引用，故此部分不展示。 -->
+    <!-- 依据核心规则，数据池中未发现符合“小众公司冒泡”定义的已上市公司。 -->
 
     <h2>4. AI主线讨论</h2>
+    <div class="track-header">模型 (Model)</div>
+    <div class="track-header">算 (Compute)</div>
+    <div class="track-header">光 (Optics)</div>
+    <div class="track-header">存 (Storage)</div>
     <ul>
-      <li class="ai-category-item">
-        <div class="track-header">模型 (Model)</div>
+      <li>
         <blockquote class="quote">
-          <!-- 暂无直接提及AI模型本身的讨论。 -->
-          No specific discussion on AI models themselves.
-          <div class="translation">翻译：暂无直接提及AI模型本身的讨论。</div>
+          Micron stock jumps 9% as soaring prices from memory crunch lead to quadrupling of revenue
+          <div class="translation">翻译：美光股价上涨9%，因为内存紧缩导致价格飙升，营收翻了两番。</div>
         </blockquote>
       </li>
-      <li class="ai-category-item">
-        <div class="track-header">算 (Compute)</div>
+      <li>
         <blockquote class="quote">
-          JAPAN JUST ANNOUNCED A $2.3 TRILLION INVESTMENT PLAN FOR AI AND SEMICONDUCTORS OVER THE NEXT 14 YEARS Prime Minister Sanae Takaichi just unveiled the roadmap covering the period through fiscal 2040. The bulk of the AI and chip spending goes toward semiconductors.
-          <div class="translation">翻译：日本刚刚宣布了一项未来14年内2.3万亿美元的AI和半导体投资计划。首相高市早苗刚刚公布了截至2040财年的路线图。AI和芯片支出的主要部分流向半导体。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The market has spent the last two years focusing on compute demand, GPU shortages, datacenter buildouts, and capex announcements.
-          <div class="translation">翻译：过去两年，市场一直关注计算需求、GPU短缺、数据中心建设和资本支出公告。</div>
+          Micron tops Q3 earnings estimates, offers better-than-expected outlook and declares dividend
+          <div class="translation">翻译：美光第三季度盈利超出预期，提供了好于预期的前景并宣布派发股息。</div>
         </blockquote>
       </li>
-      <li class="ai-category-item">
-        <div class="track-header">光 (Optics)</div>
+      <li>
         <blockquote class="quote">
-          <!-- 暂无直接提及光通信、光模块等相关讨论。 -->
-          No specific discussion on optics or photonics.
-          <div class="translation">翻译：暂无直接提及光通信、光模块等相关讨论。</div>
-        </blockquote>
-      </li>
-      <li class="ai-category-item">
-        <div class="track-header">存 (Storage)</div>
-        <blockquote class="quote">
-          SK Hynix Seeks $29 Billion With US Listing to Fund AI Boom
-          <div class="translation">翻译：SK海力士寻求通过美国上市筹集290亿美元以资助AI繁荣。</div>
-        </blockquote>
-      </li>
-      <li class="ai-category-item">
-        <div class="track-header">电 (Power)</div>
-        <blockquote class="quote">
-          <!-- 暂无直接提及AI电力基础设施的讨论。 -->
-          No specific discussion on AI power infrastructure.
-          <div class="translation">翻译：暂无直接提及AI电力基础设施的讨论。</div>
-        </blockquote>
-      </li>
-      <li class="ai-category-item">
-        <div class="track-header">板 (Boards/Substrates)</div>
-        <blockquote class="quote">
-          <!-- 暂无直接提及AI服务器主板、PCB等相关讨论。 -->
-          No specific discussion on AI server boards or PCBs.
-          <div class="translation">翻译：暂无直接提及AI服务器主板、PCB等相关讨论。</div>
-        </blockquote>
-      </li>
-      <li class="ai-category-item">
-        <div class="track-header">云 (Cloud)</div>
-        <blockquote class="quote">
-          The black line tracks a basket of AI hyperscaler stocks.
-          <div class="translation">翻译：黑线追踪的是一篮子AI超大规模云服务商股票。</div>
-        </blockquote>
-      </li>
-      <li class="ai-category-item">
-        <div class="track-header">AI应用 (AI Applications)</div>
-        <blockquote class="quote">
-          The bulk of the AI and chip spending goes toward semiconductors and vertical AI built for specific industries.
-          <div class="translation">翻译：AI和芯片支出的主要部分流向半导体和为特定行业构建的垂直AI。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Lower token prices are great for users. They make AI cheaper and accelerate adoption. But, they also put pressure on pricing power across the AI ecosystem.
-          <div class="translation">翻译：较低的代币价格对用户有利。它们使AI更便宜并加速采用。但它们也对整个AI生态系统的定价权构成压力。</div>
-        </blockquote>
-        <blockquote class="quote">
-          For companies like NVDA, MU, AVGO, and the hyperscalers themselves, AI monetization is becoming one of the most important variables to watch.
-          <div class="translation">翻译：对于像英伟达（NVDA）、美光（MU）、博通（AVGO）以及超大规模云服务商本身等公司来说，AI变现能力正成为最重要的观察变量之一。</div>
+          SK Hynix surges 11% after filing for blockbuster Nasdaq listing
+          <div class="translation">翻译：SK海力士在提交重磅纳斯达克上市申请后股价飙升11%。</div>
         </blockquote>
       </li>
     </ul>
+    <div class="track-header">电 (Power)</div>
+    <div class="track-header">板 (PCB/Boards)</div>
+    <div class="track-header">云 (Cloud)</div>
+    <div class="track-header">AI应用 (AI Applications)</div>
 
 </body>
 </html>
@@ -223,7 +159,7 @@
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
                     detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n恐慌', color: '#fff' },
-                    data: [{ value: 28 }]
+                    data: [{ value: 25 }]
                 }]
             });
         </script>
