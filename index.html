@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>06月26日 情报终端</title>
+        <title>06月27日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,125 +36,161 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 06月26日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-06-26 23:08:52 (北京时间)</p>
+            <h1>🎯 06月27日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-06-27 12:32:21 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit 美股市场情绪分析 (2026年06月26日)</title>
+    <title>Reddit 美股市场情绪分析 (2026年06月27日)</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
-        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 40px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; margin: 20px; color: #333; background-color: #f9f9f9; }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
         ul { list-style: none; padding: 0; }
-        li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 15px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #3498db; margin-bottom: 10px; font-size: 1.1em; }
-        .quote { margin: 10px 0 0; padding: 10px 15px; background-color: #ecf0f1; border-left: 4px solid #95a5a6; border-radius: 4px; font-style: italic; color: #555; }
-        .quote .translation { margin-top: 10px; font-style: normal; color: #2c3e50; font-size: 0.95em; }
-        .track-header { font-weight: bold; color: #2980b9; margin-top: 20px; margin-bottom: 10px; font-size: 1.05em; border-bottom: 1px dashed #a0c4e0; padding-bottom: 5px; }
-        p { margin-bottom: 10px; }
+        li { background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .stock-tag { font-weight: bold; font-size: 1.1em; color: #0056b3; margin-bottom: 10px; }
+        .quote { font-style: italic; color: #555; background-color: #f0f4f7; padding: 10px 15px; border-left: 4px solid #007bff; border-radius: 4px; margin-top: 10px; }
+        .translation { font-size: 0.9em; color: #777; margin-top: 5px; }
+        .track-header { font-weight: bold; font-size: 1.05em; color: #1a73e8; margin-top: 20px; margin-bottom: 10px; padding-left: 5px; border-left: 3px solid #1a73e8; }
     </style>
 </head>
 <body>
-
-    <h1>Reddit 美股市场情绪分析 (2026年06月26日)</h1>
+    <h1>Reddit 美股市场情绪分析 (2026年06月27日)</h1>
 
     <h2>1. 宏观与市场情绪</h2>
-    <p>市场情绪普遍悲观，存在对“AI泡沫”的担忧，同时伴随着普遍的资本损失。亚洲市场出现大幅下跌，韩国KOSPI指数暴跌8%并触发熔断，外资连续多日净卖出。油价跌至伊朗战争前水平，软件板块也遭遇重挫，投资者感叹数年收益可能在一周内付诸东流，显示出对未来市场走向的深度担忧。</p>
-    <blockquote class="quote">
-      The sad little bubble that couldn't
-      <div class="translation">翻译：这个悲伤的小泡沫未能如愿。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Butterfly effect: caused the AI bubble
-      <div class="translation">翻译：蝴蝶效应：导致了AI泡沫。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Capital loss ~733k.
-      <div class="translation">翻译：资本损失约73.3万美元。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Oil price falls to levels not seen since before Iran war
-      <div class="translation">翻译：油价跌至伊朗战争前的水平。</div>
-    </blockquote>
-    <blockquote class="quote">
-      KOSPI plunges 8% as foreigners dump shares, triggering circuit breaker | Foreign investors have continued net selling on the KOSPI for six consecutive sessions through that day.
-      <div class="translation">翻译：KOSPI指数暴跌8%，因外国投资者抛售股票，触发熔断机制 | 外国投资者通过当天已连续六个交易日对KOSPI指数进行净卖出。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Thursday 6/26/26 Asia Markets Red Everywhere
-      <div class="translation">翻译：2026年6月26日星期四，亚洲市场全线飘红。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Literally years of protecting capital than "poof" in one week, a year of gains is gone.
-      <div class="translation">翻译：真的是几年小心翼翼地保护资本，然后“噗”的一声，一周内一年的收益就没了。</div>
-    </blockquote>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          Back in my days we used to have proper asset bubbles.
+          <div class="translation">翻译：在我那个年代，我们曾有过真正的资产泡沫。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Just before the market closed today, there was a sudden drop in SPY to $716.58.
+          <div class="translation">翻译：就在今天市场收盘前，SPY突然跌至716.58美元。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          But the price immediately climbed to the current levels of around $731.
+          <div class="translation">翻译：但价格立即回升至目前731美元左右的水平。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Chinese margin calls must be next level.
+          <div class="translation">翻译：中国的保证金追缴一定是史无前例的。</div>
+        </blockquote>
+      </li>
+    </ul>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
       <li>
-        <div class="stock-tag">WEN (Wendy's Co.)</div>
+        <div class="stock-tag">MU (美光科技)</div>
         <blockquote class="quote">
-          WEN TO THE MOON!
-          <div class="translation">翻译：WEN要涨到月亮上去！</div>
+          MU will be an easy 2K stock by end of this year.
+          <div class="translation">翻译：美光科技到今年年底将轻松达到2000美元。</div>
         </blockquote>
         <blockquote class="quote">
-          Wendy’s Temporarily Halted | Bullish
-          <div class="translation">翻译：温蒂汉堡暂时停牌 | 看涨。</div>
-        </blockquote>
-        <blockquote class="quote">
-          500k in, WEN can I start my shift?
-          <div class="translation">翻译：投入50万美元，温蒂汉堡什么时候我能开始上班？</div>
+          Is literally free money.
+          <div class="translation">翻译：简直是白送的钱。</div>
         </blockquote>
       </li>
       <li>
-        <div class="stock-tag">MSFT (Microsoft Corp.)</div>
+        <div class="stock-tag">WEN (温迪)</div>
         <blockquote class="quote">
-          Microsoft is at a major support line. Going full regard here!
-          <div class="translation">翻译：微软正处于一个重要的支撑位。我在这里全力投入！</div>
+          I downloaded the app (currently ranked 22nd in food and drink in the App Store and created an account.
+          <div class="translation">翻译：我下载了Wendy's的应用（目前在App Store的餐饮类别中排名第22位），并创建了一个账户。</div>
         </blockquote>
         <blockquote class="quote">
-          Looking for at least $415 to test that channel resistance again.
-          <div class="translation">翻译：期待至少涨到415美元，再次测试该通道阻力位。</div>
+          The place was clean, workers seemed busy, and the frosty was good (chocolate).
+          <div class="translation">翻译：店内很干净，员工看起来很忙碌，冰沙（巧克力味）也很好吃。</div>
         </blockquote>
         <blockquote class="quote">
-          How are we all feeling about MSFT here? I have a feeling there will be a game changing announcement soon.
-          <div class="translation">翻译：大家对微软感觉如何？我感觉很快会有改变游戏规则的声明。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">GME (GameStop Corp.)</div>
-        <blockquote class="quote">
-          GameStop's Cohen nixes $35B bonus plan in favor of eBay bid.
-          <div class="translation">翻译：GameStop的科恩放弃了350亿美元的奖金计划，转而支持eBay竞购。</div>
+          I left at 12:23pm and counted 35 cars with 18 people walking inside.
+          <div class="translation">翻译：我在中午12:23离开，数到有35辆车和18人步行进入店内。</div>
         </blockquote>
         <blockquote class="quote">
-          The GameStop CEO withdrew a sizable bonus plan in order to focus on the company's "operating performance and its proposed eBay acquisition."
-          <div class="translation">翻译：GameStop首席执行官撤回了一项可观的奖金计划，以专注于公司的“经营业绩及其拟议中的eBay收购”。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Cohen would only have received the maximum bonus if GameStop reached a market cap of $100 billion — leading some to wonder whether it was, in fact, the impetus for the eBay bid.
-          <div class="translation">翻译：科恩只有在GameStop市值达到1000亿美元时才能获得最高奖金——这让一些人怀疑，这是否实际上是促成eBay竞购的动因。</div>
+          In Unknown Market Wizards, Chris Camillo made a lot of money betting on call options when Wendy’s when the original pretzel bacon cheeseburger came out in 2013.
+          <div class="translation">翻译：在《未知的市场巫师》中，Chris Camillo在2013年Wendy's推出最初的椒盐培根芝士汉堡时，通过押注看涨期权赚了很多钱。</div>
         </blockquote>
       </li>
       <li>
-        <div class="stock-tag">MSTR (MicroStrategy Inc.)</div>
+        <div class="stock-tag">BABA (阿里巴巴)</div>
         <blockquote class="quote">
-          Exited my MSTR short today - at the height I was up around $300k.
-          <div class="translation">翻译：今天平仓了我的MSTR空头头寸——最高时我盈利约30万美元。</div>
+          Personally for me it's gotta be $BABA.
+          <div class="translation">翻译：对我个人而言，它非阿里巴巴莫属。</div>
         </blockquote>
         <blockquote class="quote">
-          The claims they would make on that sub while they continued to be diluted and scammed made me go all in on MSTZ.
-          <div class="translation">翻译：他们在那个子论坛上做的那些声明，以及他们持续被稀释和诈骗，让我全力做空MSTZ。</div>
+          Currently down around ~40%.
+          <div class="translation">翻译：目前下跌了约40%。</div>
+        </blockquote>
+        <blockquote class="quote">
+          I don't see any reason for it to increase in the short term.
+          <div class="translation">翻译：我看不出它短期内有任何上涨的理由。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Perhaps if relations with China get better in the future, but I doubt it.
+          <div class="translation">翻译：也许未来中美关系会好转，但我对此表示怀疑。</div>
         </blockquote>
       </li>
       <li>
-        <div class="stock-tag">NVDA (Nvidia Corp.)</div>
+        <div class="stock-tag">NVDA (英伟达)</div>
         <blockquote class="quote">
           Nvidia's Five Most Senior Officers Sold on the Same Day.
           <div class="translation">翻译：英伟达的五位最高级管理人员在同一天抛售了股票。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">MSTR (微策略)</div>
+        <blockquote class="quote">
+          Exited my MSTR short today - at the height I was up around $300k.
+          <div class="translation">翻译：我今天平仓了我的微策略空头仓位——在最高点时我赚了大约30万美元。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The claims they would make on that sub while they continued to be diluted and scammed made me go all in on MSTZ.
+          <div class="translation">翻译：他们在那个子版块里所做的声称，以及他们持续被稀释和欺骗的情况，促使我全力做空微策略。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">BB (黑莓)</div>
+        <blockquote class="quote">
+          I know most people still hear “BlackBerry” and think old phones, but that is not what this company is anymore.
+          <div class="translation">翻译：我知道大多数人听到“黑莓”时仍然会想到老式手机，但这家公司已不再是那样了。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The real story is QNX, embedded software, secure communications, auto, robotics, industrial systems, and mission-critical operating systems.
+          <div class="translation">翻译：真正的故事是QNX、嵌入式软件、安全通信、汽车、机器人、工业系统以及任务关键型操作系统。</div>
+        </blockquote>
+        <blockquote class="quote">
+          BlackBerry’s most recent quarter showed real progress.
+          <div class="translation">翻译：黑莓最近一个季度显示出真实进展。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Revenue was about $153M, up roughly 26% year-over-year.
+          <div class="translation">翻译：营收约为1.53亿美元，同比增长约26%。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">MRVL (迈威尔科技)</div>
+        <blockquote class="quote">
+          Now I’m about $100k in (down 20%) and praying Marvell turns around before expiring OTM.
+          <div class="translation">翻译：我现在投入了大约10万美元（亏损20%），祈祷迈威尔科技能在期权到期前反弹。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">AAPL (苹果)</div>
+        <blockquote class="quote">
+          Full ported my retirement account on Apple $290cc yesterday after that massive dip.
+          <div class="translation">翻译：昨天在苹果股价大幅下跌后，我将养老金账户全部投入了苹果的290美元看涨期权。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Sold today after 100% gains right before market close timed Apple at $285.
+          <div class="translation">翻译：今天在市场收盘前，苹果股价在285美元时，我以100%的收益卖出。</div>
         </blockquote>
       </li>
     </ul>
@@ -162,48 +198,55 @@
     <h2>3. 小众公司冒泡</h2>
     <ul>
       <li>
-        <div class="stock-tag">SAMSUNG (Samsung Electronics Co., Ltd.)</div>
+        <div class="stock-tag">TMUS (T-Mobile US)</div>
         <blockquote class="quote">
-          Samsung to invest 1/3 of South Korea's GDP into chips and AI
-          <div class="translation">翻译：三星将把韩国GDP的三分之一投资于芯片和人工智能领域。</div>
+          SpaceX might have to acquire T-Mobile for as much as $320 billion to break the carrier-led chokehold over terrestrial spectrum.
+          <div class="translation">翻译：SpaceX可能需要斥资高达3200亿美元收购T-Mobile，才能打破运营商对地面频谱的垄断。</div>
         </blockquote>
       </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型</div>
-    <blockquote class="quote">
-      OpenAI's IPO might be delayed to 2027
-      <div class="translation">翻译：OpenAI的首次公开募股（IPO）可能会推迟到2027年。</div>
-    </blockquote>
-    <div class="track-header">算</div>
-    <blockquote class="quote">
-      Samsung to invest 1/3 of South Korea's GDP into chips and AI
-      <div class="translation">翻译：三星将把韩国GDP的三分之一投资于芯片和人工智能领域。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Nvidia's Five Most Senior Officers Sold on the Same Day.
-      <div class="translation">翻译：英伟达的五位最高级管理人员在同一天抛售了股票。</div>
-    </blockquote>
-    <div class="track-header">光</div>
-    <div class="translation">翻译：暂无相关讨论。</div>
-    <div class="track-header">存</div>
-    <div class="translation">翻译：暂无相关讨论。</div>
-    <div class="track-header">电</div>
-    <div class="translation">翻译：暂无相关讨论。</div>
-    <div class="track-header">板</div>
-    <div class="translation">翻译：暂无相关讨论。</div>
-    <div class="track-header">云</div>
-    <blockquote class="quote">
-      I have a feeling there will be a game changing announcement soon.
-      <div class="translation">翻译：我感觉很快会有改变游戏规则的声明。</div>
-    </blockquote>
-    <div class="track-header">AI应用</div>
-    <blockquote class="quote">
-      Samsung to invest 1/3 of South Korea's GDP into chips and AI
-      <div class="translation">翻译：三星将把韩国GDP的三分之一投资于芯片和人工智能领域。</div>
-    </blockquote>
-
+    <ul>
+      <li>
+        <div class="track-header">模型</div>
+        <blockquote class="quote">
+          Trump admin allows Anthropic to release Mythos AI model to some companies, government agencies.
+          <div class="translation">翻译：特朗普政府允许Anthropic向部分公司和政府机构发布其Mythos AI模型。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">算</div>
+        <!-- 无相关引用 -->
+      </li>
+      <li>
+        <div class="track-header">光</div>
+        <!-- 无相关引用 -->
+      </li>
+      <li>
+        <div class="track-header">存</div>
+        <!-- 无相关引用 -->
+      </li>
+      <li>
+        <div class="track-header">电</div>
+        <!-- 无相关引用 -->
+      </li>
+      <li>
+        <div class="track-header">板</div>
+        <!-- 无相关引用 -->
+      </li>
+      <li>
+        <div class="track-header">云</div>
+        <!-- 无相关引用 -->
+      </li>
+      <li>
+        <div class="track-header">AI应用</div>
+        <blockquote class="quote">
+          Trump admin allows Anthropic to release Mythos AI model to some companies, government agencies.
+          <div class="translation">翻译：特朗普政府允许Anthropic向部分公司和政府机构发布其Mythos AI模型。</div>
+        </blockquote>
+      </li>
+    </ul>
 </body>
 </html>
         </div>
@@ -214,8 +257,8 @@
                     type: 'gauge', startAngle: 180, endAngle: 0, min: 0, max: 100, radius: '100%', center: ['50%', '75%'],
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
-                    detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n恐慌', color: '#fff' },
-                    data: [{ value: 25 }]
+                    detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n极度恐慌', color: '#fff' },
+                    data: [{ value: 24 }]
                 }]
             });
         </script>
