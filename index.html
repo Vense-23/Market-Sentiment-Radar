@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>06月29日 情报终端</title>
+        <title>06月30日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,186 +36,193 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 06月29日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-06-29 13:10:05 (北京时间)</p>
+            <h1>🎯 06月30日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-06-30 00:23:10 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股量化分析：Reddit市场情绪（2026年06月29日）</title>
+    <title>Reddit美股市场情绪分析 (2026年06月30日)</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f4f7f6; }
-        h1, h2 { color: #2c3e50; border-bottom: 2px solid #eceff1; padding-bottom: 10px; margin-top: 30px; }
-        h2 { font-size: 1.8em; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 960px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
+        h1, h2, h3 { color: #2c3e50; margin-top: 30px; margin-bottom: 15px; }
+        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
         ul { list-style: none; padding: 0; }
-        li { background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #007bff; font-size: 1.2em; margin-bottom: 10px; }
-        .quote { font-style: italic; border-left: 4px solid #ced4da; padding-left: 15px; margin: 15px 0; color: #555; }
-        .translation { font-style: normal; color: #777; margin-top: 10px; font-size: 0.9em; }
-        .track-header { font-weight: bold; color: #0056b3; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; }
-        .empty-section { color: #888; font-style: italic; margin-left: 20px; }
+        li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .stock-tag { font-weight: bold; font-size: 1.1em; color: #0056b3; margin-bottom: 10px; }
+        .quote { background-color: #e9f7ef; border-left: 4px solid #4CAF50; margin: 10px 0; padding: 10px 15px; font-style: italic; color: #333; }
+        .translation { margin-top: 5px; font-size: 0.9em; color: #555; }
+        .track-header { font-weight: bold; font-size: 1.1em; color: #d35400; margin-top: 20px; margin-bottom: 10px; }
     </style>
 </head>
 <body>
-
-    <h1>Reddit市场情绪洞察 (2026年06月29日)</h1>
+    <h1>Reddit美股市场情绪分析 (2026年06月30日)</h1>
 
     <h2>1. 宏观与市场情绪</h2>
     <ul>
-        <li>
-            <blockquote class="quote">
-                US, Iran Halt Strikes Ahead of Tuesday Talks
-                <div class="translation">翻译：美国和伊朗在周二会谈前停止袭击。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Trump again threatens Iran with annihilation as Kuwait and Bahrain report attacks
-                <div class="translation">翻译：科威特和巴林报告遭到袭击之际，特朗普再次威胁要歼灭伊朗。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                KOSPI opens 3% lower as financial regulators indefinitely postpone the launch of weekly options.
-                <div class="translation">翻译：韩国综合股价指数（KOSPI）开盘下跌3%，此前金融监管机构无限期推迟推出每周期权。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                The market can remain irrational longer than I can remain solvent.
-                <div class="translation">翻译：市场保持非理性状态的时间可能比我保持偿付能力的时间更长。</div>
-            </blockquote>
-        </li>
+      <li>
+        <blockquote class="quote">
+          US, Iran Halt Strikes Ahead of Tuesday Talks
+          <div class="translation">翻译：美国和伊朗在周二会谈前暂停袭击。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Trump threatens Iran with annihilation as Kuwait and Bahrain report attacks
+          <div class="translation">翻译：据科威特和巴林报道，特朗普再次威胁伊朗将被歼灭。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          KOSPI opens 3% lower as financial regulators indefinitely postpone the launch of weekly options.
+          <div class="translation">翻译：韩国综合股价指数（KOSPI）低开3%，此前金融监管机构无限期推迟了每周期权的推出。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The market remained irrational longer than I remained solvent
+          <div class="translation">翻译：市场保持非理性状态的时间比我保持偿付能力的时间更长。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
-        <li>
-            <div class="stock-tag">CEG (Constellation Energy)</div>
-            <blockquote class="quote">
-                We all know tech hyperscalers are buying up nuclear energy like candy for their AI data centers.
-                <div class="translation">翻译：我们都知道科技超大规模公司正在像买糖果一样购买核能，以满足他们的AI数据中心需求。</div>
-            </blockquote>
-            <blockquote class="quote">
-                The retail king itself, Walmart ($WMT), just signed its first-ever 15-year nuclear PPA with Constellation Energy ($CEG).
-                <div class="translation">翻译：零售巨头沃尔玛（$WMT）刚刚与Constellation Energy（$CEG）签署了其首个为期15年的核电购电协议（PPA）。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Walmart isn't just selling cheap organic bananas anymore; they are buying 176 MW of raw, emissions-free nuclear juice from the Dresden plant just to power their high-tech logistics centers.
-                <div class="translation">翻译：沃尔玛不再只是销售便宜的有机香蕉；他们正在从德累斯顿核电站购买176兆瓦的原始、零排放核电，仅用于为其高科技物流中心供电。</div>
-            </blockquote>
-            <blockquote class="quote">
-                The stock pulled back recently, making it look heavily undervalued.
-                <div class="translation">翻译：该股近期回调，使其看起来被严重低估。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">WEN (Wendy's)</div>
-            <blockquote class="quote">
-                Wendy's is the third largest fast-food burger chain in the world with 7,251 locations globally at the end of Q1 2026.
-                <div class="translation">翻译：截至2026年第一季度末，Wendy's是全球第三大快餐汉堡连锁店，在全球拥有7,251家门店。</div>
-            </blockquote>
-            <blockquote class="quote">
-                While all profitability metrics fell in 2025 and are expected to again in 2026, they're still producing significant amounts of free cash flow, and revenue actually grew 3.3% in Q1.
-                <div class="translation">翻译：尽管所有盈利指标在2025年均有所下降，并预计在2026年再次下降，但它们仍在产生大量的自由现金流，并且第一季度收入实际增长了3.3%。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Same store sales fell slightly by ~3-4% in 2025, and are expected to be roughly flat in 2026.
-                <div class="translation">翻译：2025年同店销售额略微下降约3-4%，预计2026年将大致持平。</div>
-            </blockquote>
-            <blockquote class="quote">
-                They have a lot of debt, the interest coverage ratio is only 2.5x. While not ideal, it's not some kind of emergency.
-                <div class="translation">翻译：他们负债累累，利息覆盖率仅为2.5倍。虽然不理想，但这并非紧急情况。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">COIN (Coinbase)</div>
-            <blockquote class="quote">
-                Cathie Wood Invests $11.5 Million in Coinbase as Crypto Stock Slumps
-                <div class="translation">翻译：随着加密货币股票下跌，凯西·伍德向Coinbase投资了1150万美元。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Brian Armstrong from Coinbase tweeted that "80% of workloads will be running in 99% cheaper models within a year", and mentioned Coinbase was actively moving workflows to cheaper models.
-                <div class="translation">翻译：Coinbase的Brian Armstrong发推文称，“80%的工作负载将在一年内运行在便宜99%的模型上”，并提到Coinbase正在积极将工作负载转移到更便宜的模型。</div>
-            </blockquote>
-        </li>
+      <li>
+        <div class="stock-tag">BB (BlackBerry Limited)</div>
+        <blockquote class="quote">
+          BlackBerry wasn’t a phone company anymore.
+          <div class="translation">翻译：黑莓不再是一家手机公司了。</div>
+        </blockquote>
+        <blockquote class="quote">
+          QNX. Cybersecurity. Government contracts. AI. Embedded software. The story is finally catching up to the price.
+          <div class="translation">翻译：QNX。网络安全。政府合同。人工智能。嵌入式软件。这个故事终于与价格相符。</div>
+        </blockquote>
+        <blockquote class="quote">
+          People underestimate Blackberry's QNX operating system as a secure RTOS (Real-Time Operating System) based on a deterministic microkernel architecture.
+          <div class="translation">翻译：人们低估了黑莓的QNX操作系统，它是一个基于确定性微内核架构的安全实时操作系统。</div>
+        </blockquote>
+        <blockquote class="quote">
+          QNX adoption has not stopped it has expanded into new markets. This includes physical AI and AI at the edge.
+          <div class="translation">翻译：QNX的采用并未停止，它已扩展到新市场。这包括物理AI和边缘AI。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">NFLX (Netflix Inc.)</div>
+        <blockquote class="quote">
+          Netflix gets my life savings here.
+          <div class="translation">翻译：我把所有积蓄都投给了Netflix。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Way oversold. Run up to 90 before earnings.
+          <div class="translation">翻译：超卖严重。在财报发布前有望涨到90。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">CEG (Constellation Energy Corporation)</div>
+        <blockquote class="quote">
+          We all know tech hyperscalers are buying up nuclear energy like candy for their AI data centers.
+          <div class="translation">翻译：我们都知道科技巨头们正像抢糖果一样抢购核能，以供他们的人工智能数据中心使用。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The retail king itself, Walmart ($WMT), just signed its first-ever 15-year nuclear PPA with Constellation Energy ($CEG).
+          <div class="translation">翻译：零售巨头沃尔玛（$WMT）刚刚与星座能源（$CEG）签署了其首份为期15年的核电采购协议（PPA）。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Walmart isn't just selling cheap organic bananas anymore; they are buying 176 MW of raw, emissions-free nuclear juice from the Dresden plant just to power their high-tech logistics centers.
+          <div class="translation">翻译：沃尔玛不再仅仅是销售廉价有机香蕉；他们正在从德累斯顿核电站购买176兆瓦的原始、零排放核能，以支持他们的高科技物流中心。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The stock pulled back recently, making it look heavily undervalued.
+          <div class="translation">翻译：该股票最近回调，使其看起来被严重低估。</div>
+        </blockquote>
+      </li>
     </ul>
 
-    <h2>3. 小众公司冒泡</h2>
-    <ul>
-        <li>
-            <div class="stock-tag">SLS (Sellas Life Sciences)</div>
-            <blockquote class="quote">
-                after reading DD from much smarter people, looking at the math, the ongoing trial, and now the key leaders compensation restructuring to favor a BO I'm more convinced then ever.
-                <div class="translation">翻译：在阅读了更聪明的人的尽职调查，审视了数据，了解了正在进行的试验，以及现在关键领导层薪酬重组以利于被收购后，我比以往任何时候都更加确信。</div>
-            </blockquote>
-        </li>
-    </ul>
+    <!-- <h2>3. 小众公司冒泡</h2> -->
+    <!-- 根据核心规则，由于数据池中未发现符合质量过滤和聚合深挖要求的小众公司，此板块予以省略。 -->
 
     <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型</div>
     <ul>
-        <li>
-            <blockquote class="quote">
-                Google limits Meta’s use of its Gemini AI models, FT reports
-                <div class="translation">翻译：据《金融时报》报道，谷歌限制了Meta对其Gemini AI模型的使用。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Companies are migrating to Open Source models at a fraction of the cost of the big boys, and China is offering comparative models for far less $$ if you need that sort of thing.
-                <div class="translation">翻译：公司正在以远低于大型供应商的成本迁移到开源模型，如果你需要那种东西，中国正在以更低的美元提供类似的模型。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                The founder of Lindy AI, a productivity assistant chatbot company, announced that they moved their entire app AI service from Claude to DeepSeek, claiming savings of millions of dollars and improved performance.
-                <div class="translation">翻译：生产力助手聊天机器人公司Lindy AI的创始人宣布，他们已将其整个应用程序AI服务从Claude迁移到DeepSeek，声称节省了数百万美元并提升了性能。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Brian Armstrong from Coinbase tweeted that "80% of workloads will be running in 99% cheaper models within a year", and mentioned Coinbase was actively moving workflows to cheaper models.
-                <div class="translation">翻译：Coinbase的Brian Armstrong发推文称，“80%的工作负载将在一年内运行在便宜99%的模型上”，并提到Coinbase正在积极将工作负载转移到更便宜的模型。</div>
-            </blockquote>
-        </li>
+      <li>
+        <div class="track-header">模型 (Models)</div>
+        <blockquote class="quote">
+          Companies are migrating to Open Source models at a fraction of the cost of the big boys, and China is offering comparative models for far less $$ if you need that sort of thing...
+          <div class="translation">翻译：公司正在以大公司成本的一小部分迁移到开源模型，如果你需要这类模型，中国也提供价格低廉的同类模型...</div>
+        </blockquote>
+        <blockquote class="quote">
+          The founder of Lindy AI, a productivity assistant chatbot company, announced that they moved their entire app AI service from Claude to DeepSeek, claiming savings of millions of dollars and improved performance
+          <div class="translation">翻译：生产力助手聊天机器人公司Lindy AI的创始人宣布，他们将整个应用程序的AI服务从Claude迁移到DeepSeek，声称节省了数百万美元并提升了性能。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Brian Armstrong from Coinbase tweeted that "80% of workloads will be running in 99% cheaper models within a year", and mentioned Coinbase was actively moving workflows to cheaper models
+          <div class="translation">翻译：Coinbase的Brian Armstrong在推特上表示，“80%的工作负载将在一年内运行在便宜99%的模型上”，并提到Coinbase正在积极将工作流程迁移到更便宜的模型。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">算 (Compute)</div>
+        <blockquote class="quote">
+          (目前数据池中没有关于AI算力硬件的直接讨论。)
+          <div class="translation">翻译：(No direct discussion on AI compute hardware in the current data pool.)</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">光 (Optics)</div>
+        <blockquote class="quote">
+          (目前数据池中没有关于AI光模块的直接讨论。)
+          <div class="translation">翻译：(No direct discussion on AI optical modules in the current data pool.)</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">存 (Storage)</div>
+        <blockquote class="quote">
+          (目前数据池中没有关于AI存储的直接讨论。)
+          <div class="translation">翻译：(No direct discussion on AI storage in the current data pool.)</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">电 (Power)</div>
+        <blockquote class="quote">
+          We all know tech hyperscalers are buying up nuclear energy like candy for their AI data centers.
+          <div class="translation">翻译：我们都知道科技巨头们正像抢糖果一样抢购核能，以供他们的人工智能数据中心使用。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Walmart isn't just selling cheap organic bananas anymore; they are buying 176 MW of raw, emissions-free nuclear juice from the Dresden plant just to power their high-tech logistics centers.
+          <div class="translation">翻译：沃尔玛不再仅仅是销售廉价有机香蕉；他们正在从德累斯顿核电站购买176兆瓦的原始、零排放核能，以支持他们的高科技物流中心。</div>
+        </blockquote>
+        <blockquote class="quote">
+          If large-scale retail giants are starting to compete with AI companies for 24/7 clean baseload power, uranium and nuclear stocks are going to the actual moon.
+          <div class="translation">翻译：如果大型零售巨头开始与AI公司争夺24/7的清洁基载电力，那么铀和核能股票将会一飞冲天。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">板 (Boards)</div>
+        <blockquote class="quote">
+          (目前数据池中没有关于AI板卡的直接讨论。)
+          <div class="translation">翻译：(No direct discussion on AI boards in the current data pool.)</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">云 (Cloud)</div>
+        <blockquote class="quote">
+          (目前数据池中没有关于AI云服务的直接讨论。)
+          <div class="translation">翻译：(No direct discussion on AI cloud services in the current data pool.)</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">AI应用 (AI Applications)</div>
+        <blockquote class="quote">
+          QNX adoption has not stopped it has expanded into new markets. This includes physical AI and AI at the edge.
+          <div class="translation">翻译：QNX的采用并未停止，它已扩展到新市场。这包括物理AI和边缘AI。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Certain robotic functions, currently operating in largely unregulated environments, are increasingly subject to new safety standards.
+          <div class="translation">翻译：目前在很大程度上不受监管环境下运行的某些机器人功能，正日益受到新的安全标准的约束。</div>
+        </blockquote>
+      </li>
     </ul>
-    <div class="track-header">算</div>
-    <div class="empty-section">暂无相关讨论。</div>
-    <div class="track-header">光</div>
-    <div class="empty-section">暂无相关讨论。</div>
-    <div class="track-header">存</div>
-    <div class="empty-section">暂无相关讨论。</div>
-    <div class="track-header">电</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                We all know tech hyperscalers are buying up nuclear energy like candy for their AI data centers.
-                <div class="translation">翻译：我们都知道科技超大规模公司正在像买糖果一样购买核能，以满足他们的AI数据中心需求。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                The retail king itself, Walmart ($WMT), just signed its first-ever 15-year nuclear PPA with Constellation Energy ($CEG).
-                <div class="translation">翻译：零售巨头沃尔玛（$WMT）刚刚与Constellation Energy（$CEG）签署了其首个为期15年的核电购电协议（PPA）。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Walmart isn't just selling cheap organic bananas anymore; they are buying 176 MW of raw, emissions-free nuclear juice from the Dresden plant just to power their high-tech logistics centers.
-                <div class="translation">翻译：沃尔玛不再只是销售便宜的有机香蕉；他们正在从德累斯顿核电站购买176兆瓦的原始、零排放核电，仅用于为其高科技物流中心供电。</div>
-            </blockquote>
-        </li>
-    </ul>
-    <div class="track-header">板</div>
-    <div class="empty-section">暂无相关讨论。</div>
-    <div class="track-header">云</div>
-    <div class="empty-section">暂无相关讨论。</div>
-    <div class="track-header">AI应用</div>
-    <div class="empty-section">暂无相关讨论。</div>
-
 </body>
 </html>
         </div>
@@ -226,8 +233,8 @@
                     type: 'gauge', startAngle: 180, endAngle: 0, min: 0, max: 100, radius: '100%', center: ['50%', '75%'],
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
-                    detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n极度恐慌', color: '#fff' },
-                    data: [{ value: 24 }]
+                    detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n恐慌', color: '#fff' },
+                    data: [{ value: 26 }]
                 }]
             });
         </script>
