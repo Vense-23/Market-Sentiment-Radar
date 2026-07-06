@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>07月05日 情报终端</title>
+        <title>07月06日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,265 +36,223 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 07月05日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-07-05 22:16:05 (北京时间)</p>
+            <h1>🎯 07月06日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-07-06 23:59:11 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股市场情绪分析 (2026年07月05日)</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 20px; background-color: #f4f7f6; color: #333; }
-        h1, h2 { color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 30px; }
-        h2 { font-size: 1.5em; }
-        ul { list-style: none; padding: 0; }
-        li { background-color: #fff; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #007bff; margin-bottom: 10px; font-size: 1.1em; }
-        .quote { background-color: #e9f5ff; border-left: 4px solid #007bff; margin: 15px 0; padding: 10px 15px; font-style: italic; color: #555; }
-        .translation { font-size: 0.9em; color: #666; margin-top: 5px; }
-        .track-header { font-weight: bold; color: #28a745; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; }
-        .ai-quote { background-color: #f0fdf4; border-left: 4px solid #28a745; margin: 10px 0; padding: 8px 12px; font-style: italic; color: #555; }
-    </style>
-</head>
-<body>
+            <div class="market-sentiment-report">
+  <h2>1. 宏观与市场情绪</h2>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        I’ve been tracking a clear "seesaw" pattern over the last month between AI hardware/memory stocks and enterprise software. It seems like every time big money panics and dumps chip makers on a Friday due to overcapacity fears, they immediately rotate that exact cash into software stocks to protect their positions over the weekend.
+        <div class="translation">翻译：我过去一个月一直在追踪AI硬件/内存股票与企业软件之间明显的“跷跷板”模式。似乎每次大资金因产能过剩担忧而在周五抛售芯片制造商时，他们都会立即将等额资金转入软件股票，以保护他们在周末的头寸。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        What is going on with Oil prices? Hormuz is closed agian, the tankers which are leaving the gulf are not returning to the gulf. Further more Ukraine has spent the last 2 months blowing up Russian oil infrastructure, 50% of Russian refineries are off line, and export terminals in St Petersburg area were hit. Yet Oil is $70 per barrel.
+        <div class="translation">翻译：油价怎么了？霍尔木兹海峡再次关闭，离开海湾的油轮没有返回。此外，乌克兰过去两个月一直在炸毁俄罗斯石油基础设施，俄罗斯50%的炼油厂停产，圣彼得堡地区的出口码头遭到袭击。然而，油价每桶70美元。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        OPEC+ approves further oil output increase as Hormuz exports start to recover.
+        <div class="translation">翻译：欧佩克+批准进一步增产石油，因霍尔木兹出口开始恢复。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        South Korea's SK Hynix to launch $28 billion US listing to ride global AI wave.
+        <div class="translation">翻译：韩国SK海力士将进行280亿美元的美国上市，以顺应全球AI浪潮。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Single-stock leveraged and inverse ETFs tracking SK Hynix now hold ~$19 billion in total assets, more than 4 times the stock's average daily trading volume this year of ~$4.5 billion. At the same time, Samsung has ~$12.4 billion in leveraged ETF assets, +176% above its ~$4.5 billion in average daily turnover.
+        <div class="translation">翻译：目前追踪SK海力士的单一股票杠杆和反向ETF持有约190亿美元的总资产，是该股今年日均交易量（约45亿美元）的四倍多。同时，三星持有约124亿美元的杠杆ETF资产，比其日均交易额（约45亿美元）高出176%。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Michael Saylor's 'Strategy' sold another 3,588 Bitcoin worth $225 million.
+        <div class="translation">翻译：Michael Saylor 的“Strategy”公司又出售了3,588枚比特币，价值2.25亿美元。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <h1>美股市场情绪分析 (2026年07月05日)</h1>
-
-    <h2>1. 宏观与市场情绪</h2>
-    <blockquote class="quote">
-        Meta is looking at selling excess AI compute, and SpaceX/xAI has reportedly sold access to its Colossus cluster to Anthropic and Google. Some of the biggest AI players are not able to use their own compute. I know that Meta has been a bit of a joke, but they have a lot of compute to sell now. I think we are now seeing the result of overbuilding.
-        <div class="translation">翻译：Meta正在寻求出售多余的AI算力，据报道，SpaceX/xAI已将其Colossus集群的访问权限出售给Anthropic和谷歌。一些最大的AI玩家无法使用自己的算力。我知道Meta一直有点像个笑话，但他们现在有很多算力可以出售。我认为我们现在看到的是过度建设的结果。</div>
-    </blockquote>
-    <blockquote class="quote">
-        Usually the final phase of a bubble is a crazy real estate market. Paying for houses in pre-IPO stocks might be the new thing this round.
-        <div class="translation">翻译：通常，泡沫的最后阶段是疯狂的房地产市场。用首次公开募股前的股票支付房产费用可能是这一轮的新趋势。</div>
-    </blockquote>
-    <blockquote class="quote">
-        MU reported a solid quarter, but memory stocks still got sold off hard. Maybe it was just profit-taking after a huge run. Maybe valuations got too stretched. Maybe people are calling it sector rotation.
-        <div class="translation">翻译：美光公布了稳健的季度业绩，但内存股仍然遭到大幅抛售。也许这只是在经历大幅上涨后的获利回吐。也许估值过高了。也许人们称之为板块轮动。</div>
-    </blockquote>
-    <blockquote
-    <blockquote class="quote">
-        Another thing in the back of my mind is SK Hynix becoming easier for U.S. investors to buy soon. For a long time, MU was the easiest way for many U.S. investors to play the AI memory story. That may start to change.
-        <div class="translation">翻译：我脑海中还有一个想法是，SK海力士很快就会更容易被美国投资者购买。长期以来，美光是许多美国投资者参与AI内存故事最简单的方式。这种情况可能会开始改变。</div>
-    </blockquote>
-
-    <h2>2. 热议中的个股和想法</h2>
-    <ul>
-      <li>
-        <div class="stock-tag">2317 (Hon Hai Precision Industry Co. Ltd.)</div>
-        <blockquote class="quote">
-          Taiwan's Foxconn, the world's largest contract electronics maker, reported a 39.8% year-on-year rise in second-quarter revenue that beat market forecasts on strong demand for AI products, though it cautioned about "volatile" global politics.
-          <div class="translation">翻译：台湾富士康，全球最大的合约电子制造商，报告第二季度营收同比增长39.8%，超出市场预期，得益于AI产品的强劲需求，尽管它警告全球政治“不稳定”。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Revenue for Nvidia's biggest server maker and Apple's top iPhone assembler jumped to T$2.513 trillion ($78.71 billion) in the April-June quarter, Foxconn said in a statement on Sunday.
-          <div class="translation">翻译：富士康周日在一份声明中表示，作为英伟达最大的服务器制造商和苹果最大的iPhone组装商，其4-6月季度营收跃升至2.513万亿新台币（787.1亿美元）。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Strong AI demand led to robust revenue growth for its cloud and networking products division, while smart consumer electronics, which includes iPhones, posted "significant" growth, the company said.
-          <div class="translation">翻译：该公司表示，强劲的AI需求带动其云和网络产品部门的营收实现强劲增长，而包括iPhone在内的智能消费电子产品也实现了“显著”增长。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The driver is AI. Foxconn builds Nvidia's biggest AI servers.
-          <div class="translation">翻译：驱动力是AI。富士康生产英伟达最大的AI服务器。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">000660 (SK HYNIX INC.)</div>
-        <blockquote class="quote">
-          Foreign investors probably see the ticker SKHY and think: “Okay, SK hynix. Korean memory stock. HBM. AI. Nvidia supply chain. Got it.”
-          <div class="translation">翻译：外国投资者可能看到股票代码SKHY，然后想：“好的，SK海力士。韩国存储芯片股。HBM。AI。英伟达供应链。明白了。”</div>
-        </blockquote>
-        <blockquote class="quote">
-          Single-stock leveraged and inverse ETFs tracking SK Hynix now hold ~$19 billion in total assets, more than 4 times the stock's average daily trading volume this year of ~$4.5 billion.
-          <div class="translation">翻译：目前，追踪SK海力士的单一股票杠杆和反向ETF持有的总资产约为190亿美元，是该股票今年平均每日交易量（约45亿美元）的四倍多。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Another thing in the back of my mind is SK Hynix becoming easier for U.S. investors to buy soon. For a long time, MU was the easiest way for many U.S. investors to play the AI memory story. That may start to change.
-          <div class="translation">翻译：我脑海中还有一个想法是，SK海力士很快就会更容易被美国投资者购买。长期以来，美光是许多美国投资者参与AI内存故事最简单的方式。这种情况可能会开始改变。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">005930 (Samsung Electronics Co., Ltd.)</div>
-        <blockquote class="quote">
-          At the same time, Samsung has ~$12.4 billion in leveraged ETF assets, +176% above its ~$4.5 billion in average daily turnover.
-          <div class="translation">翻译：与此同时，三星拥有约124亿美元的杠杆ETF资产，比其平均每日45亿美元的成交额高出176%。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Meta is reportedly considering a collaboration with Samsung to produce custom artificial intelligence chips valued at 10 trillion Korean won ($7.7 billion).
-          <div class="translation">翻译：据报道，Meta正在考虑与三星合作生产价值10万亿韩元（77亿美元）的定制人工智能芯片。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The chips would be built on Samsung’s 2nm process marking a shift from TSMC for Meta’s latest in house AI accelerator.
-          <div class="translation">翻译：这些芯片将采用三星的2纳米工艺制造，标志着Meta最新的内部AI加速器从台积电的转变。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">META (Meta Platforms, Inc.)</div>
-        <blockquote class="quote">
-          Meta is looking at selling excess AI compute, and SpaceX/xAI has reportedly sold access to its Colossus cluster to Anthropic and Google.
-          <div class="translation">翻译：Meta正在寻求出售多余的AI算力，据报道，SpaceX/xAI已将其Colossus集群的访问权限出售给Anthropic和谷歌。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Some of the biggest AI players are not able to use their own compute. I know that Meta has been a bit of a joke, but they have a lot of compute to sell now. I think we are now seeing the result of overbuilding.
-          <div class="translation">翻译：一些最大的AI玩家无法使用自己的算力。我知道Meta一直有点像个笑话，但他们现在有很多算力可以出售。我认为我们现在看到的是过度建设的结果。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Meta is reportedly considering a collaboration with Samsung to produce custom artificial intelligence chips valued at 10 trillion Korean won ($7.7 billion).
-          <div class="translation">翻译：据报道，Meta正在考虑与三星合作生产价值10万亿韩元（77亿美元）的定制人工智能芯片。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">AAPL (Apple Inc.)</div>
-        <blockquote class="quote">
-          smart consumer electronics, which includes iPhones, posted "significant" growth, the company said.
-          <div class="translation">翻译：该公司表示，包括iPhone在内的智能消费电子产品实现了“显著”增长。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Added Apple options when it crashed ~6% after the price increase announcement. From a business perspective, every price increase is good for their earnings meaning they are managing the operating expense cost well.
-          <div class="translation">翻译：在价格上涨公告后，当苹果股价下跌约6%时，我增加了苹果期权。从商业角度来看，每次价格上涨对他们的盈利都有利，这意味着他们很好地管理了运营费用。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Overall market sentiment was getting negative. Apple always support market when sentiment is negative.
-          <div class="translation">翻译：整体市场情绪正在变得消极。当市场情绪消极时，苹果总是能支撑市场。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">AMZN (Amazon.com, Inc.)</div>
-        <blockquote class="quote">
-          Amazon says its Leo constellation has reached 396 satellites, enough to provide continuous service across its initial coverage latitudes and begin commercial operations.
-          <div class="translation">翻译：亚马逊表示其Leo星座已达到396颗卫星，足以在其初始覆盖纬度提供持续服务并开始商业运营。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The milestone turns Leo from a long-delayed infrastructure project into a functioning competitor to SpaceX’s Starlink, although early users should expect limited coverage and occasional interruptions.
-          <div class="translation">翻译：这一里程碑将Leo从一个长期拖延的基础设施项目转变为SpaceX星链的有效竞争对手，尽管早期用户应预期覆盖范围有限和偶尔中断。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The real battle may be less about matching Starlink immediately and more about Amazon bundling satellite connectivity into AWS, logistics, aviation, maritime, and enterprise contracts.
-          <div class="translation">翻译：真正的竞争可能不只是立即与星链匹配，更多的是亚马逊将卫星连接捆绑到AWS、物流、航空、海运和企业合同中。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">MU (Micron Technology, Inc.)</div>
-        <blockquote class="quote">
-          By comparison, Micron, $MU, has ~$9.9 billion in leveraged ETF assets, well below its ~$27.5 billion in average daily trading volume.
-          <div class="translation">翻译：相比之下，美光（$MU）拥有约99亿美元的杠杆ETF资产，远低于其约275亿美元的平均每日交易量。</div>
-        </blockquote>
-        <blockquote class="quote">
-          MU reported a solid quarter, but memory stocks still got sold off hard.
-          <div class="translation">翻译：美光公布了稳健的季度业绩，但内存股仍然遭到大幅抛售。</div>
-        </blockquote>
-        <blockquote class="quote">
-          For a long time, MU was the easiest way for many U.S. investors to play the AI memory story. That may start to change.
-          <div class="translation">翻译：长期以来，美光是许多美国投资者参与AI内存故事最简单的方式。这种情况可能会开始改变。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">ADBE (Adobe Inc.)</div>
-        <blockquote class="quote">
-          I have been holding 12/17/2027 $250Cs since the beginning of the year, averaging down as it tanks.
-          <div class="translation">翻译：我从今年年初开始持有2027年12月17日到期的250美元看涨期权，并在其下跌时不断摊低成本。</div>
-        </blockquote>
-        <blockquote class="quote">
-          I also have some realized losses as I rolled down my strike, with a BEP at expiration around $300.
-          <div class="translation">翻译：我还因调整行权价而产生了一些已实现的亏损，到期时的盈亏平衡点在300美元左右。</div>
-        </blockquote>
-      </li>
-    </ul>
-
-    <h2>3. 小众公司冒泡</h2>
-    <ul>
-      <li>
-        <div class="stock-tag">HOOD (Robinhood Markets, Inc.)</div>
-        <blockquote class="quote">
-          I’ve been following HOOD closely for the last few weeks and it seems like it’s time to onboard.
-          <div class="translation">翻译：我过去几周一直在密切关注HOOD，看起来是时候入场了。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">CVNA (Carvana Co.)</div>
-        <blockquote class="quote">
-          Started rolling weekly CVNA puts this year and they have been bread and butter. Rolling weeklies until CVNA hits $20
-          <div class="translation">翻译：今年开始做每周CVNA看跌期权，一直表现良好。我会持续每周操作，直到CVNA跌到20美元。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">WEN (The Wendy's Company)</div>
-        <blockquote class="quote">
-          WEN Calls. Sold last weeks calls for +7k. Will add big time if price backs to the $7-$8
-          <div class="translation">翻译：WEN看涨期权。上周的期权卖出盈利7千美元。如果股价回落到7-8美元，我会大量加仓。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">RDDT (Reddit, Inc.)</div>
-        <blockquote class="quote">
-          Sold my rddt and hims leaps for powder, recent sell off is overdone.
-          <div class="translation">翻译：我卖掉了我的Reddit和Hims & Hers的长期期权，套现以备用，最近的抛售有些过度了。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">HIMS (Hims & Hers Health, Inc.)</div>
-        <blockquote class="quote">
-          Sold my rddt and hims leaps for powder, recent sell off is overdone.
-          <div class="translation">翻译：我卖掉了我的Reddit和Hims & Hers的长期期权，套现以备用，最近的抛售有些过度了。</div>
-        </blockquote>
-      </li>
-    </ul>
-
-    <h2>4. AI主线讨论</h2>
-    <div class="track-header">算 (Compute)</div>
-    <div class="ai-quote">
-        Meta is looking at selling excess AI compute, and SpaceX/xAI has reportedly sold access to its Colossus cluster to Anthropic and Google.
-        <div class="translation">翻译：Meta正在寻求出售多余的AI算力，据报道，SpaceX/xAI已将其Colossus集群的访问权限出售给Anthropic和谷歌。</div>
-    </div>
-    <div class="ai-quote">
-        Some of the biggest AI players are not able to use their own compute. I know that Meta has been a bit of a joke, but they have a lot of compute to sell now. I think we are now seeing the result of overbuilding.
-        <div class="translation">翻译：一些最大的AI玩家无法使用自己的算力。我知道Meta一直有点像个笑话，但他们现在有很多算力可以出售。我认为我们现在看到的是过度建设的结果。</div>
-    </div>
-    <div class="ai-quote">
-        Foxconn builds Nvidia's biggest AI servers.
-        <div class="translation">翻译：富士康生产英伟达最大的AI服务器。</div>
-    </div>
-    <div class="ai-quote">
-        Meta is reportedly considering a collaboration with Samsung to produce custom artificial intelligence chips valued at 10 trillion Korean won ($7.7 billion).
-        <div class="translation">翻译：据报道，Meta正在考虑与三星合作生产价值10万亿韩元（77亿美元）的定制人工智能芯片。</div>
-    </div>
-    <div class="ai-quote">
-        The chips would be built on Samsung’s 2nm process marking a shift from TSMC for Meta’s latest in house AI accelerator.
-        <div class="translation">翻译：这些芯片将采用三星的2纳米工艺制造，标志着Meta最新的内部AI加速器从台积电的转变。</div>
-    </div>
-
-    <div class="track-header">存 (Storage)</div>
-    <div class="ai-quote">
+  <h2>2. 热议中的个股和想法</h2>
+  <ul>
+    <li>
+      <div class="stock-tag">1. META (Meta Platforms, Inc.)</div>
+      <blockquote class="quote">
+        Q1 2026 revenue grew 33% YoY to $56.3B.
+        <div class="translation">翻译：2026年第一季度收入同比增长33%至563亿美元。</div>
+      </blockquote>
+      <blockquote class="quote">
+        AI glasses sold 7M+ units in 2025 (250%+ YoY growth).
+        <div class="translation">翻译：2025年AI眼镜销量超过700万部（同比增长250%+）。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Meta is launching a cloud business to sell excess AI compute and host, creating a new revenue stream.
+        <div class="translation">翻译：Meta正在推出一项云业务，旨在出售多余的AI算力并提供托管服务，从而开辟新的收入来源。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">2. SKHY (SK Hynix Inc.)</div>
+      <blockquote class="quote">
+        South Korea's SK Hynix to launch $28 billion US listing to ride global AI wave.
+        <div class="translation">翻译：韩国SK海力士将进行280亿美元的美国上市，以顺应全球AI浪潮。</div>
+      </blockquote>
+      <blockquote class="quote">
         Foreign investors probably see the ticker SKHY and think: “Okay, SK hynix. Korean memory stock. HBM. AI. Nvidia supply chain. Got it.”
-        <div class="translation">翻译：外国投资者可能看到股票代码SKHY，然后想：“好的，SK海力士。韩国存储芯片股。HBM。AI。英伟达供应链。明白了。”</div>
-    </div>
-    <div class="ai-quote">
-        MU reported a solid quarter, but memory stocks still got sold off hard.
-        <div class="translation">翻译：美光公布了稳健的季度业绩，但内存股仍然遭到大幅抛售。</div>
-    </div>
-    <div class="ai-quote">
-        For a long time, MU was the easiest way for many U.S. investors to play the AI memory story.
-        <div class="translation">翻译：长期以来，美光是许多美国投资者参与AI内存故事最简单的方式。</div>
-    </div>
+        <div class="translation">翻译：外国投资者看到股票代码SKHY，可能会想：“好的，SK海力士。韩国内存股。HBM。AI。英伟达供应链。明白了。”</div>
+      </blockquote>
+      <blockquote class="quote">
+        Single-stock leveraged and inverse ETFs tracking SK Hynix now hold ~$19 billion in total assets, more than 4 times the stock's average daily trading volume this year of ~$4.5 billion.
+        <div class="translation">翻译：目前追踪SK海力士的单一股票杠杆和反向ETF持有约190亿美元的总资产，是该股今年日均交易量（约45亿美元）的四倍多。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">3. AVAV (AeroVironment, Inc.)</div>
+      <blockquote class="quote">
+        AVAV just posted Q4 FY26 revenue of $641.6M, up 133% YoY, crushing the $556-559M consensus, with adjusted EPS of $1.84 vs. $1.47 expected.
+        <div class="translation">翻译：AVAV刚公布2026财年第四季度营收为6.416亿美元，同比增长133%，远超市场普遍预期的5.56-5.59亿美元，调整后每股收益为1.84美元，高于预期的1.47美元。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Then, two days later, it landed a $500M firm fixed price Army contract for the Titan RF counter UAS system running through June 2029.
+        <div class="translation">翻译：两天后，该公司获得了美国陆军一份价值5亿美元的固定价格合同，用于Titan RF反无人机系统，合同执行至2029年6月。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Book-to-bill sits at 1.4x, meaning orders are outpacing revenue, backlog is building, not draining.
+        <div class="translation">翻译：订单出货比为1.4倍，这意味着订单增长速度超过了营收，积压订单正在增加而非减少。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">4. NFLX (Netflix, Inc.)</div>
+      <blockquote class="quote">
+        Netflix's top shows have been losing 30-70% of their audience between seasons 1 and 2.
+        <div class="translation">翻译：Netflix的顶级节目在第一季和第二季之间失去了30-70%的观众。</div>
+      </blockquote>
+      <blockquote class="quote">
+        It seems like the Warner Brothers merger talks are what opened the door to all the recent bad news.
+        <div class="translation">翻译：似乎是华纳兄弟的并购谈判为近期所有坏消息打开了大门。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">5. WEN (The Wendy's Company)</div>
+      <blockquote class="quote">
+        Three Wendy's employees in South Carolina have been arrested after police accused them of serving a customer food pulled from the trash and spitting in it—an explosive allegation that comes as another fast-food chain, Arby's, remains embroiled in a separate food tampering case tied to a customer's herpes diagnosis.
+        <div class="translation">翻译：南卡罗来纳州的三名温蒂快餐店员工被捕，警方指控他们向顾客提供从垃圾桶里拿出来的食物，并在其中吐痰——这一爆炸性指控传出之际，另一家快餐连锁店Arby's也卷入了一起与顾客疱疹诊断相关的食物掺假案件。</div>
+      </blockquote>
+      <blockquote class="quote">
+        I’m still yolo-ing WEN with an extra $10k Nov calls. Seems like it’s trending up.
+        <div class="translation">翻译：我仍然在温蒂快餐上投入了额外的1万美元11月看涨期权。看起来它正在上涨。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <div class="track-header">板 (Boards)</div>
-    <div class="ai-quote">
-        Foxconn builds Nvidia's biggest AI servers.
-        <div class="translation">翻译：富士康生产英伟达最大的AI服务器。</div>
-    </div>
+  <h2>3. 小众公司冒泡</h2>
+  <ul>
+    <li>
+      <div class="stock-tag">1. GOOGL (Alphabet Inc.)</div>
+      <blockquote class="quote">
+        GOOGL recent selloff seems like a good setup into pre-earnings. Higher low at $340, coiling under the $368–372 shelf. Break the shelf and there’s nothing but air to the $408.61 ATH.
+        <div class="translation">翻译：GOOGL近期的抛售似乎是财报前的一个良好布局。在340美元处形成更高的低点，在368-372美元的支撑位下方盘整。突破该支撑位后，上方没有任何阻力，直指408.61美元的历史高点。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">2. WULF (Terawulf Inc.)</div>
+      <blockquote class="quote">
+        Terrawulf $WULF announced deal with Anthropic. Stock up 20%. Expected to generate $19B.
+        <div class="translation">翻译：Terrawulf ($WULF) 宣布与Anthropic达成协议。股价上涨20%。预计将产生190亿美元。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">3. HIMS (Hims & Hers Health, Inc.)</div>
+      <blockquote class="quote">
+        Playing weekly expiry on every dip. Seems like it’s trending up.
+        <div class="translation">翻译：在每次下跌时都玩周度到期期权。看起来它正在上涨。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <div class="track-header">云 (Cloud)</div>
-    <div class="ai-quote">
-        Strong AI demand led to robust revenue growth for its cloud and networking products division.
-        <div class="translation">翻译：强劲的AI需求带动其云和网络产品部门的营收实现强劲增长。</div>
-    </div>
-
-</body>
-</html>
+  <h2>4. AI主线讨论</h2>
+  <div class="track-header">模型</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Terrawulf $WULF announced deal with Anthropic.
+        <div class="translation">翻译：Terrawulf ($WULF) 宣布与Anthropic达成协议。</div>
+      </blockquote>
+    </li>
+  </ul>
+  <div class="track-header">算力</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Meta is launching a cloud business to sell excess AI compute and host, creating a new revenue stream.
+        <div class="translation">翻译：Meta正在推出一项云业务，旨在出售多余的AI算力并提供托管服务，从而开辟新的收入来源。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Foxconn builds Nvidia's biggest AI servers, and its cloud/network.
+        <div class="translation">翻译：富士康是英伟达最大的AI服务器制造商，也是其云/网络产品的制造商。</div>
+      </blockquote>
+    </li>
+  </ul>
+  <div class="track-header">光模块</div>
+  <!-- 暂无相关讨论 -->
+  <div class="track-header">存储</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        South Korea's SK Hynix to launch $28 billion US listing to ride global AI wave.
+        <div class="translation">翻译：韩国SK海力士将进行280亿美元的美国上市，以顺应全球AI浪潮。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        SK hynix. Korean memory stock. HBM. AI. Nvidia supply chain.
+        <div class="translation">翻译：SK海力士。韩国内存股。HBM。AI。英伟达供应链。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        I’ve been tracking a clear "seesaw" pattern over the last month between AI hardware/memory stocks and enterprise software.
+        <div class="translation">翻译：我过去一个月一直在追踪AI硬件/内存股票与企业软件之间明显的“跷跷板”模式。</div>
+      </blockquote>
+    </li>
+  </ul>
+  <div class="track-header">电力</div>
+  <!-- 暂无相关讨论 -->
+  <div class="track-header">板卡</div>
+  <!-- 暂无相关讨论 -->
+  <div class="track-header">云</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Meta is launching a cloud business to sell excess AI compute and host, creating a new revenue stream.
+        <div class="translation">翻译：Meta正在推出一项云业务，旨在出售多余的AI算力并提供托管服务，从而开辟新的收入来源。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Strong ⁠AI demand led to robust revenue growth for its cloud and networking products division.
+        <div class="translation">翻译：强劲的AI需求带动其云和网络产品部门营收强劲增长。</div>
+      </blockquote>
+    </li>
+  </ul>
+  <div class="track-header">AI应用</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        AI glasses sold 7M+ units in 2025 (250%+ YoY growth).
+        <div class="translation">翻译：2025年AI眼镜销量超过700万部（同比增长250%+）。</div>
+      </blockquote>
+    </li>
+  </ul>
+</div>
         </div>
         <script>
             var myChart = echarts.init(document.getElementById('gauge'));
@@ -303,8 +261,8 @@
                     type: 'gauge', startAngle: 180, endAngle: 0, min: 0, max: 100, radius: '100%', center: ['50%', '75%'],
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
-                    detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n恐慌', color: '#fff' },
-                    data: [{ value: 31 }]
+                    detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n中立', color: '#fff' },
+                    data: [{ value: 45 }]
                 }]
             });
         </script>
