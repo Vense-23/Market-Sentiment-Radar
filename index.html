@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>07月10日 情报终端</title>
+        <title>07月11日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,231 +36,184 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 07月10日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-07-10 23:10:35 (北京时间)</p>
+            <h1>🎯 07月11日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-07-11 11:51:00 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股市场情绪分析 (2026年07月10日)</title>
+    <title>Reddit市场情绪速览 (2026年07月11日)</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
-        h1, h2, h3 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
         h2 { font-size: 1.8em; }
         ul { list-style: none; padding: 0; }
         li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #007bff; font-size: 1.1em; margin-bottom: 10px; }
-        .quote { margin: 10px 0 0 15px; padding: 10px; background-color: #eef7ff; border-left: 4px solid #007bff; font-style: italic; color: #555; }
-        .translation { margin-top: 5px; font-size: 0.9em; color: #777; }
-        .track-header { font-weight: bold; color: #34495e; font-size: 1.1em; margin-top: 20px; margin-bottom: 10px; border-bottom: 1px dashed #ccc; padding-bottom: 5px; }
+        .stock-tag { font-weight: bold; color: #007bff; margin-bottom: 10px; font-size: 1.1em; }
+        .quote { background-color: #eef4f8; border-left: 4px solid #007bff; margin: 10px 0; padding: 10px 15px; font-style: italic; color: #555; }
+        .translation { margin-top: 8px; font-size: 0.9em; color: #666; }
+        .track-header { font-weight: bold; color: #28a745; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; }
     </style>
 </head>
 <body>
-    <h1>美股市场情绪分析 (2026年07月10日)</h1>
+    <h1>Reddit市场情绪速览 (2026年07月11日)</h1>
 
     <h2>1. 宏观与市场情绪</h2>
     <ul>
-      <li>
-        <blockquote class="quote">
-          how dafuq is this market still on all time highs?
-          <div class="translation">翻译：这市场他妈的怎么还在历史新高？</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          are we trying to pump snp500 trailing p/e to 46 just for fun?
-          <div class="translation">翻译：我们是不是只是为了好玩才要把标普500的滚动市盈率推到46？</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Crashed and cashed out immediately. Thanks SPY 0DTE Puts
-          <div class="translation">翻译：立马崩盘并兑现了。感谢SPY的0DTE看跌期权。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Caught that flash crash on SPY
-          <div class="translation">翻译：抓住了SPY的闪崩。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Lately, I've noticed you've been pretty split in the comments... so what's the verdict, bullish or bearish for July?
-          <div class="translation">翻译：最近我注意到评论里大家的意见相当分歧……所以七月份是看涨还是看跌？</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Nervous about SK Hynix IPO tomorrow. SK Hynix IPO tomorrow. ~$28B raise, biggest foreign listing in US history, second biggest IPO ever behind SpaceX last month. Demand reportedly running 7x the shares available. For anyone who wasn't trading in 2000: AT&amp;T Wireless priced April 26, 2000. $10.6B, biggest US IPO ever at the time. People remember it as "the IPO that popped the dot com bubble." It didn't. Nasdaq topped March 10. The IPO came six weeks AFTER the top. What it actually did was soak up the last of the marginal liquidity. Retail finally got their allocation, stock popped ~7% day one, then bled for two years until Cingular bought the carcass.
-          <div class="translation">翻译：对SK海力士明天的IPO感到紧张。SK海力士明天IPO，融资约280亿美元，是美国历史上最大的外国上市，也是继上个月SpaceX之后第二大IPO。据报道，需求是可用股份的7倍。对于2000年没有交易过的人来说：AT&amp;T Wireless在2000年4月26日定价，融资106亿美元，是当时美国最大的IPO。人们记得它是“引爆互联网泡沫的IPO”。但它并没有。纳斯达克在3月10日达到顶峰。这个IPO在顶峰之后六周才出现。它实际做的只是吸干了最后的边际流动性。散户最终得到了他们的配额，股票首日上涨约7%，然后持续下跌两年，直到Cingular收购了其残骸。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Blew the gambling account. Too many otm spx calls makes me a dumb boy
-          <div class="translation">翻译：赌博账户爆仓了。买太多OTM的SPX看涨期权让我成了个傻子。</div>
-        </blockquote>
-      </li>
+        <li>
+            <blockquote class="quote">
+                U.S. Treasury has borrowed $155 billion every month of this fiscal year
+                <div class="translation">翻译：美国财政部在本财年每个月都借款1550亿美元</div>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="quote">
+                China temporarily bans helium exports as US-Iran tensions flare again
+                <div class="translation">翻译：在中美伊紧张局势再次升级之际，中国暂时禁止氦气出口。</div>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="quote">
+                BOJ May Push Policy Rate Beyond 2% This Cycle, Ex-Official Says
+                <div class="translation">翻译：前官员称，日本央行可能在本周期内将政策利率推升至2%以上。</div>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="quote">
+                how dafuq is this market still on all time highs? so, explain this stock market to me. are we still doing data centers in space? ai ai ai agents continue to shit themselves, while cheap local models get 90% of the job done. dafuq is the bull case now? are we trying to pump snp500 trailing p/e to 46 just for fun? i am all ears bulls, give it to me straight.
+                <div class="translation">翻译：这个市场怎么还创新高？所以，给我解释一下这个股市。我们还在太空搞数据中心吗？AI智能体不断出问题，而廉价的本地模型就能完成90%的工作。现在看涨的理由是什么？我们只是为了好玩才把标普500的市盈率推到46倍吗？我洗耳恭听，多头们，直说吧。</div>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="quote">
+                I'm convinced that if an asteroid were about to wipe out the planet, the S&amp;P would somehow still rally to fresh all-time highs. Riddle me how the price of oil is near pre-war levels again? Hopefully Tuesday's inflation figures save my puts, otherwise i'm switching to calls and taking you all down with me.
+                <div class="translation">翻译：我确信，即使小行星即将毁灭地球，标普500指数不知何故仍会飙升至历史新高。给我解释一下为什么油价又接近战前水平了？希望周二的通胀数据能挽救我的看跌期权，否则我就转做看涨期权，把你们都带下水。</div>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="quote">
+                NATO leaders unveiled more than $50B in new defense agreements at the Ankara summit as European allies ramp up military spending. Reported beneficiaries include Northrop Grumman (surveillance drones) and Saab (aircraft), while Lockheed Martin, RTX (Raytheon) and other U.S. defense firms are expected to benefit from increased demand for Patriot, Tomahawk, and other missile systems. The UK, France, Germany, and nine other European countries also committed to investing $50B+ over the next decade in long-range precision strike capabilities. NATO Secretary General Mark Rutte called for a defense-industry “revolution” to address growing security challenges posed by Russia, China, North Korea, and Iran.
+                <div class="translation">翻译：北约领导人在安卡拉峰会上公布了超过500亿美元的新国防协议，欧洲盟友正在增加军事开支。据报道，受益者包括诺斯罗普·格鲁曼公司（监视无人机）和萨博公司（飞机），而洛克希德·马丁公司、RTX（雷神）以及其他美国国防公司预计将受益于对“爱国者”、“战斧”和其他导弹系统需求的增加。英国、法国、德国和其他九个欧洲国家也承诺在未来十年内投资超过500亿美元用于远程精确打击能力。北约秘书长马克·吕特呼吁进行国防工业“革命”，以应对俄罗斯、中国、朝鲜和伊朗带来的日益增长的安全挑战。</div>
+            </blockquote>
+        </li>
     </ul>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
-      <li>
-        <div class="stock-tag">1. MU (Micron Technology)</div>
-        <blockquote class="quote">
-          Micron boosts US investment plan again, commits $250 billion through 2035
-          <div class="translation">翻译：美光再次提高其美国投资计划，承诺在2035年前投入2500亿美元。</div>
-        </blockquote>
-        <blockquote class="quote">
-          My port at one point is 20% MU. I did get out of it with a 10% gain on my entire net worth.
-          <div class="translation">翻译：我的投资组合一度有20%是MU。我从中获得了相当于我全部净资产10%的收益。</div>
-        </blockquote>
-        <blockquote class="quote">
-          I took out some margin to trade MU and made decent gains, so it offsets some of my losses.
-          <div class="translation">翻译：我借了一些保证金来交易MU并获得了不错的收益，这抵消了我的一些损失。</div>
-        </blockquote>
-        <blockquote class="quote">
-          MU makes memory (HBM)
-          <div class="translation">翻译：MU生产内存（HBM）。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">2. MSFT (Microsoft)</div>
-        <blockquote class="quote">
-          Hands down, I have never owned a worse investment than MSFT. Been bagholding this for over 7 months already.
-          <div class="translation">翻译：毋庸置疑，MSFT是我持有过的最糟糕的投资。我已经套牢这只股票超过7个月了。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">3. INTC (Intel)</div>
-        <blockquote class="quote">
-          INTC |+$188,332.58 |CPU/foundry chips
-          <div class="translation">翻译：INTC |+$188,332.58 |CPU/代工芯片</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">4. META (Meta Platforms)</div>
-        <blockquote class="quote">
-          Meta jumps into AI coding market in effort to chase Anthropic and OpenAI
-          <div class="translation">翻译：Meta进军AI编程市场，以追赶Anthropic和OpenAI。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">5. AVGO (Broadcom)</div>
-        <blockquote class="quote">
-          Broadcom 1dte calls rocket ship. Was expecting a bounce but today’s pump was wild.
-          <div class="translation">翻译：博通1DTE看涨期权飙升。本以为会反弹，但今天的暴涨太疯狂了。</div>
-        </blockquote>
-      </li>
+        <li>
+            <div class="stock-tag">MSFT (Microsoft Corp)</div>
+            <blockquote class="quote">
+                Decided to go all-in with $43k into MSFT LEAPs.
+                <div class="translation">翻译：决定用4.3万美元全仓买入微软的LEAPs期权。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Breakeven of MSFT is at $443 in June 2028. I make over $100k if it’s at $550 (previous ATH) in two years…
+                <div class="translation">翻译：微软的盈亏平衡点是2028年6月的443美元。如果两年内它达到550美元（之前的历史高点），我将赚取超过10万美元…</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">META (Meta Platforms Inc.)</div>
+            <blockquote class="quote">
+                Only today did I finally finish selling off the last of that META position. Officially profited nearly $600K USD off it. I love Zuck so much.
+                <div class="translation">翻译：就在今天，我终于清仓了Meta的头寸。从中正式获利近60万美元。我太爱扎克了。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Sold my META calls (early) yesterday.
+                <div class="translation">翻译：我昨天（提前）卖出了我的Meta看涨期权。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Bought META recently since the sentiment was all time low while it being the best company to deploy AI to actual consumer business.
+                <div class="translation">翻译：最近买入Meta，因为当时市场情绪处于历史低点，而它却是最适合将AI部署到实际消费者业务的公司。</div>
+            </blockquote>
+        </li>
     </ul>
 
     <h2>3. 小众公司冒泡</h2>
     <ul>
-      <li>
-        <div class="stock-tag">1. ASTS (AST SpaceMobile)</div>
-        <blockquote class="quote">
-          ASTS makes satellites (chips in orbit).
-          <div class="translation">翻译：ASTS制造卫星（轨道上的芯片）。</div>
-        </blockquote>
-        <blockquote class="quote">
-          ASTS |+$173,507.18 |Satellite communication
-          <div class="translation">翻译：ASTS |+$173,507.18 |卫星通信</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">2. CLSK (CleanSpark)</div>
-        <blockquote class="quote">
-          CLSK |+$209,855.99 |Bitcoin mining (ASIC)
-          <div class="translation">翻译：CLSK |+$209,855.99 |比特币挖矿 (ASIC)</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">3. WDC (Western Digital)</div>
-        <blockquote class="quote">
-          WDC |+$86,023.51 |Storage (NAND)
-          <div class="translation">翻译：WDC |+$86,023.51 |存储 (NAND)</div>
-        </blockquote>
-      </li>
+        <li>
+            <div class="stock-tag">GOOG (Alphabet Inc.)</div>
+            <blockquote class="quote">
+                I had success buying GOOG in sub 150 level when everyone was shitting during black George Washington debacle while LLM was first introduced by them!
+                <div class="translation">翻译：当每个人都在“黑色乔治·华盛顿灾难”期间骂谷歌时，我在150美元以下买入谷歌取得了成功，当时他们首次推出了LLM！</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">RKLB (Rocket Lab USA, Inc.)</div>
+            <blockquote class="quote">
+                Praying we’ve reached the RKLB bottom, $71K in calls for August 21st.
+                <div class="translation">翻译：祈祷我们已经达到了RKLB的底部，8月21日有7.1万美元的看涨期权。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">LMT (Lockheed Martin Corp)</div>
+            <blockquote class="quote">
+                Lockheed Martin, RTX (Raytheon) and other U.S. defense firms are expected to benefit from increased demand for Patriot, Tomahawk, and other missile systems.
+                <div class="translation">翻译：洛克希德·马丁公司、RTX（雷神）以及其他美国国防公司预计将受益于对“爱国者”、“战斧”和其他导弹系统需求的增加。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">NOC (Northrop Grumman Corp)</div>
+            <blockquote class="quote">
+                Reported beneficiaries include Northrop Grumman (surveillance drones).
+                <div class="translation">翻译：据报道，受益者包括诺斯罗普·格鲁曼公司（监视无人机）。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">RTX (RTX Corp)</div>
+            <blockquote class="quote">
+                RTX (Raytheon) and other U.S. defense firms are expected to benefit from increased demand for Patriot, Tomahawk, and other missile systems.
+                <div class="translation">翻译：RTX（雷神）以及其他美国国防公司预计将受益于对“爱国者”、“战斧”和其他导弹系统需求的增加。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">MU (Micron Technology, Inc.)</div>
+            <blockquote class="quote">
+                May 2026, my port at one point is 20% SNDK and 20% MU. I did get out of it with a 10% gain on my entire net worth.
+                <div class="translation">翻译：2026年5月，我的投资组合一度有20%是SNDK，20%是MU。我从中获得了净资产10%的收益。</div>
+            </blockquote>
+        </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型</div>
     <ul>
-      <li>
-        <blockquote class="quote">
-          AI agents continue to underperform, while cheap local models get 90% of the job done
-          <div class="translation">翻译：AI代理继续表现不佳，而廉价的本地模型却能完成90%的工作。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Meta jumps into AI coding market in effort to chase Anthropic and OpenAI
-          <div class="translation">翻译：Meta进军AI编程市场，以追赶Anthropic和OpenAI。</div>
-        </blockquote>
-      </li>
-    </ul>
-    <div class="track-header">算</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          INTC makes CPU/foundry chips
-          <div class="translation">翻译：INTC生产CPU/代工芯片。</div>
-        </blockquote>
-      </li>
-    </ul>
-    <div class="track-header">光</div>
-    <ul>
-      <!-- No specific content found for "光" -->
-    </ul>
-    <div class="track-header">存</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          MU makes memory (HBM)
-          <div class="translation">翻译：MU生产内存（HBM）。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          WDC makes Storage (NAND)
-          <div class="translation">翻译：WDC生产存储（NAND）。</div>
-        </blockquote>
-      </li>
-    </ul>
-    <div class="track-header">电</div>
-    <ul>
-      <!-- No specific content found for "电" -->
-    </ul>
-    <div class="track-header">板</div>
-    <ul>
-      <!-- No specific content found for "板" -->
-    </ul>
-    <div class="track-header">云</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          MU makes memory (chips in data centers)
-          <div class="translation">翻译：MU生产内存（数据中心中的芯片）。</div>
-        </blockquote>
-      </li>
-    </ul>
-    <div class="track-header">AI应用</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          AI agents continue to underperform, while cheap local models get 90% of the job done
-          <div class="translation">翻译：AI代理继续表现不佳，而廉价的本地模型却能完成90%的工作。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Meta jumps into AI coding market in effort to chase Anthropic and OpenAI
-          <div class="translation">翻译：Meta进军AI编程市场，以追赶Anthropic和OpenAI。</div>
-        </blockquote>
-      </li>
+        <li>
+            <div class="track-header">模型</div>
+            <blockquote class="quote">
+                ai ai ai agents continue to shit themselves, while cheap local models get 90% of the job done.
+                <div class="translation">翻译：AI智能体不断出问题，而廉价的本地模型就能完成90%的工作。</div>
+            </blockquote>
+            <blockquote class="quote">
+                LLM was first introduced by them!
+                <div class="translation">翻译：LLM（大型语言模型）最初就是由他们（谷歌）引入的！</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">算</div>
+            <blockquote class="quote">
+                are we still doing data centers in space?
+                <div class="translation">翻译：我们还在太空搞数据中心吗？</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">存</div>
+            <blockquote class="quote">
+                May 2026, my port at one point is 20% SNDK and 20% MU. I did get out of it with a 10% gain on my entire net worth.
+                <div class="translation">翻译：2026年5月，我的投资组合一度有20%是SNDK，20%是MU。我从中获得了净资产10%的收益。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">AI应用</div>
+            <blockquote class="quote">
+                ai ai ai agents continue to shit themselves, while cheap local models get 90% of the job done.
+                <div class="translation">翻译：AI智能体不断出问题，而廉价的本地模型就能完成90%的工作。</div>
+            </blockquote>
+            <blockquote class="quote">
+                while it being the best company to deploy AI to actual consumer business.
+                <div class="translation">翻译：而它（Meta）是最好的公司，能将AI部署到实际的消费者业务中。</div>
+            </blockquote>
+        </li>
     </ul>
 </body>
 </html>
@@ -273,7 +226,7 @@
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
                     detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n中立', color: '#fff' },
-                    data: [{ value: 47 }]
+                    data: [{ value: 49 }]
                 }]
             });
         </script>
