@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>07月14日 情报终端</title>
+        <title>07月15日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,52 +36,69 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 07月14日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-07-14 22:22:25 (北京时间)</p>
+            <h1>🎯 07月15日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-07-15 11:43:53 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            <h2>1. 宏观与市场情绪</h2>
-    <p>市场今日情绪复杂，通胀数据显示出超预期放缓，但市场走势仍显疲软，同时海外市场传出杠杆风险信号。</p>
-    <blockquote>
-      JUNE U.S. 🇺🇸 INFLATION DATA: CPI 3.5% YoY, (Est. 3.8%) CPI -0.4% MoM, (Est. 0.0%) Core CPI 2.6% YoY, (Est. 2.9%) Core CPI 0.0% MoM, (Est. 0.2%)
-      <div class="translation">翻译：美国6月通胀数据：CPI同比3.5%（预期3.8%），环比-0.4%（预期0.0%）；核心CPI同比2.6%（预期2.9%），环比0.0%（预期0.2%）。</div>
-    </blockquote>
-    <blockquote>
-      This candlestick chart is dropping so hard it’s almost breaking through the floor of my house
-      <div class="translation">翻译：这根K线图跌得太厉害了，几乎要跌穿我的房子地板了。</div>
-    </blockquote>
-    <blockquote>
-      South Korea's margin call to receivables ratio has spiked to ~5%, the 3rd-highest level ever. This ratio measures the share of outstanding margin loans that has been flagged for a margin call, where brokers demand additional collateral or forcibly liquidate positions after prices move against borrowers. This is more than 4 times its typical range of ~1% to 2% over the past 2 years. Furthermore, brokerage receivables, the total value of outstanding margin loans, have exceeded KRW 2,000 billion (~$1.34 billion), up from a typical range of KRW 900-1,000 billion (~$640 million). This comes as South Korean retail investors have piled into leveraged ETFs at a pace unlike anything seen before. Meanwhile, ~1.2 million trading accounts have triggered margin calls, with 320,000–360,000 ultimately forcibly liquidated by brokers.
-      <div class="translation">翻译：韩国的保证金追缴与应收账款比率已飙升至约5%，创历史第三高位。该比率衡量了已被标记为保证金追缴的未偿保证金贷款份额，即当价格对借款人不利时，经纪人要求追加抵押品或强制平仓。这比过去两年1%到2%的典型范围高出4倍多。此外，经纪商应收账款（未偿保证金贷款总额）已超过2万亿韩元（约13.4亿美元），高于900-1000亿韩元（约6.4亿美元）的典型范围。这发生在韩国散户投资者以前所未有的速度涌入杠杆ETF之际。同时，约有120万个交易账户触发了保证金追缴，其中32万至36万个最终被经纪商强制平仓。</div>
-    </blockquote>
+            <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit 美股市场情绪概览 (2026年07月15日)</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
+        h2 { font-size: 1.8em; }
+        ul { list-style: none; padding: 0; }
+        li { background-color: #fff; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 15px; padding: 15px; }
+        .stock-tag { font-weight: bold; color: #e74c3c; font-size: 1.1em; margin-bottom: 10px; }
+        blockquote { background-color: #ecf0f1; border-left: 5px solid #3498db; margin: 15px 0; padding: 10px 20px; font-style: italic; color: #555; border-radius: 4px; }
+        .translation { margin-top: 10px; font-style: normal; color: #2980b9; border-top: 1px dashed #ccc; padding-top: 10px; }
+        .track-header { font-weight: bold; color: #2c3e50; font-size: 1.1em; margin-top: 20px; margin-bottom: 10px; padding-left: 10px; border-left: 3px solid #f39c12; }
+    </style>
+</head>
+<body>
+    <h1>Reddit 美股市场情绪概览 (2026年07月15日)</h1>
+
+    <h2>1. 宏观与市场情绪</h2>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          JUNE U.S. 🇺🇸 INFLATION DATA: CPI 3.5% YoY, (Est. 3.8%) CPI -0.4% MoM, (Est. 0.0%) Core CPI 2.6% YoY, (Est. 2.9%) Core CPI 0.0% MoM, (Est. 0.2%)
+          <div class="translation">翻译：美国6月通胀数据：CPI同比3.5%（预期3.8%），CPI环比-0.4%（预期0.0%），核心CPI同比2.6%（预期2.9%），核心CPI环比0.0%（预期0.2%）。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          South Korea's margin call to receivables ratio has spiked to ~5%, the 3rd-highest level ever. This ratio measures the share of outstanding margin loans that has been flagged for a margin call, where brokers demand additional collateral or forcibly liquidate positions after prices move against borrowers. This is more than 4 times its typical range of ~1% to 2% over the past 2 years. Furthermore, brokerage receivables, the total value of outstanding margin loans, have exceeded KRW 2,000 billion (~$1.34 billion), up from a typical range of KRW 900-1,000 billion (~$640 million).
+          <div class="translation">翻译：韩国保证金追缴与应收账款比率飙升至约5%，为历史第三高水平。该比率衡量了已被标记为保证金追缴的未偿保证金贷款份额，即当价格对借款人不利时，经纪商要求追加抵押品或强制平仓。这比过去两年1%至2%的典型范围高出4倍多。此外，经纪商应收账款（未偿保证金贷款总额）已超过2万亿韩元（约合13.4亿美元），高于通常的9000亿至1万亿韩元（约合6.4亿美元）范围。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Was down 30k on 0DTE puts. Absolute idiot and will never touch them again. I won it all back. Literally betting corn predictions and now green. I lost probably 10 years of My life today but to come Back from 7k is a miracle.
+          <div class="translation">翻译：0DTE看跌期权让我亏损了3万美元。我真是个白痴，再也不会碰它们了。我把所有钱都赢回来了。我简直是在押注玉米价格预测，现在终于转绿了。我今天可能损失了十年的寿命，但从7千美元的低点翻身回来真是个奇迹。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          All the memory stocks have gone fucking crazy over the last year and now that the pump is slowing down I’m starting to wonder how much of this memory is actually needed. I understand that Ai is expanding and they need more memory for it, but do we really need 600% more memory? That seems like kinda growth and I find it hard to believe that Ai needs 6x more memory this year than last year. I’m probably just regarded but I think this might be overvalued as fuck
+          <div class="translation">翻译：所有存储芯片股在过去一年都涨疯了，现在这种炒作正在放缓，我开始怀疑到底需要多少存储。我明白人工智能正在扩张，它们需要更多的存储，但我们真的需要多600%的存储吗？这看起来像某种增长，我很难相信人工智能今年需要比去年多6倍的存储。我可能只是个笨蛋，但我认为这可能被严重高估了。</div>
+        </blockquote>
+      </li>
+    </ul>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
       <li>
-        <div class="stock-tag">1. IBM (International Business Machines Corporation)</div>
+        <div class="stock-tag">1. IBM (International Business Machines Corp)</div>
+        <blockquote class="quote">
+          IBM shares plunge 25% as customers shift spending to AI
+          <div class="translation">翻译：IBM股价暴跌25%，因客户将支出转向人工智能。</div>
+        </blockquote>
         <blockquote class="quote">
           IBM expects second-quarter revenue below estimates. Results in SaaS sell-off
-          <div class="translation">翻译：IBM预计第二季度营收低于预期。导致SaaS（软件即服务）板块抛售。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">2. MSFT (Microsoft Corporation)</div>
-        <blockquote class="quote">
-          It seemed cheap. Sentiment is bad. It prints money. If you use a computer, then you use MSFT.
-          <div class="translation">翻译：它看起来很便宜。市场情绪很差。它就是一台印钞机。如果你用电脑，那你肯定会用微软的产品。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">3. META (Meta Platforms, Inc.)</div>
-        <blockquote class="quote">
-          Meta’s Louisiana Data Center to Surpass $250 Billion Price Tag
-          <div class="translation">翻译：Meta在路易斯安那州的数据中心项目预计将超过2500亿美元。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">4. PARA (Paramount Global) & WBD (Warner Bros. Discovery, Inc.)</div>
-        <blockquote class="quote">
-          12 States File Lawsuit To Block $110 Billion Paramount-Warner Bros. Merger
-          <div class="translation">翻译：12个州提起诉讼，旨在阻止派拉蒙-华纳兄弟1100亿美元的合并案。</div>
+          <div class="translation">翻译：IBM预计第二季度营收低于预期。导致SaaS业务遭到抛售。</div>
         </blockquote>
       </li>
     </ul>
@@ -89,81 +106,49 @@
     <h2>3. 小众公司冒泡</h2>
     <ul>
       <li>
-        <div class="stock-tag">1. AFL (Aflac Incorporated)</div>
+        <div class="stock-tag">1. NFLX (Netflix, Inc.)</div>
         <blockquote class="quote">
-          Japan is about to get a Magnitude 9.3+ earthquake and by shorting $AFL we could make insane money and save the world by doing it, including my sister.
-          <div class="translation">翻译：日本即将发生9.3级以上地震，通过做空AFL，我们能赚大钱并拯救世界，包括我妹妹。</div>
+          While I’m not going to lay out the full bull case for NFLX, I think its current performance is largely based on perception rather than fundamentals- which are very strong. If NFLX can show it’s still growing and expanding into ad tiers, live content, sports, international audiences, etc, and also report positive earnings and customer growth, I believe that will convince Wall Street it’s still capable of succeeding despite Reed Hastings departure- which I feel was a large factor contributing to the markets trepidation right now. Another overlooked catalyst right now is legal opposition to the Paramount WB merger
+          <div class="translation">翻译：虽然我不会详细阐述Netflix的完整看涨理由，但我认为其当前表现主要基于市场看法而非其非常强劲的基本面。如果Netflix能证明它仍在增长并拓展广告层级、直播内容、体育、国际市场等领域，并能报告积极的收益和客户增长，我相信这将说服华尔街，尽管里德·哈斯廷斯离职，公司仍有能力取得成功，我认为这是当前市场担忧的一个重要因素。目前另一个被忽视的催化剂是反对派拉蒙和华纳兄弟合并的法律行动。</div>
         </blockquote>
       </li>
       <li>
-        <div class="stock-tag">2. CMPS (COMPASS Pathways plc)</div>
+        <div class="stock-tag">2. FIG (Fortune International Group)</div>
         <blockquote class="quote">
-          Compass Pathways is a sub-$2 billion company developing what I believe will likely be the first FDA-approved psilocybin therapy, targeting a TRD market that is largely unserved and worth tens of billions of dollars.
-          <div class="translation">翻译：Compass Pathways是一家市值不到20亿美元的公司，正在开发我认为很可能成为首个获得FDA批准的裸盖菇素疗法，目标是大部分未被满足且价值数百亿美元的难治性抑郁症（TRD）市场。</div>
+          $FIG has been throwing off some seriously weird options activity this week. Today it held key support, traded with absolute crackhead volatility, broke through resistance, and closed higher than yesterday. Meanwhile, premiums on the far OTM calls are starting to wake up. The one that keeps screaming at me is the $28C expiring this week. Monday it was pushing 80k+ volume with only a couple hundred contracts of open interest. That’s an absurd amount of fresh positioning, not people closing old trades. Could be nothing. Could be degens lighting money on fire. But when you combine that flow with today’s price action, I’m adding more. I’m adding bullish here.
+          <div class="translation">翻译：本周FIG股票出现了非常奇怪的期权活动。今天它守住了关键支撑位，以极高的波动性交易，突破了阻力位，收盘价高于昨天。同时，远期虚值看涨期权的溢价开始上涨。让我非常关注的是本周到期的28美元看涨期权。周一它的交易量超过8万份，但未平仓合约只有几百份。这是大量新的建仓，而不是平旧仓。可能没什么，也可能是赌徒在烧钱。但如果将这种资金流与今天的价格走势结合起来看，我正在加仓。我在这里看涨。</div>
         </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">3. SSNLF (Samsung Electronics Co., Ltd.)</div>
         <blockquote class="quote">
-          In my view the stock is structurally mispriced due to ADR status, small capitalization, career risk, generalist distraction, specialist unfamiliarity, an inherited assumption that no strategic buyer exists, and years of accumulated investor apathy, none of which have anything to do with the fundamentals.
-          <div class="translation">翻译：在我看来，该股票由于ADR身份、市值小、职业风险、普通投资者分散注意力、专业人士不熟悉、以及一个认为不存在战略买家的固有假设和多年累积的投资者冷漠，而存在结构性定价错误，这些都与基本面无关。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The fundamentals are strong.
-          <div class="translation">翻译：基本面很强劲。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Two positive Phase 3 trials, both now complete through 26-week durability.
-          <div class="translation">翻译：两项积极的3期临床试验均已完成，并显示出26周的持久性。</div>
+          Samsung Weighs U.S. ADR Listing
+          <div class="translation">翻译：三星正权衡在美国上市ADR。</div>
         </blockquote>
       </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型</div>
-    <blockquote>
-      Even OpenAI announced they have found ways to increase efficiency 50% in their new model - imagine requiring half the RAM overnight for inference.
-      <div class="translation">翻译：OpenAI甚至宣布他们已经找到了在新模型中将效率提高50%的方法——想象一下，一夜之间将推理所需的内存减少一半。</div>
-    </blockquote>
-    <div class="track-header">算</div>
-    <blockquote>
-      Meta’s Louisiana Data Center to Surpass $250 Billion Price Tag
-      <div class="translation">翻译：Meta在路易斯安那州的数据中心项目预计将超过2500亿美元。</div>
-    </blockquote>
-    <div class="track-header">光</div>
-    <p>（未发现相关讨论）</p>
-    <div class="track-header">存</div>
-    <blockquote>
-      All the memory stocks have gone fucking crazy over the last year and now that the pump is slowing down I’m starting to wonder how much of this memory is actually needed.
-      <div class="translation">翻译：所有的内存股票在过去一年里都疯涨了，现在涨势开始放缓，我开始怀疑到底需要多少内存。</div>
-    </blockquote>
-    <blockquote>
-      I understand that Ai is expanding and they need more memory for it, but do we really need 600% more memory? That seems like kinda growth and I find it hard to believe that Ai needs 6x more memory this year than last year.
-      <div class="translation">翻译：我理解人工智能正在扩展，需要更多内存，但我们真的需要600%的内存增长吗？这看起来像某种增长，我很难相信人工智能今年比去年需要多6倍的内存。</div>
-    </blockquote>
-    <blockquote>
-      Anyone notice that ddr5 ram prices have gone sideways since Jan 2026? I know because I bought RAM then, and if you compare now they haven’t gone up at all.
-      <div class="translation">翻译：有人注意到自2026年1月以来，DDR5内存价格一直持平吗？我之所以知道，是因为我那时买了内存，如果你现在比较，它们根本没有上涨。</div>
-    </blockquote>
-    <blockquote>
-      Demand destruction is real, as is new software techniques to reduce RAM requirements (quantization, lightning index, etc).
-      <div class="translation">翻译：需求破坏是真实存在的，新的软件技术（如量化、闪电索引等）也在减少内存需求。</div>
-    </blockquote>
-    <div class="track-header">电</div>
-    <blockquote>
-      Meta’s Louisiana Data Center to Surpass $250 Billion Price Tag
-      <div class="translation">翻译：Meta在路易斯安那州的数据中心项目预计将超过2500亿美元。</div>
-    </blockquote>
-    <div class="track-header">板</div>
-    <p>（未发现相关讨论）</p>
-    <div class="track-header">云</div>
-    <blockquote>
-      Not sure what Azure does.
-      <div class="translation">翻译：不确定Azure具体做什么。</div>
-    </blockquote>
-    <blockquote>
-      Meta’s Louisiana Data Center to Surpass $250 Billion Price Tag
-      <div class="translation">翻译：Meta在路易斯安那州的数据中心项目预计将超过2500亿美元。</div>
-    </blockquote>
-    <div class="track-header">AI应用</div>
-    <p>（未发现相关讨论）</p>
+    <div class="track-header">存 (Storage/Memory)</div>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          All the memory stocks have gone fucking crazy over the last year and now that the pump is slowing down I’m starting to wonder how much of this memory is actually needed. I understand that Ai is expanding and they need more memory for it, but do we really need 600% more memory? That seems like kinda growth and I find it hard to believe that Ai needs 6x more memory this year than last year. I’m probably just regarded but I think this might be overvalued as fuck
+          <div class="translation">翻译：所有存储芯片股在过去一年都涨疯了，现在这种炒作正在放缓，我开始怀疑到底需要多少存储。我明白人工智能正在扩张，它们需要更多的存储，但我们真的需要多600%的存储吗？这看起来像某种增长，我很难相信人工智能今年需要比去年多6倍的存储。我可能只是个笨蛋，但我认为这可能被严重高估了。</div>
+        </blockquote>
+      </li>
+    </ul>
+    <div class="track-header">AI应用 (AI Applications)</div>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          IBM shares plunge 25% as customers shift spending to AI
+          <div class="translation">翻译：IBM股价暴跌25%，因客户将支出转向人工智能。</div>
+        </blockquote>
+      </li>
+    </ul>
+</body>
+</html>
         </div>
         <script>
             var myChart = echarts.init(document.getElementById('gauge'));
@@ -173,7 +158,7 @@
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
                     detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n恐慌', color: '#fff' },
-                    data: [{ value: 44 }]
+                    data: [{ value: 43 }]
                 }]
             });
         </script>
