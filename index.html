@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>07月15日 情报终端</title>
+        <title>07月16日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,173 +36,153 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 07月15日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-07-15 22:18:40 (北京时间)</p>
+            <h1>🎯 07月16日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-07-16 11:46:25 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026年07月15日 Reddit美股市场情绪网页</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f9f9f9; }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        h2 { color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px; }
-        ul { list-style: none; padding: 0; }
-        li { background-color: #fff; border: 1px solid #e7e7e7; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #3498db; margin-bottom: 10px; font-size: 1.1em; }
-        blockquote { border-left: 4px solid #f39c12; margin: 0 0 10px 0; padding: 10px 15px; background-color: #fffaf0; color: #555; font-style: italic; }
-        .translation { font-size: 0.9em; color: #666; margin-top: 5px; }
-        .track-header { font-weight: bold; color: #e74c3c; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; padding-left: 10px; border-left: 3px solid #e74c3c; }
-        .macro-point { margin-bottom: 10px; }
-    </style>
-</head>
-<body>
-    <h1>Reddit美股市场情绪快照 (2026年07月15日)</h1>
+            <div class="market-sentiment-report">
+  <h2>1. 宏观与市场情绪</h2>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        It's tough to find values when everybody is preferring gambling.
+        <div class="translation">翻译：当所有人都倾向于赌博时，很难找到有价值的投资。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Goldman Sachs High-Beta Momentum Index down -24% month-to-date through first half of July, the worst performance since Apr 2009. Morgan Stanley Tech Momentum Index 17-day rate of change down -35%, worst ever recorded thru 27-year history.
+        <div class="translation">翻译：高盛高贝塔动量指数在7月上半月下跌了-24%，是2009年4月以来的最差表现。摩根士丹利科技动量指数17天变化率下跌-35%，是27年历史上最差的记录。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Wholesale prices unexpectedly declined 0.3% in June on big drop in gasoline.
+        <div class="translation">翻译：受汽油价格大幅下跌影响，6月份批发价格意外下降0.3%。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Finance Anthropic moves closer to mega-IPO as bankers line up investor meetings.
+        <div class="translation">翻译：随着银行家安排投资者会议，Anthropic 在融资方面离大型首次公开募股（IPO）更近一步。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <h2>1. 宏观与市场情绪</h2>
-    <div class="macro-point">
-        <blockquote class="quote">
-            Wholesale prices unexpectedly declined 0.3% in June on big drop in gasoline.
-            <div class="translation">翻译：批发价格在六月份意外下降0.3%，主要受汽油价格大跌影响。</div>
-        </blockquote>
-    </div>
-    <div class="macro-point">
-        <blockquote class="quote">
-            CPI 3.5% YoY, (Est. 3.8%).
-            <div class="translation">翻译：消费者物价指数（CPI）同比增长3.5%（预期3.8%）。</div>
-        </blockquote>
-    </div>
-    <div class="macro-point">
-        <blockquote class="quote">
-            CPI -0.4% MoM, (Est. 0.0%).
-            <div class="translation">翻译：消费者物价指数（CPI）环比下降0.4%（预期0.0%）。</div>
-        </blockquote>
-    </div>
-    <div class="macro-point">
-        <blockquote class="quote">
-            Core CPI 2.6% YoY, (Est. 2.9%).
-            <div class="translation">翻译：核心消费者物价指数（Core CPI）同比增长2.6%（预期2.9%）。</div>
-        </blockquote>
-    </div>
-    <div class="macro-point">
-        <blockquote class="quote">
-            Core CPI 0.0% MoM, (Est. 0.2%).
-            <div class="translation">翻译：核心消费者物价指数（Core CPI）环比增长0.0%（预期0.2%）。</div>
-        </blockquote>
-    </div>
-    <div class="macro-point">
-        <blockquote class="quote">
-            semis started dumping at the end of june.
-            <div class="translation">翻译：半导体股票在六月底开始大量抛售。</div>
-        </blockquote>
-    </div>
+  <h2>2. 热议中的个股和想法</h2>
+  <ul>
+    <li>
+      <div class="stock-tag">MU (Micron Technology)</div>
+      <blockquote class="quote">
+        This was all from MU calls over the past several weeks. Every down day I thought it was going to rebound a bit but it never did.
+        <div class="translation">翻译：过去几周里，这一切都来自于美光科技（MU）的看涨期权。每个下跌的日子我都以为它会反弹一点，但它从未反弹。</div>
+      </blockquote>
+      <blockquote class="quote">
+        SNDK, MU, STX took me to the top and it all came crashing down.
+        <div class="translation">翻译：SNDK、美光科技（MU）、希捷科技（STX）把我带到了顶峰，然后一切都崩盘了。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Semis started dumping at the end of June so I sold my whole portfolio for DRAM calls expecting early July to be a good.
+        <div class="translation">翻译：6月底半导体开始暴跌，所以我卖掉了所有的投资组合去买DRAM看涨期权，期待7月初会表现良好。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">ASTS (AST SpaceMobile)</div>
+      <blockquote class="quote">
+        AST SpaceMobile Announces Proposed Private Offering of $1.0 Billion of Convertible Senior Notes Due 2034.
+        <div class="translation">翻译：AST SpaceMobile 宣布拟发行10亿美元2034年到期可转换优先票据。</div>
+      </blockquote>
+      <blockquote class="quote">
+        I held onto shares on margin for the next month, waiting for the bounce but it never came. I had a margin call every week and finally today they diluted and sealed the deal.
+        <div class="translation">翻译：我以保证金持有股票一个月，等待反弹但它从未到来。我每周都收到追加保证金通知，今天他们终于稀释了股权，尘埃落定。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Then ASTS dilutes after hours despite assurances the last raise would suffice.
+        <div class="translation">翻译：ASTS 在盘后稀释了股权，尽管此前曾保证上次融资足以解决问题。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Gonna have to get those sats up boys and actual revenue inbound before my money returns.
+        <div class="translation">翻译：我的钱回来之前，他们必须先把卫星送上天，并且实际的收入到账。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">RKLB (Rocket Lab USA)</div>
+      <blockquote class="quote">
+        I was swing trading RKLB and ASTS for a while and felt pretty good about big gains in just a few months.
+        <div class="translation">翻译：我做RKLB和ASTS的波段交易了一段时间，在短短几个月内获得了不错的收益，感觉很好。</div>
+      </blockquote>
+      <blockquote class="quote">
+        My god the positive news both ASTS and RKLB posted in recent weeks, yet getting absolutely savaged as Musk's bag holders drain the sector, slowly learn'n what that huge inbound share lockup expiration in a few weeks is gonna do to them.
+        <div class="translation">翻译：天啊，尽管ASTS和RKLB最近都发布了积极消息，但却遭到猛烈冲击，马斯克的“接盘侠”们正在抽离这个板块，慢慢意识到几周后即将到来的巨额股份锁定期到期将对他们造成什么影响。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">MSTR (MicroStrategy)</div>
+      <blockquote class="quote">
+        He bought stock and options in 2024. Paid off big time in just a couple months.
+        <div class="translation">翻译：他在2024年购买了股票和期权。在短短几个月内获得了巨额回报。</div>
+      </blockquote>
+      <blockquote class="quote">
+        Portfolio went up 5x (his all-time chart doesn’t show intra-week top). Top on Nov 21 2024 was $540,000.
+        <div class="translation">翻译：投资组合上涨了5倍（他的历史图表没有显示周内高点）。2024年11月21日的最高点是540,000美元。</div>
+      </blockquote>
+    </li>
+    <li>
+      <div class="stock-tag">IBM (International Business Machines)</div>
+      <blockquote class="quote">
+        IBM shares plunge 25% as customers shift spending to AI.
+        <div class="translation">翻译：由于客户将支出转向人工智能，IBM股价暴跌25%。</div>
+      </blockquote>
+    </li>
+  </ul>
 
-    <h2>2. 热议中的个股和想法</h2>
-    <ul>
-      <li>
-        <div class="stock-tag">IBM (国际商业机器公司)</div>
-        <blockquote class="quote">
-          IBM shares plunge 25% as customers shift spending to AI.
-          <div class="translation">翻译：国际商业机器公司股价暴跌25%，因客户将支出转向人工智能。</div>
-        </blockquote>
-        <blockquote class="quote">
-          IBM expects second-quarter revenue below estimates. Results in SaaS sell-off.
-          <div class="translation">翻译：国际商业机器公司预计第二季度营收低于预期。导致软件即服务（SaaS）股票遭到抛售。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">PYPL (PayPal Holdings, Inc.)</div>
-        <blockquote class="quote">
-          Stripe/Advent offer to buy PayPal for more than $53 billion.
-          <div class="translation">翻译：Stripe/Advent出价超过530亿美元收购PayPal。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Come to learn, the tender offer bid is at 60.50, so the market only really rewarded calls with strikes below that.
-          <div class="translation">翻译：后来得知，要约收购价为60.50美元，因此市场只对行权价低于此价格的看涨期权给予了奖励。</div>
-        </blockquote>
-        <blockquote class="quote">
-          I'm so bad at this my PYPL calls went DOWN becuse the strike is higher than the adquisition bid price.
-          <div class="translation">翻译：我太糟糕了，我的PayPal看涨期权下跌了，因为行权价高于收购出价。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">NFLX (Netflix, Inc.)</div>
-        <blockquote class="quote">
-          Bought these leaps a while back but NFLX never recovered.
-          <div class="translation">翻译：我之前买入的这些长期看涨期权，但奈飞从未恢复。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Should I sell some of my calls before earning due to IV crush?
-          <div class="translation">翻译：我是否应该在财报发布前卖掉一些看涨期权，以避免波动率（IV）下降的冲击？</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">SK hynix (SK海力士)</div>
-        <blockquote class="quote">
-          Sk Hynix is rising but this is still losing money?
-          <div class="translation">翻译：SK海力士正在上涨，但这仍然在亏钱？</div>
-        </blockquote>
-        <blockquote class="quote">
-          semis started dumping at the end of june.
-          <div class="translation">翻译：半导体股票在六月底开始大量抛售。</div>
-        </blockquote>
-      </li>
-    </ul>
+  <h2>3. 小众公司冒泡</h2>
+  <!-- 未找到符合条件的小众公司 -->
 
-    <h2>3. 小众公司冒泡</h2>
-    <ul>
-      <li>
-        <div class="stock-tag">ASML (ASML Holding N.V.)</div>
-        <blockquote class="quote">
-          ASML hikes sales forecast for second time this year on strong AI chip demand.
-          <div class="translation">翻译：阿斯麦今年第二次上调销售预测，受强劲人工智能芯片需求推动。</div>
-        </blockquote>
-      </li>
-    </ul>
-
-    <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型</div>
-    <div class="track-header">算 (Compute)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          ASML hikes sales forecast for second time this year on strong AI chip demand.
-          <div class="translation">翻译：阿斯麦今年第二次上调销售预测，受强劲人工智能芯片需求推动。</div>
-        </blockquote>
-      </li>
-    </ul>
-    <div class="track-header">光</div>
-    <div class="track-header">存 (Storage)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Sk Hynix is rising but this is still losing money?
-          <div class="translation">翻译：SK海力士正在上涨，但这仍然在亏钱？</div>
-        </blockquote>
-      </li>
-    </ul>
-    <div class="track-header">电</div>
-    <div class="track-header">板</div>
-    <div class="track-header">云</div>
-    <div class="track-header">AI应用 (AI Applications)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          IBM shares plunge 25% as customers shift spending to AI.
-          <div class="translation">翻译：国际商业机器公司股价暴跌25%，因客户将支出转向人工智能。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          IBM expects second-quarter revenue below estimates. Results in SaaS sell-off.
-          <div class="translation">翻译：国际商业机器公司预计第二季度营收低于预期。导致软件即服务（SaaS）股票遭到抛售。</div>
-        </blockquote>
-      </li>
-    </ul>
-</body>
-</html>
+  <h2>4. AI主线讨论</h2>
+  <div class="track-header">模型</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Finance Anthropic moves closer to mega-IPO as bankers line up investor meetings.
+        <div class="translation">翻译：随着银行家安排投资者会议，Anthropic 在融资方面离大型首次公开募股（IPO）更近一步。</div>
+      </blockquote>
+    </li>
+  </ul>
+  <div class="track-header">算</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Semis started dumping at the end of June.
+        <div class="translation">翻译：6月底半导体开始暴跌。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        DRAM calls expecting early July to be a good.
+        <div class="translation">翻译：DRAM看涨期权预计7月初表现良好。</div>
+      </blockquote>
+    </li>
+  </ul>
+  <div class="track-header">光</div>
+  <!-- 未找到相关讨论 -->
+  <div class="track-header">存</div>
+  <!-- 未找到相关讨论 -->
+  <div class="track-header">电</div>
+  <!-- 未找到相关讨论 -->
+  <div class="track-header">板</div>
+  <!-- 未找到相关讨论 -->
+  <div class="track-header">云</div>
+  <!-- 未找到相关讨论 -->
+  <div class="track-header">AI应用</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        IBM shares plunge 25% as customers shift spending to AI.
+        <div class="translation">翻译：由于客户将支出转向人工智能，IBM股价暴跌25%。</div>
+      </blockquote>
+    </li>
+  </ul>
+</div>
         </div>
         <script>
             var myChart = echarts.init(document.getElementById('gauge'));
@@ -212,7 +192,7 @@
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
                     detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n中立', color: '#fff' },
-                    data: [{ value: 48 }]
+                    data: [{ value: 46 }]
                 }]
             });
         </script>
