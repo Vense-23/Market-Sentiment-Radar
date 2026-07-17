@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>07月16日 情报终端</title>
+        <title>07月17日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,198 +36,194 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 07月16日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-07-16 22:32:00 (北京时间)</p>
+            <h1>🎯 07月17日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-07-17 22:11:38 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股量化分析：Reddit市场情绪速览 (2026年07月16日)</title>
+    <title>美股市场情绪分析 (2026年07月17日)</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
-        h1, h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
-        h2 { font-size: 1.8em; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f8f9fa; }
+        h2 { color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 10px; margin-top: 30px; }
+        h3 { color: #0056b3; margin-top: 20px; }
         ul { list-style: none; padding: 0; }
-        li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; font-size: 1.1em; color: #0056b3; margin-bottom: 10px; }
-        .quote { margin: 10px 0 0 15px; padding: 10px 15px; border-left: 4px solid #007bff; background-color: #e9f7ff; color: #444; font-style: italic; border-radius: 4px; }
-        .translation { font-style: normal; color: #666; margin-top: 5px; font-size: 0.9em; padding-top: 5px; border-top: 1px dashed #cceeff; }
-        p { margin-bottom: 15px; }
-        .track-header { font-weight: bold; font-size: 1.2em; color: #28a745; margin-top: 20px; margin-bottom: 10px; padding-bottom: 5px; border-bottom: 1px solid #c3e6cb; }
+        li { background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .stock-tag { font-weight: bold; color: #333; margin-bottom: 10px; font-size: 1.1em; }
+        .quote { background-color: #f1f8ff; border-left: 4px solid #007bff; padding: 10px 15px; margin: 10px 0; font-style: italic; color: #555; }
+        .translation { margin-top: 8px; font-size: 0.9em; color: #666; }
+        .track-header { font-weight: bold; color: #0056b3; margin-top: 15px; margin-bottom: 5px; font-size: 1em; }
+        .ai-category-list { list-style: disc; margin-left: 20px; }
+        .ai-category-list li { margin-bottom: 5px; padding: 0; border: none; background-color: transparent; box-shadow: none; }
+        .ai-category-list .quote { margin-left: -15px; padding-left: 10px; }
     </style>
 </head>
 <body>
 
-    <h1>Reddit美股市场情绪速览 (2026年07月16日)</h1>
+    <h1>Reddit 美股市场情绪分析 (2026年07月17日)</h1>
 
     <h2>1. 宏观与市场情绪</h2>
-    <p>2026年7月，市场情绪呈现出复杂而紧张的局面，主要特点是动量股和科技股的深度回调，以及投资者对期权交易的普遍亏损和警告。与此同时，高风险的0DTE（当日到期）期权交易仍然吸引着部分寻求快速回本的交易者。沃伦·巴菲特对当前市场“赌博”盛行的看法，也反映了价值投资面临的挑战。</p>
+    <p>市场正经历一场“高β动量股”的残酷抛售，其严重程度被描述为有记录以来最糟糕的一次，甚至超过了金融危机和互联网泡沫时期。尽管一些公司仍能盈利，但抛售压力持续不减，尤其是在7月份，这种趋势异常极端。与此同时，市场中散户投资者损失惨重，尤其是在期权交易方面，导致了强烈的劝退情绪，警示不懂期权交易的投资者应立即止损离场。</p>
     <ul>
-      <li>
-        <blockquote class="quote">
-          Goldman Sachs High-Beta Momentum Index down -24% month-to-date through first half of July, the worst performance since Apr 2009.
-          <div class="translation">翻译：高盛高贝塔动量指数在7月上半月下跌了24%，是2009年4月以来最差的表现。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Morgan Stanley Tech Momentum Index 17-day rate of change down -35%, worst ever recorded thru 27-year history.
-          <div class="translation">翻译：摩根士丹利科技动量指数17天变化率下跌35%，是27年历史上的最差记录。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          If anyone who's reading this is trading options and dont know what you are doing, please stop. Its not going to end well. Take whatever loss you have and leave this casino.
-          <div class="translation">翻译：如果有人正在读这篇并且正在交易期权，但不知道自己在做什么，请停止。结局不会好。承受你已经造成的损失，然后离开这个赌场吧。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          It's tough to find values when everybody is preferring gambling
-          <div class="translation">翻译：当所有人都倾向于赌博时，很难找到价值。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          0dte is the way, made most of my losses back in the last month
-          <div class="translation">翻译：0DTE（当日到期期权）是出路，上个月我用它弥补了大部分损失。</div>
-        </blockquote>
-      </li>
+        <li>
+            <blockquote class="quote">
+                The market is currently experiencing what looks like the worst high beta momentum stock sell-off ever recorded. Worse than the Great Financial Crisis, the tariff tantrum, COVID, and the dot-com bubble. That statement alone sounds almost impossible, but the data behind this move is genuinely difficult to comprehend. I don't think there are many words that can properly describe how extreme and unusual this sell-off has been. This started happening at the end of June and has continued with relentless selling pressure across high beta and momentum stocks.
+                <div class="translation">翻译：市场目前正在经历有记录以来最严重的高β动量股抛售。比全球金融危机、关税冲击、新冠疫情和互联网泡沫时期更糟。这个说法听起来几乎不可能，但这次波动背后的数据确实难以理解。我认为没有多少词语能恰当地描述这次抛售的极端和不寻常程度。这从6月底开始，高β和动量股就持续承受着无情的抛售压力。</div>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="quote">
+                In case you’re wondering why it feels like every higher beta growth stock you own is getting absolutely relentlessly annihilated. -27.5% and probably higher after close today. Higher than 2021 fed shutting the printer down. July typically is a pullback but this is on the levels of dot com burst, with companies actually still making money.
+                <div class="translation">翻译：如果你想知道为什么你持有的每一只高β成长股都感觉被无情地摧毁了。今天收盘后可能跌幅会超过-27.5%。比2021年美联储停止印钞时还要高。七月通常会出现回调，但这次的水平堪比互联网泡沫破裂，而公司实际上还在盈利。</div>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="quote">
+                If anyone who's reading this is trading options and dont know what you are doing, please stop. Its not going to end well. Take whatever loss you have and leave this casino.
+                <div class="translation">翻译：如果正在阅读这篇文章的你正在交易期权，但不知道自己在做什么，请立即停止。结果不会好的。承担你现有的任何损失，然后离开这个赌场。</div>
+            </blockquote>
+        </li>
     </ul>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
-      <li>
-        <div class="stock-tag">1. UBER (Uber Technologies)</div>
-        <blockquote class="quote">
-          Uber ($UBER) has agreed to acquire Germany’s Delivery Hero ($DHER) for $14.8 billion, offering shareholders €41.50 per share.
-          <div class="translation">翻译：优步（$UBER）已同意以148亿美元收购德国的Delivery Hero（$DHER），向股东每股提供41.50欧元。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The deal would combine Uber Eats with brands including foodpanda, PedidosYa and talabat, expanding Uber’s food-delivery reach across dozens of global markets.
-          <div class="translation">翻译：这项交易将把Uber Eats与foodpanda、PedidosYa和talabat等品牌合并，将优步的食品配送业务扩展到全球数十个市场。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Delivery Hero’s operations in 14 overlapping countries will instead be sold to SSW Partners for $1.6 billion to reduce competition concerns, with the takeover expected to close in the second half of 2027.
-          <div class="translation">翻译：Delivery Hero在14个重叠国家的业务将转售给SSW Partners，作价16亿美元，以减少竞争顾虑，此次收购预计将于2027年下半年完成。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">2. SKHY (SK Hynix)</div>
-        <blockquote class="quote">
-          SK Hynix shares are currently trading at 33% premium on NASDAQ compared to KRX. Short NASDAQ + Long KRX = free money
-          <div class="translation">翻译：SK海力士的股票目前在纳斯达克的交易价格比在韩国交易所（KRX）溢价33%。做空纳斯达克+做多韩国交易所=免费的钱。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Maximum profit: +$30k Annual cost of shorting: $86k * 2.28% = -$2k Annual interest on net cash: $30k * 3.5% = +$1k
-          <div class="translation">翻译：最大利润：+3万美元。做空年成本：8.6万美元 * 2.28% = -2千美元。净现金年利息：3万美元 * 3.5% = +1千美元。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Main risks: Brief premium spike due to difference in exchange trading hours. Let's say SKHY doubles overnight while KRX is sleeping. If I don't have enough portfolio value, it can result in a margin call. Lack of shortable SKHY shares - will increase the cost of shorting.
-          <div class="translation">翻译：主要风险：由于交易所交易时间差异导致的短暂溢价飙升。假设SK海力士在韩国交易所休市期间隔夜翻倍。如果我没有足够的投资组合价值，可能会导致追加保证金。缺乏可做空的SK海力士股票——将增加做空成本。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">3. ASTS (AST SpaceMobile)</div>
-        <blockquote class="quote">
-          AST SpaceMobile Announces Proposed Private Offering of $1.0 Billion of Convertible Senior Notes Due 2034
-          <div class="translation">翻译：AST SpaceMobile宣布拟进行10亿美元2034年到期可转换优先票据的私募发行。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Welp lucky me, I SOLD 4,000 shares of ASTS at $67 between yesterday and this morning as it immediately plumbed lower
-          <div class="translation">翻译：唉，算我走运，我在昨天和今天上午之间以67美元的价格卖出了4000股ASTS，因为它立即暴跌。</div>
-        </blockquote>
-        <blockquote class="quote">
-          My god the positive news both ASTS and RKLB posted in recent weeks, yet getting absolutely savaged as Musk's bag holders drain the sector, slowly learn'n what that huge inbound share lockup expiration in a few weeks is gonna do to them - come on retail, lift them bags!! Then ASTS dilutes after hours despite assurances the last raise would suffice.
-          <div class="translation">翻译：天哪，ASTS和RKLB最近几周都发布了积极消息，但却遭到马斯克的“韭菜”们抛售，正在慢慢了解几周后即将到来的巨额股份解禁会给他们带来什么——散户们，快把那些包袱接起来吧！！然后ASTS在盘后稀释股份，尽管之前承诺上次融资就足够了。</div>
-        </blockquote>
-        <blockquote class="quote">
-          I had a margin call every week and finally today they diluted and sealed the deal.
-          <div class="translation">翻译：我每周都收到追加保证金通知，今天他们终于稀释了股份，彻底完了。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">4. RKLB (Rocket Lab USA)</div>
-        <blockquote class="quote">
-          My god the positive news both ASTS and RKLB posted in recent weeks, yet getting absolutely savaged as Musk's bag holders drain the sector
-          <div class="translation">翻译：天哪，ASTS和RKLB最近几周都发布了积极消息，但却遭到马斯克的“韭菜”们抛售，整个板块被重创。</div>
-        </blockquote>
-        <blockquote class="quote">
-          I was swing trading RKLB and ASTS for a while and felt pretty good about big gains in just a few months. Preceding SpaceX they both ripped and I was so excited because I thought with just a little more I could avoid having to take out student loans the next 3 years. And then on IPO everything dumped.
-          <div class="translation">翻译：我做RKLB和ASTS的波段交易有一段时间了，在短短几个月内获得了可观的收益，感觉很好。在SpaceX之前它们都暴涨，我非常兴奋，因为我以为再多一点就能避免未来三年申请助学贷款。但IPO之后一切都暴跌了。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">5. MU (Micron Technology)</div>
-        <blockquote class="quote">
-          This was all from MU calls over the past several weeks. Every down day I thought it was going to rebound a bit but it never did.
-          <div class="translation">翻译：这都是过去几周MU（美光科技）看涨期权的损失。每个下跌的日子我都以为它会反弹一点，但它从未反弹。</div>
-        </blockquote>
-        <blockquote class="quote">
-          SNDK, MU, STX took me to the top and it all came crashing down.
-          <div class="translation">翻译：SNDK、MU、STX曾把我带到顶峰，然后一切都崩溃了。</div>
-        </blockquote>
-      </li>
+        <li>
+            <div class="stock-tag">1. TMTG (Trump Media & Technology Group Corp.)</div>
+            <blockquote class="quote">
+                Trump Media & Technology Group has unveiled a paid-for, licensed data feed that will give banks and trading firms "the fastest" access to posts from influential Truth Social accounts, such as President Donald Trump's, whose posts often move global markets.
+                <div class="translation">翻译：特朗普媒体与科技集团推出了一项付费授权数据源，将为银行和交易公司提供“最快”访问具有影响力的Truth Social账户（如唐纳德·特朗普总统的账户）帖子权限，这些帖子经常会影响全球市场。</div>
+            </blockquote>
+            <blockquote class="quote">
+                The product, called 'Truth API', will deliver posts from the 10 most influential accounts to customers at a significantly faster pace than a regular push notification on the Truth Social platform, a spokesperson said.
+                <div class="translation">翻译：一位发言人表示，这款名为“Truth API”的产品将以比Truth Social平台上的常规推送通知快得多的速度，向客户传递来自10个最具影响力账户的帖子。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">2. AAPL (Apple Inc.)</div>
+            <blockquote class="quote">
+                Apple unseats Nvidia to become world's most valuable company as AI bets shift
+                <div class="translation">翻译：随着人工智能押注的转移，苹果取代英伟达成为全球市值最高的公司。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">3. NVDA (NVIDIA Corporation)</div>
+            <blockquote class="quote">
+                Apple unseats Nvidia to become world's most valuable company as AI bets shift
+                <div class="translation">翻译：随着人工智能押注的转移，苹果取代英伟达成为全球市值最高的公司。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">4. NFLX (Netflix, Inc.)</div>
+            <blockquote class="quote">
+                Netflix shares fell 8% after lukewarm earnings and a shake-up in how it releases viewing data
+                <div class="translation">翻译：Netflix股价在财报平淡和数据发布方式调整后下跌8%。</div>
+            </blockquote>
+            <blockquote class="quote">
+                I’ve decided to double down on my original position going into NFLX’s earnings.
+                <div class="translation">翻译：我决定在Netflix财报公布前加倍我的原始头寸。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">5. MU (Micron Technology, Inc.)</div>
+            <blockquote class="quote">
+                How low can these memory stocks drop. Seems like theres no true catalyst besides negative market sentiment, considering TSM’s strong earnings ( 10:52 edit, down another 2%)
+                <div class="translation">翻译：这些内存股还能跌多低。除了负面市场情绪外，似乎没有真正的催化剂，考虑到台积电强劲的盈利（10:52编辑，又跌了2%）。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">6. TSM (Taiwan Semiconductor Manufacturing Company Limited)</div>
+            <blockquote class="quote">
+                TSM’s strong earnings ( 10:52 edit, down another 2%)
+                <div class="translation">翻译：台积电强劲的盈利（10:52编辑，又跌了2%）。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Taiwan computer chipmaker TSMC pledges another $100 billion to expand US chipmaking capacity
+                <div class="translation">翻译：台湾芯片制造商台积电承诺再投资1000亿美元，扩大美国芯片制造能力。</div>
+            </blockquote>
+            <blockquote class="quote">
+                TSM and ASML just had stellar quarters, mag 7 probably keeps spending.
+                <div class="translation">翻译：台积电和阿斯麦刚刚公布了出色的季度业绩，七巨头可能还会继续支出。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">7. GOOGL (Alphabet Inc.)</div>
+            <blockquote class="quote">
+                Going into a busted earnings call where one of the main concerns for stock dump is YouTube, who thought it'd be smart to run the earnings call on YouTube itself!?
+                <div class="translation">翻译：进入一个糟糕的财报电话会议，其中一个主要导致股价下跌的担忧是YouTube，谁会觉得在YouTube上进行财报电话会议是个好主意！？</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">8. MSFT (Microsoft Corp.)</div>
+            <blockquote class="quote">
+                I'm still holding $280k in MSFT calls as well.
+                <div class="translation">翻译：我仍然持有28万美元的微软看涨期权。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">9. ASML (ASML Holding N.V.)</div>
+            <blockquote class="quote">
+                TSM and ASML just had stellar quarters, mag 7 probably keeps spending.
+                <div class="translation">翻译：台积电和阿斯麦刚刚公布了出色的季度业绩，七巨头可能还会继续支出。</div>
+            </blockquote>
+        </li>
     </ul>
 
     <h2>3. 小众公司冒泡</h2>
-    <ul>
-      <li>
-        <div class="stock-tag">1. TSM (Taiwan Semiconductor Manufacturing Company)</div>
-        <blockquote class="quote">
-          Taiwan computer chipmaker TSMC pledges another $100 billion to expand US chipmaking capacity
-          <div class="translation">翻译：台湾电脑芯片制造商台积电承诺再投入1000亿美元，以扩大其在美国的芯片制造产能。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">2. NLST (Netlist)</div>
-        <blockquote class="quote">
-          US probes Samsung for alleged infringement of Netlist's memory-chip patents
-          <div class="translation">翻译：美国正在调查三星涉嫌侵犯Netlist的存储芯片专利。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">3. DHER (Delivery Hero)</div>
-        <blockquote class="quote">
-          Uber ($UBER) has agreed to acquire Germany’s Delivery Hero ($DHER) for $14.8 billion, offering shareholders €41.50 per share.
-          <div class="translation">翻译：优步（$UBER）已同意以148亿美元收购德国的Delivery Hero（$DHER），向股东每股提供41.50欧元。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">4. NFLX (Netflix)</div>
-        <blockquote class="quote">
-          I’m going to be cooked tomorrow; NFLX earnings
-          <div class="translation">翻译：我明天要完蛋了；网飞（NFLX）财报。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">5. MSTR (MicroStrategy)</div>
-        <blockquote class="quote">
-          Ticker: MSTR He bought stock and options in 2024. Paid off big time in just a couple months. Portfolio went up 5x (his all-time chart doesn’t show intra-week top). Top on Nov 21 2024 was $540,000. ALL the calls were rolled forward.
-          <div class="translation">翻译：代码：MSTR。他在2024年购买了股票和期权。在短短几个月内获得了巨额回报。投资组合价值增长了5倍（他的历史图表未显示周内最高点）。2024年11月21日的最高点是54万美元。所有的看涨期权都被展期了。</div>
-        </blockquote>
-      </li>
-    </ul>
+    <p>当前数据池中没有符合“小众公司”定义的上市公司。</p>
 
     <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Finance Anthropic moves closer to mega-IPO as bankers line up investor meetings
-          <div class="translation">翻译：Anthropic在寻求巨额IPO的道路上更进一步，银行家们正在安排投资者会议。</div>
-        </blockquote>
-      </li>
+    <ul class="ai-category-list">
+        <li>
+            <div class="track-header">模型 (Model)</div>
+            <blockquote class="quote">
+                Chinese filing implies DeepSeek valuation of around $52 billion
+                <div class="translation">翻译：一份中国备案文件显示，DeepSeek估值约为520亿美元。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">算 (Compute)</div>
+            <blockquote class="quote">
+                TSM and ASML just had stellar quarters, mag 7 probably keeps spending.
+                <div class="translation">翻译：台积电和阿斯麦刚刚公布了出色的季度业绩，七巨头可能还会继续支出。</div>
+            </blockquote>
+            <blockquote class="quote">
+                Taiwan computer chipmaker TSMC pledges another $100 billion to expand US chipmaking capacity
+                <div class="translation">翻译：台湾芯片制造商台积电承诺再投资1000亿美元，扩大美国芯片制造能力。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">存 (Storage)</div>
+            <blockquote class="quote">
+                How low can these memory stocks drop.
+                <div class="translation">翻译：这些内存股还能跌多低。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">AI应用 (AI Applications)</div>
+            <blockquote class="quote">
+                Apple unseats Nvidia to become world's most valuable company as AI bets shift
+                <div class="translation">翻译：随着人工智能押注的转移，苹果取代英伟达成为全球市值最高的公司。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">光 (Optics)</div>
+            <p>当前数据池中没有直接提及光模块或相关公司的内容。</p>
+        </li>
+        <li>
+            <div class="track-header">电 (Power)</div>
+            <p>当前数据池中没有直接提及电力或相关公司的内容。</p>
+        </li>
+        <li>
+            <div class="track-header">板 (Boards/Hardware)</div>
+            <p>当前数据池中没有直接提及AI板卡或相关公司的内容。</p>
+        </li>
+        <li>
+            <div class="track-header">云 (Cloud)</div>
+            <p>当前数据池中没有直接提及云计算或相关公司的内容。</p>
+        </li>
     </ul>
-    <div class="track-header">算</div>
-    <div class="track-header">光</div>
-    <div class="track-header">存</div>
-    <div class="track-header">电</div>
-    <div class="track-header">板</div>
-    <div class="track-header">云</div>
-    <div class="track-header">AI应用</div>
 
 </body>
 </html>
@@ -239,8 +235,8 @@
                     type: 'gauge', startAngle: 180, endAngle: 0, min: 0, max: 100, radius: '100%', center: ['50%', '75%'],
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
-                    detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n中立', color: '#fff' },
-                    data: [{ value: 47 }]
+                    detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n恐慌', color: '#fff' },
+                    data: [{ value: 38 }]
                 }]
             });
         </script>
