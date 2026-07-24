@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>07月23日 情报终端</title>
+        <title>07月24日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,132 +36,120 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 07月23日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-07-23 22:40:15 (北京时间)</p>
+            <h1>🎯 07月24日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-07-24 11:52:28 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit 美股市场情绪分析 (2026年07月23日)</title>
+    <title>Reddit 美股市场情绪分析 (2026年07月24日)</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
         h1, h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
-        blockquote { background-color: #e8f0fe; border-left: 5px solid #3498db; margin: 15px 0; padding: 10px 20px; color: #364f6b; font-style: italic; }
-        .translation { font-size: 0.9em; color: #555; margin-top: 5px; border-top: 1px dashed #c0d9f8; padding-top: 5px; }
+        h2 { font-size: 1.8em; }
+        h3 { color: #34495e; margin-top: 25px; }
         ul { list-style: none; padding: 0; }
-        li { margin-bottom: 15px; border: 1px solid #ddd; padding: 10px; background-color: #fff; border-radius: 5px; }
-        .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 5px; font-size: 1.1em; }
-        .track-header { font-weight: bold; margin-top: 15px; margin-bottom: 10px; color: #2980b9; font-size: 1.05em; border-bottom: 1px dotted #a8d5f2; padding-bottom: 5px; }
-        .quote { margin: 5px 0; padding: 0; border: none; background: none; font-style: normal; color: #333; }
+        li { background-color: #fff; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 15px; padding: 15px; box-shadow: 0 1px 3px rgba(0,0,0,0.03); }
+        .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 10px; font-size: 1.1em; }
+        .quote { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 10px 0; font-style: italic; color: #555; border-radius: 3px; }
+        .translation { font-style: normal; color: #2c3e50; margin-top: 10px; padding-top: 10px; border-top: 1px dashed #ccc; }
+        .track-header { font-weight: bold; color: #2980b9; margin-top: 20px; margin-bottom: 10px; font-size: 1.2em; border-bottom: 1px solid #cce; padding-bottom: 5px; }
     </style>
 </head>
 <body>
 
-    <h1>Reddit 美股市场情绪分析 (2026年07月23日)</h1>
+    <h1>Reddit 美股市场情绪分析 (2026年07月24日)</h1>
 
     <h2>1. 宏观与市场情绪</h2>
-    <p>Reddit 社区普遍对当前市场表现出谨慎和担忧情绪，核心逻辑围绕市场高度集中于少数几只AI巨头股票。许多用户引用韩国市场近期因AI支出放缓而出现的剧烈下跌，警示美股可能面临类似风险。尽管有声音认为美国市场有其独特性，但市场对AI资本开支的持续性抱有疑问，并出现了看空整个市场的言论。</p>
-    <blockquote>
-        34% of the S&P is 10 stocks making the same bet.
-        <div class="translation">翻译：标普500指数中，34%的成分股是10只押注相同方向的股票。</div>
-    </blockquote>
-    <blockquote>
-        We're basically all in a leveraged ETF with extra steps.
-        <div class="translation">翻译：我们基本上都像在通过额外的步骤投资杠杆ETF。</div>
-    </blockquote>
-    <blockquote>
-        Korea just showed us what the endgame looks like and it ain't pretty.
-        <div class="translation">翻译：韩国刚刚向我们展示了最终结局的样子，那可不怎么好看。</div>
-    </blockquote>
-    <blockquote>
-        Their market dropped 10% in ONE DAY because someone said "hey maybe AI spending slows down."
-        <div class="translation">翻译：他们的市场在一天内下跌了10%，只因为有人说“嘿，也许AI支出会放缓。”</div>
-    </blockquote>
-    <blockquote>
-        34% of the S&amp;P is in 10 companies and they're all making the exact same bet that AI capex goes up forever.
-        <div class="translation">翻译：标普500指数的34%集中在10家公司，它们都押注AI资本开支将永远增长。</div>
-    </blockquote>
-    <blockquote>
-        Time to go short in the most manipulated market in history.
-        <div class="translation">翻译：是时候在这个历史上最被操纵的市场做空了。</div>
-    </blockquote>
+    <p>市场情绪在对AI投资热潮的警惕与对大型科技股集中风险的担忧中摇摆。有交易员表达了对纳斯达克的强烈看空情绪，认为市场被操纵且面临崩溃风险。同时，也有用户在经历巨大亏损后，转向了低成本指数基金的被动投资策略。</p>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          Korea just showed us what the endgame looks like and it ain't pretty. 1.2 million accounts margin called in a week. 350K liquidated to zero. 62% of those were millennials and zoomers.
+          <div class="translation">翻译：韩国刚刚向我们展示了最终结局会是怎样的，那可不妙。一周内有120万个账户被追加保证金，35万个账户被清零。其中62%是千禧一代和Z世代。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          34% of the S&P is in 10 companies and they're all making the exact same bet that AI capex goes up forever. NVDA, MSFT, GOOG, META, AMZN - basically running the same play Korea just fumbled.
+          <div class="translation">翻译：标普500指数中34%的市值集中在10家公司，它们都在押注AI资本支出将永远增长。英伟达、微软、谷歌、Meta、亚马逊——基本上都在重演韩国刚刚失误的剧本。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Half this sub is gonna say 'bro it's different here, the Fed prints, 401Ks buy every dip, we're the reserve currency, AI actually works.'
+          <div class="translation">翻译：这个版块里一半的人会说“兄弟，这里情况不同，美联储会印钞，401K基金逢低买入，我们是储备货币，AI确实有效。”</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          this shit will collapse, I am telling you I'm going to post my position every fucking day yesterday you laughed at me for being Italian now I'm the one laughing at you IT'S TIME TO SINK THIS STUPID AND MANIPULATED MARKET
+          <div class="translation">翻译：这东西会崩溃的，我告诉你我每天都会发布我的头寸，昨天你们嘲笑我是意大利人，现在我来嘲笑你们，是时候让这个愚蠢且被操纵的市场沉没了。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          As for me, it's back to the boring life: automating buys into low-cost index funds and not looking at them. Hopefully I don't end up trading again. Hopefully never see you regards!
+          <div class="translation">翻译：至于我，我将回归平淡的生活：自动化买入低成本指数基金，然后不再关注它们。希望我不要再涉足交易了。希望永远不要再见到你们这些“蠢货”了！</div>
+        </blockquote>
+      </li>
+    </ul>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
       <li>
-        <div class="stock-tag">TSLA (Tesla, Inc.)</div>
+        <div class="stock-tag">TSLA (特斯拉)</div>
         <blockquote class="quote">
-          He was supposed to take us to Mars and burn short sellers.
-          <div class="translation">翻译：他本该带我们飞向火星，并烧死做空者。</div>
+          He was supposed to take us to Mars and burn short sellers. Still holding 7300 shares. Please Elon fly again.
+          <div class="translation">翻译：他本应该带我们去火星，并烧死空头。我仍然持有7300股。埃隆请再次飞起来吧。</div>
         </blockquote>
         <blockquote class="quote">
-          Still holding 7300 shares.
-          <div class="translation">翻译：仍然持有7300股。</div>
+          I lost 72,000 today. Ouch. Cash secured puts $TSLA.
+          <div class="translation">翻译：我今天亏了72000。哎呦。是特斯拉的现金担保看跌期权。</div>
         </blockquote>
         <blockquote class="quote">
-          Tesla Profit Falls Even as Car Sales Rebound.
-          <div class="translation">翻译：尽管汽车销售反弹，特斯拉利润仍下降。</div>
+          Could I have made more? Sure. But with my luck it would have Shrek-ed straight back up to my breakeven or worse in the first 30 minutes.
+          <div class="translation">翻译：我能赚更多吗？当然。但以我的运气，它会在前30分钟内直接反弹到我的盈亏平衡点甚至更糟。</div>
         </blockquote>
         <blockquote class="quote">
-          Tesla to 300.
-          <div class="translation">翻译：特斯拉目标价300。</div>
+          Leveraged short positions on this dumpster fire of a company starting to pay off 🔥
+          <div class="translation">翻译：在这家一塌糊涂的公司上的杠杆空头仓位开始得到回报了🔥</div>
         </blockquote>
       </li>
       <li>
-        <div class="stock-tag">GOOGL (Alphabet Inc.)</div>
+        <div class="stock-tag">GOOGL (Alphabet)</div>
         <blockquote class="quote">
           Google yesterday blew up earnings from their cloud and said they will *increase* their humongous capex even more while reporting negative cash flow for the first time in their history.
-          <div class="translation">翻译：谷歌昨天公布了其云业务的爆炸性财报，并表示将进一步增加其庞大的资本开支，同时报告了其历史上的首次负现金流。</div>
+          <div class="translation">翻译：谷歌昨天公布的云业务收益爆炸式增长，并表示他们将进一步*增加*其庞大的资本支出，同时首次报告负现金流。</div>
         </blockquote>
         <blockquote class="quote">
-          Google hit with $1 billion EU fine, in 'constructive' talks to avoid more penalties.
-          <div class="translation">翻译：谷歌被欧盟罚款10亿美元，正在进行“建设性”谈判以避免更多罚款。</div>
+          Google hit with $1 billion EU fine, in 'constructive' talks to avoid more penalties
+          <div class="translation">翻译：谷歌被欧盟罚款10亿美元，正在进行“建设性”谈判以避免更多处罚。</div>
         </blockquote>
         <blockquote class="quote">
-          alphabet spent billions on AI just to make Google Finance objectively worse.
-          <div class="translation">翻译：Alphabet花费数十亿美元投入AI，结果却让谷歌财经变得更糟。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Reddit stock sinks on report it may not renew Google AI content deal.
-          <div class="translation">翻译：Reddit股价下跌，因有报道称其可能不会续签谷歌AI内容协议。</div>
+          alphabet spent billions on AI just to make Google Finance objectively worse. As we can see, thats the only reason $GOOGL closed red yesterday and will open red today!
+          <div class="translation">翻译：Alphabet花费数十亿美元在AI上，结果却让谷歌财经变得更糟糕了。正如我们所见，这就是谷歌昨天收跌，今天也将开跌的唯一原因！</div>
         </blockquote>
       </li>
       <li>
-        <div class="stock-tag">AMD (Advanced Micro Devices, Inc.)</div>
+        <div class="stock-tag">CMCSA (康卡斯特)</div>
         <blockquote class="quote">
-          AMD to invest up to $5 billion in Anthropic, WSJ reports.
-          <div class="translation">翻译：据《华尔街日报》报道，AMD将向Anthropic投资高达50亿美元。</div>
+          Comcast sucks as a company and is a long term dead end that will go bankrupt sometime around 2045, if not sooner.
+          <div class="translation">翻译：康卡斯特作为一家公司很糟糕，是一个长期的死胡同，将在2045年左右破产，甚至可能更早。</div>
         </blockquote>
         <blockquote class="quote">
-          AMD ATH soon.
-          <div class="translation">翻译：AMD很快将创历史新高。</div>
+          Their stock just crashed 7% today to 21.98 per share after their earnings report. This is a new 624-week low for the stock.
+          <div class="translation">翻译：在发布财报后，他们的股票今天暴跌7%，至每股21.98美元。这是该股624周以来的新低。</div>
         </blockquote>
         <blockquote class="quote">
-          Bought some puts. AMD should fly.
-          <div class="translation">翻译：买了一些看跌期权。AMD应该会大涨。</div>
+          At $1.32 yearly dividend per share at 21.98 per share, this is a 6% dividend yield. Boomers are going to buy this and so will boomer adjacent "income strategy" funds.
+          <div class="translation">翻译：以每股21.98美元的价格计算，每股1.32美元的年度股息，这是一个6%的股息收益率。婴儿潮一代和与他们相关的“收入策略”基金会买入这只股票。</div>
         </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">NOK (Nokia Corporation)</div>
         <blockquote class="quote">
-          Q2 2026 results speak for themselves: Revenue up 8% AI &amp; Cloud sales up 105% Operating profit up 18% EPS up 75% €2.8 billion in AI &amp; Cloud orders secured in a single quarter.
-          <div class="translation">翻译：2026年第二季度业绩不言自明：收入增长8%，AI和云销售额增长105%，营业利润增长18%，每股收益增长75%，在单个季度内获得了28亿欧元的AI和云订单。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">NVDA (NVIDIA Corporation)</div>
-        <blockquote class="quote">
-          2k to 40k in 2 hours. NVDA
-          <div class="translation">翻译：2小时内从2千美元到4万美元。英伟达。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">IBM (International Business Machines Corporation)</div>
-        <blockquote class="quote">
-          IBM lowers full-year forecast after earnings warning.
-          <div class="translation">翻译：IBM在发布盈利预警后下调全年预测。</div>
+          The bear case here is that with the way the federal reserve is going, this 6% dividend yield might not beat money market funds for long. The stock is at the RSI oversold range on the monthly, the weekly, the daily, the 2h, the 1h, and the 1minute ch
+          <div class="translation">翻译：这里的看空论点是，按照美联储目前的走向，这个6%的股息收益率可能不会长期跑赢货币市场基金。该股在月线、周线、日线、2小时、1小时和1分钟图上都处于RSI超卖区间。</div>
         </blockquote>
       </li>
     </ul>
@@ -169,72 +157,77 @@
     <h2>3. 小众公司冒泡</h2>
     <ul>
       <li>
-        <div class="stock-tag">RDDT (Reddit, Inc.)</div>
+        <div class="stock-tag">Oklo Inc (Oklo)</div>
         <blockquote class="quote">
-          Reddit stock sinks on report it may not renew Google AI content deal.
-          <div class="translation">翻译：Reddit股价下跌，因有报道称其可能不会续签谷歌AI内容协议。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">AVGO (Broadcom Inc.)</div>
-        <blockquote class="quote">
-          GOOGL earnings tonight. Good idea to go long on AVGO?
-          <div class="translation">翻译：今晚是谷歌的财报。做多博通是好主意吗？</div>
+          The U.S. Department of Energy (DOE) startup authorization allows Oklo to load nuclear fuel, conduct startup testing, and proceed toward first criticality.
+          <div class="translation">翻译：美国能源部（DOE）的启动授权允许Oklo公司装载核燃料，进行启动测试，并推进首次临界。</div>
         </blockquote>
       </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型 (Models)</div>
-    <blockquote>
-      AMD to invest up to $5 billion in Anthropic, WSJ reports.
-      <div class="translation">翻译：据《华尔街日报》报道，AMD将向Anthropic投资高达50亿美元。</div>
-    </blockquote>
+    <div class="track-header">模型</div>
+    <p>无提及</p>
 
-    <div class="track-header">算 (Compute)</div>
-    <blockquote>
-      NVDA, MSFT, GOOG, META, AMZN - basically running the same play Korea just fumbled.
-      <div class="translation">翻译：英伟达、微软、谷歌、Meta、亚马逊——基本上都在重演韩国刚刚失误的戏码。</div>
-    </blockquote>
+    <div class="track-header">算</div>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          34% of the S&P is in 10 companies and they're all making the exact same bet that AI capex goes up forever. NVDA, MSFT, GOOG, META, AMZN - basically running the same play Korea just fumbled.
+          <div class="translation">翻译：标普500指数中34%的市值集中在10家公司，它们都在押注AI资本支出将永远增长。英伟达、微软、谷歌、Meta、亚马逊——基本上都在重演韩国刚刚失误的剧本。</div>
+        </blockquote>
+      </li>
+    </ul>
 
-    <div class="track-header">光 (Optics)</div>
-    <!-- 无相关高质量讨论 -->
+    <div class="track-header">光</div>
+    <p>无提及</p>
 
-    <div class="track-header">存 (Storage)</div>
-    <!-- 无相关高质量讨论 -->
+    <div class="track-header">存</div>
+    <p>无提及</p>
 
-    <div class="track-header">电 (Power)</div>
-    <!-- 无相关高质量讨论 -->
+    <div class="track-header">电</div>
+    <p>无提及</p>
 
-    <div class="track-header">板 (Boards/Hardware)</div>
-    <blockquote>
-      50% of their entire market was just Samsung and SK Hynix. Two stocks.
-      <div class="translation">翻译：他们整个市场的一半仅仅是三星和SK海力士这两只股票。</div>
-    </blockquote>
+    <div class="track-header">板</div>
+    <p>无提及</p>
 
-    <div class="track-header">云 (Cloud)</div>
-    <blockquote>
-      Google yesterday blew up earnings from their cloud and said they will *increase* their humongous capex even more while reporting negative cash flow for the first time in their history.
-      <div class="translation">翻译：谷歌昨天公布了其云业务的爆炸性财报，并表示将进一步增加其庞大的资本开支，同时报告了其历史上的首次负现金流。</div>
-    </blockquote>
-    <blockquote>
-      AI &amp; Cloud sales up 105% Operating profit up 18% EPS up 75% €2.8 billion in AI &amp; Cloud orders secured in a single quarter.
-      <div class="translation">翻译：AI和云销售额增长105%，营业利润增长18%，每股收益增长75%，在单个季度内获得了28亿欧元的AI和云订单。</div>
-    </blockquote>
+    <div class="track-header">云</div>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          OK so the most profitable companies in the world decided to GO ALL IN AI with humongous capex. They did it all at once apart from Apple who is not in the game. Google, Meta, Amazon , Oracle, Microsoft. All of them.
+          <div class="translation">翻译：好的，所以世界上最赚钱的公司决定以巨大的资本支出“孤注一掷”投入AI。除了尚未参与的苹果，谷歌、Meta、亚马逊、甲骨文、微软，所有这些公司都同时这样做了。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Google yesterday blew up earnings from their cloud and said they will *increase* their humongous capex even more while reporting negative cash flow for the first time in their history.
+          <div class="translation">翻译：谷歌昨天公布的云业务收益爆炸式增长，并表示他们将进一步*增加*其庞大的资本支出，同时首次报告负现金流。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          A rational person would ask: are these amazing businessmen suddently all very wrong about the same thing at the same time OR I am reading too much paid subs from burry and following the wrong people on twitter that have never produced anything?
+          <div class="translation">翻译：一个理性的人会问：这些了不起的商人是否突然间在同一时间都犯了同一个大错，或者我只是读了太多Burry的付费订阅，关注了推特上那些一无是处的人？</div>
+        </blockquote>
+      </li>
+    </ul>
 
-    <div class="track-header">AI应用 (AI Applications)</div>
-    <blockquote>
-      alphabet spent billions on AI just to make Google Finance objectively worse.
-      <div class="translation">翻译：Alphabet花费数十亿美元投入AI，结果却让谷歌财经变得更糟。</div>
-    </blockquote>
-    <blockquote>
-      Reddit stock sinks on report it may not renew Google AI content deal.
-      <div class="translation">翻译：Reddit股价下跌，因有报道称其可能不会续签谷歌AI内容协议。</div>
-    </blockquote>
-    <blockquote>
-      Rockets building AI datacenters to power social media chatbots?
-      <div class="translation">翻译：火箭正在建造AI数据中心来为社交媒体聊天机器人提供动力？</div>
-    </blockquote>
+    <div class="track-header">AI应用</div>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          alphabet spent billions on AI just to make Google Finance objectively worse. As we can see, thats the only reason $GOOGL closed red yesterday and will open red today!
+          <div class="translation">翻译：Alphabet花费数十亿美元在AI上，结果却让谷歌财经变得更糟糕了。正如我们所见，这就是谷歌昨天收跌，今天也将开跌的唯一原因！</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Half this sub is gonna say 'bro it's different here, the Fed prints, 401Ks buy every dip, we're the reserve currency, AI actually works.'
+          <div class="translation">翻译：这个版块里一半的人会说“兄弟，这里情况不同，美联储会印钞，401K基金逢低买入，我们是储备货币，AI确实有效。”</div>
+        </blockquote>
+      </li>
+    </ul>
 
 </body>
 </html>
@@ -247,7 +240,7 @@
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
                     detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n恐慌', color: '#fff' },
-                    data: [{ value: 41 }]
+                    data: [{ value: 39 }]
                 }]
             });
         </script>
