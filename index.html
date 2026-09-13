@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>09月12日 情报终端</title>
+        <title>09月13日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,80 +36,100 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 09月12日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-09-12 23:42:12 (北京时间)</p>
+            <h1>🎯 09月13日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-09-13 13:05:56 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit 美股市场情绪概览 (2026年09月12日)</title>
+    <title>Reddit 美股市场情绪分析 (2026年09月13日)</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; background-color: #f9f9f9; padding: 0 20px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f4f7f6; }
         h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
         h2 { font-size: 1.8em; }
-        ul { list-style: none; padding: 0; }
-        li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 10px; font-size: 1.2em; }
-        .quote { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 10px 15px; margin: 15px 0; font-style: italic; color: #555; }
-        .translation { font-size: 0.9em; color: #7f8c8d; margin-top: 10px; padding-top: 5px; border-top: 1px dashed #bdc3c7; }
-        .track-header { font-weight: bold; color: #2980b9; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; border-bottom: 1px solid #dcdcdc; padding-bottom: 5px; }
+        ul { list-style-type: none; padding: 0; }
+        li { background-color: #fff; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .stock-tag { font-weight: bold; color: #e74c3c; font-size: 1.1em; margin-bottom: 10px; }
+        .quote { background-color: #ecf0f1; border-left: 4px solid #3498db; margin: 10px 0; padding: 10px 15px; font-style: italic; color: #555; }
+        .translation { font-size: 0.9em; color: #7f8c8d; margin-top: 5px; }
+        .track-header { font-weight: bold; color: #2980b9; margin-top: 15px; margin-bottom: 5px; font-size: 1.1em; }
+        .no-content { color: #95a5a6; font-style: italic; margin-left: 15px; }
         p { margin-bottom: 10px; }
     </style>
 </head>
 <body>
 
-    <h1>Reddit 美股市场情绪概览 (2026年09月12日)</h1>
+    <h1>Reddit 美股市场情绪分析 (2026年09月13日)</h1>
 
     <h2>1. 宏观与市场情绪</h2>
-    <blockquote class="quote">
-        Core CPI Rises More Than Forecast, Bolstering Case for Hike. Stocks are edging lower!
-        <div class="translation">翻译：核心CPI涨幅超预期，支撑加息论调。股市正在小幅下跌！</div>
-    </blockquote>
-    <blockquote class="quote">
-        With crude ripping back towards record levels, the Houthi rampaging around the Red-Sea and Iran still refusing to relinquish their chokehold over the strait, I can proudly proclaim to all my unrefined brethren, Lads (and Lasses) we did it! We endured the relentless, tiring onslaught of Axios articles and Truth Social posts, Pakistani sources and SPR releases, while the rest of the world moans about $6/gallon diesel (or $10/gallon if you're California).
-        <div class="translation">翻译：随着原油价格飙升回历史高位，胡塞武装在红海地区肆虐，伊朗仍不愿放松对海峡的控制，我可以自豪地向所有未精炼的兄弟姐妹们宣称，我们做到了！我们经受住了Axios文章、Truth Social帖子、巴基斯坦消息来源和SPR释放的无休止、令人疲惫的冲击，而世界其他地方则在抱怨每加仑6美元（如果是在加利福尼亚，则是每加仑10美元）的柴油价格。</div>
-    </blockquote>
-    <blockquote class="quote">
-        This market is never allowing me to recoup my all time losses, I have been playing safe by doing covered call and not blowing up like previously but everything I owned keeps going down.
-        <div class="translation">翻译：这个市场从来不让我弥补我所有的损失，我一直通过做备兑看涨期权来安全操作，避免像以前那样爆仓，但我所拥有的一切都在下跌。</div>
-    </blockquote>
-    <blockquote class="quote">
-        What on God's earth is happening in the bond market this morning
-        <div class="translation">翻译：今天早上债市到底发生了什么？</div>
-    </blockquote>
+    <p>市场普遍对美联储激进加息的预期高涨，FedWatch数据显示未来加息概率激增。核心CPI超出预期，进一步强化了加息理由，导致股市普遍承压。能源市场受地缘政治事件影响显著，沙特输油管道袭击导致供应中断，但也有交易员押注“特朗普和平协议”将压低油价。国际投资者，特别是韩国，对美股的流入也引起了关注。</p>
+    <ul>
+        <li>
+            <blockquote class="quote">
+                This time last month, FedWatch gave a 53.5% chance for 2 or more rate hikes by next July. Today, odds stand at 97.4%.
+                <div class="translation">翻译：上个月这个时候，FedWatch预测明年7月前加息两次或以上的可能性为53.5%。今天，这一可能性已达到97.4%。</div>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="quote">
+                Core CPI Rises More Than Forecast, Bolstering Case for Hike. Stocks are edging lower!
+                <div class="translation">翻译：核心CPI涨幅超预期，强化了加息理由。股市正在小幅走低！</div>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="quote">
+                Warsh should grow a sack and go full Volcker by hiking 100bps next week. Risk assets would be absolutely cooked, but he could kill three birds with one stone: Donnie gets told to eff off and let the Fed do its job. Bessent owns the consequences of stacking the debt on the short end Restore credibility with the bond market on inflation. Bonus 4th bird: He'd also have Congress by the balls and could basically dare them to keep running reckless fiscal policy while the bond market is demanding higher rates.
+                <div class="translation">翻译：Warsh下周应该硬气点，像沃尔克一样加息100个基点。风险资产肯定会彻底完蛋，但他可以一石三鸟：让唐尼滚蛋，让美联储做自己的工作。Bessent承担短期债务堆积的后果。恢复债市对通胀的信心。第四个额外好处：他还能掐住国会的命脉，基本上可以挑战他们，看他们能否在债市要求更高利率的情况下继续推行不负责任的财政政策。</div>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="quote">
+                Saudi Arabia shuts down East-West crude oil pipeline after multiple attacks
+                <div class="translation">翻译：沙特阿拉伯在多次袭击后关闭了东西向原油管道</div>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="quote">
+                $236K oil short YOLO- Incoming Trump peace deal soon. All in on 2x leveraged oil short shares.
+                <div class="translation">翻译：23.6万美元原油空头YOLO——特朗普和平协议即将到来。全仓买入2倍杠杆原油空头。</div>
+            </blockquote>
+        </li>
+        <li>
+            <blockquote class="quote">
+                After Koreans piled into us stocks
+                <div class="translation">翻译：在韩国人大量涌入美国股市之后</div>
+            </blockquote>
+        </li>
+    </ul>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
       <li>
-        <div class="stock-tag">1. NVDA (NVIDIA Corporation)</div>
+        <div class="stock-tag">1. NVDA (Nvidia Corp.)</div>
         <blockquote class="quote">
-          Nvidia is considering investing up to $10 billion in the IPO, one of the sources added. Nvidia’s potential involvement in the IPO, which has not previously been reported, would give Anthropic an early strategic backer for the outsized offering, while further deepening ties between the chipmaker and one of its major customers.
-          <div class="translation">翻译：有消息称，英伟达正考虑在Anthropic的首次公开募股中投资高达100亿美元。英伟达可能参与此次IPO，此前从未被报道过，这将为Anthropic提供一个早期的战略支持者，同时进一步加深芯片制造商与其主要客户之一的联系。</div>
+          Nvidia is considering investing up to $10 billion in the IPO, one of the sources added. Nvidia’s potential involvement in the IPO, which has not previously been reported, would give Anthropic an early strategic backer for the outsized offering, while further deepening ties between the chipmaker and one of its major customers. Bringing a deep-pocketed anchor investor like Nvidia onboard could boost investor confidence in the listing, which is shaping up to be a major test of public-market appetite for the enormous valuations and capital requirements of frontier AI labs.
+          <div class="translation">翻译：消息人士称，英伟达正考虑在Anthropic的巨额IPO中投资高达100亿美元。英伟达此前未被报道的潜在参与将为这项超大型发行提供早期战略支持者，同时进一步深化这家芯片制造商与其主要客户之一的联系。引入像英伟达这样的财力雄厚的基石投资者可以提振投资者对上市的信心，这正在成为检验公众市场对前沿人工智能实验室巨大估值和资本需求的胃口的重要考验。</div>
         </blockquote>
         <blockquote class="quote">
-          Bringing a deep-pocketed anchor investor like Nvidia onboard could boost investor confidence in the listing, which is shaping up to be a major test of public-market appetite for the enormous valuations and capital requirements of frontier AI labs.
-          <div class="translation">翻译：像英伟达这样财力雄厚的锚定投资者加入，可能会提振投资者对此次上市的信心，这正成为检验公众市场对前沿AI实验室巨大估值和资本需求的胃口的重要考验。</div>
-        </blockquote>
-        <blockquote class="quote">
-          He's taking an absolute bath on Nvidia puts. He then thinks to himself that maybe he was wrong and data centers will continue to pop up and that AI isn't the bubble he thought it was.
-          <div class="translation">翻译：他在英伟达的看跌期权上亏惨了。他随后想到自己可能错了，数据中心将继续涌现，而且AI并非他想象的泡沫。</div>
+          He then thinks to himself that maybe he was wrong and data centers will continue to pop up and that AI isn't the bubble he thought it was.
+          <div class="translation">翻译：他然后心想，也许他错了，数据中心会继续涌现，而且人工智能并不是他想象中的泡沫。</div>
         </blockquote>
       </li>
       <li>
         <div class="stock-tag">2. WOOF (Petco Health and Wellness Company, Inc.)</div>
         <blockquote class="quote">
-          Brothers and sisters of the casino, $WOOF is trading around $2.40–$2.50 with a market cap of roughly $700M on ~$6B revenue. This is the definition of a beaten-down, debt-soaked, post-SPAC/post-pandemic meme special. From IPO highs near $30 it is down ~90%+.
-          <div class="translation">翻译：赌场里的兄弟姐妹们，$WOOF目前的交易价格在2.40-2.50美元左右，市值约为7亿美元，营收约为60亿美元。这简直就是被击垮、债务缠身、后SPAC/后疫情时代的迷因股典型。从IPO高点接近30美元算起，它已经下跌了90%以上。</div>
+          $WOOF is trading around $2.40–$2.50 with a market cap of roughly $700M on ~$6B revenue. This is the definition of a beaten-down, debt-soaked, post-SPAC/post-pandemic meme special. From IPO highs near $30 it is down ~90%+. The stock is priced like the company is going to get eaten by chewy and amazon while the dogs watch. Perfect.
+          <div class="translation">翻译：$WOOF目前的交易价格在2.40-2.50美元左右，市值约7亿美元，营收约60亿美元。这正是被严重打压、负债累累、后SPAC/后疫情时代的迷因股的定义。从IPO高点接近30美元跌去了90%以上。这只股票目前的定价就像公司要被Chewy和亚马逊吞噬，而狗狗们只能旁观一样。太完美了。</div>
         </blockquote>
         <blockquote class="quote">
-          Pet people are regarded. They will spend money on their fur children even when they themselves are eating ramen. Petco has ~1,380 stores, grooming, vet services, and a real physical footprint that pure online players cannot fully replicate for services.
-          <div class="translation">翻译：养宠物的人都很看重宠物。即使自己吃泡面，他们也会花钱在他们的毛孩子身上。Petco拥有约1,380家门店、美容服务、兽医服务，以及真正的实体足迹，这是纯粹的在线玩家无法完全复制的服务。</div>
+          The Thesis (maximum regard edition) Pet people are regarded. They will spend money on their fur children even when they themselves are eating ramen. Petco has ~1,380 stores, grooming, vet services, and a real physical footprint that pure online players cannot fully replicate for services.
+          <div class="translation">翻译：核心论点（最大程度的智障版本）：养宠物的人都是智障。他们即使自己吃泡面，也会为他们的毛孩子花钱。Petco拥有约1,380家门店、美容服务、兽医服务以及真正的实体店面，这是纯在线玩家无法完全复制的服务。</div>
         </blockquote>
         <blockquote class="quote">
           Management has been busy doing the boring shit: closing shitty stores, cutting unprofitable sales, expanding margins.
-          <div class="translation">翻译：管理层一直在忙于做一些无聊但重要的事：关闭糟糕的门店、削减无利可图的销售、扩大利润。</div>
+          <div class="translation">翻译：管理层一直在忙着做那些无聊的事情：关闭糟糕的门店，削减无利可图的销售，扩大利润率。</div>
         </blockquote>
       </li>
     </ul>
@@ -117,50 +137,76 @@
     <h2>3. 小众公司冒泡</h2>
     <ul>
       <li>
-        <div class="stock-tag">1. JPM (JPMorgan Chase & Co)</div>
+        <div class="stock-tag">1. NBIS (NBIS)</div>
         <blockquote class="quote">
-          JPMorgan cut off Situational Awareness lending after AI losses
-          <div class="translation">翻译：摩根大通在AI损失后，停止了情境感知贷款业务。</div>
+          Post when I opened NBIS: https://www.reddit.com/r/wallstreetbets/comments/1wbgiey/250x_nbis_240p_2dte_581_speedrunning_bankruptcy/
+          <div class="translation">翻译：我建仓NBIS时的帖子：https://www.reddit.com/r/wallstreetbets/comments/1wbgiey/250x_nbis_240p_2dte_581_speedrunning_bankruptcy/</div>
+        </blockquote>
+        <blockquote class="quote">
+          Both positions were bought on Tuesday, Realized Thursday
+          <div class="translation">翻译：这两个头寸都是周二买入，周四实现盈利的</div>
         </blockquote>
       </li>
       <li>
-        <div class="stock-tag">2. CASY (Casey's General Stores, Inc.)</div>
+        <div class="stock-tag">2. CRWV (CRWV)</div>
         <blockquote class="quote">
-          YOLO: CASY 9/18 $620 strike calls, 60 contracts. locked in on gas station hotdogs and beer.
-          <div class="translation">翻译：孤注一掷：CASY 9月18日$620行权价看涨期权，60份合约。赌上加油站热狗和啤酒。</div>
+          attached my last trades in 2nd image (NBIS &amp; CRWV Puts)
+          <div class="translation">翻译：在第二张图片中附上了我的最后几笔交易（NBIS 和 CRWV 的看跌期权）</div>
+        </blockquote>
+        <blockquote class="quote">
+          Both positions were bought on Tuesday, Realized Thursday
+          <div class="translation">翻译：这两个头寸都是周二买入，周四实现盈利的</div>
         </blockquote>
       </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型</div>
-    <blockquote class="quote">
-        Bringing a deep-pocketed anchor investor like Nvidia onboard could boost investor confidence in the listing, which is shaping up to be a major test of public-market appetite for the enormous valuations and capital requirements of frontier AI labs.
-        <div class="translation">翻译：像英伟达这样财力雄厚的锚定投资者加入，可能会提振投资者对此次上市的信心，这正成为检验公众市场对前沿AI实验室巨大估值和资本需求的胃口的重要考验。</div>
-    </blockquote>
-    <div class="track-header">算</div>
-    <blockquote class="quote">
-        He then thinks to himself that maybe he was wrong and data centers will continue to pop up and that AI isn't the bubble he thought it was.
-        <div class="translation">翻译：他随后想到自己可能错了，数据中心将继续涌现，而且AI并非他想象的泡沫。</div>
-    </blockquote>
-    <div class="track-header">光</div>
-    <div class="track-header">存</div>
-    <div class="track-header">电</div>
-    <div class="track-header">板</div>
-    <div class="track-header">云</div>
-    <div class="track-header">AI应用</div>
-    <blockquote class="quote">
-        Nvidia’s potential involvement in the IPO... would give Anthropic an early strategic backer for the outsized offering, while further deepening ties between the chipmaker and one of its major customers.
-        <div class="translation">翻译：英伟达可能参与此次IPO...将为Anthropic提供一个早期的战略支持者，同时进一步加深芯片制造商与其主要客户之一的联系。</div>
-    </blockquote>
-    <blockquote class="quote">
-        JPMorgan cut off Situational Awareness lending after AI losses
-        <div class="translation">翻译：摩根大通在AI损失后，停止了情境感知贷款业务。</div>
-    </blockquote>
-    <blockquote class="quote">
-        AI isn't the bubble he thought it was.
-        <div class="translation">翻译：AI并非他想象的泡沫。</div>
-    </blockquote>
+    <ul>
+        <li>
+            <div class="track-header">模型 (Models)</div>
+            <blockquote class="quote">
+              Nvidia is considering investing up to $10 billion in the IPO, one of the sources added. ... would give Anthropic an early strategic backer for the outsized offering, while further deepening ties between the chipmaker and one of its major customers. ... frontier AI labs.
+              <div class="translation">翻译：消息人士称，英伟达正考虑在Anthropic的巨额IPO中投资高达100亿美元。……这将为这项超大型发行提供早期战略支持者，同时进一步深化这家芯片制造商与其主要客户之一的联系。……前沿人工智能实验室。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">算 (Compute)</div>
+            <blockquote class="quote">
+              Nvidia is considering investing up to $10 billion in the IPO, one of the sources added. ... further deepening ties between the chipmaker and one of its major customers.
+              <div class="translation">翻译：消息人士称，英伟达正考虑在Anthropic的巨额IPO中投资高达100亿美元。……进一步深化这家芯片制造商与其主要客户之一的联系。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">光 (Optics)</div>
+            <span class="no-content">暂无相关讨论。</span>
+        </li>
+        <li>
+            <div class="track-header">存 (Storage)</div>
+            <span class="no-content">暂无相关讨论。</span>
+        </li>
+        <li>
+            <div class="track-header">电 (Power)</div>
+            <span class="no-content">暂无相关讨论。</span>
+        </li>
+        <li>
+            <div class="track-header">板 (Boards)</div>
+            <span class="no-content">暂无相关讨论。</span>
+        </li>
+        <li>
+            <div class="track-header">云 (Cloud)</div>
+            <blockquote class="quote">
+              He then thinks to himself that maybe he was wrong and data centers will continue to pop up and that AI isn't the bubble he thought it was.
+              <div class="translation">翻译：他然后心想，也许他错了，数据中心会继续涌现，而且人工智能并不是他想象中的泡沫。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="track-header">AI应用 (AI Applications)</div>
+            <blockquote class="quote">
+              JPMorgan cut off Situational Awareness lending after AI losses
+              <div class="translation">翻译：摩根大通在蒙受人工智能相关损失后，停止了情境感知贷款业务。</div>
+            </blockquote>
+        </li>
+    </ul>
 
 </body>
 </html>
