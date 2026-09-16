@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>09月16日 情报终端</title>
+        <title>09月17日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,117 +36,57 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 09月16日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-09-16 13:03:55 (北京时间)</p>
+            <h1>🎯 09月17日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-09-17 01:11:52 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>市场情绪概览 (2026年09月16日)</title>
     <meta charset="UTF-8">
+    <title>美股量化分析引擎报告 (2026年09月17日) - Reddit市场情绪提炼</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; line-height: 1.6; color: #333; max-width: 960px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
         h1, h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
         h2 { font-size: 1.8em; }
         ul { list-style: none; padding: 0; }
-        li { background-color: #fff; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 15px; padding: 15px; }
-        .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 10px; font-size: 1.1em; }
-        .quote { background-color: #f0f4f7; border-left: 4px solid #3498db; margin: 10px 0; padding: 10px 15px; font-style: italic; color: #555; }
-        .translation { font-size: 0.9em; color: #7f8c8d; margin-top: 8px; border-top: 1px dashed #cfd9e3; padding-top: 8px; }
-        .track-header { font-weight: bold; color: #2980b9; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; padding-left: 10px; border-left: 3px solid #2980b9; }
-        p { margin-bottom: 10px; }
+        li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .stock-tag { font-weight: bold; color: #007bff; margin-bottom: 10px; font-size: 1.1em; }
+        .quote { background-color: #eef7ff; border-left: 4px solid #007bff; padding: 10px 15px; margin: 10px 0; font-style: italic; color: #555; }
+        .translation { margin-top: 8px; font-size: 0.9em; color: #666; font-style: normal; }
+        .track-header { font-weight: bold; margin-top: 20px; margin-bottom: 10px; color: #2c3e50; font-size: 1.1em; }
+        .ai-category-item { margin-left: 20px; margin-bottom: 5px; }
     </style>
 </head>
 <body>
 
-    <h1>市场情绪概览 (2026年09月16日)</h1>
+    <h1>Reddit美股市场情绪提炼 (2026年09月17日)</h1>
 
     <h2>1. 宏观与市场情绪</h2>
-    <p>Reddit社区今日关注的宏观焦点包括加密货币监管法案的投票结果、财政部潜在的刺激计划，以及对美联储利率决议和十年期国债收益率的担忧。市场对AI行业未来发展方向出现分歧，同时一些交易者因波动而录得大额盈利或亏损。</p>
-
     <ul>
         <li>
-            <div class="stock-tag">加密货币监管法案（CLARITY Act）投票失败</div>
+            市场普遍预测美联储将加息25个基点，但也有人担忧若不加息可能导致市场大跌。同时，10年期国债收益率已升至5%，加剧了宏观经济的不确定性。
             <blockquote class="quote">
-                Senators voted to reject cloture on the motion to proceed, a step that limits debate on whether to take up the legislation and requires 60 votes.
-                <div class="translation">翻译：参议员投票否决了启动议程的动议，该动议旨在限制对是否审议立法的辩论，并需要60票才能通过。</div>
+                FedWatch ( https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html ) has a 25bps rate hike priced at 90.7% meanwhile Polymarket is showing 88%. Even better, no change is 9.3% on FedWatch and Polymarket is 12%, or a 30% difference.
+                <div class="translation">翻译：FedWatch（https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html）对加息25个基点的定价为90.7%，而Polymarket显示为88%。甚至更好的是，FedWatch上不变的概率为9.3%，Polymarket上为12%，相差30%。</div>
             </blockquote>
             <blockquote class="quote">
-                The Clarity Act would establish rules for crypto markets, essentially legalizing most crypto activity in the United States, and clarify the respective responsibilities of the Securities and Exchange Commission and Commodity Futures Trading Commission.
-                <div class="translation">翻译：清晰法案将为加密货币市场制定规则，实质上将使美国的大多数加密货币活动合法化，并明确证券交易委员会和商品期货交易委员会各自的职责。</div>
+                My guess is they don’t raise rates, and we drop hard.
+                <div class="translation">翻译：我猜他们不会加息，然后我们会暴跌。</div>
             </blockquote>
-            <blockquote class="quote">
-                Tuesday's result effectively blocks further consideration of the Clarity Act in the Senate.
-                <div class="translation">翻译：周二的结果有效地阻止了参议院对清晰法案的进一步审议。</div>
-            </blockquote>
-            <blockquote class="quote">
-                I’ve been DCAing since last october when crypto crashed down. I guess I will go back to eating ramen and seeing my parents disown me.
-                <div class="translation">翻译：自去年十月加密货币暴跌以来，我一直在进行定投。我想我又要回去吃拉面，并且被父母断绝关系了。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">财政部$5000支票提案</div>
-            <blockquote class="quote">
-                *BESSENT: examining $5,000 check proposal at treasury
-                <div class="translation">翻译：*BESSENT：正在审查财政部的5000美元支票提案。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">通胀与市场情绪</div>
-            <blockquote class="quote">
-                Inflation got so bad even Buddhist monks are buying the dip
-                <div class="translation">翻译：通货膨胀如此严重，甚至连佛教僧侣都在抄底。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">市场韧性与看涨情绪</div>
-            <blockquote class="quote">
-                Tariffs? Calls Oil shortage? Calls Bombing countries? Calls Not bombing countries? Calls 10yr +5%? Calls Rate Hold? Calls Rate Hike? Calls Warsh doesn’t show? believe it or not… calls.
-                <div class="translation">翻译：关税？看涨。石油短缺？看涨。轰炸他国？看涨。不轰炸他国？看涨。十年期国债收益率+5%？看涨。利率保持不变？看涨。加息？看涨。沃什不露面？信不信由你…看涨。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">十年期国债收益率与美联储决议</div>
             <blockquote class="quote">
                 10-year Treasury yield hits 5% for first time since 2023 as traders brace for Fed decision this week
-                <div class="translation">翻译：十年期国债收益率自2023年以来首次达到5%，交易员们本周为美联储的决策做准备。</div>
+                <div class="translation">翻译：交易员在本周美联储决定前严阵以待，10年期美国国债收益率自2023年以来首次触及5%。</div>
             </blockquote>
         </li>
         <li>
-            <div class="stock-tag">Kevin Warsh效应与美联储会议影响</div>
+            CLARITY法案未能通过参议院投票，对加密货币市场带来负面冲击，监管框架的不确定性持续存在。
             <blockquote class="quote">
-                With the FOMC meeting this week on Sep 15-16, the interest rate announcement at 2pm on Sep 16, and Kevin Warsh's press conference following that at 2:30pm, I'm sharing analysis showing what we've seen from Warsh to date.
-                <div class="translation">翻译：鉴于本周9月15日至16日举行的联邦公开市场委员会（FOMC）会议，以及9月16日下午2点公布的利率决议和2点30分凯文·沃什（Kevin Warsh）随后的新闻发布会，我将分享迄今为止我们从沃什身上观察到的分析。</div>
+                Senators voted to reject cloture on the motion to proceed, a step that limits debate on whether to take up the legislation and requires 60 votes. The Clarity Act would establish rules for crypto markets, essentially legalizing most crypto activity in the United States, and clarify the respective responsibilities of the Securities and Exchange Commission and Commodity Futures Trading Commission. Tuesday's result effectively blocks further consideration of the Clarity Act in the Senate.
+                <div class="translation">翻译：参议员投票否决了启动议案程序的投票，这一举措限制了就立法是否采取行动的辩论，并需要60票才能通过。CLARITY法案将为加密货币市场建立规则，实质上使美国大多数加密货币活动合法化，并澄清证券交易委员会和商品期货交易委员会各自的职责。周二的结果有效地阻止了参议院对CLARITY法案的进一步审议。</div>
             </blockquote>
             <blockquote class="quote">
-                In all three cases there was a clear market reaction while he was speaking.
-                <div class="translation">翻译：在这三次事件中，他讲话时市场都出现了明显的反应。</div>
-            </blockquote>
-            <blockquote class="quote">
-                June 16-17 FOMC: QQQ fell 2.89% over the two day meeting. SPY fell 1.84%.
-                <div class="translation">翻译：6月16日至17日的联邦公开市场委员会会议：QQQ在两天会议期间下跌了2.89%。SPY下跌了1.84%。</div>
-            </blockquote>
-            <blockquote class="quote">
-                QQQ immediately sold off on the 2pm Fed release, then recovered all of it during the early press conference.
-                <div class="translation">翻译：QQQ在下午2点美联储发布后立即抛售，随后在早期新闻发布会上全部收复。</div>
-            </blockquote>
-            <blockquote class="quote">
-                You'll recall that July 29 was a horrible day for the markets.
-                <div class="translation">翻译：你会记得7月29日对市场来说是糟糕的一天。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">做空市场获利</div>
-            <blockquote class="quote">
-                Last week, my profit was only 30k. Now it has risen to 100k.
-                <div class="translation">翻译：上周我的利润只有3万美元。现在已经涨到了10万美元。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">券商期权执行问题</div>
-            <blockquote class="quote">
-                7690 puts got filled at $75 with SPX trading between 7595 and 7605.
-                <div class="translation">翻译：当SPX在7595到7605之间交易时，7690的看跌期权以75美元成交。</div>
+                The CLARITY Act would establish a clearer regulatory framework for digital assets and exchanges, which is something the industry has been pushing for heavily. Here’s the problem: the Senate needs 60 votes to clear the key procedural/cloture vote. Republicans currently hold 53 seats, so even if every Republican votes yes, they still need at least seven additional votes from Democrats or independents.
+                <div class="translation">翻译：CLARITY法案将为数字资产和交易所建立一个更清晰的监管框架，这是行业一直在大力推动的。问题在于：参议院需要60票才能通过关键的程序性/暂停辩论投票。共和党目前拥有53个席位，因此即使所有共和党人都投赞成票，他们仍然需要至少七名民主党或独立人士的额外投票。</div>
             </blockquote>
         </li>
     </ul>
@@ -154,93 +94,36 @@
     <h2>2. 热议中的个股和想法</h2>
     <ul>
         <li>
-            <div class="stock-tag">1. RKLB (Rocket Lab USA, Inc.)</div>
-            <blockquote class="quote">
-                This is outdated as rocket lab dropped to $63, but I haven’t sold and don’t plan to for a long time.
-                <div class="translation">翻译：这已经过时了，因为Rocket Lab已经跌到63美元了，但我没有卖出，也不打算长时间内卖出。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Been holding since late 2024 and didn’t want to trim any even though I heavily thought about it at $110.
-                <div class="translation">翻译：自2024年末以来我一直在持有，尽管我在110美元的时候曾认真考虑过减仓，但我不想减持任何份额。</div>
-            </blockquote>
-            <blockquote class="quote">
-                So now I’m only up around $63,000 but diamond hands retards.
-                <div class="translation">翻译：所以现在我只赚了大约63,000美元，但我会像傻瓜一样坚定持有。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">2. NVDA (NVIDIA Corporation)</div>
-            <blockquote class="quote">
-                28k NVDA YOLO. 3 DTE.
-                <div class="translation">翻译：2.8万美元NVIDIA梭哈。3天到期。</div>
-            </blockquote>
+            <div class="stock-tag">NVDA (NVIDIA Corporation)</div>
             <blockquote class="quote">
                 Way OOTM. 3 DTE. My entire port. Before a crucial rate decision. Real wallstreetbets style.
-                <div class="translation">翻译：远在价外。3天到期。我的整个投资组合。在关键的利率决定之前。真正的华尔街赌徒风格。</div>
+                <div class="translation">翻译：期权深度虚值。3天到期。我的全部投资组合。在关键的利率决定之前。真正的华尔街赌场风格。</div>
             </blockquote>
             <blockquote class="quote">
-                If NVIDIA &amp; DRAM are the AI bets, Apple turns out to be the AI hedge?
-                <div class="translation">翻译：如果NVIDIA和DRAM是AI的押注，那么苹果是否成为了AI的对冲？</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">3. AAPL (Apple Inc.)</div>
-            <blockquote class="quote">
-                Is Apple the AI Hedge?
-                <div class="translation">翻译：苹果是AI的对冲吗？</div>
-            </blockquote>
-            <blockquote class="quote">
-                Off late, If NVIDIA &amp; DRAM are the AI bets, Apple turns out to be the AI hedge?
-                <div class="translation">翻译：最近，如果NVIDIA和DRAM是AI的押注，那么苹果是否成为了AI的对冲？</div>
-            </blockquote>
-            <blockquote class="quote">
-                Where is smart money moving the money to?
-                <div class="translation">翻译：聪明资金正在流向哪里？</div>
+                Off late, If NVIDIA &amp; DRAM are the AI bets, Apple turns out to be the AI hedge? Where is smart money moving the money to?
+                <div class="translation">翻译：最近，如果英伟达和DRAM是AI的押注，那么苹果会不会成为AI的对冲？聪明钱正在流向哪里？</div>
             </blockquote>
         </li>
         <li>
-            <div class="stock-tag">4. DELL (Dell Technologies Inc.)</div>
+            <div class="stock-tag">COIN (Coinbase Global, Inc.)</div>
             <blockquote class="quote">
-                DELL hit a new high. Piggy bought a small amount of put options
-                <div class="translation">翻译：戴尔创下新高。我少量购买了看跌期权。</div>
+                Closed out the calls expiring this week as soon as it was impossible to get 60 votes. Clawed back $2.5k. Still holding onto the Nov calls but I'm not sure what happens with them. Will look to sell during next rally. Overall losses: $4.4k.
+                <div class="translation">翻译：一旦不可能获得60票，就立即平仓了本周到期的看涨期权。挽回了2500美元。仍然持有11月的看涨期权，但我不确定会怎样。会在下一次反弹时寻找卖出机会。总损失：4400美元。</div>
             </blockquote>
             <blockquote class="quote">
-                Every time DELL l hits a new high, it faces a wave of selling pressure
-                <div class="translation">翻译：每当戴尔创下新高时，它都会面临一波抛售压力。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">5. COIN (Coinbase Global, Inc.)</div>
-            <blockquote class="quote">
-                Closed out the calls expiring this week as soon as it was impossible to get 60 votes.
-                <div class="translation">翻译：一旦不可能获得60票，我立即平仓了本周到期的看涨期权。</div>
-            </blockquote>
-            <blockquote class="quote">
-                $COIN rallied yesterday as optimism around the CLARITY Act increased after Trump agreed to stronger ethics provisions in the revised bill.
-                <div class="translation">翻译：随着特朗普同意修订法案中更严格的道德条款后，围绕《清晰法案》的乐观情绪增加，$COIN昨天上涨。</div>
-            </blockquote>
-            <blockquote class="quote">
-                This is a major potential catalyst for Coinbase and the broader U.S. crypto industry.
-                <div class="translation">翻译：这对Coinbase和更广泛的美国加密货币行业来说是一个重大的潜在催化剂。</div>
-            </blockquote>
-            <blockquote class="quote">
-                The CLARITY Act would establish a clearer regulatory framework for digital assets and exchanges, which is something the industry has been pushing for heavily.
-                <div class="translation">翻译：清晰法案将为数字资产和交易所建立更清晰的监管框架，这是该行业一直在大力推动的事情。</div>
+                $COIN rallied yesterday as optimism around the CLARITY Act increased after Trump agreed to stronger ethics provisions in the revised bill. Prediction-market odds of the bill becoming law also jumped sharply on the news. This is a major potential catalyst for Coinbase and the broader U.S. crypto industry.
+                <div class="translation">翻译：昨天COIN上涨，原因是在特朗普同意修订法案中更强的道德条款后，市场对CLARITY法案的乐观情绪增加。该法案成为法律的预测市场赔率也因消息大幅跳升。这对Coinbase和更广泛的美国加密行业来说是一个潜在的重大催化剂。</div>
             </blockquote>
         </li>
         <li>
-            <div class="stock-tag">6. LULU (Lululemon Athletica Inc.)</div>
+            <div class="stock-tag">KDK (Kodiak Robotics, Inc.)</div>
             <blockquote class="quote">
-                Don’t ever bet against hot Moms in stretch Pants $LULU
-                <div class="translation">翻译：永远不要做空穿弹力裤的辣妈们（LULU）。</div>
+                Positions: 50,000 shares at $3.90 - will hold to a $5bn - $10bn market cap Loaded to a full tittie I am not your financial advisor, I am your enabler - and I will continue to load up on this asymmetric af opportunity. I am also the lunatic willingly holding this into both a share unlock and upcoming dilution.
+                <div class="translation">翻译：持仓：5万股，每股3.90美元——将持有到市值达到50亿至100亿美元。我不是你的财务顾问，我是你的促成者——我将继续加仓这个极不对称的机会。我也是那个愿意在股票解禁和即将稀释的情况下持有它的人。</div>
             </blockquote>
             <blockquote class="quote">
-                It’s the most hated profitable company in the market with more holes than a glory hole factory.
-                <div class="translation">翻译：它是市场上最受痛恨的盈利公司，漏洞百出。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Position 500 shares at 100.64
-                <div class="translation">翻译：持仓500股，成本100.64。</div>
+                Kodiak is the only company on earth that's sold a driverless semi-truck to a customer who owns and runs it themselves. 35 trucks, 40,000+ paid driverless hours, 21 months using it, with a clean FMCSA record. That customer went from 10 trucks...to 35, now committed to 100 in 2027
+                <div class="translation">翻译：Kodiak是地球上唯一一家向自己拥有并运营自动驾驶半挂车的客户销售产品的公司。35辆卡车，超过4万小时的付费自动驾驶时间，使用21个月，拥有干净的FMCSA记录。该客户从10辆卡车增加到35辆，现在承诺到2027年增加到100辆。</div>
             </blockquote>
         </li>
     </ul>
@@ -248,59 +131,112 @@
     <h2>3. 小众公司冒泡</h2>
     <ul>
         <li>
-            <div class="stock-tag">1. ORCL (Oracle Corporation)</div>
+            <div class="stock-tag">SKHYY (SK Hynix Inc.)</div>
             <blockquote class="quote">
-                Oracle CFO says 'doing more with less' isn't the answer in all-hands after layoffs
-                <div class="translation">翻译：甲骨文首席财务官在裁员后的全体会议上表示，“用更少的资源做更多的事情”并非万能之策。</div>
+                SK Hynix in talks with Intel about deal to make memory chips in US for the first time, sources say
+                <div class="translation">翻译：据消息人士称，SK海力士正与英特尔就首次在美国制造存储芯片的交易进行谈判。</div>
             </blockquote>
         </li>
         <li>
-            <div class="stock-tag">2. MU (Micron Technology, Inc.)</div>
+            <div class="stock-tag">DELL (Dell Technologies Inc.)</div>
             <blockquote class="quote">
-                I also bought micron at 99 but sold for a fucking loss😂😂
-                <div class="translation">翻译：我还以99美元的价格买了美光，结果亏了一大笔钱😂😂</div>
+                Every time DELL l hits a new high, it faces a wave of selling pressure
+                <div class="translation">翻译：每当戴尔触及新高时，都会面临一波抛售压力。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">RKLB (Rocket Lab USA, Inc.)</div>
+            <blockquote class="quote">
+                This is outdated as rocket lab dropped to $63, but I haven’t sold and don’t plan to for a long time. Been holding since late 2024 and didn’t want to trim any even though I heavily thought about it at $110. So now I’m only up around $63,000 but diamond hands retards.
+                <div class="translation">翻译：这已经过时了，因为Rocket Lab已经跌到63美元，但我还没有卖出，也不打算长期卖出。自2024年末以来一直持有，即使在110美元时我曾认真考虑过减仓，但还是不想减持。所以现在我只盈利了大约63,000美元，但我仍然是“钻石手”的傻瓜。</div>
+            </blockquote>
+        </li>
+        <li>
+            <div class="stock-tag">AAPL (Apple Inc.)</div>
+            <blockquote class="quote">
+                Off late, If NVIDIA &amp; DRAM are the AI bets, Apple turns out to be the AI hedge? Where is smart money moving the money to?
+                <div class="translation">翻译：最近，如果英伟达和DRAM是AI的押注，那么苹果会不会成为AI的对冲？聪明钱正在流向哪里？</div>
             </blockquote>
         </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型</div>
-    <blockquote class="quote">
-        Anthropic’s definition of profit
-        <div class="translation">翻译：Anthropic对利润的定义</div>
-    </blockquote>
-    <blockquote class="quote">
-        All 4 major frontier AI labs basically agreeing that safety/security needs to be taken more seriously is bullish long term, not bearish.
-        <div class="translation">翻译：所有四家主要的AI前沿实验室基本都同意需要更认真地对待安全/保障问题，这长期来看是利好，而非利空。</div>
-    </blockquote>
-    <div class="track-header">算</div>
-    <blockquote class="quote">
-        Nobody said “we’re cutting AI capex,” “we need fewer GPUs,” or “we’re cancelling datacenters.”
-        <div class="translation">翻译：没有人说“我们正在削减AI资本支出”，“我们需要更少的GPU”，或者“我们正在取消数据中心”。</div>
-    </blockquote>
-    <blockquote class="quote">
-        Slower releases ≠ less compute demand.
-        <div class="translation">翻译：发布速度放缓不等于计算需求减少。</div>
-    </blockquote>
-    <blockquote class="quote">
-        If anything, more safety means more evals, more redundancy, more security infrastructure and more compute.
-        <div class="translation">翻译：如果说有什么不同的话，那就是更多的安全意味着更多的评估、更多的冗余、更多的安全基础设施和更多的计算。</div>
-    </blockquote>
-    <div class="track-header">光</div>
-    <p>暂无相关高质量讨论。</p>
-    <div class="track-header">存</div>
-    <p>暂无相关高质量讨论。</p>
-    <div class="track-header">电</div>
-    <p>暂无相关高质量讨论。</p>
-    <div class="track-header">板</div>
-    <blockquote class="quote">
-        If NVIDIA &amp; DRAM are the AI bets, Apple turns out to be the AI hedge?
-        <div class="translation">翻译：如果NVIDIA和DRAM是AI的押注，那么苹果是否成为了AI的对冲？</div>
-    </blockquote>
-    <div class="track-header">云</div>
-    <p>暂无相关高质量讨论。</p>
-    <div class="track-header">AI应用</div>
-    <p>暂无相关高质量讨论。</p>
+    <ul>
+        <li>
+            <div class="track-header">模型</div>
+            <ul class="ai-category-item">
+                <li>Anthropic IPO估值预期：
+                    <blockquote class="quote">
+                        Anthropic's IPO is rumored to be the largest IPO in history. Anthropic's last major financing valued it around $965B. Now there are reports discussing a possible IPO valuation around $2T.
+                        <div class="translation">翻译：Anthropic的IPO传闻将是历史上规模最大的IPO。Anthropic上次主要融资时估值约为9650亿美元。现在有报道讨论可能的IPO估值在2万亿美元左右。</div>
+                    </blockquote>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <div class="track-header">算</div>
+            <ul class="ai-category-item">
+                <li>NVIDIA作为AI计算核心：
+                    <blockquote class="quote">
+                        Off late, If NVIDIA &amp; DRAM are the AI bets, Apple turns out to be the AI hedge? Where is smart money moving the money to?
+                        <div class="translation">翻译：最近，如果英伟达和DRAM是AI的押注，那么苹果会不会成为AI的对冲？聪明钱正在流向哪里？</div>
+                    </blockquote>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <div class="track-header">光</div>
+            <ul class="ai-category-item">
+                <li>暂无高质量讨论。</li>
+            </ul>
+        </li>
+        <li>
+            <div class="track-header">存</div>
+            <ul class="ai-category-item">
+                <li>DRAM在AI投资中的角色：
+                    <blockquote class="quote">
+                        Off late, If NVIDIA &amp; DRAM are the AI bets, Apple turns out to be the AI hedge? Where is smart money moving the money to?
+                        <div class="translation">翻译：最近，如果英伟达和DRAM是AI的押注，那么苹果会不会成为AI的对冲？聪明钱正在流向哪里？</div>
+                    </blockquote>
+                </li>
+                <li>SK海力士在美国制造存储芯片：
+                    <blockquote class="quote">
+                        SK Hynix in talks with Intel about deal to make memory chips in US for the first time, sources say
+                        <div class="translation">翻译：据消息人士称，SK海力士正与英特尔就首次在美国制造存储芯片的交易进行谈判。</div>
+                    </blockquote>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <div class="track-header">电</div>
+            <ul class="ai-category-item">
+                <li>暂无高质量讨论。</li>
+            </ul>
+        </li>
+        <li>
+            <div class="track-header">板</div>
+            <ul class="ai-category-item">
+                <li>暂无高质量讨论。</li>
+            </ul>
+        </li>
+        <li>
+            <div class="track-header">云</div>
+            <ul class="ai-category-item">
+                <li>暂无高质量讨论。</li>
+            </ul>
+        </li>
+        <li>
+            <div class="track-header">AI应用</div>
+            <ul class="ai-category-item">
+                <li>自动驾驶半挂车：
+                    <blockquote class="quote">
+                        Both run driverless semis, and KDK targets highway driver out in December.
+                        <div class="translation">翻译：两者都运营自动驾驶半挂车，KDK的目标是在12月推出高速公路驾驶员。</div>
+                    </blockquote>
+                </li>
+            </ul>
+        </li>
+    </ul>
 
 </body>
 </html>
