@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>09月18日 情报终端</title>
+        <title>09月19日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,175 +36,292 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 09月18日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-09-18 12:57:38 (北京时间)</p>
+            <h1>🎯 09月19日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-09-19 00:36:57 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股量化分析引擎报告 (2026年09月18日)</title>
+    <title>美股市场情绪分析 (2026年09月19日)</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f9f9f9; }
-        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
-        .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 5px; font-size: 1.1em; }
-        .quote { background-color: #ecf0f1; border-left: 4px solid #3498db; margin: 10px 0; padding: 10px 15px; font-style: italic; color: #555; }
-        .translation { font-size: 0.9em; color: #7f8c8d; margin-top: 5px; }
-        ul { list-style: none; padding: 0; }
-        li { margin-bottom: 15px; }
-        .track-header { font-weight: bold; color: #27ae60; margin-top: 15px; margin-bottom: 5px; font-size: 1.1em; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+        h2 { font-size: 1.8em; }
+        ul { list-style-type: none; padding: 0; }
+        li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .stock-tag { font-weight: bold; color: #007bff; margin-bottom: 10px; font-size: 1.1em; }
+        .quote { margin: 0; padding: 10px 15px; background-color: #e9f7ff; border-left: 4px solid #007bff; border-radius: 4px; font-style: italic; color: #555; }
+        .quote .translation { margin-top: 8px; font-size: 0.9em; color: #666; font-style: normal; }
+        .track-header { font-weight: bold; color: #28a745; margin-top: 20px; margin-bottom: 10px; font-size: 1.2em; border-bottom: 1px dashed #ccc; padding-bottom: 5px; }
     </style>
 </head>
 <body>
 
+    <h1>美股市场情绪分析 (2026年09月19日)</h1>
+
     <h2>1. 宏观与市场情绪</h2>
     <ul>
-        <li>
-            <blockquote class="quote">
-                I think if the Fed were actually going to reduce the money supply, then it would be prudent to reduce leverage and be cautious.
-                <div class="translation">翻译：我认为如果美联储真的要减少货币供应，那么谨慎地降低杠杆是明智之举。</div>
-            </blockquote>
-            <blockquote class="quote">
-                But since Warsh, Powell, and pretty much everyone working for the Fed since 2008 has made it clear that they don't ever want to reduce the money supply, just maybe possibly someday eventually slow its rate of growth, then I think "not fighting the Fed" has come to mean back up the truck everyday always.
-                <div class="translation">翻译：但自2008年以来，沃什、鲍威尔以及几乎所有为美联储工作的人都明确表示，他们根本不想减少货币供应，可能只是有一天最终会减缓其增长速度，那么我认为“不与美联储作对”已经意味着每天都在加仓。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Goldman sachs is already pricing in 3 rate hikes into June 2027.
-                <div class="translation">翻译：高盛已经将2027年6月前的3次加息计入价格。</div>
-            </blockquote>
-            <blockquote class="quote">
-                The market needed to see rate hikes to move forward.
-                <div class="translation">翻译：市场需要看到加息才能向前发展。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Fed approves interest rate hike, signals one more to come this year
-                <div class="translation">翻译：美联储批准加息，并暗示今年还将有一次加息</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                SEC Issues “Innovation Exemption” to Facilitate the Trading of Tokenized NMS Stock and Request for Comment
-                <div class="translation">翻译：美国证券交易委员会发布“创新豁免”，以促进代币化NMS股票的交易并征求意见</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Hyperscaler debt signals warning sign, Apollo cautions
-                <div class="translation">翻译：Apollo警告称，超大规模企业债务发出警告信号</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Here's an automotive bear case I've been thinking about.
-                <div class="translation">翻译：这是我一直在思考的一个汽车行业的看跌情况。</div>
-            </blockquote>
-            <blockquote class="quote">
-                The US has effectively removed Chinese automakers from the competitive equation.
-                <div class="translation">翻译：美国已经有效地将中国汽车制造商从竞争格局中移除。</div>
-            </blockquote>
-            <blockquote class="quote">
-                That obviously protects manufacturers operating in the US market from a brutal price war.
-                <div class="translation">翻译：这显然保护了在美国市场运营的制造商免受残酷的价格战。</div>
-            </blockquote>
-            <blockquote class="quote">
-                But what if it also creates a long-term competitiveness problem?
-                <div class="translation">翻译：但如果这也造成了长期的竞争力问题怎么办？</div>
-            </blockquote>
-            <blockquote class="quote">
-                I'm Brazilian, and we're watching the opposite experiment.
-                <div class="translation">翻译：我是巴西人，我们正在观察相反的实验。</div>
-            </blockquote>
-            <blockquote class="quote">
-                BYD, GWM and Geely are competing directly with Chevrolet, VW, Fiat, Hyundai, Toyota and others.
-                <div class="translation">翻译：比亚迪、长城汽车和吉利汽车正在与雪佛兰、大众、菲亚特、现代、丰田等品牌直接竞争。</div>
-            </blockquote>
-        </li>
+      <li>
+        <blockquote class="quote">
+          Warren Buffett Steps Down as Berkshire Chairman
+          <div class="translation">翻译：沃伦·巴菲特辞去伯克希尔董事长职务</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Saudi Aramco is cutting off crude-oil deliveries to European customers next month after attacks disrupted a major Saudi pipeline supplying oil through the Red Sea.
+          <div class="translation">翻译：沙特阿美在红海一条主要沙特输油管道遭到袭击中断后，将于下月停止向欧洲客户供应原油。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Saudi production reportedly fell by about 1.9 million barrels/day to 6.24 million bpd, its lowest level since 1990.
+          <div class="translation">翻译：据报道，沙特石油产量下降了约190万桶/天，至624万桶/天，为1990年以来的最低水平。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          European refiners, including Poland’s Orlen, are now scrambling to buy replacement oil on the spot market.
+          <div class="translation">翻译：包括波兰欧伦在内的欧洲炼油商现在正争相在现货市场购买替代石油。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The US has effectively removed Chinese automakers from the competitive equation.
+          <div class="translation">翻译：美国已有效地将中国汽车制造商从竞争格局中移除。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          BYD, Geely, XPeng and other Chinese manufacturers are expanding internationally, but an American consumer generally can't walk into a dealership and compare one directly with a GM, Ford, Tesla, Hyundai or Toyota.
+          <div class="translation">翻译：比亚迪、吉利、小鹏和其他中国制造商正在国际上扩张，但美国消费者通常无法走进经销商处，直接将其与通用、福特、特斯拉、现代或丰田进行比较。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          That obviously protects manufacturers operating in the US market from a brutal price war.
+          <div class="translation">翻译：这显然保护了在美国市场运营的制造商免受残酷的价格战。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          I'm Brazilian, and we're watching the opposite experiment.
+          <div class="translation">翻译：我是巴西人，我们正在观察相反的实验。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          BYD, GWM and Geely are competing directly with Chevrolet, VW, Fiat, Hyundai, Toyota and others.
+          <div class="translation">翻译：比亚迪、长城汽车和吉利正在与雪佛兰、大众、菲亚特、现代、丰田等直接竞争。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Affordable Chinese BEVs are putting pressure on conventional hatchbacks and small crossovers.
+          <div class="translation">翻译：平价的中国纯电动汽车正在对传统两厢车和小型跨界车构成压力。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Fed approves interest rate hike, signals one more to come this year.
+          <div class="translation">翻译：美联储批准加息，并暗示今年还将有一次加息。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          I think if the Fed were actually going to reduce the money supply, then it would be prudent to reduce leverage and be cautious.
+          <div class="translation">翻译：我认为如果美联储真的要减少货币供应，那么谨慎地降低杠杆并保持警惕是明智的。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          But since Warsh, Powell, and pretty much everyone working for the Fed since 2008 has made it clear that they don't ever want to reduce the money supply, just maybe possibly someday eventually slow its rate of growth, then I think "not fighting the Fed" has come to mean back up the truck everyday always.
+          <div class="translation">翻译：但由于沃什、鲍威尔以及自2008年以来几乎所有在美联储工作的人都明确表示，他们根本不想减少货币供应，只是可能有一天最终会放缓其增长速度，那么我认为“不与美联储作对”就意味着每天都要持续买入。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Until then, every rate hike is already priced in.
+          <div class="translation">翻译：在那之前，每次加息都已计入价格。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The market needed to see rate hikes to move forward.
+          <div class="translation">翻译：市场需要看到加息才能向前发展。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          SEC Issues “Innovation Exemption” to Facilitate the Trading of Tokenized NMS Stock and Request for Comment.
+          <div class="translation">翻译：美国证券交易委员会发布“创新豁免”，以促进代币化NMS股票的交易并征求意见。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
-        <li>
-            <div class="stock-tag">NVDA (Nvidia Corporation)</div>
-            <blockquote class="quote">
-                Jensen Huang says Nvidia will sell twice as many chips next year
-                <div class="translation">翻译：黄仁勋表示，英伟达明年将销售两倍多的芯片</div>
-            </blockquote>
-            <blockquote class="quote">
-                I put my entire Roth IRA into SpaceX and have been spamming bullish call options ever since along with Nvidia trades and am now mega in the green thank you rocket man
-                <div class="translation">翻译：我将我的整个罗斯IRA账户投入SpaceX，并从那时起就不断买入看涨期权，同时进行英伟达交易，现在我获得了巨额收益，感谢火箭侠。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">META (Meta Platforms)</div>
-            <blockquote class="quote">
-                Bought these calls when meta was in the mist of all those court cases.
-                <div class="translation">翻译：在Meta身陷所有那些诉讼案时，我买入了这些看涨期权。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">NKE (Nike, Inc.)</div>
-            <blockquote class="quote">
-                nike is at like 37 bucks and most people here have written it off, but the hiring data is not acting like a company thats giving up.
-                <div class="translation">翻译：耐克股价约为37美元，大多数人已经放弃了它，但招聘数据并不像一家正在放弃的公司。</div>
-            </blockquote>
-            <blockquote class="quote">
-                open job postings are around 1,000 a day right now.
-                <div class="translation">翻译：目前每天的招聘职位发布量约为1000个。</div>
-            </blockquote>
-            <blockquote class="quote">
-                up roughly 15% since december and the highest ive seen since spring 2025.
-                <div class="translation">翻译：自去年12月以来，增长了约15%，是我自2025年春季以来见过最高水平。</div>
-            </blockquote>
-            <blockquote class="quote">
-                reddit mentions on NKE also went vertical, from around 13 a day in mid july to a peak near 260 a day two weeks ago.
-                <div class="translation">翻译：Reddit上对NKE的提及量也垂直上升，从7月中旬的每天约13次，到两周前达到每天近260次的峰值。</div>
-            </blockquote>
-        </li>
+      <li>
+        <div class="stock-tag">1. NVDA (NVIDIA Corporation)</div>
+        <blockquote class="quote">
+          Jensen Huang says Nvidia will sell twice as many chips next year
+          <div class="translation">翻译：黄仁勋表示英伟达明年将销售两倍的芯片</div>
+        </blockquote>
+        <blockquote class="quote">
+          I put my entire Roth IRA into SpaceX and have been spamming bullish call options ever since along with Nvidia trades and am now mega in the green thank you rocket man
+          <div class="translation">翻译：我把我所有的罗斯个人退休账户都投入到SpaceX，并且从那以后一直在大举买入看涨期权，加上英伟达的交易，现在我赚了很多钱，谢谢马斯克。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">2. QCOM (QUALCOMM Incorporated)</div>
+        <blockquote class="quote">
+          Qualcomm is making a pretty aggressive bet on data centers.
+          <div class="translation">翻译：高通正在数据中心领域进行一项相当激进的押注。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Management is targeting >$15B of Data Center revenue by FY2029, with the business spanning server CPUs, AI accelerators, custom silicon, high-bandwidth compute and connectivity.
+          <div class="translation">翻译：管理层设定的目标是到2029财年数据中心业务营收超过150亿美元，该业务涵盖服务器CPU、AI加速器、定制芯片、高带宽计算和连接。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Meta has a multigeneration agreement around Qualcomm’s Dragonfly server CPU.
+          <div class="translation">翻译：Meta已与高通就其Dragonfly服务器CPU达成了多代协议。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Amazon just announced a multigeneration collaboration with Qualcomm covering custom AI inference silicon and optical connectivity.
+          <div class="translation">翻译：亚马逊刚刚宣布与高通达成多代合作，涵盖定制AI推理芯片和光纤连接。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">3. SPCX (SpaceX)</div>
+        <blockquote class="quote">
+          I put my entire Roth IRA into SpaceX and have been spamming bullish call options ever since along with Nvidia trades and am now mega in the green thank you rocket man
+          <div class="translation">翻译：我把我所有的罗斯个人退休账户都投入到SpaceX，并且从那以后一直在大举买入看涨期权，加上英伟达的交易，现在我赚了很多钱，谢谢马斯克。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Space X awarded 1 Billion Nasa Contract
+          <div class="translation">翻译：SpaceX获得10亿美元美国宇航局合同</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>3. 小众公司冒泡</h2>
     <ul>
-        <li>
-            <div class="stock-tag">PANW (Palo Alto Networks, Inc.)</div>
-            <blockquote class="quote">
-                Thanks to the Berenstein Bears Analyst that moved it down today
-                <div class="translation">翻译：感谢今天将其下调的Berenstein Bears分析师。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">TNZ (Tanzanian Gold Corporation)</div>
-            <blockquote class="quote">
-                I knew that the best energy stock on the TSX for the past 3 years wouldn't stay down for long.
-                <div class="translation">翻译：我知道过去三年中TSX上最好的能源股不会长时间下跌。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Vindication has arrived for me but not for the regards taunting me with their $30 targets in the summer as it currently sits in the $70s.
-                <div class="translation">翻译：对我来说，平反已经到来，但对于那些在夏天嘲笑我设定30美元目标的人来说却没有，因为它目前徘徊在70美元区间。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">LAC (Lithium Americas Corp.)</div>
-            <blockquote class="quote">
-                Canadian regard reaches enlightenment, cashes out a milly and diversifies into a 2 stock portfolio.
-                <div class="translation">翻译：加拿大股民顿悟，套现百万并多元化投资到两只股票的投资组合中。</div>
-            </blockquote>
-        </li>
+      <li>
+        <div class="stock-tag">1. NKE (NIKE, Inc.)</div>
+        <blockquote class="quote">
+          Just another blow to Nike! How does this company ever turn it around, or do they?
+          <div class="translation">翻译：对耐克又是另一个打击！这家公司如何才能扭转局面，或者它能吗？</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">2. AAPL (Apple Inc.)</div>
+        <blockquote class="quote">
+          Apple will let EU apps use less-alarming tracking-consent screens
+          <div class="translation">翻译：苹果将允许欧盟应用使用不那么令人担忧的追踪同意界面。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">3. META (Meta Platforms, Inc.)</div>
+        <blockquote class="quote">
+          Bought these calls when meta was in the mist of all those court cases.
+          <div class="translation">翻译：我在Meta陷入所有那些官司时买入了这些看涨期权。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">4. APLD (Applied Digital Corporation)</div>
+        <blockquote class="quote">
+          Wells Fargo casually leaking APLD's tenant names
+          <div class="translation">翻译：富国银行随意泄露Applied Digital的租户名称。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">5. AVGO (Broadcom Inc.)</div>
+        <blockquote class="quote">
+          80k gain held overnight
+          <div class="translation">翻译：隔夜持仓获利8万美元</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
+    <div class="track-header">模型 (Models)</div>
+    <ul>
+      <!-- No direct quotes found -->
+    </ul>
     <div class="track-header">算 (Compute)</div>
-    <blockquote class="quote">
-        Jensen Huang says Nvidia will sell twice as many chips next year
-        <div class="translation">翻译：黄仁勋表示，英伟达明年将销售两倍多的芯片</div>
-    </blockquote>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          Jensen Huang says Nvidia will sell twice as many chips next year
+          <div class="translation">翻译：黄仁勋表示英伟达明年将销售两倍的芯片</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Qualcomm is making a pretty aggressive bet on data centers. Management is targeting >$15B of Data Center revenue by FY2029, with the business spanning server CPUs, AI accelerators, custom silicon, high-bandwidth compute and connectivity.
+          <div class="translation">翻译：高通正在数据中心领域进行一项相当激进的押注。管理层设定的目标是到2029财年数据中心业务营收超过150亿美元，该业务涵盖服务器CPU、AI加速器、定制芯片、高带宽计算和连接。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Qualcomm is targeting production of its C1000 server CPU in 2028.
+          <div class="translation">翻译：高通的目标是在2028年开始生产其C1000服务器CPU。</div>
+        </blockquote>
+      </li>
+    </ul>
+    <div class="track-header">光 (Optics)</div>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          Amazon just announced a multigeneration collaboration with Qualcomm covering custom AI inference silicon and optical connectivity.
+          <div class="translation">翻译：亚马逊刚刚宣布与高通达成多代合作，涵盖定制AI推理芯片和光纤连接。</div>
+        </blockquote>
+      </li>
+    </ul>
+    <div class="track-header">存 (Storage)</div>
+    <ul>
+      <!-- No direct quotes found -->
+    </ul>
+    <div class="track-header">电 (Power)</div>
+    <ul>
+      <!-- No direct quotes found -->
+    </ul>
+    <div class="track-header">板 (Boards/PCBs)</div>
+    <ul>
+      <!-- No direct quotes found -->
+    </ul>
     <div class="track-header">云 (Cloud)</div>
-    <blockquote class="quote">
-        Hyperscaler debt signals warning sign, Apollo cautions
-        <div class="translation">翻译：Apollo警告称，超大规模企业债务发出警告信号</div>
-    </blockquote>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          Meta has a multigeneration agreement around Qualcomm’s Dragonfly server CPU.
+          <div class="translation">翻译：Meta已与高通就其Dragonfly服务器CPU达成了多代协议。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Microsoft is involved with Qualcomm’s High Bandwidth Compute architecture.
+          <div class="translation">翻译：微软参与了高通的高带宽计算架构。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Amazon just announced a multigeneration collaboration with Qualcomm covering custom AI inference silicon and optical connectivity.
+          <div class="translation">翻译：亚马逊刚刚宣布与高通达成多代合作，涵盖定制AI推理芯片和光纤连接。</div>
+        </blockquote>
+      </li>
+    </ul>
+    <div class="track-header">AI应用 (AI Applications)</div>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          Amazon just announced a multigeneration collaboration with Qualcomm covering custom AI inference silicon and optical connectivity.
+          <div class="translation">翻译：亚马逊刚刚宣布与高通达成多代合作，涵盖定制AI推理芯片和光纤连接。</div>
+        </blockquote>
+      </li>
+    </ul>
 
 </body>
 </html>
