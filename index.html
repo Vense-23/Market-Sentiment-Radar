@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>09月30日 情报终端</title>
+        <title>10月01日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,289 +36,272 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 09月30日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-09-30 13:48:23 (北京时间)</p>
+            <h1>🎯 10月01日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-10-01 02:04:39 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            <p>以下是基于2026年09月30日Reddit数据池提炼的最新美股市场情绪概览：</p>
-
-<!DOCTYPE html>
-<html lang="zh-CN">
+            <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit 美股市场情绪概览 (2026年09月30日)</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f4f7f6; }
-        h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
-        h2 { font-size: 1.8em; }
-        ul { list-style: none; padding: 0; }
-        li { background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 10px; font-size: 1.1em; }
-        .quote { background-color: #ecf0f1; border-left: 4px solid #3498db; padding: 10px 15px; margin: 10px 0; font-style: italic; color: #555; }
-        .translation { font-size: 0.9em; color: #7f8c8d; margin-top: 5px; }
-        .track-header { font-weight: bold; color: #2980b9; margin-top: 15px; margin-bottom: 5px; font-size: 1.1em; padding-left: 10px; border-left: 3px solid #f39c12; }
-        p { margin-bottom: 10px; }
-        .macro-quote { background-color: #f8f9fa; border-left: 4px solid #2ecc71; padding: 10px 15px; margin: 10px 0; font-style: italic; color: #555; }
-        .macro-translation { font-size: 0.9em; color: #7f8c8d; margin-top: 5px; }
-    </style>
+<title>Reddit 美股市场情绪 (2026年10月01日)</title>
+<meta charset="UTF-8">
+<style>
+  body { font-family: sans-serif; line-height: 1.6; color: #333; margin: 0 auto; max-width: 900px; padding: 20px; background-color: #f9f9f9; }
+  h1, h2, h3 { color: #2c3e50; }
+  blockquote { background: #eef; border-left: 5px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px; quotes: "\201C""\201D""\2018""\2019"; }
+  blockquote:before { color: #ccc; content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em; }
+  blockquote p { display: inline; }
+  .translation { font-style: italic; color: #555; margin-top: 5px; }
+  ul { list-style: none; padding: 0; }
+  li { margin-bottom: 1em; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+  .stock-tag { font-weight: bold; color: #3498db; margin-bottom: 10px; font-size: 1.1em; }
+  .track-header { font-weight: bold; color: #2980b9; margin-top: 1em; margin-bottom: 0.5em; font-size: 1.1em; }
+</style>
 </head>
 <body>
-    <h1>Reddit 美股市场情绪概览 (2026年09月30日)</h1>
 
-    <h2>1. 宏观与市场情绪</h2>
-    <p>市场普遍关注宏观经济数据和公司财报，其中对S&P 500指数广度达到互联网泡沫以来新低表示担忧。原油市场因中东原油出口恢复而呈现价格下跌趋势。尽管宏观环境复杂，Reddit社区的一些精选股票在2026年表现出色，继续跑赢SPY。</p>
-    <blockquote class="macro-quote">
-        S&P 500 breadth just hit its lowest level since the Dotcom bubble. This time is different.
-        <div class="macro-translation">翻译：标普500指数的广度刚刚触及互联网泡沫以来的最低水平。这次不同了。</div>
-    </blockquote>
-    <blockquote class="macro-quote">
-        Oil Prices Fall as Gulf Crude Exports Recover.
-        <div class="macro-translation">翻译：海湾原油出口恢复，油价下跌。</div>
-    </blockquote>
-    <blockquote class="macro-quote">
-        Mideast Crude Oil Flows Hit 98% of Pre-War Level, JPMorgan Says.
-        <div class="macro-translation">翻译：摩根大通表示，中东原油流量已达到战前水平的98%。</div>
-    </blockquote>
-    <blockquote class="macro-quote">
-        I’m feeling like a 🐻. Pce tm 👀.
-        <div class="macro-translation">翻译：我感觉像一只熊（看跌）。明天个人消费支出（PCE）数据。</div>
-    </blockquote>
-    <blockquote class="macro-quote">
-        WSB's top 10 picks had an average return of 76%, which beat SPY which returned only 17% in 2025. So that is an average return of 38% , compared to SPY's YTD return of 11.6%.
-        <div class="macro-translation">翻译：WSB（华尔街赌场）排名前十的股票在2025年平均回报率为76%，击败了SPY的17%。2026年至今，平均回报率为38%，而SPY同期回报为11.6%。</div>
-    </blockquote>
+<h1>Reddit 美股市场情绪 (2026年10月01日)</h1>
 
-    <h2>2. 热议中的个股和想法</h2>
-    <ul>
-      <li>
-        <div class="stock-tag">1. MU (Micron Technology, Inc.)</div>
-        <blockquote class="quote">
-          Still hold large positions in MU / SNDK and SKHY (plus the 2x ETFs) all on margin.
-          <div class="translation">翻译：我仍然持有大量的美光（MU）、SanDisk（SNDK）和SK海力士（SKHY）头寸（加上2倍杠杆ETF），全部是保证金交易。</div>
-        </blockquote>
-        <blockquote class="quote">
-          JPMorgan Sees Micron Positioned for Beat-and-Raise Ahead of Q4 Results.
-          <div class="translation">翻译：摩根大通预计美光（MU）在第四季度财报前有望实现业绩超预期并上调指引。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Tomorrow after hours will be super volatile and fake due to MU earning, so I'm posting this today.
-          <div class="translation">翻译：明天盘后美光（MU）财报将导致市场剧烈波动且表现虚假，所以我今天就发帖了。</div>
-        </blockquote>
-        <blockquote class="quote">
-          MU: 262.85%.
-          <div class="translation">翻译：美光（MU）：上涨262.85%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">2. UBER (Uber Technologies, Inc.)</div>
-        <blockquote class="quote">
-          Why is no one talking about Uber? We are 30% below 52-week high on cyber cab robotaxi fears, but who gives a fuck when Uber is literally becoming the distribution for AV (autonomous vehicle) rides.
-          <div class="translation">翻译：为什么没人谈论优步（UBER）？我们因对网络出租车（robotaxi）的担忧而低于52周高点30%，但当优步正字面意义上成为自动驾驶（AV）乘车的发行平台时，谁会在乎这些呢？</div>
-        </blockquote>
-        <blockquote class="quote">
-          They literally committed $7.5b to buying robo taxis for self operation and $2.5b in VC investments across dozens of companies, many of which they are already working with.
-          <div class="translation">翻译：他们投入了75亿美元购买机器人出租车进行自主运营，并向数十家公司进行了25亿美元的风险投资，其中许多公司他们已经在合作。</div>
-        </blockquote>
-        <blockquote class="quote">
-          It should be clear to you regards by now that distribution matters way more than tech.
-          <div class="translation">翻译：各位现在应该清楚，分销远比技术重要。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">3. AAPL (Apple Inc.)</div>
-        <blockquote class="quote">
-          I think AAPL is a short here.
-          <div class="translation">翻译：我认为苹果（AAPL）在这里是个做空机会。</div>
-        </blockquote>
-        <blockquote class="quote">
-          It’s repeating the pattern from 30th July where it broke 329.5 and gapped down next day.
-          <div class="translation">翻译：它正在重复7月30日的模式，当时它跌破329.5并在第二天跳空低开。</div>
-        </blockquote>
-        <blockquote class="quote">
-          It is also out of the upward channel the past few weeks.
-          <div class="translation">翻译：它在过去几周也脱离了上升通道。</div>
-        </blockquote>
-        <blockquote class="quote">
-          I bought 2 puts exp this Friday.
-          <div class="translation">翻译：我买了2份本周五到期的看跌期权。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">4. GOOGL (Alphabet Inc.)</div>
-        <blockquote class="quote">
-          GOOGL/GOOG: 7.76%.
-          <div class="translation">翻译：Alphabet（GOOGL/GOOG）：上涨7.76%。</div>
-        </blockquote>
-        <blockquote class="quote">
-          GOOGL: 8.8%.
-          <div class="translation">翻译：Alphabet（GOOGL）：上涨8.8%。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Cloud / Compute: GOOG, AVGO, AMZN, NVDA, AMD, MSFT.
-          <div class="translation">翻译：云/计算相关：谷歌（GOOG）、博通（AVGO）、亚马逊（AMZN）、英伟达（NVDA）、AMD（AMD）、微软（MSFT）。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">5. AMZN (Amazon.com Inc.)</div>
-        <blockquote class="quote">
-          AMZN: 6.69%.
-          <div class="translation">翻译：亚马逊（AMZN）：上涨6.69%。</div>
-        </blockquote>
-        <blockquote class="quote">
-          AMZN: 8.7%.
-          <div class="translation">翻译：亚马逊（AMZN）：上涨8.7%。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Cloud / Compute: GOOG, AVGO, AMZN, NVDA, AMD, MSFT.
-          <div class="translation">翻译：云/计算相关：谷歌（GOOG）、博通（AVGO）、亚马逊（AMZN）、英伟达（NVDA）、AMD（AMD）、微软（MSFT）。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">6. TSLA (Tesla, Inc.)</div>
-        <blockquote class="quote">
-          TSLA: -22.66%.
-          <div class="translation">翻译：特斯拉（TSLA）：下跌22.66%。</div>
-        </blockquote>
-        <blockquote class="quote">
-          TSLA: -18.4%.
-          <div class="translation">翻译：特斯拉（TSLA）：下跌18.4%。</div>
-        </blockquote>
-        <blockquote class="quote">
-          No one is downloading the Tesla robo taxi app when they can have human and robo drivers from 30+ providers in one app on Uber, under their Uber 1 subscription.
-          <div class="translation">翻译：没有人会下载特斯拉的机器人出租车应用，因为他们可以在优步的应用程序中，通过其Uber 1订阅，获得来自30多家供应商的人类和机器人司机服务。</div>
-        </blockquote>
-      </li>
-    </ul>
-
-    <h2>3. 小众公司冒泡</h2>
-    <ul>
-      <li>
-        <div class="stock-tag">1. NBIS (NioCorp Developments Ltd.)</div>
-        <blockquote class="quote">
-          NBIS: 175.24%.
-          <div class="translation">翻译：NioCorp（NBIS）：上涨175.24%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">2. PLTR (Palantir Technologies Inc.)</div>
-        <blockquote class="quote">
-          PLTR: 11.7%.
-          <div class="translation">翻译：Palantir（PLTR）：上涨11.7%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">3. IOVA (Iovance Biotherapeutics, Inc.)</div>
-        <blockquote class="quote">
-          This stock has been a rocket ship since August 6th.
-          <div class="translation">翻译：这只股票自8月6日以来就像火箭一样飞涨。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">4. EOSE (Eos Energy Enterprises, Inc.)</div>
-        <blockquote class="quote">
-          They make non-flammable stationary batteries that can but don't necessarily have to compete with Li-ion, different use cases but can operate in that range.
-          <div class="translation">翻译：他们生产的不可燃固定式电池可以但并非必须与锂离子电池竞争，它们有不同的使用场景，但可以在同一范围内运行。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">5. FICO (Fair Isaac Corporation)</div>
-        <blockquote class="quote">
-          FICO puts gainz. Thank you Steve Eisman for the recommendation.
-          <div class="translation">翻译：FICO看跌期权获利。感谢史蒂夫·艾斯曼的推荐。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">6. RIVN (Rivian Automotive, Inc.)</div>
-        <blockquote class="quote">
-          GAIN: RIVN call weeklies 10/2 $15 strike.
-          <div class="translation">翻译：获利：Rivian（RIVN）10月2日15美元行权价的周看涨期权。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">7. ASTS (AST SpaceMobile, Inc.)</div>
-        <blockquote class="quote">
-          ASTS: -19.64%.
-          <div class="translation">翻译：AST SpaceMobile（ASTS）：下跌19.64%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">8. RKLB (Rocket Lab USA, Inc.)</div>
-        <blockquote class="quote">
-          RKLB: -1.03%.
-          <div class="translation">翻译：Rocket Lab（RKLB）：下跌1.03%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">9. RDDT (Reddit, Inc.)</div>
-        <blockquote class="quote">
-          RDDT: -37.28%.
-          <div class="translation">翻译：Reddit（RDDT）：下跌37.28%。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">10. IREN (Iris Energy Limited)</div>
-        <blockquote class="quote">
-          IREN: 6.59%.
-          <div class="translation">翻译：Iris Energy（IREN）：上涨6.59%。</div>
-        </blockquote>
-      </li>
-    </ul>
-
-    <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型</div>
+<h2>1. 宏观与市场情绪</h2>
+<ul>
+  <li>
     <blockquote class="quote">
-      Anthropic Files for IPO. FY25 financials: Valuation: ~$2T Revenue: $4.59B, up 1,088% YoY from $386M Operating loss: $8.06B, widening from $2.98B GAAP net loss: $41.97B, vs $8.31B.
-      <div class="translation">翻译：Anthropic提交IPO申请。2025财年财务数据：估值：约2万亿美元。收入：45.9亿美元，同比增长1088%（去年同期3.86亿美元）。运营亏损：80.6亿美元，亏损扩大（去年同期29.8亿美元）。GAAP净亏损：419.7亿美元，去年同期83.1亿美元。</div>
+      A cooler-than-expected reading on Fed’s favored inflation measure tamps down on urgency for rate hikes.
+      <div class="translation">翻译：美联储青睐的通胀指标读数低于预期，降低了加息的紧迫性。</div>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote class="quote">
+      Mideast Crude Oil Flows Hit 98% of Pre-War Level, JPMorgan Says.
+      <div class="translation">翻译：摩根大通称，中东原油流量已达到战前水平的98%。</div>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote class="quote">
+      Oil Prices Fall as Gulf Crude Exports Recover.
+      <div class="translation">翻译：海湾原油出口恢复，油价下跌。</div>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote class="quote">
+      S&P 500 breadth just hit its lowest level since the Dotcom bubble.
+      <div class="translation">翻译：标普500指数广度刚刚触及互联网泡沫以来的最低水平。</div>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote class="quote">
+      Tomorrow after hours will be super volatile and fake due to MU earning.
+      <div class="translation">翻译：由于MU的财报，明天盘后交易将异常波动且虚假。</div>
+    </blockquote>
+  </li>
+</ul>
+
+<h2>2. 热议中的个股和想法</h2>
+<ul>
+  <li>
+    <div class="stock-tag">1. MU (Micron Technology, Inc.)</div>
+    <blockquote class="quote">
+      $50K on MU, $10K options exp this week, $25K longer dated options and some shares. I played last earnings $25K in march calls (not included here) and it went up well but held onto it and currently sitting at ~50% loss. Doubling down expecting a rebound on this blowout quarter.
+      <div class="translation">翻译：在MU上投入5万美元，本周到期期权1万美元，长期期权2.5万美元和一些股票。我上次财报在3月看涨期权上投入2.5万美元（不包括在此），它表现很好但我持有至今，目前亏损约50%。我加倍投入，预期本季度将迎来反弹。</div>
     </blockquote>
     <blockquote class="quote">
-      Anthropic warns of ‘existential risks to humanity’ in its $2T IPO prospectus. Anthropic cautions in its IPO that its AI could pose “catastrophic or existential risks to humanity,” an extraordinary warning by a company seeking to profit from the same technology.
-      <div class="translation">翻译：Anthropic在其2万亿美元的IPO招股说明书中警告“人类生存风险”。Anthropic在其IPO中警告称，其AI可能对人类构成“灾难性或生存性风险”，这对于一家寻求从该技术中获利的公司来说，是一个非同寻常的警告。</div>
-    </blockquote>
-    <blockquote
-      The company’s IPO prospectus, reviewed by Reuters, highlights risks associated with its AI models, which it said could exhibit “self-preserving behaviors,” including attempts to “resist shutdown,” to “conceal or manipulate information” and behavior “resembling blackmail.”
-      <div class="translation">翻译：据路透社审阅，该公司的IPO招股说明书强调了与其AI模型相关的风险，其模型可能表现出“自我保护行为”，包括试图“抵抗关机”、“隐藏或操纵信息”以及“类似勒索”的行为。</div>
-    </blockquote>
-
-    <div class="track-header">算</div>
-    <blockquote class="quote">
-      Compute + infrastructure expense: $7.33B, up 190% YoY. Compute and infrastructure represented 58% of total operating expenses.
-      <div class="translation">翻译：计算+基础设施支出：73.3亿美元，同比增长190%。计算和基础设施占总运营费用的58%。</div>
+      JPMorgan Sees Micron Positioned for Beat-and-Raise Ahead of Q4 Results.
+      <div class="translation">翻译：摩根大通认为美光在第四季度财报前有望实现业绩超预期并上调指引。</div>
     </blockquote>
     <blockquote class="quote">
-      Cloud / Compute: GOOG, AVGO, AMZN, NVDA, AMD, MSFT.
-      <div class="translation">翻译：云/计算相关：谷歌（GOOG）、博通（AVGO）、亚马逊（AMZN）、英伟达（NVDA）、AMD（AMD）、微软（MSFT）。</div>
+      Made a post about a month ago about making $375k in 60 days going hard into scalping and swing trading SNDK / MU and SKHY.
+      <div class="translation">翻译：大约一个月前发帖称，在60天内通过高强度剥头皮和波段交易SNDK/MU和SKHY赚了37.5万美元。</div>
     </blockquote>
-
-    <div class="track-header">光</div>
-    <p><i>（数据池中无直接相关讨论）</i></p>
-
-    <div class="track-header">存</div>
+    <blockquote class="quote">
+      Still hold large positions in MU / SNDK and SKHY (plus the 2x ETFs) all on margin.
+      <div class="translation">翻译：仍然在MU、SNDK和SKHY（加上2倍ETF）上持有大量保证金头寸。</div>
+    </blockquote>
+  </li>
+  <li>
+    <div class="stock-tag">2. SKHY (SK Hynix Inc.)</div>
+    <blockquote class="quote">
+      Made a post about a month ago about making $375k in 60 days going hard into scalping and swing trading SNDK / MU and SKHY.
+      <div class="translation">翻译：大约一个月前发帖称，在60天内通过高强度剥头皮和波段交易SNDK/MU和SKHY赚了37.5万美元。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Still hold large positions in MU / SNDK and SKHY (plus the 2x ETFs) all on margin.
+      <div class="translation">翻译：仍然在MU、SNDK和SKHY（加上2倍ETF）上持有大量保证金头寸。</div>
+    </blockquote>
     <blockquote class="quote">
       Memory: MU, SKHY.
-      <div class="translation">翻译：内存：美光（MU）、SK海力士（SKHY）。</div>
+      <div class="translation">翻译：内存：美光、SK海力士。</div>
     </blockquote>
-
-    <div class="track-header">电</div>
-    <p><i>（数据池中无直接相关讨论）</i></p>
-
-    <div class="track-header">板</div>
-    <p><i>（数据池中无直接相关讨论）</i></p>
-
-    <div class="track-header">云</div>
+  </li>
+  <li>
+    <div class="stock-tag">3. HOOD (Robinhood Markets, Inc.)</div>
     <blockquote class="quote">
-      Cloud / Compute: GOOG, AVGO, AMZN, NVDA, AMD, MSFT.
-      <div class="translation">翻译：云/计算相关：谷歌（GOOG）、博通（AVGO）、亚马逊（AMZN）、英伟达（NVDA）、AMD（AMD）、微软（MSFT）。</div>
-    </blockquote>
-
-    <div class="track-header">AI应用</div>
-    <blockquote class="quote">
-      Our development of highly advanced models, platforms, and applications and expansion of use cases could further increase the risk that our models cause harm.
-      <div class="translation">翻译：我们开发的高度先进的模型、平台和应用程序以及使用场景的扩展，可能会进一步增加我们的模型造成伤害的风险。</div>
+      Last night’s product announcement including 24/7 trading even on weekends and option trading from 7:30 am to 4:15 pm made me bullish.
+      <div class="translation">翻译：昨晚的产品发布会，包括周末24/7交易以及期权交易时间从早上7:30延长至下午4:15，让我看涨。</div>
     </blockquote>
     <blockquote class="quote">
-      Uber is literally becoming the distribution for AV (autonomous vehicle) rides.
-      <div class="translation">翻译：优步正字面意义上成为自动驾驶（AV）乘车的发行平台。</div>
+      In Vlad we trust.
+      <div class="translation">翻译：我们相信弗拉德。</div>
     </blockquote>
+  </li>
+</ul>
+
+<h2>3. 小众公司冒泡</h2>
+<ul>
+  <li>
+    <div class="stock-tag">1. SNDK (SanDisk Corporation)</div>
+    <blockquote class="quote">
+      Made a post about a month ago about making $375k in 60 days going hard into scalping and swing trading SNDK / MU and SKHY.
+      <div class="translation">翻译：大约一个月前发帖称，在60天内通过高强度剥头皮和波段交易SNDK/MU和SKHY赚了37.5万美元。</div>
+    </blockquote>
+  </li>
+  <li>
+    <div class="stock-tag">2. ARLP (Alliance Resource Partners, L.P.)</div>
+    <blockquote class="quote">
+      ARLP - i have 1750 shares owned by giga boomer 75-year old Joe Kraft and paying 9-10% dividends.
+      <div class="translation">翻译：ARLP——我持有1750股，由75岁的“巨婴”乔·克拉夫特所有，并支付9-10%的股息。</div>
+    </blockquote>
+    <blockquote class="quote">
+      He crushed all his enemies in the coal industry and just wants to chill and make forbidden coal money.
+      <div class="translation">翻译：他击败了煤炭行业的所有敌人，现在只想放松并赚取“被禁的煤炭钱”。</div>
+    </blockquote>
+    <blockquote class="quote">
+      People don't stop using coal.
+      <div class="translation">翻译：人们并没有停止使用煤炭。</div>
+    </blockquote>
+  </li>
+  <li>
+    <div class="stock-tag">3. KLAR (Klar)</div>
+    <blockquote class="quote">
+      $KLAR is fundamentally mis-priced at $12.50/sh and will be re-rated to $20-25 around release of Q4 earnings (Feb 2027) as my base case, and bear case re-rating will take place around Q1 earnings (May 2027).
+      <div class="translation">翻译：KLAR的估值被严重低估，每股12.50美元，在2027年2月第四季度财报发布前后，我的基本预期是其将被重估至20-25美元，熊市预期下的重估将在2027年5月第一季度财报发布前后进行。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Revenue growing 25-30% YoY, TMD growing at 35-45% YoY.
+      <div class="translation">翻译：营收同比增长25-30%，总商品交易额（TMD）同比增长35-45%。</div>
+    </blockquote>
+    <blockquote class="quote">
+      In Q2, adjusted operating income reached 91M &amp; 27M GAAP OI, 9M GAAP NI.
+      <div class="translation">翻译：第二季度，调整后的运营收入达到9100万美元，GAAP运营收入2700万美元，GAAP净收入900万美元。</div>
+    </blockquote>
+  </li>
+  <li>
+    <div class="stock-tag">4. EOSE (EOS Energy Enterprises, Inc.)</div>
+    <blockquote class="quote">
+      They make non-flammable stationary batteries that can but don't necessarily have to compete with Li-ion.
+      <div class="translation">翻译：他们生产的不可燃固定式电池可以但并非必须与锂离子电池竞争。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Potential triple bottom / inverse head and shoulders here on weekly/daily.
+      <div class="translation">翻译：周线/日线上可能出现三重底/倒头肩顶形态。</div>
+    </blockquote>
+  </li>
+</ul>
+
+<h2>4. AI主线讨论</h2>
+<div>
+  <div class="track-header">模型 (Model)</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Meta's Muse tops 5 million downloads, faster than ChatGPT, Claude.
+        <div class="translation">翻译：Meta的Muse下载量突破500万，比ChatGPT和Claude更快。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Anthropic cautions in its IPO that its AI could pose “catastrophic or existential risks to humanity,” an extraordinary warning by a company seeking to profit from the same technology.
+        <div class="translation">翻译：Anthropic在其IPO中警告称，其人工智能可能对“人类构成灾难性或生存风险”，这是一家旨在从同一技术中获利的公司发出的非同寻常的警告。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        The company’s IPO prospectus, reviewed by Reuters, highlights risks associated with its AI models, which it said could exhibit “self-preserving behaviors,” including attempts to “resist shutdown,” to “conceal or manipulate information” and behavior “resembling blackmail.”
+        <div class="translation">翻译：路透社审阅的公司IPO招股说明书强调了与其AI模型相关的风险，称这些模型可能表现出“自我保护行为”，包括试图“抵抗关机”、“隐藏或操纵信息”以及“类似勒索”的行为。</div>
+      </blockquote>
+    </li>
+  </ul>
+
+  <div class="track-header">算 (Compute)</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Cloud / Compute: GOOG, AVGO, AMZN, NVDA, AMD, MSFT.
+        <div class="translation">翻译：云/计算：谷歌、博通、亚马逊、英伟达、AMD、微软。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Compute + infrastructure expense: $7.33B, up 190% YoY.
+        <div class="translation">翻译：计算+基础设施费用：73.3亿美元，同比增长190%。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Compute and infrastructure represented 58% of total operating expenses.
+        <div class="translation">翻译：计算和基础设施费用占总运营费用的58%。</div>
+      </blockquote>
+    </li>
+  </ul>
+
+  <div class="track-header">光 (Optics)</div>
+  <ul>
+    <li>
+      <!-- 未在数据池中找到相关内容 -->
+    </li>
+  </ul>
+
+  <div class="track-header">存 (Storage)</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Memory: MU, SKHY.
+        <div class="translation">翻译：内存：美光、SK海力士。</div>
+      </blockquote>
+    </li>
+  </ul>
+
+  <div class="track-header">电 (Power)</div>
+  <ul>
+    <li>
+      <!-- 未在数据池中找到相关内容 -->
+    </li>
+  </ul>
+
+  <div class="track-header">板 (Chips/Boards)</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Cloud / Compute: GOOG, AVGO, AMZN, NVDA, AMD, MSFT.
+        <div class="translation">翻译：云/计算：谷歌、博通、亚马逊、英伟达、AMD、微软。</div>
+      </blockquote>
+    </li>
+  </ul>
+
+  <div class="track-header">云 (Cloud)</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Cloud / Compute: GOOG, AVGO, AMZN, NVDA, AMD, MSFT.
+        <div class="translation">翻译：云/计算：谷歌、博通、亚马逊、英伟达、AMD、微软。</div>
+      </blockquote>
+    </li>
+  </ul>
+
+  <div class="track-header">AI应用 (AI Applications)</div>
+  <ul>
+    <li>
+      <blockquote class="quote">
+        Meta's Muse tops 5 million downloads, faster than ChatGPT, Claude.
+        <div class="translation">翻译：Meta的Muse下载量突破500万，比ChatGPT和Claude更快。</div>
+      </blockquote>
+    </li>
+    <li>
+      <blockquote class="quote">
+        Our development of highly advanced models, platforms, and applications and expansion of use cases could further increase the risk that our models cause harm.
+        <div class="translation">翻译：我们高度先进的模型、平台和应用程序的开发以及用例的扩展，可能会进一步增加我们的模型造成伤害的风险。</div>
+      </blockquote>
+    </li>
+  </ul>
+</div>
 
 </body>
 </html>
@@ -331,7 +314,7 @@
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
                     detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n恐慌', color: '#fff' },
-                    data: [{ value: 31 }]
+                    data: [{ value: 34 }]
                 }]
             });
         </script>
