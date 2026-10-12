@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>10月12日 情报终端</title>
+        <title>10月13日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,200 +36,203 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 10月12日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-10-12 14:16:46 (北京时间)</p>
+            <h1>🎯 10月13日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-10-13 05:21:18 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股市场情绪分析 (2026年10月12日)</title>
+    <title>美股市场情绪报告 (2026年10月13日)</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f4f7f6; }
-        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
-        ul { list-style-type: none; padding: 0; }
-        li { background-color: #ffffff; margin-bottom: 15px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #e74c3c; font-size: 1.1em; margin-bottom: 10px; }
-        .quote { border-left: 4px solid #3498db; padding-left: 15px; margin: 10px 0; font-style: italic; color: #555; background-color: #ecf0f1; padding: 10px; border-radius: 4px; }
-        .translation { font-style: normal; color: #2980b9; margin-top: 5px; border-top: 1px dashed #bdc3c7; padding-top: 5px; }
-        .track-header { font-weight: bold; color: #27ae60; margin-top: 15px; margin-bottom: 5px; font-size: 1.05em; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 20px; background-color: #f9f9f9; }
+        h1, h2, h3 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+        ul { list-style: none; padding: 0; }
+        li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 20px; padding: 15px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .stock-tag { font-weight: bold; color: #007bff; margin-bottom: 10px; font-size: 1.1em; }
+        blockquote.quote { margin: 10px 0 10px 20px; padding-left: 15px; border-left: 4px solid #ced4da; color: #555; font-style: italic; }
+        .translation { font-size: 0.9em; color: #6c757d; margin-top: 5px; }
+        .track-header { font-weight: bold; color: #28a745; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; padding-bottom: 5px; border-bottom: 1px dashed #e0e0e0; }
     </style>
 </head>
 <body>
 
-    <h1>美股市场情绪分析 (2026年10月12日 Reddit 数据池)</h1>
+    <h1>美股市场情绪报告 (2026年10月13日)</h1>
 
     <h2>1. 宏观与市场情绪</h2>
     <ul>
-        <li>
-            <div class="stock-tag">市场情绪 - 经济放缓迹象</div>
-            <blockquote class="quote">
-                Might be localized to Vegas, but not even ticket-fraud-ster is buying up all of the tickets at Vegas golden knights home games. Since 2017-2018 there have been 352 home games and all but the last two games have sold out. Most notably it was the worst team but also one of the most popular teams the Toronto maple leafs that didn’t sell out and fell 1390 tickets shy (15977 out of 17367). Could just be Canadians sending a message.
-                <div class="translation">翻译：可能只是局限于拉斯维加斯，但就连票务欺诈者也没有把维加斯黄金骑士主场比赛的所有门票都买光。自2017-2018赛季以来，共有352场主场比赛，除了最近两场之外都售罄了。最值得注意的是，即使是最差的球队，也是最受欢迎的球队之一的多伦多枫叶队，其比赛也没有售罄，差了1390张票（17367张中的15977张）。这可能只是加拿大人在传递一个信息。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">市场情绪 - 交易量低迷</div>
-            <blockquote class="quote">
-                SPY on Friday had the lowest daily volume since Dec. 24th 2019 (and that was a half day).
-                <div class="translation">翻译：SPY在周五的日交易量创下了自2019年12月24日（当时是半天交易）以来的新低。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">市场情绪 - 债券市场与均值回归争论</div>
-            <blockquote class="quote">
-                Your thesis treats yields as “stretched”. But the mean assumes the regime/underlyjgn trend hasn't changed, and a lot has, right? persistent deficits, heavy treasury issuance, a higher term premium, and foreign buyers who are no longer the price-insensitive bid they used to be… None of that shows up in a z-scores… So how do you justify ignoring it? Are you assuming these pressures fade, or just that history rhymes? Also, is it possible that those who think of this as a strong mean reversion trade or also politically aligned with the belief that the situation is going to cool off without consequence?
-                <div class="translation">翻译：你的论点认为收益率“过高”。但均值回归的前提是宏观环境/潜在趋势没有改变，而现在很多都变了，对吧？持续的赤字、大量的国债发行、更高的期限溢价，以及不再是价格不敏感的外国买家……这些都不会体现在Z分数中……那么你如何解释忽略这些因素？你是否假设这些压力会消退，或者仅仅是历史会重演？此外，那些认为这是一次强劲均值回归交易的人，是否也与认为情况将无后果地降温的政治信念相符？</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">市场情绪 - 社交媒体MAU质疑</div>
-            <blockquote class="quote">
-                With Russian bot farms down the internet has returned to a civil, welcoming community of likeminded people. Turns out all the hate was just from bots. That also means that half the MAU reported by every social media company was fake. Earnings will be a bloodbath for Meta, Reddit in particular.
-                <div class="translation">翻译：随着俄罗斯机器人农场的关闭，互联网回归了一个文明、热情的志同道合者社区。原来所有的仇恨都来自机器人。这也意味着每家社交媒体公司报告的月活跃用户（MAU）有一半是假的。尤其是Meta和Reddit的财报将会是一场血洗。</div>
-            </blockquote>
-        </li>
+      <li>
+        <blockquote class="quote">
+          🎂 Bull Market Turns 4 🎂 they grow up so fast
+          <div class="translation">翻译：牛市4岁了，它们成长得真快！</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          SPY on Friday had the lowest daily volume since Dec. 24th 2019 (and that was a half day).
+          <div class="translation">翻译：SPY在周五的日交易量是自2019年12月24日（当时是半天交易）以来最低的。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          I’ve definitely been a perma bear and have been wrecked over the last night, and most likely for the foreseeable future. I’ve thought the economy has been in a precarious spot, but over the years have continued to see people spend high $xxx, and even $x,xxx for concerts and sporting events. If people are spending this, they are clearly fine.
+          <div class="translation">翻译：我一直是个长期看空者，过去一晚被重创，而且在可预见的未来很可能继续被重创。我曾认为经济处于不稳定状态，但多年来我持续看到人们为演唱会和体育赛事花费数百甚至数千美元。如果人们还在这样消费，他们显然过得很好。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Buy and hold right? Surely nothing could go wrong...
+          <div class="translation">翻译：买入并持有，对吧？肯定不会出任何差错的……</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
-        <li>
-            <div class="stock-tag">MSFT (Microsoft)</div>
-            <blockquote class="quote">
-                Most of the gains over the past year came from playing deep ITM LEAPS on Microsoft mid-2027 and 2028 expiration dates with deep value strikes ($200, $215, $390).
-                <div class="translation">翻译：过去一年的大部分收益来自在微软上玩深度实值（deep ITM）的LEAPS期权，到期日为2027年中和2028年，行权价深度价值（$200, $215, $390）。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">MGM (MGM Resorts International)</div>
-            <blockquote class="quote">
-                $MGM has taken a beating recently, currently trading right around $29.28. The 1-day RSI is down to 12.96, which is about as oversold as a large cap gets without an absolute black swan event. It's hovering right on multi-year structural support. I run a strict mean-reversion strategy looking for short 5-day relief bounces on mega/large caps when RSI drops under 15. What are your thoughts? Is this a prime bounce setup or a trap?
-                <div class="translation">翻译：$MGM最近遭受重创，目前交易价格约为$29.28。其1日RSI已跌至12.96，对于一只大盘股来说，若没有绝对的黑天鹅事件，这已经是超卖的极限了。它正徘徊在多年结构性支撑位上。我执行严格的均值回归策略，寻找RSI跌破15的巨型/大型股在5天内的短期反弹机会。你有什么想法？这是一个绝佳的反弹设置还是一个陷阱？</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">MU (Micron Technology)</div>
-            <blockquote class="quote">
-                But look at the valuation right now: 14x trailing P/E, 6x forward P/E The market is already pricing in a cycle and expect the margins to crash in the next few years. The downside is already baked in. You’re not buying at peak cycle multiples.
-                <div class="translation">翻译：但看看现在的估值：14倍的静态市盈率，6倍的动态市盈率。市场已经将一个周期计入定价，并预计未来几年利润率将大幅下降。下行空间已经消化了。你并不是在周期顶峰的倍数买入。</div>
-            </blockquote>
-            <blockquote class="quote">
-                You guys said MU calls.. 🫠
-                <div class="translation">翻译：你们说买MU看涨期权来着.. 🫠</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">NVDA (NVIDIA)</div>
-            <blockquote class="quote">
-                Nvidia Funding Puts IonQ Stock And US Quantum Computing Shares On Watch
-                <div class="translation">翻译：英伟达的融资使IonQ股票和美国量子计算股受到关注。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Nvidia in talks to invest further in Reflection AI or buy it, FT reports. Talks are at an early stage and a deal ​could take several forms, including a so-called acqui-hire ​arrangement where Nvidia would hire staff and license ⁠technology rather than pursue a full acquisition, potentially avoiding ​a lengthy regulatory review, the newspaper said.
-                <div class="translation">翻译：据《金融时报》报道，英伟达正在洽谈进一步投资或收购Reflection AI。谈判处于早期阶段，交易可能采取多种形式，包括所谓的“收人买技术”安排，即英伟达将雇佣员工并授权技术，而非进行全面收购，这可能避免冗长的监管审查。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">MRNA (Moderna)</div>
-            <blockquote class="quote">
-                It has been a good run on $MRNA. I’m sure it’ll run more, but i’m going to take what I have and put it into something safer.
-                <div class="translation">翻译：$MRNA的表现一直很好。我相信它还会继续上涨，但我打算将我的收益兑现并投入更安全的资产。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">ADBE (Adobe)</div>
-            <blockquote class="quote">
-                I posted “$70k in $ADBE Calls” here on Jul 3rd. Since then I’ve gone from 13 -> 21 contracts of the 250C expiring 12/17/2027 (but closed 2 200C leaps). I have about $2k in realized gains from the 200s and selling CCs, like the ones in the image, up from realized losses in the Jul3 post. BEP at expiry is $295.29.
-                <div class="translation">翻译：我在7月3日在这里发帖称“$7万投向$ADBE看涨期权”。自那以后，我将250C（2027年12月17日到期）的合约数量从13份增加到21份（但平仓了2份200C的LEAPS）。我从200C和卖出备兑期权中获得了约2000美元的已实现收益，高于7月3日帖子中的已实现亏损。到期时的盈亏平衡点是$295.29。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">APP (AppLovin)</div>
-            <blockquote class="quote">
-                500K+ into APP and RDDT. LFG! I’ll keep through earnings.
-                <div class="translation">翻译：超过50万美元投入APP和RDDT。冲啊！我会在财报期间继续持有。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">RDDT (Reddit)</div>
-            <blockquote class="quote">
-                Earnings will be a bloodbath for Meta, Reddit in particular.
-                <div class="translation">翻译：尤其是Meta和Reddit的财报将会是一场血洗。</div>
-            </blockquote>
-            <blockquote class="quote">
-                500K+ into APP and RDDT. LFG! I’ll keep through earnings.
-                <div class="translation">翻译：超过50万美元投入APP和RDDT。冲啊！我会在财报期间继续持有。</div>
-            </blockquote>
-        </li>
+      <li>
+        <div class="stock-tag">BMBL (Bumble)</div>
+        <blockquote class="quote">
+          Bumble (NASDAQ: BMBL) shares jumped 21% (OP note: today total 52%) after The Wall Street Journal reported the dating app is in advanced talks to go private in a deal valuing the company at roughly $1 billion.
+          <div class="translation">翻译：据《华尔街日报》报道，Bumble（纳斯达克：BMBL）股价上涨21%（发帖者注：今日总计52%），此前该报道称这款约会应用正在进行私有化谈判，交易估值约为10亿美元。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The buyer is Ithaca Holdings, a firm recently founded by two Silicon Valley executives, according to people familiar with the matter.
+          <div class="translation">翻译：据知情人士透露，买方是Ithaca Holdings，一家由两位硅谷高管新近成立的公司。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Trading in Bumble shares was paused due to volatility, and might continue higher when trading resumes.
+          <div class="translation">翻译：Bumble股票交易因波动性而被暂停，恢复交易后可能会继续走高。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">RDDT (Reddit)</div>
+        <blockquote class="quote">
+          $6M+ RDDT YOLO. 32,000 shares, 400 ITM calls, and a shitload of conviction!
+          <div class="translation">翻译：超过600万美元的RDDT YOLO（只活一次的豪赌）。32,000股，400份实值看涨期权，以及十足的信心！</div>
+        </blockquote>
+        <blockquote class="quote">
+          Why? Because I think the market is completely mispricing this company.
+          <div class="translation">翻译：为什么？因为我认为市场完全低估了这家公司。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Revenue has increased YoY by over 60% for 8 consecutive quarters. Gross margins around 91%. EBITDA roughly doubled. Around $2.8 billion in cash and the stock is sitting around $154. Forward PE around 24 with a PEG around 0.7. Almost no dilution due to buybacks (fully diluted share count increased just 0.2% YoY).
+          <div class="translation">翻译：营收连续8个季度同比增长超过60%。毛利率约为91%。EBITDA大致翻倍。拥有约28亿美元现金，股价徘徊在154美元左右。远期市盈率约为24，PEG约为0.7。由于股票回购，几乎没有稀释（完全稀释的股本同比仅增加0.2%）。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Current positions: Reddit and bonds baby, Reddit and bonds.
+          <div class="translation">翻译：当前持仓：Reddit和债券，宝贝，Reddit和债券。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">TSM (Taiwan Semiconductor Manufacturing Company)</div>
+        <blockquote class="quote">
+          Played TSM earnings the last two times and got burned both times, so I’m back for round 3.
+          <div class="translation">翻译：过去两次操作TSM财报都亏了，所以我准备再战第三轮。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The shares are my safer way to stay in the trade. The calls are for the upside if TSM finally gets the move I think it deserves.
+          <div class="translation">翻译：股票是我在这个交易中更安全的持有方式。看涨期权是为了如果TSM最终能达到我预期的走势而带来的上涨空间。</div>
+        </blockquote>
+        <blockquote class="quote">
+          It’s been weak for a while, but I still like the setup. Strong business, strong demand, and I think expectations are low enough for earnings to wake this thing up.
+          <div class="translation">翻译：它已经疲软了一段时间，但我仍然喜欢这个布局。业务强劲，需求旺盛，而且我认为市场预期足够低，能让这次财报唤醒它。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Should be a solid setup… unless China decides to add a surprise plot twist.
+          <div class="translation">翻译：这应该是一个稳固的布局……除非中国决定增加一个意外的剧情反转。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">NIO (NIO Inc.)</div>
+        <blockquote class="quote">
+          NIO is worth $2.95 — 17.6% below the $3.58 price — Scroll All 10 Exhibits
+          <div class="translation">翻译：蔚来汽车（NIO）价值2.95美元——比3.58美元的价格低17.6%——请查看全部10项证据。</div>
+        </blockquote>
+        <blockquote class="quote">
+          I went through NIO's HKEX filings so you don't have to.
+          <div class="translation">翻译：我查阅了蔚来汽车在香港联交所的备案文件，这样您就不必亲自去查了。</div>
+        </blockquote>
+        <blockquote class="quote">
+          74.6% of the &quot;cash pile&quot; is pledged as collateral or restricted.
+          <div class="translation">翻译：其“现金储备”的74.6%已被质押或受限。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Of RMB 45.9B headline cash, only RMB 11.66B is actually free. The rest secures notes payable and guarantees.
+          <div class="translation">翻译：在账面上的459亿人民币现金中，只有116.6亿人民币是实际可自由支配的。其余部分用于担保应付票据和保证。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>3. 小众公司冒泡</h2>
     <ul>
-        <li>
-            <div class="stock-tag">IONQ (IonQ)</div>
-            <blockquote class="quote">
-                Nvidia Funding Puts IonQ Stock And US Quantum Computing Shares On Watch
-                <div class="translation">翻译：英伟达的融资使IonQ股票和美国量子计算股受到关注。</div>
-            </blockquote>
-        </li>
+      <li>
+        <div class="stock-tag">IONQ (IonQ)</div>
+        <blockquote class="quote">
+          Nvidia Funding Puts IonQ Stock And US Quantum Computing Shares On Watch.
+          <div class="translation">翻译：英伟达（Nvidia）的资金投入使IonQ股票和美国量子计算股受到关注。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型</div>
     <ul>
-        <li>
-            <blockquote class="quote">
-                Anthropic must pull the IPO in few months. So many AI related IPOs are being pulled - Firmus, Softbank Energy.... There is now way Anthropic is able to place 100bn of equity when even junk bonds are puking on further AI funding. Given the market is still pricing in the IPO, what would be your proxy play if Anthropic cancels / delays the IPO?
-                <div class="translation">翻译：Anthropic必须在几个月内撤回IPO。许多AI相关的IPO都被撤回了——Firmus、软银能源……当连垃圾债券都在对进一步的AI融资感到反胃时，Anthropic根本不可能配售1000亿美元的股权。鉴于市场仍在给这次IPO定价，如果Anthropic取消/推迟IPO，你会选择什么替代方案？</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Nvidia in talks to invest further in Reflection AI or buy it, FT reports.
-                <div class="translation">翻译：据《金融时报》报道，英伟达正在洽谈进一步投资或收购Reflection AI。</div>
-            </blockquote>
-        </li>
-    </ul>
-
-    <div class="track-header">算</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                Anthropic inks unannounced IREN cloud deal. The AI run continues!
-                <div class="translation">翻译：Anthropic签订了一项未公布的IREN云交易。AI热潮仍在继续！</div>
-            </blockquote>
-        </li>
-    </ul>
-
-    <div class="track-header">板</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                Nvidia Funding Puts IonQ Stock And US Quantum Computing Shares On Watch
-                <div class="translation">翻译：英伟达的融资使IonQ股票和美国量子计算股受到关注。</div>
-            </blockquote>
-        </li>
-    </ul>
-
-    <div class="track-header">云</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                Anthropic inks unannounced IREN cloud deal. The AI run continues!
-                <div class="translation">翻译：Anthropic签订了一项未公布的IREN云交易。AI热潮仍在继续！</div>
-            </blockquote>
-        </li>
-    </ul>
-
-    <div class="track-header">AI应用</div>
-    <ul>
-        <li>
-            <blockquote class="quote">
-                Nvidia in talks to invest further in Reflection AI or buy it, FT reports.
-                <div class="translation">翻译：据《金融时报》报道，英伟达正在洽谈进一步投资或收购Reflection AI。</div>
-            </blockquote>
-        </li>
+      <li>
+        <div class="track-header">模型 (Models)</div>
+        <blockquote class="quote">
+          Anthropic must pull the IPO in few months. There is now way Anthropic is able to place 100bn of equity when even junk bonds are puking on further AI funding.
+          <div class="translation">翻译：Anthropic必须在几个月内撤回IPO。当连垃圾债券都在排斥进一步的AI融资时，Anthropic根本不可能发行1000亿美元的股权。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">算 (Compute)</div>
+        <blockquote class="quote">
+          Microsoft to rely more on homegrown AI chips, reducing dependence on Nvidia.
+          <div class="translation">翻译：微软将更多地依赖自研AI芯片，以减少对英伟达的依赖。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Nvidia Funding Puts IonQ Stock And US Quantum Computing Shares On Watch.
+          <div class="translation">翻译：英伟达（Nvidia）的资金投入使IonQ股票和美国量子计算股受到关注。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">光 (Optics)</div>
+      </li>
+      <li>
+        <div class="track-header">存 (Storage)</div>
+      </li>
+      <li>
+        <div class="track-header">电 (Power)</div>
+      </li>
+      <li>
+        <div class="track-header">板 (Boards)</div>
+        <blockquote class="quote">
+          Microsoft to rely more on homegrown AI chips, reducing dependence on Nvidia.
+          <div class="translation">翻译：微软将更多地依赖自研AI芯片，以减少对英伟达的依赖。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">云 (Cloud)</div>
+        <blockquote class="quote">
+          Anthropic inks unannounced IREN cloud deal.
+          <div class="translation">翻译：Anthropic签署了未公布的IREN云服务协议。</div>
+        </blockquote>
+        <blockquote class="quote">
+          adds IREN to 530b data-center lease scramble.
+          <div class="translation">翻译：将IREN加入到5300亿美元的数据中心租赁争夺战中。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="track-header">AI应用 (AI Applications)</div>
+        <blockquote class="quote">
+          Broadcom CEO Hock Tan calls AI investors casino gamblers.
+          <div class="translation">翻译：博通（Broadcom）首席执行官Hock Tan称AI投资者为赌场赌徒。</div>
+        </blockquote>
+        <blockquote class="quote">
+          The AI run continues!
+          <div class="translation">翻译：AI热潮仍在继续！</div>
+        </blockquote>
+      </li>
     </ul>
 
 </body>
@@ -242,7 +245,7 @@
                     type: 'gauge', startAngle: 180, endAngle: 0, min: 0, max: 100, radius: '100%', center: ['50%', '75%'],
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
-                    detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n恐慌', color: '#fff' },
+                    detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n中立', color: '#fff' },
                     data: [{ value: 45 }]
                 }]
             });
