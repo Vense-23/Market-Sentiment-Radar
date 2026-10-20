@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>10月20日 情报终端</title>
+        <title>10月21日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,222 +36,272 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 10月20日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-10-20 13:04:57 (北京时间)</p>
+            <h1>🎯 10月21日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-10-21 01:25:11 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
             <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>美股市场情绪 (2026年10月20日)</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit 美股量化分析（2026年10月21日）</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
-        h1, h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
-        .quote { background-color: #eef; border-left: 4px solid #5a7d9a; margin: 15px 0; padding: 10px 15px; font-style: italic; color: #555; }
-        .translation { font-style: normal; color: #333; margin-top: 8px; font-size: 0.9em; }
-        .stock-tag { font-weight: bold; margin-bottom: 5px; color: #2c3e50; }
+        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 960px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
+        h1, h2, h3 { color: #2c3e50; margin-top: 30px; margin-bottom: 15px; }
+        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
         ul { list-style: none; padding: 0; }
-        li { margin-bottom: 20px; border-bottom: 1px dashed #eee; padding-bottom: 15px; }
-        li:last-child { border-bottom: none; }
-        .track-header { font-weight: bold; margin-top: 15px; margin-bottom: 5px; color: #4a6a8a; font-size: 1.1em; }
-        .ai-category-item { margin-bottom: 10px; }
+        li { background: #fff; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .stock-tag { font-weight: bold; color: #007bff; margin-bottom: 10px; font-size: 1.1em; }
+        .quote { background: #f0f8ff; border-left: 4px solid #007bff; margin: 10px 0; padding: 10px 15px; font-style: italic; color: #555; }
+        .translation { font-size: 0.9em; color: #666; margin-top: 8px; }
+        .track-header { font-weight: bold; margin-top: 15px; margin-bottom: 8px; color: #007bff; font-size: 1.1em; }
     </style>
 </head>
 <body>
-
-    <h1>美股市场情绪 (2026年10月20日)</h1>
+    <h1>Reddit 美股量化分析 (2026年10月21日)</h1>
 
     <h2>1. 宏观与市场情绪</h2>
-    <p>市场当前表现出多空交织的复杂情绪，既有对0DTE期权交易巨额亏损的担忧，也有对美股反弹的期待。宏观层面，半导体和必需消费品板块呈现交替趋势，石油市场受地缘政治影响波动，同时有观点认为AI基础设施领域存在潜在的违约风险，但整体熊市可能要到2028年才会真正到来。</p>
     <ul>
-        <li>
-            <blockquote class="quote">
-                Semis down. Staples up. Vice versa? And we’re near a reversal?
-                <div class="translation">翻译：半导体板块下跌。必需消费品板块上涨。反之亦然？我们是否接近逆转？</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                NYSE Introduces Extended Trading Hours for NYSE American Options
-                <div class="translation">翻译：纽约证券交易所引入了纽约证券交易所美式期权延长交易时间。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Got liquidated by the drop on Friday playing 0DTE.
-                <div class="translation">翻译：周五玩0DTE期权，因下跌而被平仓。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                my win rate was over 80% - but the average winner was a scratch, and the average loss so big it wiped months worth of gains.
-                <div class="translation">翻译：我的胜率超过80%——但平均盈利微薄，而平均亏损巨大，足以抹去数月的收益。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Bears practicing their shock when 'Black Monday' gets canceled for the 40th week in a row.
-                <div class="translation">翻译：空头们正在练习他们的震惊，因为“黑色星期一”连续第40周被取消了。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Oil slips as Trump's sanction waiver may lead to more Russian fuel supplies
-                <div class="translation">翻译：由于特朗普的制裁豁免可能导致更多俄罗斯燃料供应，油价下跌。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                yes the market is down, yes it will do that.
-                <div class="translation">翻译：是的，市场下跌了，它就是会那样。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                Loosen your grip, stop checking your balances every day, and wait for the rebound.
-                <div class="translation">翻译：放轻松，停止每天查看你的余额，然后等待反弹。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                The market is pricing in large default risk on ai infrastructure comparing it to fibre optic.
-                <div class="translation">翻译：市场正在将AI基础设施的巨大违约风险定价，将其与光纤进行比较。</div>
-            </blockquote>
-        </li>
-        <li>
-            <blockquote class="quote">
-                I think real bear case will take until 2028.
-                <div class="translation">翻译：我认为真正的熊市要到2028年才会出现。</div>
-            </blockquote>
-        </li>
+      <li>
+        <blockquote class="quote">
+          Is the AI bubble in the room with us now?
+          <div class="translation">翻译：AI泡沫现在就在我们身边吗？</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Scalping Spy Options is Completely Regarded.
+          <div class="translation">翻译：剥头皮SPY期权是完全愚蠢的行为。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          I also added a spy 0 dte yolo on the peace rumors this morning.
+          <div class="translation">翻译：我今天早上也因为和平传闻而全仓买入了SPY的0DTE期权。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Semis down. Staples up. Vice versa? And we’re near a reversal?
+          <div class="translation">翻译：半导体板块下跌。必需消费品板块上涨。反过来呢？我们是不是快要反转了？</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Turbulent day ahead.
+          <div class="translation">翻译：前方将是动荡的一天。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Got liquidated by the drop on Friday playing 0DTE.
+          <div class="translation">翻译：周五玩0DTE期权，因为下跌而爆仓了。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          The market is pricing in large default risk on ai infrastructure comparing it to fibre optic.
+          <div class="translation">翻译：市场正在对AI基础设施定价，其违约风险被认为很高，与光纤行业相比较。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          I think real bear case will take until 2028.
+          <div class="translation">翻译：我认为真正的熊市要到2028年才会到来。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          My win rate was over 80% - but the average winner was a scratch, and the average loss so big it wiped months worth of gains.
+          <div class="translation">翻译：我的胜率超过80%——但平均盈利微薄，而平均亏损却大到足以抹去数月的收益。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
-        <li>
-            <div class="stock-tag">1. TSLA (Tesla, Inc.)</div>
-            <blockquote class="quote">
-                Made 53k on tsla options few months ago after everyone here told me I'm an idiot.
-                <div class="translation">翻译：几个月前我在特斯拉期权上赚了5.3万美元，当时这里所有人都说我是白痴。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Space x and tesla elon can cook books
-                <div class="translation">翻译：SpaceX和特斯拉，马斯克可以操纵财报。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">2. GOOG (Alphabet Inc.)</div>
-            <blockquote class="quote">
-                Thesis is simple. I've been following Google's share price for a while now and its shown great strength during these last few brutal macro weeks.
-                <div class="translation">翻译：我的论点很简单。我关注谷歌的股价已经有一段时间了，在过去几周残酷的宏观环境下，它表现出了强大的实力。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Therefore, can only go up from here.
-                <div class="translation">翻译：因此，它只能从这里上涨。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">3. PBR (Petróleo Brasileiro S.A. - Petrobras)</div>
-            <blockquote class="quote">
-                About a year ago, I decided to go full regarded and dropped my life savings into Petrobras
-                <div class="translation">翻译：大约一年前，我决定完全投入，把我的毕生积蓄投入到巴西国家石油公司。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Fundamentals looked great…single-digit P/E ratio, absurdly high dividend yield, and literal cash printing machine trading at a foreign/political discount
-                <div class="translation">翻译：基本面看起来很棒……个位数的市盈率，高得离谱的股息收益率，以及一台字面意义上的印钞机，以外国/政治折价交易。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Did not see a full war with Iran breaking out in February sent crude futures and global oil stocks spiraling upward.
-                <div class="translation">翻译：没有预料到二月份与伊朗爆发全面战争，导致原油期货和全球石油股飙升。</div>
-            </blockquote>
-            <blockquote class="quote">
-                Also, recently political momentum in Brazil moving rightward has reduced country-risk discount, sending the stock ripping even higher.
-                <div class="translation">翻译：此外，最近巴西政治势头右倾，降低了国家风险折价，使股价进一步飙升。</div>
-            </blockquote>
-        </li>
+      <li>
+        <div class="stock-tag">OKLO (Oklo Inc.)</div>
+        <blockquote class="quote">
+          At a $5B market cap and roughly $3B in reported cash and marketable securities, you're looking at around $2B for the rest of the business.
+          <div class="translation">翻译：按照50亿美元的市值和报告的大约30亿美元现金及有价证券计算，其余业务的价值约为20亿美元。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Back in October 2025, when the stock hit $171.56, the market cap was around $25.3B, with less than $1B in cash.
+          <div class="translation">翻译：回溯到2025年10月，当股价达到171.56美元时，市值约为253亿美元，而现金少于10亿美元。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Subtract the cash and you get roughly $24.4B. So the market value beyond cash has gone from $24.4B to about $2.1B in less than a year. That's a 91% decline.
+          <div class="translation">翻译：减去现金后大约是244亿美元。因此，扣除现金后的市值在不到一年的时间里从244亿美元跌至约21亿美元。这下降了91%。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Oklo has reactors to build, projects to finance.
+          <div class="translation">翻译：Oklo有待建造的反应堆和需要融资的项目。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">FRVO (Fervo Energy)</div>
+        <blockquote class="quote">
+          Fervo Energy is the OG of Enhanced Geothermal Systems (EGS) with significant historical milestones in collaboration with its longtime homie, the US Department of Energy.
+          <div class="translation">翻译：Fervo Energy是增强型地热系统（EGS）的先驱，与长期合作伙伴美国能源部有着重要的历史性合作里程碑。</div>
+        </blockquote>
+        <blockquote class="quote">
+          DOE Office of Energy Dominance Financing (EDF) may imminently throw fat stacks of cash at Fervo driving their project cost of debt down to the US Treasury rate plus a minimum.
+          <div class="translation">翻译：美国能源部能源主导融资办公室（EDF）可能即将向Fervo投入大量资金，这将把他们项目的债务成本降至美国财政部利率加上最低限额。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">GOOGL (Alphabet Inc.)</div>
+        <blockquote class="quote">
+          I've been following Google's share price for a while now and its shown great strength during these last few brutal macro weeks.
+          <div class="translation">翻译：我关注谷歌股价已经有一段时间了，在过去几周残酷的宏观环境下，它表现出了强大的韧性。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Therefore, can only go up from here.
+          <div class="translation">翻译：所以，它只能从这里上涨了。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">META (Meta Platforms, Inc.)</div>
+        <blockquote class="quote">
+          I'm 14 points behind SPY, levered up to the tits with calls and went all in on Meta.
+          <div class="translation">翻译：我落后SPY 14个点，用看涨期权重仓杠杆，全部投入了Meta。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Got liquidated by the drop on Friday playing 0DTE.
+          <div class="translation">翻译：周五玩0DTE期权，因为下跌而爆仓了。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>3. 小众公司冒泡</h2>
     <ul>
-        <li>
-            <div class="stock-tag">1. MU (Micron Technology, Inc.)</div>
-            <blockquote class="quote">
-                Opened these late Friday afternoon, and had a worrisome weekend Good Luck all.
-                <div class="translation">翻译：周五下午晚些时候开仓了这些期权，度过了一个令人担忧的周末。祝大家好运。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">2. RIVN (Rivian Automotive, Inc.)</div>
-            <blockquote class="quote">
-                Rivian at almost 52w low, so I doubled down
-                <div class="translation">翻译：Rivian接近52周低点，所以我加倍投入了。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">3. META (Meta Platforms, Inc.)</div>
-            <blockquote class="quote">
-                I should have learned my lesson with the 106k and 95k drawdowns earlier in the year, recovered both and finally got to breakeven, when I realized it’s October and I’m 14 points behind SPY, levered up to the tits with calls and went all in on Meta.
-                <div class="translation">翻译：我本应吸取今年早些时候10.6万和9.5万美元回撤的教训，两者都已恢复并最终达到盈亏平衡，但我意识到现在是10月，我落后SPY 14个点，于是我满仓做多期权，并全部投入Meta。</div>
-            </blockquote>
-        </li>
-        <li>
-            <div class="stock-tag">4. STX (Seagate Technology Holdings plc)</div>
-            <blockquote class="quote">
-                GAIN: SeaGate $STX 10/23 exp $640 calls
-                <div class="translation">翻译：收益：希捷STX 10月23日到期640美元看涨期权。</div>
-            </blockquote>
-        </li>
+      <li>
+        <div class="stock-tag">BRUN (Brunswick Corporation)</div>
+        <blockquote class="quote">
+          $BRUN is down 80% since June and down 50% in two weeks despite announcing another new contract.
+          <div class="translation">翻译：尽管宣布了一份新合同，BRUN自6月以来下跌了80%，两周内下跌了50%。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">CRWV (Cerecor Inc.)</div>
+        <blockquote class="quote">
+          The sector is wildly irrational seemingly misplacing multiple areas with the risk being beared by debt riddled but operational companies “Coughweave”.
+          <div class="translation">翻译：这个行业表现得非常不理性，似乎在多个领域错位了，风险由负债累累但仍在运营的公司（比如Coughweave）承担着。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">SPCX (Space Exploration Technologies Corp.)</div>
+        <blockquote class="quote">
+          $SPCX earnings coming out Oct 20 at 4pm.
+          <div class="translation">翻译：SPCX的财报将于10月20日下午4点发布。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">RIVN (Rivian Automotive, Inc.)</div>
+        <blockquote class="quote">
+          Yesterday yolo options on Rivian, which you guys hated.
+          <div class="translation">翻译：昨天全仓买入Rivian期权，那是你们讨厌的。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Rivian at almost 52w low, so I doubled down.
+          <div class="translation">翻译：Rivian接近52周低点，所以我加倍投入了。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">COHR (Coherent Corp.)</div>
+        <blockquote class="quote">
+          Today options on coherent which you guys will love.
+          <div class="translation">翻译：今天全仓买入Coherent期权，那是你们会喜欢的。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">MU (Micron Technology, Inc.)</div>
+        <blockquote class="quote">
+          Opened these late Friday afternoon, and had a worrisome weekend Good Luck all.
+          <div class="translation">翻译：周五下午晚些时候开仓了这些期权，度过了一个令人担忧的周末。祝大家好运。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">SNDK (SanDisk Corporation)</div>
+        <blockquote class="quote">
+          That could cause massive reposition before sndk earnings next week.
+          <div class="translation">翻译：这可能导致在下周SNDK财报发布前出现大规模的仓位调整。</div>
+        </blockquote>
+      </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型</div>
-    <div class="ai-category-item">目前数据池中没有直接关于AI模型的具体讨论。</div>
-
-    <div class="track-header">算</div>
-    <div class="ai-category-item">
+    <div class="track-header">模型 (Model)</div>
+    <ul>
+      <li>
         <blockquote class="quote">
-            I’ve spent so much time on the sector that my poor university grades have slipped as I spend more and more hours focused on dilution credit risk contracted computing and options pricing rather than financial planning database coding and fictitious internal machinery financing.
-            <div class="translation">翻译：我花在这个行业上的时间太多了，以至于我的大学成绩下滑了，因为我把越来越多的时间花在稀释信用风险、合约计算和期权定价上，而不是财务规划、数据库编码和虚构的内部机械融资上。</div>
+          Why did Ask Jeeves shut down during peak LLM mania? That mfr was ahead of his time.
+          <div class="translation">翻译：为什么Ask Jeeves在大型语言模型（LLM）狂热的顶峰时期关闭了？那个公司走在了时代的前面。</div>
         </blockquote>
-    </div>
-
-    <div class="track-header">光</div>
-    <div class="ai-category-item">目前数据池中没有直接关于AI光纤/光学的具体讨论。</div>
-
-    <div class="track-header">存</div>
-    <div class="ai-category-item">
+      </li>
+    </ul>
+    <div class="track-header">算 (Compute)</div>
+    <ul>
+      <li>
         <blockquote class="quote">
-            The market is pricing in large default risk on ai infrastructure comparing it to fibre optic.
-            <div class="translation">翻译：市场正在将AI基础设施的巨大违约风险定价，将其与光纤进行比较。</div>
+          The market is pricing in large default risk on ai infrastructure comparing it to fibre optic.
+          <div class="translation">翻译：市场正在对AI基础设施定价，其违约风险被认为很高，与光纤行业相比较。</div>
         </blockquote>
-    </div>
-
-    <div class="track-header">电</div>
-    <div class="ai-category-item">目前数据池中没有直接关于AI供电/电力设备的具体讨论。</div>
-
-    <div class="track-header">板</div>
-    <div class="ai-category-item">目前数据池中没有直接关于AI芯片/板卡的具体讨论。</div>
-
-    <div class="track-header">云</div>
-    <div class="ai-category-item">
+      </li>
+      <li>
         <blockquote class="quote">
-            Speaking on neoclouds specifically and regarding debt weaves bond pricing you can see multiple bears jump the gun and declare black Monday prematurely.
-            <div class="translation">翻译：具体谈到“新云”（neoclouds）以及债务交织的债券定价，你可以看到许多空头过早地抢跑，宣称“黑色星期一”到来。</div>
+          The sector is wildly irrational seemingly misplacing multiple areas with the risk being beared by debt riddled but operational companies “Coughweave”.
+          <div class="translation">翻译：这个行业表现得非常不理性，似乎在多个领域错位了，风险由负债累累但仍在运营的公司（比如Coughweave）承担着。</div>
         </blockquote>
+      </li>
+    </ul>
+    <div class="track-header">光 (Optics)</div>
+    <ul>
+      <!-- 无高质量内容 -->
+    </ul>
+    <div class="track-header">存 (Storage)</div>
+    <ul>
+      <!-- 无高质量内容 -->
+    </ul>
+    <div class="track-header">电 (Power)</div>
+    <ul>
+      <li>
         <blockquote class="quote">
-            The market is pricing in large default risk on ai infrastructure comparing it to fibre optic.
-            <div class="translation">翻译：市场正在将AI基础设施的巨大违约风险定价，将其与光纤进行比较。</div>
+          Fervo Energy is the OG of Enhanced Geothermal Systems (EGS) with significant historical milestones in collaboration with its longtime homie, the US Department of Energy.
+          <div class="translation">翻译：Fervo Energy是增强型地热系统（EGS）的先驱，与长期合作伙伴美国能源部有着重要的历史性合作里程碑。</div>
         </blockquote>
-    </div>
-
-    <div class="track-header">AI应用</div>
-    <div class="ai-category-item">
+      </li>
+      <li>
         <blockquote class="quote">
-            you get ai bounce
-            <div class="translation">翻译：你会看到AI反弹。</div>
+          DOE Office of Energy Dominance Financing (EDF) may imminently throw fat stacks of cash at Fervo driving their project cost of debt down to the US Treasury rate plus a minimum.
+          <div class="translation">翻译：美国能源部能源主导融资办公室（EDF）可能即将向Fervo投入大量资金，这将把他们项目的债务成本降至美国财政部利率加上最低限额。</div>
         </blockquote>
-    </div>
+      </li>
+    </ul>
+    <div class="track-header">板 (Board)</div>
+    <ul>
+      <!-- 无高质量内容 -->
+    </ul>
+    <div class="track-header">云 (Cloud)</div>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          Should shares in Neoclouds just be free?
+          <div class="translation">翻译：Neoclouds的股票应该免费吗？</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Speaking on neoclouds specifically and regarding debt weaves bond pricing you can see multiple bears jump the gun and declare black Monday prematurely.
+          <div class="translation">翻译：具体谈到Neoclouds，关于债务编织的债券定价，你可以看到许多空头过早地行动，过早地宣布黑色星期一。</div>
+        </blockquote>
+      </li>
+    </ul>
+    <div class="track-header">AI应用 (AI Application)</div>
+    <ul>
+      <!-- 无高质量内容 -->
+    </ul>
 
 </body>
 </html>
@@ -263,8 +313,8 @@
                     type: 'gauge', startAngle: 180, endAngle: 0, min: 0, max: 100, radius: '100%', center: ['50%', '75%'],
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
-                    detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n极度恐慌', color: '#fff' },
-                    data: [{ value: 22 }]
+                    detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n恐慌', color: '#fff' },
+                    data: [{ value: 26 }]
                 }]
             });
         </script>
