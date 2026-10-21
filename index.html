@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>10月21日 情报终端</title>
+        <title>10月22日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,200 +36,145 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 10月21日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-10-21 13:06:17 (北京时间)</p>
+            <h1>🎯 10月22日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-10-22 01:30:02 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <title>Reddit市场情绪分析 (2026年10月21日)</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f9f9f9; }
-        h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
-        ul { list-style: none; padding: 0; }
-        li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 15px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #007bff; font-size: 1.1em; margin-bottom: 10px; }
-        .quote { margin: 10px 0 0 0; padding: 10px 15px; background-color: #eef; border-left: 4px solid #007bff; border-radius: 4px; font-style: italic; color: #555; }
-        .translation { margin-top: 5px; font-size: 0.9em; color: #777; font-style: normal; }
-        .track-header { font-weight: bold; color: #28a745; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; }
-    </style>
-</head>
-<body>
-
+            <div class="reddit-market-sentiment">
     <h2>1. 宏观与市场情绪</h2>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Fidelity just reduced the minimum requirement to participate in IPOs from $500,000 to just $25,000
-          <div class="translation">翻译：富达刚刚将参与首次公开募股的最低要求从50万美元降低到2.5万美元。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Is the AI bubble in the room with us now?
-          <div class="translation">翻译：人工智能泡沫现在就在我们身边吗？</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Up $117k/week and $308k Since October 8th With Initial Investment of $15k.
-          <div class="translation">翻译：自10月8日以来，以1.5万美元的初始投资，每周盈利11.7万美元，总计盈利30.8万美元。</div>
-        </blockquote>
-      </li>
-    </ul>
+    <blockquote class="quote">
+      Fidelity just reduced the minimum requirement to participate in IPOs from $500,000 to just $25,000.
+      <div class="translation">翻译：富达刚刚将参与首次公开募股的最低要求从50万美元降低到了2.5万美元。</div>
+    </blockquote>
+    <blockquote class="quote">
+      After 280k loss in oct 2020, no guts for 0DTE or options, changed to leveraged ETF, appx 600k in soxl.
+      <div class="translation">翻译：在2020年10月亏损28万美元后，没有勇气玩0DTE或期权了，转而投资杠杆ETF，在SOXL上投入了大约60万美元。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Up $117k/week and $308k Since October 8th With Initial Investment of $15k. Scalping Spy Options is Completely Regarded.
+      <div class="translation">翻译：自10月8日以来，初始投资1.5万美元，每周盈利11.7万美元，累计盈利30.8万美元。剥头皮交易SPY期权真是太疯狂了。</div>
+    </blockquote>
+    <blockquote class="quote">
+      $20,441.11 says the BTC/crypto bull run has begun.
+      <div class="translation">翻译：20,441.11美元押注比特币/加密货币牛市已经开始。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Is the AI bubble in the room with us now?
+      <div class="translation">翻译：人工智能泡沫现在就在我们身边吗？</div>
+    </blockquote>
+    <blockquote class="quote">
+      Are you guys done selling yet?
+      <div class="translation">翻译：你们都卖完了吗？</div>
+    </blockquote>
+    <blockquote class="quote">
+      I had purchased this a few days back and ES touched 7704 but I didn't sell only for it to rebound leaving me in the red. I hoped today things would drop again. It was very choppy at the beginning and I had an opportunity to walk away with 10k but I didn't take it hoping momentum would continue downward. That didn't end up happening and when it rebounded back to 7770 the options value tanked and I decided to finally hang up the hat. Several mistakes I made here Not taking profits when I had the chance and knew I was on short dated options because I got greedy. Not closing out at a loss because of my own copium praying I'd be green again the next day.
+      <div class="translation">翻译：几天前我买入了这个，ES触及7704但我没有卖出，结果它反弹让我亏损。我希望今天会再次下跌。一开始市场非常不稳定，我曾有机会赚取1万美元离场，但我没有抓住，希望跌势能继续。结果事与愿违，当它反弹回7770时，期权价值暴跌，我决定最终放弃。我犯了几个错误：有机会盈利时没有止盈，明知是短期期权却因为贪婪而没有卖出。没有及时止损，因为我自己的“安慰剂效应”，祈祷第二天能转亏为盈。</div>
+    </blockquote>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
-    <li>
-      <div class="stock-tag">NFLX (Netflix)</div>
-      <blockquote class="quote">
-        Where my Netflix Bagholders at?
-        <div class="translation">翻译：Netflix的套牢者们在哪里？</div>
-      </blockquote>
-      <blockquote class="quote">
-        $NFLX longs punching air right now
-        <div class="translation">翻译：NFLX多头现在很恼火。</div>
-      </blockquote>
-      <blockquote class="quote">
-        How low will it go? Nobody knows…
-        <div class="translation">翻译：它会跌到多低？没人知道……</div>
-      </blockquote>
+      <li>
+        <div class="stock-tag">1. NFLX (Netflix)</div>
+        <blockquote class="quote">
+          $NFLX longs punching air right now. How low will it go? Nobody knows…
+          <div class="translation">翻译：现在做多Netflix的人正感到懊恼。它会跌多低？没人知道……</div>
+        </blockquote>
+        <blockquote class="quote">
+          Let's get ready to rumble! $10k of NFLX. Should be easy money.
+          <div class="translation">翻译：准备好大干一场吧！1万美元买入Netflix。这应该能轻松赚钱。</div>
+        </blockquote>
       </li>
-    <li>
-      <div class="stock-tag">MU (Micron Technology)</div>
-      <blockquote class="quote">
-        Opened these in the last ~5 minutes of the session, while some of you were puking shares.
-        <div class="translation">翻译：在交易时段的最后5分钟内建仓，当时你们中的一些人正在抛售股票。</div>
-      </blockquote>
-      <blockquote class="quote">
-        my execution plan is to close everything for a 250% gain, if shares aren't pumping turbo Ill have to decrease the TP expectations
-        <div class="translation">翻译：我的执行计划是全部平仓，获得250%的收益；如果股价没有飙升，我将不得不降低止盈预期。</div>
-      </blockquote>
+      <li>
+        <div class="stock-tag">2. TSLA (Tesla)</div>
+        <blockquote class="quote">
+          Larry Ellison Went on Borrowing Spree to Bankroll His Son’s Warner Bros. Bid (put up shares in Tesla, SpaceX and Paramount).
+          <div class="translation">翻译：拉里·埃里森大举借贷，为其儿子的华纳兄弟竞标提供资金（他抵押了特斯拉、SpaceX和派拉蒙的股份）。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Tesla and SpaceX have set up committees to explore a merger.
+          <div class="translation">翻译：特斯拉和SpaceX已经成立委员会，探索合并事宜。</div>
+        </blockquote>
+        <blockquote class="quote">
+          SpaceX has AI computing power and Tesla can pay for it, just like SpaceX bought approximately $131 million worth of Cybertrucks from Tesla in 2025. Tesla will report earning after hour. If they report below than before that's the indication of 69 mutual benefit. Not financial advice.
+          <div class="translation">翻译：SpaceX拥有人工智能计算能力，特斯拉可以为此付费，就像SpaceX在2025年从特斯拉购买了大约价值1.31亿美元的Cybertruck一样。特斯拉将在盘后公布财报。如果他们报告的收益低于之前，那就是这种“69”互惠互利关系的体现。这不是财务建议。</div>
+        </blockquote>
+        <blockquote class="quote">
+          20k Roth yolo on Tesla. I bought these yesterday just to scalp before earnings and they pumped so hard I’ve become forced to hold into earnings like a regard.
+          <div class="translation">翻译：在特斯拉上倾尽2万美元的Roth退休金。我昨天买入它们只是为了在财报前进行剥头皮交易，但它们涨得太猛了，我被迫像个傻子一样持有到财报公布。</div>
+        </blockquote>
       </li>
-    <li>
-      <div class="stock-tag">AVGO (Broadcom Inc.)</div>
-      <blockquote class="quote">
-        I just decided to sell ccs on my shares.
-        <div class="translation">翻译：我刚刚决定卖出我股票的备兑看涨期权。</div>
-      </blockquote>
-      <blockquote class="quote">
-        It should rocket past 370 very soon. Plan accordingly.
-        <div class="translation">翻译：它应该很快就会突破370美元。请相应地制定计划。</div>
-      </blockquote>
-      </li>
-    <li>
-      <div class="stock-tag">OKLO (Oklo Inc.)</div>
-      <blockquote class="quote">
-        OKLO’s Market Value Beyond Cash Has Fallen 91% in the Last Year
-        <div class="translation">翻译：Oklo的非现金市场价值在过去一年中下降了91%。</div>
-      </blockquote>
-      <blockquote class="quote">
-        At a $5B market cap and roughly $3B in reported cash and marketable securities, you're looking at around $2B for the rest of the business.
-        <div class="translation">翻译：在50亿美元的市值和报告的约30亿美元现金及有价证券下，你看到其余业务的价值约为20亿美元。</div>
-      </blockquote>
-      <blockquote class="quote">
-        Back in October 2025, when the stock hit $171.56, the market cap was around $25.3B, with less than $1B in cash.
-        <div class="translation">翻译：回到2025年10月，当股价达到171.56美元时，市值约为253亿美元，而现金不足10亿美元。</div>
-      </blockquote>
-      <blockquote class="quote">
-        So the market value beyond cash has gone from $24.4B to about $2.1B in less than a year. That's a 91% decline.
-        <div class="translation">翻译：因此，非现金市场价值在不到一年的时间里从244亿美元降至约21亿美元，下降了91%。</div>
-      </blockquote>
-      </li>
-    <li>
-      <div class="stock-tag">SNDK (SanDisk)</div>
-      <blockquote class="quote">
-        rumors of a deal
-        <div class="translation">翻译：有交易传闻。</div>
-      </blockquote>
-      <blockquote class="quote">
-        That could cause massive reposition before sndk earnings next week.
-        <div class="translation">翻译：这可能会在SanDisk下周公布财报前引发大规模的仓位调整。</div>
-      </blockquote>
+      <li>
+        <div class="stock-tag">3. MU (Micron Technology)</div>
+        <blockquote class="quote">
+          Guh MU. Don’t trust analyst targets I guess.
+          <div class="translation">翻译：美光科技搞砸了。我猜分析师的目标价不值得信任。</div>
+        </blockquote>
       </li>
     </ul>
 
     <h2>3. 小众公司冒泡</h2>
     <ul>
-    <li>
-      <div class="stock-tag">MRNA (Moderna, Inc.)</div>
-      <blockquote class="quote">
-        I'm just a bear on $MRNA, holding til this thing comes down to at least $150, will probably have to deal with margin call next week if this thing keeps going up.
-        <div class="translation">翻译：我对Moderna持看跌态度，会一直持有直到其跌至至少150美元；如果这支股票继续上涨，我下周可能不得不面对追加保证金通知。</div>
-      </blockquote>
-      </li>
-    <li>
-      <div class="stock-tag">BRUN (Brunswick Corporation)</div>
-      <blockquote class="quote">
-        $BRUN is down 80% since June and down 50% in two weeks despite announcing another new contract.
-        <div class="translation">翻译：尽管宣布了另一份新合同，Brunswick的股价自6月以来下跌了80%，两周内下跌了50%。</div>
-      </blockquote>
+      <li>
+        <div class="stock-tag">1. BRUN (Brunswick Corporation)</div>
+        <blockquote class="quote">
+          $BRUN is down 80% since June and down 50% in two weeks despite announcing another new contract. Are you guys trying to get my position liquidated or what?
+          <div class="translation">翻译：尽管宣布了另一份新合同，BRUN自6月以来下跌了80%，两周内下跌了50%。你们是想让我的头寸被清算吗？</div>
+        </blockquote>
       </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
     <div class="track-header">模型</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Anthropic S-1 Shows Red-Hot Growth, Risks and Massive Computing Costs
-          <div class="translation">翻译：Anthropic的S-1文件显示其增长迅猛、风险巨大且计算成本高昂。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          80bil gone in the first half of 2026 and they effectively have two customers
-          <div class="translation">翻译：2026年上半年就亏损了800亿美元，而且他们实际上只有两个客户。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Anthropic plans to give each kid in America a portion of its $80B in losses.
-          <div class="translation">翻译：Anthropic计划将800亿美元的亏损分摊给美国每个孩子。</div>
-        </blockquote>
-      </li>
-    </ul>
-    <div class="track-header">算</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Massive Computing Costs
-          <div class="translation">翻译：巨大的计算成本。</div>
-        </blockquote>
-      </li>
-    </ul>
-    <div class="track-header">光</div>
-    <div class="track-header">存</div>
-    <div class="track-header">电</div>
-    <div class="track-header">板</div>
-    <div class="track-header">云</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Should shares in Neoclouds just be free?
-          <div class="translation">翻译：Neoclouds的股票难道就应该免费吗？</div>
-        </blockquote>
-      </li>
-    </ul>
-    <div class="track-header">AI应用</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Why did Ask Jeeves shut down during peak LLM mania?
-          <div class="translation">翻译：为什么Ask Jeeves在大型语言模型狂热时期关闭了？</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          That mfr was ahead of his time.
-          <div class="translation">翻译：那个（Ask Jeeves）家伙超前于时代。</div>
-        </blockquote>
-      </li>
-    </ul>
+    <blockquote class="quote">
+      Anthropic plans to give each kid in America a portion of its $80B in losses.
+      <div class="translation">翻译：Anthropic计划将它800亿美元的亏损分摊给美国每个孩子。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Anthropic S-1 Shows Red-Hot Growth, Risks and Massive Computing Costs. 80bil gone in the first half of 2026 and they effectively have two customers.
+      <div class="translation">翻译：Anthropic的S-1文件显示出火热的增长、风险和巨大的计算成本。2026年上半年就亏损了800亿美元，而且他们实际上只有两个客户。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Yesterday SpaceX reported good earning, especially big one from AI section.
+      <div class="translation">翻译：昨天SpaceX公布了不错的财报，特别是人工智能部门表现出色。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Why did Ask Jeeves shut down during peak LLM mania? That mfr was ahead of his time.
+      <div class="translation">翻译：为什么在大型语言模型狂热达到顶峰时，Ask Jeeves却关闭了？那个家伙太超前了。</div>
+    </blockquote>
 
-</body>
-</html>
+    <div class="track-header">算</div>
+    <blockquote class="quote">
+      Anthropic S-1 Shows Red-Hot Growth, Risks and Massive Computing Costs.
+      <div class="translation">翻译：Anthropic的S-1文件显示出火热的增长、风险和巨大的计算成本。</div>
+    </blockquote>
+    <blockquote class="quote">
+      SpaceX has AI computing power and Tesla can pay for it.
+      <div class="translation">翻译：SpaceX拥有人工智能计算能力，特斯拉可以为此付费。</div>
+    </blockquote>
+
+    <div class="track-header">光</div>
+    <!-- No specific mention found in the data pool. -->
+
+    <div class="track-header">存</div>
+    <!-- No specific mention found in the data pool. -->
+
+    <div class="track-header">电</div>
+    <!-- No specific mention found in the data pool. -->
+
+    <div class="track-header">板</div>
+    <!-- No specific mention found in the data pool. -->
+
+    <div class="track-header">云</div>
+    <blockquote class="quote">
+      Should shares in Neoclouds just be free?
+      <div class="translation">翻译：Neoclouds的股票应该免费吗？</div>
+    </blockquote>
+
+    <div class="track-header">AI应用</div>
+    <blockquote class="quote">
+      Yesterday SpaceX reported good earning, especially big one from AI section.
+      <div class="translation">翻译：昨天SpaceX公布了不错的财报，特别是人工智能部门表现出色。</div>
+    </blockquote>
+</div>
         </div>
         <script>
             var myChart = echarts.init(document.getElementById('gauge'));
@@ -239,7 +184,7 @@
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
                     detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n恐慌', color: '#fff' },
-                    data: [{ value: 27 }]
+                    data: [{ value: 31 }]
                 }]
             });
         </script>
