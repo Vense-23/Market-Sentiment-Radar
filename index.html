@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>10月25日 情报终端</title>
+        <title>10月26日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,207 +36,135 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 10月25日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-10-25 13:02:44 (北京时间)</p>
+            <h1>🎯 10月26日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-10-26 00:39:05 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit市场情绪分析 (2026年10月25日)</title>
-    <style>
-        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 960px; margin: 20px auto; padding: 0 20px; background-color: #f9f9f9; }
-        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
-        ul { list-style: none; padding: 0; }
-        li { background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 5px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 10px; font-size: 1.1em; }
-        .quote { margin: 10px 0 0 0; padding: 10px 15px; border-left: 4px solid #3498db; background-color: #ecf0f1; border-radius: 3px; font-style: italic; color: #555; }
-        .translation { margin-top: 8px; font-size: 0.9em; color: #7f8c8d; }
-        .track-header { font-weight: bold; color: #2c3e50; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; padding-bottom: 5px; border-bottom: 1px dashed #ccc; }
-    </style>
-</head>
-<body>
+            <h2 id="section1">1. 宏观与市场情绪</h2>
+<p>本周Reddit社区讨论聚焦于市场板块轮动、新交易规则带来的策略挑战，以及对数据中心支出的乐观预期。软件股被认为正从半导体股手中夺回资金青睐，而即将到来的24小时交易制度则引发了散户对未来交易策略的担忧。</p>
+<ul>
+  <li>
+    <blockquote class="quote">
+      Money is now rotating back to software companies. Time to switch, semi bulls!
+      <div class="translation">翻译：资金目前正在回流软件公司。半导体看涨者是时候转向了！</div>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote class="quote">
+      24 hour trading is set to begin on December 6th. I’m honestly not excited at all for this, I like to be able to breathe a sigh of relief at 4 o’clock and remind myself everything is going to be okay.
+      <div class="translation">翻译：24小时交易定于12月6日开始。我对此一点都不兴奋，我喜欢在下午4点松一口气，提醒自己一切都会好起来的。</div>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote class="quote">
+      How will your “strategy” change with this new trading schedule? Have you thought about any new strategies to take advantage of institutional and retail unfamiliarity with the new system?
+      <div class="translation">翻译：你的“策略”将如何随着这个新的交易时间表而改变？你有没有考虑过利用机构和散户对新系统不熟悉的新策略？</div>
+    </blockquote>
+  </li>
+</ul>
 
-    <h1>Reddit市场情绪分析 (2026年10月25日)</h1>
+<h2 id="section2">2. 热议中的个股和想法</h2>
+<ul>
+  <li>
+    <div class="stock-tag">TSLA (Tesla, Inc.)</div>
+    <blockquote class="quote">
+      Betting the stock swap ratio is announced in the next few weeks. Why? Midterms. If Dems take the House, Elon and team become human piñatas - best get it done fast.
+      <div class="translation">翻译：押注股票互换比例将在未来几周内公布。为什么？中期选举。如果民主党掌控众议院，埃隆和团队将成为众矢之的——最好尽快搞定。</div>
+    </blockquote>
+    <blockquote class="quote">
+      For example, at a $500 implied stock swap price (3.4 SPCX shares for 1 TSLA share at today’s price), with elevated 90% IV, and announced on or before November 4, the premium will move to ~$5 (Black-Scholes valuation) $12 per contract —> $500 per contract
+      <div class="translation">翻译：例如，在500美元的隐含股票互换价格下（按今天价格，3.4股SPCX兑换1股TSLA），如果隐含波动率（IV）升高到90%，并且在11月4日或之前公布，期权费将从每份合约12美元升至约5美元（Black-Scholes估值）至500美元。</div>
+    </blockquote>
+  </li>
+  <li>
+    <div class="stock-tag">MRNA (Moderna, Inc.)</div>
+    <blockquote class="quote">
+      Moderna (MRNA) stock crashed Thursday after a third-party leaked the purported cancer vaccine data ahead of a hotly-anticipated presentation Saturday at the European Society of Clinical Oncology Congress.
+      <div class="translation">翻译：Moderna (MRNA) 股价周四暴跌，此前第三方泄露了据称的癌症疫苗数据，早于周六备受期待的欧洲临床肿瘤学会大会上的演示。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Data showed that their mRNA cancer vaccine merely reduced risk of recurrence or death by 42%, a far fetch from the “cancer cure” narrative that retail has been pushing as they have bid the stock up over the last 2 months.
+      <div class="translation">翻译：数据显示，其mRNA癌症疫苗仅将复发或死亡风险降低了42%，这与散户在过去两个月里推高股价的“癌症治愈”叙事相去甚远。</div>
+    </blockquote>
+  </li>
+  <li>
+    <div class="stock-tag">SPCX (Space Exploration Company Acquisition Corp.)</div>
+    <blockquote class="quote">
+      Betting the stock swap ratio is announced in the next few weeks. Why? Midterms. If Dems take the House, Elon and team become human piñatas - best get it done fast.
+      <div class="translation">翻译：押注股票互换比例将在未来几周内公布。为什么？中期选举。如果民主党掌控众议院，埃隆和团队将成为众矢之的——最好尽快搞定。</div>
+    </blockquote>
+    <blockquote class="quote">
+      For example, at a $500 implied stock swap price (3.4 SPCX shares for 1 TSLA share at today’s price), with elevated 90% IV, and announced on or before November 4, the premium will move to ~$5 (Black-Scholes valuation) $12 per contract —> $500 per contract
+      <div class="translation">翻译：例如，在500美元的隐含股票互换价格下（按今天价格，3.4股SPCX兑换1股TSLA），如果隐含波动率（IV）升高到90%，并且在11月4日或之前公布，期权费将从每份合约12美元升至约5美元（Black-Scholes估值）至500美元。</div>
+    </blockquote>
+  </li>
+</ul>
 
-    <h2>1. 宏观与市场情绪</h2>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Money is now rotating back to software companies. Time to switch, semi bulls!
-          <div class="translation">翻译：资金正在回流软件公司。是时候转向了，半导体多头们！</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Gartner Survey Finds Only 13% of CIOs Say Their Enterprise Has Realized Significant or Transformational Value from AI
-          <div class="translation">翻译：Gartner调查发现，只有13%的CIO表示他们的企业从AI中实现了显著或变革性的价值。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Data center spending to more than double to $2.1 trillion by 2028, BofA says
-          <div class="translation">翻译：美银称，到2028年数据中心支出将翻倍以上，达到2.1万亿美元。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          24 hour trading is set to begin on December 6th. How will your “strategy” change with this new trading schedule? Have you thought about any new strategies to take advantage of institutional and retail unfamiliarity with the new system?
-          <div class="translation">翻译：24小时交易将于12月6日开始。你的“策略”将如何随着这个新的交易时间表而改变？你是否考虑过利用机构和散户对新系统的不熟悉来制定任何新策略？</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Started my options journey (again; I’ve been dabbling for over 6 years) in Aug with 48k, and I hit 900k today 🫶. 99% of the gains come from SPY &amp; SPX options. 0 dte. Both calls/puts. Strategy is to buy low sell high.
-          <div class="translation">翻译：我从八月再次开始了期权之旅（我已经涉足六年多了），从4.8万美元开始，今天达到了90万美元🫶。其中99%的收益来自SPY和SPX期权，都是0DTE，包括看涨和看跌。策略是低买高卖。</div>
-        </blockquote>
-      </li>
-    </ul>
+<h2 id="section3">3. 小众公司冒泡</h2>
+<ul>
+  <li>
+    <div class="stock-tag">AMEX (American Express Company)</div>
+    <blockquote class="quote">
+      American Express is cutting 5% of its workforce to 'prepare for AI'
+      <div class="translation">翻译：美国运通正在裁员5%以“为AI做准备”。</div>
+    </blockquote>
+  </li>
+  <li>
+    <div class="stock-tag">GETY (Getty Images Holdings, Inc.)</div>
+    <blockquote class="quote">
+      Getty Images files for bankruptcy amid mounting debt and AI competition
+      <div class="translation">翻译：Getty Images 在债务缠身和AI竞争中申请破产。</div>
+    </blockquote>
+  </li>
+</ul>
 
-    <h2>2. 热议中的个股和想法</h2>
-    <ul>
-      <li>
-        <div class="stock-tag">TSLA (Tesla, Inc.)</div>
-        <blockquote class="quote">
-          Made $80k on TSLA calls during the run-up before the interest rate hikes in 2023. Thought I was a god at trading. Then TSLA started falling. Watched my calls go from +$80k to breakeven. Didn't know shit about stop losses. Refused to sell because I was convinced they'd bounce back. Eventually sold those calls at a 50% loss.
-          <div class="translation">翻译：在2023年加息前TSLA上涨期间，我在TSLA看涨期权上赚了8万美元。当时我觉得自己是交易之神。然后TSLA开始下跌。我眼睁睁看着我的看涨期权从盈利8万美元变成盈亏平衡。我根本不懂止损。我拒绝卖出，因为我坚信它们会反弹。最终我以50%的亏损卖出了那些看涨期权。</div>
-        </blockquote>
-        <blockquote class="quote">
-          nvda got me up, tsla shot me down.
-          <div class="translation">翻译：英伟达让我赚了钱，特斯拉让我亏了钱。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Betting the swap ratio is announced in the next few weeks. Why? Midterms. If Dems take the House (90% on Kalshi) Elon and team become piñatas - best get it done fast.
-          <div class="translation">翻译：赌注是互换比例将在未来几周内公布。为什么？中期选举。如果民主党掌控众议院（Kalshi上90%的概率），埃隆和他的团队将成为众矢之的——最好尽快完成。</div>
-        </blockquote>
-        <blockquote class="quote">
-          For example, the premium will move to ~$5 at a $500 implied swap price (3.4 SPCX shares for 1 TSLA share at today’s price) with elevated 90% IV, announced on or before November 4 (Black-Scholes valuation) $12 —&gt; $500 per contract
-          <div class="translation">翻译：例如，在隐含互换价格500美元（按今日价格，3.4股SPCX换1股TSLA）和90%的高隐含波动率下，期权费将升至约5美元，若在11月4日或之前公布（Black-Scholes估值），每份合约将从12美元涨至500美元。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">MRNA (Moderna, Inc.)</div>
-        <blockquote class="quote">
-          Moderna (MRNA) stock crashed Thursday after a third-party leaked the purported cancer vaccine data ahead of a hotly-anticipated presentation Saturday at the European Society of Clinical Oncology Congress.
-          <div class="translation">翻译：Moderna (MRNA) 股价周四暴跌，此前第三方泄露了备受期待的周六欧洲临床肿瘤学会大会癌症疫苗数据。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Data showed that their mRNA cancer vaccine merely reduced risk of recurrence or death by 42%, a far fetch from the “cancer cure” narrative that retail has been pushing as they have bid the stock up over the last 2 months.
-          <div class="translation">翻译：数据表明，其mRNA癌症疫苗仅将复发或死亡风险降低了42%，这与散户在过去两个月里推高股价所鼓吹的“癌症治愈”叙事相去甚远。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">AXP (American Express Company)</div>
-        <blockquote class="quote">
-          American Express is cutting 5% of its workforce to 'prepare for AI'
-          <div class="translation">翻译：美国运通正在裁减5%的员工，以“为AI做准备”。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">NVDA (NVIDIA Corporation)</div>
-        <blockquote class="quote">
-          nvda got me up, tsla shot me down.
-          <div class="translation">翻译：英伟达让我赚了钱，特斯拉让我亏了钱。</div>
-        </blockquote>
-      </li>
-    </ul>
+<h2 id="section4">4. AI主线讨论</h2>
+<div class="track-header">模型</div>
+<ul>
+  <li>
+    <blockquote class="quote">
+      OpenAI trims valuation target to $1.25tn after pitching higher price
+      <div class="translation">翻译：OpenAI在提出更高估值后，将其估值目标下调至1.25万亿美元。</div>
+    </blockquote>
+  </li>
+</ul>
 
-    <h2>3. 小众公司冒泡</h2>
-    <ul>
-      <li>
-        <div class="stock-tag">BE (Bloom Energy Corporation)</div>
-        <blockquote class="quote">
-          YOLO: BE 0DTE Let's go Leo!
-          <div class="translation">翻译：YOLO：买入BE的0DTE期权，冲啊Leo！</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">GETY (Getty Images Holdings, Inc.)</div>
-        <blockquote class="quote">
-          Getty Images files for bankruptcy amid mounting debt and AI competition
-          <div class="translation">翻译：Getty Images在日益增长的债务和AI竞争中申请破产。</div>
-        </blockquote>
-      </li>
-    </ul>
+<div class="track-header">算</div>
+<ul>
+  <li>
+    <blockquote class="quote">
+      Data center spending to more than double to $2.1 trillion by 2028, BofA says
+      <div class="translation">翻译：美国银行表示，到2028年，数据中心支出将增加一倍以上，达到2.1万亿美元。</div>
+    </blockquote>
+  </li>
+</ul>
 
-    <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型 (Models)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Claude Family Tokens
-          <div class="translation">翻译：Claude 系列代币</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          OpenAI trims valuation target to $1.25tn after pitching higher price
-          <div class="translation">翻译：OpenAI 在提出更高估值后，将其目标估值下调至1.25万亿美元。</div>
-        </blockquote>
-      </li>
-    </ul>
-
-    <div class="track-header">算 (Compute)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Data center spending to more than double to $2.1 trillion by 2028, BofA says
-          <div class="translation">翻译：美银称，到2028年数据中心支出将翻倍以上，达到2.1万亿美元。</div>
-        </blockquote>
-      </li>
-    </ul>
-
-    <div class="track-header">光 (Optics)</div>
-    <ul>
-    </ul>
-
-    <div class="track-header">存 (Storage)</div>
-    <ul>
-    </ul>
-
-    <div class="track-header">电 (Power)</div>
-    <ul>
-    </ul>
-
-    <div class="track-header">板 (Boards/Hardware)</div>
-    <ul>
-    </ul>
-
-    <div class="track-header">云 (Cloud)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Data center spending to more than double to $2.1 trillion by 2028, BofA says
-          <div class="translation">翻译：美银称，到2028年数据中心支出将翻倍以上，达到2.1万亿美元。</div>
-        </blockquote>
-      </li>
-    </ul>
-
-    <div class="track-header">AI应用 (AI Applications)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Gartner Survey Finds Only 13% of CIOs Say Their Enterprise Has Realized Significant or Transformational Value from AI
-          <div class="translation">翻译：Gartner调查发现，只有13%的CIO表示他们的企业从AI中实现了显著或变革性的价值。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          American Express is cutting 5% of its workforce to 'prepare for AI'
-          <div class="translation">翻译：美国运通正在裁减5%的员工，以“为AI做准备”。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Getty Images files for bankruptcy amid mounting debt and AI competition
-          <div class="translation">翻译：Getty Images在日益增长的债务和AI竞争中申请破产。</div>
-        </blockquote>
-      </li>
-    </ul>
-
-</body>
-</html>
+<div class="track-header">AI应用</div>
+<ul>
+  <li>
+    <blockquote class="quote">
+      Gartner Survey Finds Only 13% of CIOs Say Their Enterprise Has Realized Significant or Transformational Value from AI
+      <div class="translation">翻译：高德纳调查发现，只有13%的首席信息官表示其企业已从AI中实现显著或变革性价值。</div>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote class="quote">
+      American Express is cutting 5% of its workforce to 'prepare for AI'
+      <div class="translation">翻译：美国运通正在裁员5%以“为AI做准备”。</div>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote class="quote">
+      Getty Images files for bankruptcy amid mounting debt and AI competition
+      <div class="translation">翻译：Getty Images 在债务缠身和AI竞争中申请破产。</div>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote class="quote">
+      Money is now rotating back to software companies. Time to switch, semi bulls!
+      <div class="translation">翻译：资金目前正在回流软件公司。半导体看涨者是时候转向了！</div>
+    </blockquote>
+  </li>
+</ul>
         </div>
         <script>
             var myChart = echarts.init(document.getElementById('gauge'));
