@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>10月29日 情报终端</title>
+        <title>10月30日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,249 +36,164 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 10月29日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-10-29 14:08:38 (北京时间)</p>
+            <h1>🎯 10月30日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-10-30 02:35:07 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <title>Reddit美股市场情绪 (2026年10月29日)</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 0 15px; background-color: #f9f9f9; }
-        h1, h2, h3 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
-        h2 { font-size: 1.8em; }
-        ul { list-style: none; padding: 0; }
-        li { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .stock-tag { font-weight: bold; color: #007bff; font-size: 1.1em; margin-bottom: 10px; }
-        .quote { background-color: #eef; border-left: 4px solid #007bff; padding: 10px 15px; margin: 10px 0; font-style: italic; color: #555; }
-        .translation { font-style: normal; color: #333; margin-top: 5px; border-top: 1px dashed #cfe2ff; padding-top: 8px; }
-        .track-header { font-weight: bold; color: #0056b3; font-size: 1.2em; margin-top: 20px; margin-bottom: 10px; padding-bottom: 5px; border-bottom: 1px solid #a8d4ff; }
-    </style>
-</head>
-<body>
+            <!-- Market Sentiment Analysis Report (2026年10月30日) -->
 
-    <h1>Reddit美股市场情绪 (2026年10月29日)</h1>
+<h2>1. 宏观与市场情绪</h2>
+<p>本周Reddit市场情绪显示，散户交易行为正发生显著变化，高风险交易兴趣下降，转向更为稳健的投资策略。宏观层面，美联储维持利率不变，但通胀担忧犹存，市场整体情绪略显悲观，尤其体现在对企业盈利能否提振市场的怀疑态度。</p>
+<blockquote>
+  Robinhood is seeing retail investor habits change dramatically as stock trading cools
+  <div class="translation">翻译：Robinhood观察到散户投资者的习惯正在发生显著变化，股票交易热度正在冷却。</div>
+</blockquote>
+<blockquote>
+  Accepted a job in finance, have to transfer all my assets into the firm and they monitor every trade for insider trading. This is the end of my Robinhood and short lived day trading journey.
+  <div class="translation">翻译：我找到了一份金融工作，必须将所有资产转移到公司名下，并且他们会监控所有交易以防范内幕交易。这是我的Robinhood交易和短暂日内交易生涯的终结。</div>
+</blockquote>
+<blockquote>
+  Fed holds rates steady despite concerns over inflation
+  <div class="translation">翻译：尽管对通胀感到担忧，美联储仍维持利率不变。</div>
+</blockquote>
+<blockquote>
+  I’m done with high-risk trading now though. This + my retirement accounts + new salary are enough to achieve FI in the near future with $VOO. Trading would just be compulsive gambling now… introducing the only way to possibly F things up.
+  <div class="translation">翻译：我现在已经放弃高风险交易了。这些加上我的退休账户和新工资足以让我在不久的将来实现财务自由，通过投资VOO。现在交易只会是强迫性赌博……这是唯一可能搞砸事情的方式。</div>
+</blockquote>
 
-    <h2>1. 宏观与市场情绪</h2>
-    <p>市场情绪在对AI投资回报和美联储政策的担忧中显得复杂。美联储维持利率不变，但对通胀的担忧依然存在。在个股层面，对AI资本支出（CapEx）的看法存在分歧，一些公司表示支出超出预期或未来将显著增加，而另一些则显示出放缓CapEx以寻求正向现金流的趋势。市场对AI相关公司的估值和现金流健康状况开始表现出审慎。</p>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Fed holds rates steady despite concerns over inflation
-          <div class="translation">翻译：美联储维持利率不变，尽管对通胀存在担忧。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Is it any wonder things are going south
-          <div class="translation">翻译：事情正在走下坡路，这有什么好奇怪的。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Are we back?
-          <div class="translation">翻译：我们回来了吗？</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          What we've seen so far: Both MSFT and GOOGL are spending less on CapEx than expected. While Oracle is not a trillion dollar company, it is the single largest spender in the AI buildout so far with hundreds of billions of debt. If big players like Oracle is concerned about cash, then what about 10x leveraged cash burning machines like Coreweave? Or other "neocloud" companies whose only business is burning cash?
-          <div class="translation">翻译：到目前为止我们看到的是：微软和谷歌的资本支出都低于预期。虽然甲骨文不是一家万亿市值公司，但它是目前AI建设中最大的单一支出者，背负着数千亿美元的债务。如果像甲骨文这样的大公司都开始担心现金流，那么那些10倍杠杆的烧钱机器，比如Coreweave，或者其他那些唯一业务就是烧钱的“新云”公司又会怎样呢？</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Nasdaq moving to 23/5 trading on December 6.
-          <div class="translation">翻译：纳斯达克将于12月6日转向每周23小时/5天交易。</div>
-        </blockquote>
-      </li>
-    </ul>
+<h2>2. 热议中的个股和想法</h2>
+<ul>
+  <li>
+    <div class="stock-tag">NOW (ServiceNow)</div>
+    <blockquote class="quote">
+      ServiceNow's stock is headed for its worst day ever.
+      <div class="translation">翻译：ServiceNow的股价正经历有史以来最糟糕的一天。</div>
+    </blockquote>
+    <blockquote class="quote">
+      The company posted underwhelming third-quarter results, reigniting AI disruption concerns.
+      <div class="translation">翻译：该公司公布的第三季度业绩令人失望，重新引发了人们对AI颠覆的担忧。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Investors are looking for signs of a payoff as businesses pour billions into AI investments.
+      <div class="translation">翻译：投资者正在寻找回报的迹象，因为企业正向AI投资数十亿美元。</div>
+    </blockquote>
+  </li>
+  <li>
+    <div class="stock-tag">GOOG (Alphabet)</div>
+    <blockquote class="quote">
+      Alphabet announced during its Q3 2026 earnings report that its capital expenditures (CapEx) are expected to increase significantly in 2027, following a full year 2026 guidance range of $195 billion to $205 billion.
+      <div class="translation">翻译：Alphabet在其2026年第三季度财报中宣布，继2026年全年资本支出指导范围为1950亿至2050亿美元之后，预计2027年的资本支出将显著增加。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Management has explicitly reaffirmed that spending will scale up further past the 2026 levels as part of a long-term strategic buildout.
+      <div class="translation">翻译：管理层明确重申，作为长期战略建设的一部分，支出将在2026年水平的基础上进一步扩大。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Bank of America forecasts around $300 billion in capital spending in 2027 alone for Google
+      <div class="translation">翻译：美国银行预测谷歌仅在2027年就将投入约3000亿美元的资本支出。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Alphabet's free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade
+      <div class="translation">翻译：Alphabet的自由现金流进一步下降，第三季度资本支出预期不及，这对于AI交易来说是一个令人担忧的信号。</div>
+    </blockquote>
+  </li>
+  <li>
+    <div class="stock-tag">RDDT (Reddit)</div>
+    <blockquote class="quote">
+      Revenue growth: 61% YoY, with 91% gross margins.
+      <div class="translation">翻译：营收同比增长61%，毛利率达91%。</div>
+    </blockquote>
+    <blockquote class="quote">
+      EPS growth: 178% YoY, with substantial operating leverage.
+      <div class="translation">翻译：每股收益同比增长178%，并具有显著的经营杠杆。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Advertiser growth: 70%+ YoY, driving 40% higher ad prices.
+      <div class="translation">翻译：广告客户增长超过70%，推动广告价格上涨40%。</div>
+    </blockquote>
+    <blockquote class="quote">
+      Valuation: Around 21x estimated 2026 earnings, despite analysts projecting roughly 30%+ annual growth
+      <div class="translation">翻译：估值约为2026年预期收益的21倍，尽管分析师预测年增长率约为30%以上。</div>
+    </blockquote>
+  </li>
+</ul>
 
-    <h2>2. 热议中的个股和想法</h2>
-    <ul>
-      <li>
-        <div class="stock-tag">GOOG (Alphabet)</div>
-        <blockquote class="quote">
-          Alphabet's free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade
-          <div class="translation">翻译：Alphabet的自由现金流进一步下降，第三季度资本支出预期不及，对AI交易发出了令人担忧的信号。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Alphabet announced during its Q3 2026 earnings report that its capital expenditures (CapEx) are expected to increase significantly in 2027, following a full year 2026 guidance range of $195 billion to $205 billion. Management has explicitly reaffirmed that spending will scale up further past the 2026 levels as part of a long-term strategic buildout.
-          <div class="translation">翻译：Alphabet在2026年第三季度财报中宣布，预计其2027年的资本支出（CapEx）将显著增加，此前2026年全年指导范围为1950亿至2050亿美元。管理层明确重申，作为长期战略建设的一部分，支出将进一步超越2026年的水平。</div>
-        </blockquote>
-        <blockquote class="quote">
-          What we've seen so far: Both MSFT and GOOGL are spending less on CapEx than expected.
-          <div class="translation">翻译：到目前为止我们看到的是：微软和谷歌的资本支出都低于预期。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">MSFT (Microsoft)</div>
-        <blockquote class="quote">
-          Microsoft Reports Rising Cloud Sales That Show Payoff From AI
-          <div class="translation">翻译：微软报告云销售额增长，显示AI带来了回报。</div>
-        </blockquote>
-        <blockquote class="quote">
-          What we've seen so far: Both MSFT and GOOGL are spending less on CapEx than expected.
-          <div class="translation">翻译：到目前为止我们看到的是：微软和谷歌的资本支出都低于预期。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">ORCL (Oracle)</div>
-        <blockquote class="quote">
-          Oracle has officially capped its capex in 2027 and predicted return to positive cash flow in 2028🚨
-          <div class="translation">翻译：甲骨文已正式设定其2027年的资本支出上限，并预计2028年将恢复正向现金流🚨</div>
-        </blockquote>
-        <blockquote class="quote">
-          Set long-term outlook for FY30 of $225 billion+ in total revenue, representing more than 35% CAGR from FY26, non-GAAP operating margin of 40%+ and non-GAAP EPS $21+.
-          <div class="translation">翻译：设定2030财年的长期展望为总收入超过2250亿美元，这意味着从2026财年起复合年增长率超过35%，非GAAP运营利润率超过40%，非GAAP每股收益超过21美元。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Defined timeline to positive free cash flow during the second half of FY28 and set free cash flow target of $30 billion+ for FY29.
-          <div class="translation">翻译：确定了在2028财年下半年实现正向自由现金流的时间表，并设定2029财年的自由现金流目标为300亿美元以上。</div>
-        </blockquote>
-        <blockquote class="quote">
-          While Oracle is not a trillion dollar company, it is the single largest spender in the AI buildout so far with hundreds of billions of debt.
-          <div class="translation">翻译：虽然甲骨文不是一家万亿市值公司，但它是目前AI建设中最大的单一支出者，背负着数千亿美元的债务。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">MRVL (Marvell Technology)</div>
-        <blockquote class="quote">
-          Marvell Is Said to Near Megadeal for Lumentum In AI Push
-          <div class="translation">翻译：据称Marvell即将达成一项收购Lumentum的大宗交易，以推动AI业务。</div>
-        </blockquote>
-        <blockquote class="quote">
-          MARVELL is reportedly in advanced talks to aqquire LUMENTUM If the deal actually goes through at this high valuation for LUMENTUM compared to its peers, we would likely see a repricing throughout the whole optics sector
-          <div class="translation">翻译：据报道，Marvell正在就收购Lumentum进行深入谈判。如果这项交易以相对于其同行而言对Lumentum的高估值实际达成，我们可能会看到整个光学行业进行重新定价。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">LITE (Lumentum Holdings)</div>
-        <blockquote class="quote">
-          Marvell Is Said to Near Megadeal for Lumentum In AI Push
-          <div class="translation">翻译：据称Marvell即将达成一项收购Lumentum的大宗交易，以推动AI业务。</div>
-        </blockquote>
-        <blockquote class="quote">
-          MARVELL is reportedly in advanced talks to aqquire LUMENTUM If the deal actually goes through at this high valuation for LUMENTUM compared to its peers, we would likely see a repricing throughout the whole optics sector
-          <div class="translation">翻译：据报道，Marvell正在就收购Lumentum进行深入谈判。如果这项交易以相对于其同行而言对Lumentum的高估值实际达成，我们可能会看到整个光学行业进行重新定价。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">AAOI (Applied Optoelectronics)</div>
-        <blockquote class="quote">
-          AAOI would especially be hit positively by this since its the optics stock traded at the lowest valuation based on forward earnings and near term revenue growth
-          <div class="translation">翻译：AAOI尤其会受到积极影响，因为它是基于远期收益和近期营收增长，以最低估值交易的光学股票。</div>
-        </blockquote>
-        <blockquote class="quote">
-          With AAOI's earnings upcoming in start november, we will likely see further upside assuming that they beat and reitterate/raise guidance, or announce some type of order/equity deal/LTA etc.
-          <div class="translation">翻译：随着AAOI在11月初即将发布财报，我们很可能会看到进一步的上涨，前提是他们业绩超出预期并重申/提高指引，或者宣布某种订单/股权交易/长期协议等。</div>
-        </blockquote>
-        <blockquote class="quote">
-          On top of this AAOI's inflection point is nearing (1H 2027).
-          <div class="translation">翻译：除此之外，AAOI的拐点正在临近（2027年上半年）。</div>
-        </blockquote>
-        <blockquote class="quote">
-          Also AAOI is shorted a lot making any major/sustained upside moves squeezing out the shorts.
-          <div class="translation">翻译：此外，AAOI被大量做空，任何主要的/持续的上涨都会迫使空头平仓。</div>
-        </blockquote>
-      </li>
-    </ul>
+<h2>3. 小众公司冒泡</h2>
+<ul>
+  <li>
+    <div class="stock-tag">DASH (DoorDash)</div>
+    <blockquote class="quote">
+      DoorDash to acquire Instacart for $17 billion
+      <div class="translation">翻译：DoorDash将以170亿美元收购Instacart。</div>
+    </blockquote>
+  </li>
+  <li>
+    <div class="stock-tag">CART (Instacart)</div>
+    <blockquote class="quote">
+      DoorDash to acquire Instacart for $17 billion
+      <div class="translation">翻译：DoorDash将以170亿美元收购Instacart。</div>
+    </blockquote>
+  </li>
+  <li>
+    <div class="stock-tag">NVDA (Nvidia)</div>
+    <blockquote class="quote">
+      Report: Suspected Chinese Spy Had Access to Nvidia CEO
+      <div class="translation">翻译：报道：疑似中国间谍曾接触英伟达CEO。</div>
+    </blockquote>
+  </li>
+  <li>
+    <div class="stock-tag">MSFT (Microsoft)</div>
+    <blockquote class="quote">
+      Microsoft Reports Rising Cloud Sales That Show Payoff From AI
+      <div class="translation">翻译：微软报告云销售额增长，显示出AI带来的回报。</div>
+    </blockquote>
+  </li>
+</ul>
 
-    <h2>3. 小众公司冒泡</h2>
-    <ul>
-      <li>
-        <div class="stock-tag">WEN (Wendy's)</div>
-        <blockquote class="quote">
-          Nelson Peltz’s Trian Offers to Buy Wendy’s for $1.4 Billion
-          <div class="translation">翻译：纳尔逊·佩尔茨的Trian基金提议以14亿美元收购Wendy's。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The investor group is proposing $7.35 per share in cash.
-          <div class="translation">翻译：该投资者集团提议每股7.35美元现金。</div>
-        </blockquote>
-      </li>
-    </ul>
-
-    <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型 (Models)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Anthropic’s cash pile towers over nearly every U.S. company. Never before has a company gone public with anywhere near this amount of cash.
-          <div class="translation">翻译：Anthropic的现金储备几乎超过了所有美国公司。以前从未有公司在上市时拥有如此巨额的现金。</div>
-        </blockquote>
-      </li>
-    </ul>
-    <div class="track-header">算 (Compute)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          What we've seen so far: Both MSFT and GOOGL are spending less on CapEx than expected. While Oracle is not a trillion dollar company, it is the single largest spender in the AI buildout so far with hundreds of billions of debt.
-          <div class="translation">翻译：到目前为止我们看到的是：微软和谷歌的资本支出都低于预期。虽然甲骨文不是一家万亿市值公司，但它是目前AI建设中最大的单一支出者，背负着数千亿美元的债务。</div>
-        </blockquote>
-      </li>
-    </ul>
-    <div class="track-header">光 (Optical)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Marvell Is Said to Near Megadeal for Lumentum In AI Push
-          <div class="translation">翻译：据称Marvell即将达成一项收购Lumentum的大宗交易，以推动AI业务。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          If the deal actually goes through at this high valuation for LUMENTUM compared to its peers, we would likely see a repricing throughout the whole optics sector
-          <div class="translation">翻译：如果这项交易以相对于其同行而言对Lumentum的高估值实际达成，我们可能会看到整个光学行业进行重新定价。</div>
-        </blockquote>
-      </li>
-    </ul>
-    <div class="track-header">存 (Storage)</div>
-    <p><em>暂无相关讨论。</em></p>
-    <div class="track-header">电 (Power)</div>
-    <p><em>暂无相关讨论。</em></p>
-    <div class="track-header">板 (Boards)</div>
-    <p><em>暂无相关讨论。</em></p>
-    <div class="track-header">云 (Cloud)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Microsoft Reports Rising Cloud Sales That Show Payoff From AI
-          <div class="translation">翻译：微软报告云销售额增长，显示AI带来了回报。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          If big players like Oracle is concerned about cash, then what about 10x leveraged cash burning machines like Coreweave? Or other "neocloud" companies whose only business is burning cash?
-          <div class="translation">翻译：如果像甲骨文这样的大公司都开始担心现金流，那么那些10倍杠杆的烧钱机器，比如Coreweave，或者其他那些唯一业务就是烧钱的“新云”公司又会怎样呢？</div>
-        </blockquote>
-      </li>
-    </ul>
-    <div class="track-header">AI应用 (AI Applications)</div>
-    <ul>
-      <li>
-        <blockquote class="quote">
-          Microsoft Reports Rising Cloud Sales That Show Payoff From AI
-          <div class="translation">翻译：微软报告云销售额增长，显示AI带来了回报。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Alphabet's free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade
-          <div class="translation">翻译：Alphabet的自由现金流进一步下降，第三季度资本支出预期不及，对AI交易发出了令人担忧的信号。</div>
-        </blockquote>
-      </li>
-      <li>
-        <blockquote class="quote">
-          Google is keeping the AI trade alive - CAPEX 2027 increases significantly from 2026
-          <div class="translation">翻译：谷歌正在维持AI交易的活力——2027年资本支出较2026年显著增加。</div>
-        </blockquote>
-      </li>
-    </ul>
-
-</body>
-</html>
+<h2>4. AI主线讨论</h2>
+<div class="track-header">模型</div>
+<blockquote>
+  Maybe Gemini can fix this?
+  <div class="translation">翻译：也许Gemini能解决这个问题？</div>
+</blockquote>
+<div class="track-header">算</div>
+<blockquote>
+  Alphabet announced during its Q3 2026 earnings report that its capital expenditures (CapEx) are expected to increase significantly in 2027, following a full year 2026 guidance range of $195 billion to $205 billion. Management has explicitly reaffirmed that spending will scale up further past the 2026 levels as part of a long-term strategic buildout.
+  <div class="translation">翻译：Alphabet在其2026年第三季度财报中宣布，继2026年全年资本支出指导范围为1950亿至2050亿美元之后，预计2027年的资本支出将显著增加。管理层明确重申，作为长期战略建设的一部分，支出将在2026年水平的基础上进一步扩大。</div>
+</blockquote>
+<blockquote>
+  Alphabet's free cash flow sinks further, Q3 capex expectations miss in worrying sign for AI trade
+  <div class="translation">翻译：Alphabet的自由现金流进一步下降，第三季度资本支出预期不及，这对于AI交易来说是一个令人担忧的信号。</div>
+</blockquote>
+<div class="track-header">光</div>
+<!-- 数据池中未发现相关内容 -->
+<div class="track-header">存</div>
+<!-- 数据池中未发现相关内容 -->
+<div class="track-header">电</div>
+<!-- 数据池中未发现相关内容 -->
+<div class="track-header">板</div>
+<!-- 数据池中未发现相关内容 -->
+<div class="track-header">云</div>
+<blockquote>
+  Management has explicitly reaffirmed that spending will scale up further past the 2026 levels as part of a long-term strategic buildout.
+  <div class="translation">翻译：管理层明确重申，作为长期战略建设的一部分，支出将在2026年水平的基础上进一步扩大。</div>
+</blockquote>
+<blockquote>
+  Microsoft Reports Rising Cloud Sales That Show Payoff From AI
+  <div class="translation">翻译：微软报告云销售额增长，显示出AI带来的回报。</div>
+</blockquote>
+<div class="track-header">AI应用</div>
+<blockquote>
+  The company posted underwhelming third-quarter results, reigniting AI disruption concerns.
+  <div class="translation">翻译：该公司公布的第三季度业绩令人失望，重新引发了人们对AI颠覆的担忧。</div>
+</blockquote>
+<blockquote>
+  Investors are looking for signs of a payoff as businesses pour billions into AI investments.
+  <div class="translation">翻译：投资者正在寻找回报的迹象，因为企业正向AI投资数十亿美元。</div>
+</blockquote>
+<blockquote>
+  Reddit Max: AI-powered ad optimization is making existing ad inventory more valuable.
+  <div class="translation">翻译：Reddit Max：AI驱动的广告优化正在使现有广告库存更有价值。</div>
+</blockquote>
         </div>
         <script>
             var myChart = echarts.init(document.getElementById('gauge'));
@@ -288,7 +203,7 @@
                     axisLine: { lineStyle: { width: 45, color: [[0.25, '#ef4444'], [0.45, '#f97316'], [0.55, '#d1d5db'], [0.75, '#84cc16'], [1, '#22c55e']] } },
                     pointer: { length: '60%', width: 8, itemStyle: { color: '#fff' } },
                     detail: { fontSize: 40, fontWeight: 'bold', offsetCenter: [0, '25%'], formatter: '{value}\n恐慌', color: '#fff' },
-                    data: [{ value: 35 }]
+                    data: [{ value: 34 }]
                 }]
             });
         </script>
