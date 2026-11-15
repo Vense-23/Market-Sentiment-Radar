@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>11月15日 情报终端</title>
+        <title>11月16日 情报终端</title>
         <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
         <style>
             :root { --bg: #0f172a; --text: #f1f5f9; --accent: #38bdf8; --border: #334155; }
@@ -36,94 +36,77 @@
     </head>
     <body>
         <div class="container">
-            <h1>🎯 11月15日 市场情报透视</h1>
-            <p style="color:#94a3b8">情报最后更新: 2026-11-15 14:54:59 (北京时间)</p>
+            <h1>🎯 11月16日 市场情报透视</h1>
+            <p style="color:#94a3b8">情报最后更新: 2026-11-16 03:00:55 (北京时间)</p>
             <div class="dashboard-card"><div id="gauge" class="gauge-container"></div></div>
-            以下是基于您提供的Reddit数据池提炼出的市场情绪分析网页：
-
-
-<!DOCTYPE html>
-<html lang="zh">
+            <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美股量化分析：2026年11月15日Reddit市场情绪</title>
+    <title>Reddit 美股市场情绪分析 (2026年11月16日)</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 20px; background-color: #f4f7f6; color: #333; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 20px; background-color: #f9f9f9; }
         h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 30px; }
         ul { list-style: none; padding: 0; }
-        li { background-color: #ffffff; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        li { background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .stock-tag { font-weight: bold; color: #e74c3c; margin-bottom: 10px; font-size: 1.1em; }
-        .quote { background-color: #ecf0f1; border-left: 4px solid #3498db; margin: 10px 0; padding: 10px 15px; border-radius: 4px; color: #555; font-style: italic; }
-        .translation { font-size: 0.9em; color: #7f8c8d; margin-top: 5px; }
-        .track-header { font-weight: bold; color: #2980b9; margin-top: 15px; margin-bottom: 5px; font-size: 1em; padding-left: 10px; border-left: 3px solid #95a5a6; }
-        .ai-discussion-item { margin-left: 20px; font-size: 0.95em; color: #444; }
+        .quote { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 10px 15px; margin: 10px 0; font-style: italic; color: #555; }
+        .translation { margin-top: 5px; font-style: normal; color: #2c3e50; border-top: 1px dashed #bdc3c7; padding-top: 8px; }
+        .track-header { font-weight: bold; color: #34495e; margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; padding-bottom: 5px; border-bottom: 1px solid #cccccc; }
+        .ai-category { margin-left: 20px; }
     </style>
 </head>
 <body>
 
-    <h1>美股量化分析：2026年11月15日Reddit市场情绪</h1>
-
     <h2>1. 宏观与市场情绪</h2>
-    <blockquote class="quote">
-      FAA Grounds Flights
-      <div class="translation">翻译：美国联邦航空管理局(FAA)停飞航班。</div>
-    </blockquote>
-    <blockquote class="quote">
-      US National Weather Service reports nationwide internet, communications issues
-      <div class="translation">翻译：美国国家气象局报告全国范围内的互联网和通信问题。</div>
-    </blockquote>
-    <blockquote class="quote">
-      Saylor's done it again! Bitcoin craters over 25% since the same month of MSTR's Q2 Earnings release. Bitcoin down nearly 6% on the session.
-      <div class="translation">翻译：Saylor又来了！自MSTR第二季度财报发布以来，比特币暴跌超过25%。本交易日比特币下跌近6%。</div>
-    </blockquote>
-    <blockquote="quote">
-      According to WP, China hawks in DC were behind the toppling of Huang. Huang lobbied for loosening export control because of corporate interest and allegedly national interest (making China depend on US chips). China hawks wanted to tighten export control.
-      <div class="translation">翻译：据《华盛顿邮报》报道，华盛顿的对华鹰派是黄仁勋倒台的幕后推手。黄仁勋以企业利益和所谓的国家利益（使中国依赖美国芯片）为由，游说放宽出口管制。对华鹰派希望收紧出口管制。</div>
-    </blockquote>
-    <blockquote="quote">
-      Singaporean government disputes claims made by WSJ. The Nvidia war really heats up.
-      <div class="translation">翻译：新加坡政府对《华尔街日报》的报道提出异议。英伟达之战正酣。</div>
-    </blockquote>
+    <ul>
+      <li>
+        <blockquote class="quote">
+          Singapore is a tiny country, but it plays a pretty important role in the global semiconductor and electronics supply chain. A lot of people watch Nvidia, AMD, the Nasdaq, Fed announcements, etc. Nothing wrong with that. But here’s something you might not know. Every month, Singapore publishes a report called Non-Oil Domestic Exports (NODX).
+          <div class="translation">翻译：新加坡是一个小国，但在全球半导体和电子供应链中扮演着相当重要的角色。很多人关注英伟达、AMD、纳斯达克、美联储公告等，这没什么不对。但你可能不知道的是，新加坡每月都会发布一份名为《非石油国内出口》（NODX）的报告。</div>
+        </blockquote>
+      </li>
+      <li>
+        <blockquote class="quote">
+          Judge allows motion to DRAM price-fixing lawsuit against Micron, Samsung and SK hynix saying chipmakers acted like hawks flying in formation
+          <div class="translation">翻译：法官批准了针对美光、三星和SK海力士的DRAM价格操纵诉讼动议，称芯片制造商的行为就像编队飞行的老鹰。</div>
+        </blockquote>
+      </li>
+    </ul>
 
     <h2>2. 热议中的个股和想法</h2>
     <ul>
       <li>
-        <div class="stock-tag">NVDA (NVIDIA Corp)</div>
+        <div class="stock-tag">NVDA (英伟达)</div>
         <blockquote class="quote">
-          Turns out the "shortage" was NVDA funding the startups buying NVDA chips. The seller funded the buyer to absorb the supply. Which means the "shortage" that let him charge whatever he wanted... was partly his own money walking in circles. And I'm the regard who spent two years telling everyone "AI demand is organic, bro, the supply is real." I didn't get outplayed by the market. I got outplayed by the guy I keep giving money to, who used my money to buy his product so I'd feel good about giving him more money.
-          <div class="translation">翻译：原来“短缺”是英伟达资助购买英伟达芯片的初创公司造成的。卖家资助买家吸收供应。这意味着让他能随意收费的“短缺”……部分是他自己的钱在转圈。我就是那个两年里一直告诉大家“AI需求是真实的，兄弟，供应是真实的”的傻瓜。我不是被市场击败的。我是被我一直给他钱的那个人击败的，他用我的钱去买他的产品，这样我就觉得把更多钱给他感觉很好。</div>
+          Bessent Says Nvidia Needs ‘Dramatic Shakeup’ After Huang Ouster
+          <div class="translation">翻译：贝森特表示，在黄仁勋被免职后，英伟达需要“大刀阔斧的改革”。</div>
         </blockquote>
         <blockquote class="quote">
-          Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal broke — and no trading plan was flagged.
-          <div class="translation">翻译：在黄仁勋丑闻爆发前几周，一位英伟达董事出售了近10亿美元的股票，且未被标记为交易计划。</div>
-        </blockquote>
-        <blockquote="quote">
-          But what people don't understand is that under the current export control law, it's perfectly legal for foreign data centers to rent usage of even export-controlled GPUs to Chinese companies. Yes it's a major loophole that the Congress will most likely close soon, but until then, it was perfectly legal for Singaporean/Malaysian companies to buy billions of Nvidia GPU for the exclusive purpose of renting them to Chinese tech companies.
-          <div class="translation">翻译：但人们不明白的是，根据目前的出口管制法律，外国数据中心向中国公司租赁甚至受出口管制的GPU使用权是完全合法的。是的，这是一个国会很可能很快就会堵塞的重大漏洞，但在那之前，新加坡/马来西亚公司购买数十亿美元的英伟达GPU，专门用于租赁给中国科技公司是完全合法的。</div>
+          so let me get this straight. NVDA commits to buying an avalanche of TSMC silicon. Instead of doing the normal thing and cutting prices when supply catches up, Jensen apparently financed the AI startups and cloud bros so they could afford to buy the chips he'd already ordered. The seller funded the buyer to absorb the supply. Which means the "shortage" that let him charge whatever he wanted... was partly his own money walking in circles. and I'm the regard who spent two years telling everyone "AI demand is organic, bro, the supply is real." I didn't get outplayed by the market. I got outplayed by the guy I keep giving money to, who used my money to buy his product so I'd feel good about giving him more money.
+          <div class="translation">翻译：所以让我搞清楚。英伟达承诺购买大量台积电硅晶圆。当供应赶上需求时，黄仁勋并没有按常理降价，而是显然资助了AI初创公司和云服务商，让他们有能力购买他已经订购的芯片。卖方资助买方来消化供应。这意味着让他随心所欲定价的“短缺”……部分是他自己的资金在循环。而我这个傻瓜，却花了两年时间告诉大家“AI需求是真实的，兄弟，供应是真实的。”我没有被市场打败。我被我一直给钱的那个人打败了，他用我的钱买他的产品，让我觉得给他更多钱是好事。</div>
         </blockquote>
         <blockquote class="quote">
-          So NVDA puts right? What can we possibly expect with earnings coming up? Earnings have to be really good, I’m talking 800% expectations. Specially with these “revelations” that the money has been just doing circles this whole time.
-          <div class="translation">翻译：那么英伟达应该看跌期权咯？临近财报，我们还能期待什么呢？财报必须非常出色，我说的是800%的预期。特别是考虑到这些“爆料”，说钱一直在空转。</div>
+          Retail investors hold ~28% of NVDA stocks, we just need 15% to call for a special meeting! Return of Jensen to the NVDA is the end game.
+          <div class="translation">翻译：散户投资者持有约28%的英伟达股票，我们只需要15%就可以要求召开特别会议！让黄仁勋重返英伟达是最终目标。</div>
+        </blockquote>
+        <blockquote class="quote">
+          Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal broke
+          <div class="translation">翻译：在黄仁勋丑闻爆发前几周，英伟达董事出售了近10亿美元的股票。</div>
         </blockquote>
       </li>
       <li>
-        <div class="stock-tag">RIVN (Rivian Automotive, Inc.)</div>
+        <div class="stock-tag">RSG (Republic Services)</div>
         <blockquote class="quote">
-          I believe Rivian is being valued like a struggling traditional automaker when it should increasingly be viewed as a technology company that happens to build some damn good vehicles.
-          <div class="translation">翻译：我认为Rivian目前被估值成一家苦苦挣扎的传统汽车制造商，而它应该越来越被视为一家碰巧制造出一些非常好的汽车的科技公司。</div>
+          Cascade Investment, Bill Gates’ personal investment fund, has been buying Republic Services ($RSG), the second-biggest garbage and recycling company in the US.
+          <div class="translation">翻译：比尔·盖茨的个人投资基金Cascade Investment一直在购买美国第二大垃圾回收公司Republic Services（$RSG）的股票。</div>
         </blockquote>
         <blockquote class="quote">
-          My short term bullish thesis revolves around three things: December 9 Autonomy & AI Day: Rivian is preparing to demonstrate Point to Point autonomous driving, putting it into more direct competition with Tesla FSD.
-          <div class="translation">翻译：我的短期看涨论点围绕三件事：12月9日的自动驾驶和人工智能日：Rivian正准备展示点对点自动驾驶，这将使其与特斯拉FSD展开更直接的竞争。</div>
+          $1.58B bought over the past year About $200M in May Then $1.38B in only 5 weeks, from Aug 10 to Sep 11 30 separate buying days, with the biggest day at $91M They now hold about 117M shares
+          <div class="translation">翻译：过去一年共购买了15.8亿美元，其中5月约2亿美元，随后在8月10日至9月11日的短短5周内购买了13.8亿美元，共30个交易日，最大单日购买额达9100万美元。他们目前持有约1.17亿股。</div>
         </blockquote>
         <blockquote class="quote">
-          R2 demand and production: R2 has received overwhelmingly positive reviews, is already Rivian's highest volume vehicle, and is opening up a much larger consumer market.
-          <div class="translation">翻译：R2的需求和生产：R2获得了压倒性的积极评价，已是Rivian产量最高的车型，并正在打开一个更大的消费市场。</div>
-        </blockquote>
-        <blockquote class="quote">
-          The Uber robotaxi partnership: Uber is backing Rivian's autonomous technology with a deal involving up to 50,000 R2 robotaxis and as much as $1.25 billion.
-          <div class="translation">翻译：与优步的机器人出租车合作：优步正通过一项涉及多达5万辆R2机器人出租车和高达12.5亿美元的交易，支持Rivian的自动驾驶技术。</div>
+          RSG is up 17% since Aug 10 It’s at a 52-week high right now Nvidia is down 26% over the same days. What stands out is the speed: over a billion dollars in about a month.
+          <div class="translation">翻译：自8月10日以来，RSG上涨了17%，目前处于52周新高，而同期英伟达下跌了26%。引人注目的是其购买速度：在一个月内超过10亿美元。</div>
         </blockquote>
       </li>
     </ul>
@@ -131,54 +114,105 @@
     <h2>3. 小众公司冒泡</h2>
     <ul>
       <li>
-        <div class="stock-tag">MSTR (MicroStrategy Inc.)</div>
+        <div class="stock-tag">Anthropic</div>
         <blockquote class="quote">
-          Saylor's done it again! Bitcoin craters over 25% since the same month of MSTR's Q2 Earnings release. Bitcoin down nearly 6% on the session.
-          <div class="translation">翻译：Saylor又来了！自MSTR第二季度财报发布以来，比特币暴跌超过25%。本交易日比特币下跌近6%。</div>
+          The biggest market event of the year is happening on Thursday when Anthropic goes public. Many people expect the IPO to fail, but Anthropic was smart and kept the float super small. Only 6.3% of total shares will be tradable on IPO day. That means all it takes is a bunch of media attention and dumb retail buyers hitting market orders to make it easily go up 50% in a day.
+          <div class="translation">翻译：本年度最大的市场事件将在周四 Anthropic 上市时发生。很多人预计这次IPO会失败，但Anthropic很聪明地将流通股数量控制得非常小。IPO当天只有6.3%的总股份可供交易。这意味着只需要大量媒体关注和盲目跟风的散户买家下市价单，就能轻松在一天内上涨50%。</div>
         </blockquote>
         <blockquote class="quote">
-          MSCI to officially remove MSTR from its indexes by the end of this month.
-          <div class="translation">翻译：摩根士丹利资本国际(MSCI)将于本月底正式将MSTR从其指数中移除。</div>
-        </blockquote>
-      </li>
-      <li>
-        <div class="stock-tag">META (Meta Platforms, Inc.)</div>
-        <blockquote class="quote">
-          Italy fines Meta $887 million over Android users' data access.
-          <div class="translation">翻译：意大利就安卓用户数据访问问题对Meta处以8.87亿美元罚款。</div>
+          SpaceX did the same exact strategy with the low float, and we saw it go up 70% in the first few trading days. I’m not saying this gain will last, it won’t, but this is going to be a short-term trade.
+          <div class="translation">翻译：SpaceX也采用了同样的低流通股策略，我们看到它在最初几个交易日上涨了70%。我不是说这种涨幅会持续，它不会，但这将是一次短期交易。</div>
         </blockquote>
       </li>
       <li>
-        <div class="stock-tag">COIN (Coinbase Global, Inc.)</div>
+        <div class="stock-tag">MU (美光科技)</div>
         <blockquote class="quote">
-          Brian Armstrong - The Man Who Built An Exchange That Only Loses. Currently down another 10% over the weekend.. Its taken 10 years to build my account now being destroyed by Coinbase.
-          <div class="translation">翻译：Brian Armstrong——一个只知道亏钱的交易所的建造者。这个周末又跌了10%……我用了10年建立的账户现在正被Coinbase摧毁。</div>
+          Judge allows motion to DRAM price-fixing lawsuit against Micron, Samsung and SK hynix saying chipmakers acted like hawks flying in formation
+          <div class="translation">翻译：法官批准了针对美光、三星和SK海力士的DRAM价格操纵诉讼动议，称芯片制造商的行为就像编队飞行的老鹰。</div>
+        </blockquote>
+      </li>
+      <li>
+        <div class="stock-tag">META (Meta Platforms)</div>
+        <blockquote class="quote">
+          Italy fines Meta $887 million over Android users' data access
+          <div class="translation">翻译：意大利因安卓用户数据访问问题对Meta处以8.87亿美元罚款。</div>
         </blockquote>
       </li>
     </ul>
 
     <h2>4. AI主线讨论</h2>
-    <div class="track-header">模型</div>
-    <div class="ai-discussion-item">NVDA funding the startups buying NVDA chips.</div>
-    <div class="ai-discussion-item">Jensen apparently financed the AI startups and cloud bros so they could afford to buy the chips he'd already ordered.</div>
-    <div class="track-header">算</div>
-    <div class="ai-discussion-item">NVDA commits to buying an avalanche of TSMC silicon.</div>
-    <div class="ai-discussion-item">Instead Of Lowering GPU Prices, Former NVIDIA CEO Jensen Huang Reportedly Financed AI Startups To Absorb Excess Silicon.</div>
-    <div class="ai-discussion-item">export controlled Nvidia GPUs like the Blackwell series.</div>
-    <div class="track-header">光</div>
-    <div class="ai-discussion-item">未提及。</div>
-    <div class="track-header">存</div>
-    <div class="ai-discussion-item">未提及。</div>
-    <div class="track-header">电</div>
-    <div class="ai-discussion-item">未提及。</div>
-    <div class="track-header">板</div>
-    <div class="ai-discussion-item">未提及。</div>
-    <div class="track-header">云</div>
-    <div class="ai-discussion-item">cloud bros</div>
-    <div class="ai-discussion-item">it's perfectly legal for foreign data centers to rent usage of even export-controlled GPUs to Chinese companies.</div>
-    <div class="track-header">AI应用</div>
-    <div class="ai-discussion-item">December 9 Autonomy & AI Day: Rivian is preparing to demonstrate Point to Point autonomous driving, putting it into more direct competition with Tesla FSD.</div>
-    <div class="ai-discussion-item">The Uber robotaxi partnership: Uber is backing Rivian's autonomous technology with a deal involving up to 50,000 R2 robotaxis.</div>
+    <div class="ai-category">
+      <div class="track-header">模型</div>
+      <p>暂无直接高质量讨论。</p>
+    </div>
+    <div class="ai-category">
+      <div class="track-header">算</div>
+      <ul>
+        <li>
+          <blockquote class="quote">
+            NVDA commits to buying an avalanche of TSMC silicon. Instead of doing the normal thing and cutting prices when supply catches up, Jensen apparently financed the AI startups and cloud bros so they could afford to buy the chips he'd already ordered.
+            <div class="translation">翻译：英伟达承诺购买大量台积电硅晶圆。当供应赶上需求时，黄仁勋并没有按常理降价，而是显然资助了AI初创公司和云服务商，让他们有能力购买他已经订购的芯片。</div>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote class="quote">
+            Instead Of Lowering GPU Prices, Former NVIDIA CEO Jensen Huang Reportedly Financed AI Startups To Absorb Excess Silicon
+            <div class="translation">翻译：据报道，前英伟达CEO黄仁勋没有降低GPU价格，而是资助AI初创公司以消化过剩的硅晶圆。</div>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote class="quote">
+            Back to Loosening NVIDIA Chip Exports to China in Exchange for Rare Earths?
+            <div class="translation">翻译：英伟达芯片对华出口是否会重新放宽，以换取稀土？</div>
+          </blockquote>
+        </li>
+      </ul>
+    </div>
+    <div class="ai-category">
+      <div class="track-header">光</div>
+      <p>暂无直接高质量讨论。</p>
+    </div>
+    <div class="ai-category">
+      <div class="track-header">存</div>
+      <ul>
+        <li>
+          <blockquote class="quote">
+            Judge allows motion to DRAM price-fixing lawsuit against Micron, Samsung and SK hynix saying chipmakers acted like hawks flying in formation
+            <div class="translation">翻译：法官批准了针对美光、三星和SK海力士的DRAM价格操纵诉讼动议，称芯片制造商的行为就像编队飞行的老鹰。</div>
+          </blockquote>
+        </li>
+      </ul>
+    </div>
+    <div class="ai-category">
+      <div class="track-header">电</div>
+      <p>暂无直接高质量讨论。</p>
+    </div>
+    <div class="ai-category">
+      <div class="track-header">板</div>
+      <p>暂无直接高质量讨论。</p>
+    </div>
+    <div class="ai-category">
+      <div class="track-header">云</div>
+      <ul>
+        <li>
+          <blockquote class="quote">
+            Jensen apparently financed the AI startups and cloud bros so they could afford to buy the chips he'd already ordered.
+            <div class="translation">翻译：黄仁勋显然资助了AI初创公司和云服务商，让他们有能力购买他已经订购的芯片。</div>
+          </blockquote>
+        </li>
+      </ul>
+    </div>
+    <div class="ai-category">
+      <div class="track-header">AI应用</div>
+      <ul>
+        <li>
+          <blockquote class="quote">
+            The biggest market event of the year is happening on Thursday when Anthropic goes public. Many people expect the IPO to fail, but Anthropic was smart and kept the float super small. Only 6.3% of total shares will be tradable on IPO day.
+            <div class="translation">翻译：本年度最大的市场事件将在周四 Anthropic 上市时发生。很多人预计这次IPO会失败，但Anthropic很聪明地将流通股数量控制得非常小。IPO当天只有6.3%的总股份可供交易。</div>
+          </blockquote>
+        </li>
+      </ul>
+    </div>
 
 </body>
 </html>
